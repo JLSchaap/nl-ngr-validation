@@ -3,8 +3,8 @@
 
 Feature:  Check dataset record datasetIdentifierCode
   Background:
-    * configure readTimeout = 30000
-    * configure connectTimeout = 30000
+    * configure readTimeout = 240000
+    * configure connectTimeout = 60000
 
     * url 'http://nationaalgeoregister.nl/'
 
