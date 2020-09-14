@@ -14,7 +14,7 @@ Feature:  Check dataset record datasetIdentifierCode
         And param elementsetname = "brief"
         And param resultType = 'results'
         And param startposition = 1
-        And param maxRecords = 15
+        And param maxRecords = 1000
         When method get
         Then status 200
         #* eval karate.embed(responseBytes,'text/plain')
