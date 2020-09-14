@@ -47,8 +47,8 @@ Feature:  Check dataset record datasetIdentifierCode
     # And match /GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier/MD_Identifier/code/Anchor == '<datasetIdentifierCode>'
     * def title =  get response /GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/title/CharacterString
     * print title
-    * def organisation =  get response /GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/pointOfContact[*]/CI_ResponsibleParty/organisationName/Anchor
-    * print 'organisation:', organisation
+    #* def organisation =  get response /GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/pointOfContact[*]/CI_ResponsibleParty/organisationName/Anchor
+    #* print 'organisation:', organisation
     * json xlinks = get response /GetRecordByIdResponse//@href
     * print xlinks
     * call read('def/checkxlinkurl.template.feature') karate.mapWithKey(xlinks ,'link')
