@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-  
 <head>
   
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -52,9 +51,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                13,
-                2,
-                14,
+                13962,
+                221,
+                768,
                 0,
                 0
             ],
@@ -95,7 +94,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 29) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 14951) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -108,8 +107,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                1,
-                1
+                11,
+                186
             ],
             backgroundColor: [
                 "#00B000",
@@ -145,7 +144,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 2) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 197) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -233,7 +232,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>NLTEST</td>
-            <td>14 Sep 2020, 14:34</td>
+            <td>14 Sep 2020, 15:37</td>
     </tr>
   </tbody>
 </table>
@@ -330,18 +329,18 @@ $(document).ready(function() {
           <tr>
         <td class="tagname"><a href="report-feature_InspireTest-ngr-datasetrecords-atom-check-dataset-record-feature.html">InspireTest/ngr/datasetrecords/atom-check-dataset-record.feature</a></td>
         
-        <td      class="passed"    >13</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >7</td>
+        <td      class="passed"    >13962</td>
+        <td      class="failed"    >220</td>
+        <td     class="skipped"   >761</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">21</td>
+        <td class="total">14943</td>
 
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
+        <td  class="passed"    >11</td>
+        <td  class="failed"    >185</td>
+        <td class="total">196</td>
 
-        <td class="duration" data-value="30630687555">30.630</td>
+        <td class="duration" data-value="28401905951290">7:53:21.905</td>
         <td class="failed">Failed</td>
       </tr>
           <tr>
@@ -358,7 +357,7 @@ $(document).ready(function() {
         <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="7046390">0.007</td>
+        <td class="duration" data-value="524702">0.000</td>
         <td class="failed">Failed</td>
       </tr>
       </tbody>
@@ -366,30 +365,30 @@ $(document).ready(function() {
   <tfoot class="total">
     <tr>
       <td></td>
-            <td>13</td>
-      <td>2</td>
-      <td>14</td>
+            <td>13962</td>
+      <td>221</td>
+      <td>768</td>
       <td>0</td>
       <td>0</td>
-      <td>29</td>
+      <td>14951</td>
 
-      <td>1</td>
-      <td>1</td>
-      <td>2</td>
+      <td>11</td>
+      <td>186</td>
+      <td>197</td>
 
-      <td class="duration">30.637</td>
+      <td class="duration">7:53:21.906</td>
       <td>2</td>
     </tr>
     <tr>
       <td></td>
-            <td>44.83%</td>
-      <td>6.90%</td>
-      <td>48.28%</td>
+            <td>93.39%</td>
+      <td>1.48%</td>
+      <td>5.14%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>50.00%</td>
-      <td>50.00%</td>
+      <td>5.58%</td>
+      <td>94.42%</td>
       <td></td>
       <td></td>
       <td>0.00%</td>
