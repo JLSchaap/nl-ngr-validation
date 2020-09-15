@@ -1,5 +1,4 @@
 
-@service=ATOM
 
 Feature:  Check dataset record datasetIdentifierCode
   Background:
@@ -8,26 +7,8 @@ Feature:  Check dataset record datasetIdentifierCode
 
     * url 'http://nationaalgeoregister.nl/'
 
-    Given path 'geonetwork/srv/dut/inspire'
-    And param service = 'CSW'
-    And param version = '2.0.2'
-    And param request = 'GetRecords'
-    And param propertyName = 'identifier'
-    And param typeNames = 'csw:Record'
-    And param elementsetname = "brief"
-    And param resultType = 'results'
-    And param startposition = 1
-    And param maxRecords = 1000
-    When method get
-    Then status 200
-    #* eval karate.embed(responseBytes,'text/plain')
-    * def briefname = get response /GetRecordsResponse/SearchResults/BriefRecord[type = 'dataset']/title
-    * print briefname
-    * def listnames = karate.mapWithKey(briefname, 'datasetname')
-    * def briefarray = get response /GetRecordsResponse/SearchResults/BriefRecord[type = 'dataset']/identifier
-    * print briefarray
-    * def list =  karate.mapWithKey(briefarray ,'datasetIdentifierCode')
-  # * karate.write(briefarray, 'ngrlist.json')
+    * def callonesresult = callonce read('def/getcswbriefrecords.feature')
+    * print callonesresult
 
   Scenario Outline: Check dataset record  in ngr voor  <datasetIdentifierCode>
 
@@ -50,14 +31,15 @@ Feature:  Check dataset record datasetIdentifierCode
     #* def organisation =  get response /GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/pointOfContact[*]/CI_ResponsibleParty/organisationName/Anchor
     #* print 'organisation:', organisation
     * json xlinks = get response /GetRecordByIdResponse//@href
-    * print xlinks
+    * eval karate.embed(  xlinks,'text/plain')
     * call read('def/checkxlinkurl.template.feature') karate.mapWithKey(xlinks ,'link')
 
     Examples:
-      | list |
+      | callonesresult.list |
 
 
 # csv def/datasetlist.csv has the following field:
-#Examples:
-#    | datasetIdentifierCode                |
-#    | 3703b249-a0eb-484e-ba7a-10e31a55bcec |
+# Examples:
+#   | datasetIdentifierCode                |
+#   | f273941e-9c3b-43bc-b886-2d50d0bf9348 |
+# | 19165027-a13a-4c19-9013-ec1fd191019d |

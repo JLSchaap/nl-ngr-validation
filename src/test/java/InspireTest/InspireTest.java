@@ -10,12 +10,14 @@ import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import com.intuit.karate.KarateOptions;
 import com.intuit.karate.Results;
 import com.intuit.karate.Runner;
 
 import net.masterthought.cucumber.Configuration;
 import net.masterthought.cucumber.ReportBuilder;
 
+@KarateOptions(tags = {"~@ignore"})
 class TestAll {
 
     @Test
