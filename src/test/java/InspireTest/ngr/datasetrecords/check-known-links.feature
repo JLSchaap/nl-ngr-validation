@@ -5,6 +5,8 @@ Feature: check known xlinks
 
         * def nlinks = ["<knownlink>"]
         * print nlinks
+        * def title = "known url"
+       
         * call read('def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link')
 
            Examples:

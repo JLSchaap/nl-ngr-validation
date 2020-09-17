@@ -8,16 +8,16 @@ Feature:  template feature checking link __arg
     Scenario: __arg.link
         * print "testing xlinkurl:
         * def link = __arg.link
-        * print "testing xlinkurl:" + link + "info:" + karate.info
+        * print "testing xlinkurl:" + link
 
         Given url link
         When method HEAD
         Then status 200
         And match responseHeaders['Content-Type'][0] == '#string'
-       # * print "last modified",  responseHeaders['Last-Modified'][0]
-       # * print "content type",  responseHeaders['Content-Type'][0]
+        # * print "last modified",  responseHeaders['Last-Modified'][0]
+        # * print "content type",  responseHeaders['Content-Type'][0]
 
         * def mystorage = Java.type('storage.DataStorage')
         * def db = new mystorage
-        * eval db.mywriteln('"'+ link + '"', 'target/surefire-reports/foundlink.csv')
+        * eval db.mywriteln('"'+ link + '","'+ title + '"' , 'target/surefire-reports/foundlink.csv')
 
