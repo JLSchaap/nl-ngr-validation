@@ -1,5 +1,5 @@
-<testsuite failures="1" name="InspireTest/ngr/datasetrecords/def/getcswbriefrecords.feature" skipped="0" tests="1" time="30.662364">
-  <testcase classname="InspireTest.ngr.datasetrecords.def.getcswbriefrecords" name="getbrief list" time="30.662364">
+<testsuite failures="1" name="InspireTest/ngr/datasetrecords/def/getcswbriefrecords.feature" skipped="0" tests="1" time="30.425511">
+  <testcase classname="InspireTest.ngr.datasetrecords.def.getcswbriefrecords" name="getbrief list" time="30.425511">
     <failure message="getcswbriefrecords.feature:25 - &#10;java.net.SocketTimeoutException: Read timed out">* def knownlinks = karate.jsonPath(karate.read('classpath:InspireTest/ngr/datasetrecords/def/knownlink.csv'), '[*].knownlink') . passed
 * url 'http://nationaalgeoregister.nl/' ................................... passed
 Given path 'geonetwork/srv/dut/inspire' ................................... passed
