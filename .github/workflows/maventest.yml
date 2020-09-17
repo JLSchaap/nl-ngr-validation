@@ -1,4 +1,4 @@
-name: NGR validatie 
+name: NGR validatie
 
 on:
   # Trigger the workflow on push or pull request,
@@ -9,8 +9,8 @@ on:
   pull_request:
     branches:
       - master
-  #schedule:
-  #  - cron: "04 04 * * *"
+  schedule:
+    - cron: "04 04 * * *"
 
 jobs:
   build:
@@ -31,6 +31,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./target/surefire-reports
-
-
-
