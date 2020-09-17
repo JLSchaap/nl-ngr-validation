@@ -6,7 +6,7 @@ Feature: check known xlinks
         * def nlinks = ["<knownlink>"]
         * print nlinks
         * def title = "known url"
-        * configure readTimeout = 20000
+        * configure readTimeout = 60000
         * call read('def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link')
 
         Examples:
