@@ -1,5 +1,5 @@
-<testsuite failures="0" name="InspireTest/ngr/datasetrecords/def/getcswbriefrecordsjson.feature" skipped="0" tests="1" time="0.580448">
-  <testcase classname="InspireTest.ngr.datasetrecords.def.getcswbriefrecordsjson" name="getbrief list" time="0.580448">
+<testsuite failures="0" name="InspireTest/ngr/datasetrecords/def/getcswbriefrecordsjson.feature" skipped="0" tests="1" time="0.6065">
+  <testcase classname="InspireTest.ngr.datasetrecords.def.getcswbriefrecordsjson" name="getbrief list" time="0.6065">
     <system-out>* url 'http://nationaalgeoregister.nl/' ................................... passed
 Given path 'geonetwork/srv/dut/inspire' ................................... passed
 And param service = 'CSW' ................................................. passed
