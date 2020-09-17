@@ -1,0 +1,86 @@
+[ 
+  {
+    "knownlink": "http://creativecommons.org/publicdomain/mark/1.0/deed.nl"
+  },
+  {
+    "knownlink": "http://inspire.ec.europa.eu/media-types/application/x-shapefile "
+  },
+  {
+    "knownlink": "http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply"
+  },
+  {
+    "knownlink": "http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations"
+  },
+  {
+    "knownlink": "http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint"
+  },
+  {
+    "knownlink": "http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint"
+  },
+  {
+    "knownlink": "http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/endPoint"
+  },
+  {
+    "knownlink": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset"
+  },
+  {
+    "knownlink": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/SpeciesRange-dir-1992-43"
+  },
+  {
+    "knownlink": "http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/download"
+  },
+  {
+    "knownlink": "http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/view"
+  },
+  {
+    "knownlink": "http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/view"
+  },
+  {
+    "knownlink": "http://inspire.ec.europa.eu/metadata-codelist/SpatialScope"
+  },
+  {
+    "knownlink": "http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national"
+  },
+  {
+    "knownlink": "http://standaarden.overheid.nl/owms/terms/Ministerie_van_Landbouw_Natuur_en_Voedselkwaliteit"
+  },
+  {
+    "knownlink": "http://www.eionet.europa.eu/gemet/inspire_themes"
+  },
+  {
+    "knownlink": "http://www.eionet.europa.eu/gemet/nl/inspire-theme/au"
+  },
+  {
+    "knownlink": "http://www.eionet.europa.eu/gemet/nl/inspire-theme/lu"
+  },
+  {
+    "knownlink": "http://www.eionet.europa.eu/gemet/nl/inspire-theme/sd"
+  },
+  {
+    "knownlink": "http://www.eionet.europa.eu/gemet/nl/inspire-theme/so"
+  },
+  {
+    "knownlink": "http://www.opengeospatial.org/standards/wfs"
+  },
+  {
+    "knownlink": "http://www.opengeospatial.org/standards/wms"
+  },
+  {
+    "knownlink": "http://www.opengis.net/def/crs/EPSG/0/3035"
+  },
+  {
+    "knownlink": "https://www.iana.org/assignments/media-types/application/zip"
+  },
+  {
+    "knownlink": "https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/f273941e-9c3b-43bc-b886-2d50d0bf9348"
+  },
+  {
+    "knownlink": "https://www.nationaalgeoregister.nl:443/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPriorityDataset-PriorityDataset"
+  },
+  {
+    "knownlink": "https://www.nationaalgeoregister.nl:443/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistSpatialScope-SpatialScope"
+  },
+  {
+    "knownlink": "https://www.nationaalgeoregister.nl:443/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeutheme-theme"
+  }
+]

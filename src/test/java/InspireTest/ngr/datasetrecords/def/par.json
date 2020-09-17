@@ -1,0 +1,524 @@
+[
+  {
+    "metadata-codelist": {
+      "itemclass": {
+        "id": "MetadataCodeList",
+        "label": {
+          "text": "Metadata Code list",
+          "lang": "nl"
+        }
+      },
+      "id": "http://inspire.ec.europa.eu/metadata-codelist/ResourceType",
+      "label": {
+        "text": "Type bron",
+        "lang": "nl"
+      },
+      "version": "0",
+      "status": {
+        "id": "http://inspire.ec.europa.eu/registry/status/valid",
+        "label": {
+          "text": "Geldig",
+          "lang": "nl"
+        }
+      },
+      "register": {
+        "registry": {
+          "id": "http://inspire.ec.europa.eu/registry",
+          "label": {
+            "text": "INSPIRE register",
+            "lang": "nl"
+          }
+        },
+        "id": "http://inspire.ec.europa.eu/metadata-codelist",
+        "label": {
+          "text": "INSPIRE metadata code list register",
+          "lang": "nl"
+        }
+      }
+    }
+  },
+  {
+    "metadata-codelist": {
+      "itemclass": {
+        "id": "MetadataCodeList",
+        "label": {
+          "text": "Metadata Code list",
+          "lang": "nl"
+        }
+      },
+      "id": "http://inspire.ec.europa.eu/metadata-codelist/TopicCategory",
+      "label": {
+        "text": "Onderwerpcategoriecn overeenkomstig EN ISO 19115",
+        "lang": "nl"
+      },
+      "version": "0",
+      "status": {
+        "id": "http://inspire.ec.europa.eu/registry/status/valid",
+        "label": {
+          "text": "Geldig",
+          "lang": "nl"
+        }
+      },
+      "register": {
+        "registry": {
+          "id": "http://inspire.ec.europa.eu/registry",
+          "label": {
+            "text": "INSPIRE register",
+            "lang": "nl"
+          }
+        },
+        "id": "http://inspire.ec.europa.eu/metadata-codelist",
+        "label": {
+          "text": "INSPIRE metadata code list register",
+          "lang": "nl"
+        }
+      }
+    }
+  },
+  {
+    "metadata-codelist": {
+      "itemclass": {
+        "id": "MetadataCodeList",
+        "label": {
+          "text": "Metadata Code list",
+          "lang": "nl"
+        }
+      },
+      "id": "http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType",
+      "label": {
+        "text": "Type dienst met betrekking tot ruimtelijke gegevens",
+        "lang": "nl"
+      },
+      "version": "0",
+      "status": {
+        "id": "http://inspire.ec.europa.eu/registry/status/valid",
+        "label": {
+          "text": "Geldig",
+          "lang": "nl"
+        }
+      },
+      "register": {
+        "registry": {
+          "id": "http://inspire.ec.europa.eu/registry",
+          "label": {
+            "text": "INSPIRE register",
+            "lang": "nl"
+          }
+        },
+        "id": "http://inspire.ec.europa.eu/metadata-codelist",
+        "label": {
+          "text": "INSPIRE metadata code list register",
+          "lang": "nl"
+        }
+      }
+    }
+  },
+  {
+    "metadata-codelist": {
+      "itemclass": {
+        "id": "MetadataCodeList",
+        "label": {
+          "text": "Metadata Code list",
+          "lang": "nl"
+        }
+      },
+      "definition": {
+        "text": "De trefwoorden zijn gebaseerd op de taxonomie voor geografische diensten (EN ISO 19119). Deze taxonomie bestaat uit categorieC+n; de subcategorieC+n definiC+ren het waardedomein van de classificatie van ruimtelijke-gegevensdiensten.",
+        "lang": "nl"
+      },
+      "id": "http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceCategory",
+      "label": {
+        "text": "Classificatie van diensten met betrekking tot ruimtelijke gegevens",
+        "lang": "nl"
+      },
+      "version": "0",
+      "status": {
+        "id": "http://inspire.ec.europa.eu/registry/status/valid",
+        "label": {
+          "text": "Geldig",
+          "lang": "nl"
+        }
+      },
+      "register": {
+        "registry": {
+          "id": "http://inspire.ec.europa.eu/registry",
+          "label": {
+            "text": "INSPIRE register",
+            "lang": "nl"
+          }
+        },
+        "id": "http://inspire.ec.europa.eu/metadata-codelist",
+        "label": {
+          "text": "INSPIRE metadata code list register",
+          "lang": "nl"
+        }
+      }
+    }
+  },
+  {
+    "metadata-codelist": {
+      "itemclass": {
+        "id": "MetadataCodeList",
+        "label": {
+          "text": "Metadata Code list",
+          "lang": "nl"
+        }
+      },
+      "id": "http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity",
+      "label": {
+        "text": "Conformiteitsindicatie",
+        "lang": "nl"
+      },
+      "version": "0",
+      "status": {
+        "id": "http://inspire.ec.europa.eu/registry/status/valid",
+        "label": {
+          "text": "Geldig",
+          "lang": "nl"
+        }
+      },
+      "register": {
+        "registry": {
+          "id": "http://inspire.ec.europa.eu/registry",
+          "label": {
+            "text": "INSPIRE register",
+            "lang": "nl"
+          }
+        },
+        "id": "http://inspire.ec.europa.eu/metadata-codelist",
+        "label": {
+          "text": "INSPIRE metadata code list register",
+          "lang": "nl"
+        }
+      }
+    }
+  },
+  {
+    "metadata-codelist": {
+      "itemclass": {
+        "id": "MetadataCodeList",
+        "label": {
+          "text": "Metadata Code list",
+          "lang": "nl"
+        }
+      },
+      "id": "http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole",
+      "label": {
+        "text": "Rol van de verantwoordelijke partij",
+        "lang": "nl"
+      },
+      "version": "0",
+      "status": {
+        "id": "http://inspire.ec.europa.eu/registry/status/valid",
+        "label": {
+          "text": "Geldig",
+          "lang": "nl"
+        }
+      },
+      "register": {
+        "registry": {
+          "id": "http://inspire.ec.europa.eu/registry",
+          "label": {
+            "text": "INSPIRE register",
+            "lang": "nl"
+          }
+        },
+        "id": "http://inspire.ec.europa.eu/metadata-codelist",
+        "label": {
+          "text": "INSPIRE metadata code list register",
+          "lang": "nl"
+        }
+      }
+    }
+  },
+  {
+    "metadata-codelist": {
+      "itemclass": {
+        "id": "MetadataCodeList",
+        "label": {
+          "text": "Metadata Code list",
+          "lang": "nl"
+        }
+      },
+      "id": "http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess",
+      "label": {
+        "text": "Beperkingen op openbare toegang",
+        "lang": "nl"
+      },
+      "version": "0",
+      "status": {
+        "id": "http://inspire.ec.europa.eu/registry/status/valid",
+        "label": {
+          "text": "Geldig",
+          "lang": "nl"
+        }
+      },
+      "register": {
+        "registry": {
+          "id": "http://inspire.ec.europa.eu/registry",
+          "label": {
+            "text": "INSPIRE register",
+            "lang": "nl"
+          }
+        },
+        "id": "http://inspire.ec.europa.eu/metadata-codelist",
+        "label": {
+          "text": "INSPIRE metadata code list register",
+          "lang": "nl"
+        }
+      }
+    }
+  },
+  {
+    "metadata-codelist": {
+      "itemclass": {
+        "id": "MetadataCodeList",
+        "label": {
+          "text": "Metadata Code list",
+          "lang": "nl"
+        }
+      },
+      "id": "http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse",
+      "label": {
+        "text": "Voorwaarden voor toegang en gebruik",
+        "lang": "nl"
+      },
+      "version": "0",
+      "status": {
+        "id": "http://inspire.ec.europa.eu/registry/status/valid",
+        "label": {
+          "text": "Geldig",
+          "lang": "nl"
+        }
+      },
+      "register": {
+        "registry": {
+          "id": "http://inspire.ec.europa.eu/registry",
+          "label": {
+            "text": "INSPIRE register",
+            "lang": "nl"
+          }
+        },
+        "id": "http://inspire.ec.europa.eu/metadata-codelist",
+        "label": {
+          "text": "INSPIRE metadata code list register",
+          "lang": "nl"
+        }
+      }
+    }
+  },
+  {
+    "metadata-codelist": {
+      "itemclass": {
+        "id": "MetadataCodeList",
+        "label": {
+          "text": "Metadata Code list",
+          "lang": "nl"
+        }
+      },
+      "id": "http://inspire.ec.europa.eu/metadata-codelist/QualityOfServiceCriteria",
+      "label": {
+        "text": "Service kwaliteit criteria code",
+        "lang": "nl"
+      },
+      "version": "0",
+      "status": {
+        "id": "http://inspire.ec.europa.eu/registry/status/valid",
+        "label": {
+          "text": "Geldig",
+          "lang": "nl"
+        }
+      },
+      "register": {
+        "registry": {
+          "id": "http://inspire.ec.europa.eu/registry",
+          "label": {
+            "text": "INSPIRE register",
+            "lang": "nl"
+          }
+        },
+        "id": "http://inspire.ec.europa.eu/metadata-codelist",
+        "label": {
+          "text": "INSPIRE metadata code list register",
+          "lang": "nl"
+        }
+      }
+    }
+  },
+  {
+    "metadata-codelist": {
+      "itemclass": {
+        "id": "MetadataCodeList",
+        "label": {
+          "text": "Metadata Code list",
+          "lang": "nl"
+        }
+      },
+      "definition": {
+        "text": "Code describing the type of resource given in the Resource Locator metadata element.",
+        "lang": "en"
+      },
+      "id": "http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode",
+      "label": {
+        "text": "Online description code",
+        "lang": "en"
+      },
+      "version": "0",
+      "status": {
+        "id": "http://inspire.ec.europa.eu/registry/status/valid",
+        "label": {
+          "text": "Geldig",
+          "lang": "nl"
+        }
+      },
+      "register": {
+        "registry": {
+          "id": "http://inspire.ec.europa.eu/registry",
+          "label": {
+            "text": "INSPIRE register",
+            "lang": "nl"
+          }
+        },
+        "id": "http://inspire.ec.europa.eu/metadata-codelist",
+        "label": {
+          "text": "INSPIRE metadata code list register",
+          "lang": "nl"
+        }
+      }
+    }
+  },
+  {
+    "metadata-codelist": {
+      "itemclass": {
+        "id": "MetadataCodeList",
+        "label": {
+          "text": "Metadata Code list",
+          "lang": "nl"
+        }
+      },
+      "definition": {
+        "text": "Lijst met datasets die gerelateerd zijn aan milieurapportage, die stapsgewijs door de lidstaten via de Europese infrastructuur voor ruimtelijke informatie beschikbaar moeten worden gesteld. Deze lijst geeft ook de lacunes in data weer die zijn geïdentificeerd tijdens de evaluatie van de implementatie en de geschiktheid van de richtlijn voor het beoogde doel (de zogenoemde REFIT evaluatie).",
+        "lang": "nl"
+      },
+      "id": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset",
+      "label": {
+        "text": "INSPIRE prioritaire dataset",
+        "lang": "nl"
+      },
+      "version": "0",
+      "status": {
+        "id": "http://inspire.ec.europa.eu/registry/status/valid",
+        "label": {
+          "text": "Geldig",
+          "lang": "nl"
+        }
+      },
+      "register": {
+        "registry": {
+          "id": "http://inspire.ec.europa.eu/registry",
+          "label": {
+            "text": "INSPIRE register",
+            "lang": "nl"
+          }
+        },
+        "id": "http://inspire.ec.europa.eu/metadata-codelist",
+        "label": {
+          "text": "INSPIRE metadata code list register",
+          "lang": "nl"
+        }
+      }
+    }
+  },
+  {
+    "metadata-codelist": {
+      "itemclass": {
+        "id": "MetadataCodeList",
+        "label": {
+          "text": "Metadata Code list",
+          "lang": "nl"
+        }
+      },
+      "description": {
+        "text": "The spatial scope can be different from the actual geographical coverage, e.g. a national coastline data set may cover only a fraction of the full spatial extent of a country.\n The spatial scope of the data set does not necessarily reflect the administrative level responsible for collecting and maintaining the data, e.g. the responsibility for maintaining the data inside the national address data set can be at regional or local level.\n The code list contains values governed at the level of INSPIRE legal acts (governance level: Legal (EU)) and values governed at the level of INSPIRE Technical Guidelines (governance level: Technical (EU)). The former directly support the INSPIRE Monitoring and Reporting Decision, while the latter  provide additional options for tagging other data sets.",
+        "lang": "en"
+      },
+      "definition": {
+        "text": "Administrative level that the data set intends to cover.",
+        "lang": "en"
+      },
+      "id": "http://inspire.ec.europa.eu/metadata-codelist/SpatialScope",
+      "label": {
+        "text": "Ruimtelijke dekking",
+        "lang": "nl"
+      },
+      "version": "0",
+      "status": {
+        "id": "http://inspire.ec.europa.eu/registry/status/valid",
+        "label": {
+          "text": "Geldig",
+          "lang": "nl"
+        }
+      },
+      "register": {
+        "registry": {
+          "id": "http://inspire.ec.europa.eu/registry",
+          "label": {
+            "text": "INSPIRE register",
+            "lang": "nl"
+          }
+        },
+        "id": "http://inspire.ec.europa.eu/metadata-codelist",
+        "label": {
+          "text": "INSPIRE metadata code list register",
+          "lang": "nl"
+        }
+      }
+    }
+  },
+  {
+    "metadata-codelist": {
+      "itemclass": {
+        "id": "MetadataCodeList",
+        "label": {
+          "text": "Metadata Code list",
+          "lang": "nl"
+        }
+      },
+      "description": {
+        "text": "This code list is the result of the 'simplification of data-service linkages' activity performed in the context of the MIG-T data simplification action(2019.2).",
+        "lang": "en"
+      },
+      "definition": {
+        "text": "Set of OGC and RFC services that are in the scope of INSPIRE. This list aims at the better identification of the network services described within the metadata records.",
+        "lang": "en"
+      },
+      "id": "http://inspire.ec.europa.eu/metadata-codelist/ProtocolValue",
+      "label": {
+        "text": "INSPIRE Protocol values",
+        "lang": "en"
+      },
+      "version": "0",
+      "status": {
+        "id": "http://inspire.ec.europa.eu/registry/status/valid",
+        "label": {
+          "text": "Geldig",
+          "lang": "nl"
+        }
+      },
+      "register": {
+        "registry": {
+          "id": "http://inspire.ec.europa.eu/registry",
+          "label": {
+            "text": "INSPIRE register",
+            "lang": "nl"
+          }
+        },
+        "id": "http://inspire.ec.europa.eu/metadata-codelist",
+        "label": {
+          "text": "INSPIRE metadata code list register",
+          "lang": "nl"
+        }
+      }
+    }
+  }
+]
