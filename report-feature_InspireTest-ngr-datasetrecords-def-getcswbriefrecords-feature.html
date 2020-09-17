@@ -75,7 +75,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>NLTEST</td>
-            <td>17 Sep 2020, 17:31</td>
+            <td>17 Sep 2020, 18:18</td>
     </tr>
   </tbody>
 </table>
@@ -128,19 +128,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">InspireTest/ngr/datasetrecords/def/getcswbriefrecords.feature</td>
-                    <td      class="passed"    >24</td>
-          <td >0</td>
-          <td >0</td>
+                    <td      class="passed"    >12</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >11</td>
           <td >0</td>
           <td >0</td>
           <td class="total">24</td>
 
-          <td  class="passed"    >1</td>
           <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="9699542000">9.699</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="30574368225">30.574</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -172,7 +172,7 @@ $(document).ready(function() {
   </div>
 
         
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Feature</span>
   <span class="name">InspireTest/ngr/datasetrecords/def/getcswbriefrecords.feature</span>
   
@@ -190,12 +190,12 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">9.699</span>
+  <span class="lead-duration duration">30.574</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">getbrief list</span>
   
@@ -206,15 +206,15 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -224,14 +224,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details ">
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">*</span>
   <span class="name">def knownlinks = karate.jsonPath(karate.read('classpath:InspireTest/ngr/datasetrecords/def/knownlink.csv'), '[*].knownlink')</span>
   
-  <span class="lead-duration duration">0.036</span>
+  <span class="lead-duration duration">0.037</span>
 
   </div>
 
@@ -246,7 +246,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>17:30:42.834 karate.env system property was:</pre>
+        <pre>18:04:51.256 karate.env system property was:</pre>
       </div>
     </div>
   </div>
@@ -283,7 +283,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">path 'geonetwork/srv/dut/inspire'</span>
   
-  <span class="lead-duration duration">0.013</span>
+  <span class="lead-duration duration">0.007</span>
 
   </div>
 
@@ -304,7 +304,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">param service = 'CSW'</span>
   
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.004</span>
 
   </div>
 
@@ -325,7 +325,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">param version = '2.0.2'</span>
   
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.001</span>
 
   </div>
 
@@ -346,7 +346,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">param request = 'GetRecords'</span>
   
-  <span class="lead-duration duration">0.017</span>
+  <span class="lead-duration duration">0.020</span>
 
   </div>
 
@@ -367,7 +367,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">param propertyName = 'identifier'</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
   </div>
 
@@ -388,7 +388,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">param typeNames = 'csw:Record'</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.002</span>
 
   </div>
 
@@ -430,7 +430,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">param resultType = 'results'</span>
   
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.001</span>
 
   </div>
 
@@ -470,9 +470,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">param maxRecords = 40</span>
+  <span class="name">param maxRecords = 1000</span>
   
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.007</span>
 
   </div>
 
@@ -489,217 +489,27 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
   
-  <span class="lead-duration duration">8.824</span>
+  <span class="lead-duration duration">30.485</span>
 
   </div>
 
         
 
-
-        
-        
-
-        
-
-        
-  
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>com.intuit.karate.exception.KarateException: getcswbriefrecords.feature:25 - </a>
       </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">status 200</span>
-  
-  <span class="lead-duration duration">0.000</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: getcswbriefrecords.feature:25 - 
+java.net.SocketTimeoutException: Read timed out</pre>
       </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def briefarray = get response /GetRecordsResponse/SearchResults/BriefRecord[type = 'dataset']/identifier</span>
-  
-  <span class="lead-duration duration">0.041</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">*</span>
-  <span class="name">eval karate.embed( briefarray,'text/plain')</span>
-  
-  <span class="lead-duration duration">0.011</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-    <div class="embeddings inner-level">
-                <div class="embedding indention">
-        <div data-toggle="collapse" data-target="#embedding-4" class="collapsable-control">
-      <a>Attachment 1 (Plain text)</a>
-      <a href="embeddings/embedding_1841687209.txt" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-4" class="collapse collapsable-details">
-      <pre class="embedding-content">[&quot;19165027-a13a-4c19-9013-ec1fd191019d&quot;,&quot;dc5b522e-3e14-4738-9e8e-2401e1b19ef2&quot;,&quot;e3b0da1e-0664-4025-b3f5-a54d74a26450&quot;,&quot;b61a773c-ecad-4e60-93e9-0a4caac0b52f&quot;,&quot;fcefa13c-44e2-4953-b6d6-1ddceebc57fc&quot;,&quot;7dd1fd45-ace5-41e0-93a6-64e3be231717&quot;,&quot;f99e915a-75e5-4c36-97f2-61eff692d85b&quot;,&quot;f44dac86-2228-412f-8355-e56446ca9933&quot;]</pre>
     </div>
   </div>
-        </div>
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def list =  karate.mapWithKey(briefarray ,'datasetIdentifierCode')</span>
-  
-  <span class="lead-duration duration">0.011</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def json = karate.map(list, function(x, i){ return {} })</span>
-  
-  <span class="lead-duration duration">0.010</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">url 'https://inspire.ec.europa.eu/metadata-codelist/metadata-codelist.nl.json'</span>
-  
-  <span class="lead-duration duration">0.002</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">method get</span>
-  
-  <span class="lead-duration duration">0.668</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">status 200</span>
-  
-  <span class="lead-duration duration">0.000</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">*</span>
-  <span class="name">print response</span>
-  
-  <span class="lead-duration duration">0.044</span>
-
-  </div>
-
-        
 
 
         
@@ -710,563 +520,9 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-5" class="collapse collapsable-details">
-        <pre>17:30:52.802 [print] {
-  &quot;register&quot;: {
-    &quot;submitter&quot;: &quot;Nominated submitting organisations for the central INSPIRE registers and INSPIRE register federation&quot;,
-    &quot;license&quot;: {
-      &quot;label&quot;: &quot;Europa Legal Notice&quot;,
-      &quot;uri&quot;: &quot;http://ec.europa.eu/geninfo/legal_notices_nl.htm&quot;
-    },
-    &quot;registry&quot;: {
-      &quot;id&quot;: &quot;http://inspire.ec.europa.eu/registry&quot;,
-      &quot;label&quot;: {
-        &quot;text&quot;: &quot;INSPIRE register&quot;,
-        &quot;lang&quot;: &quot;nl&quot;
-      }
-    },
-    &quot;containeditems&quot;: [
-      {
-        &quot;metadata-codelist&quot;: {
-          &quot;itemclass&quot;: {
-            &quot;id&quot;: &quot;MetadataCodeList&quot;,
-            &quot;label&quot;: {
-              &quot;text&quot;: &quot;Metadata Code list&quot;,
-              &quot;lang&quot;: &quot;nl&quot;
-            }
-          },
-          &quot;id&quot;: &quot;http://inspire.ec.europa.eu/metadata-codelist/ResourceType&quot;,
-          &quot;label&quot;: {
-            &quot;text&quot;: &quot;Type bron&quot;,
-            &quot;lang&quot;: &quot;nl&quot;
-          },
-          &quot;version&quot;: &quot;0&quot;,
-          &quot;status&quot;: {
-            &quot;id&quot;: &quot;http://inspire.ec.europa.eu/registry/status/valid&quot;,
-            &quot;label&quot;: {
-              &quot;text&quot;: &quot;Geldig&quot;,
-              &quot;lang&quot;: &quot;nl&quot;
-            }
-          },
-          &quot;register&quot;: {
-            &quot;registry&quot;: {
-              &quot;id&quot;: &quot;http://inspire.ec.europa.eu/registry&quot;,
-              &quot;label&quot;: {
-                &quot;text&quot;: &quot;INSPIRE register&quot;,
-                &quot;lang&quot;: &quot;nl&quot;
-              }
-            },
-            &quot;id&quot;: &quot;http://inspire.ec.europa.eu/metadata-codelist&quot;,
-            &quot;label&quot;: {
-              &quot;text&quot;: &quot;INSPIRE metadata code list register&quot;,
-              &quot;lang&quot;: &quot;nl&quot;
-            }
-          }
-        }
-      },
-      {
-        &quot;metadata-codelist&quot;: {
-          &quot;itemclass&quot;: {
-            &quot;id&quot;: &quot;MetadataCodeList&quot;,
-            &quot;label&quot;: {
-              &quot;text&quot;: &quot;Metadata Code list&quot;,
-              &quot;lang&quot;: &quot;nl&quot;
-            }
-          },
-          &quot;id&quot;: &quot;http://inspire.ec.europa.eu/metadata-codelist/TopicCategory&quot;,
-          &quot;label&quot;: {
-            &quot;text&quot;: &quot;Onderwerpcategoriecn overeenkomstig EN ISO 19115&quot;,
-            &quot;lang&quot;: &quot;nl&quot;
-          },
-          &quot;version&quot;: &quot;0&quot;,
-          &quot;status&quot;: {
-            &quot;id&quot;: &quot;http://inspire.ec.europa.eu/registry/status/valid&quot;,
-            &quot;label&quot;: {
-              &quot;text&quot;: &quot;Geldig&quot;,
-              &quot;lang&quot;: &quot;nl&quot;
-            }
-          },
-          &quot;register&quot;: {
-            &quot;registry&quot;: {
-              &quot;id&quot;: &quot;http://inspire.ec.europa.eu/registry&quot;,
-              &quot;label&quot;: {
-                &quot;text&quot;: &quot;INSPIRE register&quot;,
-                &quot;lang&quot;: &quot;nl&quot;
-              }
-            },
-            &quot;id&quot;: &quot;http://inspire.ec.europa.eu/metadata-codelist&quot;,
-            &quot;label&quot;: {
-              &quot;text&quot;: &quot;INSPIRE metadata code list register&quot;,
-              &quot;lang&quot;: &quot;nl&quot;
-            }
-          }
-        }
-      },
-      {
-        &quot;metadata-codelist&quot;: {
-          &quot;itemclass&quot;: {
-            &quot;id&quot;: &quot;MetadataCodeList&quot;,
-            &quot;label&quot;: {
-              &quot;text&quot;: &quot;Metadata Code list&quot;,
-              &quot;lang&quot;: &quot;nl&quot;
-            }
-          },
-          &quot;id&quot;: &quot;http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType&quot;,
-          &quot;label&quot;: {
-            &quot;text&quot;: &quot;Type dienst met betrekking tot ruimtelijke gegevens&quot;,
-            &quot;lang&quot;: &quot;nl&quot;
-          },
-          &quot;version&quot;: &quot;0&quot;,
-          &quot;status&quot;: {
-            &quot;id&quot;: &quot;http://inspire.ec.europa.eu/registry/status/valid&quot;,
-            &quot;label&quot;: {
-              &quot;text&quot;: &quot;Geldig&quot;,
-              &quot;lang&quot;: &quot;nl&quot;
-            }
-          },
-          &quot;register&quot;: {
-            &quot;registry&quot;: {
-              &quot;id&quot;: &quot;http://inspire.ec.europa.eu/registry&quot;,
-              &quot;label&quot;: {
-                &quot;text&quot;: &quot;INSPIRE register&quot;,
-                &quot;lang&quot;: &quot;nl&quot;
-              }
-            },
-            &quot;id&quot;: &quot;http://inspire.ec.europa.eu/metadata-codelist&quot;,
-            &quot;label&quot;: {
-              &quot;text&quot;: &quot;INSPIRE metadata code list register&quot;,
-              &quot;lang&quot;: &quot;nl&quot;
-            }
-          }
-        }
-      },
-      {
-        &quot;metadata-codelist&quot;: {
-          &quot;itemclass&quot;: {
-            &quot;id&quot;: &quot;MetadataCodeList&quot;,
-            &quot;label&quot;: {
-              &quot;text&quot;: &quot;Metadata Code list&quot;,
-              &quot;lang&quot;: &quot;nl&quot;
-            }
-          },
-          &quot;definition&quot;: {
-            &quot;text&quot;: &quot;De trefwoorden zijn gebaseerd op de taxonomie voor geografische diensten (EN ISO 19119). Deze taxonomie bestaat uit categorieC+n; de subcategorieC+n definiC+ren het waardedomein van de classificatie van ruimtelijke-gegevensdiensten.&quot;,
-            &quot;lang&quot;: &quot;nl&quot;
-          },
-          &quot;id&quot;: &quot;http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceCategory&quot;,
-          &quot;label&quot;: {
-            &quot;text&quot;: &quot;Classificatie van diensten met betrekking tot ruimtelijke gegevens&quot;,
-            &quot;lang&quot;: &quot;nl&quot;
-          },
-          &quot;version&quot;: &quot;0&quot;,
-          &quot;status&quot;: {
-            &quot;id&quot;: &quot;http://inspire.ec.europa.eu/registry/status/valid&quot;,
-            &quot;label&quot;: {
-              &quot;text&quot;: &quot;Geldig&quot;,
-              &quot;lang&quot;: &quot;nl&quot;
-            }
-          },
-          &quot;register&quot;: {
-            &quot;registry&quot;: {
-              &quot;id&quot;: &quot;http://inspire.ec.europa.eu/registry&quot;,
-              &quot;label&quot;: {
-                &quot;text&quot;: &quot;INSPIRE register&quot;,
-                &quot;lang&quot;: &quot;nl&quot;
-              }
-            },
-            &quot;id&quot;: &quot;http://inspire.ec.europa.eu/metadata-codelist&quot;,
-            &quot;label&quot;: {
-              &quot;text&quot;: &quot;INSPIRE metadata code list register&quot;,
-              &quot;lang&quot;: &quot;nl&quot;
-            }
-          }
-        }
-      },
-      {
-        &quot;metadata-codelist&quot;: {
-          &quot;itemclass&quot;: {
-            &quot;id&quot;: &quot;MetadataCodeList&quot;,
-            &quot;label&quot;: {
-              &quot;text&quot;: &quot;Metadata Code list&quot;,
-              &quot;lang&quot;: &quot;nl&quot;
-            }
-          },
-          &quot;id&quot;: &quot;http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity&quot;,
-          &quot;label&quot;: {
-            &quot;text&quot;: &quot;Conformiteitsindicatie&quot;,
-            &quot;lang&quot;: &quot;nl&quot;
-          },
-          &quot;version&quot;: &quot;0&quot;,
-          &quot;status&quot;: {
-            &quot;id&quot;: &quot;http://inspire.ec.europa.eu/registry/status/valid&quot;,
-            &quot;label&quot;: {
-              &quot;text&quot;: &quot;Geldig&quot;,
-              &quot;lang&quot;: &quot;nl&quot;
-            }
-          },
-          &quot;register&quot;: {
-            &quot;registry&quot;: {
-              &quot;id&quot;: &quot;http://inspire.ec.europa.eu/registry&quot;,
-              &quot;label&quot;: {
-                &quot;text&quot;: &quot;INSPIRE register&quot;,
-                &quot;lang&quot;: &quot;nl&quot;
-              }
-            },
-            &quot;id&quot;: &quot;http://inspire.ec.europa.eu/metadata-codelist&quot;,
-            &quot;label&quot;: {
-              &quot;text&quot;: &quot;INSPIRE metadata code list register&quot;,
-              &quot;lang&quot;: &quot;nl&quot;
-            }
-          }
-        }
-      },
-      {
-        &quot;metadata-codelist&quot;: {
-          &quot;itemclass&quot;: {
-            &quot;id&quot;: &quot;MetadataCodeList&quot;,
-            &quot;label&quot;: {
-              &quot;text&quot;: &quot;Metadata Code list&quot;,
-              &quot;lang&quot;: &quot;nl&quot;
-            }
-          },
-          &quot;id&quot;: &quot;http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole&quot;,
-          &quot;label&quot;: {
-            &quot;text&quot;: &quot;Rol van de verantwoordelijke partij&quot;,
-            &quot;lang&quot;: &quot;nl&quot;
-          },
-          &quot;version&quot;: &quot;0&quot;,
-          &quot;status&quot;: {
-            &quot;id&quot;: &quot;http://inspire.ec.europa.eu/registry/status/valid&quot;,
-            &quot;label&quot;: {
-              &quot;text&quot;: &quot;Geldig&quot;,
-              &quot;lang&quot;: &quot;nl&quot;
-            }
-          },
-          &quot;register&quot;: {
-            &quot;registry&quot;: {
-              &quot;id&quot;: &quot;http://inspire.ec.europa.eu/registry&quot;,
-              &quot;label&quot;: {
-                &quot;text&quot;: &quot;INSPIRE register&quot;,
-                &quot;lang&quot;: &quot;nl&quot;
-              }
-            },
-            &quot;id&quot;: &quot;http://inspire.ec.europa.eu/metadata-codelist&quot;,
-            &quot;label&quot;: {
-              &quot;text&quot;: &quot;INSPIRE metadata code list register&quot;,
-              &quot;lang&quot;: &quot;nl&quot;
-            }
-          }
-        }
-      },
-      {
-        &quot;metadata-codelist&quot;: {
-          &quot;itemclass&quot;: {
-            &quot;id&quot;: &quot;MetadataCodeList&quot;,
-            &quot;label&quot;: {
-              &quot;text&quot;: &quot;Metadata Code list&quot;,
-              &quot;lang&quot;: &quot;nl&quot;
-            }
-          },
-          &quot;id&quot;: &quot;http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess&quot;,
-          &quot;label&quot;: {
-            &quot;text&quot;: &quot;Beperkingen op openbare toegang&quot;,
-            &quot;lang&quot;: &quot;nl&quot;
-          },
-          &quot;version&quot;: &quot;0&quot;,
-          &quot;status&quot;: {
-            &quot;id&quot;: &quot;http://inspire.ec.europa.eu/registry/status/valid&quot;,
-            &quot;label&quot;: {
-              &quot;text&quot;: &quot;Geldig&quot;,
-              &quot;lang&quot;: &quot;nl&quot;
-            }
-          },
-          &quot;register&quot;: {
-            &quot;registry&quot;: {
-              &quot;id&quot;: &quot;http://inspire.ec.europa.eu/registry&quot;,
-              &quot;label&quot;: {
-                &quot;text&quot;: &quot;INSPIRE register&quot;,
-                &quot;lang&quot;: &quot;nl&quot;
-              }
-            },
-            &quot;id&quot;: &quot;http://inspire.ec.europa.eu/metadata-codelist&quot;,
-            &quot;label&quot;: {
-              &quot;text&quot;: &quot;INSPIRE metadata code list register&quot;,
-              &quot;lang&quot;: &quot;nl&quot;
-            }
-          }
-        }
-      },
-      {
-        &quot;metadata-codelist&quot;: {
-          &quot;itemclass&quot;: {
-            &quot;id&quot;: &quot;MetadataCodeList&quot;,
-            &quot;label&quot;: {
-              &quot;text&quot;: &quot;Metadata Code list&quot;,
-              &quot;lang&quot;: &quot;nl&quot;
-            }
-          },
-          &quot;id&quot;: &quot;http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse&quot;,
-          &quot;label&quot;: {
-            &quot;text&quot;: &quot;Voorwaarden voor toegang en gebruik&quot;,
-            &quot;lang&quot;: &quot;nl&quot;
-          },
-          &quot;version&quot;: &quot;0&quot;,
-          &quot;status&quot;: {
-            &quot;id&quot;: &quot;http://inspire.ec.europa.eu/registry/status/valid&quot;,
-            &quot;label&quot;: {
-              &quot;text&quot;: &quot;Geldig&quot;,
-              &quot;lang&quot;: &quot;nl&quot;
-            }
-          },
-          &quot;register&quot;: {
-            &quot;registry&quot;: {
-              &quot;id&quot;: &quot;http://inspire.ec.europa.eu/registry&quot;,
-              &quot;label&quot;: {
-                &quot;text&quot;: &quot;INSPIRE register&quot;,
-                &quot;lang&quot;: &quot;nl&quot;
-              }
-            },
-            &quot;id&quot;: &quot;http://inspire.ec.europa.eu/metadata-codelist&quot;,
-            &quot;label&quot;: {
-              &quot;text&quot;: &quot;INSPIRE metadata code list register&quot;,
-              &quot;lang&quot;: &quot;nl&quot;
-            }
-          }
-        }
-      },
-      {
-        &quot;metadata-codelist&quot;: {
-          &quot;itemclass&quot;: {
-            &quot;id&quot;: &quot;MetadataCodeList&quot;,
-            &quot;label&quot;: {
-              &quot;text&quot;: &quot;Metadata Code list&quot;,
-              &quot;lang&quot;: &quot;nl&quot;
-            }
-          },
-          &quot;id&quot;: &quot;http://inspire.ec.europa.eu/metadata-codelist/QualityOfServiceCriteria&quot;,
-          &quot;label&quot;: {
-            &quot;text&quot;: &quot;Service kwaliteit criteria code&quot;,
-            &quot;lang&quot;: &quot;nl&quot;
-          },
-          &quot;version&quot;: &quot;0&quot;,
-          &quot;status&quot;: {
-            &quot;id&quot;: &quot;http://inspire.ec.europa.eu/registry/status/valid&quot;,
-            &quot;label&quot;: {
-              &quot;text&quot;: &quot;Geldig&quot;,
-              &quot;lang&quot;: &quot;nl&quot;
-            }
-          },
-          &quot;register&quot;: {
-            &quot;registry&quot;: {
-              &quot;id&quot;: &quot;http://inspire.ec.europa.eu/registry&quot;,
-              &quot;label&quot;: {
-                &quot;text&quot;: &quot;INSPIRE register&quot;,
-                &quot;lang&quot;: &quot;nl&quot;
-              }
-            },
-            &quot;id&quot;: &quot;http://inspire.ec.europa.eu/metadata-codelist&quot;,
-            &quot;label&quot;: {
-              &quot;text&quot;: &quot;INSPIRE metadata code list register&quot;,
-              &quot;lang&quot;: &quot;nl&quot;
-            }
-          }
-        }
-      },
-      {
-        &quot;metadata-codelist&quot;: {
-          &quot;itemclass&quot;: {
-            &quot;id&quot;: &quot;MetadataCodeList&quot;,
-            &quot;label&quot;: {
-              &quot;text&quot;: &quot;Metadata Code list&quot;,
-              &quot;lang&quot;: &quot;nl&quot;
-            }
-          },
-          &quot;definition&quot;: {
-            &quot;text&quot;: &quot;Code describing the type of resource given in the Resource Locator metadata element.&quot;,
-            &quot;lang&quot;: &quot;en&quot;
-          },
-          &quot;id&quot;: &quot;http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode&quot;,
-          &quot;label&quot;: {
-            &quot;text&quot;: &quot;Online description code&quot;,
-            &quot;lang&quot;: &quot;en&quot;
-          },
-          &quot;version&quot;: &quot;0&quot;,
-          &quot;status&quot;: {
-            &quot;id&quot;: &quot;http://inspire.ec.europa.eu/registry/status/valid&quot;,
-            &quot;label&quot;: {
-              &quot;text&quot;: &quot;Geldig&quot;,
-              &quot;lang&quot;: &quot;nl&quot;
-            }
-          },
-          &quot;register&quot;: {
-            &quot;registry&quot;: {
-              &quot;id&quot;: &quot;http://inspire.ec.europa.eu/registry&quot;,
-              &quot;label&quot;: {
-                &quot;text&quot;: &quot;INSPIRE register&quot;,
-                &quot;lang&quot;: &quot;nl&quot;
-              }
-            },
-            &quot;id&quot;: &quot;http://inspire.ec.europa.eu/metadata-codelist&quot;,
-            &quot;label&quot;: {
-              &quot;text&quot;: &quot;INSPIRE metadata code list register&quot;,
-              &quot;lang&quot;: &quot;nl&quot;
-            }
-          }
-        }
-      },
-      {
-        &quot;metadata-codelist&quot;: {
-          &quot;itemclass&quot;: {
-            &quot;id&quot;: &quot;MetadataCodeList&quot;,
-            &quot;label&quot;: {
-              &quot;text&quot;: &quot;Metadata Code list&quot;,
-              &quot;lang&quot;: &quot;nl&quot;
-            }
-          },
-          &quot;definition&quot;: {
-            &quot;text&quot;: &quot;Lijst met datasets die gerelateerd zijn aan milieurapportage, die stapsgewijs door de lidstaten via de Europese infrastructuur voor ruimtelijke informatie beschikbaar moeten worden gesteld. Deze lijst geeft ook de lacunes in data weer die zijn ge&iuml;dentificeerd tijdens de evaluatie van de implementatie en de geschiktheid van de richtlijn voor het beoogde doel (de zogenoemde REFIT evaluatie).&quot;,
-            &quot;lang&quot;: &quot;nl&quot;
-          },
-          &quot;id&quot;: &quot;http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset&quot;,
-          &quot;label&quot;: {
-            &quot;text&quot;: &quot;INSPIRE prioritaire dataset&quot;,
-            &quot;lang&quot;: &quot;nl&quot;
-          },
-          &quot;version&quot;: &quot;0&quot;,
-          &quot;status&quot;: {
-            &quot;id&quot;: &quot;http://inspire.ec.europa.eu/registry/status/valid&quot;,
-            &quot;label&quot;: {
-              &quot;text&quot;: &quot;Geldig&quot;,
-              &quot;lang&quot;: &quot;nl&quot;
-            }
-          },
-          &quot;register&quot;: {
-            &quot;registry&quot;: {
-              &quot;id&quot;: &quot;http://inspire.ec.europa.eu/registry&quot;,
-              &quot;label&quot;: {
-                &quot;text&quot;: &quot;INSPIRE register&quot;,
-                &quot;lang&quot;: &quot;nl&quot;
-              }
-            },
-            &quot;id&quot;: &quot;http://inspire.ec.europa.eu/metadata-codelist&quot;,
-            &quot;label&quot;: {
-              &quot;text&quot;: &quot;INSPIRE metadata code list register&quot;,
-              &quot;lang&quot;: &quot;nl&quot;
-            }
-          }
-        }
-      },
-      {
-        &quot;metadata-codelist&quot;: {
-          &quot;itemclass&quot;: {
-            &quot;id&quot;: &quot;MetadataCodeList&quot;,
-            &quot;label&quot;: {
-              &quot;text&quot;: &quot;Metadata Code list&quot;,
-              &quot;lang&quot;: &quot;nl&quot;
-            }
-          },
-          &quot;description&quot;: {
-            &quot;text&quot;: &quot;The spatial scope can be different from the actual geographical coverage, e.g. a national coastline data set may cover only a fraction of the full spatial extent of a country.\n The spatial scope of the data set does not necessarily reflect the administrative level responsible for collecting and maintaining the data, e.g. the responsibility for maintaining the data inside the national address data set can be at regional or local level.\n The code list contains values governed at the level of INSPIRE legal acts (governance level: Legal (EU)) and values governed at the level of INSPIRE Technical Guidelines (governance level: Technical (EU)). The former directly support the INSPIRE Monitoring and Reporting Decision, while the latter  provide additional options for tagging other data sets.&quot;,
-            &quot;lang&quot;: &quot;en&quot;
-          },
-          &quot;definition&quot;: {
-            &quot;text&quot;: &quot;Administrative level that the data set intends to cover.&quot;,
-            &quot;lang&quot;: &quot;en&quot;
-          },
-          &quot;id&quot;: &quot;http://inspire.ec.europa.eu/metadata-codelist/SpatialScope&quot;,
-          &quot;label&quot;: {
-            &quot;text&quot;: &quot;Ruimtelijke dekking&quot;,
-            &quot;lang&quot;: &quot;nl&quot;
-          },
-          &quot;version&quot;: &quot;0&quot;,
-          &quot;status&quot;: {
-            &quot;id&quot;: &quot;http://inspire.ec.europa.eu/registry/status/valid&quot;,
-            &quot;label&quot;: {
-              &quot;text&quot;: &quot;Geldig&quot;,
-              &quot;lang&quot;: &quot;nl&quot;
-            }
-          },
-          &quot;register&quot;: {
-            &quot;registry&quot;: {
-              &quot;id&quot;: &quot;http://inspire.ec.europa.eu/registry&quot;,
-              &quot;label&quot;: {
-                &quot;text&quot;: &quot;INSPIRE register&quot;,
-                &quot;lang&quot;: &quot;nl&quot;
-              }
-            },
-            &quot;id&quot;: &quot;http://inspire.ec.europa.eu/metadata-codelist&quot;,
-            &quot;label&quot;: {
-              &quot;text&quot;: &quot;INSPIRE metadata code list register&quot;,
-              &quot;lang&quot;: &quot;nl&quot;
-            }
-          }
-        }
-      },
-      {
-        &quot;metadata-codelist&quot;: {
-          &quot;itemclass&quot;: {
-            &quot;id&quot;: &quot;MetadataCodeList&quot;,
-            &quot;label&quot;: {
-              &quot;text&quot;: &quot;Metadata Code list&quot;,
-              &quot;lang&quot;: &quot;nl&quot;
-            }
-          },
-          &quot;description&quot;: {
-            &quot;text&quot;: &quot;This code list is the result of the 'simplification of data-service linkages' activity performed in the context of the MIG-T data simplification action(2019.2).&quot;,
-            &quot;lang&quot;: &quot;en&quot;
-          },
-          &quot;definition&quot;: {
-            &quot;text&quot;: &quot;Set of OGC and RFC services that are in the scope of INSPIRE. This list aims at the better identification of the network services described within the metadata records.&quot;,
-            &quot;lang&quot;: &quot;en&quot;
-          },
-          &quot;id&quot;: &quot;http://inspire.ec.europa.eu/metadata-codelist/ProtocolValue&quot;,
-          &quot;label&quot;: {
-            &quot;text&quot;: &quot;INSPIRE Protocol values&quot;,
-            &quot;lang&quot;: &quot;en&quot;
-          },
-          &quot;version&quot;: &quot;0&quot;,
-          &quot;status&quot;: {
-            &quot;id&quot;: &quot;http://inspire.ec.europa.eu/registry/status/valid&quot;,
-            &quot;label&quot;: {
-              &quot;text&quot;: &quot;Geldig&quot;,
-              &quot;lang&quot;: &quot;nl&quot;
-            }
-          },
-          &quot;register&quot;: {
-            &quot;registry&quot;: {
-              &quot;id&quot;: &quot;http://inspire.ec.europa.eu/registry&quot;,
-              &quot;label&quot;: {
-                &quot;text&quot;: &quot;INSPIRE register&quot;,
-                &quot;lang&quot;: &quot;nl&quot;
-              }
-            },
-            &quot;id&quot;: &quot;http://inspire.ec.europa.eu/metadata-codelist&quot;,
-            &quot;label&quot;: {
-              &quot;text&quot;: &quot;INSPIRE metadata code list register&quot;,
-              &quot;lang&quot;: &quot;nl&quot;
-            }
-          }
-        }
-      }
-    ],
-    &quot;contentsummary&quot;: {
-      &quot;text&quot;: &quot;The INSPIRE metadata code list register contains the code lists and their values, as defined in the INSPIRE implementing rules on metadata (Commission Regulation (EC) No 1205/2008).&quot;,
-      &quot;lang&quot;: &quot;nl&quot;
-    },
-    &quot;registermanager&quot;: &quot;Europese Commissie, Gemeenschappelijk Centrum voor onderzoek&quot;,
-    &quot;contactpoint&quot;: {
-      &quot;label&quot;: &quot;JRC INSPIRE Registry Team&quot;,
-      &quot;email&quot;: &quot;inspire-registry-dev@jrc.ec.europa.eu&quot;
-    },
-    &quot;language&quot;: &quot;nl&quot;,
-    &quot;registerowner&quot;: &quot;Europese Unie&quot;,
-    &quot;id&quot;: &quot;http://inspire.ec.europa.eu/metadata-codelist&quot;,
-    &quot;label&quot;: {
-      &quot;text&quot;: &quot;INSPIRE metadata code list register&quot;,
-      &quot;lang&quot;: &quot;nl&quot;
-    },
-    &quot;registercontrolbody&quot;: &quot;Control body for the central INSPIRE registers and INSPIRE register federation&quot;
-  }
-}</pre>
+        <pre>18:05:22.041 java.net.SocketTimeoutException: Read timed out, http call failed after 30244 milliseconds for URL: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?service=CSW&amp;version=2.0.2&amp;request=GetRecords&amp;propertyName=identifier&amp;typeNames=csw%3ARecord&amp;elementsetname=brief&amp;resultType=results&amp;startposition=1&amp;maxRecords=1000
+18:05:22.041 http request failed: 
+java.net.SocketTimeoutException: Read timed out</pre>
       </div>
     </div>
   </div>
@@ -1278,7 +534,196 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def briefarray = get response /GetRecordsResponse/SearchResults/BriefRecord[type = 'dataset']/identifier</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">eval karate.embed( briefarray,'text/plain')</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def list =  karate.mapWithKey(briefarray ,'datasetIdentifierCode')</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def json = karate.map(list, function(x, i){ return {} })</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'https://inspire.ec.europa.eu/metadata-codelist/metadata-codelist.nl.json'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
   <span class="keyword indention">*</span>
   <span class="name">def inspirecodelist = get response.register.containeditems[*][&quot;metadata-codelist&quot;].id</span>
   
@@ -1299,11 +744,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief skipped">
   <span class="keyword indention">*</span>
   <span class="name">print inspirecodelist</span>
   
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.000</span>
 
   </div>
 
@@ -1312,30 +757,6 @@ $(document).ready(function() {
 
         
         
-  <div class="inner-level">
-    <div class="docstring indention">
-            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-6" class="collapse collapsable-details">
-        <pre>17:30:52.808 [print] [
-  &quot;http://inspire.ec.europa.eu/metadata-codelist/ResourceType&quot;,
-  &quot;http://inspire.ec.europa.eu/metadata-codelist/TopicCategory&quot;,
-  &quot;http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType&quot;,
-  &quot;http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceCategory&quot;,
-  &quot;http://inspire.ec.europa.eu/metadata-codelist/DegreeOfConformity&quot;,
-  &quot;http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole&quot;,
-  &quot;http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess&quot;,
-  &quot;http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse&quot;,
-  &quot;http://inspire.ec.europa.eu/metadata-codelist/QualityOfServiceCriteria&quot;,
-  &quot;http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode&quot;,
-  &quot;http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset&quot;,
-  &quot;http://inspire.ec.europa.eu/metadata-codelist/SpatialScope&quot;,
-  &quot;http://inspire.ec.europa.eu/metadata-codelist/ProtocolValue&quot;
-]</pre>
-      </div>
-    </div>
-  </div>
 
         
 

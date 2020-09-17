@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csw:GetRecordByIdResponse xmlns:csw="http://www.opengis.net/cat/csw/2.0.2">
+  <gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gml="http://www.opengis.net/gml" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.isotc211.org/2005/gmd http://schemas.opengis.net/iso/19139/20060504/gmd/gmd.xsd http://www.isotc211.org/2005/gmx http://schemas.opengis.net/iso/19139/20060504/gmx/gmx.xsd">
+    <gmd:fileIdentifier>
+      <gco:CharacterString>247a1d15-0a67-40ce-85be-1403c08f15a8</gco:CharacterString>
+    </gmd:fileIdentifier>
+    <gmd:language>
+      <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="dut">Nederlands; Vlaams</gmd:LanguageCode>
+    </gmd:language>
+    <gmd:characterSet>
+      <gmd:MD_CharacterSetCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</gmd:MD_CharacterSetCode>
+    </gmd:characterSet>
+    <gmd:hierarchyLevel>
+      <gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+    </gmd:hierarchyLevel>
+    <gmd:contact>
+      <gmd:CI_ResponsibleParty>
+        <gmd:individualName>
+          <gco:CharacterString>Geodatabeheer GIS Competence Center</gco:CharacterString>
+        </gmd:individualName>
+        <gmd:organisationName>
+          <gmx:Anchor xmlns:gmx="http://www.isotc211.org/2005/gmx" xlink:href="http://standaarden.overheid.nl/owms/terms/Ministerie_van_Landbouw,_Natuur_en_Voedselkwaliteit">Ministerie van Landbouw, Natuur en Voedselkwaliteit</gmx:Anchor>
+        </gmd:organisationName>
+        <gmd:positionName gco:nilReason="missing">
+          <gco:CharacterString />
+        </gmd:positionName>
+        <gmd:contactInfo>
+          <gmd:CI_Contact>
+            <gmd:phone>
+              <gmd:CI_Telephone>
+                <gmd:voice gco:nilReason="missing">
+                  <gco:CharacterString />
+                </gmd:voice>
+                <gmd:facsimile gco:nilReason="missing">
+                  <gco:CharacterString />
+                </gmd:facsimile>
+              </gmd:CI_Telephone>
+            </gmd:phone>
+            <gmd:address>
+              <gmd:CI_Address>
+                <gmd:deliveryPoint gco:nilReason="missing">
+                  <gco:CharacterString />
+                </gmd:deliveryPoint>
+                <gmd:city gco:nilReason="missing">
+                  <gco:CharacterString />
+                </gmd:city>
+                <gmd:administrativeArea gco:nilReason="missing">
+                  <gco:CharacterString />
+                </gmd:administrativeArea>
+                <gmd:postalCode gco:nilReason="missing">
+                  <gco:CharacterString />
+                </gmd:postalCode>
+                <gmd:country gco:nilReason="missing">
+                  <gco:CharacterString />
+                </gmd:country>
+                <gmd:electronicMailAddress>
+                  <gco:CharacterString>geodatabeheer.giscc@rvo.nl</gco:CharacterString>
+                </gmd:electronicMailAddress>
+              </gmd:CI_Address>
+            </gmd:address>
+            <gmd:onlineResource>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL />
+                </gmd:linkage>
+              </gmd:CI_OnlineResource>
+            </gmd:onlineResource>
+          </gmd:CI_Contact>
+        </gmd:contactInfo>
+        <gmd:role>
+          <gmd:CI_RoleCode codeListValue="pointOfContact" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode">contactpunt</gmd:CI_RoleCode>
+        </gmd:role>
+      </gmd:CI_ResponsibleParty>
+    </gmd:contact>
+    <gmd:dateStamp>
+      <gco:Date>2019-11-04</gco:Date>
+    </gmd:dateStamp>
+    <gmd:metadataStandardName>
+      <gco:CharacterString>ISO 19115</gco:CharacterString>
+    </gmd:metadataStandardName>
+    <gmd:metadataStandardVersion>
+      <gco:CharacterString>Nederlandse metadata profiel op ISO 19115 voor geografie 1.3</gco:CharacterString>
+    </gmd:metadataStandardVersion>
+    <gmd:referenceSystemInfo xmlns:gmx="http://www.isotc211.org/2005/gmx">
+      <gmd:MD_ReferenceSystem>
+        <gmd:referenceSystemIdentifier>
+          <gmd:RS_Identifier>
+            <gmd:code>
+              <gmx:Anchor xlink:href="http://www.opengis.net/def/crs/EPSG/0/28992">Rijks Driehoeksstelsel</gmx:Anchor>
+            </gmd:code>
+          </gmd:RS_Identifier>
+        </gmd:referenceSystemIdentifier>
+      </gmd:MD_ReferenceSystem>
+    </gmd:referenceSystemInfo>
+    <gmd:identificationInfo>
+      <gmd:MD_DataIdentification>
+        <gmd:citation>
+          <gmd:CI_Citation>
+            <gmd:title>
+              <gco:CharacterString>Nationale Parken (INSPIRE Geharmoniseerd)</gco:CharacterString>
+            </gmd:title>
+            <gmd:alternateTitle gco:nilReason="missing">
+              <gco:CharacterString />
+            </gmd:alternateTitle>
+            <gmd:date>
+              <gmd:CI_Date>
+                <gmd:date>
+                  <gco:Date>2019-05-14</gco:Date>
+                </gmd:date>
+                <gmd:dateType>
+                  <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publicatie</gmd:CI_DateTypeCode>
+                </gmd:dateType>
+              </gmd:CI_Date>
+            </gmd:date>
+            <gmd:edition>
+              <gco:CharacterString>06.2019</gco:CharacterString>
+            </gmd:edition>
+            <gmd:identifier>
+              <gmd:MD_Identifier>
+                <gmd:code>
+                  <gmx:Anchor xmlns:gmx="http://www.isotc211.org/2005/gmx" xlink:href="http://nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/247a1d15-0a67-40ce-85be-1403c08f15a8">247a1d15-0a67-40ce-85be-1403c08f15a8</gmx:Anchor>
+                </gmd:code>
+              </gmd:MD_Identifier>
+            </gmd:identifier>
+            <gmd:series>
+              <gmd:CI_Series />
+            </gmd:series>
+          </gmd:CI_Citation>
+        </gmd:citation>
+        <gmd:abstract>
+          <gco:CharacterString>In dit bestand zijn de grenzen opgenomen van de Nationale Parken, zoals die op diverse momenten zijn gepubliceerd in de Staatscourant (laatste wijziging: 7 oktober 2013, nr. DGNR-PDJNG/13163012). Het bestand bevat in totaal 20 Nationale Parken: de toenmalige Minister van Landbouw, Natuur en Voedselkwaliteit heeft 17 bijzondere natuurgebieden in Nederland aangewezen als nationaal park. Daarnaast zijn er  twee private nationale parken (NP De Hoge Veluwe en NP Veluwezoom) en één Grenspark: De Zoom - Kalmthoutse Heide. Dit grenspark is vastgesteld door het Comité van Ministers van de Benelux. De parkgrenzen worden aangeleverd door de Secretarissen van de Nationale Parken en door de staatssecretaris van EZ vastgesteld. De grenzen in het GIS-bestand kunnen afwijken van de grenzen in het BIP (Beheers- en Inrichtingsplan). Elk Nationaal Park heeft een BIP, dat ter goedkeuring wordt voorgelegd aan de Minister van LNV. Elk BIP bevat een kaart met de begrenzing van het Park. Die grens is een momentopname. In de loop der tijd kunnen de grenzen van een Park licht wijzigen door kleine aankopen of uitruil van gronden. Die wijzigingen worden bij periodieke updates doorgevoerd in het BIP. Een BIP kan daardoor achter- of juist vooruitlopen op de grenzen in dit bestand.</gco:CharacterString>
+        </gmd:abstract>
+        <gmd:purpose>
+          <gco:CharacterString>Het bestand is in opdracht van Directie Natuur (Ministerie van Landbouw, Natuur en Voedselkwaliteit) vervaardigd door Directie Kennis. Doel van dit project was om te komen tot één uniform, zo actueel mogelijk landelijk bestand van de Nationale Parken.</gco:CharacterString>
+        </gmd:purpose>
+        <gmd:status>
+          <gmd:MD_ProgressCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ProgressCode" codeListValue="completed">compleet</gmd:MD_ProgressCode>
+        </gmd:status>
+        <gmd:pointOfContact>
+          <gmd:CI_ResponsibleParty>
+            <gmd:individualName>
+              <gco:CharacterString>Geodatabeheer GIS Competence Center</gco:CharacterString>
+            </gmd:individualName>
+            <gmd:organisationName>
+              <gmx:Anchor xmlns:gmx="http://www.isotc211.org/2005/gmx" xlink:href="http://standaarden.overheid.nl/owms/terms/Ministerie_van_Landbouw,_Natuur_en_Voedselkwaliteit">Ministerie van Landbouw, Natuur en Voedselkwaliteit</gmx:Anchor>
+            </gmd:organisationName>
+            <gmd:positionName gco:nilReason="missing">
+              <gco:CharacterString />
+            </gmd:positionName>
+            <gmd:contactInfo>
+              <gmd:CI_Contact>
+                <gmd:phone>
+                  <gmd:CI_Telephone>
+                    <gmd:voice gco:nilReason="missing">
+                      <gco:CharacterString />
+                    </gmd:voice>
+                    <gmd:facsimile gco:nilReason="missing">
+                      <gco:CharacterString />
+                    </gmd:facsimile>
+                  </gmd:CI_Telephone>
+                </gmd:phone>
+                <gmd:address>
+                  <gmd:CI_Address>
+                    <gmd:deliveryPoint gco:nilReason="missing">
+                      <gco:CharacterString />
+                    </gmd:deliveryPoint>
+                    <gmd:city gco:nilReason="missing">
+                      <gco:CharacterString />
+                    </gmd:city>
+                    <gmd:administrativeArea gco:nilReason="missing">
+                      <gco:CharacterString />
+                    </gmd:administrativeArea>
+                    <gmd:postalCode gco:nilReason="missing">
+                      <gco:CharacterString />
+                    </gmd:postalCode>
+                    <gmd:country gco:nilReason="missing">
+                      <gco:CharacterString />
+                    </gmd:country>
+                    <gmd:electronicMailAddress>
+                      <gco:CharacterString>geodatabeheer.giscc@rvo.nl</gco:CharacterString>
+                    </gmd:electronicMailAddress>
+                  </gmd:CI_Address>
+                </gmd:address>
+                <gmd:onlineResource>
+                  <gmd:CI_OnlineResource>
+                    <gmd:linkage>
+                      <gmd:URL />
+                    </gmd:linkage>
+                  </gmd:CI_OnlineResource>
+                </gmd:onlineResource>
+              </gmd:CI_Contact>
+            </gmd:contactInfo>
+            <gmd:role>
+              <gmd:CI_RoleCode codeListValue="originator" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode">maker</gmd:CI_RoleCode>
+            </gmd:role>
+          </gmd:CI_ResponsibleParty>
+        </gmd:pointOfContact>
+        <gmd:pointOfContact>
+          <gmd:CI_ResponsibleParty>
+            <gmd:individualName gco:nilReason="missing">
+              <gco:CharacterString />
+            </gmd:individualName>
+            <gmd:organisationName>
+              <gmx:Anchor xmlns:gmx="http://www.isotc211.org/2005/gmx" xlink:href="http://standaarden.overheid.nl/owms/terms/Ministerie_van_Landbouw,_Natuur_en_Voedselkwaliteit">Ministerie van Landbouw, Natuur en Voedselkwaliteit</gmx:Anchor>
+            </gmd:organisationName>
+            <gmd:positionName gco:nilReason="missing">
+              <gco:CharacterString />
+            </gmd:positionName>
+            <gmd:contactInfo>
+              <gmd:CI_Contact>
+                <gmd:phone>
+                  <gmd:CI_Telephone>
+                    <gmd:voice gco:nilReason="missing">
+                      <gco:CharacterString />
+                    </gmd:voice>
+                    <gmd:facsimile gco:nilReason="missing">
+                      <gco:CharacterString />
+                    </gmd:facsimile>
+                  </gmd:CI_Telephone>
+                </gmd:phone>
+                <gmd:address>
+                  <gmd:CI_Address>
+                    <gmd:deliveryPoint gco:nilReason="missing">
+                      <gco:CharacterString />
+                    </gmd:deliveryPoint>
+                    <gmd:city gco:nilReason="missing">
+                      <gco:CharacterString />
+                    </gmd:city>
+                    <gmd:administrativeArea gco:nilReason="missing">
+                      <gco:CharacterString />
+                    </gmd:administrativeArea>
+                    <gmd:postalCode gco:nilReason="missing">
+                      <gco:CharacterString />
+                    </gmd:postalCode>
+                    <gmd:country gco:nilReason="missing">
+                      <gco:CharacterString />
+                    </gmd:country>
+                    <gmd:electronicMailAddress>
+                      <gco:CharacterString>info@minlnv.nl</gco:CharacterString>
+                    </gmd:electronicMailAddress>
+                  </gmd:CI_Address>
+                </gmd:address>
+                <gmd:onlineResource>
+                  <gmd:CI_OnlineResource>
+                    <gmd:linkage>
+                      <gmd:URL />
+                    </gmd:linkage>
+                  </gmd:CI_OnlineResource>
+                </gmd:onlineResource>
+              </gmd:CI_Contact>
+            </gmd:contactInfo>
+            <gmd:role>
+              <gmd:CI_RoleCode codeListValue="owner" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode">eigenaar</gmd:CI_RoleCode>
+            </gmd:role>
+          </gmd:CI_ResponsibleParty>
+        </gmd:pointOfContact>
+        <gmd:resourceMaintenance>
+          <gmd:MD_MaintenanceInformation>
+            <gmd:maintenanceAndUpdateFrequency>
+              <gmd:MD_MaintenanceFrequencyCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="asNeeded">indien nodig</gmd:MD_MaintenanceFrequencyCode>
+            </gmd:maintenanceAndUpdateFrequency>
+            <gmd:dateOfNextUpdate>
+              <gco:Date>2020-10-10</gco:Date>
+            </gmd:dateOfNextUpdate>
+          </gmd:MD_MaintenanceInformation>
+        </gmd:resourceMaintenance>
+        <gmd:graphicOverview>
+          <gmd:MD_BrowseGraphic>
+            <gmd:fileName>
+              <gco:CharacterString>https://geodata.nationaalgeoregister.nl/nationaleparken/ows?LAYERS=nationaleparken&amp;TRANSPARENT=true&amp;FORMAT=image%2Fpng&amp;SERVICE=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetMap&amp;STYLES=&amp;EXCEPTIONS=application%2Fvnd.ogc.se_inimage&amp;SRS=EPSG%3A28992&amp;BBOX=-280456,309568.96,586585.28,646966.72&amp;WIDTH=2016&amp;HEIGHT=784</gco:CharacterString>
+            </gmd:fileName>
+          </gmd:MD_BrowseGraphic>
+        </gmd:graphicOverview>
+        <gmd:descriptiveKeywords>
+          <gmd:MD_Keywords>
+            <gmd:keyword>
+              <gco:CharacterString>Beschermde gebieden</gco:CharacterString>
+            </gmd:keyword>
+            <gmd:type>
+              <gmd:MD_KeywordTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme">theme</gmd:MD_KeywordTypeCode>
+            </gmd:type>
+            <gmd:thesaurusName>
+              <gmd:CI_Citation>
+                <gmd:title>
+                  <gco:CharacterString>GEMET - INSPIRE themes, version 1.0</gco:CharacterString>
+                </gmd:title>
+                <gmd:date>
+                  <gmd:CI_Date>
+                    <gmd:date>
+                      <gco:Date>2008-06-01</gco:Date>
+                    </gmd:date>
+                    <gmd:dateType>
+                      <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publicatie</gmd:CI_DateTypeCode>
+                    </gmd:dateType>
+                  </gmd:CI_Date>
+                </gmd:date>
+                <gmd:identifier>
+                  <gmd:MD_Identifier>
+                    <gmd:code>
+                      <gmx:Anchor xmlns:gmx="http://www.isotc211.org/2005/gmx" xlink:href="https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeutheme-theme">geonetwork.thesaurus.external.theme.httpinspireeceuropaeutheme-theme</gmx:Anchor>
+                    </gmd:code>
+                  </gmd:MD_Identifier>
+                </gmd:identifier>
+              </gmd:CI_Citation>
+            </gmd:thesaurusName>
+          </gmd:MD_Keywords>
+        </gmd:descriptiveKeywords>
+        <gmd:descriptiveKeywords>
+          <gmd:MD_Keywords>
+            <gmd:keyword>
+              <gmx:Anchor xmlns:gmx="http://www.isotc211.org/2005/gmx" xlink:href="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national">Nationaal</gmx:Anchor>
+            </gmd:keyword>
+            <gmd:type>
+              <gmd:MD_KeywordTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme">theme</gmd:MD_KeywordTypeCode>
+            </gmd:type>
+            <gmd:thesaurusName>
+              <gmd:CI_Citation>
+                <gmd:title>
+                  <gmx:Anchor xmlns:gmx="http://www.isotc211.org/2005/gmx" xlink:href="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope">Ruimtelijke dekking</gmx:Anchor>
+                </gmd:title>
+                <gmd:date>
+                  <gmd:CI_Date>
+                    <gmd:date>
+                      <gco:Date>2018-04-04</gco:Date>
+                    </gmd:date>
+                    <gmd:dateType>
+                      <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publicatie</gmd:CI_DateTypeCode>
+                    </gmd:dateType>
+                  </gmd:CI_Date>
+                </gmd:date>
+                <gmd:identifier>
+                  <gmd:MD_Identifier>
+                    <gmd:code>
+                      <gmx:Anchor xmlns:gmx="http://www.isotc211.org/2005/gmx" xlink:href="https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistSpatialScope-SpatialScope">geonetwork.thesaurus.external.theme.httpinspireeceuropaeumetadatacodelistSpatialScope-SpatialScope</gmx:Anchor>
+                    </gmd:code>
+                  </gmd:MD_Identifier>
+                </gmd:identifier>
+              </gmd:CI_Citation>
+            </gmd:thesaurusName>
+          </gmd:MD_Keywords>
+        </gmd:descriptiveKeywords>
+        <gmd:resourceConstraints>
+          <gmd:MD_Constraints>
+            <gmd:useLimitation>
+              <gco:CharacterString>Geen gebruiksbeperkingen</gco:CharacterString>
+            </gmd:useLimitation>
+          </gmd:MD_Constraints>
+        </gmd:resourceConstraints>
+        <gmd:resourceConstraints>
+          <gmd:MD_LegalConstraints>
+            <gmd:accessConstraints>
+              <gmd:MD_RestrictionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions">anders</gmd:MD_RestrictionCode>
+            </gmd:accessConstraints>
+            <gmd:otherConstraints>
+              <gmx:Anchor xmlns:gmx="http://www.isotc211.org/2005/gmx" xlink:href="http://creativecommons.org/publicdomain/zero/1.0/deed.nl">Geen beperkingen</gmx:Anchor>
+            </gmd:otherConstraints>
+            <gmd:otherConstraints>
+              <gmx:Anchor xmlns:gmx="http://www.isotc211.org/2005/gmx" xlink:href="http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply">Er zijn geen condities voor toegang en gebruik</gmx:Anchor>
+            </gmd:otherConstraints>
+          </gmd:MD_LegalConstraints>
+        </gmd:resourceConstraints>
+        <gmd:resourceConstraints xmlns:gmx="http://www.isotc211.org/2005/gmx">
+          <gmd:MD_LegalConstraints>
+            <gmd:accessConstraints>
+              <gmd:MD_RestrictionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions">anders</gmd:MD_RestrictionCode>
+            </gmd:accessConstraints>
+            <gmd:otherConstraints>
+              <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations">Geen beperkingen voor publieke toegang</gmx:Anchor>
+            </gmd:otherConstraints>
+          </gmd:MD_LegalConstraints>
+        </gmd:resourceConstraints>
+        <gmd:aggregationInfo>
+          <gmd:MD_AggregateInformation>
+            <gmd:aggregateDataSetName>
+              <gmd:CI_Citation>
+                <gmd:title />
+                <gmd:date />
+              </gmd:CI_Citation>
+            </gmd:aggregateDataSetName>
+            <gmd:associationType />
+          </gmd:MD_AggregateInformation>
+        </gmd:aggregationInfo>
+        <gmd:spatialRepresentationType>
+          <gmd:MD_SpatialRepresentationTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="vector">vector</gmd:MD_SpatialRepresentationTypeCode>
+        </gmd:spatialRepresentationType>
+        <gmd:spatialResolution>
+          <gmd:MD_Resolution>
+            <gmd:equivalentScale>
+              <gmd:MD_RepresentativeFraction>
+                <gmd:denominator>
+                  <gco:Integer>100000</gco:Integer>
+                </gmd:denominator>
+              </gmd:MD_RepresentativeFraction>
+            </gmd:equivalentScale>
+          </gmd:MD_Resolution>
+        </gmd:spatialResolution>
+        <gmd:language>
+          <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="dut">Nederlands; Vlaams</gmd:LanguageCode>
+        </gmd:language>
+        <gmd:characterSet>
+          <gmd:MD_CharacterSetCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</gmd:MD_CharacterSetCode>
+        </gmd:characterSet>
+        <gmd:topicCategory>
+          <gmd:MD_TopicCategoryCode>environment</gmd:MD_TopicCategoryCode>
+        </gmd:topicCategory>
+        <gmd:topicCategory>
+          <gmd:MD_TopicCategoryCode>boundaries</gmd:MD_TopicCategoryCode>
+        </gmd:topicCategory>
+        <gmd:topicCategory>
+          <gmd:MD_TopicCategoryCode>farming</gmd:MD_TopicCategoryCode>
+        </gmd:topicCategory>
+        <gmd:topicCategory>
+          <gmd:MD_TopicCategoryCode>inlandWaters</gmd:MD_TopicCategoryCode>
+        </gmd:topicCategory>
+        <gmd:topicCategory>
+          <gmd:MD_TopicCategoryCode>location</gmd:MD_TopicCategoryCode>
+        </gmd:topicCategory>
+        <gmd:extent>
+          <gmd:EX_Extent>
+            <gmd:description xmlns:gmx="http://www.isotc211.org/2005/gmx" gco:nilReason="missing">
+              <gco:CharacterString />
+            </gmd:description>
+            <gmd:geographicElement>
+              <gmd:EX_GeographicBoundingBox>
+                <gmd:westBoundLongitude>
+                  <gco:Decimal>3.606</gco:Decimal>
+                </gmd:westBoundLongitude>
+                <gmd:eastBoundLongitude>
+                  <gco:Decimal>6.766</gco:Decimal>
+                </gmd:eastBoundLongitude>
+                <gmd:southBoundLatitude>
+                  <gco:Decimal>51.132</gco:Decimal>
+                </gmd:southBoundLatitude>
+                <gmd:northBoundLatitude>
+                  <gco:Decimal>53.518</gco:Decimal>
+                </gmd:northBoundLatitude>
+              </gmd:EX_GeographicBoundingBox>
+            </gmd:geographicElement>
+            <gmd:geographicElement>
+              <gmd:EX_GeographicDescription>
+                <gmd:geographicIdentifier>
+                  <gmd:MD_Identifier>
+                    <gmd:code>
+                      <gco:CharacterString>Nederland</gco:CharacterString>
+                    </gmd:code>
+                  </gmd:MD_Identifier>
+                </gmd:geographicIdentifier>
+              </gmd:EX_GeographicDescription>
+            </gmd:geographicElement>
+            <gmd:temporalElement>
+              <gmd:EX_TemporalExtent>
+                <gmd:extent>
+                  <gml:TimePeriod gml:id="d6928287e524a1051934">
+                    <gml:beginPosition indeterminatePosition="after">2013-10-07</gml:beginPosition>
+                    <gml:endPosition indeterminatePosition="now" />
+                  </gml:TimePeriod>
+                </gmd:extent>
+              </gmd:EX_TemporalExtent>
+            </gmd:temporalElement>
+          </gmd:EX_Extent>
+        </gmd:extent>
+        <gmd:supplementalInformation>
+          <gco:CharacterString>http://www.nationaalpark.nl/</gco:CharacterString>
+        </gmd:supplementalInformation>
+      </gmd:MD_DataIdentification>
+    </gmd:identificationInfo>
+    <gmd:distributionInfo>
+      <gmd:MD_Distribution>
+        <gmd:distributionFormat xmlns:gmx="http://www.isotc211.org/2005/gmx">
+          <gmd:MD_Format>
+            <gmd:name>
+              <gmx:Anchor xlink:href="http://www.iana.org/assignments/media-types/application/gml+xml">gml+xml</gmx:Anchor>
+            </gmd:name>
+            <gmd:version>
+              <gco:CharacterString>GML, versie 3.2.1</gco:CharacterString>
+            </gmd:version>
+            <gmd:specification>
+              <gmx:Anchor xlink:href="xlink:href=https://inspire.ec.europa.eu/id/document/tg/ps">https://inspire.ec.europa.eu/id/document/tg/ps</gmx:Anchor>
+            </gmd:specification>
+          </gmd:MD_Format>
+        </gmd:distributionFormat>
+        <gmd:distributor>
+          <gmd:MD_Distributor>
+            <gmd:distributorContact>
+              <gmd:CI_ResponsibleParty>
+                <gmd:individualName gco:nilReason="missing">
+                  <gco:CharacterString />
+                </gmd:individualName>
+                <gmd:organisationName>
+                  <gmx:Anchor xmlns:gmx="http://www.isotc211.org/2005/gmx" xlink:href="https://data.overheid.nl/organisatie/PDOK">PDOK</gmx:Anchor>
+                </gmd:organisationName>
+                <gmd:positionName gco:nilReason="missing">
+                  <gco:CharacterString />
+                </gmd:positionName>
+                <gmd:contactInfo>
+                  <gmd:CI_Contact>
+                    <gmd:phone>
+                      <gmd:CI_Telephone>
+                        <gmd:voice gco:nilReason="missing">
+                          <gco:CharacterString />
+                        </gmd:voice>
+                        <gmd:facsimile gco:nilReason="missing">
+                          <gco:CharacterString />
+                        </gmd:facsimile>
+                      </gmd:CI_Telephone>
+                    </gmd:phone>
+                    <gmd:address>
+                      <gmd:CI_Address>
+                        <gmd:deliveryPoint gco:nilReason="missing">
+                          <gco:CharacterString />
+                        </gmd:deliveryPoint>
+                        <gmd:city gco:nilReason="missing">
+                          <gco:CharacterString />
+                        </gmd:city>
+                        <gmd:administrativeArea gco:nilReason="missing">
+                          <gco:CharacterString />
+                        </gmd:administrativeArea>
+                        <gmd:postalCode gco:nilReason="missing">
+                          <gco:CharacterString />
+                        </gmd:postalCode>
+                        <gmd:country gco:nilReason="missing">
+                          <gco:CharacterString />
+                        </gmd:country>
+                        <gmd:electronicMailAddress gco:nilReason="missing">
+                          <gco:CharacterString />
+                        </gmd:electronicMailAddress>
+                      </gmd:CI_Address>
+                    </gmd:address>
+                    <gmd:onlineResource>
+                      <gmd:CI_OnlineResource>
+                        <gmd:linkage>
+                          <gmd:URL />
+                        </gmd:linkage>
+                      </gmd:CI_OnlineResource>
+                    </gmd:onlineResource>
+                  </gmd:CI_Contact>
+                </gmd:contactInfo>
+                <gmd:role>
+                  <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="distributor">distributeur</gmd:CI_RoleCode>
+                </gmd:role>
+              </gmd:CI_ResponsibleParty>
+            </gmd:distributorContact>
+            <gmd:distributionOrderProcess>
+              <gmd:MD_StandardOrderProcess />
+            </gmd:distributionOrderProcess>
+          </gmd:MD_Distributor>
+        </gmd:distributor>
+        <gmd:transferOptions>
+          <gmd:MD_DigitalTransferOptions>
+            <gmd:onLine xmlns:gmx="http://www.isotc211.org/2005/gmx">
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>http://geodata.nationaalgeoregister.nl/inspire/ps-rvo-np/wms?request=getcapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gmx:Anchor xlink:href="http://www.opengeospatial.org/standards/wms">OGC:WMS</gmx:Anchor>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>nationale parken</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine xmlns:gmx="http://www.isotc211.org/2005/gmx">
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>http://geodata.nationaalgeoregister.nl/inspire/ps-rvo-np/wfs?request=getcapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gmx:Anchor xlink:href="http://www.opengeospatial.org/standards/wfs">OGC:WFS</gmx:Anchor>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>nationale parken</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+          </gmd:MD_DigitalTransferOptions>
+        </gmd:transferOptions>
+      </gmd:MD_Distribution>
+    </gmd:distributionInfo>
+    <gmd:dataQualityInfo>
+      <gmd:DQ_DataQuality>
+        <gmd:scope>
+          <gmd:DQ_Scope>
+            <gmd:level>
+              <gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+            </gmd:level>
+            <gmd:levelDescription xmlns:gmx="http://www.isotc211.org/2005/gmx">
+              <gmd:MD_ScopeDescription>
+                <gmd:features xlink:title="Deze dataset is vastgesteld door het ministerie en gepubliceerd in de Staatscourant. Eventuele updates worden ook hierin gepubliceerd." />
+              </gmd:MD_ScopeDescription>
+            </gmd:levelDescription>
+          </gmd:DQ_Scope>
+        </gmd:scope>
+        <gmd:report>
+          <gmd:DQ_DomainConsistency>
+            <gmd:result>
+              <gmd:DQ_ConformanceResult>
+                <gmd:specification>
+                  <gmd:CI_Citation>
+                    <gmd:title>
+                      <gco:CharacterString>VERORDENING (EU) Nr. 1089/2010 VAN DE COMMISSIE van 23 november 2010 ter uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad betreffende de interoperabiliteit van verzamelingen ruimtelijke gegevens en van diensten met betrekking tot ruimtelijke gegevens</gco:CharacterString>
+                    </gmd:title>
+                    <gmd:date>
+                      <gmd:CI_Date>
+                        <gmd:date>
+                          <gco:Date>2010-12-08</gco:Date>
+                        </gmd:date>
+                        <gmd:dateType>
+                          <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publicatie</gmd:CI_DateTypeCode>
+                        </gmd:dateType>
+                      </gmd:CI_Date>
+                    </gmd:date>
+                  </gmd:CI_Citation>
+                </gmd:specification>
+                <gmd:explanation>
+                  <gco:CharacterString>Structuur en inhoud dataset wijken af van de specificaties</gco:CharacterString>
+                </gmd:explanation>
+                <gmd:pass>
+                  <gco:Boolean>false</gco:Boolean>
+                </gmd:pass>
+              </gmd:DQ_ConformanceResult>
+            </gmd:result>
+          </gmd:DQ_DomainConsistency>
+        </gmd:report>
+        <gmd:lineage>
+          <gmd:LI_Lineage>
+            <gmd:statement>
+              <gco:CharacterString>Het bestand is grotendeels samengesteld uit bestanden van derden:  Provincies, Staatsbosbeheer, Natuurmonumenten en Stichting De Hoge Veluwe. De bestanden zijn via de Secretarissen van de Nationale Parken verzameld. De verworven bestanden zijn niet aangepast aan de hand van BIP's Beheers- en Inrichtingsplannen, noch aan de hand van de digitale topografische kaart 1:10.000. Voor enkele Parken komen de grenzen uit een bestand uit 2002. De grenzen uit dat bestand zijn waar nodig aangepast met behulp van de kaarten uit de Beheers- en Inrichtingsplannen (BIP's) en/of aanwijzingen van de Secretaris NP. Bij het aanpassen van de grenzen is aangesloten bij de digitale topografische ondergrond 1:10.000 (TOP10vector) van de Topografische Dienst/Kadaster. Het bestand "Nationale Parken 2002" is gemaakt door DLG, eveneens in opdracht van Het Ministerie van LNV. Het bestand heeft TOP10vector als geometrische referentie.</gco:CharacterString>
+            </gmd:statement>
+            <gmd:processStep>
+              <gmd:LI_ProcessStep>
+                <gmd:description />
+                <gmd:processor>
+                  <gmd:CI_ResponsibleParty>
+                    <gmd:organisationName />
+                    <gmd:contactInfo>
+                      <gmd:CI_Contact>
+                        <gmd:address>
+                          <gmd:CI_Address>
+                            <gmd:electronicMailAddress gco:nilReason="missing">
+                              <gco:CharacterString />
+                            </gmd:electronicMailAddress>
+                          </gmd:CI_Address>
+                        </gmd:address>
+                      </gmd:CI_Contact>
+                    </gmd:contactInfo>
+                    <gmd:role />
+                  </gmd:CI_ResponsibleParty>
+                </gmd:processor>
+              </gmd:LI_ProcessStep>
+            </gmd:processStep>
+            <gmd:source>
+              <gmd:LI_Source>
+                <gmd:sourceStep>
+                  <gmd:LI_ProcessStep>
+                    <gmd:description />
+                    <gmd:processor>
+                      <gmd:CI_ResponsibleParty>
+                        <gmd:organisationName />
+                        <gmd:contactInfo>
+                          <gmd:CI_Contact>
+                            <gmd:address>
+                              <gmd:CI_Address>
+                                <gmd:electronicMailAddress gco:nilReason="missing">
+                                  <gco:CharacterString />
+                                </gmd:electronicMailAddress>
+                              </gmd:CI_Address>
+                            </gmd:address>
+                          </gmd:CI_Contact>
+                        </gmd:contactInfo>
+                        <gmd:role />
+                      </gmd:CI_ResponsibleParty>
+                    </gmd:processor>
+                  </gmd:LI_ProcessStep>
+                </gmd:sourceStep>
+              </gmd:LI_Source>
+            </gmd:source>
+          </gmd:LI_Lineage>
+        </gmd:lineage>
+      </gmd:DQ_DataQuality>
+    </gmd:dataQualityInfo>
+  </gmd:MD_Metadata>
+</csw:GetRecordByIdResponse>
+
