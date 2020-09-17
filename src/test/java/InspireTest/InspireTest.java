@@ -22,7 +22,7 @@ class TestAll {
 
     @Test
     void testParallel() {
-        final Results results = Runner.parallel(getClass(), 1, "target/surefire-reports");
+        final Results results = Runner.parallel(getClass(), 10, "target/surefire-reports");
         generateReport(results.getReportDir());
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
