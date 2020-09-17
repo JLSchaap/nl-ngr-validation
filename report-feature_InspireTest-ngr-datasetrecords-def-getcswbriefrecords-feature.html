@@ -75,7 +75,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>NLTEST</td>
-            <td>17 Sep 2020, 16:54</td>
+            <td>17 Sep 2020, 16:58</td>
     </tr>
   </tbody>
 </table>
@@ -139,7 +139,7 @@ $(document).ready(function() {
           <td >0</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="17107679041">17.107</td>
+          <td class="duration" data-value="17573905340">17.573</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -190,7 +190,7 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">17.107</span>
+  <span class="lead-duration duration">17.573</span>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -231,7 +231,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def knownlinks = karate.jsonPath(karate.read('classpath:InspireTest/ngr/datasetrecords/def/knownlink.csv'), '[*].knownlink')</span>
   
-  <span class="lead-duration duration">0.024</span>
+  <span class="lead-duration duration">0.042</span>
 
   </div>
 
@@ -246,7 +246,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>16:49:07.886 karate.env system property was:</pre>
+        <pre>16:58:09.613 karate.env system property was:</pre>
       </div>
     </div>
   </div>
@@ -283,7 +283,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">path 'geonetwork/srv/dut/inspire'</span>
   
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.006</span>
 
   </div>
 
@@ -325,7 +325,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">param version = '2.0.2'</span>
   
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.005</span>
 
   </div>
 
@@ -346,7 +346,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">param request = 'GetRecords'</span>
   
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.000</span>
 
   </div>
 
@@ -388,7 +388,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">param typeNames = 'csw:Record'</span>
   
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.000</span>
 
   </div>
 
@@ -409,7 +409,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">param elementsetname = &quot;brief&quot;</span>
   
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.006</span>
 
   </div>
 
@@ -430,7 +430,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">param resultType = 'results'</span>
   
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.001</span>
 
   </div>
 
@@ -451,7 +451,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">param startposition = 1</span>
   
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.001</span>
 
   </div>
 
@@ -472,7 +472,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">param maxRecords = 80</span>
   
-  <span class="lead-duration duration">0.009</span>
+  <span class="lead-duration duration">0.005</span>
 
   </div>
 
@@ -493,7 +493,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
   
-  <span class="lead-duration duration">15.842</span>
+  <span class="lead-duration duration">15.900</span>
 
   </div>
 
@@ -535,7 +535,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def briefarray = get response /GetRecordsResponse/SearchResults/BriefRecord[type = 'dataset']/identifier</span>
   
-  <span class="lead-duration duration">0.043</span>
+  <span class="lead-duration duration">0.057</span>
 
   </div>
 
@@ -556,7 +556,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">eval karate.embed( briefarray,'text/plain')</span>
   
-  <span class="lead-duration duration">0.011</span>
+  <span class="lead-duration duration">0.009</span>
 
   </div>
 
@@ -590,7 +590,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def list =  karate.mapWithKey(briefarray ,'datasetIdentifierCode')</span>
   
-  <span class="lead-duration duration">0.008</span>
+  <span class="lead-duration duration">0.006</span>
 
   </div>
 
@@ -611,7 +611,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def json = karate.map(list, function(x, i){ return {} })</span>
   
-  <span class="lead-duration duration">0.013</span>
+  <span class="lead-duration duration">0.012</span>
 
   </div>
 
@@ -632,7 +632,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">url 'https://inspire.ec.europa.eu/metadata-codelist/metadata-codelist.nl.json'</span>
   
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.003</span>
 
   </div>
 
@@ -653,7 +653,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
   
-  <span class="lead-duration duration">1.099</span>
+  <span class="lead-duration duration">1.481</span>
 
   </div>
 
@@ -710,7 +710,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-5" class="collapse collapsable-details">
-        <pre>16:49:25.234 [print] {
+        <pre>16:58:27.396 [print] {
   &quot;register&quot;: {
     &quot;submitter&quot;: &quot;Nominated submitting organisations for the central INSPIRE registers and INSPIRE register federation&quot;,
     &quot;license&quot;: {
@@ -1282,7 +1282,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def inspirecodelist = get response.register.containeditems[*][&quot;metadata-codelist&quot;].id</span>
   
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.000</span>
 
   </div>
 
@@ -1303,7 +1303,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">print inspirecodelist</span>
   
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.000</span>
 
   </div>
 
@@ -1318,7 +1318,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-6" class="collapse collapsable-details">
-        <pre>16:49:25.241 [print] [
+        <pre>16:58:27.398 [print] [
   &quot;http://inspire.ec.europa.eu/metadata-codelist/ResourceType&quot;,
   &quot;http://inspire.ec.europa.eu/metadata-codelist/TopicCategory&quot;,
   &quot;http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType&quot;,
