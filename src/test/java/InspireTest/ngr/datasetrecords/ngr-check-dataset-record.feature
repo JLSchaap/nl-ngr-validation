@@ -51,8 +51,8 @@ Feature:  Check dataset record datasetIdentifierCode
       return array1.filter(function (x) { return array2.indexOf(x) < 0; });
       }
       """
-    * print callonesresult.knownlinks
-    * print xlinks
+    #* print callonesresult.knownlinks
+    #* print xlinks
 
     # * def alphas1 = ["http://inspire.ec.europa.eu/metadata-codelist/ResourceType", "http://inspire.ec.europa.eu/metadata-codelist/TopicCategory"];
     # * def alphas2 = ["http://inspire.ec.europa.eu/metadata-codelist/ResourceType"];
@@ -65,7 +65,7 @@ Feature:  Check dataset record datasetIdentifierCode
     * def id = "<datasetIdentifierCode>"
 
 
-    * call read('def/checkxlinkurl.template.feature') karate.mapWithKey(xlinks ,'link')
+    * call read('def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link')
 
     # * karate.write("<datasetIdentifierCode>;"+ title, filename)
     Examples:
