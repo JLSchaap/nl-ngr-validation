@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csw:GetRecordByIdResponse xmlns:csw="http://www.opengis.net/cat/csw/2.0.2">
+  <gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.isotc211.org/2005/gmd http://schemas.opengis.net/iso/19139/20060504/gmd/gmd.xsd http://www.isotc211.org/2005/gmx http://schemas.opengis.net/iso/19139/20060504/gmx/gmx.xsd">
+    <gmd:fileIdentifier>
+      <gco:CharacterString>71c2b7d2-a1a8-4836-b8d4-7247d331b04d</gco:CharacterString>
+    </gmd:fileIdentifier>
+    <gmd:language>
+      <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="dut">Nederlands; Vlaams</gmd:LanguageCode>
+    </gmd:language>
+    <gmd:characterSet>
+      <gmd:MD_CharacterSetCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</gmd:MD_CharacterSetCode>
+    </gmd:characterSet>
+    <gmd:hierarchyLevel>
+      <gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+    </gmd:hierarchyLevel>
+    <gmd:contact>
+      <gmd:CI_ResponsibleParty>
+        <gmd:individualName>
+          <gco:CharacterString>infoservice</gco:CharacterString>
+        </gmd:individualName>
+        <gmd:organisationName>
+          <gco:CharacterString>Centraal Bureau voor de Statistiek</gco:CharacterString>
+        </gmd:organisationName>
+        <gmd:positionName>
+          <gco:CharacterString>informeren</gco:CharacterString>
+        </gmd:positionName>
+        <gmd:contactInfo>
+          <gmd:CI_Contact>
+            <gmd:phone>
+              <gmd:CI_Telephone>
+                <gmd:voice>
+                  <gco:CharacterString>0031 (0)88 570 70 70</gco:CharacterString>
+                </gmd:voice>
+                <gmd:facsimile gco:nilReason="missing">
+                  <gco:CharacterString />
+                </gmd:facsimile>
+              </gmd:CI_Telephone>
+            </gmd:phone>
+            <gmd:address>
+              <gmd:CI_Address>
+                <gmd:deliveryPoint>
+                  <gco:CharacterString>Henri Faasdreef 312, Postbus 24500</gco:CharacterString>
+                </gmd:deliveryPoint>
+                <gmd:city>
+                  <gco:CharacterString>Den Haag</gco:CharacterString>
+                </gmd:city>
+                <gmd:administrativeArea>
+                  <gco:CharacterString>Zuid Holland</gco:CharacterString>
+                </gmd:administrativeArea>
+                <gmd:postalCode>
+                  <gco:CharacterString>2490HA</gco:CharacterString>
+                </gmd:postalCode>
+                <gmd:country>
+                  <gco:CharacterString>Nederland</gco:CharacterString>
+                </gmd:country>
+                <gmd:electronicMailAddress>
+                  <gco:CharacterString>infoservice@cbs.nl</gco:CharacterString>
+                </gmd:electronicMailAddress>
+              </gmd:CI_Address>
+            </gmd:address>
+            <gmd:onlineResource>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>www.cbs.nl</gmd:URL>
+                </gmd:linkage>
+              </gmd:CI_OnlineResource>
+            </gmd:onlineResource>
+          </gmd:CI_Contact>
+        </gmd:contactInfo>
+        <gmd:role>
+          <gmd:CI_RoleCode codeListValue="pointOfContact" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode">contactpunt</gmd:CI_RoleCode>
+        </gmd:role>
+      </gmd:CI_ResponsibleParty>
+    </gmd:contact>
+    <gmd:dateStamp>
+      <gco:Date>2019-12-04</gco:Date>
+    </gmd:dateStamp>
+    <gmd:metadataStandardName>
+      <gco:CharacterString>ISO 19115</gco:CharacterString>
+    </gmd:metadataStandardName>
+    <gmd:metadataStandardVersion>
+      <gco:CharacterString>Nederlandse metadata profiel op ISO 19115 voor geografie 2.0</gco:CharacterString>
+    </gmd:metadataStandardVersion>
+    <gmd:referenceSystemInfo>
+      <gmd:MD_ReferenceSystem>
+        <gmd:referenceSystemIdentifier>
+          <gmd:RS_Identifier>
+            <gmd:code>
+              <gmx:Anchor xlink:href="http://www.opengis.net/def/crs/EPSG/0/28992">RD</gmx:Anchor>
+            </gmd:code>
+            <gmd:codeSpace>
+              <gco:CharacterString>EPSG</gco:CharacterString>
+            </gmd:codeSpace>
+          </gmd:RS_Identifier>
+        </gmd:referenceSystemIdentifier>
+      </gmd:MD_ReferenceSystem>
+    </gmd:referenceSystemInfo>
+    <gmd:identificationInfo>
+      <gmd:MD_DataIdentification>
+        <gmd:citation>
+          <gmd:CI_Citation>
+            <gmd:title>
+              <gco:CharacterString>CBS Provincies 2012</gco:CharacterString>
+            </gmd:title>
+            <gmd:date>
+              <gmd:CI_Date>
+                <gmd:date>
+                  <gco:Date>2013-07-01</gco:Date>
+                </gmd:date>
+                <gmd:dateType>
+                  <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publicatie</gmd:CI_DateTypeCode>
+                </gmd:dateType>
+              </gmd:CI_Date>
+            </gmd:date>
+            <gmd:edition>
+              <gco:CharacterString>versie 1</gco:CharacterString>
+            </gmd:edition>
+            <gmd:identifier>
+              <gmd:MD_Identifier>
+                <gmd:code>
+                  <gmx:Anchor xlink:href="http://geodata.nationaalgeoregister.nl/cbsprovincies/extract/cbsprovincies.zip">71c2b7d2-a1a8-4836-2012-7247d3312012</gmx:Anchor>
+                </gmd:code>
+              </gmd:MD_Identifier>
+            </gmd:identifier>
+          </gmd:CI_Citation>
+        </gmd:citation>
+        <gmd:abstract>
+          <gco:CharacterString>Het Bestand CBS Provincies 2012 bevat de geometrie van alle Provincies in Nederland met als attribuut een aantal statistische cijfers op het gebied van demografie en gezondheid. De begrenzingen zijn afgeleid van de gemeentegrens zoals afkomstig uit de BRK van het Kadaster.
+
+Deze publicatie is speciaal gemaakt om te voldoen aan de INSPIRE richtlijnen voor de thema's Statistische eenheden, Spreiding van de bevolking - demografie en Menselijke gezondheid en veiligheid.</gco:CharacterString>
+        </gmd:abstract>
+        <gmd:purpose>
+          <gco:CharacterString>Het bestand wordt vooral gebruikt voor de publicatie van statistische gegevens.</gco:CharacterString>
+        </gmd:purpose>
+        <gmd:status>
+          <gmd:MD_ProgressCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ProgressCode" codeListValue="completed">compleet</gmd:MD_ProgressCode>
+        </gmd:status>
+        <gmd:pointOfContact>
+          <gmd:CI_ResponsibleParty>
+            <gmd:individualName>
+              <gco:CharacterString>infoservice</gco:CharacterString>
+            </gmd:individualName>
+            <gmd:organisationName>
+              <gco:CharacterString>Centraal Bureau voor de Statistiek</gco:CharacterString>
+            </gmd:organisationName>
+            <gmd:positionName gco:nilReason="missing">
+              <gco:CharacterString />
+            </gmd:positionName>
+            <gmd:contactInfo>
+              <gmd:CI_Contact>
+                <gmd:phone>
+                  <gmd:CI_Telephone>
+                    <gmd:voice>
+                      <gco:CharacterString>0031 (0)88 570 70 70</gco:CharacterString>
+                    </gmd:voice>
+                    <gmd:facsimile gco:nilReason="missing">
+                      <gco:CharacterString />
+                    </gmd:facsimile>
+                  </gmd:CI_Telephone>
+                </gmd:phone>
+                <gmd:address>
+                  <gmd:CI_Address>
+                    <gmd:deliveryPoint>
+                      <gco:CharacterString>Henri Faasdreef 312, Postbus 24500</gco:CharacterString>
+                    </gmd:deliveryPoint>
+                    <gmd:city>
+                      <gco:CharacterString>Den Haag</gco:CharacterString>
+                    </gmd:city>
+                    <gmd:administrativeArea>
+                      <gco:CharacterString>Zuid Holland</gco:CharacterString>
+                    </gmd:administrativeArea>
+                    <gmd:postalCode>
+                      <gco:CharacterString>2490HA</gco:CharacterString>
+                    </gmd:postalCode>
+                    <gmd:country>
+                      <gco:CharacterString>Nederland</gco:CharacterString>
+                    </gmd:country>
+                    <gmd:electronicMailAddress>
+                      <gco:CharacterString>infoservice@cbs.nl</gco:CharacterString>
+                    </gmd:electronicMailAddress>
+                  </gmd:CI_Address>
+                </gmd:address>
+                <gmd:onlineResource>
+                  <gmd:CI_OnlineResource>
+                    <gmd:linkage>
+                      <gmd:URL>www.cbs.nl</gmd:URL>
+                    </gmd:linkage>
+                  </gmd:CI_OnlineResource>
+                </gmd:onlineResource>
+              </gmd:CI_Contact>
+            </gmd:contactInfo>
+            <gmd:role>
+              <gmd:CI_RoleCode codeListValue="pointOfContact" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode">contactpunt</gmd:CI_RoleCode>
+            </gmd:role>
+          </gmd:CI_ResponsibleParty>
+        </gmd:pointOfContact>
+        <gmd:resourceMaintenance>
+          <gmd:MD_MaintenanceInformation>
+            <gmd:maintenanceAndUpdateFrequency>
+              <gmd:MD_MaintenanceFrequencyCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="annually">jaarlijks</gmd:MD_MaintenanceFrequencyCode>
+            </gmd:maintenanceAndUpdateFrequency>
+            <gmd:dateOfNextUpdate>
+              <gco:Date>2014-01-21</gco:Date>
+            </gmd:dateOfNextUpdate>
+          </gmd:MD_MaintenanceInformation>
+        </gmd:resourceMaintenance>
+        <gmd:graphicOverview>
+          <gmd:MD_BrowseGraphic>
+            <gmd:fileName>
+              <gco:CharacterString>http://nationaalgeoregister.nl:80/geonetwork/srv/eng/resources.get?uuid=71c2b7d2-a1a8-4836-b8d4-7247d331b04d&amp;fname=PV2012_s.png</gco:CharacterString>
+            </gmd:fileName>
+            <gmd:fileDescription>
+              <gco:CharacterString>thumbnail</gco:CharacterString>
+            </gmd:fileDescription>
+            <gmd:fileType>
+              <gco:CharacterString>png</gco:CharacterString>
+            </gmd:fileType>
+          </gmd:MD_BrowseGraphic>
+        </gmd:graphicOverview>
+        <gmd:graphicOverview>
+          <gmd:MD_BrowseGraphic>
+            <gmd:fileName>
+              <gco:CharacterString>http://nationaalgeoregister.nl:80/geonetwork/srv/eng/resources.get?uuid=71c2b7d2-a1a8-4836-b8d4-7247d331b04d&amp;fname=PV2012.png</gco:CharacterString>
+            </gmd:fileName>
+            <gmd:fileDescription>
+              <gco:CharacterString>large_thumbnail</gco:CharacterString>
+            </gmd:fileDescription>
+            <gmd:fileType>
+              <gco:CharacterString>png</gco:CharacterString>
+            </gmd:fileType>
+          </gmd:MD_BrowseGraphic>
+        </gmd:graphicOverview>
+        <gmd:descriptiveKeywords>
+          <gmd:MD_Keywords>
+            <gmd:keyword>
+              <gco:CharacterString>CBS</gco:CharacterString>
+            </gmd:keyword>
+            <gmd:keyword>
+              <gco:CharacterString>statistiek</gco:CharacterString>
+            </gmd:keyword>
+            <gmd:keyword>
+              <gco:CharacterString>provincies</gco:CharacterString>
+            </gmd:keyword>
+            <gmd:keyword>
+              <gco:CharacterString>gezondheid</gco:CharacterString>
+            </gmd:keyword>
+            <gmd:keyword>
+              <gco:CharacterString>ziekenhuisopnamen</gco:CharacterString>
+            </gmd:keyword>
+            <gmd:keyword>
+              <gco:CharacterString>doodsoorzaken</gco:CharacterString>
+            </gmd:keyword>
+            <gmd:keyword>
+              <gco:CharacterString>bevolking</gco:CharacterString>
+            </gmd:keyword>
+            <gmd:keyword>
+              <gco:CharacterString>inwoners</gco:CharacterString>
+            </gmd:keyword>
+            <gmd:keyword>
+              <gco:CharacterString>leeftijd</gco:CharacterString>
+            </gmd:keyword>
+            <gmd:keyword>
+              <gco:CharacterString>bevolkingsdichtheid</gco:CharacterString>
+            </gmd:keyword>
+            <gmd:thesaurusName>
+              <gmd:CI_Citation>
+                <gmd:title>
+                  <gco:CharacterString>http://www.cbs.nl/nl-NL/menu/methoden/begrippen/default.htm</gco:CharacterString>
+                </gmd:title>
+                <gmd:date>
+                  <gmd:CI_Date>
+                    <gmd:date>
+                      <gco:Date>2010-03-17</gco:Date>
+                    </gmd:date>
+                    <gmd:dateType>
+                      <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publicatie</gmd:CI_DateTypeCode>
+                    </gmd:dateType>
+                  </gmd:CI_Date>
+                </gmd:date>
+              </gmd:CI_Citation>
+            </gmd:thesaurusName>
+          </gmd:MD_Keywords>
+        </gmd:descriptiveKeywords>
+        <gmd:descriptiveKeywords>
+          <gmd:MD_Keywords>
+            <gmd:keyword>
+              <gmx:Anchor xlink:href="http://www.eionet.europa.eu/gemet/nl/inspire-theme/hh">Menselijke gezondheid en veiligheid</gmx:Anchor>
+            </gmd:keyword>
+            <gmd:keyword>
+              <gmx:Anchor xlink:href="http://www.eionet.europa.eu/gemet/nl/inspire-theme/su">Statistische eenheden</gmx:Anchor>
+            </gmd:keyword>
+            <gmd:keyword>
+              <gmx:Anchor xlink:href="http://www.eionet.europa.eu/gemet/nl/inspire-theme/pd">Spreiding van de bevolking — demografie</gmx:Anchor>
+            </gmd:keyword>
+            <gmd:type>
+              <gmd:MD_KeywordTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme">theme</gmd:MD_KeywordTypeCode>
+            </gmd:type>
+            <gmd:thesaurusName>
+              <gmd:CI_Citation>
+                <gmd:title>
+                  <gmx:Anchor xlink:href="http://www.eionet.europa.eu/gemet/inspire_themes">GEMET - INSPIRE themes, version 1.0</gmx:Anchor>
+                </gmd:title>
+                <gmd:date>
+                  <gmd:CI_Date>
+                    <gmd:date>
+                      <gco:Date>2008-06-01</gco:Date>
+                    </gmd:date>
+                    <gmd:dateType>
+                      <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publicatie</gmd:CI_DateTypeCode>
+                    </gmd:dateType>
+                  </gmd:CI_Date>
+                </gmd:date>
+                <gmd:identifier>
+                  <gmd:MD_Identifier>
+                    <gmd:code>
+                      <gmx:Anchor xlink:href="https://www.nationaalgeoregister.nl:443/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeutheme-theme">geonetwork.thesaurus.external.theme.httpinspireeceuropaeutheme-theme</gmx:Anchor>
+                    </gmd:code>
+                  </gmd:MD_Identifier>
+                </gmd:identifier>
+              </gmd:CI_Citation>
+            </gmd:thesaurusName>
+          </gmd:MD_Keywords>
+        </gmd:descriptiveKeywords>
+        <gmd:descriptiveKeywords>
+          <gmd:MD_Keywords>
+            <gmd:keyword>
+              <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national">Nationaal</gmx:Anchor>
+            </gmd:keyword>
+            <gmd:type>
+              <gmd:MD_KeywordTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme">theme</gmd:MD_KeywordTypeCode>
+            </gmd:type>
+            <gmd:thesaurusName>
+              <gmd:CI_Citation>
+                <gmd:title>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope">Ruimtelijke dekking</gmx:Anchor>
+                </gmd:title>
+                <gmd:date>
+                  <gmd:CI_Date>
+                    <gmd:date>
+                      <gco:Date>2018-04-04</gco:Date>
+                    </gmd:date>
+                    <gmd:dateType>
+                      <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publicatie</gmd:CI_DateTypeCode>
+                    </gmd:dateType>
+                  </gmd:CI_Date>
+                </gmd:date>
+                <gmd:identifier>
+                  <gmd:MD_Identifier>
+                    <gmd:code>
+                      <gmx:Anchor xlink:href="https://www.nationaalgeoregister.nl:443/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistSpatialScope-SpatialScope">geonetwork.thesaurus.external.theme.httpinspireeceuropaeumetadatacodelistSpatialScope-SpatialScope</gmx:Anchor>
+                    </gmd:code>
+                  </gmd:MD_Identifier>
+                </gmd:identifier>
+              </gmd:CI_Citation>
+            </gmd:thesaurusName>
+          </gmd:MD_Keywords>
+        </gmd:descriptiveKeywords>
+        <gmd:resourceSpecificUsage>
+          <gmd:MD_Usage>
+            <gmd:specificUsage>
+              <gco:CharacterString>statistiek</gco:CharacterString>
+            </gmd:specificUsage>
+            <gmd:userContactInfo />
+          </gmd:MD_Usage>
+        </gmd:resourceSpecificUsage>
+        <gmd:resourceConstraints>
+          <gmd:MD_Constraints>
+            <gmd:useLimitation>
+              <gco:CharacterString>Geen beperkingen</gco:CharacterString>
+            </gmd:useLimitation>
+          </gmd:MD_Constraints>
+        </gmd:resourceConstraints>
+        <gmd:resourceConstraints>
+          <gmd:MD_LegalConstraints>
+            <gmd:accessConstraints>
+              <gmd:MD_RestrictionCode codeListValue="otherRestrictions" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_RestrictionCode">anders</gmd:MD_RestrictionCode>
+            </gmd:accessConstraints>
+            <gmd:useConstraints>
+              <gmd:MD_RestrictionCode codeListValue="otherRestrictions" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_RestrictionCode">anders</gmd:MD_RestrictionCode>
+            </gmd:useConstraints>
+            <gmd:otherConstraints>
+              <gmx:Anchor xlink:href="http://creativecommons.org/licenses/by/4.0/deed.nl">Naamsvermelding verplicht, CBS, Kadaster</gmx:Anchor>
+            </gmd:otherConstraints>
+            <gmd:otherConstraints>
+              <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply">Er zijn geen condities voor toegang en gebruik</gmx:Anchor>
+            </gmd:otherConstraints>
+          </gmd:MD_LegalConstraints>
+        </gmd:resourceConstraints>
+        <gmd:resourceConstraints>
+          <gmd:MD_LegalConstraints>
+            <gmd:accessConstraints>
+              <gmd:MD_RestrictionCode codeListValue="otherRestrictions" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_RestrictionCode">anders</gmd:MD_RestrictionCode>
+            </gmd:accessConstraints>
+            <gmd:otherConstraints>
+              <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations">Geen beperkingen voor publieke toegang</gmx:Anchor>
+            </gmd:otherConstraints>
+          </gmd:MD_LegalConstraints>
+        </gmd:resourceConstraints>
+        <gmd:resourceConstraints>
+          <gmd:MD_SecurityConstraints>
+            <gmd:classification>
+              <gmd:MD_ClassificationCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ClassificationCode" codeListValue="unclassified">vrij toegankelijk</gmd:MD_ClassificationCode>
+            </gmd:classification>
+          </gmd:MD_SecurityConstraints>
+        </gmd:resourceConstraints>
+        <gmd:aggregationInfo>
+          <gmd:MD_AggregateInformation>
+            <gmd:aggregateDataSetName>
+              <gmd:CI_Citation>
+                <gmd:title />
+                <gmd:date />
+              </gmd:CI_Citation>
+            </gmd:aggregateDataSetName>
+            <gmd:associationType />
+          </gmd:MD_AggregateInformation>
+        </gmd:aggregationInfo>
+        <gmd:spatialRepresentationType>
+          <gmd:MD_SpatialRepresentationTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="vector">vector</gmd:MD_SpatialRepresentationTypeCode>
+        </gmd:spatialRepresentationType>
+        <gmd:spatialResolution>
+          <gmd:MD_Resolution>
+            <gmd:equivalentScale>
+              <gmd:MD_RepresentativeFraction>
+                <gmd:denominator>
+                  <gco:Integer>10000</gco:Integer>
+                </gmd:denominator>
+              </gmd:MD_RepresentativeFraction>
+            </gmd:equivalentScale>
+          </gmd:MD_Resolution>
+        </gmd:spatialResolution>
+        <gmd:spatialResolution>
+          <gmd:MD_Resolution>
+            <gmd:equivalentScale>
+              <gmd:MD_RepresentativeFraction>
+                <gmd:denominator>
+                  <gco:Integer>1000000</gco:Integer>
+                </gmd:denominator>
+              </gmd:MD_RepresentativeFraction>
+            </gmd:equivalentScale>
+          </gmd:MD_Resolution>
+        </gmd:spatialResolution>
+        <gmd:language>
+          <gco:CharacterString>dut</gco:CharacterString>
+        </gmd:language>
+        <gmd:characterSet>
+          <gmd:MD_CharacterSetCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</gmd:MD_CharacterSetCode>
+        </gmd:characterSet>
+        <gmd:topicCategory>
+          <gmd:MD_TopicCategoryCode>boundaries</gmd:MD_TopicCategoryCode>
+        </gmd:topicCategory>
+        <gmd:topicCategory>
+          <gmd:MD_TopicCategoryCode>society</gmd:MD_TopicCategoryCode>
+        </gmd:topicCategory>
+        <gmd:extent>
+          <gmd:EX_Extent>
+            <gmd:geographicElement>
+              <gmd:EX_GeographicBoundingBox>
+                <gmd:westBoundLongitude>
+                  <gco:Decimal>3.254</gco:Decimal>
+                </gmd:westBoundLongitude>
+                <gmd:eastBoundLongitude>
+                  <gco:Decimal>7.244</gco:Decimal>
+                </gmd:eastBoundLongitude>
+                <gmd:southBoundLatitude>
+                  <gco:Decimal>50.735</gco:Decimal>
+                </gmd:southBoundLatitude>
+                <gmd:northBoundLatitude>
+                  <gco:Decimal>53.561</gco:Decimal>
+                </gmd:northBoundLatitude>
+              </gmd:EX_GeographicBoundingBox>
+            </gmd:geographicElement>
+            <gmd:temporalElement>
+              <gmd:EX_TemporalExtent>
+                <gmd:extent>
+                  <gml:TimePeriod gml:id="d674121e583a1051934">
+                    <gml:beginPosition>2012-01-01</gml:beginPosition>
+                    <gml:endPosition>2013-01-01</gml:endPosition>
+                  </gml:TimePeriod>
+                </gmd:extent>
+              </gmd:EX_TemporalExtent>
+            </gmd:temporalElement>
+            <gmd:verticalElement>
+              <gmd:EX_VerticalExtent>
+                <gmd:minimumValue />
+                <gmd:maximumValue />
+                <gmd:verticalCRS>
+                  <gml:VerticalCRS gml:id="d1720e555a1049886">
+                    <gml:identifier codeSpace="" />
+                    <gml:scope />
+                    <gml:verticalCS />
+                    <gml:verticalDatum />
+                  </gml:VerticalCRS>
+                </gmd:verticalCRS>
+              </gmd:EX_VerticalExtent>
+            </gmd:verticalElement>
+          </gmd:EX_Extent>
+        </gmd:extent>
+      </gmd:MD_DataIdentification>
+    </gmd:identificationInfo>
+    <gmd:distributionInfo>
+      <gmd:MD_Distribution>
+        <gmd:distributionFormat>
+          <gmd:MD_Format>
+            <gmd:name>
+              <gmx:Anchor xlink:href="https://www.iana.org/assignments/media-types/application/gml+xml">gml+xml</gmx:Anchor>
+            </gmd:name>
+            <gmd:version>
+              <gco:CharacterString>https://www.iana.org/assignments/media-types/application/gml+xml</gco:CharacterString>
+            </gmd:version>
+            <gmd:specification>
+              <gco:CharacterString>https://www.iana.org/assignments/media-types/application/gml+xml</gco:CharacterString>
+            </gmd:specification>
+          </gmd:MD_Format>
+        </gmd:distributionFormat>
+        <gmd:distributor>
+          <gmd:MD_Distributor>
+            <gmd:distributorContact>
+              <gmd:CI_ResponsibleParty>
+                <gmd:individualName>
+                  <gco:CharacterString>infoservice</gco:CharacterString>
+                </gmd:individualName>
+                <gmd:organisationName>
+                  <gco:CharacterString>Centraal Bureau voor de Statistiek</gco:CharacterString>
+                </gmd:organisationName>
+                <gmd:positionName gco:nilReason="missing">
+                  <gco:CharacterString />
+                </gmd:positionName>
+                <gmd:contactInfo>
+                  <gmd:CI_Contact>
+                    <gmd:phone>
+                      <gmd:CI_Telephone>
+                        <gmd:voice>
+                          <gco:CharacterString>0031 (0)88 570 70 70</gco:CharacterString>
+                        </gmd:voice>
+                        <gmd:facsimile gco:nilReason="missing">
+                          <gco:CharacterString />
+                        </gmd:facsimile>
+                      </gmd:CI_Telephone>
+                    </gmd:phone>
+                    <gmd:address>
+                      <gmd:CI_Address>
+                        <gmd:deliveryPoint>
+                          <gco:CharacterString>Henri Faasdreef 312, Postbus 24500</gco:CharacterString>
+                        </gmd:deliveryPoint>
+                        <gmd:city>
+                          <gco:CharacterString>Den Haag</gco:CharacterString>
+                        </gmd:city>
+                        <gmd:administrativeArea>
+                          <gco:CharacterString>Zuid Holland</gco:CharacterString>
+                        </gmd:administrativeArea>
+                        <gmd:postalCode>
+                          <gco:CharacterString>2490HA</gco:CharacterString>
+                        </gmd:postalCode>
+                        <gmd:country>
+                          <gco:CharacterString>Nederland</gco:CharacterString>
+                        </gmd:country>
+                        <gmd:electronicMailAddress>
+                          <gco:CharacterString>infoservice@cbs.nl</gco:CharacterString>
+                        </gmd:electronicMailAddress>
+                      </gmd:CI_Address>
+                    </gmd:address>
+                    <gmd:onlineResource>
+                      <gmd:CI_OnlineResource>
+                        <gmd:linkage>
+                          <gmd:URL>http://www.CBS.nl/</gmd:URL>
+                        </gmd:linkage>
+                      </gmd:CI_OnlineResource>
+                    </gmd:onlineResource>
+                  </gmd:CI_Contact>
+                </gmd:contactInfo>
+                <gmd:role>
+                  <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="distributor">distributeur</gmd:CI_RoleCode>
+                </gmd:role>
+              </gmd:CI_ResponsibleParty>
+            </gmd:distributorContact>
+            <gmd:distributionOrderProcess>
+              <gmd:MD_StandardOrderProcess>
+                <gmd:fees>
+                  <gco:CharacterString>gratis</gco:CharacterString>
+                </gmd:fees>
+                <gmd:orderingInstructions gco:nilReason="missing">
+                  <gco:CharacterString />
+                </gmd:orderingInstructions>
+                <gmd:turnaround gco:nilReason="missing">
+                  <gco:CharacterString />
+                </gmd:turnaround>
+              </gmd:MD_StandardOrderProcess>
+            </gmd:distributionOrderProcess>
+          </gmd:MD_Distributor>
+        </gmd:distributor>
+        <gmd:transferOptions>
+          <gmd:MD_DigitalTransferOptions>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/cbsprovincies/ows?SERVICE=WFS&amp;&amp;request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gmx:Anchor xlink:href="http://www.opengis.net/def/serviceType/ogc/wfs">OGC:WFS</gmx:Anchor>
+                </gmd:protocol>
+                <gmd:applicationProfile>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/download">download</gmx:Anchor>
+                </gmd:applicationProfile>
+                <gmd:name>
+                  <gco:CharacterString>cbsprovincies2012</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/cbsprovincies/ows?SERVICE=WMS&amp;request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gmx:Anchor xlink:href="http://www.opengis.net/def/serviceType/ogc/wms">OGC:WMS</gmx:Anchor>
+                </gmd:protocol>
+                <gmd:applicationProfile>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/view">view</gmx:Anchor>
+                </gmd:applicationProfile>
+                <gmd:name>
+                  <gco:CharacterString>cbsprovincies2012</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://opendata.cbs.nl/statline/#/CBS/nl/dataset/70072ned/table?dl=14097</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>landingpage</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:applicationProfile>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/other">Statline</gmx:Anchor>
+                </gmd:applicationProfile>
+                <gmd:name>
+                  <gco:CharacterString>Statline: inwoners per 5 jaar leeftijdsgroep</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://opendata.cbs.nl/statline/#/CBS/nl/dataset/71861ned/table?dl=140A7</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>landingpage</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:applicationProfile>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/other">Statline</gmx:Anchor>
+                </gmd:applicationProfile>
+                <gmd:name>
+                  <gco:CharacterString>Statline: ziekenhuisopnamen</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://opendata.cbs.nl/statline/#/CBS/nl/dataset/83674NED/table?dl=14099</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>landingpage</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:applicationProfile>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/other">Statline</gmx:Anchor>
+                </gmd:applicationProfile>
+                <gmd:name>
+                  <gco:CharacterString>Statline: gezondheid</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://opendata.cbs.nl/statline/#/CBS/nl/dataset/80202ned/table?dl=140A6</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>landingpage</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:applicationProfile>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/other">Statline</gmx:Anchor>
+                </gmd:applicationProfile>
+                <gmd:name>
+                  <gco:CharacterString>Statline: doodsoorzaken</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>http://geodata.nationaalgeoregister.nl/cbsprovincies/atom/cbsprovincies.xml</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gmx:Anchor xlink:href="https://tools.ietf.org/html/rfc5023">INSPIRE Atom</gmx:Anchor>
+                </gmd:protocol>
+                <gmd:applicationProfile>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/download">Atom feed</gmx:Anchor>
+                </gmd:applicationProfile>
+                <gmd:name>
+                  <gco:CharacterString>CBS Provincies</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+          </gmd:MD_DigitalTransferOptions>
+        </gmd:transferOptions>
+      </gmd:MD_Distribution>
+    </gmd:distributionInfo>
+    <gmd:dataQualityInfo>
+      <gmd:DQ_DataQuality>
+        <gmd:scope>
+          <gmd:DQ_Scope>
+            <gmd:level>
+              <gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+            </gmd:level>
+          </gmd:DQ_Scope>
+        </gmd:scope>
+        <gmd:report>
+          <gmd:DQ_AbsoluteExternalPositionalAccuracy>
+            <gmd:result>
+              <gmd:DQ_QuantitativeResult>
+                <gmd:valueUnit xlink:href="" />
+                <gmd:value>
+                  <gco:Record>plus of min 20 meter</gco:Record>
+                </gmd:value>
+              </gmd:DQ_QuantitativeResult>
+            </gmd:result>
+          </gmd:DQ_AbsoluteExternalPositionalAccuracy>
+        </gmd:report>
+        <gmd:report>
+          <gmd:DQ_CompletenessOmission>
+            <gmd:result>
+              <gmd:DQ_QuantitativeResult>
+                <gmd:valueUnit>
+                  <gml:BaseUnit gml:id="d1720e767a1049886">
+                    <gml:identifier codeSpace="" />
+                    <gml:unitsSystem />
+                  </gml:BaseUnit>
+                </gmd:valueUnit>
+                <gmd:value />
+              </gmd:DQ_QuantitativeResult>
+            </gmd:result>
+          </gmd:DQ_CompletenessOmission>
+        </gmd:report>
+        <gmd:report>
+          <gmd:DQ_DomainConsistency>
+            <gmd:result>
+              <gmd:DQ_ConformanceResult>
+                <gmd:specification>
+                  <gmd:CI_Citation>
+                    <gmd:title>
+                      <gco:CharacterString>VERORDENING (EU) Nr. 1089/2010 VAN DE COMMISSIE van 23 november 2010 ter uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad betreffende de interoperabiliteit van verzamelingen ruimtelijke gegevens en van diensten met betrekking tot ruimtelijke gegevens</gco:CharacterString>
+                    </gmd:title>
+                    <gmd:alternateTitle>
+                      <gco:CharacterString>alternatieve titel dataspec</gco:CharacterString>
+                    </gmd:alternateTitle>
+                    <gmd:date>
+                      <gmd:CI_Date>
+                        <gmd:date>
+                          <gco:Date>2010-12-08</gco:Date>
+                        </gmd:date>
+                        <gmd:dateType>
+                          <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publicatie</gmd:CI_DateTypeCode>
+                        </gmd:dateType>
+                      </gmd:CI_Date>
+                    </gmd:date>
+                  </gmd:CI_Citation>
+                </gmd:specification>
+                <gmd:explanation>
+                  <gco:CharacterString>Dataset is niet geharmoniseerd voor INSPIRE</gco:CharacterString>
+                </gmd:explanation>
+                <gmd:pass>
+                  <gco:Boolean>false</gco:Boolean>
+                </gmd:pass>
+              </gmd:DQ_ConformanceResult>
+            </gmd:result>
+          </gmd:DQ_DomainConsistency>
+        </gmd:report>
+        <gmd:report>
+          <gmd:DQ_DomainConsistency>
+            <gmd:result>
+              <gmd:DQ_ConformanceResult>
+                <gmd:specification>
+                  <gmd:CI_Citation>
+                    <gmd:title>
+                      <gco:CharacterString>INSPIRE Data Specification on Statistical Units, Population Distribution and Human Health and Safety version 3.0</gco:CharacterString>
+                    </gmd:title>
+                    <gmd:alternateTitle>
+                      <gco:CharacterString>INSPIRE Data Specificatie voor Statistische eenheden, Spreiding van de bevolking - demografie en Menselijke gezondheid en veiligheid, versie 3.0</gco:CharacterString>
+                    </gmd:alternateTitle>
+                    <gmd:date>
+                      <gmd:CI_Date>
+                        <gmd:date>
+                          <gco:Date>2013-02-04</gco:Date>
+                        </gmd:date>
+                        <gmd:dateType>
+                          <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publicatie</gmd:CI_DateTypeCode>
+                        </gmd:dateType>
+                      </gmd:CI_Date>
+                    </gmd:date>
+                  </gmd:CI_Citation>
+                </gmd:specification>
+                <gmd:explanation>
+                  <gco:CharacterString>Er wordt nog niet voldaan aan de specificatie, omdat dit pas verplicht wordt in 2020.</gco:CharacterString>
+                </gmd:explanation>
+                <gmd:pass>
+                  <gco:Boolean>false</gco:Boolean>
+                </gmd:pass>
+              </gmd:DQ_ConformanceResult>
+            </gmd:result>
+          </gmd:DQ_DomainConsistency>
+        </gmd:report>
+        <gmd:report>
+          <gmd:DQ_TopologicalConsistency>
+            <gmd:result>
+              <gmd:DQ_QuantitativeResult>
+                <gmd:valueUnit>
+                  <gml:BaseUnit gml:id="d1720e776a1049886">
+                    <gml:identifier codeSpace="" />
+                    <gml:unitsSystem />
+                  </gml:BaseUnit>
+                </gmd:valueUnit>
+                <gmd:value />
+              </gmd:DQ_QuantitativeResult>
+            </gmd:result>
+          </gmd:DQ_TopologicalConsistency>
+        </gmd:report>
+        <gmd:lineage>
+          <gmd:LI_Lineage>
+            <gmd:statement>
+              <gco:CharacterString>Er wordt gebruik gemaakt van de gemeentegrenzen van het Kadaster uit de BRK. In tegenstelling tot voorgaande publicaties zijn deze grenzen niet meer gegeneraliseerd.
+
+De attributen zijn afkomstig uit de volgende 4 Statlinetabellen:
+
+Demografie:
+http://statline.cbs.nl/StatWeb/publication/?VW=T&amp;DM=SLNL&amp;PA=03759NED&amp;D1=0,17&amp;D2=97-117&amp;D3=5-16&amp;D4=24&amp;HD=130507-1209&amp;HDR=T,G1&amp;STB=G2,G3
+
+Doodsoorzaken:
+http://statline.cbs.nl/StatWeb/publication/?DM=SLNL&amp;PA=80202NED&amp;D1=0,7,42,79&amp;D2=0&amp;D3=0&amp;D4=5-16&amp;D5=l&amp;HDR=T,G4&amp;STB=G1,G3,G2&amp;VW=T
+
+Gezondheid:
+http://statline.cbs.nl/StatWeb/publication/?DM=SLNL&amp;PA=81976NED&amp;D1=0-1&amp;D2=l&amp;D3=5-16&amp;D4=l&amp;HDR=T&amp;STB=G1,G2,G3&amp;VW=T
+
+Ziekenhuisopnamen:
+http://statline.cbs.nl/StatWeb/publication/?DM=SLNL&amp;PA=71861NED&amp;D1=3,5&amp;D2=0&amp;D3=l&amp;D4=3-14&amp;D5=0&amp;D6=l&amp;HDR=T,G1,G4&amp;STB=G2,G3,G5&amp;VW=T</gco:CharacterString>
+            </gmd:statement>
+            <gmd:processStep>
+              <gmd:LI_ProcessStep>
+                <gmd:description />
+                <gmd:processor>
+                  <gmd:CI_ResponsibleParty>
+                    <gmd:organisationName />
+                    <gmd:contactInfo>
+                      <gmd:CI_Contact>
+                        <gmd:address>
+                          <gmd:CI_Address>
+                            <gmd:electronicMailAddress gco:nilReason="missing">
+                              <gco:CharacterString />
+                            </gmd:electronicMailAddress>
+                          </gmd:CI_Address>
+                        </gmd:address>
+                      </gmd:CI_Contact>
+                    </gmd:contactInfo>
+                    <gmd:role />
+                  </gmd:CI_ResponsibleParty>
+                </gmd:processor>
+              </gmd:LI_ProcessStep>
+            </gmd:processStep>
+            <gmd:source>
+              <gmd:LI_Source>
+                <gmd:description>
+                  <gco:CharacterString>Topgrenzen</gco:CharacterString>
+                </gmd:description>
+                <gmd:sourceStep>
+                  <gmd:LI_ProcessStep>
+                    <gmd:description />
+                    <gmd:processor>
+                      <gmd:CI_ResponsibleParty>
+                        <gmd:organisationName>
+                          <gco:CharacterString>Kadaster</gco:CharacterString>
+                        </gmd:organisationName>
+                        <gmd:contactInfo>
+                          <gmd:CI_Contact>
+                            <gmd:address>
+                              <gmd:CI_Address>
+                                <gmd:electronicMailAddress gco:nilReason="missing">
+                                  <gco:CharacterString />
+                                </gmd:electronicMailAddress>
+                              </gmd:CI_Address>
+                            </gmd:address>
+                          </gmd:CI_Contact>
+                        </gmd:contactInfo>
+                        <gmd:role>
+                          <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="principalInvestigator">inwinner</gmd:CI_RoleCode>
+                        </gmd:role>
+                      </gmd:CI_ResponsibleParty>
+                    </gmd:processor>
+                  </gmd:LI_ProcessStep>
+                </gmd:sourceStep>
+              </gmd:LI_Source>
+            </gmd:source>
+          </gmd:LI_Lineage>
+        </gmd:lineage>
+      </gmd:DQ_DataQuality>
+    </gmd:dataQualityInfo>
+  </gmd:MD_Metadata>
+</csw:GetRecordByIdResponse>
+

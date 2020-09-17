@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csw:GetRecordByIdResponse xmlns:csw="http://www.opengis.net/cat/csw/2.0.2">
+  <gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns="http://www.isotc211.org/2005/gmd" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:geonet="http://www.fao.org/geonetwork" xsi:schemaLocation="http://www.isotc211.org/2005/gmd http://schemas.opengis.net/iso/19139/20060504/gmd/gmd.xsd http://www.isotc211.org/2005/gmx http://schemas.opengis.net/iso/19139/20060504/gmx/gmx.xsd">
+    <gmd:fileIdentifier>
+      <gco:CharacterString>f99e915a-75e5-4c36-97f2-61eff692d85b</gco:CharacterString>
+    </gmd:fileIdentifier>
+    <gmd:language>
+      <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="dut" codeSpace="nederlands">Nederlands; Vlaams</gmd:LanguageCode>
+    </gmd:language>
+    <gmd:characterSet>
+      <gmd:MD_CharacterSetCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" codeSpace="utf8">utf8</gmd:MD_CharacterSetCode>
+    </gmd:characterSet>
+    <gmd:hierarchyLevel>
+      <gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" codeSpace="dataset">dataset</gmd:MD_ScopeCode>
+    </gmd:hierarchyLevel>
+    <gmd:contact xlink:type="simple">
+      <gmd:CI_ResponsibleParty>
+        <gmd:organisationName>
+          <gco:CharacterString>TNO Geologische Dienst Nederland</gco:CharacterString>
+        </gmd:organisationName>
+        <gmd:contactInfo xlink:type="simple">
+          <gmd:CI_Contact>
+            <gmd:address xlink:type="simple">
+              <gmd:CI_Address>
+                <gmd:electronicMailAddress>
+                  <gco:CharacterString>info@dinoloket.nl</gco:CharacterString>
+                </gmd:electronicMailAddress>
+              </gmd:CI_Address>
+            </gmd:address>
+            <gmd:onlineResource xlink:type="simple">
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>http://www.dinoloket.nl</gmd:URL>
+                </gmd:linkage>
+              </gmd:CI_OnlineResource>
+            </gmd:onlineResource>
+          </gmd:CI_Contact>
+        </gmd:contactInfo>
+        <gmd:role>
+          <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact" codeSpace="contactpunt">contactpunt</gmd:CI_RoleCode>
+        </gmd:role>
+      </gmd:CI_ResponsibleParty>
+    </gmd:contact>
+    <gmd:dateStamp>
+      <gco:Date>2020-09-11</gco:Date>
+    </gmd:dateStamp>
+    <gmd:metadataStandardName>
+      <gco:CharacterString>ISO 19115</gco:CharacterString>
+    </gmd:metadataStandardName>
+    <gmd:metadataStandardVersion>
+      <gco:CharacterString>Nederlandse metadata profiel op ISO 19115 voor geografie 2.0</gco:CharacterString>
+    </gmd:metadataStandardVersion>
+    <gmd:referenceSystemInfo xlink:type="simple">
+      <gmd:MD_ReferenceSystem>
+        <gmd:referenceSystemIdentifier xlink:type="simple">
+          <gmd:RS_Identifier>
+            <gmd:code>
+              <gmx:Anchor xlink:href="http://www.opengis.net/def/crs/EPSG/0/28992">Rijks Driehoeksstelsel</gmx:Anchor>
+            </gmd:code>
+          </gmd:RS_Identifier>
+        </gmd:referenceSystemIdentifier>
+      </gmd:MD_ReferenceSystem>
+    </gmd:referenceSystemInfo>
+    <gmd:referenceSystemInfo xlink:type="simple">
+      <gmd:MD_ReferenceSystem>
+        <gmd:referenceSystemIdentifier xlink:type="simple">
+          <gmd:RS_Identifier>
+            <gmd:code>
+              <gmx:Anchor xlink:href="http://www.opengis.net/def/crs/EPSG/0/5709">5709</gmx:Anchor>
+            </gmd:code>
+          </gmd:RS_Identifier>
+        </gmd:referenceSystemIdentifier>
+      </gmd:MD_ReferenceSystem>
+    </gmd:referenceSystemInfo>
+    <gmd:identificationInfo xlink:type="simple">
+      <gmd:MD_DataIdentification>
+        <gmd:citation xlink:type="simple">
+          <gmd:CI_Citation>
+            <gmd:title>
+              <gco:CharacterString>Grondwateronderzoek onder INSPIRE</gco:CharacterString>
+            </gmd:title>
+            <gmd:date xlink:type="simple">
+              <gmd:CI_Date>
+                <gmd:date>
+                  <gco:Date>2015-07-30</gco:Date>
+                </gmd:date>
+                <gmd:dateType>
+                  <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication" codeSpace="publicatie">publicatie</gmd:CI_DateTypeCode>
+                </gmd:dateType>
+              </gmd:CI_Date>
+            </gmd:date>
+            <gmd:edition>
+              <gco:CharacterString>v1.0</gco:CharacterString>
+            </gmd:edition>
+            <gmd:identifier>
+              <gmd:MD_Identifier>
+                <gmd:code>
+                  <gmx:Anchor xlink:href="https://nationaalgeoregister.nl/geonetwork/srv/resources7e290e63-f991-4cc3-beff-1ff08ce2be77">7e290e63-f991-4cc3-beff-1ff08ce2be77</gmx:Anchor>
+                </gmd:code>
+              </gmd:MD_Identifier>
+            </gmd:identifier>
+          </gmd:CI_Citation>
+        </gmd:citation>
+        <gmd:abstract>
+          <gco:CharacterString>Grondwateronderzoek, Locatie waar de grondwaterstand en/of samenstelling wordt gemeten. Dit zijn grondwaterputten waarin zich een of meer buizen bevinden. Een buis bevat een of meer geperforeerde delen die samen het filter vormen. De grondwaterstand of samenstelling wordt in buizen gemeten en wordt geacht representatief te zijn voor de diepte waarop het filter zich bevindt.Grondwaterputten moeten aan de volgende voorwaarden voldoen: de put ligt in Nederland; er zijn grondwaterstanden en/of samenstellingen beschikbaar waarop geen embargo rust.</gco:CharacterString>
+        </gmd:abstract>
+        <gmd:purpose>
+          <gco:CharacterString>Informatie t.b.v. bestellingen via DinoLoket</gco:CharacterString>
+        </gmd:purpose>
+        <gmd:status>
+          <gmd:MD_ProgressCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ProgressCode" codeListValue="onGoing" codeSpace="continu geactualiseerd">continu geactualiseerd</gmd:MD_ProgressCode>
+        </gmd:status>
+        <gmd:pointOfContact xlink:type="simple">
+          <gmd:CI_ResponsibleParty>
+            <gmd:organisationName>
+              <gco:CharacterString>TNO Geologische Dienst Nederland</gco:CharacterString>
+            </gmd:organisationName>
+            <gmd:contactInfo xlink:type="simple">
+              <gmd:CI_Contact>
+                <gmd:address xlink:type="simple">
+                  <gmd:CI_Address>
+                    <gmd:electronicMailAddress>
+                      <gco:CharacterString>info@dinoloket.nl</gco:CharacterString>
+                    </gmd:electronicMailAddress>
+                  </gmd:CI_Address>
+                </gmd:address>
+                <gmd:onlineResource xlink:type="simple">
+                  <gmd:CI_OnlineResource>
+                    <gmd:linkage>
+                      <gmd:URL>http://www.dinoloket.nl</gmd:URL>
+                    </gmd:linkage>
+                  </gmd:CI_OnlineResource>
+                </gmd:onlineResource>
+              </gmd:CI_Contact>
+            </gmd:contactInfo>
+            <gmd:role>
+              <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="author" codeSpace="auteur">auteur</gmd:CI_RoleCode>
+            </gmd:role>
+          </gmd:CI_ResponsibleParty>
+        </gmd:pointOfContact>
+        <gmd:resourceMaintenance xlink:type="simple">
+          <gmd:MD_MaintenanceInformation>
+            <gmd:maintenanceAndUpdateFrequency>
+              <gmd:MD_MaintenanceFrequencyCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="asNeeded" codeSpace="indien nodig">indien nodig</gmd:MD_MaintenanceFrequencyCode>
+            </gmd:maintenanceAndUpdateFrequency>
+          </gmd:MD_MaintenanceInformation>
+        </gmd:resourceMaintenance>
+        <gmd:descriptiveKeywords xlink:type="simple">
+          <gmd:MD_Keywords>
+            <gmd:keyword>
+              <gco:CharacterString>grondwater</gco:CharacterString>
+            </gmd:keyword>
+            <gmd:keyword>
+              <gco:CharacterString>hydrogeologie</gco:CharacterString>
+            </gmd:keyword>
+            <gmd:keyword>
+              <gco:CharacterString>grondwaterkwaliteit</gco:CharacterString>
+            </gmd:keyword>
+            <gmd:keyword>
+              <gco:CharacterString>meting</gco:CharacterString>
+            </gmd:keyword>
+            <gmd:thesaurusName xlink:type="simple">
+              <gmd:CI_Citation>
+                <gmd:title>
+                  <gco:CharacterString>GEMET - Concepts, version 3.1</gco:CharacterString>
+                </gmd:title>
+                <gmd:date xlink:type="simple">
+                  <gmd:CI_Date>
+                    <gmd:date>
+                      <gco:Date>2012-07-20</gco:Date>
+                    </gmd:date>
+                    <gmd:dateType>
+                      <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication" codeSpace="publicatie">publicatie</gmd:CI_DateTypeCode>
+                    </gmd:dateType>
+                  </gmd:CI_Date>
+                </gmd:date>
+              </gmd:CI_Citation>
+            </gmd:thesaurusName>
+          </gmd:MD_Keywords>
+        </gmd:descriptiveKeywords>
+        <gmd:descriptiveKeywords xlink:type="simple">
+          <gmd:MD_Keywords>
+            <gmd:keyword>
+              <gco:CharacterString>Geologie</gco:CharacterString>
+            </gmd:keyword>
+            <gmd:type>
+              <gmd:MD_KeywordTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme">theme</gmd:MD_KeywordTypeCode>
+            </gmd:type>
+            <gmd:thesaurusName xlink:type="simple">
+              <gmd:CI_Citation>
+                <gmd:title>
+                  <gco:CharacterString>GEMET - INSPIRE themes, version 1.0</gco:CharacterString>
+                </gmd:title>
+                <gmd:date>
+                  <gmd:CI_Date>
+                    <gmd:date>
+                      <gco:Date>2008-06-01</gco:Date>
+                    </gmd:date>
+                    <gmd:dateType>
+                      <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publicatie</gmd:CI_DateTypeCode>
+                    </gmd:dateType>
+                  </gmd:CI_Date>
+                </gmd:date>
+                <gmd:identifier>
+                  <gmd:MD_Identifier>
+                    <gmd:code>
+                      <gmx:Anchor xlink:href="https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme">geonetwork.thesaurus.external.theme.inspire-theme</gmx:Anchor>
+                    </gmd:code>
+                  </gmd:MD_Identifier>
+                </gmd:identifier>
+              </gmd:CI_Citation>
+            </gmd:thesaurusName>
+          </gmd:MD_Keywords>
+        </gmd:descriptiveKeywords>
+        <gmd:descriptiveKeywords>
+          <gmd:MD_Keywords>
+            <gmd:keyword>
+              <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national">Nationaal</gmx:Anchor>
+            </gmd:keyword>
+            <gmd:type>
+              <gmd:MD_KeywordTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme">theme</gmd:MD_KeywordTypeCode>
+            </gmd:type>
+            <gmd:thesaurusName>
+              <gmd:CI_Citation>
+                <gmd:title>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope">Ruimtelijke dekking</gmx:Anchor>
+                </gmd:title>
+                <gmd:date>
+                  <gmd:CI_Date>
+                    <gmd:date>
+                      <gco:Date>2018-04-04</gco:Date>
+                    </gmd:date>
+                    <gmd:dateType>
+                      <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publicatie</gmd:CI_DateTypeCode>
+                    </gmd:dateType>
+                  </gmd:CI_Date>
+                </gmd:date>
+                <gmd:identifier>
+                  <gmd:MD_Identifier>
+                    <gmd:code>
+                      <gmx:Anchor xlink:href="https://www.nationaalgeoregister.nl:443/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistSpatialScope-SpatialScope">geonetwork.thesaurus.external.theme.httpinspireeceuropaeumetadatacodelistSpatialScope-SpatialScope</gmx:Anchor>
+                    </gmd:code>
+                  </gmd:MD_Identifier>
+                </gmd:identifier>
+              </gmd:CI_Citation>
+            </gmd:thesaurusName>
+          </gmd:MD_Keywords>
+        </gmd:descriptiveKeywords>
+        <gmd:resourceConstraints xlink:type="simple">
+          <gmd:MD_Constraints>
+            <gmd:useLimitation>
+              <gco:CharacterString>Geen gebruiksbeperkingen</gco:CharacterString>
+            </gmd:useLimitation>
+          </gmd:MD_Constraints>
+        </gmd:resourceConstraints>
+        <gmd:resourceConstraints xlink:type="simple">
+          <gmd:MD_LegalConstraints>
+            <gmd:accessConstraints>
+              <gmd:MD_RestrictionCode codeListValue="otherRestrictions" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_RestrictionCode">anders</gmd:MD_RestrictionCode>
+            </gmd:accessConstraints>
+            <gmd:otherConstraints>
+              <gmx:Anchor xlink:href="http://creativecommons.org/publicdomain/mark/1.0/deed.nl">Geen beperkingen</gmx:Anchor>
+            </gmd:otherConstraints>
+            <gmd:otherConstraints>
+              <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply">Er zijn geen condities voor toegang en gebruik</gmx:Anchor>
+            </gmd:otherConstraints>
+          </gmd:MD_LegalConstraints>
+        </gmd:resourceConstraints>
+        <gmd:resourceConstraints xlink:type="simple">
+          <gmd:MD_LegalConstraints>
+            <gmd:accessConstraints>
+              <gmd:MD_RestrictionCode codeListValue="otherRestrictions" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_RestrictionCode">anders</gmd:MD_RestrictionCode>
+            </gmd:accessConstraints>
+            <gmd:otherConstraints>
+              <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations">Geen beperkingen voor publieke toegang</gmx:Anchor>
+            </gmd:otherConstraints>
+          </gmd:MD_LegalConstraints>
+        </gmd:resourceConstraints>
+        <gmd:resourceConstraints xlink:type="simple">
+          <gmd:MD_SecurityConstraints>
+            <gmd:classification>
+              <gmd:MD_ClassificationCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ClassificationCode" codeListValue="unclassified" codeSpace="vrij toegangkelijk">vrij toegankelijk</gmd:MD_ClassificationCode>
+            </gmd:classification>
+          </gmd:MD_SecurityConstraints>
+        </gmd:resourceConstraints>
+        <gmd:spatialRepresentationType>
+          <gmd:MD_SpatialRepresentationTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="vector" codeSpace="vector">vector</gmd:MD_SpatialRepresentationTypeCode>
+        </gmd:spatialRepresentationType>
+        <gmd:spatialResolution>
+          <gmd:MD_Resolution>
+            <gmd:equivalentScale xlink:type="simple">
+              <gmd:MD_RepresentativeFraction>
+                <gmd:denominator>
+                  <gco:Integer>2000000</gco:Integer>
+                </gmd:denominator>
+              </gmd:MD_RepresentativeFraction>
+            </gmd:equivalentScale>
+          </gmd:MD_Resolution>
+        </gmd:spatialResolution>
+        <gmd:language>
+          <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="dut">Nederlands; Vlaams</gmd:LanguageCode>
+        </gmd:language>
+        <gmd:characterSet>
+          <gmd:MD_CharacterSetCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" codeSpace="utf8">utf8</gmd:MD_CharacterSetCode>
+        </gmd:characterSet>
+        <gmd:topicCategory>
+          <gmd:MD_TopicCategoryCode>geoscientificInformation</gmd:MD_TopicCategoryCode>
+        </gmd:topicCategory>
+        <gmd:extent xlink:type="simple">
+          <gmd:EX_Extent>
+            <gmd:geographicElement xlink:type="simple">
+              <gmd:EX_GeographicBoundingBox>
+                <gmd:westBoundLongitude>
+                  <gco:Decimal>3.19</gco:Decimal>
+                </gmd:westBoundLongitude>
+                <gmd:eastBoundLongitude>
+                  <gco:Decimal>7.22</gco:Decimal>
+                </gmd:eastBoundLongitude>
+                <gmd:southBoundLatitude>
+                  <gco:Decimal>50.75</gco:Decimal>
+                </gmd:southBoundLatitude>
+                <gmd:northBoundLatitude>
+                  <gco:Decimal>53.71</gco:Decimal>
+                </gmd:northBoundLatitude>
+              </gmd:EX_GeographicBoundingBox>
+            </gmd:geographicElement>
+            <gmd:geographicElement xlink:type="simple">
+              <gmd:EX_GeographicDescription>
+                <gmd:geographicIdentifier xlink:type="simple">
+                  <gmd:MD_Identifier>
+                    <gmd:code>
+                      <gco:CharacterString>Nederland (land)</gco:CharacterString>
+                    </gmd:code>
+                  </gmd:MD_Identifier>
+                </gmd:geographicIdentifier>
+              </gmd:EX_GeographicDescription>
+            </gmd:geographicElement>
+          </gmd:EX_Extent>
+        </gmd:extent>
+        <gmd:supplementalInformation>
+          <gco:CharacterString>DINOloket|http://www.dinoloket.nl</gco:CharacterString>
+        </gmd:supplementalInformation>
+      </gmd:MD_DataIdentification>
+    </gmd:identificationInfo>
+    <gmd:distributionInfo>
+      <gmd:MD_Distribution>
+        <gmd:distributionFormat xlink:type="simple">
+          <gmd:MD_Format>
+            <gmd:name>
+              <gco:CharacterString>Geology GML Application Schema</gco:CharacterString>
+            </gmd:name>
+            <gmd:version>
+              <gco:CharacterString>version 3.0</gco:CharacterString>
+            </gmd:version>
+            <gmd:specification>
+              <gco:CharacterString>D2.8.II.4 INSPIRE Data Specification on Geology - Technical Guidelines</gco:CharacterString>
+            </gmd:specification>
+          </gmd:MD_Format>
+        </gmd:distributionFormat>
+        <gmd:distributor xlink:type="simple">
+          <gmd:MD_Distributor>
+            <gmd:distributorContact xlink:type="simple">
+              <gmd:CI_ResponsibleParty>
+                <gmd:organisationName>
+                  <gco:CharacterString>TNO Geologische Dienst Nederland</gco:CharacterString>
+                </gmd:organisationName>
+                <gmd:contactInfo xlink:type="simple">
+                  <gmd:CI_Contact>
+                    <gmd:address xlink:type="simple">
+                      <gmd:CI_Address>
+                        <gmd:electronicMailAddress>
+                          <gco:CharacterString>info@dinoloket.nl</gco:CharacterString>
+                        </gmd:electronicMailAddress>
+                      </gmd:CI_Address>
+                    </gmd:address>
+                    <gmd:onlineResource xlink:type="simple">
+                      <gmd:CI_OnlineResource>
+                        <gmd:linkage>
+                          <gmd:URL>http://www.dinoloket.nl</gmd:URL>
+                        </gmd:linkage>
+                      </gmd:CI_OnlineResource>
+                    </gmd:onlineResource>
+                  </gmd:CI_Contact>
+                </gmd:contactInfo>
+                <gmd:role>
+                  <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact" codeSpace="contactpunt">contactpunt</gmd:CI_RoleCode>
+                </gmd:role>
+              </gmd:CI_ResponsibleParty>
+            </gmd:distributorContact>
+          </gmd:MD_Distributor>
+        </gmd:distributor>
+        <gmd:transferOptions xlink:type="simple">
+          <gmd:MD_DigitalTransferOptions>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://www.broinspireservices.nl/wms/osgegmw-a-v1.0?request=GetCapabilities&amp;service=WMS&amp;version=1.3.0</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gmx:Anchor xlink:href="http://www.opengeospatial.org/standards/wms">OGC:WMS</gmx:Anchor>
+                </gmd:protocol>
+                <gmd:applicationProfile>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/view">Raadpleegdienst</gmx:Anchor>
+                </gmd:applicationProfile>
+                <gmd:name>
+                  <gco:CharacterString>gdn:Grondwateronderzoek</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://www.broinspireservices.nl/wfs/osgegmw-a-v1.0?request=GetCapabilities&amp;service=WFS&amp;version=2.0.0</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gmx:Anchor xlink:href="http://www.opengeospatial.org/standards/wfs">OGC:WFS</gmx:Anchor>
+                </gmd:protocol>
+                <gmd:applicationProfile>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/download">Downloaddienst</gmx:Anchor>
+                </gmd:applicationProfile>
+                <gmd:name>
+                  <gco:CharacterString>gdn:Grondwateronderzoek</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+          </gmd:MD_DigitalTransferOptions>
+        </gmd:transferOptions>
+      </gmd:MD_Distribution>
+    </gmd:distributionInfo>
+    <gmd:dataQualityInfo xlink:type="simple">
+      <gmd:DQ_DataQuality>
+        <gmd:scope xlink:type="simple">
+          <gmd:DQ_Scope>
+            <gmd:level>
+              <gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" codeSpace="dataset">dataset</gmd:MD_ScopeCode>
+            </gmd:level>
+          </gmd:DQ_Scope>
+        </gmd:scope>
+        <gmd:report xlink:type="simple">
+          <gmd:DQ_DomainConsistency>
+            <gmd:result xlink:type="simple">
+              <gmd:DQ_ConformanceResult>
+                <gmd:specification xlink:type="simple">
+                  <gmd:CI_Citation>
+                    <gmd:title>
+                      <gco:CharacterString>D2.8.II.4 INSPIRE Data Specification on Geology - Technical Guidelines</gco:CharacterString>
+                    </gmd:title>
+                    <gmd:date xlink:type="simple">
+                      <gmd:CI_Date>
+                        <gmd:date>
+                          <gco:Date>2013-12-10</gco:Date>
+                        </gmd:date>
+                        <gmd:dateType>
+                          <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication" codeSpace="publicatie">publicatie</gmd:CI_DateTypeCode>
+                        </gmd:dateType>
+                      </gmd:CI_Date>
+                    </gmd:date>
+                  </gmd:CI_Citation>
+                </gmd:specification>
+                <gmd:explanation>
+                  <gco:CharacterString>De dataset voldoet nog niet aan de richtlijnen van INSPIRE. De dataset wordt uiteindelijk afgeleid uit de Basisregistratie Ondergrond. Deze is nog in ontwikkeling waardoor het datamodel nog zal wijzigen</gco:CharacterString>
+                </gmd:explanation>
+                <gmd:pass>
+                  <gco:Boolean>false</gco:Boolean>
+                </gmd:pass>
+              </gmd:DQ_ConformanceResult>
+            </gmd:result>
+          </gmd:DQ_DomainConsistency>
+        </gmd:report>
+        <gmd:report xlink:type="simple">
+          <gmd:DQ_DomainConsistency>
+            <gmd:result xlink:type="simple">
+              <gmd:DQ_ConformanceResult>
+                <gmd:specification xlink:type="simple">
+                  <gmd:CI_Citation>
+                    <gmd:title>
+                      <gco:CharacterString>VERORDENING (EU) Nr. 1089/2010 VAN DE COMMISSIE van 23 november 2010 ter uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad betreffende de interoperabiliteit van verzamelingen ruimtelijke gegevens en van diensten met betrekking tot ruimtelijke gegevens</gco:CharacterString>
+                    </gmd:title>
+                    <gmd:date xlink:type="simple">
+                      <gmd:CI_Date>
+                        <gmd:date>
+                          <gco:Date>2010-12-08</gco:Date>
+                        </gmd:date>
+                        <gmd:dateType>
+                          <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication" codeSpace="publicatie">publicatie</gmd:CI_DateTypeCode>
+                        </gmd:dateType>
+                      </gmd:CI_Date>
+                    </gmd:date>
+                  </gmd:CI_Citation>
+                </gmd:specification>
+                <gmd:explanation>
+                  <gco:CharacterString>Onbekend</gco:CharacterString>
+                </gmd:explanation>
+                <gmd:pass>
+                  <gco:Boolean>false</gco:Boolean>
+                </gmd:pass>
+              </gmd:DQ_ConformanceResult>
+            </gmd:result>
+          </gmd:DQ_DomainConsistency>
+        </gmd:report>
+        <gmd:lineage xlink:type="simple">
+          <gmd:LI_Lineage>
+            <gmd:statement>
+              <gco:CharacterString>Informatie afkomstig uit de DINO database van TNO Geologische Dienst Nederland - Geological Survey of the Netherlands</gco:CharacterString>
+            </gmd:statement>
+          </gmd:LI_Lineage>
+        </gmd:lineage>
+      </gmd:DQ_DataQuality>
+    </gmd:dataQualityInfo>
+  </gmd:MD_Metadata>
+</csw:GetRecordByIdResponse>
+

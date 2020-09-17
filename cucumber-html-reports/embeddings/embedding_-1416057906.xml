@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csw:GetRecordByIdResponse xmlns:csw="http://www.opengis.net/cat/csw/2.0.2">
+  <gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml" xmlns:geonet="http://www.fao.org/geonetwork" xsi:schemaLocation="http://www.isotc211.org/2005/gmd http://schemas.opengis.net/iso/19139/20060504/gmd/gmd.xsd">
+    <gmd:fileIdentifier>
+      <gco:CharacterString>ed960299-a147-4c1a-bc57-41ff83a2264f</gco:CharacterString>
+    </gmd:fileIdentifier>
+    <gmd:language>
+      <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="dut" />
+    </gmd:language>
+    <gmd:characterSet>
+      <gmd:MD_CharacterSetCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
+    </gmd:characterSet>
+    <gmd:hierarchyLevel>
+      <gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" />
+    </gmd:hierarchyLevel>
+    <gmd:contact>
+      <gmd:CI_ResponsibleParty>
+        <gmd:individualName>
+          <gco:CharacterString>Fokke Brouwer</gco:CharacterString>
+        </gmd:individualName>
+        <gmd:organisationName>
+          <gco:CharacterString>Wageningen Environmental Research</gco:CharacterString>
+        </gmd:organisationName>
+        <gmd:positionName>
+          <gco:CharacterString>Inhoudelijk deskundige</gco:CharacterString>
+        </gmd:positionName>
+        <gmd:contactInfo>
+          <gmd:CI_Contact>
+            <gmd:phone>
+              <gmd:CI_Telephone>
+                <gmd:voice>
+                  <gco:CharacterString>0317-486512</gco:CharacterString>
+                </gmd:voice>
+              </gmd:CI_Telephone>
+            </gmd:phone>
+            <gmd:address>
+              <gmd:CI_Address>
+                <gmd:deliveryPoint>
+                  <gco:CharacterString>Droevendaalsesteeg 3</gco:CharacterString>
+                </gmd:deliveryPoint>
+                <gmd:city>
+                  <gco:CharacterString>Wageningen</gco:CharacterString>
+                </gmd:city>
+                <gmd:administrativeArea>
+                  <gco:CharacterString>Gelderland</gco:CharacterString>
+                </gmd:administrativeArea>
+                <gmd:postalCode>
+                  <gco:CharacterString>6708 PB</gco:CharacterString>
+                </gmd:postalCode>
+                <gmd:country>
+                  <gco:CharacterString>Nederland</gco:CharacterString>
+                </gmd:country>
+                <gmd:electronicMailAddress>
+                  <gco:CharacterString>fokke.brouwer@wur.nl</gco:CharacterString>
+                </gmd:electronicMailAddress>
+              </gmd:CI_Address>
+            </gmd:address>
+            <gmd:onlineResource>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>http://www.wur.nl/nl/Expertises-Dienstverlening/Onderzoeksinstituten/Environmental-Research/Faciliteiten-Producten/Bodemkundig-Informatie-Systeem-BIS-Nederland.htm</gmd:URL>
+                </gmd:linkage>
+              </gmd:CI_OnlineResource>
+            </gmd:onlineResource>
+          </gmd:CI_Contact>
+        </gmd:contactInfo>
+        <gmd:role>
+          <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="author" />
+        </gmd:role>
+      </gmd:CI_ResponsibleParty>
+    </gmd:contact>
+    <gmd:dateStamp>
+      <gco:Date>2018-10-24</gco:Date>
+    </gmd:dateStamp>
+    <gmd:metadataStandardName>
+      <gco:CharacterString>ISO 19115</gco:CharacterString>
+    </gmd:metadataStandardName>
+    <gmd:metadataStandardVersion>
+      <gco:CharacterString>Nederlandse metadata profiel op ISO 19115 voor geografie 1.3</gco:CharacterString>
+    </gmd:metadataStandardVersion>
+    <gmd:referenceSystemInfo>
+      <gmd:MD_ReferenceSystem>
+        <gmd:referenceSystemIdentifier>
+          <gmd:RS_Identifier>
+            <gmd:code>
+              <gco:CharacterString>28992</gco:CharacterString>
+            </gmd:code>
+            <gmd:codeSpace>
+              <gco:CharacterString>EPSG</gco:CharacterString>
+            </gmd:codeSpace>
+          </gmd:RS_Identifier>
+        </gmd:referenceSystemIdentifier>
+      </gmd:MD_ReferenceSystem>
+    </gmd:referenceSystemInfo>
+    <gmd:identificationInfo>
+      <gmd:MD_DataIdentification>
+        <gmd:citation>
+          <gmd:CI_Citation>
+            <gmd:title>
+              <gco:CharacterString>Bodemkaart50000_versie2014</gco:CharacterString>
+            </gmd:title>
+            <gmd:alternateTitle>
+              <gco:CharacterString>Groepslayer Bodemkaart 50000 met update voor de veengebieden (versie 2014)</gco:CharacterString>
+            </gmd:alternateTitle>
+            <gmd:date>
+              <gmd:CI_Date>
+                <gmd:date>
+                  <gco:Date>2015-01-23</gco:Date>
+                </gmd:date>
+                <gmd:dateType>
+                  <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="creation" />
+                </gmd:dateType>
+              </gmd:CI_Date>
+            </gmd:date>
+            <gmd:date>
+              <gmd:CI_Date>
+                <gmd:date>
+                  <gco:Date>2015-01-23</gco:Date>
+                </gmd:date>
+                <gmd:dateType>
+                  <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication" />
+                </gmd:dateType>
+              </gmd:CI_Date>
+            </gmd:date>
+            <gmd:date>
+              <gmd:CI_Date>
+                <gmd:date>
+                  <gco:Date>2015-01-23</gco:Date>
+                </gmd:date>
+                <gmd:dateType>
+                  <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" />
+                </gmd:dateType>
+              </gmd:CI_Date>
+            </gmd:date>
+            <gmd:edition>
+              <gco:CharacterString>2014</gco:CharacterString>
+            </gmd:edition>
+            <gmd:identifier>
+              <gmd:MD_Identifier>
+                <gmd:code>
+                  <gco:CharacterString>0e4c899b-42b1-4654-906e-4ad2a8d838cb</gco:CharacterString>
+                </gmd:code>
+              </gmd:MD_Identifier>
+            </gmd:identifier>
+            <gmd:series>
+              <gmd:CI_Series />
+            </gmd:series>
+          </gmd:CI_Citation>
+        </gmd:citation>
+        <gmd:abstract>
+          <gco:CharacterString>Deze groepslayer toont verschillende aspecten van de geactualiseerde  Bodemkaart van Nederland, schaal 1 : 50 000 (versie 2014) en gerelateerde bestanden, zoals: 
+- de bodemtypen; 
+- de gebieden waar associaties van bodemtypen voorkomen;
+- bijzonderheden in de bodemlagen binnen 40 cm diepte;
+- bijzonderheden in de bodemlagen dieper dan 40 cm;
+- de veendiktes;
+- gebieden met vergraven gronden;
+- en gebieden met bebouwing en water.
+
+Ten opzichte van de vorige versie van de bodemkaart is de informatie van de veengebieden geactualiseerd en tevens is de tabel met de attributen gewijzigd. In deze versie ontbreekt de informatie over de Grondwatertrappen (Gt). De bodemkaart geeft ruimtelijke informatie over de bodemopbouw tot globaal 1 meter diepte.  Deze informatie heeft betrekking op de aard en samenstelling van de bovengrond (grondsoort) met een verdere onderverdeling naar bodemvorming, veensoort, afwijkende lagen in het profiel en de aanwezigheid van kalk. 
+
+Actualisatie van de bodemkaart van de veengebieden was nodig omdat door oxidatie van organische stof bij de veengronden en moerige gronden verandering optreden, doordat oppervlakkig gelegen veenlagen geleidelijk verteren. Hierdoor kunnen veengronden veranderen in moerige gronden en moerige gronden in minerale gronden.
+
+Sinds de eerste opname van de bodemkaart zijn er veel bebouwde terreinen bij gekomen door stadsuitbreiding en nieuwe industrieterreinen. Op de oorspronkelijke bodemkaart zijn de bebouwde gebieden van enige omvang apart aangegeven. Bij de actualisatie is voor de nieuw-bebouwde gebieden wel een bodemcode vastgesteld. In een apart bestand is de begrenzing van de huidige bebouwing opgenomen. In bebouwde gebieden kan de bodemopbouw afwijken van de bodemcode, doordat  bij het bouwrijpmaken ingrijpende grondverbeteringwerken zijn uitgevoerd. 
+
+Bij het gebruik van de gegevens dient men daar op bedacht te zijn. Daarnaast zijn bij veel gebieden in Nederland ingrijpende grondbewerking uitgevoerd. De oorspronkelijke bodemkaart bevatte een attribuut "SCHOP" waarin informatie werd gegeven over verstoring in het bodemprofiel. In 2010 heeft Brouwer gebieden met ingrepen uitgebreid geinventariseerd en in kaart gebracht. Deze vergravingen zijn nu in een apart bestand opgenomen (vergraven gronden).
+
+De actualisatie had betrekking op de gebieden met moerige gronden en dunne veengronden in Nederland en de veenweidegebieden met dikke veengronden in de provincie Friesland. In totaal is ca. 400 000 ha geactualiseerd. Met uitzondering van een fragment in ZuidOost-Drenthe is de actualisatie gerealiseerd met behulp van digitale bodemkartering (DBK). In ZuidOost-Drenthe is de actualisatie uitgevoerd door middel van een uitgebreide veldinventarisatie, zoals ook voor de eerste opname van de bodemmkaart.   (meer informatie over de werkwijze is te vinden onder het kopje Kwaliteit)</gco:CharacterString>
+        </gmd:abstract>
+        <gmd:purpose>
+          <gco:CharacterString>DOEL:
+Voor het verkrijgen van meer inzicht in de bodemgesteldheid van Nederland, ten behoeve van het ruimtelijk beleid. Het gaat hierbij om lokale, regionale en landelijke studies en toepassingen op het gebied van hydrologie, bodemgeschiktheid, bodemkwetsbaarheid, natuurontwikkeling, landschapsplanning en ruimtelijke planvorming. De informatie wordt veel gebruikt bij modelberekeningen, daarbij worden de eenheden van de bodemkaart veelal geaggregeerd naar een beperkter aantal eenheden. Voorbeelden hiervan zijn:
+
+1) De Stone-indeling, een indeling gebaseerd op bodemfysische en bodemchemische kenmerken voor toepassingen in het model Stone.
+2) NHI, het Nationaal Hydrologisch Instrumentarium, waarin software en data voor het ontwikkelen van grondwater- en oppervlaktewatermodellen voor Nederland zijn verzameld. Het NHI is bedoeld om de kennis van specialisten bij waterbeheerder, instituten en adviesbureau's te bundelen om te komen tot kwalitatief goede instrumenten en data.
+3) Bodemfysische eenheden kaart (BOFEK2012) http://www.wageningenur.nl/nl/show/Bodemfysische-Eenhedenkaart-BOFEK2012.htm. De bodemkaart wordt onderdeel van de Basisregistratie Ondergrond (BRO). 
+
+
+
+BENODIGDE KENNIS EN VAARDIGHEDEN:
+ De gebruiker van de bodemkaart dient te beschikken over bodemkundige achtergrondkennis en bij het gebruik van het GIS-bestand over vaardigheden om met een GIS-pakket te kunnen werken.</gco:CharacterString>
+        </gmd:purpose>
+        <gmd:status>
+          <gmd:MD_ProgressCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ProgressCode" codeListValue="completed" />
+        </gmd:status>
+        <gmd:pointOfContact>
+          <gmd:CI_ResponsibleParty>
+            <gmd:individualName>
+              <gco:CharacterString>GeoDesk</gco:CharacterString>
+            </gmd:individualName>
+            <gmd:organisationName>
+              <gco:CharacterString>Wageningen Environmental Research (Alterra)</gco:CharacterString>
+            </gmd:organisationName>
+            <gmd:positionName>
+              <gco:CharacterString>Beheerder</gco:CharacterString>
+            </gmd:positionName>
+            <gmd:contactInfo>
+              <gmd:CI_Contact>
+                <gmd:phone>
+                  <gmd:CI_Telephone>
+                    <gmd:voice>
+                      <gco:CharacterString>0317-484111</gco:CharacterString>
+                    </gmd:voice>
+                  </gmd:CI_Telephone>
+                </gmd:phone>
+                <gmd:address>
+                  <gmd:CI_Address>
+                    <gmd:deliveryPoint>
+                      <gco:CharacterString>Droevendaalsesteeg 3</gco:CharacterString>
+                    </gmd:deliveryPoint>
+                    <gmd:city>
+                      <gco:CharacterString>Wageningen</gco:CharacterString>
+                    </gmd:city>
+                    <gmd:administrativeArea>
+                      <gco:CharacterString>Gelderland</gco:CharacterString>
+                    </gmd:administrativeArea>
+                    <gmd:postalCode>
+                      <gco:CharacterString>6708 PB</gco:CharacterString>
+                    </gmd:postalCode>
+                    <gmd:country>
+                      <gco:CharacterString>Nederland</gco:CharacterString>
+                    </gmd:country>
+                    <gmd:electronicMailAddress>
+                      <gco:CharacterString>GeoDesk@wur.nl</gco:CharacterString>
+                    </gmd:electronicMailAddress>
+                  </gmd:CI_Address>
+                </gmd:address>
+                <gmd:onlineResource>
+                  <gmd:CI_OnlineResource>
+                    <gmd:linkage>
+                      <gmd:URL>http://www.wur.nl/nl/Expertises-Dienstverlening/Onderzoeksinstituten/Environmental-Research/Faciliteiten-Producten/GeoDesk.htm</gmd:URL>
+                    </gmd:linkage>
+                  </gmd:CI_OnlineResource>
+                </gmd:onlineResource>
+              </gmd:CI_Contact>
+            </gmd:contactInfo>
+            <gmd:role>
+              <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="owner" />
+            </gmd:role>
+          </gmd:CI_ResponsibleParty>
+        </gmd:pointOfContact>
+        <gmd:pointOfContact>
+          <gmd:CI_ResponsibleParty>
+            <gmd:individualName>
+              <gco:CharacterString>Fokke Brouwer</gco:CharacterString>
+            </gmd:individualName>
+            <gmd:organisationName>
+              <gco:CharacterString>Wageningen Environmental Research</gco:CharacterString>
+            </gmd:organisationName>
+            <gmd:positionName>
+              <gco:CharacterString>Inhoudelijk deskundige</gco:CharacterString>
+            </gmd:positionName>
+            <gmd:contactInfo>
+              <gmd:CI_Contact>
+                <gmd:phone>
+                  <gmd:CI_Telephone>
+                    <gmd:voice>
+                      <gco:CharacterString>0317-486521</gco:CharacterString>
+                    </gmd:voice>
+                  </gmd:CI_Telephone>
+                </gmd:phone>
+                <gmd:address>
+                  <gmd:CI_Address>
+                    <gmd:deliveryPoint>
+                      <gco:CharacterString>Droevendaalsesteeg 3</gco:CharacterString>
+                    </gmd:deliveryPoint>
+                    <gmd:city>
+                      <gco:CharacterString>Wageningen</gco:CharacterString>
+                    </gmd:city>
+                    <gmd:administrativeArea>
+                      <gco:CharacterString>Gelderland</gco:CharacterString>
+                    </gmd:administrativeArea>
+                    <gmd:postalCode>
+                      <gco:CharacterString>6708 PB</gco:CharacterString>
+                    </gmd:postalCode>
+                    <gmd:country>
+                      <gco:CharacterString>Nederland</gco:CharacterString>
+                    </gmd:country>
+                    <gmd:electronicMailAddress>
+                      <gco:CharacterString>fokke.brouwer@wur.nl</gco:CharacterString>
+                    </gmd:electronicMailAddress>
+                  </gmd:CI_Address>
+                </gmd:address>
+                <gmd:onlineResource>
+                  <gmd:CI_OnlineResource>
+                    <gmd:linkage>
+                      <gmd:URL>http://www.wur.nl/nl/Expertises-Dienstverlening/Onderzoeksinstituten/Environmental-Research/Faciliteiten-Producten/Bodemkundig-Informatie-Systeem-BIS-Nederland.htm</gmd:URL>
+                    </gmd:linkage>
+                  </gmd:CI_OnlineResource>
+                </gmd:onlineResource>
+              </gmd:CI_Contact>
+            </gmd:contactInfo>
+            <gmd:role>
+              <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact" />
+            </gmd:role>
+          </gmd:CI_ResponsibleParty>
+        </gmd:pointOfContact>
+        <gmd:resourceMaintenance>
+          <gmd:MD_MaintenanceInformation>
+            <gmd:maintenanceAndUpdateFrequency>
+              <gmd:MD_MaintenanceFrequencyCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="notPlanned" />
+            </gmd:maintenanceAndUpdateFrequency>
+            <gmd:dateOfNextUpdate>
+              <gco:Date />
+            </gmd:dateOfNextUpdate>
+          </gmd:MD_MaintenanceInformation>
+        </gmd:resourceMaintenance>
+        <gmd:graphicOverview />
+        <gmd:descriptiveKeywords>
+          <gmd:MD_Keywords>
+            <gmd:keyword>
+              <gco:CharacterString>Bodem</gco:CharacterString>
+            </gmd:keyword>
+            <gmd:thesaurusName>
+              <gmd:CI_Citation>
+                <gmd:title>
+                  <gco:CharacterString>GEMET - Themes, version 2.4</gco:CharacterString>
+                </gmd:title>
+                <gmd:date>
+                  <gmd:CI_Date>
+                    <gmd:date>
+                      <gco:Date>2010-01-13</gco:Date>
+                    </gmd:date>
+                    <gmd:dateType>
+                      <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication" />
+                    </gmd:dateType>
+                  </gmd:CI_Date>
+                </gmd:date>
+                <gmd:date>
+                  <gmd:CI_Date>
+                    <gmd:dateType>
+                      <gmd:CI_DateTypeCode codeList="" codeListValue="" />
+                    </gmd:dateType>
+                  </gmd:CI_Date>
+                </gmd:date>
+              </gmd:CI_Citation>
+            </gmd:thesaurusName>
+          </gmd:MD_Keywords>
+        </gmd:descriptiveKeywords>
+        <gmd:resourceConstraints>
+          <gmd:MD_Constraints>
+            <gmd:useLimitation>
+              <gco:CharacterString>Bronvermelding</gco:CharacterString>
+            </gmd:useLimitation>
+          </gmd:MD_Constraints>
+        </gmd:resourceConstraints>
+        <gmd:resourceConstraints>
+          <gmd:MD_Constraints>
+            <gmd:useLimitation>
+              <gco:CharacterString>Beschikbaar voor derden tegen betaling (en gebruikersovereenkomst)</gco:CharacterString>
+            </gmd:useLimitation>
+          </gmd:MD_Constraints>
+        </gmd:resourceConstraints>
+        <gmd:resourceConstraints>
+          <gmd:MD_LegalConstraints>
+            <gmd:useConstraints>
+              <gmd:MD_RestrictionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_RestrictionCode" codeListValue="copyright" />
+            </gmd:useConstraints>
+          </gmd:MD_LegalConstraints>
+        </gmd:resourceConstraints>
+        <gmd:resourceConstraints>
+          <gmd:MD_LegalConstraints>
+            <gmd:accessConstraints>
+              <gmd:MD_RestrictionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_RestrictionCode" codeListValue="intellectualPropertyRights" />
+            </gmd:accessConstraints>
+          </gmd:MD_LegalConstraints>
+        </gmd:resourceConstraints>
+        <gmd:resourceConstraints>
+          <gmd:MD_LegalConstraints>
+            <gmd:accessConstraints>
+              <gmd:MD_RestrictionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions" />
+            </gmd:accessConstraints>
+            <gmd:otherConstraints>
+              <gco:CharacterString>Copyrighthouder: Wageningen Environmental Research</gco:CharacterString>
+            </gmd:otherConstraints>
+          </gmd:MD_LegalConstraints>
+        </gmd:resourceConstraints>
+        <gmd:spatialRepresentationType>
+          <gmd:MD_SpatialRepresentationTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="vector" />
+        </gmd:spatialRepresentationType>
+        <gmd:spatialResolution>
+          <gmd:MD_Resolution>
+            <gmd:equivalentScale>
+              <gmd:MD_RepresentativeFraction>
+                <gmd:denominator>
+                  <gco:Integer>50000</gco:Integer>
+                </gmd:denominator>
+              </gmd:MD_RepresentativeFraction>
+            </gmd:equivalentScale>
+          </gmd:MD_Resolution>
+        </gmd:spatialResolution>
+        <gmd:spatialResolution>
+          <gmd:MD_Resolution>
+            <gmd:equivalentScale>
+              <gmd:MD_RepresentativeFraction>
+                <gmd:denominator>
+                  <gco:Integer>1000000</gco:Integer>
+                </gmd:denominator>
+              </gmd:MD_RepresentativeFraction>
+            </gmd:equivalentScale>
+          </gmd:MD_Resolution>
+        </gmd:spatialResolution>
+        <gmd:language>
+          <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="dut" />
+        </gmd:language>
+        <gmd:characterSet>
+          <gmd:MD_CharacterSetCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
+        </gmd:characterSet>
+        <gmd:topicCategory>
+          <gmd:MD_TopicCategoryCode>geoscientificInformation</gmd:MD_TopicCategoryCode>
+        </gmd:topicCategory>
+        <gmd:extent>
+          <gmd:EX_Extent>
+            <gmd:description>
+              <gco:CharacterString>De gegevens over de minerale gronden zijn in de periode 1960 - 1998 verzameld. Voor de gebieden met (dunne) veengronden en moerige gronden is in de periode 2012 - 2014 een actualisatie uitgevoerd.</gco:CharacterString>
+            </gmd:description>
+            <gmd:geographicElement>
+              <gmd:EX_GeographicBoundingBox>
+                <gmd:westBoundLongitude>
+                  <gco:Decimal>3.254</gco:Decimal>
+                </gmd:westBoundLongitude>
+                <gmd:eastBoundLongitude>
+                  <gco:Decimal>7.244</gco:Decimal>
+                </gmd:eastBoundLongitude>
+                <gmd:southBoundLatitude>
+                  <gco:Decimal>50.735</gco:Decimal>
+                </gmd:southBoundLatitude>
+                <gmd:northBoundLatitude>
+                  <gco:Decimal>53.559</gco:Decimal>
+                </gmd:northBoundLatitude>
+              </gmd:EX_GeographicBoundingBox>
+            </gmd:geographicElement>
+            <gmd:geographicElement>
+              <gmd:EX_GeographicDescription>
+                <gmd:geographicIdentifier>
+                  <gmd:MD_Identifier>
+                    <gmd:code>
+                      <gco:CharacterString>Nederland</gco:CharacterString>
+                    </gmd:code>
+                  </gmd:MD_Identifier>
+                </gmd:geographicIdentifier>
+              </gmd:EX_GeographicDescription>
+            </gmd:geographicElement>
+            <gmd:temporalElement>
+              <gmd:EX_TemporalExtent>
+                <gmd:extent>
+                  <gml:TimePeriod gml:id="tp1">
+                    <gml:begin>
+                      <gml:TimeInstant gml:id="ti1">
+                        <gml:timePosition>1965-01-01</gml:timePosition>
+                      </gml:TimeInstant>
+                    </gml:begin>
+                    <gml:end>
+                      <gml:TimeInstant gml:id="ti2">
+                        <gml:timePosition>2015-01-23</gml:timePosition>
+                      </gml:TimeInstant>
+                    </gml:end>
+                  </gml:TimePeriod>
+                </gmd:extent>
+              </gmd:EX_TemporalExtent>
+            </gmd:temporalElement>
+            <gmd:verticalElement />
+          </gmd:EX_Extent>
+        </gmd:extent>
+        <gmd:supplementalInformation>
+          <gco:CharacterString>Toelichting op de legenda: Steur, G.G.L. &amp; w. Heijink, 1991. Bodemkaart van Nederland, schaal 1 : 50 000. Algemene begrippen en indelingen. Wageningen, Staring Centrum.|http://www.bodemdata.nl/bodemdatanl/toel_legenda_nl.htm^Toelichting per kaartblad: Kies [Naslag] [Bodemkaart 1 : 50 000]|http://www.bodemdata.nl/^Vergraven gronden; Brouwer, F., 2012 Alterra rapport 2336|http://www.wageningenur.nl/nl/show/Vergraven-Gronden-2.htm^Actualisatie bodemkaart veengebieden. Deelgebied 1 en 2 Noord-Nederland. F. de Vries, D.J. Brus, B. Kempen, F. Brouwer en A.H. Heidema. 2014. Alterra rapport 2556.  |http://edepot.wur.nl/314315^Overzicht van het gebruik en wensen bodemkundige informatie (hoofdstuk 2). De Vries et al, 2008.|http://edepot.wur.nl/31005^Wet Basisregistratie Ondergrond (2015)|https://www.eerstekamer.nl/9370000/1/j9vvhwtbnzpbzzc/vjy7bzqhpdwr/f=y.pdf^Vallidatie steekproef veldpodzolgronden. Visschers, R.|http://edepot.wur.nl/304418</gco:CharacterString>
+        </gmd:supplementalInformation>
+      </gmd:MD_DataIdentification>
+    </gmd:identificationInfo>
+    <gmd:distributionInfo>
+      <gmd:MD_Distribution>
+        <gmd:distributor>
+          <gmd:MD_Distributor>
+            <gmd:distributorContact>
+              <gmd:CI_ResponsibleParty>
+                <gmd:individualName>
+                  <gco:CharacterString>GeoDesk</gco:CharacterString>
+                </gmd:individualName>
+                <gmd:organisationName>
+                  <gco:CharacterString>Wageningen Environmental Research (Alterra)</gco:CharacterString>
+                </gmd:organisationName>
+                <gmd:positionName>
+                  <gco:CharacterString>Beheerder</gco:CharacterString>
+                </gmd:positionName>
+                <gmd:contactInfo>
+                  <gmd:CI_Contact>
+                    <gmd:phone>
+                      <gmd:CI_Telephone>
+                        <gmd:voice>
+                          <gco:CharacterString>0317-484111</gco:CharacterString>
+                        </gmd:voice>
+                      </gmd:CI_Telephone>
+                    </gmd:phone>
+                    <gmd:address>
+                      <gmd:CI_Address>
+                        <gmd:deliveryPoint>
+                          <gco:CharacterString>Postbus 47</gco:CharacterString>
+                        </gmd:deliveryPoint>
+                        <gmd:city>
+                          <gco:CharacterString>Wageningen</gco:CharacterString>
+                        </gmd:city>
+                        <gmd:administrativeArea>
+                          <gco:CharacterString>Gelderland</gco:CharacterString>
+                        </gmd:administrativeArea>
+                        <gmd:postalCode>
+                          <gco:CharacterString>6700 AA</gco:CharacterString>
+                        </gmd:postalCode>
+                        <gmd:country>
+                          <gco:CharacterString>Nederland</gco:CharacterString>
+                        </gmd:country>
+                        <gmd:electronicMailAddress>
+                          <gco:CharacterString>GeoDesk@wur.nl</gco:CharacterString>
+                        </gmd:electronicMailAddress>
+                      </gmd:CI_Address>
+                    </gmd:address>
+                    <gmd:onlineResource>
+                      <gmd:CI_OnlineResource>
+                        <gmd:linkage>
+                          <gmd:URL>http://www.wur.nl/nl/Expertises-Dienstverlening/Onderzoeksinstituten/Environmental-Research/Faciliteiten-Producten/GeoDesk.htm</gmd:URL>
+                        </gmd:linkage>
+                      </gmd:CI_OnlineResource>
+                    </gmd:onlineResource>
+                  </gmd:CI_Contact>
+                </gmd:contactInfo>
+                <gmd:role>
+                  <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="distributor" />
+                </gmd:role>
+              </gmd:CI_ResponsibleParty>
+            </gmd:distributorContact>
+          </gmd:MD_Distributor>
+        </gmd:distributor>
+        <gmd:transferOptions>
+          <gmd:MD_DigitalTransferOptions>
+            <gmd:unitsOfDistribution>
+              <gco:CharacterString>Willekeurige gebieden</gco:CharacterString>
+            </gmd:unitsOfDistribution>
+            <gmd:onLine gco:nilReason="withheld" />
+            <gmd:offLine>
+              <gmd:MD_Medium>
+                <gmd:name>
+                  <gmd:MD_MediumNameCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_MediumNameCode" codeListValue="" />
+                </gmd:name>
+              </gmd:MD_Medium>
+            </gmd:offLine>
+          </gmd:MD_DigitalTransferOptions>
+        </gmd:transferOptions>
+      </gmd:MD_Distribution>
+    </gmd:distributionInfo>
+    <gmd:dataQualityInfo>
+      <gmd:DQ_DataQuality>
+        <gmd:scope>
+          <gmd:DQ_Scope>
+            <gmd:level>
+              <gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" />
+            </gmd:level>
+          </gmd:DQ_Scope>
+        </gmd:scope>
+        <gmd:report>
+          <gmd:DQ_CompletenessOmission>
+            <gmd:result>
+              <gmd:DQ_QuantitativeResult>
+                <gmd:valueUnit gco:nilReason="inapplicable" />
+                <gmd:value>
+                  <gco:Record>De bodemkaart is landsdekkend beschikbaar</gco:Record>
+                </gmd:value>
+              </gmd:DQ_QuantitativeResult>
+            </gmd:result>
+          </gmd:DQ_CompletenessOmission>
+        </gmd:report>
+        <gmd:report>
+          <gmd:DQ_TopologicalConsistency>
+            <gmd:result>
+              <gmd:DQ_QuantitativeResult>
+                <gmd:valueUnit xlink:href="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/uom/gmxUom.xml#m" />
+                <gmd:value>
+                  <gco:Record>25</gco:Record>
+                </gmd:value>
+              </gmd:DQ_QuantitativeResult>
+            </gmd:result>
+          </gmd:DQ_TopologicalConsistency>
+        </gmd:report>
+        <gmd:report>
+          <gmd:DQ_AbsoluteExternalPositionalAccuracy>
+            <gmd:result>
+              <gmd:DQ_QuantitativeResult>
+                <gmd:valueUnit gco:nilReason="inapplicable" />
+                <gmd:value>
+                  <gco:Record>Er zijn validaties uitgevoerd. Een voorbeeld van de eerste uitgave is de validatie met behulp van de Landelijke Steekproef Kaarteenheden (LSK). Het onderzoek is vastgelegd in een serie SC-DLO rapporten o.a. R. Visschers, 1993. Upgrading van de Bodemkaart van Nederland, schaal 1 : 50000, door steekproeven in kaarteenheden van veldpozolgronden Hn21-V en Hn21-VI, DLO Rapport 186, 1993. De kaartzuiverheid van de onderzochte veldpodzolen, een eenheid die in Nederland met een grote oppervlakte beslaat, bedraagt volgens deze studie 68% voor Hn21-V en 82% voor Hn21-VI. Het resultaat van de actualisatie in 2014 is eveneens gevalideerd. De zuiverheid van de veendikteklassenkaart bedraagt tussen de 65% en 70%. De zuiverheid van de kaart met de drie hoofdeenheden mineraal, moerig en veen is voor twee deelgebieden in Noord-Nederland zo’n 65%. Dat wil zeggen dat voor 65% van de oppervlakte de juiste hoofdeenheid wordt weergegeven. Het onderzoek is vastgelegd in Vries, F. de, D.J. Brus, B. Kempen, F. Brouwer en A.H. Heidema, 2014. Actualisatie bodemkaart veengebieden; Deelgebied 1 en 2 in Noord Nederland. Wageningen, Alterra Wageningen UR, Alterra-rapport 2556.</gco:Record>
+                </gmd:value>
+              </gmd:DQ_QuantitativeResult>
+            </gmd:result>
+          </gmd:DQ_AbsoluteExternalPositionalAccuracy>
+        </gmd:report>
+        <gmd:report>
+          <gmd:DQ_DomainConsistency>
+            <gmd:result />
+          </gmd:DQ_DomainConsistency>
+        </gmd:report>
+        <gmd:lineage>
+          <gmd:LI_Lineage>
+            <gmd:statement gco:nilReason="missing">
+              <gco:CharacterString />
+            </gmd:statement>
+            <gmd:processStep>
+              <gmd:LI_ProcessStep>
+                <gmd:description>
+                  <gco:CharacterString>De bodemkaart van Nederland is doormiddel van een uitgebreid veldverkenning kaartblad voor kaartblad tot stand gekomen (periode 1960 - 1998).</gco:CharacterString>
+                </gmd:description>
+                <gmd:dateTime>
+                  <gco:DateTime>1998-07-29T00:00:00</gco:DateTime>
+                </gmd:dateTime>
+                <gmd:processor>
+                  <gmd:CI_ResponsibleParty>
+                    <gmd:organisationName>
+                      <gco:CharacterString>ALTERRA en voorafgaande instituten</gco:CharacterString>
+                    </gmd:organisationName>
+                    <gmd:role>
+                      <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="processor" />
+                    </gmd:role>
+                  </gmd:CI_ResponsibleParty>
+                </gmd:processor>
+              </gmd:LI_ProcessStep>
+            </gmd:processStep>
+            <gmd:processStep>
+              <gmd:LI_ProcessStep>
+                <gmd:description>
+                  <gco:CharacterString>Het kaartbeeld is gedigitaliseerd (periode 1980 1998).</gco:CharacterString>
+                </gmd:description>
+                <gmd:dateTime>
+                  <gco:DateTime>1998-07-29T00:00:00</gco:DateTime>
+                </gmd:dateTime>
+                <gmd:processor>
+                  <gmd:CI_ResponsibleParty>
+                    <gmd:organisationName>
+                      <gco:CharacterString>ALTERRA en voorafgaande instituten</gco:CharacterString>
+                    </gmd:organisationName>
+                    <gmd:role>
+                      <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="processor" />
+                    </gmd:role>
+                  </gmd:CI_ResponsibleParty>
+                </gmd:processor>
+              </gmd:LI_ProcessStep>
+            </gmd:processStep>
+            <gmd:processStep>
+              <gmd:LI_ProcessStep>
+                <gmd:description>
+                  <gco:CharacterString>In de periode 2012 - 2014 zijn de kaartvlakken met veengronden en moerige gronden geactualiseerd. Hiervoor zijn in een regelmatig grid, verspreid over het gebied met een dichtheid van 1 per 50 á 100 ha grondboringen verricht om de actuele veendikte te bepalen. Met behulp van Digitale Bodemkartering (DBK) zijn uit deze gegevens en gegevens uit het BIS van Alterra veendiktekaarten vervaardigd. DBK is een geostatistische techniek, die gegevens uit puntwaarnemingen combineert met gegevens uit gebiedsdekkende hulpbestanden om gebiedsdekkend voorspellingen te kunnen doen over gebiedskenmerken, in dit geval de veendikte, de bodemkundige hoofdklasse en de dikte van de minerale bovengrond.</gco:CharacterString>
+                </gmd:description>
+                <gmd:dateTime>
+                  <gco:DateTime>2014-04-01T00:00:00</gco:DateTime>
+                </gmd:dateTime>
+                <gmd:processor>
+                  <gmd:CI_ResponsibleParty>
+                    <gmd:organisationName>
+                      <gco:CharacterString>Alterra</gco:CharacterString>
+                    </gmd:organisationName>
+                    <gmd:role>
+                      <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="processor" />
+                    </gmd:role>
+                  </gmd:CI_ResponsibleParty>
+                </gmd:processor>
+              </gmd:LI_ProcessStep>
+            </gmd:processStep>
+            <gmd:processStep>
+              <gmd:LI_ProcessStep>
+                <gmd:description>
+                  <gco:CharacterString>De veendiktes in het gridbestand zijn geclassificeerd voor het onderscheid in dikke veengronden (&gt;100 à120 cm veen), dunne veengronden (40 tot 100 à 120 cm veen), moerige gronden (5 - 40 cm veen) en minerale gronden (&lt; 5 cm veen). Daarna is dit gridbestand via een standaardprocedure in ArcGIS omgezet naar een vectorbestand met veendikteklassen.
+
+Uit de combinatie van de veendikteklassenkaart, de dekdiktekaart en de oorspronkelijke bodemkaart zijn kaartvlakken gegenereerd en kaartvlakcodes afgeleid.</gco:CharacterString>
+                </gmd:description>
+                <gmd:dateTime>
+                  <gco:DateTime>2014-04-01T00:00:00</gco:DateTime>
+                </gmd:dateTime>
+                <gmd:processor>
+                  <gmd:CI_ResponsibleParty>
+                    <gmd:organisationName>
+                      <gco:CharacterString>Alterra</gco:CharacterString>
+                    </gmd:organisationName>
+                    <gmd:role>
+                      <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="processor" />
+                    </gmd:role>
+                  </gmd:CI_ResponsibleParty>
+                </gmd:processor>
+              </gmd:LI_ProcessStep>
+            </gmd:processStep>
+            <gmd:processStep>
+              <gmd:LI_ProcessStep>
+                <gmd:description>
+                  <gco:CharacterString>De nieuwe kaartvlakken zijn ingebed in het bestand van de landelijke bodemkaart. Hierbij is de structuur van het bestand aangepast. In het nieuwe bestand ontbreken de grondwatertrappen, omdat deze in het kader van de veenactualisatie niet geactualiseerd zijn. De grondwatertrappen van de oorspronkelijke bodemkaart zijn nog wel beschikbaar in een apart GIS-bestand. Daarnaast is er van de zandgebieden de Gd-kaart beschikbaar en thans (2014) wordt er gewerkt aan het upgraden van de grondwatertrappenkaart van het holocene gebied (veen en kleigronden in Nederland).</gco:CharacterString>
+                </gmd:description>
+                <gmd:dateTime>
+                  <gco:DateTime>2014-04-01T00:00:00</gco:DateTime>
+                </gmd:dateTime>
+                <gmd:processor>
+                  <gmd:CI_ResponsibleParty>
+                    <gmd:organisationName>
+                      <gco:CharacterString>Alterra Wageningen UR</gco:CharacterString>
+                    </gmd:organisationName>
+                    <gmd:role>
+                      <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="processor" />
+                    </gmd:role>
+                  </gmd:CI_ResponsibleParty>
+                </gmd:processor>
+              </gmd:LI_ProcessStep>
+            </gmd:processStep>
+            <gmd:processStep>
+              <gmd:LI_ProcessStep>
+                <gmd:description>
+                  <gco:CharacterString>Validatie Bodemkaart Eerst uitgave. 
+De Bodemkaart 1 : 50000 is gevalideerd met behulp van de Landelijke Steekproef Kaarteenheden (LSK). Het onderzoek is vastgelegd in de rapporten R. Visschers, 1993. Upgrading van de Bodemkaart van Nederland, schaal 1 : 50000, door steekproeven in kaarteenheden van veldpozolgronden Hn21-V en Hn21-VI, DLO Rapport 186, 1993. De kaartzuiverheid van de onderzochte veldpodzolen een eenheid die in Nederland met een grote oppervlakte beslaat, bedraagt volgens deze studie 68% voor Hn21-V en 82% voor Hn21-VI. Soortgelijke steekproeven zijn ook uitgevoerd bij andere bodemtypen.</gco:CharacterString>
+                </gmd:description>
+                <gmd:dateTime>
+                  <gco:DateTime>2014-12-01T00:00:00</gco:DateTime>
+                </gmd:dateTime>
+                <gmd:processor>
+                  <gmd:CI_ResponsibleParty>
+                    <gmd:role>
+                      <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="processor" />
+                    </gmd:role>
+                  </gmd:CI_ResponsibleParty>
+                </gmd:processor>
+              </gmd:LI_ProcessStep>
+            </gmd:processStep>
+            <gmd:processStep>
+              <gmd:LI_ProcessStep>
+                <gmd:description>
+                  <gco:CharacterString>Validatie veenactualisatie:
+De zuiverheid van de veendikteklassenkaart bedraagt tussen de 65% en 70%. De 
+zuiverheid van de kaart met de drie hoofdeenheden mineraal, moerig en veen bedraagt in twee 
+deelgebieden in Noord-Nederland zo’n 65%. Dat wil zeggen dat voor 65% van de oppervlakte de juiste hoofdeenheid 
+wordt weergegeven. Het onderzoek is vastgelegd in Vries, F. de, D.J. Brus, B. Kempen, F. Brouwer en A.H. Heidema, 2014. Actualisatie bodemkaart veengebieden; Deelgebied 1 en 2 in Noord Nederland. Wageningen, Alterra Wageningen UR, Alterra-rapport 2556.</gco:CharacterString>
+                </gmd:description>
+                <gmd:dateTime>
+                  <gco:DateTime>2014-12-31T00:00:00</gco:DateTime>
+                </gmd:dateTime>
+                <gmd:processor>
+                  <gmd:CI_ResponsibleParty>
+                    <gmd:role>
+                      <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="processor" />
+                    </gmd:role>
+                  </gmd:CI_ResponsibleParty>
+                </gmd:processor>
+              </gmd:LI_ProcessStep>
+            </gmd:processStep>
+            <gmd:source>
+              <gmd:LI_Source>
+                <gmd:description>
+                  <gco:CharacterString>Bodemkaart van Nederland, schaal 1 : 50 000, eerste uitgave</gco:CharacterString>
+                </gmd:description>
+                <gmd:sourceStep>
+                  <gmd:LI_ProcessStep>
+                    <gmd:description>
+                      <gco:CharacterString>GIS-bewerkingen</gco:CharacterString>
+                    </gmd:description>
+                    <gmd:dateTime>
+                      <gco:DateTime>2014-04-01T00:00:00</gco:DateTime>
+                    </gmd:dateTime>
+                    <gmd:processor>
+                      <gmd:CI_ResponsibleParty>
+                        <gmd:organisationName>
+                          <gco:CharacterString>Alterra</gco:CharacterString>
+                        </gmd:organisationName>
+                        <gmd:role>
+                          <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="principalInvestigator" />
+                        </gmd:role>
+                      </gmd:CI_ResponsibleParty>
+                    </gmd:processor>
+                  </gmd:LI_ProcessStep>
+                </gmd:sourceStep>
+              </gmd:LI_Source>
+            </gmd:source>
+          </gmd:LI_Lineage>
+        </gmd:lineage>
+      </gmd:DQ_DataQuality>
+    </gmd:dataQualityInfo>
+    <gmd:dataQualityInfo>
+      <gmd:DQ_DataQuality>
+        <gmd:scope>
+          <gmd:DQ_Scope>
+            <gmd:level>
+              <gmd:MD_ScopeCode codeListValue="dataset" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ScopeCode" />
+            </gmd:level>
+          </gmd:DQ_Scope>
+        </gmd:scope>
+        <gmd:report>
+          <gmd:DQ_DomainConsistency>
+            <gmd:result>
+              <gmd:DQ_ConformanceResult>
+                <gmd:specification>
+                  <gmd:CI_Citation>
+                    <gmd:title>
+                      <gco:CharacterString>COMMISSION REGULATION (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services</gco:CharacterString>
+                    </gmd:title>
+                    <gmd:date>
+                      <gmd:CI_Date>
+                        <gmd:date>
+                          <gco:Date>2010-12-08</gco:Date>
+                        </gmd:date>
+                        <gmd:dateType>
+                          <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication" />
+                        </gmd:dateType>
+                      </gmd:CI_Date>
+                    </gmd:date>
+                  </gmd:CI_Citation>
+                </gmd:specification>
+                <gmd:explanation>
+                  <gco:CharacterString>See the referenced specification</gco:CharacterString>
+                </gmd:explanation>
+                <gmd:pass>
+                  <gco:Boolean>0</gco:Boolean>
+                </gmd:pass>
+              </gmd:DQ_ConformanceResult>
+            </gmd:result>
+          </gmd:DQ_DomainConsistency>
+        </gmd:report>
+      </gmd:DQ_DataQuality>
+    </gmd:dataQualityInfo>
+  </gmd:MD_Metadata>
+</csw:GetRecordByIdResponse>
+
