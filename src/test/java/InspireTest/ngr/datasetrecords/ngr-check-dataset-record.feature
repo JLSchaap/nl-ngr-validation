@@ -30,6 +30,7 @@ Feature:  Check dataset record datasetIdentifierCode
     # check INSPIRE TG2 anchor
     # And match /GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier/MD_Identifier/code/Anchor == '<datasetIdentifierCode>'
     * def title =  get response //citation/CI_Citation/title/CharacterString
+    * print 'title:' + title
     * print title
     #* def organisation =  get response /GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/pointOfContact[*]/CI_ResponsibleParty/organisationName/Anchor
     #* print 'organisation:', organisation
