@@ -9,12 +9,13 @@ on:
   pull_request:
     branches:
       - master
-  schedule:
-    - cron: "04 04 * * *"
+  #schedule:
+  #  - cron: "04 04 * * *"
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v2
       - name: Set up JDK 13
@@ -29,7 +30,7 @@ jobs:
         if: always()
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./target/surefire-reports/cucumber-html-reports
+          publish_dir: ./target/surefire-reports
 
 
 
