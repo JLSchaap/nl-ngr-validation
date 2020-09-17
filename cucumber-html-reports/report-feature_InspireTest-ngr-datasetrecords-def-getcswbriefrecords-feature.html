@@ -75,7 +75,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>NLTEST</td>
-            <td>17 Sep 2020, 19:18</td>
+            <td>17 Sep 2020, 19:42</td>
     </tr>
   </tbody>
 </table>
@@ -128,9 +128,9 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">InspireTest/ngr/datasetrecords/def/getcswbriefrecords.feature</td>
-                    <td >0</td>
+                    <td      class="passed"    >12</td>
           <td      class="failed"    >1</td>
-          <td     class="skipped"   >23</td>
+          <td     class="skipped"   >11</td>
           <td >0</td>
           <td >0</td>
           <td class="total">24</td>
@@ -139,7 +139,7 @@ $(document).ready(function() {
           <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="37088729">0.037</td>
+          <td class="duration" data-value="30662364201">30.662</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -190,7 +190,7 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">0.037</span>
+  <span class="lead-duration duration">30.662</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
@@ -227,37 +227,26 @@ $(document).ready(function() {
   <div id="steps-2" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">*</span>
   <span class="name">def knownlinks = karate.jsonPath(karate.read('classpath:InspireTest/ngr/datasetrecords/def/knownlink.csv'), '[*].knownlink')</span>
   
-  <span class="lead-duration duration">0.037</span>
+  <span class="lead-duration duration">0.059</span>
 
   </div>
 
         
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
-          <a>com.intuit.karate.exception.KarateException: getcswbriefrecords.feature:9 - javascript evaluation failed: karate.jsonPath(karate.read('classpath:InspireTest/ngr/datasetrecords/def/knownlink.csv'), '[*].knownlink'), java.lang.ArrayIndexOutOfBoundsException: arraycopy: last source index 8267 out of bounds for char[8192]</a>
-      </div>
-      <div id="msg-3" class="collapse collapsable-details  in ">
-        <pre>com.intuit.karate.exception.KarateException: getcswbriefrecords.feature:9 - javascript evaluation failed: karate.jsonPath(karate.read('classpath:InspireTest/ngr/datasetrecords/def/knownlink.csv'), '[*].knownlink'), java.lang.ArrayIndexOutOfBoundsException: arraycopy: last source index 8267 out of bounds for char[8192]</pre>
-      </div>
-    </div>
-  </div>
 
 
         
         
   <div class="inner-level">
     <div class="docstring indention">
-            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
           <a>Doc string</a>
       </div>
-      <div id="msg-4" class="collapse collapsable-details">
-        <pre>19:18:52.997 karate.env system property was:</pre>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>19:39:21.396 karate.env system property was:</pre>
       </div>
     </div>
   </div>
@@ -269,7 +258,7 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">*</span>
   <span class="name">url 'http://nationaalgeoregister.nl/'</span>
   
@@ -290,11 +279,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">path 'geonetwork/srv/dut/inspire'</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.031</span>
 
   </div>
 
@@ -311,11 +300,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">param service = 'CSW'</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.002</span>
 
   </div>
 
@@ -332,11 +321,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">param version = '2.0.2'</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.040</span>
 
   </div>
 
@@ -353,11 +342,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">param request = 'GetRecords'</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.017</span>
 
   </div>
 
@@ -374,11 +363,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">param propertyName = 'identifier'</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.002</span>
 
   </div>
 
@@ -395,11 +384,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">param typeNames = 'csw:Record'</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.002</span>
 
   </div>
 
@@ -416,11 +405,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">param elementsetname = &quot;brief&quot;</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.010</span>
 
   </div>
 
@@ -437,11 +426,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">param resultType = 'results'</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.007</span>
 
   </div>
 
@@ -458,11 +447,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">param startposition = 1</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.002</span>
 
   </div>
 
@@ -479,11 +468,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">param maxRecords = 1000</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.011</span>
 
   </div>
 
@@ -500,19 +489,43 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief failed">
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">30.473</span>
 
   </div>
 
         
 
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>com.intuit.karate.exception.KarateException: getcswbriefrecords.feature:25 - </a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: getcswbriefrecords.feature:25 - 
+java.net.SocketTimeoutException: Read timed out</pre>
+      </div>
+    </div>
+  </div>
+
 
         
         
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>19:39:52.372 java.net.SocketTimeoutException: Read timed out, http call failed after 30319 milliseconds for URL: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?service=CSW&amp;version=2.0.2&amp;request=GetRecords&amp;propertyName=identifier&amp;typeNames=csw%3ARecord&amp;elementsetname=brief&amp;resultType=results&amp;startposition=1&amp;maxRecords=1000
+19:39:52.372 http request failed: 
+java.net.SocketTimeoutException: Read timed out</pre>
+      </div>
+    </div>
+  </div>
 
         
 
