@@ -1,0 +1,9 @@
+<testsuite failures="1" name="InspireTest/ngr/datasetrecords/check-known-links.feature" skipped="0" tests="1" time="0">
+  <testcase classname="InspireTest.ngr.datasetrecords.check-known-links" name="check known link &lt;knownlink&gt;" time="0">
+    <failure message="check-known-links.feature:4 - javascript evaluation failed: karate.read('classpath:InspireTest/ngr/datasetrecords/def/knownlink.csv'), java.lang.ArrayIndexOutOfBoundsException: arraycopy: last source index 8267 out of bounds for char[8192]">* dynamic expression evaluation failed: karate.read('classpath:InspireTest/ngr/datasetrecords/def/knownlink.csv') . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: check-known-links.feature:4 - javascript evaluation failed: karate.read('classpath:InspireTest/ngr/datasetrecords/def/knownlink.csv'), java.lang.ArrayIndexOutOfBoundsException: arraycopy: last source index 8267 out of bounds for char[8192]
+	at ✽.* dynamic expression evaluation failed: karate.read('classpath:InspireTest/ngr/datasetrecords/def/knownlink.csv') (check-known-links.feature:4)</failure>
+  </testcase>
+</testsuite>

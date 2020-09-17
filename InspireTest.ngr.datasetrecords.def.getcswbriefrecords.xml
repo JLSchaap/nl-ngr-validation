@@ -1,0 +1,33 @@
+<testsuite failures="1" name="InspireTest/ngr/datasetrecords/def/getcswbriefrecords.feature" skipped="0" tests="1" time="0.037089">
+  <testcase classname="InspireTest.ngr.datasetrecords.def.getcswbriefrecords" name="getbrief list" time="0.037089">
+    <failure message="getcswbriefrecords.feature:9 - javascript evaluation failed: karate.jsonPath(karate.read('classpath:InspireTest/ngr/datasetrecords/def/knownlink.csv'), '[*].knownlink'), java.lang.ArrayIndexOutOfBoundsException: arraycopy: last source index 8267 out of bounds for char[8192]">* def knownlinks = karate.jsonPath(karate.read('classpath:InspireTest/ngr/datasetrecords/def/knownlink.csv'), '[*].knownlink') . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: getcswbriefrecords.feature:9 - javascript evaluation failed: karate.jsonPath(karate.read('classpath:InspireTest/ngr/datasetrecords/def/knownlink.csv'), '[*].knownlink'), java.lang.ArrayIndexOutOfBoundsException: arraycopy: last source index 8267 out of bounds for char[8192]
+	at ✽.* def knownlinks = karate.jsonPath(karate.read('classpath:InspireTest/ngr/datasetrecords/def/knownlink.csv'), '[*].knownlink') (getcswbriefrecords.feature:9)
+
+* url 'http://nationaalgeoregister.nl/' ................................... skipped
+Given path 'geonetwork/srv/dut/inspire' ................................... skipped
+And param service = 'CSW' ................................................. skipped
+And param version = '2.0.2' ............................................... skipped
+And param request = 'GetRecords' .......................................... skipped
+And param propertyName = 'identifier' ..................................... skipped
+And param typeNames = 'csw:Record' ........................................ skipped
+And param elementsetname = "brief" ........................................ skipped
+And param resultType = 'results' .......................................... skipped
+And param startposition = 1 ............................................... skipped
+And param maxRecords = 1000 ............................................... skipped
+When method get ........................................................... skipped
+Then status 200 ........................................................... skipped
+* def briefarray = get response /GetRecordsResponse/SearchResults/BriefRecord[type = 'dataset']/identifier . skipped
+* eval karate.embed( briefarray,'text/plain') ............................. skipped
+* def list =  karate.mapWithKey(briefarray ,'datasetIdentifierCode') ...... skipped
+* def json = karate.map(list, function(x, i){ return {} }) ................ skipped
+Given url 'https://inspire.ec.europa.eu/metadata-codelist/metadata-codelist.nl.json' . skipped
+When method get ........................................................... skipped
+Then status 200 ........................................................... skipped
+* print response .......................................................... skipped
+* def inspirecodelist = get response.register.containeditems[*]["metadata-codelist"].id . skipped
+* print inspirecodelist ................................................... skipped</failure>
+  </testcase>
+</testsuite>

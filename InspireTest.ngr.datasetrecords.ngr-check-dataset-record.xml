@@ -1,0 +1,14 @@
+<testsuite failures="1" name="InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature" skipped="0" tests="1" time="0.104906">
+  <testcase classname="InspireTest.ngr.datasetrecords.ngr-check-dataset-record" name="Check dataset record  in ngr voor  &lt;datasetIdentifierCode&gt;" time="0.104906">
+    <failure message="-unknown-:10 - &#10;getcswbriefrecords.feature:9 - javascript evaluation failed: karate.jsonPath(karate.read('classpath:InspireTest/ngr/datasetrecords/def/knownlink.csv'), '[*].knownlink'), java.lang.ArrayIndexOutOfBoundsException: arraycopy: last source index 8267 out of bounds for char[8192]">* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* def callonesresult = callonce read('def/getcswbriefrecords.feature') .... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: -unknown-:10 - 
+getcswbriefrecords.feature:9 - javascript evaluation failed: karate.jsonPath(karate.read('classpath:InspireTest/ngr/datasetrecords/def/knownlink.csv'), '[*].knownlink'), java.lang.ArrayIndexOutOfBoundsException: arraycopy: last source index 8267 out of bounds for char[8192]
+	at ✽.* def callonesresult = callonce read('def/getcswbriefrecords.feature') (-unknown-:10)
+
+* print callonesresult .................................................... skipped</failure>
+  </testcase>
+</testsuite>
