@@ -1,5 +1,5 @@
-<testsuite failures="0" name="InspireTest/ngr/datasetrecords/def/getdataset.template.feature" skipped="0" tests="1" time="0.761333">
-  <testcase classname="InspireTest.ngr.datasetrecords.def.getdataset.template" name="getdatasets" time="0.761333">
+<testsuite failures="0" name="InspireTest/ngr/datasetrecords/def/getdataset.template.feature" skipped="0" tests="1" time="0.777511">
+  <testcase classname="InspireTest.ngr.datasetrecords.def.getdataset.template" name="getdatasets" time="0.777511">
     <system-out>Given url 'https://jlschaap.github.io/nl-ngr-validation/datasets.csv' ..... passed
 When method get ........................................................... passed
 Then status 200 ........................................................... passed</system-out>
