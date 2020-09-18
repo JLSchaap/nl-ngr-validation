@@ -76,7 +76,7 @@ Feature: check known dataset records
         * def id = "<datasetIdentifierCode>"
 
 
-        #* call read('def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link')
+        * call read('def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link')
          Examples:
           | datasets |
 
