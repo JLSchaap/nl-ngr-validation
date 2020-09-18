@@ -1,9 +1,0 @@
-<testsuite failures="0" name="InspireTest/ngr/datasetrecords/def/writedatasetcsvheader.template.feature" skipped="0" tests="1" time="0.087557">
-  <testcase classname="InspireTest.ngr.datasetrecords.def.writedatasetcsvheader.template" name="write header dataset.csv" time="0.087557">
-    <system-out>* def mystorage = Java.type('storage.DataStorage') ........................ passed
-* def db = new mystorage .................................................. passed
-* def line = '"datasetIdentifierCode","title","organisationName","email",' . passed
-* print line .............................................................. passed
-* eval db.mywriteln( line, 'target/surefire-reports/datasets.csv') ........ passed</system-out>
-  </testcase>
-</testsuite>
