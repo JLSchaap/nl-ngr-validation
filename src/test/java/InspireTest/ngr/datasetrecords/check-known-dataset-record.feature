@@ -3,7 +3,7 @@ Feature: check known dataset records
     Background:
         * configure readTimeout = 240000
         * def knownlinks = karate.jsonPath(karate.read('classpath:InspireTest/ngr/datasetrecords/def/knownlink.csv'), '[*].knownlink')
-        * def callheaderresult = callonce read('def/writedatasetcsvheader.template.feature')
+        #* def callheaderresult = callonce read('def/writedatasetcsvheader.template.feature')
         * def datasetsresult = callonce read('def/getdataset.template.feature')
         * print datasetsresult 
         * json datasets = datasetsresult.response
@@ -38,9 +38,9 @@ Feature: check known dataset records
         * print 'organisation:', organisation
 
 
-        * def mystorage = Java.type('storage.DataStorage')
-        * def db = new mystorage
-        * eval db.mywriteln('<datasetIdentifierCode>","'+ title + '","' + organisation + '","'+ email +'",' , 'target/surefire-reports/datasets.csv')
+      #  * def mystorage = Java.type('storage.DataStorage')
+      #  * def db = new mystorage
+      #  * eval db.mywriteln('<datasetIdentifierCode>","'+ title + '","' + organisation + '","'+ email +'",' , 'target/surefire-reports/datasets.csv')
 
         * def xlinks = get response /GetRecordByIdResponse//@href
         * def ObjectValues =
