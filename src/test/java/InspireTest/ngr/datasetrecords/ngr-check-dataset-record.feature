@@ -6,7 +6,7 @@ Feature:  Check links in dataset record
     #* configure connectTimeout = 60000
 
     * url 'http://nationaalgeoregister.nl/'
-
+    * def callheaderresult = callonce read('def/writedatasetcsvheader.template.feature') 
     * def callonesresult = callonce read('def/getcswbriefrecords.feature')
     * print callonesresult
 
@@ -35,7 +35,7 @@ Feature:  Check links in dataset record
     * def email = get response //electronicMailAddress/CharacterString
     * print email
 
-    * def organisationpath = karate.get('//organisationName/CharacterString') 
+    * def organisationpath = karate.get('//organisationName/CharacterString')
     * def organisation =  organisationpath ? organisationpath : 'no organisationName found in dataset record'
 
     * print 'organisation:', organisation
