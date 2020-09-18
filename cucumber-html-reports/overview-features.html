@@ -51,9 +51,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                10305,
-                206,
-                40,
+                20416,
+                767,
+                2771,
                 0,
                 0
             ],
@@ -94,7 +94,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 10551) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 23954) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -107,8 +107,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                180,
-                200
+                197,
+                181
             ],
             backgroundColor: [
                 "#00B000",
@@ -144,7 +144,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 380) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 378) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -157,8 +157,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   4,
-                   2
+                   2,
+                   3
                ],
                backgroundColor: [
                 "#00B000",
@@ -191,7 +191,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 6) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 5) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -232,7 +232,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>NLTEST</td>
-            <td>18 Sep 2020, 15:24</td>
+            <td>18 Sep 2020, 15:36</td>
     </tr>
   </tbody>
 </table>
@@ -329,19 +329,19 @@ $(document).ready(function() {
           <tr>
         <td class="tagname"><a href="report-feature_InspireTest-ngr-datasetrecords-check-known-links-feature.html">InspireTest/ngr/datasetrecords/check-known-links.feature</a></td>
         
-        <td      class="passed"    >2784</td>
-        <td >0</td>
-        <td >0</td>
+        <td      class="passed"    >2777</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >5</td>
         <td >0</td>
         <td >0</td>
         <td class="total">2784</td>
 
-        <td  class="passed"    >174</td>
-        <td >0</td>
+        <td  class="passed"    >173</td>
+        <td  class="failed"    >1</td>
         <td class="total">174</td>
 
-        <td class="duration" data-value="1064416628698">17:44.416</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="1076144292457">17:56.144</td>
+        <td class="failed">Failed</td>
       </tr>
           <tr>
         <td class="tagname"><a href="report-feature_InspireTest-ngr-datasetrecords-def-getcswcapabilities-feature_1.html">InspireTest/ngr/datasetrecords/def/getcswcapabilities.feature</a></td>
@@ -357,7 +357,7 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">2</td>
 
-        <td class="duration" data-value="1843894401">1.843</td>
+        <td class="duration" data-value="1890387915">1.890</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
@@ -374,58 +374,41 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="696682974">0.696</td>
+        <td class="duration" data-value="629727648">0.629</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
         <td class="tagname"><a href="report-feature_InspireTest-ngr-datasetrecords-check-known-dataset-record-feature_3.html">InspireTest/ngr/datasetrecords/check-known-dataset-record.feature</a></td>
         
-        <td      class="passed"    >7077</td>
-        <td      class="failed"    >197</td>
-        <td     class="skipped"   >15</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">7289</td>
-
-        <td >0</td>
-        <td  class="failed"    >197</td>
-        <td class="total">197</td>
-
-        <td class="duration" data-value="440293043588">7:20.293</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_InspireTest-ngr-datasetrecords-def-getdataset-template-feature_4.html">InspireTest/ngr/datasetrecords/def/getdataset.template.feature</a></td>
-        
-        <td      class="passed"    >3</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">3</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="671486090">0.671</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_InspireTest-ngr-datasetrecords-ngr-check-dataset-record-feature_5.html">InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature</a></td>
-        
-        <td      class="passed"    >412</td>
+        <td      class="passed"    >217</td>
         <td      class="failed"    >9</td>
         <td     class="skipped"   >25</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">446</td>
+        <td class="total">251</td>
 
-        <td  class="passed"    >2</td>
+        <td  class="passed"    >1</td>
         <td  class="failed"    >3</td>
-        <td class="total">5</td>
+        <td class="total">4</td>
 
-        <td class="duration" data-value="71933655306">1:11.933</td>
+        <td class="duration" data-value="16275527833">16.275</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-feature_InspireTest-ngr-datasetrecords-ngr-check-dataset-record-feature_4.html">InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature</a></td>
+        
+        <td      class="passed"    >17393</td>
+        <td      class="failed"    >756</td>
+        <td     class="skipped"   >2741</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">20890</td>
+
+        <td  class="passed"    >20</td>
+        <td  class="failed"    >177</td>
+        <td class="total">197</td>
+
+        <td class="duration" data-value="45966492041681">12:46:6.492</td>
         <td class="failed">Failed</td>
       </tr>
       </tbody>
@@ -433,33 +416,33 @@ $(document).ready(function() {
   <tfoot class="total">
     <tr>
       <td></td>
-            <td>10305</td>
-      <td>206</td>
-      <td>40</td>
+            <td>20416</td>
+      <td>767</td>
+      <td>2771</td>
       <td>0</td>
       <td>0</td>
-      <td>10551</td>
+      <td>23954</td>
 
-      <td>180</td>
-      <td>200</td>
-      <td>380</td>
+      <td>197</td>
+      <td>181</td>
+      <td>378</td>
 
-      <td class="duration">26:19.855</td>
-      <td>6</td>
+      <td class="duration">13:4:21.431</td>
+      <td>5</td>
     </tr>
     <tr>
       <td></td>
-            <td>97.67%</td>
-      <td>1.95%</td>
-      <td>0.38%</td>
+            <td>85.23%</td>
+      <td>3.20%</td>
+      <td>11.57%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>47.37%</td>
-      <td>52.63%</td>
+      <td>52.12%</td>
+      <td>47.88%</td>
       <td></td>
       <td></td>
-      <td>66.67%</td>
+      <td>40.00%</td>
     </tr>
   </tfoot>
 </table>
