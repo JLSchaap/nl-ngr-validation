@@ -1,20 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: InspireTest.TestAll
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 182.088 s <<< FAILURE! - in InspireTest.TestAll
-InspireTest.TestAll.testParallel  Time elapsed: 182.037 s  <<< FAILURE!
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 182.605 s <<< FAILURE! - in InspireTest.TestAll
+InspireTest.TestAll.testParallel  Time elapsed: 182.552 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 failed features:
-InspireTest.ngr.datasetrecords.check-known-links: [1.6:4] check-known-links.feature:10 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
-caller: classpath:InspireTest/ngr/datasetrecords/check-known-links.feature
-items: [{link=http://data.europa.eu/eli/reg/2010/1089}]
-errors:
--------
-feature call (loop) failed at index: 0
-caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
-arg: {"link":"http://data.europa.eu/eli/reg/2010/1089"}
-checkxlinkurl.template.feature:14 - 
-java.net.SocketTimeoutException: Read timed out
 InspireTest.ngr.datasetrecords.ngr-check-dataset-record: [1.2:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=https://nationaalgeoregister.nl/geonetwork/srv/resources7e290e63-f991-4cc3-beff-1ff08ce2be77}, {link=https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme}]
@@ -23,12 +13,12 @@ errors:
 feature call (loop) failed at index: 0
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://nationaalgeoregister.nl/geonetwork/srv/resources7e290e63-f991-4cc3-beff-1ff08ce2be77"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 289, url: https://nationaalgeoregister.nl/geonetwork/srv/resources7e290e63-f991-4cc3-beff-1ff08ce2be77, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 286, url: https://nationaalgeoregister.nl/geonetwork/srv/resources7e290e63-f991-4cc3-beff-1ff08ce2be77, response: 
 -------
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 316, url: https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 405, url: https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme, response: 
 [1.3:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=http://standaarden.overheid.nl/owms/terms/Ministerie_van_Landbouw,_Natuur_en_Voedselkwaliteit}, {link=https://www.nationaalgeoregister.nl/geonetwork/srv/api/records3703b249-a0eb-484e-ba7a-10e31a55bcec}, {link=579}]
@@ -37,7 +27,7 @@ errors:
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://www.nationaalgeoregister.nl/geonetwork/srv/api/records3703b249-a0eb-484e-ba7a-10e31a55bcec"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 420, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/records3703b249-a0eb-484e-ba7a-10e31a55bcec, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 469, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/records3703b249-a0eb-484e-ba7a-10e31a55bcec, response: 
 -------
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -52,12 +42,12 @@ errors:
 feature call (loop) failed at index: 0
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://nationaalgeoregister.nl/geonetwork/srv/resourcesff07bd5a-d6eb-11ea-87d0-0242ac130003"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 288, url: https://nationaalgeoregister.nl/geonetwork/srv/resourcesff07bd5a-d6eb-11ea-87d0-0242ac130003, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 284, url: https://nationaalgeoregister.nl/geonetwork/srv/resourcesff07bd5a-d6eb-11ea-87d0-0242ac130003, response: 
 -------
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 417, url: https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 336, url: https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme, response: 
 [1.6:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=http://standaarden.overheid.nl/owms/terms/Ministerie_van_Landbouw,_Natuur_en_Voedselkwaliteit}, {link=http://nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/247a1d15-0a67-40ce-85be-1403c08f15a8}, {link=http://standaarden.overheid.nl/owms/terms/Ministerie_van_Landbouw,_Natuur_en_Voedselkwaliteit}, {link=http://standaarden.overheid.nl/owms/terms/Ministerie_van_Landbouw,_Natuur_en_Voedselkwaliteit}, {link=xlink:href=https://inspire.ec.europa.eu/id/document/tg/ps}, {link=https://data.overheid.nl/organisatie/PDOK}]
@@ -72,7 +62,7 @@ org.apache.http.client.ClientProtocolException: URI does not specify a valid hos
 feature call (loop) failed at index: 5
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://data.overheid.nl/organisatie/PDOK"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 437, url: https://data.overheid.nl/organisatie/PDOK, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 543, url: https://data.overheid.nl/organisatie/PDOK, response: 
 [1.7:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=http://kadaster/06b6c650-cdb1-11dd-ad8b-0800200c9a78}]
@@ -131,17 +121,17 @@ errors:
 feature call (loop) failed at index: 0
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/resourcesbbe3c19d-12b0-4912-a6f4-46eb189e85ac"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 548, url: https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/resourcesbbe3c19d-12b0-4912-a6f4-46eb189e85ac, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 540, url: https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/resourcesbbe3c19d-12b0-4912-a6f4-46eb189e85ac, response: 
 -------
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"http://rdfdata.eionet.europa.eu/inspirethemes/themes/16"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 727, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/16, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 981, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/16, response: 
 -------
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"http://geonetwork-opensource.org/inspire-theme#"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 403, url: http://geonetwork-opensource.org/inspire-theme#, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 398, url: http://geonetwork-opensource.org/inspire-theme#, response: 
 -------
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -155,7 +145,7 @@ errors:
 feature call (loop) failed at index: 0
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/resourcesc7662717-9e43-4367-a344-723d73abbb3e"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 521, url: https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/resourcesc7662717-9e43-4367-a344-723d73abbb3e, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 475, url: https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/resourcesc7662717-9e43-4367-a344-723d73abbb3e, response: 
 [1.15:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=https://data.rivm.nl/inspire/id#e6ddc53d-04c4-435d-bedd-a5ace2dc0313}]
@@ -224,7 +214,7 @@ errors:
 feature call (loop) failed at index: 0
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://geodata.nationaalgeoregister.nl/inspire/su-grid/wfs"}
-checkxlinkurl.template.feature:15 - status code was: 400, expected: 200, response time: 426, url: https://geodata.nationaalgeoregister.nl/inspire/su-grid/wfs, response: 
+checkxlinkurl.template.feature:15 - status code was: 400, expected: 200, response time: 433, url: https://geodata.nationaalgeoregister.nl/inspire/su-grid/wfs, response: 
 -------
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -249,7 +239,7 @@ errors:
 feature call (loop) failed at index: 0
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://www.nationaalgeoregister.nl/geonetwork/srv/api/records83dab947-387b-49df-8ad2-32bb10d46d38"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 335, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/records83dab947-387b-49df-8ad2-32bb10d46d38, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 309, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/records83dab947-387b-49df-8ad2-32bb10d46d38, response: 
 [1.21:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=http://www.opengis.net/def/crs/EPSG/0/http://www.opengis.net/def/crs/EPSG/0/4258}, {link=http://kadaster/ff1d6d44-aea1-4ad5-b084-9afea143f1bf}]
@@ -278,7 +268,7 @@ errors:
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"http://rdfdata.eionet.europa.eu/inspirethemes/themes/10"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 199, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/10, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 200, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/10, response: 
 -------
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -293,12 +283,12 @@ errors:
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"http://rdfdata.eionet.europa.eu/inspirethemes/themes/18"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 199, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/18, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 200, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/18, response: 
 -------
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 314, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 311, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
 -------
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -313,12 +303,12 @@ errors:
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"http://rdfdata.eionet.europa.eu/inspirethemes/themes/28"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 199, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/28, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 200, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/28, response: 
 -------
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 316, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 314, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
 [1.26:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/eu-cb527d-f6db-4835-b0cd-deb245241254}, {link=http://rdfdata.eionet.europa.eu/inspirethemes/themes/7}, {link=http://inspire.ec.europa.eu/metadata-codelist/Prioritydataset/SurfaceWaterBodies-dir-2000-60}, {link=https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset}]
@@ -327,17 +317,17 @@ errors:
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"http://rdfdata.eionet.europa.eu/inspirethemes/themes/7"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 200, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/7, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 199, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/7, response: 
 -------
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"http://inspire.ec.europa.eu/metadata-codelist/Prioritydataset/SurfaceWaterBodies-dir-2000-60"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 1421, url: http://inspire.ec.europa.eu/metadata-codelist/Prioritydataset/SurfaceWaterBodies-dir-2000-60, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 448, url: http://inspire.ec.europa.eu/metadata-codelist/Prioritydataset/SurfaceWaterBodies-dir-2000-60, response: 
 -------
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 330, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 306, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
 [1.27:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/be1b1514-8d1f-48e1-9624-fee9b784138b}, {link=http://rdfdata.eionet.europa.eu/inspirethemes/themes/7}, {link=urn:ogc:def:crs:EPSG::5709}]
@@ -346,7 +336,7 @@ errors:
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"http://rdfdata.eionet.europa.eu/inspirethemes/themes/7"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 201, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/7, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 200, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/7, response: 
 -------
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -361,7 +351,7 @@ errors:
 feature call (loop) failed at index: 0
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://nationaalgeoregister.nl/geonetwork/srv/resourcese26eb6c9-c441-43e8-8db6-aabbf11578fd"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 279, url: https://nationaalgeoregister.nl/geonetwork/srv/resourcese26eb6c9-c441-43e8-8db6-aabbf11578fd, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 280, url: https://nationaalgeoregister.nl/geonetwork/srv/resourcese26eb6c9-c441-43e8-8db6-aabbf11578fd, response: 
 -------
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -376,7 +366,7 @@ checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, respons
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 311, url: https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 308, url: https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme, response: 
 [1.30:16] ngr-check-dataset-record.feature:48 - xpath does not exist: /GetRecordByIdResponse//@href on response
 [1.31:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
@@ -386,7 +376,7 @@ errors:
 feature call (loop) failed at index: 0
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://www.nationaalgeoregister.nl/geonetwork/srv/api/records3e57ce43-7707-43ed-a4b9-72b3a6d812f8"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 312, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/records3e57ce43-7707-43ed-a4b9-72b3a6d812f8, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 319, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/records3e57ce43-7707-43ed-a4b9-72b3a6d812f8, response: 
 [1.32:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=http://www.opengis.net/def/crs/EPSG/0/https://www.opengis.net/def/crs/EPSG/0/4258}, {link=https://www.nationaalgeoregister.nl/geonetwork/srv/api/recordsc2225e5d-b46f-4e38-8445-ab10fd40c0dc}]
@@ -395,7 +385,7 @@ errors:
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://www.nationaalgeoregister.nl/geonetwork/srv/api/recordsc2225e5d-b46f-4e38-8445-ab10fd40c0dc"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 308, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/recordsc2225e5d-b46f-4e38-8445-ab10fd40c0dc, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 309, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/recordsc2225e5d-b46f-4e38-8445-ab10fd40c0dc, response: 
 [1.33:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/eu-f297898-2640-44c2-bbe9-c0480da83794}, {link=http://rdfdata.eionet.europa.eu/inspirethemes/themes/8}, {link=urn:ogc:def:crs:EPSG::5709}]
@@ -429,7 +419,7 @@ errors:
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://www.nationaalgeoregister.nl/geonetwork/srv/api/recordsbe6551de-a709-4c6d-a5e2-f63f0cf038ba"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 312, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/recordsbe6551de-a709-4c6d-a5e2-f63f0cf038ba, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 329, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/recordsbe6551de-a709-4c6d-a5e2-f63f0cf038ba, response: 
 [1.37:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=https://nationaalgeoregister.nl/geonetwork/srv/resources7d716522-fa1a-43b4-99c0-3a3480f9e218}, {link=https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme}]
@@ -438,12 +428,12 @@ errors:
 feature call (loop) failed at index: 0
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://nationaalgeoregister.nl/geonetwork/srv/resources7d716522-fa1a-43b4-99c0-3a3480f9e218"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 307, url: https://nationaalgeoregister.nl/geonetwork/srv/resources7d716522-fa1a-43b4-99c0-3a3480f9e218, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 279, url: https://nationaalgeoregister.nl/geonetwork/srv/resources7d716522-fa1a-43b4-99c0-3a3480f9e218, response: 
 -------
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 319, url: https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 315, url: https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme, response: 
 [1.38:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=http://www.opengis.net/def/crs/EPSG/0/http://www.opengis.net/def/crs/EPSG/0/4258}, {link=http://kadaster/1d32fc50-cd5b-4425-b0df-16c7c7940e94}]
@@ -482,7 +472,7 @@ errors:
 feature call (loop) failed at index: 0
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://www.nationaalgeoregister.nl/geonetwork/srv/api/records58d39928-f502-48c9-a8c1-03244dc181bf"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 329, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/records58d39928-f502-48c9-a8c1-03244dc181bf, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 350, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/records58d39928-f502-48c9-a8c1-03244dc181bf, response: 
 [1.42:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/25294679-adb9-4c39-a93b-6954ff9414ac}, {link=http://rdfdata.eionet.europa.eu/inspirethemes/themes/20}, {link=http://rdfdata.eionet.europa.eu/inspirethemes/themes/28}, {link=urn:ogc:def:crs:EPSG::5709}]
@@ -491,12 +481,12 @@ errors:
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"http://rdfdata.eionet.europa.eu/inspirethemes/themes/20"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 200, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/20, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 208, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/20, response: 
 -------
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"http://rdfdata.eionet.europa.eu/inspirethemes/themes/28"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 214, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/28, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 200, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/28, response: 
 -------
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -1198,7 +1188,7 @@ errors:
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"http://rdfdata.eionet.europa.eu/inspirethemes/themes/10"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 200, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/10, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 199, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/10, response: 
 -------
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -1213,7 +1203,7 @@ errors:
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://creativecommons.org/publicdomain/mark/*/deed.nl"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 110, url: https://creativecommons.org/publicdomain/mark/*/deed.nl, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 44, url: https://creativecommons.org/publicdomain/mark/*/deed.nl, response: 
 -------
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -1228,7 +1218,7 @@ errors:
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://creativecommons.org/publicdomain/mark/*/deed.nl"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 59, url: https://creativecommons.org/publicdomain/mark/*/deed.nl, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 33, url: https://creativecommons.org/publicdomain/mark/*/deed.nl, response: 
 -------
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -1243,7 +1233,7 @@ errors:
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://creativecommons.org/publicdomain/mark/*/deed.nl"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 37, url: https://creativecommons.org/publicdomain/mark/*/deed.nl, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 41, url: https://creativecommons.org/publicdomain/mark/*/deed.nl, response: 
 -------
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -1283,7 +1273,7 @@ errors:
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://creativecommons.org/publicdomain/mark/*/deed.nl"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 43, url: https://creativecommons.org/publicdomain/mark/*/deed.nl, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 73, url: https://creativecommons.org/publicdomain/mark/*/deed.nl, response: 
 -------
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -1313,12 +1303,12 @@ errors:
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"http://rdfdata.eionet.europa.eu/inspirethemes/themes/18"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 201, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/18, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 200, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/18, response: 
 -------
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 405, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 448, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
 [1.65:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/wt-3730-e750-485a-9c0c-39bf9be72cf9}, {link=http://rdfdata.eionet.europa.eu/inspirethemes/themes/18}, {link=https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset}]
@@ -1332,7 +1322,7 @@ checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, respons
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 364, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 407, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
 [1.66:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=http://www.opengis.net/def/crs/EPSG/0/http://www.opengis.net/def/crs/EPSG/0/3034}, {link=http://nationaalgeoregister.nl/geonetwork/srv/dut/csw?SERVICE=CSW&version=2.0.2&REQUEST=GetRecordById&elementSetName=full&OutputSchema=http://www.isotc211.org/2005/gmd&ID=998ba1dc-f6a6-49a3-a021-51f30d9b1d0e}, {link=https://creativecommons.org/publicdomain/mark/*/deed.nl}, {link=}]
@@ -1376,7 +1366,7 @@ checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, respons
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 327, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 306, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
 -------
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -1406,7 +1396,7 @@ errors:
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://creativecommons.org/publicdomain/mark/*/deed.nl"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 33, url: https://creativecommons.org/publicdomain/mark/*/deed.nl, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 47, url: https://creativecommons.org/publicdomain/mark/*/deed.nl, response: 
 -------
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -1421,7 +1411,7 @@ errors:
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://creativecommons.org/publicdomain/mark/*/deed.nl"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 39, url: https://creativecommons.org/publicdomain/mark/*/deed.nl, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 35, url: https://creativecommons.org/publicdomain/mark/*/deed.nl, response: 
 -------
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -1441,7 +1431,7 @@ checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, respons
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 308, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 318, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
 -------
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -1456,12 +1446,12 @@ errors:
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"http://rdfdata.eionet.europa.eu/inspirethemes/themes/24"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 200, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/24, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 199, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/24, response: 
 -------
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 308, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 309, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
 -------
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -1481,7 +1471,7 @@ checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, respons
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 333, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 321, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
 -------
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -1496,12 +1486,12 @@ errors:
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"http://rdfdata.eionet.europa.eu/inspirethemes/themes/24"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 200, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/24, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 227, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/24, response: 
 -------
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 325, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 307, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
 -------
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -1516,7 +1506,7 @@ errors:
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"http://rdfdata.eionet.europa.eu/inspirethemes/themes/24"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 199, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/24, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 200, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/24, response: 
 -------
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -1535,7 +1525,7 @@ checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, respons
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 311, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 340, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
 -------
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -1550,12 +1540,12 @@ errors:
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"http://rdfdata.eionet.europa.eu/inspirethemes/themes/24"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 199, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/24, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 201, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/24, response: 
 -------
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 309, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 317, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
 -------
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -1570,12 +1560,12 @@ errors:
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"http://rdfdata.eionet.europa.eu/inspirethemes/themes/24"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 199, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/24, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 200, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/24, response: 
 -------
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 310, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 309, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
 [1.80:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/891ddc2d-8949-4a45-be96-c65b87c41f13}, {link=http://rdfdata.eionet.europa.eu/inspirethemes/themes/20}, {link=https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset}]
@@ -1589,7 +1579,7 @@ checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, respons
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 315, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 316, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
 [1.81:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=}]
@@ -1608,17 +1598,17 @@ errors:
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"http://rdfdata.eionet.europa.eu/inspirethemes/themes/7"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 200, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/7, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 206, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/7, response: 
 -------
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"http://rdfdata.eionet.europa.eu/inspirethemes/themes/18"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 199, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/18, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 200, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/18, response: 
 -------
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 322, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 317, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
 -------
 feature call (loop) failed at index: 4
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -1643,7 +1633,7 @@ errors:
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://www.nationaalgeoregister.nl/geonetwork/srv/api/records4cda487b-c467-490c-a843-6563fec016be"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 426, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/records4cda487b-c467-490c-a843-6563fec016be, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 489, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/records4cda487b-c467-490c-a843-6563fec016be, response: 
 [1.86:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/ror-9d8e-4758-83fx-28b057f185e1}, {link=http://rdfdata.eionet.europa.eu/inspirethemes/themes/25}, {link=https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset}, {link=urn:ogc:def:crs:EPSG::5709}]
@@ -1657,7 +1647,7 @@ checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, respons
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 308, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 317, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
 -------
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -1677,7 +1667,7 @@ checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, respons
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 314, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 317, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
 -------
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -1697,7 +1687,7 @@ checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, respons
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 309, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 327, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
 -------
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -1717,7 +1707,7 @@ checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, respons
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 306, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 313, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
 -------
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -1830,22 +1820,22 @@ errors:
 feature call (loop) failed at index: 0
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://nationaalgeoregister.nl/geonetwork/srv/resources66495385-8f7b-4661-85a7-11a2bbcbb6b9"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 279, url: https://nationaalgeoregister.nl/geonetwork/srv/resources66495385-8f7b-4661-85a7-11a2bbcbb6b9, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 280, url: https://nationaalgeoregister.nl/geonetwork/srv/resources66495385-8f7b-4661-85a7-11a2bbcbb6b9, response: 
 -------
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"http://rdfdata.eionet.europa.eu/inspirethemes/themes/13"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 210, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/13, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 201, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/13, response: 
 -------
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"http://geonetwork-opensource.org/inspire-theme#"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 399, url: http://geonetwork-opensource.org/inspire-theme#, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 398, url: http://geonetwork-opensource.org/inspire-theme#, response: 
 -------
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 536, url: https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 987, url: https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme, response: 
 [1.98:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=http://www.opengis.net/def/crs/EPSG/0/https://www.opengis.net/def/crs/EPSG/0/4258}, {link=https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/resourcesd7ab6903-1152-450b-b81d-042682dcfd03}]
@@ -1854,7 +1844,7 @@ errors:
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/resourcesd7ab6903-1152-450b-b81d-042682dcfd03"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 280, url: https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/resourcesd7ab6903-1152-450b-b81d-042682dcfd03, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 287, url: https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/resourcesd7ab6903-1152-450b-b81d-042682dcfd03, response: 
 [1.99:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=http://www.opengis.net/def/crs/EPSG/0/https://www.opengis.net/def/crs/EPSG/0/4258}, {link=https://www.nationaalgeoregister.nl/geonetwork/srv/api/recordsf1d27179-36eb-4376-8048-f51d2eb23a09}]
@@ -1863,7 +1853,7 @@ errors:
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://www.nationaalgeoregister.nl/geonetwork/srv/api/recordsf1d27179-36eb-4376-8048-f51d2eb23a09"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 322, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/recordsf1d27179-36eb-4376-8048-f51d2eb23a09, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 1548, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/recordsf1d27179-36eb-4376-8048-f51d2eb23a09, response: 
 [1.100:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=http://kadaster/2482250f-3b00-4439-9f93-f3118229b020}, {link=}, {link=}, {link=}]
@@ -1900,12 +1890,12 @@ errors:
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"http://rdfdata.eionet.europa.eu/inspirethemes/themes/24"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 202, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/24, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 199, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/24, response: 
 -------
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 323, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 464, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
 -------
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -1930,7 +1920,7 @@ errors:
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://www.nationaalgeoregister.nl/geonetwork/srv/api/records4617f0e0-6af4-4ac0-9044-31df9d03071c"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 456, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/records4617f0e0-6af4-4ac0-9044-31df9d03071c, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 435, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/records4617f0e0-6af4-4ac0-9044-31df9d03071c, response: 
 [1.104:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=http://www.opengis.net/def/crs/EPSG/0/http://www.opengis.net/def/crs/EPSG/0/3034}, {link=http://nationaalgeoregister.nl/geonetwork/srv/dut/csw?SERVICE=CSW&version=2.0.2&REQUEST=GetRecordById&elementSetName=full&OutputSchema=http://www.isotc211.org/2005/gmd&ID=0f128799-cf18-4b37-a721-e62b068191f5}, {link=https://creativecommons.org/publicdomain/mark/*/deed.nl}, {link=}]
@@ -1939,7 +1929,7 @@ errors:
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://creativecommons.org/publicdomain/mark/*/deed.nl"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 46, url: https://creativecommons.org/publicdomain/mark/*/deed.nl, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 53, url: https://creativecommons.org/publicdomain/mark/*/deed.nl, response: 
 -------
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -1969,12 +1959,12 @@ errors:
 feature call (loop) failed at index: 0
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://www.nationaalgeoregister.nl/geonetwork/srv/api/records6c6be9c5-b09b-4dcf-a5fd-f149cbaca6fb"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 311, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/records6c6be9c5-b09b-4dcf-a5fd-f149cbaca6fb, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 318, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/records6c6be9c5-b09b-4dcf-a5fd-f149cbaca6fb, response: 
 -------
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://creativecommons.org/publicdomain/zero/*/deed.nl"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 98, url: https://creativecommons.org/publicdomain/zero/*/deed.nl, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 41, url: https://creativecommons.org/publicdomain/zero/*/deed.nl, response: 
 [1.107:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=http://www.opengis.net/def/crs/EPSG/0/http://www.opengis.net/def/crs/EPSG/0/3034}, {link=http://nationaalgeoregister.nl/geonetwork/srv/dut/csw?SERVICE=CSW&version=2.0.2&REQUEST=GetRecordById&elementSetName=full&OutputSchema=http://www.isotc211.org/2005/gmd&ID=f002bfc5-7d87-46b6-819e-8415422b65c9}, {link=https://creativecommons.org/publicdomain/mark/*/deed.nl}, {link=}]
@@ -1983,7 +1973,7 @@ errors:
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://creativecommons.org/publicdomain/mark/*/deed.nl"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 47, url: https://creativecommons.org/publicdomain/mark/*/deed.nl, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 37, url: https://creativecommons.org/publicdomain/mark/*/deed.nl, response: 
 -------
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -1998,22 +1988,22 @@ errors:
 feature call (loop) failed at index: 0
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://nationaalgeoregister.nl/geonetwork/srv/resourcesce4a6d93-83d6-4397-afa1-d4117d5ce76b"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 283, url: https://nationaalgeoregister.nl/geonetwork/srv/resourcesce4a6d93-83d6-4397-afa1-d4117d5ce76b, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 496, url: https://nationaalgeoregister.nl/geonetwork/srv/resourcesce4a6d93-83d6-4397-afa1-d4117d5ce76b, response: 
 -------
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"http://rdfdata.eionet.europa.eu/inspirethemes/themes/34"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 199, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/34, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 200, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/34, response: 
 -------
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"http://geonetwork-opensource.org/inspire-theme#"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 401, url: http://geonetwork-opensource.org/inspire-theme#, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 396, url: http://geonetwork-opensource.org/inspire-theme#, response: 
 -------
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 312, url: https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 461, url: https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme, response: 
 [1.111:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=http://kadaster/06b6c650-cdb1-11dd-ad8b-0800200c9a80}]
@@ -2108,7 +2098,7 @@ errors:
 feature call (loop) failed at index: 0
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://nationaalgeoregister.nl/geonetwork/srv/resources052a3480-1031-4d29-ba55-01672e2c50d9"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 286, url: https://nationaalgeoregister.nl/geonetwork/srv/resources052a3480-1031-4d29-ba55-01672e2c50d9, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 279, url: https://nationaalgeoregister.nl/geonetwork/srv/resources052a3480-1031-4d29-ba55-01672e2c50d9, response: 
 [1.118:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=http://www.opengis.net/def/crs/EPSG/0/http://www.opengis.net/def/crs/EPSG/0/4258}, {link=http://kadaster/ed4caa3b-a49e-4a9a-8206-50a3cf451b9a}]
@@ -2157,12 +2147,12 @@ errors:
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"http://rdfdata.eionet.europa.eu/inspirethemes/themes/24"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 202, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/24, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 199, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/24, response: 
 -------
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 310, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 508, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
 [1.123:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=http://standaarden.overheid.nl/owms/terms/Ministerie_van_Landbouw,_Natuur_en_Voedselkwaliteit}, {link=http://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/a04afee4-47d5-45b7-b7a0-a6f86106af11}, {link=http://standaarden.overheid.nl/owms/terms/Ministerie_van_Landbouw,_Natuur_en_Voedselkwaliteit}, {link=http://standaarden.overheid.nl/owms/terms/Ministerie_van_Landbouw,_Natuur_en_Voedselkwaliteit}, {link=https://data.overheid.nl/organisatie/PDOK}]
@@ -2171,7 +2161,7 @@ errors:
 feature call (loop) failed at index: 4
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://data.overheid.nl/organisatie/PDOK"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 462, url: https://data.overheid.nl/organisatie/PDOK, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 1268, url: https://data.overheid.nl/organisatie/PDOK, response: 
 [1.124:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=http://www.opengis.net/def/crs/EPSG/0/https://www.opengis.net/def/crs/EPSG/0/4258}, {link=https://www.nationaalgeoregister.nl/geonetwork/srv/api/recordse8b84fae-00b3-49c1-80c1-df8f69f64e8c}]
@@ -2180,7 +2170,7 @@ errors:
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://www.nationaalgeoregister.nl/geonetwork/srv/api/recordse8b84fae-00b3-49c1-80c1-df8f69f64e8c"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 318, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/recordse8b84fae-00b3-49c1-80c1-df8f69f64e8c, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 500, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/recordse8b84fae-00b3-49c1-80c1-df8f69f64e8c, response: 
 [1.125:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=http://www.opengis.net/def/crs/EPSG/0/https://www.opengis.net/def/crs/EPSG/0/4258}, {link=https://www.nationaalgeoregister.nl/geonetwork/srv/api/recordsbb11be63-bd38-4632-bf54-df44c423a529}]
@@ -2189,7 +2179,7 @@ errors:
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://www.nationaalgeoregister.nl/geonetwork/srv/api/recordsbb11be63-bd38-4632-bf54-df44c423a529"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 312, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/recordsbb11be63-bd38-4632-bf54-df44c423a529, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 440, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/recordsbb11be63-bd38-4632-bf54-df44c423a529, response: 
 [1.126:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/krm-a905-9d8e-4758-83fa-28b057f185e3}, {link=http://rdfdata.eionet.europa.eu/inspirethemes/themes/24}, {link=https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset}]
@@ -2203,7 +2193,7 @@ checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, respons
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 307, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 338, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
 [1.127:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/krm-a905-9d8e-4758-83fa-28b057f185e4}, {link=http://rdfdata.eionet.europa.eu/inspirethemes/themes/24}, {link=https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset}]
@@ -2212,12 +2202,12 @@ errors:
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"http://rdfdata.eionet.europa.eu/inspirethemes/themes/24"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 200, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/24, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 199, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/24, response: 
 -------
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 309, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 318, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
 [1.128:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=https://nationaalgeoregister.nl/geonetwork/srv/resources8bdf76b6-c9c9-4011-a7bc-022ae14a4024}, {link=http://rdfdata.eionet.europa.eu/inspirethemes/themes/24}, {link=http://geonetwork-opensource.org/inspire-theme#}, {link=https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme}]
@@ -2226,7 +2216,7 @@ errors:
 feature call (loop) failed at index: 0
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://nationaalgeoregister.nl/geonetwork/srv/resources8bdf76b6-c9c9-4011-a7bc-022ae14a4024"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 278, url: https://nationaalgeoregister.nl/geonetwork/srv/resources8bdf76b6-c9c9-4011-a7bc-022ae14a4024, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 279, url: https://nationaalgeoregister.nl/geonetwork/srv/resources8bdf76b6-c9c9-4011-a7bc-022ae14a4024, response: 
 -------
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -2236,12 +2226,12 @@ checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, respons
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"http://geonetwork-opensource.org/inspire-theme#"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 403, url: http://geonetwork-opensource.org/inspire-theme#, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 396, url: http://geonetwork-opensource.org/inspire-theme#, response: 
 -------
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 307, url: https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 389, url: https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme, response: 
 [1.129:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=https://data.rivm.nl/inspire/id#10fcd5a9-3804-48e3-bcbd-d816594dbb6f}]
@@ -2260,7 +2250,7 @@ errors:
 feature call (loop) failed at index: 4
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://data.overheid.nl/organisatie/PDOK"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 439, url: https://data.overheid.nl/organisatie/PDOK, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 480, url: https://data.overheid.nl/organisatie/PDOK, response: 
 [1.131:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=https://data.rivm.nl/inspire/id#a98a6cdb-61cd-4107-b775-2334e6772ed5}]
@@ -2433,7 +2423,7 @@ errors:
 feature call (loop) failed at index: 0
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://www.nationaalgeoregister.nl/geonetwork/srv/api/recordsc3c004ad-5387-4b00-a225-9afbcaa5d31b"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 324, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/recordsc3c004ad-5387-4b00-a225-9afbcaa5d31b, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 471, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/recordsc3c004ad-5387-4b00-a225-9afbcaa5d31b, response: 
 [1.135:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=https://www.nationaalgeoregister.nl/geonetwork/srv/api/records1b2abd21-3084-4db7-ab49-46866b4aac2b}, {link=https://creativecommons.org/publicdomain/zero/*/deed.nl}]
@@ -2442,12 +2432,12 @@ errors:
 feature call (loop) failed at index: 0
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://www.nationaalgeoregister.nl/geonetwork/srv/api/records1b2abd21-3084-4db7-ab49-46866b4aac2b"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 317, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/records1b2abd21-3084-4db7-ab49-46866b4aac2b, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 308, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/records1b2abd21-3084-4db7-ab49-46866b4aac2b, response: 
 -------
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://creativecommons.org/publicdomain/zero/*/deed.nl"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 43, url: https://creativecommons.org/publicdomain/zero/*/deed.nl, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 39, url: https://creativecommons.org/publicdomain/zero/*/deed.nl, response: 
 [1.136:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=http://nationaalgeoregister.nl/geonetwork/srv/dut/csw?SERVICE=CSW&version=2.0.2&REQUEST=GetRecordById&elementSetName=full&OutputSchema=http://www.isotc211.org/2005/gmd&ID=f5f68d51-2ca4-4897-8227-d3938b2b0a7e}, {link=https://creativecommons.org/publicdomain/mark/*/deed.nl}, {link=}]
@@ -2456,7 +2446,7 @@ errors:
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://creativecommons.org/publicdomain/mark/*/deed.nl"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 35, url: https://creativecommons.org/publicdomain/mark/*/deed.nl, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 41, url: https://creativecommons.org/publicdomain/mark/*/deed.nl, response: 
 -------
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -2471,12 +2461,12 @@ errors:
 feature call (loop) failed at index: 0
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://www.nationaalgeoregister.nl/geonetwork/srv/api/records49807edc-0007-41aa-8809-d381f6713de4"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 313, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/records49807edc-0007-41aa-8809-d381f6713de4, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 307, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/records49807edc-0007-41aa-8809-d381f6713de4, response: 
 -------
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://creativecommons.org/publicdomain/zero/*/deed.nl"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 40, url: https://creativecommons.org/publicdomain/zero/*/deed.nl, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 46, url: https://creativecommons.org/publicdomain/zero/*/deed.nl, response: 
 [1.138:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=https://www.nationaalgeoregister.nl/geonetwork/srv/api/records6e4a2001-fef7-471c-8286-4f859bc1131e}, {link=https://creativecommons.org/publicdomain/zero/*/deed.nl}]
@@ -2485,12 +2475,12 @@ errors:
 feature call (loop) failed at index: 0
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://www.nationaalgeoregister.nl/geonetwork/srv/api/records6e4a2001-fef7-471c-8286-4f859bc1131e"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 318, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/records6e4a2001-fef7-471c-8286-4f859bc1131e, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 308, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/records6e4a2001-fef7-471c-8286-4f859bc1131e, response: 
 -------
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://creativecommons.org/publicdomain/zero/*/deed.nl"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 47, url: https://creativecommons.org/publicdomain/zero/*/deed.nl, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 52, url: https://creativecommons.org/publicdomain/zero/*/deed.nl, response: 
 [1.139:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=http://www.opengis.net/def/crs/EPSG/0/http://www.opengis.net/def/crs/EPSG/0/4258}, {link=http://kadaster/3b7bb05b-2d2e-4329-9a72-0eac19e315de}]
@@ -2541,12 +2531,12 @@ errors:
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"http://rdfdata.eionet.europa.eu/inspirethemes/themes/20"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 199, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/20, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 200, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/20, response: 
 -------
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"http://rdfdata.eionet.europa.eu/inspirethemes/themes/28"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 199, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/28, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 200, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/28, response: 
 -------
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -2581,12 +2571,12 @@ checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, respons
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"http://geonetwork-opensource.org/inspire-theme#"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 399, url: http://geonetwork-opensource.org/inspire-theme#, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 426, url: http://geonetwork-opensource.org/inspire-theme#, response: 
 -------
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 549, url: https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 419, url: https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme, response: 
 [1.147:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=http://inspire.rdw.nl/www/download/Licentie-Geogedeeld-RDW.pdf}, {link=}]
@@ -2633,7 +2623,7 @@ errors:
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://creativecommons.org/publicdomain/mark/*/deed.nl"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 42, url: https://creativecommons.org/publicdomain/mark/*/deed.nl, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 43, url: https://creativecommons.org/publicdomain/mark/*/deed.nl, response: 
 -------
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -2659,7 +2649,7 @@ org.apache.http.client.ClientProtocolException
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 363, url: https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 326, url: https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme, response: 
 [1.151:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=http://kadaster/e2318c58-b1e6-4621-9c77-33b8a1fd0e76}]
@@ -2678,7 +2668,7 @@ errors:
 feature call (loop) failed at index: 0
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://www.nationaalgeoregister.nl/geonetwork/srv/api/records/002d9127-c16d-4b8d-9f5e-102a8c8e36c4"}
-checkxlinkurl.template.feature:15 - status code was: 400, expected: 200, response time: 284, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/records/002d9127-c16d-4b8d-9f5e-102a8c8e36c4, response: 
+checkxlinkurl.template.feature:15 - status code was: 400, expected: 200, response time: 275, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/records/002d9127-c16d-4b8d-9f5e-102a8c8e36c4, response: 
 [1.153:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/68ebd5c9-0ea1-4f22-9907-ec4c063cd3e2}, {link=http://rdfdata.eionet.europa.eu/inspirethemes/themes/20}, {link=urn:ogc:def:crs:EPSG::5709}]
@@ -2702,7 +2692,7 @@ errors:
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://www.nationaalgeoregister.nl:443/geonetwork/srv/api/records/a5241416-8401-4623-be61-57ef50447a41"}
-checkxlinkurl.template.feature:15 - status code was: 400, expected: 200, response time: 280, url: https://www.nationaalgeoregister.nl:443/geonetwork/srv/api/records/a5241416-8401-4623-be61-57ef50447a41, response: 
+checkxlinkurl.template.feature:15 - status code was: 400, expected: 200, response time: 279, url: https://www.nationaalgeoregister.nl:443/geonetwork/srv/api/records/a5241416-8401-4623-be61-57ef50447a41, response: 
 [1.155:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=https://monumentenregister.cultureelerfgoed.nl/sites/default/files/MRS/mrs-inspire.zip}]
@@ -2711,7 +2701,7 @@ errors:
 feature call (loop) failed at index: 0
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://monumentenregister.cultureelerfgoed.nl/sites/default/files/MRS/mrs-inspire.zip"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 749, url: https://monumentenregister.cultureelerfgoed.nl/sites/default/files/MRS/mrs-inspire.zip, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 855, url: https://monumentenregister.cultureelerfgoed.nl/sites/default/files/MRS/mrs-inspire.zip, response: 
 [1.156:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=http://www.opengis.net/def/crs/EPSG/0/https://www.opengis.net/def/crs/EPSG/0/4258}, {link=https://www.nationaalgeoregister.nl/geonetwork/srv/api/recordsf44dac86-2228-412f-8355-e56446ca9933}, {link=www.hydro.nl}]
@@ -2720,7 +2710,7 @@ errors:
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://www.nationaalgeoregister.nl/geonetwork/srv/api/recordsf44dac86-2228-412f-8355-e56446ca9933"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 423, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/recordsf44dac86-2228-412f-8355-e56446ca9933, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 688, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/recordsf44dac86-2228-412f-8355-e56446ca9933, response: 
 -------
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -2750,7 +2740,7 @@ errors:
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://www.nationaalgeoregister.nl/geonetwork/srv/api/records07575774-57a1-4419-bab4-6c88fdeb02b2"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 312, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/records07575774-57a1-4419-bab4-6c88fdeb02b2, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 573, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/records07575774-57a1-4419-bab4-6c88fdeb02b2, response: 
 [1.160:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=http://geodata.nationaalgeoregister.nl/cbsprovincies/extract/cbsprovincies.zip}, {link=}]
@@ -2769,7 +2759,7 @@ errors:
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://creativecommons.org/publicdomain/mark/*/deed.nl"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 36, url: https://creativecommons.org/publicdomain/mark/*/deed.nl, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 35, url: https://creativecommons.org/publicdomain/mark/*/deed.nl, response: 
 -------
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -2794,7 +2784,7 @@ errors:
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://creativecommons.org/publicdomain/mark/*/deed.nl"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 44, url: https://creativecommons.org/publicdomain/mark/*/deed.nl, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 45, url: https://creativecommons.org/publicdomain/mark/*/deed.nl, response: 
 -------
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -2809,12 +2799,12 @@ errors:
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"http://rdfdata.eionet.europa.eu/inspirethemes/themes/18"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 200, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/18, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 392, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/18, response: 
 -------
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 324, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 447, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
 [1.165:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/adn73c4a-ef03-4785-b7f6-942e86b385f7}, {link=http://rdfdata.eionet.europa.eu/inspirethemes/themes/10}, {link=urn:ogc:def:crs:EPSG::5709}]
@@ -2823,7 +2813,7 @@ errors:
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"http://rdfdata.eionet.europa.eu/inspirethemes/themes/10"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 199, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/10, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 337, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/10, response: 
 -------
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -2866,7 +2856,7 @@ errors:
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/resourcesd72ddff0-2724-11e2-81c1-0800200c9a66"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 280, url: https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/resourcesd72ddff0-2724-11e2-81c1-0800200c9a66, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 282, url: https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/resourcesd72ddff0-2724-11e2-81c1-0800200c9a66, response: 
 [1.168:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=http://www.opengis.net/def/crs/EPSG/0/http://www.opengis.net/def/crs/EPSG/0/4258}, {link=https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/3387ef8a-9237-453a-aa4e-585d1e193550}, {link=https://creativecommons.org/publicdomain/mark/*/deed.nl}]
@@ -2875,7 +2865,7 @@ errors:
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://creativecommons.org/publicdomain/mark/*/deed.nl"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 47, url: https://creativecommons.org/publicdomain/mark/*/deed.nl, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 35, url: https://creativecommons.org/publicdomain/mark/*/deed.nl, response: 
 [1.169:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=http://www.opengis.net/def/crs/EPSG/0/NAP}, {link=https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/resourcesddf87610-2724-11e2-81c1-0800200c9a66}]
@@ -2884,7 +2874,7 @@ errors:
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/resourcesddf87610-2724-11e2-81c1-0800200c9a66"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 280, url: https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/resourcesddf87610-2724-11e2-81c1-0800200c9a66, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 285, url: https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/resourcesddf87610-2724-11e2-81c1-0800200c9a66, response: 
 [1.170:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/resources03671a9e-6aaf-464d-be99-9aad25cef9e3}, {link=http://standaarden.overheid.nl/owms/terms/Ministerie_van_Landbouw,_Natuur_en_Voedselkwaliteit}]
@@ -2893,7 +2883,7 @@ errors:
 feature call (loop) failed at index: 0
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/resources03671a9e-6aaf-464d-be99-9aad25cef9e3"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 280, url: https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/resources03671a9e-6aaf-464d-be99-9aad25cef9e3, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 287, url: https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/resources03671a9e-6aaf-464d-be99-9aad25cef9e3, response: 
 [1.171:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=http://www.opengis.net/def/crs/EPSG/0/http://www.opengis.net/def/crs/EPSG/0/3034}, {link=http://nationaalgeoregister.nl/geonetwork/srv/dut/csw?SERVICE=CSW&version=2.0.2&REQUEST=GetRecordById&elementSetName=full&OutputSchema=http://www.isotc211.org/2005/gmd&ID=60a2a7c2-d5b3-4ad5-b562-c448695357fb}, {link=https://creativecommons.org/publicdomain/mark/*/deed.nl}, {link=}]
@@ -2902,7 +2892,7 @@ errors:
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://creativecommons.org/publicdomain/mark/*/deed.nl"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 36, url: https://creativecommons.org/publicdomain/mark/*/deed.nl, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 35, url: https://creativecommons.org/publicdomain/mark/*/deed.nl, response: 
 -------
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -2917,12 +2907,12 @@ errors:
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"http://rdfdata.eionet.europa.eu/inspirethemes/themes/24"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 273, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/24, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 199, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/24, response: 
 -------
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 313, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 309, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
 -------
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -2937,12 +2927,12 @@ errors:
 feature call (loop) failed at index: 0
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/resourcesc7a15080-2724-11e2-81c1-0800200c9a66"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 282, url: https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/resourcesc7a15080-2724-11e2-81c1-0800200c9a66, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 281, url: https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/resourcesc7a15080-2724-11e2-81c1-0800200c9a66, response: 
 -------
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"http://rdfdata.eionet.europa.eu/inspirethemes/themes/13"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 199, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/13, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 200, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/13, response: 
 -------
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -2952,7 +2942,7 @@ checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, respons
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 313, url: https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 307, url: https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme, response: 
 [1.174:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=http://kadaster/3bf3f7f3-8ac9-4203-bb95-2c932d5f0f3e}]
@@ -2971,17 +2961,17 @@ errors:
 feature call (loop) failed at index: 0
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://nationaalgeoregister.nl/geonetwork/srv/resources7d4d5090-8b18-4c30-a07a-9d738039112f"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 279, url: https://nationaalgeoregister.nl/geonetwork/srv/resources7d4d5090-8b18-4c30-a07a-9d738039112f, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 281, url: https://nationaalgeoregister.nl/geonetwork/srv/resources7d4d5090-8b18-4c30-a07a-9d738039112f, response: 
 -------
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"http://rdfdata.eionet.europa.eu/inspirethemes/themes/13"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 201, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/13, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 200, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/13, response: 
 -------
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"http://geonetwork-opensource.org/inspire-theme#"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 399, url: http://geonetwork-opensource.org/inspire-theme#, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 396, url: http://geonetwork-opensource.org/inspire-theme#, response: 
 -------
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -2995,7 +2985,7 @@ errors:
 feature call (loop) failed at index: 0
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/resources34e95842-4e4e-46de-9198-79e8cd4d30dc"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 280, url: https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/resources34e95842-4e4e-46de-9198-79e8cd4d30dc, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 278, url: https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/resources34e95842-4e4e-46de-9198-79e8cd4d30dc, response: 
 [1.177:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=http://www.opengis.net/def/crs/EPSG/0/http://www.opengis.net/def/crs/EPSG/0/4258}, {link=http://kadaster/df1a98c0-58ba-48ff-8825-b4fb6322c586}]
@@ -3044,7 +3034,7 @@ errors:
 feature call (loop) failed at index: 0
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://data.rivm.nl/inspire?id#505e9f1e-84bc-4856-9771-4295db998bb6"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 360, url: https://data.rivm.nl/inspire?id#505e9f1e-84bc-4856-9771-4295db998bb6, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 357, url: https://data.rivm.nl/inspire?id#505e9f1e-84bc-4856-9771-4295db998bb6, response: 
 [1.183:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/ror-9d8e-4758-83fx-28b057f185g1}, {link=http://rdfdata.eionet.europa.eu/inspirethemes/themes/25}, {link=https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset}, {link=urn:ogc:def:crs:EPSG::5709}]
@@ -3053,12 +3043,12 @@ errors:
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"http://rdfdata.eionet.europa.eu/inspirethemes/themes/25"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 199, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/25, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 200, url: http://rdfdata.eionet.europa.eu/inspirethemes/themes/25, response: 
 -------
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 307, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 309, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
 -------
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -3073,7 +3063,7 @@ errors:
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://creativecommons.org/publicdomain/mark/*/deed.nl"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 49, url: https://creativecommons.org/publicdomain/mark/*/deed.nl, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 35, url: https://creativecommons.org/publicdomain/mark/*/deed.nl, response: 
 -------
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -3918,16 +3908,6 @@ checkxlinkurl.template.feature:14 -
 javax.net.ssl.SSLException: Connection reset
 [1.192:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
-items: [{link=http://kadaster/06b6c650-cdb1-11dd-ad8b-0800200c9a81}]
-errors:
--------
-feature call (loop) failed at index: 0
-caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
-arg: {"link":"http://kadaster/06b6c650-cdb1-11dd-ad8b-0800200c9a81"}
-checkxlinkurl.template.feature:14 - 
-java.net.UnknownHostException: kadaster
-[1.193:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
-caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=http://kadaster/2482250f-3b00-4439-9f93-f3118229b021}, {link=}, {link=}, {link=}]
 errors:
 -------
@@ -3935,7 +3915,7 @@ feature call (loop) failed at index: 0
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"http://kadaster/2482250f-3b00-4439-9f93-f3118229b021"}
 checkxlinkurl.template.feature:14 - 
-java.net.UnknownHostException: kadaster
+java.net.UnknownHostException: kadaster: Temporary failure in name resolution
 -------
 feature call (loop) failed at index: 1
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -3954,7 +3934,7 @@ caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feat
 arg: {"link":""}
 checkxlinkurl.template.feature:14 - 
 org.apache.http.client.ClientProtocolException
-[1.194:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
+[1.193:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/50eef6be-619d-4e16-9b92-48971109b636}, {link=http://rdfdata.eionet.europa.eu/inspirethemes/themes/18}, {link=http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/MajorRoadsNoiseExposureDelineationNight-dir-2002-49}, {link=https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset}, {link=urn:ogc:def:crs:EPSG::5709}]
 errors:
@@ -3967,14 +3947,14 @@ checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, respons
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 309, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 307, url: https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset, response: 
 -------
 feature call (loop) failed at index: 4
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"urn:ogc:def:crs:EPSG::5709"}
 checkxlinkurl.template.feature:14 - 
 org.apache.http.client.ClientProtocolException: URI does not specify a valid host name: urn:ogc:def:crs:EPSG::5709
-[1.195:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
+[1.194:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=}]
 errors:
@@ -3984,7 +3964,7 @@ caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feat
 arg: {"link":""}
 checkxlinkurl.template.feature:14 - 
 org.apache.http.client.ClientProtocolException
-[1.196:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
+[1.195:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=https://www.nationaalgeoregister.nl/geonetwork/srv/api/records844404a2-9cd0-452e-b29a-74588777485a}]
 errors:
@@ -3992,7 +3972,17 @@ errors:
 feature call (loop) failed at index: 0
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://www.nationaalgeoregister.nl/geonetwork/srv/api/records844404a2-9cd0-452e-b29a-74588777485a"}
-checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 327, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/records844404a2-9cd0-452e-b29a-74588777485a, response: 
+checkxlinkurl.template.feature:15 - status code was: 500, expected: 200, response time: 309, url: https://www.nationaalgeoregister.nl/geonetwork/srv/api/records844404a2-9cd0-452e-b29a-74588777485a, response: 
+[1.196:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
+caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
+items: [{link=http://kadaster/06b6c650-cdb1-11dd-ad8b-0800200c9a81}]
+errors:
+-------
+feature call (loop) failed at index: 0
+caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
+arg: {"link":"http://kadaster/06b6c650-cdb1-11dd-ad8b-0800200c9a81"}
+checkxlinkurl.template.feature:14 - 
+java.net.UnknownHostException: kadaster
 [1.197:16] ngr-check-dataset-record.feature:80 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 caller: classpath:InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature
 items: [{link=http://standaarden.overheid.nl/owms/terms/Ministerie_van_Landbouw,_Natuur_en_Voedselkwaliteit}, {link=http://nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/280ed37a-b8d2-4ac5-8567-04d84fad3a41}, {link=https://creativecommons.org/publicdomain/mark/*/deed.nl}, {link=https://data.overheid.nl/organisatie/PDOK}]
@@ -4001,16 +3991,15 @@ errors:
 feature call (loop) failed at index: 2
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://creativecommons.org/publicdomain/mark/*/deed.nl"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 39, url: https://creativecommons.org/publicdomain/mark/*/deed.nl, response: 
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 60, url: https://creativecommons.org/publicdomain/mark/*/deed.nl, response: 
 -------
 feature call (loop) failed at index: 3
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"https://data.overheid.nl/organisatie/PDOK"}
-checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 427, url: https://data.overheid.nl/organisatie/PDOK, response: 
-InspireTest.ngr.datasetrecords.check-known-dataset-record: [1.1:14] check-known-dataset-record.feature:26 - path: /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString, actual: null, expected: 'datasetIdentifierCode', reason: actual xpath does not exist
-[1.31:14] check-known-dataset-record.feature:45 - xpath does not exist: /GetRecordByIdResponse//@href on response
-[1.94:14] check-known-dataset-record.feature:45 - xpath does not exist: /GetRecordByIdResponse//@href on response
-[1.154:14] check-known-dataset-record.feature:45 - xpath does not exist: /GetRecordByIdResponse//@href on response
- ==> expected: <0> but was: <182>
+checkxlinkurl.template.feature:15 - status code was: 404, expected: 200, response time: 465, url: https://data.overheid.nl/organisatie/PDOK, response: 
+InspireTest.ngr.datasetrecords.check-known-dataset-record: [1.30:16] check-known-dataset-record.feature:47 - xpath does not exist: /GetRecordByIdResponse//@href on response
+[1.93:16] check-known-dataset-record.feature:47 - xpath does not exist: /GetRecordByIdResponse//@href on response
+[1.141:16] check-known-dataset-record.feature:47 - xpath does not exist: /GetRecordByIdResponse//@href on response
+ ==> expected: <0> but was: <180>
 	at InspireTest.TestAll.testParallel(InspireTest.java:27)
 
