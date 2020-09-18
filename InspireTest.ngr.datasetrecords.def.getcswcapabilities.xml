@@ -1,5 +1,5 @@
-<testsuite failures="0" name="InspireTest/ngr/datasetrecords/def/getcswcapabilities.feature" skipped="0" tests="2" time="1.798083">
-  <testcase classname="InspireTest.ngr.datasetrecords.def.getcswcapabilities" name="get capabilities 'https://inspire-geoportal.ec.europa.eu/GeoportalProxyWebServices/resources/OGCCSW202'" time="1.084975">
+<testsuite failures="0" name="InspireTest/ngr/datasetrecords/def/getcswcapabilities.feature" skipped="0" tests="2" time="1.867077">
+  <testcase classname="InspireTest.ngr.datasetrecords.def.getcswcapabilities" name="get capabilities 'https://inspire-geoportal.ec.europa.eu/GeoportalProxyWebServices/resources/OGCCSW202'" time="1.11431">
     <system-out>Given url 'https://inspire-geoportal.ec.europa.eu/GeoportalProxyWebServices/resources/OGCCSW202' . passed
 And param service = 'CSW' ................................................. passed
 And param version = '2.0.2' ............................................... passed
@@ -8,7 +8,7 @@ When method get ........................................................... pass
 Then status 200 ........................................................... passed
 * eval karate.embed( response,'application/json') ......................... passed</system-out>
   </testcase>
-  <testcase classname="InspireTest.ngr.datasetrecords.def.getcswcapabilities" name="get capabilities 'http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire'" time="0.713108">
+  <testcase classname="InspireTest.ngr.datasetrecords.def.getcswcapabilities" name="get capabilities 'http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire'" time="0.752767">
     <system-out>Given url 'https://inspire-geoportal.ec.europa.eu/GeoportalProxyWebServices/resources/OGCCSW202' . passed
 And param service = 'CSW' ................................................. passed
 And param version = '2.0.2' ............................................... passed

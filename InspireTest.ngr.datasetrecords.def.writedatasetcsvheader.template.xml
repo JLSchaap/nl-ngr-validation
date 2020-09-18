@@ -1,5 +1,5 @@
-<testsuite failures="0" name="InspireTest/ngr/datasetrecords/def/writedatasetcsvheader.template.feature" skipped="0" tests="1" time="0.107826">
-  <testcase classname="InspireTest.ngr.datasetrecords.def.writedatasetcsvheader.template" name="write header dataset.csv" time="0.107826">
+<testsuite failures="0" name="InspireTest/ngr/datasetrecords/def/writedatasetcsvheader.template.feature" skipped="0" tests="1" time="0.12018">
+  <testcase classname="InspireTest.ngr.datasetrecords.def.writedatasetcsvheader.template" name="write header dataset.csv" time="0.12018">
     <system-out>* def mystorage = Java.type('storage.DataStorage') ........................ passed
 * def db = new mystorage .................................................. passed
 * def line = '"datasetIdentifierCode","title","organisationName","email",' . passed
