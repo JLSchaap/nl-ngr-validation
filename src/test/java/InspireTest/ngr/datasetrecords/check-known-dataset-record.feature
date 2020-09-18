@@ -69,7 +69,7 @@ Feature: check known dataset records
         # * def alphas2 = ["http://inspire.ec.europa.eu/metadata-codelist/ResourceType"];
         # * def x = filterx(ObjectValues(alphas1), ObjectValues(alphas2))
 
-        #  * def nlinks = filterx(ObjectValues(xlinks), ObjectValues(knownlinks))
+        * def nlinks = filterx(ObjectValues(xlinks), ObjectValues(knownlinks))
 
 
         * print nlinks
