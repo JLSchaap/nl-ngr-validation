@@ -1,6 +1,6 @@
 
 
-Feature:  Check dataset record datasetIdentifierCode
+Feature:  Check links in dataset record
   Background:
     * configure readTimeout = 240000
     #* configure connectTimeout = 60000
@@ -13,8 +13,8 @@ Feature:  Check dataset record datasetIdentifierCode
 
 
 
-  Scenario Outline: Check dataset record  in ngr voor  <datasetIdentifierCode>
-
+  Scenario Outline: Check <datasetIdentifierCode>
+    Check href links in metadata record van <datasetIdentifierCode>
 
     Given path 'geonetwork/srv/dut/inspire'
     And param service = 'CSW'
@@ -32,8 +32,19 @@ Feature:  Check dataset record datasetIdentifierCode
     * def title =  get response //citation/CI_Citation/title/CharacterString
     * print 'title:' + title
     * print title
-    #* def organisation =  get response /GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/pointOfContact[*]/CI_ResponsibleParty/organisationName/Anchor
-    #* print 'organisation:', organisation
+    * def email = get response //electronicMailAddress/CharacterString
+    * print email
+
+    * def organisationpath = karate.get('//organisationName/CharacterString') 
+    * def organisation =  organisationpath ? organisationpath : 'no organisationName found in dataset record'
+
+    * print 'organisation:', organisation
+
+
+    * def mystorage = Java.type('storage.DataStorage')
+    * def db = new mystorage
+    * eval db.mywriteln('<datasetIdentifierCode>","'+ title + '","' + organisation + '","'+ email +'",' , 'target/surefire-reports/datasets.csv')
+
     * def xlinks = get response /GetRecordByIdResponse//@href
     * def ObjectValues =
       """
