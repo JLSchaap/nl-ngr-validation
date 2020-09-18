@@ -6,7 +6,7 @@ Feature: check known dataset records
         #* def callheaderresult = callonce read('def/writedatasetcsvheader.template.feature')
         * def datasetsresult = callonce read('def/getdataset.template.feature')
         * print datasetsresult 
-        * json datasets = datasetsresult.response
+        * csv datasets = datasetsresult.response
         * print datasets
         * url 'http://nationaalgeoregister.nl/'
 
