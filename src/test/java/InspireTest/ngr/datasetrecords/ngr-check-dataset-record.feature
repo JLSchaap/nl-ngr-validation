@@ -43,7 +43,7 @@ Feature:  Check links in dataset record
 
     * def mystorage = Java.type('storage.DataStorage')
     * def db = new mystorage
-    * eval db.mywriteln('<datasetIdentifierCode>","'+ title + '","' + organisation + '","'+ email +'",' , 'target/surefire-reports/datasets.csv')
+    * eval db.mywriteln('"<datasetIdentifierCode>","'+ title + '","' + organisation + '","'+ email +'",' , 'target/surefire-reports/datasets.csv')
 
     * def xlinks = get response /GetRecordByIdResponse//@href
     * def ObjectValues =
