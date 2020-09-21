@@ -12,12 +12,12 @@ Feature:  template feature checking link __arg
 
         Given url link
         When method HEAD
-        Then status 200
-        And match responseHeaders['Content-Type'][0] == '#string'
+      
         # * print "last modified",  responseHeaders['Last-Modified'][0]
         # * print "content type",  responseHeaders['Content-Type'][0]
 
         * def mystorage = Java.type('storage.DataStorage')
         * def db = new mystorage
-        * eval db.mywriteln('"'+ link + '","'+ title + '"' , 'target/surefire-reports/foundlink.csv')
-
+        * eval db.mywriteln('"'+ link + '","'+ title + '","' + responseStatus + '",'  , 'target/surefire-reports/foundlink.csv')
+        * match responseStatus ==  200
+        * match responseHeaders['Content-Type'][0] == '#string'

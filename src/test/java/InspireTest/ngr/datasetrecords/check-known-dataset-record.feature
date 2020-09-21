@@ -3,7 +3,7 @@ Feature: check known dataset records
     Background:
         * configure readTimeout = 240000
         * def knownlinks = karate.jsonPath(karate.read('classpath:InspireTest/ngr/datasetrecords/def/knownlink.csv'), '[*].knownlink')
-        #* def callheaderresult = callonce read('def/writedatasetcsvheader.template.feature')
+        * def callheaderresult = callonce read('def/writedatasetcsvheader.template.feature') 
         * def datasetsresult = callonce read('def/getdataset.template.feature')
         * print datasetsresult 
         * csv datasets = datasetsresult.response

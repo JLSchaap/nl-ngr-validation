@@ -6,7 +6,7 @@ Feature:  Check links in dataset record
     #* configure connectTimeout = 60000
 
     * url 'http://nationaalgeoregister.nl/'
-    * def callheaderresult = callonce read('def/writedatasetcsvheader.template.feature') 
+   
     * def callonesresult = callonce read('def/getcswbriefrecords.feature')
     * print callonesresult
 
@@ -77,7 +77,7 @@ Feature:  Check links in dataset record
     * def id = "<datasetIdentifierCode>"
 
 
-    * call read('def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link')
+    #* call read('def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link')
 
     # * karate.write("<datasetIdentifierCode>;"+ title, filename)
     Examples:
