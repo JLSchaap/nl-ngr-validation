@@ -51,9 +51,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                28620,
-                758,
-                2771,
+                8516,
+                2,
+                1,
                 0,
                 0
             ],
@@ -94,7 +94,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 32149) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 8519) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -107,8 +107,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                393,
-                180
+                200,
+                1
             ],
             backgroundColor: [
                 "#00B000",
@@ -144,7 +144,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 573) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 201) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -158,7 +158,7 @@ $(document).ready(function() {
         datasets: [{
             data: [
                    2,
-                   3
+                   1
                ],
                backgroundColor: [
                 "#00B000",
@@ -191,7 +191,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 5) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 3) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -232,7 +232,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>NLTEST</td>
-            <td>21 Sep 2020, 15:22</td>
+            <td>24 Sep 2020, 14:25</td>
     </tr>
   </tbody>
 </table>
@@ -329,18 +329,18 @@ $(document).ready(function() {
           <tr>
         <td class="tagname"><a href="report-feature_InspireTest-ngr-datasetrecords-check-known-links-feature.html">InspireTest/ngr/datasetrecords/check-known-links.feature</a></td>
         
-        <td      class="passed"    >2825</td>
+        <td      class="passed"    >31</td>
         <td      class="failed"    >2</td>
-        <td     class="skipped"   >5</td>
+        <td     class="skipped"   >1</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">2832</td>
+        <td class="total">34</td>
 
-        <td  class="passed"    >176</td>
+        <td  class="passed"    >1</td>
         <td  class="failed"    >1</td>
-        <td class="total">177</td>
+        <td class="total">2</td>
 
-        <td class="duration" data-value="1252185733925">20:52.185</td>
+        <td class="duration" data-value="9918746414">9.918</td>
         <td class="failed">Failed</td>
       </tr>
           <tr>
@@ -357,92 +357,58 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">2</td>
 
-        <td class="duration" data-value="1653460293">1.653</td>
+        <td class="duration" data-value="1954700371">1.954</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
-        <td class="tagname"><a href="report-feature_InspireTest-ngr-datasetrecords-def-getcswbriefrecordsjson-feature_2.html">InspireTest/ngr/datasetrecords/def/getcswbriefrecordsjson.feature</a></td>
+        <td class="tagname"><a href="report-feature_InspireTest-ngr-datasetrecords-ngr-check-dataset-record-feature_2.html">InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature</a></td>
         
-        <td      class="passed"    >15</td>
+        <td      class="passed"    >8471</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">15</td>
+        <td class="total">8471</td>
 
-        <td  class="passed"    >1</td>
+        <td  class="passed"    >197</td>
         <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="593212223">0.593</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_InspireTest-ngr-datasetrecords-check-known-dataset-record-feature_3.html">InspireTest/ngr/datasetrecords/check-known-dataset-record.feature</a></td>
-        
-        <td      class="passed"    >14555</td>
-        <td      class="failed"    >753</td>
-        <td     class="skipped"   >2751</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">18059</td>
-
-        <td  class="passed"    >20</td>
-        <td  class="failed"    >176</td>
-        <td class="total">196</td>
-
-        <td class="duration" data-value="1186638926157">19:46.638</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_InspireTest-ngr-datasetrecords-ngr-check-dataset-record-feature_4.html">InspireTest/ngr/datasetrecords/ngr-check-dataset-record.feature</a></td>
-        
-        <td      class="passed"    >11211</td>
-        <td      class="failed"    >3</td>
-        <td     class="skipped"   >15</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">11229</td>
-
-        <td  class="passed"    >194</td>
-        <td  class="failed"    >3</td>
         <td class="total">197</td>
 
-        <td class="duration" data-value="52700297898604">14:38:20.297</td>
-        <td class="failed">Failed</td>
+        <td class="duration" data-value="51621200205214">14:20:21.200</td>
+        <td class="passed">Passed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
       <td></td>
-            <td>28620</td>
-      <td>758</td>
-      <td>2771</td>
+            <td>8516</td>
+      <td>2</td>
+      <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>32149</td>
+      <td>8519</td>
 
-      <td>393</td>
-      <td>180</td>
-      <td>573</td>
+      <td>200</td>
+      <td>1</td>
+      <td>201</td>
 
-      <td class="duration">15:19:1.369</td>
-      <td>5</td>
+      <td class="duration">14:20:33.073</td>
+      <td>3</td>
     </tr>
     <tr>
       <td></td>
-            <td>89.02%</td>
-      <td>2.36%</td>
-      <td>8.62%</td>
+            <td>99.96%</td>
+      <td>0.02%</td>
+      <td>0.01%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>68.59%</td>
-      <td>31.41%</td>
+      <td>99.50%</td>
+      <td>0.50%</td>
       <td></td>
       <td></td>
-      <td>40.00%</td>
+      <td>66.67%</td>
     </tr>
   </tfoot>
 </table>
