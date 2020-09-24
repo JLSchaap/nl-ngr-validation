@@ -27,12 +27,7 @@ Feature:  getlist of ngr records
     * def list =  karate.mapWithKey(briefarray ,'datasetIdentifierCode')
     * def json = karate.map(list, function(x, i){ return {} })
 
-    Given url 'https://inspire.ec.europa.eu/metadata-codelist/metadata-codelist.nl.json'
-    When method get
-    Then status 200
-    * print response
-    * def inspirecodelist = get response.register.containeditems[*]["metadata-codelist"].id
-    * print inspirecodelist
+   
 
 # register.containeditems[4]["metadata-codelist"].id
 # * karate.write(briefarray, 'ngrlist.json')

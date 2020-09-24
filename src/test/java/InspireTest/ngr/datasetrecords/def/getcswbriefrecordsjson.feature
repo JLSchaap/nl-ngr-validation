@@ -1,4 +1,4 @@
-
+@ignore
 Feature:  getlist of ngr records
 
 Scenario: getbrief list
