@@ -36,13 +36,17 @@ Feature:  Check title organisation and email in dataset records
     * def organisationpath = karate.get('//organisationName/CharacterString')
     * def organisation =  organisationpath ? organisationpath : 'no organisationName found in dataset record'
 
+    * def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString')
+    * def metadataStandardVersion = metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found'
+
     #* print 'organisation:', organisation
     #* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier/MD_Identifier/code/Anchor')
-    * def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier')
+    * def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href')
     * def dataIdentificationCitationAnchor = MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor'
+
     * def mystorage = Java.type('storage.DataStorage')
     * def db = new mystorage
-    * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + dataIdentificationCitationAnchor + '","' + organisation + '","'+ email +'",' , 'target/surefire-reports/datasets.csv')
+    * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + dataIdentificationCitationAnchor + '","' + organisation + '","'+ metadataStandardVersion + '","' + email +'",' , 'target/surefire-reports/datasets.csv')
 
 
 
@@ -53,9 +57,10 @@ Feature:  Check title organisation and email in dataset records
       | callonesresult.list |
 
 
-# csv def/datasetlist.csv has the following field:
-#  Examples:
-#    | datasetIdentifierCode                |
-#    | f273941e-9c3b-43bc-b886-2d50d0bf9348 |
-#    | 19165027-a13a-4c19-9013-ec1fd191019d |
-#    | 4bb89277-6ebe-4e66-8929-cd275aa7fd81 |
+      # csv def/datasetlist.csv has the following field:
+     #   Examples:
+     #     | datasetIdentifierCode                |
+     # | fe2f9091-1962-4073-9e3b-3e4aeed488a5 |
+     # | f273941e-9c3b-43bc-b886-2d50d0bf9348 |
+     # | 19165027-a13a-4c19-9013-ec1fd191019d |
+     # | 4bb89277-6ebe-4e66-8929-cd275aa7fd81 |
