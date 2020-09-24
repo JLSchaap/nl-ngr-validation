@@ -1,4 +1,4 @@
-
+@ignore
 Feature: check known dataset
     Check xlinks in metadata with a list of identifiable collections of data
 
@@ -41,10 +41,8 @@ Feature: check known dataset
         * def email = get response //electronicMailAddress/CharacterString
         * def organisationpath = karate.get('//organisationName/CharacterString')
         * def organisation =  organisationpath ? organisationpath : 'no organisationName found in dataset record'
-        * def mystorage = Java.type('storage.DataStorage')
-        * def db = new mystorage
-        * eval db.mywriteln('"<datasetIdentifierCode>","'+ title + '","' + organisation + '","'+ email +'",' , 'target/surefire-reports/datasets.csv')
-
+      
+       
         * def xlinks = get response /GetRecordByIdResponse//@href
         * def ObjectValues =
             """
@@ -75,7 +73,7 @@ Feature: check known dataset
         * call read('def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link')
         * def mystorage = Java.type('storage.DataStorage')
         * def db = new mystorage
-        * eval db.mywriteln('"<datasetIdentifierCode>","'+ title + '","' + organisation + '","'+ email +'",' , 'target/surefire-reports/datasetsOkay.csv')
+        * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + organisation + '","'+ email +'",' , 'target/surefire-reports/datasetsOkay.csv')
 
         Examples:
             | datasets |

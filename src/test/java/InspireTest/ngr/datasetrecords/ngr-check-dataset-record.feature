@@ -23,26 +23,26 @@ Feature:  Check title organisation and email in dataset records
     And param outputSchema = 'http://www.isotc211.org/2005/gmd'
     When method get
     Then status 200
-    * eval karate.embed(responseBytes,'application/xml')
+    #* eval karate.embed(responseBytes,'application/xml')
     And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '<datasetIdentifierCode>'
     # check INSPIRE TG2 anchor
     # And match /GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier/MD_Identifier/code/Anchor == '<datasetIdentifierCode>'
     * def title =  get response //citation/CI_Citation/title/CharacterString
-    * print 'title:' + title
-    * print title
+    #* print 'title:' + title
+
     * def email = get response //electronicMailAddress/CharacterString
-    * print email
+    #* print email
 
     * def organisationpath = karate.get('//organisationName/CharacterString')
     * def organisation =  organisationpath ? organisationpath : 'no organisationName found in dataset record'
 
-    * print 'organisation:', organisation
+    #* print 'organisation:', organisation
     #* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier/MD_Identifier/code/Anchor')
     * def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier')
     * def dataIdentificationCitationAnchor = MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor'
     * def mystorage = Java.type('storage.DataStorage')
     * def db = new mystorage
-    * eval db.mywriteln('"<datasetIdentifierCode>","'+ title + '","' + dataIdentificationCitationAnchor + '","' + organisation + '","'+ email +'",' , 'target/surefire-reports/datasets.csv')
+    * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + dataIdentificationCitationAnchor + '","' + organisation + '","'+ email +'",' , 'target/surefire-reports/datasets.csv')
 
 
 
