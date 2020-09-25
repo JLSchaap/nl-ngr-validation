@@ -9,7 +9,7 @@ Feature:  Check title organisation and email in dataset records
     # write header in result file
     * def callheaderresult = callonce read('def/writedatasetcsvheader.template.feature')
 
-    # * def callonesresult = callonce read('def/getcswbriefrecords.feature')
+    * def callonesresult = callonce read('def/getcswbriefrecords.feature')
     * configure connectTimeout = 30000
 
 
