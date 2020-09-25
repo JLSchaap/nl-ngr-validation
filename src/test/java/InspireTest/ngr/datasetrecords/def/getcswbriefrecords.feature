@@ -18,7 +18,7 @@ Feature:  getlist of ngr records
     When method get
     Then status 200
     * eval karate.embed( response,'application/xml')
-    * def briefarray = get response /GetRecordsResponse/SearchResults/BriefRecord[type = 'dataset']/identifier
+    * def briefarray = get response /GetRecordsResponse/SearchResults/BriefRecord[*]/identifier
     * def list =  karate.mapWithKey(briefarray ,'datasetIdentifierCode')
     * def json = karate.map(list, function(x, i){ return {} })
     * def mystorage = Java.type('storage.DataStorage')
