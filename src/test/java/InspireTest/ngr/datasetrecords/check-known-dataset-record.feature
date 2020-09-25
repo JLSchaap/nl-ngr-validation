@@ -3,7 +3,7 @@ Feature: check known dataset
     Check xlinks in metadata with a list of identifiable collections of data
 
     Background:
-        * configure readTimeout = 240000
+        * configure readTimeout = 5000
         
         # to improve performance use al list of known already check links (in check-known-links.feature)
         * def knownlinks = karate.jsonPath(karate.read('classpath:InspireTest/ngr/datasetrecords/def/knownlink.csv'), '[*].knownlink')
@@ -69,7 +69,7 @@ Feature: check known dataset
 
         * def nlinks = filterx(ObjectValues(xlinks), ObjectValues(knownlinks))
         * def id = "<datasetIdentifierCode>"
-        * call read('def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link')
+        #* call read('def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link')
         * def mystorage = Java.type('storage.DataStorage')
         * def db = new mystorage
         * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + organisation + '","'+ email +'",' , 'target/surefire-reports/datasetsOkay.csv')
@@ -77,10 +77,10 @@ Feature: check known dataset
         Examples:
             | datasets |
 
-#  Examples:
-#       | datasetIdentifierCode                | title                                     | organisation                                        | electronicMailAddress                                    |
-#       | 3703b249-a0eb-484e-ba7a-10e31a55bcec | Invasieve Exoten (INSPIRE Geharmoniseerd) | Ministerie van Landbouw, Natuur en Voedselkwaliteit | [geodatabeheer.giscc@rvo.nl, Geodatabeheer.GISCC@rvo.nl] |
-#       | fe0e1e5f-512f-4bb1-bbf8-4028d3dfa24f | Schelpdierpercelen                        | [Ministerie van Economische Zaken                   | test@test.ts                                             |
-#       | 977e0e94-7aa9-4784-b2da-eaec44adb61b | Habitatrichtlijn verspreiding van habitattypen | [Ministerie van Economische Zaken - GIS Competence Center, Wageningen Environmental Research (Alterra), PDOK, Alterra]                        | [geodatabeheer.giscc@rvo.nl, GeoDesk.CGI@wur.nl, geodatabeheer.giscc@rvo.nl, beheerPDOK@kadaster.nl, ] |
-#       | fcefa13c-44e2-4953-b6d6-1ddceebc57fc | Vogelrichtlijn verspreiding van soorten        | [Ministerie van Economische Zaken - GIS Competence Center, Wageningen Environmental Research (Alterra), PDOK, Sovon Vogelonderzoek Nederland] | geodatabeheer.giscc@rvo.nl, GeoDesk.CGI@wur.nl, geodatabeheer.giscc@rvo.nl, beheerPDOK@kadaster.nl, ]  |
-#       | f99e915a-75e5-4c36-97f2-61eff692d85b | Grondwateronderzoek onder INSPIRE              | TNO Geologische Dienst Nederland, TNO Geologische Dienst Nederland, TNO Geologische Dienst Nederland]                                         | [info@dinoloket.nl, info@dinoloket.nl, info@dinoloket.nl]                                              |
+  #Examples:
+  #     | datasetIdentifierCode                | title                                     | organisation                                        | electronicMailAddress                                    |
+  #     | 3703b249-a0eb-484e-ba7a-10e31a55bcec | Invasieve Exoten (INSPIRE Geharmoniseerd) | Ministerie van Landbouw, Natuur en Voedselkwaliteit | [geodatabeheer.giscc@rvo.nl, Geodatabeheer.GISCC@rvo.nl] |
+  #     | fe0e1e5f-512f-4bb1-bbf8-4028d3dfa24f | Schelpdierpercelen                        | [Ministerie van Economische Zaken                   | test@test.ts                                             |
+  #     | 977e0e94-7aa9-4784-b2da-eaec44adb61b | Habitatrichtlijn verspreiding van habitattypen | [Ministerie van Economische Zaken - GIS Competence Center, Wageningen Environmental Research (Alterra), PDOK, Alterra]                        | [geodatabeheer.giscc@rvo.nl, GeoDesk.CGI@wur.nl, geodatabeheer.giscc@rvo.nl, beheerPDOK@kadaster.nl, ] |
+  #     | fcefa13c-44e2-4953-b6d6-1ddceebc57fc | Vogelrichtlijn verspreiding van soorten        | [Ministerie van Economische Zaken - GIS Competence Center, Wageningen Environmental Research (Alterra), PDOK, Sovon Vogelonderzoek Nederland] | geodatabeheer.giscc@rvo.nl, GeoDesk.CGI@wur.nl, geodatabeheer.giscc@rvo.nl, beheerPDOK@kadaster.nl, ]  |
+  #     | f99e915a-75e5-4c36-97f2-61eff692d85b | Grondwateronderzoek onder INSPIRE              | TNO Geologische Dienst Nederland, TNO Geologische Dienst Nederland, TNO Geologische Dienst Nederland]                                         | [info@dinoloket.nl, info@dinoloket.nl, info@dinoloket.nl]                                              |
