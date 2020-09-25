@@ -12,7 +12,7 @@ Feature: check known xlinks
 
             Examples:
                 | karate.read('classpath:InspireTest/ngr/datasetrecords/def/knownlink.csv') |
-        Examples:
+       # Examples:
        #     | knownlink                                       |
        #     | http://data.europa.eu/eli/reg/2010/1089         |
        #     | http://inspire.ec.europa.eu/id/document/tg/pipo |
