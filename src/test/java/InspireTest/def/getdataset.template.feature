@@ -1,4 +1,4 @@
-@ignore
+
 Feature:  get datasets
 
     Scenario: getdatasets

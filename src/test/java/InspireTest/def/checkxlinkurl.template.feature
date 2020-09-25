@@ -3,7 +3,7 @@ Feature:  template feature checking link __arg
     #  - do not run as individual feature
     #
     # usage
-    #  * def result = call read('def/checkdownloadurl.template.feature') karate.mapWithKey(myarray ,'link')
+    #  * def result = call read('classpath:InspireTest/def/checkdownloadurl.template.feature') karate.mapWithKey(myarray ,'link')
     #
     Scenario: __arg.link
 

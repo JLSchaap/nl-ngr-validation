@@ -6,9 +6,9 @@ Feature:  Check title organisation and email in dataset records
 
     * url 'http://nationaalgeoregister.nl/'
     # write header in result file
-    * def callheaderresult = callonce read('def/writedatasetcsvheader.template.feature')
+    * def callheaderresult = callonce read('classpath:InspireTest/def/writedatasetcsvheader.template.feature')
 
-    * def callonesresult = callonce read('def/getcswbriefrecords.feature')
+    * def callonesresult = callonce read('classpath:InspireTest/def/getcswbriefrecords.feature')
     * configure connectTimeout = 5000
 
 
@@ -52,7 +52,7 @@ Feature:  Check title organisation and email in dataset records
 
 
 
-    #* call read('def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link')
+    #* call read('classpath:InspireTest/def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link')
 
     # * karate.write("<datasetIdentifierCode>;"+ title, filename)
      Examples:

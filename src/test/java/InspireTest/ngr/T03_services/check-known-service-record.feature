@@ -1,45 +1,45 @@
 @step2
-Feature: check known dataset
+Feature: check known service
     Check xlinks in metadata with a list of identifiable collections of data
 
     Background:
         * configure readTimeout = 5000
         
         # to improve performance use al list of known already check links (in check-known-links.feature)
-        * def knownlinks = karate.jsonPath(karate.read('classpath:InspireTest/ngr/datasetrecords/def/knownlink.csv'), '[*].knownlink')
+        * def knownlinks = karate.jsonPath(karate.read('classpath:InspireTest/def/knownlink.csv'), '[*].knownlink')
        
     
         
-        # get the list of dataset records
-        * def datasetsresult = callonce read('def/getdataset.template.feature')
-        * print datasetsresult
-        * csv datasets = datasetsresult.response
+        # get the list of service records
+        * def servicesresult = callonce read('classpath:InspireTest/def/getservice.template.feature')
+        * print servicesresult
+        * csv services = servicesresult.response
         # jls remosv headers are also importedve c
-        # jls remove remove datasets $[0]
-        * print datasets
+        # jls remove remove services $[0]
+        * print services
 
         * url 'http://nationaalgeoregister.nl/'
 
 
     Scenario Outline: <title>
-        <datasetIdentifierCode> <organisation> <electronicMailAddress>
+        <serviceIdentifierCode> <organisation> <electronicMailAddress>
         Given path 'geonetwork/srv/dut/inspire'
         And param service = 'CSW'
         And param version = '2.0.2'
         And param request = 'GetRecordById'
-        And param id = '<datasetIdentifierCode>'
+        And param id = '<serviceIdentifierCode>'
         And param elementsetname = 'full'
         And param outputSchema = 'http://www.isotc211.org/2005/gmd'
         When method get
         Then status 200
         * eval karate.embed(responseBytes,'application/xml')
-        And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '<datasetIdentifierCode>'
+        And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '<serviceIdentifierCode>'
         # check INSPIRE TG2 anchor
-        # ? And match /GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier/MD_Identifier/code/Anchor == '<datasetIdentifierCode>'
+        # ? And match /GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier/MD_Identifier/code/Anchor == '<serviceIdentifierCode>'
         * def title =  get response //citation/CI_Citation/title/CharacterString
         * def email = get response //electronicMailAddress/CharacterString
         * def organisationpath = karate.get('//organisationName/CharacterString')
-        * def organisation =  organisationpath ? organisationpath : 'no organisationName found in dataset record'
+        * def organisation =  organisationpath ? organisationpath : 'no organisationName found in service record'
       
        
         * def xlinks = get response /GetRecordByIdResponse//@href
@@ -68,17 +68,17 @@ Feature: check known dataset
         # * def x = filterx(ObjectValues(alphas1), ObjectValues(alphas2))
 
         * def nlinks = filterx(ObjectValues(xlinks), ObjectValues(knownlinks))
-        * def id = "<datasetIdentifierCode>"
-        #* call read('def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link')
+        * def id = "<serviceIdentifierCode>"
+        * call read('classpath:InspireTest/def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link')
         * def mystorage = Java.type('storage.DataStorage')
         * def db = new mystorage
-        * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + organisation + '","'+ email +'",' , 'target/surefire-reports/datasetsOkay.csv')
+        * eval db.writeln('"<serviceIdentifierCode>","'+ title + '","' + organisation + '","'+ email +'",' , 'target/surefire-reports/servicesOkay.csv')
 
         Examples:
-            | datasets |
+            | services |
 
   #Examples:
-  #     | datasetIdentifierCode                | title                                     | organisation                                        | electronicMailAddress                                    |
+  #     | serviceIdentifierCode                | title                                     | organisation                                        | electronicMailAddress                                    |
   #     | 3703b249-a0eb-484e-ba7a-10e31a55bcec | Invasieve Exoten (INSPIRE Geharmoniseerd) | Ministerie van Landbouw, Natuur en Voedselkwaliteit | [geodatabeheer.giscc@rvo.nl, Geodatabeheer.GISCC@rvo.nl] |
   #     | fe0e1e5f-512f-4bb1-bbf8-4028d3dfa24f | Schelpdierpercelen                        | [Ministerie van Economische Zaken                   | test@test.ts                                             |
   #     | 977e0e94-7aa9-4784-b2da-eaec44adb61b | Habitatrichtlijn verspreiding van habitattypen | [Ministerie van Economische Zaken - GIS Competence Center, Wageningen Environmental Research (Alterra), PDOK, Alterra]                        | [geodatabeheer.giscc@rvo.nl, GeoDesk.CGI@wur.nl, geodatabeheer.giscc@rvo.nl, beheerPDOK@kadaster.nl, ] |

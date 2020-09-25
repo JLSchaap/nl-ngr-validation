@@ -8,10 +8,10 @@ Feature: check known xlinks
         * print nlinks
         * def title = "known url"
         * configure readTimeout = 60000
-        * call read('def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link')
+        * call read('classpath:InspireTest/def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link')
 
             Examples:
-                | karate.read('classpath:InspireTest/ngr/datasetrecords/def/knownlink.csv') |
+                | karate.read('classpath:InspireTest/ngr/def/knownlink.csv') |
        # Examples:
        #     | knownlink                                       |
        #     | http://data.europa.eu/eli/reg/2010/1089         |
