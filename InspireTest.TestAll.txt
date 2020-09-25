@@ -1,4 +1,134 @@
 -------------------------------------------------------------------------------
 Test set: InspireTest.TestAll
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.267 s - in InspireTest.TestAll
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 14.206 s <<< FAILURE! - in InspireTest.TestAll
+InspireTest.TestAll.testParallel  Time elapsed: 14.179 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+failed features:
+InspireTest.ngr.T04_extra.check-known-links: [1:5] check-known-links.feature:5 - could not find or read file: classpath:InspireTest/ngr/def/knownlink.csv
+InspireTest.ngr.T03_services.check-known-service-record: [1.1:24] check-known-service-record.feature:36 - path: /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString, actual: null, expected: '<serviceIdentifierCode>', reason: actual xpath does not exist
+[1.2:24] check-known-service-record.feature:36 - path: /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString, actual: null, expected: '<serviceIdentifierCode>', reason: actual xpath does not exist
+[1.3:24] check-known-service-record.feature:36 - path: /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString, actual: null, expected: '<serviceIdentifierCode>', reason: actual xpath does not exist
+[1.4:24] check-known-service-record.feature:36 - path: /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString, actual: null, expected: '<serviceIdentifierCode>', reason: actual xpath does not exist
+[1.5:24] check-known-service-record.feature:36 - path: /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString, actual: null, expected: '<serviceIdentifierCode>', reason: actual xpath does not exist
+[1.6:24] check-known-service-record.feature:36 - path: /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString, actual: null, expected: '<serviceIdentifierCode>', reason: actual xpath does not exist
+[1.7:24] check-known-service-record.feature:36 - path: /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString, actual: null, expected: '<serviceIdentifierCode>', reason: actual xpath does not exist
+[1.8:24] check-known-service-record.feature:36 - path: /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString, actual: null, expected: '<serviceIdentifierCode>', reason: actual xpath does not exist
+[1.9:24] check-known-service-record.feature:36 - path: /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString, actual: null, expected: '<serviceIdentifierCode>', reason: actual xpath does not exist
+[1.10:24] check-known-service-record.feature:36 - path: /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString, actual: null, expected: '<serviceIdentifierCode>', reason: actual xpath does not exist
+[1.11:24] check-known-service-record.feature:36 - path: /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString, actual: null, expected: '<serviceIdentifierCode>', reason: actual xpath does not exist
+[1.12:24] check-known-service-record.feature:36 - path: /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString, actual: null, expected: '<serviceIdentifierCode>', reason: actual xpath does not exist
+[1.13:24] check-known-service-record.feature:36 - path: /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString, actual: null, expected: '<serviceIdentifierCode>', reason: actual xpath does not exist
+[1.14:24] check-known-service-record.feature:36 - path: /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString, actual: null, expected: '<serviceIdentifierCode>', reason: actual xpath does not exist
+[1.15:24] check-known-service-record.feature:36 - path: /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString, actual: null, expected: '<serviceIdentifierCode>', reason: actual xpath does not exist
+[1.16:24] check-known-service-record.feature:36 - path: /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString, actual: null, expected: '<serviceIdentifierCode>', reason: actual xpath does not exist
+[1.17:24] check-known-service-record.feature:36 - path: /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString, actual: null, expected: '<serviceIdentifierCode>', reason: actual xpath does not exist
+[1.18:24] check-known-service-record.feature:36 - path: /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString, actual: null, expected: '<serviceIdentifierCode>', reason: actual xpath does not exist
+[1.19:24] check-known-service-record.feature:36 - path: /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString, actual: null, expected: '<serviceIdentifierCode>', reason: actual xpath does not exist
+[1.20:24] check-known-service-record.feature:36 - path: /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString, actual: null, expected: '<serviceIdentifierCode>', reason: actual xpath does not exist
+[1.21:24] check-known-service-record.feature:36 - path: /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString, actual: null, expected: '<serviceIdentifierCode>', reason: actual xpath does not exist
+[1.22:24] check-known-service-record.feature:36 - path: /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString, actual: null, expected: '<serviceIdentifierCode>', reason: actual xpath does not exist
+[1.23:24] check-known-service-record.feature:36 - path: /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString, actual: null, expected: '<serviceIdentifierCode>', reason: actual xpath does not exist
+[1.24:24] check-known-service-record.feature:36 - path: /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString, actual: null, expected: '<serviceIdentifierCode>', reason: actual xpath does not exist
+[1.25:24] check-known-service-record.feature:36 - path: /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString, actual: null, expected: '<serviceIdentifierCode>', reason: actual xpath does not exist
+[1.26:24] check-known-service-record.feature:36 - path: /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString, actual: null, expected: '<serviceIdentifierCode>', reason: actual xpath does not exist
+[1.27:24] check-known-service-record.feature:36 - path: /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString, actual: null, expected: '<serviceIdentifierCode>', reason: actual xpath does not exist
+[1.28:24] check-known-service-record.feature:36 - path: /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString, actual: null, expected: '<serviceIdentifierCode>', reason: actual xpath does not exist
+[1.29:24] check-known-service-record.feature:36 - path: /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString, actual: null, expected: '<serviceIdentifierCode>', reason: actual xpath does not exist
+[1.30:24] check-known-service-record.feature:36 - path: /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString, actual: null, expected: '<serviceIdentifierCode>', reason: actual xpath does not exist
+[1.31:24] check-known-service-record.feature:36 - path: /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString, actual: null, expected: '<serviceIdentifierCode>', reason: actual xpath does not exist
+[1.32:24] check-known-service-record.feature:36 - path: /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString, actual: null, expected: '<serviceIdentifierCode>', reason: actual xpath does not exist
+[1.33:24] check-known-service-record.feature:36 - path: /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString, actual: null, expected: '<serviceIdentifierCode>', reason: actual xpath does not exist
+[1.34:24] check-known-service-record.feature:36 - path: /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString, actual: null, expected: '<serviceIdentifierCode>', reason: actual xpath does not exist
+InspireTest.ngr.T02_datasets.check-known-dataset-record: [1.1:24] check-known-dataset-record.feature:72 - feature call (loop) failed: classpath:InspireTest/def/checkxlinkurl.template.feature
+caller: classpath:InspireTest/ngr/T02_datasets/check-known-dataset-record.feature
+items: [{link=https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/resourcesbbe3c19d-12b0-4912-a6f4-46eb189e85ac}, {link=http://rdfdata.eionet.europa.eu/inspirethemes/themes/16}, {link=http://geonetwork-opensource.org/inspire-theme#}, {link=https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme}]
+errors:
+-------
+feature call (loop) failed at index: 0
+caller: classpath:InspireTest/def/checkxlinkurl.template.feature
+arg: {"link":"https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/resourcesbbe3c19d-12b0-4912-a6f4-46eb189e85ac"}
+checkxlinkurl.template.feature:28 - path: $, actual: 404, expected: 200, reason: not equal (Integer)
+-------
+feature call (loop) failed at index: 1
+caller: classpath:InspireTest/def/checkxlinkurl.template.feature
+arg: {"link":"http://rdfdata.eionet.europa.eu/inspirethemes/themes/16"}
+checkxlinkurl.template.feature:28 - path: $, actual: 404, expected: 200, reason: not equal (Integer)
+-------
+feature call (loop) failed at index: 2
+caller: classpath:InspireTest/def/checkxlinkurl.template.feature
+arg: {"link":"http://geonetwork-opensource.org/inspire-theme#"}
+checkxlinkurl.template.feature:28 - path: $, actual: 404, expected: 200, reason: not equal (Integer)
+-------
+feature call (loop) failed at index: 3
+caller: classpath:InspireTest/def/checkxlinkurl.template.feature
+arg: {"link":"https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme"}
+checkxlinkurl.template.feature:28 - path: $, actual: 500, expected: 200, reason: not equal (Integer)
+[1.2:24] check-known-dataset-record.feature:72 - feature call (loop) failed: classpath:InspireTest/def/checkxlinkurl.template.feature
+caller: classpath:InspireTest/ngr/T02_datasets/check-known-dataset-record.feature
+items: [{link=http://kadaster/7c22107ea-5e31-4bbc-8e24-d15fe230062e}]
+errors:
+-------
+feature call (loop) failed at index: 0
+caller: classpath:InspireTest/def/checkxlinkurl.template.feature
+arg: {"link":"http://kadaster/7c22107ea-5e31-4bbc-8e24-d15fe230062e"}
+checkxlinkurl.template.feature:21 - 
+java.net.UnknownHostException: kadaster: Temporary failure in name resolution
+[1.3:24] check-known-dataset-record.feature:72 - feature call (loop) failed: classpath:InspireTest/def/checkxlinkurl.template.feature
+caller: classpath:InspireTest/ngr/T02_datasets/check-known-dataset-record.feature
+items: [{link=https://data.rivm.nl/inspire/id#36a7e8cb-8300-4602-93d2-135943365a6f}]
+errors:
+-------
+feature call (loop) failed at index: 0
+caller: classpath:InspireTest/def/checkxlinkurl.template.feature
+arg: {"link":"https://data.rivm.nl/inspire/id#36a7e8cb-8300-4602-93d2-135943365a6f"}
+checkxlinkurl.template.feature:21 - 
+javax.net.ssl.SSLException: Connection reset
+[1.4:24] check-known-dataset-record.feature:72 - feature call (loop) failed: classpath:InspireTest/def/checkxlinkurl.template.feature
+caller: classpath:InspireTest/ngr/T02_datasets/check-known-dataset-record.feature
+items: [{link=http://www.opengis.net/def/crs/EPSG/0/https://www.opengis.net/def/crs/EPSG/0/4258}, {link=https://www.nationaalgeoregister.nl/geonetwork/srv/api/recordsc2225e5d-b46f-4e38-8445-ab10fd40c0dc}]
+errors:
+-------
+feature call (loop) failed at index: 1
+caller: classpath:InspireTest/def/checkxlinkurl.template.feature
+arg: {"link":"https://www.nationaalgeoregister.nl/geonetwork/srv/api/recordsc2225e5d-b46f-4e38-8445-ab10fd40c0dc"}
+checkxlinkurl.template.feature:28 - path: $, actual: 500, expected: 200, reason: not equal (Integer)
+[1.5:24] check-known-dataset-record.feature:72 - feature call (loop) failed: classpath:InspireTest/def/checkxlinkurl.template.feature
+caller: classpath:InspireTest/ngr/T02_datasets/check-known-dataset-record.feature
+items: [{link=http://www.opengis.net/def/crs/EPSG/0/http://www.opengis.net/def/crs/EPSG/0/4258}, {link=http://kadaster/cb4edbd2-2dca-4d44-92bb-b2202048b526}]
+errors:
+-------
+feature call (loop) failed at index: 1
+caller: classpath:InspireTest/def/checkxlinkurl.template.feature
+arg: {"link":"http://kadaster/cb4edbd2-2dca-4d44-92bb-b2202048b526"}
+checkxlinkurl.template.feature:21 - 
+java.net.UnknownHostException: kadaster
+[1.6:24] check-known-dataset-record.feature:72 - feature call (loop) failed: classpath:InspireTest/def/checkxlinkurl.template.feature
+caller: classpath:InspireTest/ngr/T02_datasets/check-known-dataset-record.feature
+items: [{link=https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/8de2f5eb-b09f-4f6d-8397-8878a1b86238}, {link=http://rdfdata.eionet.europa.eu/inspirethemes/themes/18}, {link=http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset#}, {link=https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset}, {link=urn:ogc:def:crs:EPSG::5709}]
+errors:
+-------
+feature call (loop) failed at index: 1
+caller: classpath:InspireTest/def/checkxlinkurl.template.feature
+arg: {"link":"http://rdfdata.eionet.europa.eu/inspirethemes/themes/18"}
+checkxlinkurl.template.feature:28 - path: $, actual: 404, expected: 200, reason: not equal (Integer)
+-------
+feature call (loop) failed at index: 2
+caller: classpath:InspireTest/def/checkxlinkurl.template.feature
+arg: {"link":"http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset#"}
+checkxlinkurl.template.feature:21 - 
+java.net.SocketTimeoutException: Read timed out
+-------
+feature call (loop) failed at index: 3
+caller: classpath:InspireTest/def/checkxlinkurl.template.feature
+arg: {"link":"https://ngr.geocat.live/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistPrioritydataset-Prioritydataset"}
+checkxlinkurl.template.feature:28 - path: $, actual: 500, expected: 200, reason: not equal (Integer)
+-------
+feature call (loop) failed at index: 4
+caller: classpath:InspireTest/def/checkxlinkurl.template.feature
+arg: {"link":"urn:ogc:def:crs:EPSG::5709"}
+checkxlinkurl.template.feature:21 - 
+org.apache.http.client.ClientProtocolException: URI does not specify a valid host name: urn:ogc:def:crs:EPSG::5709
+ ==> expected: <0> but was: <41>
+	at InspireTest.TestAll.testParallel(InspireTest.java:27)
+
