@@ -6,13 +6,14 @@ Feature:  Check title organisation and email in dataset records
     #* configure connectTimeout = 60000
 
     * url 'http://nationaalgeoregister.nl/'
+    # write header in result file
+    * def callheaderresult = callonce read('def/writedatasetcsvheader.template.feature')
 
-    * def callonesresult = callonce read('def/getcswbriefrecords.feature')
+    # * def callonesresult = callonce read('def/getcswbriefrecords.feature')
     * configure connectTimeout = 30000
-    * print callonesresult
+
 
   Scenario Outline: Check dataset <datasetIdentifierCode>
-    Check metadata record van <datasetIdentifierCode>
 
     Given path 'geonetwork/srv/dut/inspire'
     And param service = 'CSW'
@@ -27,6 +28,8 @@ Feature:  Check title organisation and email in dataset records
     And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '<datasetIdentifierCode>'
     # check INSPIRE TG2 anchor
     # And match /GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier/MD_Identifier/code/Anchor == '<datasetIdentifierCode>'
+    * def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue
+
     * def title =  get response //citation/CI_Citation/title/CharacterString
     #* print 'title:' + title
 
@@ -46,21 +49,21 @@ Feature:  Check title organisation and email in dataset records
 
     * def mystorage = Java.type('storage.DataStorage')
     * def db = new mystorage
-    * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + dataIdentificationCitationAnchor + '","' + organisation + '","'+ metadataStandardVersion + '","' + email +'",' , 'target/surefire-reports/datasets.csv')
+    * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + dataIdentificationCitationAnchor + '","' + organisation + '","'+ email + '","' + metadataStandardVersion +'",' , 'target/surefire-reports/' + scopecode + 's.csv')
 
 
 
     #* call read('def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link')
 
     # * karate.write("<datasetIdentifierCode>;"+ title, filename)
-    Examples:
-      | callonesresult.list |
+     Examples:
+       | callonesresult.list |
 
 
-      # csv def/datasetlist.csv has the following field:
-     #   Examples:
-     #     | datasetIdentifierCode                |
-     # | fe2f9091-1962-4073-9e3b-3e4aeed488a5 |
-     # | f273941e-9c3b-43bc-b886-2d50d0bf9348 |
-     # | 19165027-a13a-4c19-9013-ec1fd191019d |
-     # | 4bb89277-6ebe-4e66-8929-cd275aa7fd81 |
+    # csv def/datasetlist.csv has the following field:
+  #  Examples:
+  #    | datasetIdentifierCode                |
+  #    | fe2f9091-1962-4073-9e3b-3e4aeed488a5 |
+  #    | f273941e-9c3b-43bc-b886-2d50d0bf9348 |
+  #    | 19165027-a13a-4c19-9013-ec1fd191019d |
+  #    | 4bb89277-6ebe-4e66-8929-cd275aa7fd81 |

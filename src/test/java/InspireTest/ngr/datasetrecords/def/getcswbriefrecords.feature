@@ -3,12 +3,7 @@ Feature:  getlist of ngr records
 
   Scenario: getbrief list
 
-
-    * def knownlinks = karate.jsonPath(karate.read('classpath:InspireTest/ngr/datasetrecords/def/knownlink.csv'), '[*].knownlink')
-    # checking is not done here* call read('classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature') karate.mapWithKey(knownlinks ,'link')
-
     * url 'http://nationaalgeoregister.nl/'
-
 
     Given path 'geonetwork/srv/dut/inspire'
     And param service = 'CSW'
@@ -22,12 +17,16 @@ Feature:  getlist of ngr records
     And param maxRecords = 1000
     When method get
     Then status 200
+    * eval karate.embed( response,'application/xml')
     * def briefarray = get response /GetRecordsResponse/SearchResults/BriefRecord[type = 'dataset']/identifier
-    * eval karate.embed( briefarray,'text/plain')
     * def list =  karate.mapWithKey(briefarray ,'datasetIdentifierCode')
     * def json = karate.map(list, function(x, i){ return {} })
+    * def mystorage = Java.type('storage.DataStorage')
+    * def db = new mystorage
+    * eval db.writeln( json , 'target/surefire-reports/uuids.json')
 
-   
+
+
 
 # register.containeditems[4]["metadata-codelist"].id
 # * karate.write(briefarray, 'ngrlist.json')

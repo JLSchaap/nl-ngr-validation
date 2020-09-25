@@ -8,8 +8,7 @@ Feature: check known dataset
         # to improve performance use al list of known already check links (in check-known-links.feature)
         * def knownlinks = karate.jsonPath(karate.read('classpath:InspireTest/ngr/datasetrecords/def/knownlink.csv'), '[*].knownlink')
        
-        # write header in result file 
-        * def callheaderresult = callonce read('def/writedatasetcsvheader.template.feature')
+    
         
         # get the list of dataset records
         * def datasetsresult = callonce read('def/getdataset.template.feature')
