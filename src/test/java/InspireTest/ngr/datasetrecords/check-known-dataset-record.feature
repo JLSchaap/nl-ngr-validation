@@ -1,4 +1,4 @@
-@ignore
+@step2
 Feature: check known dataset
     Check xlinks in metadata with a list of identifiable collections of data
 

@@ -1,5 +1,4 @@
-
-
+@step1
 Feature:  Check title organisation and email in dataset records
   Background:
     * configure readTimeout = 240000

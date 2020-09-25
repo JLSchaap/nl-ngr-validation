@@ -1,6 +1,7 @@
 
 Feature:  get csw capabilities
 
+  @extra
   Scenario Outline: get capabilities <cswurl>
 
 
@@ -11,7 +12,7 @@ Feature:  get csw capabilities
     And param request = 'GetCapabilities'
     When method get
     Then status 200
-    * eval karate.embed( response,'application/json')
+   # * eval karate.embed( response,'application/json')
     # * def briefarray = get response /GetRecordsResponse/SearchResults/BriefRecord[type = 'dataset']/identifier
     # * eval karate.embed( briefarray,'text/plain')
     # * def list =  karate.mapWithKey(briefarray ,'datasetIdentifierCode')

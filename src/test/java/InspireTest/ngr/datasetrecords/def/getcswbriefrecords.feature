@@ -23,7 +23,7 @@ Feature:  getlist of ngr records
     * def json = karate.map(list, function(x, i){ return {} })
     * def mystorage = Java.type('storage.DataStorage')
     * def db = new mystorage
-    * eval db.writeln( json , 'target/surefire-reports/uuids.json')
+   
 
 
 

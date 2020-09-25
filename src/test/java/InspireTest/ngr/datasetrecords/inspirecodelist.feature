@@ -1,4 +1,4 @@
-@ignore
+@extra
 Feature: inspire code lists
 
 
