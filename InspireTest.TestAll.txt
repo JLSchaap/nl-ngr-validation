@@ -1,4 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: InspireTest.TestAll
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 28.299 s - in InspireTest.TestAll
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 125.305 s <<< FAILURE! - in InspireTest.TestAll
+InspireTest.TestAll.testParallel  Time elapsed: 125.266 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+failed features:
+InspireTest.ngr.datasetrecords.check-known-dataset-record: [1.76:24] check-known-dataset-record.feature:45 - xpath does not exist: /GetRecordByIdResponse//@href on response
+[1.142:24] check-known-dataset-record.feature:45 - xpath does not exist: /GetRecordByIdResponse//@href on response
+[1.168:24] check-known-dataset-record.feature:45 - xpath does not exist: /GetRecordByIdResponse//@href on response
+ ==> expected: <0> but was: <3>
+	at InspireTest.TestAll.testParallel(InspireTest.java:27)
+
