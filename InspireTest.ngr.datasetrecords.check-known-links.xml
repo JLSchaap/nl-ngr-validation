@@ -1,12 +1,12 @@
-<testsuite failures="1" name="InspireTest/ngr/datasetrecords/check-known-links.feature" skipped="0" tests="2" time="9.17339">
-  <testcase classname="InspireTest.ngr.datasetrecords.check-known-links" name="check known link http://data.europa.eu/eli/reg/2010/1089" time="5.630247">
+<testsuite failures="1" name="InspireTest/ngr/datasetrecords/check-known-links.feature" skipped="0" tests="2" time="6.621063">
+  <testcase classname="InspireTest.ngr.datasetrecords.check-known-links" name="check known link http://data.europa.eu/eli/reg/2010/1089" time="3.126653">
     <system-out>* def nlinks = ["http://data.europa.eu/eli/reg/2010/1089"] ................ passed
 * print nlinks ............................................................ passed
 * def title = "known url" ................................................. passed
 * configure readTimeout = 60000 ........................................... passed
 * call read('def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link') . passed</system-out>
   </testcase>
-  <testcase classname="InspireTest.ngr.datasetrecords.check-known-links" name="check known link http://inspire.ec.europa.eu/id/document/tg/pipo" time="3.543143">
+  <testcase classname="InspireTest.ngr.datasetrecords.check-known-links" name="check known link http://inspire.ec.europa.eu/id/document/tg/pipo" time="3.49441">
     <failure message="check-known-links.feature:11 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature&#10;caller: classpath:InspireTest/ngr/datasetrecords/check-known-links.feature&#10;items: [{link=http://inspire.ec.europa.eu/id/document/tg/pipo}]&#10;errors:&#10;-------&#10;feature call (loop) failed at index: 0&#10;caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature&#10;arg: {&quot;link&quot;:&quot;http://inspire.ec.europa.eu/id/document/tg/pipo&quot;}&#10;checkxlinkurl.template.feature:28 - path: $, actual: 404, expected: 200, reason: not equal (Integer)">* def nlinks = ["http://data.europa.eu/eli/reg/2010/1089"] ................ passed
 * print nlinks ............................................................ passed
 * def title = "known url" ................................................. passed
