@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: InspireTest.TestAll
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 6.357 s <<< FAILURE! - in InspireTest.TestAll
-InspireTest.TestAll.testParallel  Time elapsed: 6.31 s  <<< FAILURE!
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 160.258 s <<< FAILURE! - in InspireTest.TestAll
+InspireTest.TestAll.testParallel  Time elapsed: 160.222 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 failed features:
 InspireTest.ngr.datasetrecords.check-known-links: [1.2:18] check-known-links.feature:11 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
@@ -14,7 +14,6 @@ feature call (loop) failed at index: 0
 caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
 arg: {"link":"http://inspire.ec.europa.eu/id/document/tg/pipo"}
 checkxlinkurl.template.feature:28 - path: $, actual: 404, expected: 200, reason: not equal (Integer)
-InspireTest.ngr.datasetrecords.ngr-check-dataset-record: [1:16] ngr-check-dataset-record.feature:16 - javascript evaluation failed: callonesresult.list, ReferenceError: "callonesresult" is not defined in <eval> at line number 1
- ==> expected: <0> but was: <2>
+ ==> expected: <0> but was: <1>
 	at InspireTest.TestAll.testParallel(InspireTest.java:27)
 
