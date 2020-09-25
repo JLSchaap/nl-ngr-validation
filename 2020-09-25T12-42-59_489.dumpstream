@@ -1,0 +1,15 @@
+# Created at 2020-09-25T12:46:02.905
+WARNING: An illegal reflective access operation has occurred
+
+# Created at 2020-09-25T12:46:02.905
+WARNING: Illegal reflective access by net.minidev.asm.DynamicClassLoader (file:/home/runner/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int)
+
+# Created at 2020-09-25T12:46:02.905
+WARNING: Please consider reporting this to the maintainers of net.minidev.asm.DynamicClassLoader
+
+# Created at 2020-09-25T12:46:02.905
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created at 2020-09-25T12:46:02.905
+WARNING: All illegal access operations will be denied in a future release
+

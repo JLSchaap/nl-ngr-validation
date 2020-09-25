@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: InspireTest.TestAll
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.135 s <<< FAILURE! - in InspireTest.TestAll
-InspireTest.TestAll.testParallel  Time elapsed: 1.106 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <0> but was: <1>
-	at InspireTest.TestAll.testParallel(InspireTest.java:27)
-
