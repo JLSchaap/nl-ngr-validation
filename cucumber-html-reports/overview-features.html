@@ -81,9 +81,8 @@ $(document).ready(function() {
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
       <div class="message">
-        <pre>net.masterthought.cucumber.ValidationException: File '/home/runner/work/nl-ngr-validation/nl-ngr-validation/target/surefire-reports/uuids.json' is not proper Cucumber report!
-	at net.masterthought.cucumber.ReportParser.parseForFeature(ReportParser.java:90)
-	at net.masterthought.cucumber.ReportParser.parseJsonFiles(ReportParser.java:61)
+        <pre>net.masterthought.cucumber.ValidationException: No report file was added!
+	at net.masterthought.cucumber.ReportParser.parseJsonFiles(ReportParser.java:55)
 	at net.masterthought.cucumber.ReportBuilder.generateReports(ReportBuilder.java:90)
 	at InspireTest.TestAll.generateReport(InspireTest.java:37)
 	at InspireTest.TestAll.testParallel(InspireTest.java:26)
@@ -152,30 +151,11 @@ $(document).ready(function() {
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
-Caused by: com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of net.masterthought.cucumber.json.Feature out of START_ARRAY token
- at [Source: java.io.InputStreamReader@c81fd12; line: 1, column: 2] (through reference chain: java.lang.Object[][0])
-	at com.fasterxml.jackson.databind.JsonMappingException.from(JsonMappingException.java:270)
-	at com.fasterxml.jackson.databind.DeserializationContext.reportMappingException(DeserializationContext.java:1234)
-	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1122)
-	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1075)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromArray(BeanDeserializerBase.java:1370)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeOther(BeanDeserializer.java:174)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:150)
-	at com.fasterxml.jackson.databind.deser.std.ObjectArrayDeserializer.deserialize(ObjectArrayDeserializer.java:196)
-	at com.fasterxml.jackson.databind.deser.std.ObjectArrayDeserializer.deserialize(ObjectArrayDeserializer.java:20)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:3798)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2887)
-	at net.masterthought.cucumber.ReportParser.parseForFeature(ReportParser.java:84)
-	... 69 more
 </pre>
       </div>
       <div>Trying to generate report from following files. Make sure they are valid cucumber report files:</div>
       <div class="error-files">
         <pre>
-           /home/runner/work/nl-ngr-validation/nl-ngr-validation/target/surefire-reports/InspireTest.ngr.datasetrecords.check-known-links.json
-           /home/runner/work/nl-ngr-validation/nl-ngr-validation/target/surefire-reports/InspireTest.ngr.datasetrecords.def.getcswcapabilities.json
-           /home/runner/work/nl-ngr-validation/nl-ngr-validation/target/surefire-reports/uuids.json
-           /home/runner/work/nl-ngr-validation/nl-ngr-validation/target/surefire-reports/InspireTest.ngr.datasetrecords.ngr-check-dataset-record.json
                   </pre>
       </div>
     </div>

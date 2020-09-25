@@ -1,19 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: InspireTest.TestAll
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 160.258 s <<< FAILURE! - in InspireTest.TestAll
-InspireTest.TestAll.testParallel  Time elapsed: 160.222 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: 
-failed features:
-InspireTest.ngr.datasetrecords.check-known-links: [1.2:18] check-known-links.feature:11 - feature call (loop) failed: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
-caller: classpath:InspireTest/ngr/datasetrecords/check-known-links.feature
-items: [{link=http://inspire.ec.europa.eu/id/document/tg/pipo}]
-errors:
--------
-feature call (loop) failed at index: 0
-caller: classpath:InspireTest/ngr/datasetrecords/def/checkxlinkurl.template.feature
-arg: {"link":"http://inspire.ec.europa.eu/id/document/tg/pipo"}
-checkxlinkurl.template.feature:28 - path: $, actual: 404, expected: 200, reason: not equal (Integer)
- ==> expected: <0> but was: <1>
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.135 s <<< FAILURE! - in InspireTest.TestAll
+InspireTest.TestAll.testParallel  Time elapsed: 1.106 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <0> but was: <1>
 	at InspireTest.TestAll.testParallel(InspireTest.java:27)
 
