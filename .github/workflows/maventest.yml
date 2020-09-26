@@ -15,7 +15,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v2
       - name: Set up JDK 13
@@ -24,7 +24,9 @@ jobs:
           java-version: 13
 
       - name: Build with Maven step 1
-        run: mvn -B --file pom.xml -Dkarate.options="--tags @step1" test
+    #    run: mvn -B --file pom.xml -Dkarate.options="--tags @step1" test
+        run: mvn -B --file pom.xml test
+
 
       - name: Deploy step 1 
         uses: peaceiris/actions-gh-pages@v3
