@@ -22,25 +22,18 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 13
-
       - name: Build with Maven step 1
-    #    run: mvn -B --file pom.xml -Dkarate.options="--tags @step1" test
-        run: mvn -B --file pom.xml test
-
-
+      - run: mvn clean -B --file pom.xml -Dkarate.options="--tags @step1" test
       - name: Deploy step 1 
         uses: peaceiris/actions-gh-pages@v3
         if: always()
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./target/surefire-reports
-
       - name: Build with Maven step 2
         run: mvn -B --file pom.xml -Dkarate.options="--tags @step2" test
-
       - name: Build with Maven step extra
         run: mvn -B --file pom.xml -Dkarate.options="--tags @extra" test
-
       - name: Deploy step2 + extra 
         uses: peaceiris/actions-gh-pages@v3
         if: always()
