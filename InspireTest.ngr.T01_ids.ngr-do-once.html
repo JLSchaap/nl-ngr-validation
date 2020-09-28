@@ -46,7 +46,7 @@
                 <div id="nav-type">Scenarios</div>
                          
         
-                <div id="nav-date">2020-09-28 10:12:47 AM</div>
+                <div id="nav-date">2020-09-28 10:19:01 AM</div>
                         
       
                 <div class="nav-container">
@@ -72,21 +72,22 @@
                             </div>
                             <span class="scenario-keyword">Scenario: [1:4]</span><span class="scenario-name">write header </span>
                         </div>
-                        <div class="scenario-time passed">ms: 43</div>
+                        <div class="scenario-time passed">ms: 79</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="1">
                             <div class="step-ref passed">1</div>
                             <div class="step-cell passed">* def callheaderresult = callonce read('classpath:InspireTest/def/writedatasetcsvheader.template.feature')</div>
                         </div>
-                        <div class="time-cell passed">43</div>
+                        <div class="time-cell passed">79</div>
                     </div>
+                    <div class="preformatted" data-parent="1">10:18:59.472 &lt;&lt; lock released, cached callonce: read('classpath:InspireTest/def/writedatasetcsvheader.template.feature')</div>
                     <div class="step-row">
                         <div class="step-container" id="1.1">
                             <div class="step-ref passed">&gt;&gt;</div>
                             <div class="step-cell passed">InspireTest/def/writedatasetcsvheader.template.feature</div>
                         </div>
-                        <div class="time-cell passed">33</div>
+                        <div class="time-cell passed">52</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="2">
@@ -94,15 +95,17 @@
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">* def mystorage = Java.type('storage.DataStorage')</div>
                         </div>
-                        <div class="time-cell passed">11</div>
+                        <div class="time-cell passed">36</div>
                     </div>
+                    <div class="preformatted" data-parent="2">10:18:59.079 karate.env system property was:  
+10:18:59.406 &gt;&gt; lock acquired, begin callonce: read('classpath:InspireTest/def/writedatasetcsvheader.template.feature')</div>
                     <div class="step-row">
                         <div class="step-container" id="3">
                             <div class="step-ref passed">3</div>
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">* def db = new mystorage</div>
                         </div>
-                        <div class="time-cell passed">8</div>
+                        <div class="time-cell passed">5</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="4">
@@ -110,7 +113,7 @@
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">* eval db.writeln( '"datasetIdentifierCode","title","dataIdentificationCitationAnchor","organisation","electronicMailAddress","metadataStandardVersion",', 'target/surefire-reports/datasets.csv')</div>
                         </div>
-                        <div class="time-cell passed">5</div>
+                        <div class="time-cell passed">6</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="5">
@@ -118,7 +121,7 @@
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">* eval db.writeln( '"serviceIdentifierCode","title","dataIdentificationCitationAnchor","organisation","electronicMailAddress","metadataStandardVersion",', 'target/surefire-reports/services.csv')</div>
                         </div>
-                        <div class="time-cell passed">9</div>
+                        <div class="time-cell passed">5</div>
                     </div>
                 </div>
                 <div class="scenario">
@@ -129,15 +132,16 @@
                             </div>
                             <span class="scenario-keyword">Scenario: [2:7]</span><span class="scenario-name">get id's </span>
                         </div>
-                        <div class="scenario-time passed">ms: 2310</div>
+                        <div class="scenario-time passed">ms: 2420</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="6">
                             <div class="step-ref passed">6</div>
                             <div class="step-cell passed">* configure readTimeout = 240000</div>
                         </div>
-                        <div class="time-cell passed">3</div>
+                        <div class="time-cell passed">10</div>
                     </div>
+                    <div class="preformatted" data-parent="6">10:18:59.083 karate.env system property was:</div>
                     <div class="step-row">
                         <div class="step-container" id="7">
                             <div class="step-ref passed">7</div>
@@ -150,14 +154,15 @@
                             <div class="step-ref passed">8</div>
                             <div class="step-cell passed">* def callonesresult = callonce read('classpath:InspireTest/def/getcswbriefrecords.feature')</div>
                         </div>
-                        <div class="time-cell passed">2304</div>
+                        <div class="time-cell passed">2408</div>
                     </div>
+                    <div class="preformatted" data-parent="8">10:19:01.824 &lt;&lt; lock released, cached callonce: read('classpath:InspireTest/def/getcswbriefrecords.feature')</div>
                     <div class="step-row">
                         <div class="step-container" id="8.1">
                             <div class="step-ref passed">&gt;&gt;</div>
                             <div class="step-cell passed">InspireTest/def/getcswbriefrecords.feature</div>
                         </div>
-                        <div class="time-cell passed">2244</div>
+                        <div class="time-cell passed">2326</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="9">
@@ -165,15 +170,16 @@
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">* url 'http://nationaalgeoregister.nl/'</div>
                         </div>
-                        <div class="time-cell passed">2</div>
+                        <div class="time-cell passed">3</div>
                     </div>
+                    <div class="preformatted" data-parent="9">10:18:59.472 &gt;&gt; lock acquired, begin callonce: read('classpath:InspireTest/def/getcswbriefrecords.feature')</div>
                     <div class="step-row">
                         <div class="step-container" id="10">
                             <div class="step-ref passed">10</div>
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">Given path 'geonetwork/srv/dut/inspire'</div>
                         </div>
-                        <div class="time-cell passed">2</div>
+                        <div class="time-cell passed">3</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="11">
@@ -181,7 +187,7 @@
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">And param service = 'CSW'</div>
                         </div>
-                        <div class="time-cell passed">21</div>
+                        <div class="time-cell passed">11</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="12">
@@ -189,7 +195,7 @@
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">And param version = '2.0.2'</div>
                         </div>
-                        <div class="time-cell passed">4</div>
+                        <div class="time-cell passed">3</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="13">
@@ -197,7 +203,7 @@
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">And param request = 'GetRecords'</div>
                         </div>
-                        <div class="time-cell passed">2</div>
+                        <div class="time-cell passed">5</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="14">
@@ -213,7 +219,7 @@
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">And param typeNames = 'csw:Record'</div>
                         </div>
-                        <div class="time-cell passed">14</div>
+                        <div class="time-cell passed">3</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="16">
@@ -221,7 +227,7 @@
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">And param elementsetname = "brief"</div>
                         </div>
-                        <div class="time-cell passed">2</div>
+                        <div class="time-cell passed">12</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="17">
@@ -229,7 +235,7 @@
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">And param resultType = 'results'</div>
                         </div>
-                        <div class="time-cell passed">14</div>
+                        <div class="time-cell passed">2</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="18">
@@ -245,7 +251,7 @@
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">And param maxRecords = 10</div>
                         </div>
-                        <div class="time-cell passed">7</div>
+                        <div class="time-cell passed">14</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="20">
@@ -253,7 +259,7 @@
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">When method get</div>
                         </div>
-                        <div class="time-cell passed">2099</div>
+                        <div class="time-cell passed">2172</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="21">
@@ -269,7 +275,7 @@
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">* def briefarray = get response /GetRecordsResponse/SearchResults/BriefRecord[*]/identifier</div>
                         </div>
-                        <div class="time-cell passed">22</div>
+                        <div class="time-cell passed">18</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="23">
@@ -277,7 +283,7 @@
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">* def list = karate.mapWithKey(briefarray ,'datasetIdentifierCode')</div>
                         </div>
-                        <div class="time-cell passed">17</div>
+                        <div class="time-cell passed">12</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="24">
@@ -285,7 +291,7 @@
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">* def json = karate.map(list, function(x, i){ return {} })</div>
                         </div>
-                        <div class="time-cell passed">12</div>
+                        <div class="time-cell passed">19</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="25">
@@ -319,6 +325,7 @@
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
+                    <div class="preformatted" data-parent="28">10:19:01.780 [print] null:ids.json</div>
                     <div class="step-row">
                         <div class="step-container" id="29">
                             <div class="step-ref passed">29</div>
@@ -333,7 +340,7 @@
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">* def db = new mystorage</div>
                         </div>
-                        <div class="time-cell passed">1</div>
+                        <div class="time-cell passed">0</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="31">
@@ -341,7 +348,7 @@
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">* eval db.writeln(karate.pretty(list),idfile)</div>
                         </div>
-                        <div class="time-cell passed">18</div>
+                        <div class="time-cell passed">42</div>
                     </div>
                 </div>
             </div>

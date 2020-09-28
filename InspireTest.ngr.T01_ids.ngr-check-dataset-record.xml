@@ -1,5 +1,5 @@
-<testsuite failures="1" name="InspireTest/ngr/T01_ids/ngr-check-dataset-record.feature" skipped="0" tests="1" time="0.083563">
-  <testcase classname="InspireTest.ngr.T01_ids.ngr-check-dataset-record" name="&lt;datasetIdentifierCode&gt;" time="0.083563">
+<testsuite failures="1" name="InspireTest/ngr/T01_ids/ngr-check-dataset-record.feature" skipped="0" tests="1" time="0.084755">
+  <testcase classname="InspireTest.ngr.T01_ids.ngr-check-dataset-record" name="&lt;datasetIdentifierCode&gt;" time="0.084755">
     <failure message="ngr-check-dataset-record.feature:14 - could not find or read file: null:ids.json">* configure readTimeout = 240000 .......................................... passed
 * url 'http://nationaalgeoregister.nl/' ................................... passed
 * configure connectTimeout = 5000 ......................................... passed

@@ -46,7 +46,7 @@
                 <div id="nav-type">Scenarios</div>
                          
         
-                <div id="nav-date">2020-09-28 10:12:47 AM</div>
+                <div id="nav-date">2020-09-28 10:19:01 AM</div>
                         
       
                 <div class="nav-container">
@@ -69,21 +69,22 @@
                             </div>
                             <span class="scenario-keyword">Scenario: [1:4]</span><span class="scenario-name">Scenario name </span>
                         </div>
-                        <div class="scenario-time passed">ms: 48</div>
+                        <div class="scenario-time passed">ms: 74</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="1">
                             <div class="step-ref passed">1</div>
                             <div class="step-cell passed">* def callheaderresult = callonce read('classpath:InspireTest/def/writedatasetcsvheader.template.feature')</div>
                         </div>
-                        <div class="time-cell passed">48</div>
+                        <div class="time-cell passed">74</div>
                     </div>
+                    <div class="preformatted" data-parent="1">10:18:59.471 &lt;&lt; lock released, cached callonce: read('classpath:InspireTest/def/writedatasetcsvheader.template.feature')</div>
                     <div class="step-row">
                         <div class="step-container" id="1.1">
                             <div class="step-ref passed">&gt;&gt;</div>
                             <div class="step-cell passed">InspireTest/def/writedatasetcsvheader.template.feature</div>
                         </div>
-                        <div class="time-cell passed">34</div>
+                        <div class="time-cell passed">49</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="2">
@@ -91,15 +92,17 @@
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">* def mystorage = Java.type('storage.DataStorage')</div>
                         </div>
-                        <div class="time-cell passed">10</div>
+                        <div class="time-cell passed">15</div>
                     </div>
+                    <div class="preformatted" data-parent="2">10:18:59.082 karate.env system property was:  
+10:18:59.403 &gt;&gt; lock acquired, begin callonce: read('classpath:InspireTest/def/writedatasetcsvheader.template.feature')</div>
                     <div class="step-row">
                         <div class="step-container" id="3">
                             <div class="step-ref passed">3</div>
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">* def db = new mystorage</div>
                         </div>
-                        <div class="time-cell passed">11</div>
+                        <div class="time-cell passed">6</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="4">
@@ -107,7 +110,7 @@
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">* eval db.writeln( '"datasetIdentifierCode","title","dataIdentificationCitationAnchor","organisation","electronicMailAddress","metadataStandardVersion",', 'target/surefire-reports/datasets.csv')</div>
                         </div>
-                        <div class="time-cell passed">10</div>
+                        <div class="time-cell passed">19</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="5">
@@ -115,7 +118,7 @@
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">* eval db.writeln( '"serviceIdentifierCode","title","dataIdentificationCitationAnchor","organisation","electronicMailAddress","metadataStandardVersion",', 'target/surefire-reports/services.csv')</div>
                         </div>
-                        <div class="time-cell passed">3</div>
+                        <div class="time-cell passed">10</div>
                     </div>
                 </div>
             </div>
