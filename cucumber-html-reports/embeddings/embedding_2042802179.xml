@@ -1,0 +1,3629 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csw:GetRecordByIdResponse xmlns:csw="http://www.opengis.net/cat/csw/2.0.2">
+  <gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:srv="http://www.isotc211.org/2005/srv" xsi:schemaLocation="http://www.isotc211.org/2005/gmd http://schemas.opengis.net/csw/2.0.2/profiles/apiso/1.0.0/apiso.xsd">
+    <gmd:fileIdentifier>
+      <gco:CharacterString>af4841b5-ce83-4edb-af41-429a21140316</gco:CharacterString>
+    </gmd:fileIdentifier>
+    <gmd:language>
+      <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="dut">Nederlands; Vlaams</gmd:LanguageCode>
+    </gmd:language>
+    <gmd:characterSet>
+      <gmd:MD_CharacterSetCode codeList="https://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</gmd:MD_CharacterSetCode>
+    </gmd:characterSet>
+    <gmd:hierarchyLevel>
+      <gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="service">service</gmd:MD_ScopeCode>
+    </gmd:hierarchyLevel>
+    <gmd:hierarchyLevelName>
+      <gco:CharacterString>service</gco:CharacterString>
+    </gmd:hierarchyLevelName>
+    <gmd:contact>
+      <gmd:CI_ResponsibleParty>
+        <gmd:individualName>
+          <gco:CharacterString>Beheer PDOK</gco:CharacterString>
+        </gmd:individualName>
+        <gmd:organisationName>
+          <gco:CharacterString>Beheer PDOK</gco:CharacterString>
+        </gmd:organisationName>
+        <gmd:positionName gco:nilReason="missing">
+          <gco:CharacterString />
+        </gmd:positionName>
+        <gmd:contactInfo>
+          <gmd:CI_Contact>
+            <gmd:phone>
+              <gmd:CI_Telephone>
+                <gmd:voice gco:nilReason="missing">
+                  <gco:CharacterString />
+                </gmd:voice>
+                <gmd:facsimile gco:nilReason="missing">
+                  <gco:CharacterString />
+                </gmd:facsimile>
+              </gmd:CI_Telephone>
+            </gmd:phone>
+            <gmd:address>
+              <gmd:CI_Address>
+                <gmd:deliveryPoint gco:nilReason="missing">
+                  <gco:CharacterString />
+                </gmd:deliveryPoint>
+                <gmd:city gco:nilReason="missing">
+                  <gco:CharacterString />
+                </gmd:city>
+                <gmd:administrativeArea gco:nilReason="missing">
+                  <gco:CharacterString />
+                </gmd:administrativeArea>
+                <gmd:postalCode gco:nilReason="missing">
+                  <gco:CharacterString />
+                </gmd:postalCode>
+                <gmd:country gco:nilReason="missing">
+                  <gco:CharacterString />
+                </gmd:country>
+                <gmd:electronicMailAddress>
+                  <gco:CharacterString>beheerPDOK@kadaster.nl</gco:CharacterString>
+                </gmd:electronicMailAddress>
+              </gmd:CI_Address>
+            </gmd:address>
+            <gmd:onlineResource>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL />
+                </gmd:linkage>
+              </gmd:CI_OnlineResource>
+            </gmd:onlineResource>
+          </gmd:CI_Contact>
+        </gmd:contactInfo>
+        <gmd:role>
+          <gmd:CI_RoleCode codeListValue="pointOfContact" codeList="https://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_RoleCode">contactpunt</gmd:CI_RoleCode>
+        </gmd:role>
+      </gmd:CI_ResponsibleParty>
+    </gmd:contact>
+    <gmd:dateStamp>
+      <gco:Date>2019-09-24</gco:Date>
+    </gmd:dateStamp>
+    <gmd:metadataStandardName>
+      <gco:CharacterString>ISO 19119</gco:CharacterString>
+    </gmd:metadataStandardName>
+    <gmd:metadataStandardVersion>
+      <gco:CharacterString>Nederlands metadata profiel op ISO 19119 voor services 2.0</gco:CharacterString>
+    </gmd:metadataStandardVersion>
+    <gmd:identificationInfo>
+      <srv:SV_ServiceIdentification>
+        <gmd:citation>
+          <gmd:CI_Citation>
+            <gmd:title>
+              <gco:CharacterString>Habitatrichtlijn verspreiding van typen WFS</gco:CharacterString>
+            </gmd:title>
+            <gmd:date>
+              <gmd:CI_Date>
+                <gmd:date>
+                  <gco:Date>2014-12-01</gco:Date>
+                </gmd:date>
+                <gmd:dateType>
+                  <gmd:CI_DateTypeCode codeList="https://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="creation">creatie</gmd:CI_DateTypeCode>
+                </gmd:dateType>
+              </gmd:CI_Date>
+            </gmd:date>
+            <gmd:date>
+              <gmd:CI_Date>
+                <gmd:date>
+                  <gco:Date>2019-03-05</gco:Date>
+                </gmd:date>
+                <gmd:dateType>
+                  <gmd:CI_DateTypeCode codeList="https://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision">revisie</gmd:CI_DateTypeCode>
+                </gmd:dateType>
+              </gmd:CI_Date>
+            </gmd:date>
+          </gmd:CI_Citation>
+        </gmd:citation>
+        <gmd:abstract>
+          <gco:CharacterString>Verspreiding van habitattypen in habitatrichtlijngebieden voor de periode 2007-2012</gco:CharacterString>
+        </gmd:abstract>
+        <gmd:pointOfContact>
+          <gmd:CI_ResponsibleParty>
+            <gmd:individualName gco:nilReason="missing">
+              <gco:CharacterString />
+            </gmd:individualName>
+            <gmd:organisationName>
+              <gco:CharacterString>Beheer PDOK</gco:CharacterString>
+            </gmd:organisationName>
+            <gmd:positionName gco:nilReason="missing">
+              <gco:CharacterString />
+            </gmd:positionName>
+            <gmd:contactInfo>
+              <gmd:CI_Contact>
+                <gmd:phone>
+                  <gmd:CI_Telephone>
+                    <gmd:voice gco:nilReason="missing">
+                      <gco:CharacterString />
+                    </gmd:voice>
+                    <gmd:facsimile gco:nilReason="missing">
+                      <gco:CharacterString />
+                    </gmd:facsimile>
+                  </gmd:CI_Telephone>
+                </gmd:phone>
+                <gmd:address>
+                  <gmd:CI_Address>
+                    <gmd:deliveryPoint gco:nilReason="missing">
+                      <gco:CharacterString />
+                    </gmd:deliveryPoint>
+                    <gmd:city gco:nilReason="missing">
+                      <gco:CharacterString />
+                    </gmd:city>
+                    <gmd:administrativeArea gco:nilReason="missing">
+                      <gco:CharacterString />
+                    </gmd:administrativeArea>
+                    <gmd:postalCode gco:nilReason="missing">
+                      <gco:CharacterString />
+                    </gmd:postalCode>
+                    <gmd:country gco:nilReason="missing">
+                      <gco:CharacterString />
+                    </gmd:country>
+                    <gmd:electronicMailAddress>
+                      <gco:CharacterString>beheerPDOK@kadaster.nl</gco:CharacterString>
+                    </gmd:electronicMailAddress>
+                  </gmd:CI_Address>
+                </gmd:address>
+                <gmd:onlineResource>
+                  <gmd:CI_OnlineResource>
+                    <gmd:linkage>
+                      <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?</gmd:URL>
+                    </gmd:linkage>
+                  </gmd:CI_OnlineResource>
+                </gmd:onlineResource>
+              </gmd:CI_Contact>
+            </gmd:contactInfo>
+            <gmd:role>
+              <gmd:CI_RoleCode codeListValue="pointOfContact" codeList="https://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_RoleCode">contactpunt</gmd:CI_RoleCode>
+            </gmd:role>
+          </gmd:CI_ResponsibleParty>
+        </gmd:pointOfContact>
+        <gmd:graphicOverview>
+          <gmd:MD_BrowseGraphic>
+            <gmd:fileName>
+              <gco:CharacterString>https://www.nationaalgeoregister.nl:443/geonetwork/srv/api/records/af4841b5-ce83-4edb-af41-429a21140316/attachments/habitattypen.png</gco:CharacterString>
+            </gmd:fileName>
+            <gmd:fileDescription>
+              <gco:CharacterString>thumbnail</gco:CharacterString>
+            </gmd:fileDescription>
+          </gmd:MD_BrowseGraphic>
+        </gmd:graphicOverview>
+        <gmd:graphicOverview>
+          <gmd:MD_BrowseGraphic>
+            <gmd:fileName gco:nilReason="missing">
+              <gco:CharacterString />
+            </gmd:fileName>
+            <gmd:fileDescription>
+              <gco:CharacterString>thumbnail</gco:CharacterString>
+            </gmd:fileDescription>
+            <gmd:fileType>
+              <gco:CharacterString>png</gco:CharacterString>
+            </gmd:fileType>
+          </gmd:MD_BrowseGraphic>
+        </gmd:graphicOverview>
+        <gmd:descriptiveKeywords>
+          <gmd:MD_Keywords>
+            <gmd:keyword>
+              <gmx:Anchor xlink:href="http://rdfdata.eionet.europa.eu/inspirethemes/themes/31">Habitats en biotopen</gmx:Anchor>
+            </gmd:keyword>
+            <gmd:type>
+              <gmd:MD_KeywordTypeCode codeList="https://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme">theme</gmd:MD_KeywordTypeCode>
+            </gmd:type>
+            <gmd:thesaurusName>
+              <gmd:CI_Citation>
+                <gmd:title>
+                  <gmx:Anchor xlink:href="http://geonetwork-opensource.org/inspire-theme#">GEMET - INSPIRE themes, version 1.0</gmx:Anchor>
+                </gmd:title>
+                <gmd:date>
+                  <gmd:CI_Date>
+                    <gmd:date>
+                      <gco:Date>2008-06-01</gco:Date>
+                    </gmd:date>
+                    <gmd:dateType>
+                      <gmd:CI_DateTypeCode codeList="https://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publicatie</gmd:CI_DateTypeCode>
+                    </gmd:dateType>
+                  </gmd:CI_Date>
+                </gmd:date>
+                <gmd:identifier>
+                  <gmd:MD_Identifier>
+                    <gmd:code>
+                      <gmx:Anchor xlink:href="https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeutheme-theme">geonetwork.thesaurus.external.theme.httpinspireeceuropaeutheme-theme</gmx:Anchor>
+                    </gmd:code>
+                  </gmd:MD_Identifier>
+                </gmd:identifier>
+              </gmd:CI_Citation>
+            </gmd:thesaurusName>
+          </gmd:MD_Keywords>
+        </gmd:descriptiveKeywords>
+        <gmd:descriptiveKeywords>
+          <gmd:MD_Keywords>
+            <gmd:keyword>
+              <gco:CharacterString>infoMapAccessService</gco:CharacterString>
+            </gmd:keyword>
+            <gmd:keyword>
+              <gco:CharacterString>Natuur</gco:CharacterString>
+            </gmd:keyword>
+            <gmd:keyword>
+              <gco:CharacterString>Habitatrichtlijn</gco:CharacterString>
+            </gmd:keyword>
+            <gmd:keyword>
+              <gco:CharacterString>Flora</gco:CharacterString>
+            </gmd:keyword>
+            <gmd:keyword>
+              <gco:CharacterString>Habitats en biotopen</gco:CharacterString>
+            </gmd:keyword>
+            <gmd:keyword>
+              <gco:CharacterString>infoFeatureAccessService</gco:CharacterString>
+            </gmd:keyword>
+          </gmd:MD_Keywords>
+        </gmd:descriptiveKeywords>
+        <gmd:resourceConstraints>
+          <gmd:MD_Constraints>
+            <gmd:useLimitation>
+              <gco:CharacterString>Geen beperkingen</gco:CharacterString>
+            </gmd:useLimitation>
+          </gmd:MD_Constraints>
+        </gmd:resourceConstraints>
+        <gmd:resourceConstraints>
+          <gmd:MD_LegalConstraints>
+            <gmd:accessConstraints>
+              <gmd:MD_RestrictionCode codeListValue="otherRestrictions" codeList="https://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_RestrictionCode">anders</gmd:MD_RestrictionCode>
+            </gmd:accessConstraints>
+            <gmd:otherConstraints>
+              <gmx:Anchor xlink:href="http://creativecommons.org/publicdomain/mark/1.0/deed.nl">Geen beperkingen</gmx:Anchor>
+            </gmd:otherConstraints>
+            <gmd:otherConstraints>
+              <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply">Er zijn geen condities voor toegang en gebruik</gmx:Anchor>
+            </gmd:otherConstraints>
+          </gmd:MD_LegalConstraints>
+        </gmd:resourceConstraints>
+        <gmd:resourceConstraints>
+          <gmd:MD_LegalConstraints>
+            <gmd:accessConstraints>
+              <gmd:MD_RestrictionCode codeListValue="otherRestrictions" codeList="https://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_RestrictionCode">anders</gmd:MD_RestrictionCode>
+            </gmd:accessConstraints>
+            <gmd:otherConstraints>
+              <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations">Geen beperkingen voor publieke toegang</gmx:Anchor>
+            </gmd:otherConstraints>
+          </gmd:MD_LegalConstraints>
+        </gmd:resourceConstraints>
+        <gmd:resourceConstraints>
+          <gmd:MD_SecurityConstraints>
+            <gmd:classification>
+              <gmd:MD_ClassificationCode codeList="https://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_ClassificationCode" codeListValue="unclassified">vrij toegankelijk</gmd:MD_ClassificationCode>
+            </gmd:classification>
+          </gmd:MD_SecurityConstraints>
+        </gmd:resourceConstraints>
+        <srv:serviceType>
+          <gco:LocalName>download</gco:LocalName>
+        </srv:serviceType>
+        <srv:extent>
+          <gmd:EX_Extent>
+            <gmd:geographicElement>
+              <gmd:EX_GeographicBoundingBox>
+                <gmd:westBoundLongitude>
+                  <gco:Decimal>3.206252918228434</gco:Decimal>
+                </gmd:westBoundLongitude>
+                <gmd:eastBoundLongitude>
+                  <gco:Decimal>7.245258336784366</gco:Decimal>
+                </gmd:eastBoundLongitude>
+                <gmd:southBoundLatitude>
+                  <gco:Decimal>50.73360719554353</gco:Decimal>
+                </gmd:southBoundLatitude>
+                <gmd:northBoundLatitude>
+                  <gco:Decimal>53.58297893748843</gco:Decimal>
+                </gmd:northBoundLatitude>
+              </gmd:EX_GeographicBoundingBox>
+            </gmd:geographicElement>
+            <gmd:temporalElement>
+              <gmd:EX_TemporalExtent>
+                <gmd:extent>
+                  <gml:TimePeriod gml:id="d356034e335a1050910">
+                    <gml:beginPosition>2014-12-01</gml:beginPosition>
+                    <gml:endPosition>2019-03-05</gml:endPosition>
+                  </gml:TimePeriod>
+                </gmd:extent>
+              </gmd:EX_TemporalExtent>
+            </gmd:temporalElement>
+          </gmd:EX_Extent>
+        </srv:extent>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingactievehoogvenen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingactievehoogvenen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingactievehoogvenen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingactievehoogvenen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingbekenenrivierenmetwaterplanten</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingbekenenrivierenmetwaterplanten</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingbekenenrivierenmetwaterplanten</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingbekenenrivierenmetwaterplanten</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingbeukeneikenbossenmethulst</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingbeukeneikenbossenmethulst</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingbeukeneikenbossenmethulst</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingbeukeneikenbossenmethulst</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingbinnenlandsekraaiheibegroeiingen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingbinnenlandsekraaiheibegroeiingen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingbinnenlandsekraaiheibegroeiingen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingbinnenlandsekraaiheibegroeiingen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingblauwgraslanden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingblauwgraslanden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingblauwgraslanden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingblauwgraslanden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingdrogehardhoutooibossen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingdrogehardhoutooibossen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingdrogehardhoutooibossen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingdrogehardhoutooibossen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingdrogeheiden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingdrogeheiden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingdrogeheiden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingdrogeheiden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingduinbossen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingduinbossen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingduinbossen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingduinbossen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingduindoornstruwelen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingduindoornstruwelen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingduindoornstruwelen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingduindoornstruwelen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingduinheidenmetkraaihei</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingduinheidenmetkraaihei</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingduinheidenmetkraaihei</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingduinheidenmetkraaihei</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingduinheidenmetstruikhei</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingduinheidenmetstruikhei</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingduinheidenmetstruikhei</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingduinheidenmetstruikhei</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingeikenhaagbeukenbossen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingeikenhaagbeukenbossen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingeikenhaagbeukenbossen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingeikenhaagbeukenbossen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingembryonaleduinen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingembryonaleduinen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingembryonaleduinen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingembryonaleduinen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingestuaria</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingestuaria</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingestuaria</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingestuaria</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidinggaligaanmoerassen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidinggaligaanmoerassen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidinggaligaanmoerassen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidinggaligaanmoerassen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingglanshaverenvossenstaarthooilanden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingglanshaverenvossenstaarthooilanden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingglanshaverenvossenstaarthooilanden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingglanshaverenvossenstaarthooilanden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidinggrijzeduinen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidinggrijzeduinen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidinggrijzeduinen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidinggrijzeduinen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidinggrotebaaien</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidinggrotebaaien</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidinggrotebaaien</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidinggrotebaaien</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingheischralegraslanden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingheischralegraslanden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingheischralegraslanden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingheischralegraslanden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingherstellendehoogvenen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingherstellendehoogvenen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingherstellendehoogvenen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingherstellendehoogvenen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidinghoogveenbossen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidinghoogveenbossen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidinghoogveenbossen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidinghoogveenbossen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingjeneverbesstruwelen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingjeneverbesstruwelen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingjeneverbesstruwelen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingjeneverbesstruwelen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingkalkgraslanden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingkalkgraslanden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingkalkgraslanden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingkalkgraslanden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingkalkmoerassen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingkalkmoerassen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingkalkmoerassen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingkalkmoerassen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingkalktufbronnen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingkalktufbronnen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingkalktufbronnen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingkalktufbronnen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingkranswierwateren</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingkranswierwateren</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingkranswierwateren</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingkranswierwateren</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingkruipwilgstruwelen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingkruipwilgstruwelen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingkruipwilgstruwelen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingkruipwilgstruwelen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingmerenmetkrabbenscheerenfonteinkruiden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingmerenmetkrabbenscheerenfonteinkruiden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingmerenmetkrabbenscheerenfonteinkruiden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingmerenmetkrabbenscheerenfonteinkruiden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingoudeeikenbossen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingoudeeikenbossen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingoudeeikenbossen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingoudeeikenbossen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingovergangsentrilvenen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingovergangsentrilvenen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingovergangsentrilvenen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingovergangsentrilvenen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingpermanentoverstroomdezandbanken</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingpermanentoverstroomdezandbanken</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingpermanentoverstroomdezandbanken</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingpermanentoverstroomdezandbanken</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingpionierbegroeiingenoprotsbodem</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingpionierbegroeiingenoprotsbodem</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingpionierbegroeiingenoprotsbodem</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingpionierbegroeiingenoprotsbodem</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingpioniervegetatiesmetsnavelbiezen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingpioniervegetatiesmetsnavelbiezen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingpioniervegetatiesmetsnavelbiezen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingpioniervegetatiesmetsnavelbiezen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingriffen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingriffen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingriffen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingriffen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingruigtenenzomen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingruigtenenzomen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingruigtenenzomen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingruigtenenzomen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingschorrenenziltegraslanden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingschorrenenziltegraslanden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingschorrenenziltegraslanden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingschorrenenziltegraslanden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingslijkgrasvelden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingslijkgrasvelden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingslijkgrasvelden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingslijkgrasvelden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingslikenzandplaten</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingslikenzandplaten</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingslikenzandplaten</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingslikenzandplaten</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingslikkigerivieroevers</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingslikkigerivieroevers</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingslikkigerivieroevers</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingslikkigerivieroevers</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingstroomdalgraslanden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingstroomdalgraslanden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingstroomdalgraslanden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingstroomdalgraslanden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingstuifzandheidenmetstruikhei</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingstuifzandheidenmetstruikhei</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingstuifzandheidenmetstruikhei</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingstuifzandheidenmetstruikhei</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingveldbiesbeukenbossen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingveldbiesbeukenbossen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingveldbiesbeukenbossen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingveldbiesbeukenbossen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingvochtigealluvialebossen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingvochtigealluvialebossen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingvochtigealluvialebossen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingvochtigealluvialebossen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingvochtigeduinvalleien</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingvochtigeduinvalleien</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingvochtigeduinvalleien</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingvochtigeduinvalleien</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingvochtigeheiden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingvochtigeheiden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingvochtigeheiden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingvochtigeheiden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingwittedduinen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingwittedduinen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingwittedduinen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingwittedduinen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingzandverstuivingen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingzandverstuivingen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingzandverstuivingen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingzandverstuivingen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingzeerzwakgebufferdevennen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingzeerzwakgebufferdevennen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingzeerzwakgebufferdevennen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingzeerzwakgebufferdevennen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingziltepionierbegroeiingen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingziltepionierbegroeiingen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingziltepionierbegroeiingen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingziltepionierbegroeiingen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingzinkweiden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingzinkweiden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingzinkweiden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingzinkweiden</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingzurevennen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingzurevennen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingzurevennen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingzurevennen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingzwakgebufferdevennen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingzwakgebufferdevennen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingzwakgebufferdevennen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:coupledResource>
+          <srv:SV_CoupledResource>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:identifier gco:nilReason="missing">
+              <gmx:Anchor xlink:href="" />
+            </srv:identifier>
+            <gco:ScopedName codeSpace="">habitatrichtlijnverspreidinghabitattypen:verspreidingzwakgebufferdevennen</gco:ScopedName>
+          </srv:SV_CoupledResource>
+        </srv:coupledResource>
+        <srv:couplingType>
+          <srv:SV_CouplingType codeList="https://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#SV_CouplingType" codeListValue="tight">tight</srv:SV_CouplingType>
+        </srv:couplingType>
+        <srv:containsOperations>
+          <srv:SV_OperationMetadata>
+            <srv:operationName>
+              <gco:CharacterString>DescribeFeatureType</gco:CharacterString>
+            </srv:operationName>
+            <srv:DCP>
+              <srv:DCPList codeList="https://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#DCPList" codeListValue="WebServices">WebServices</srv:DCPList>
+            </srv:DCP>
+            <srv:connectPoint>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+              </gmd:CI_OnlineResource>
+            </srv:connectPoint>
+          </srv:SV_OperationMetadata>
+        </srv:containsOperations>
+        <srv:containsOperations>
+          <srv:SV_OperationMetadata>
+            <srv:operationName>
+              <gco:CharacterString>GetFeature</gco:CharacterString>
+            </srv:operationName>
+            <srv:DCP>
+              <srv:DCPList codeList="https://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#DCPList" codeListValue="WebServices">WebServices</srv:DCPList>
+            </srv:DCP>
+            <srv:connectPoint>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+              </gmd:CI_OnlineResource>
+            </srv:connectPoint>
+          </srv:SV_OperationMetadata>
+        </srv:containsOperations>
+        <srv:containsOperations>
+          <srv:SV_OperationMetadata>
+            <srv:operationName>
+              <gco:CharacterString>GetGmlObject</gco:CharacterString>
+            </srv:operationName>
+            <srv:DCP>
+              <srv:DCPList codeList="https://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#DCPList" codeListValue="WebServices">WebServices</srv:DCPList>
+            </srv:DCP>
+            <srv:connectPoint>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+              </gmd:CI_OnlineResource>
+            </srv:connectPoint>
+          </srv:SV_OperationMetadata>
+        </srv:containsOperations>
+        <srv:containsOperations>
+          <srv:SV_OperationMetadata>
+            <srv:operationName>
+              <gco:CharacterString>GetCapabilities</gco:CharacterString>
+            </srv:operationName>
+            <srv:DCP>
+              <srv:DCPList codeList="https://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#DCPList" codeListValue="WebServices">WebServices</srv:DCPList>
+            </srv:DCP>
+            <srv:connectPoint>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+              </gmd:CI_OnlineResource>
+            </srv:connectPoint>
+          </srv:SV_OperationMetadata>
+        </srv:containsOperations>
+        <srv:operatesOn xlink:href="http://nationaalgeoregister.nl/geonetwork/srv/en/csw?service=CSW&amp;version=2.0.2&amp;request=GetRecordById&amp;outputschema=http://www.isotc211.org/2005/gmd&amp;elementsetname=full&amp;id=977e0e94-7aa9-4784-b2da-eaec44adb61b#MD_DataIdentification" uuidref="ffcc8756-71f7-4135-bcc9-0943ac1e80c4" />
+      </srv:SV_ServiceIdentification>
+    </gmd:identificationInfo>
+    <gmd:distributionInfo>
+      <gmd:MD_Distribution>
+        <gmd:distributor>
+          <gmd:MD_Distributor>
+            <gmd:distributorContact>
+              <gmd:CI_ResponsibleParty>
+                <gmd:individualName />
+                <gmd:organisationName />
+                <gmd:positionName />
+                <gmd:contactInfo />
+                <gmd:role />
+              </gmd:CI_ResponsibleParty>
+            </gmd:distributorContact>
+          </gmd:MD_Distributor>
+        </gmd:distributor>
+        <gmd:transferOptions>
+          <gmd:MD_DigitalTransferOptions>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingactievehoogvenen</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingbekenenrivierenmetwaterplanten</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingbeukeneikenbossenmethulst</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingbinnenlandsekraaiheibegroeiingen</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingblauwgraslanden</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingdrogehardhoutooibossen</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingdrogeheiden</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingduinbossen</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingduindoornstruwelen</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingduinheidenmetkraaihei</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingduinheidenmetstruikhei</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingeikenhaagbeukenbossen</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingembryonaleduinen</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingestuaria</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidinggaligaanmoerassen</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingglanshaverenvossenstaarthooilanden</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidinggrijzeduinen</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidinggrotebaaien</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingheischralegraslanden</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingherstellendehoogvenen</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidinghoogveenbossen</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingjeneverbesstruwelen</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingkalkgraslanden</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingkalkmoerassen</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingkalktufbronnen</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingkranswierwateren</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingkruipwilgstruwelen</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingmerenmetkrabbenscheerenfonteinkruiden</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingoudeeikenbossen</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingovergangsentrilvenen</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingpermanentoverstroomdezandbanken</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingpionierbegroeiingenoprotsbodem</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingpioniervegetatiesmetsnavelbiezen</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingriffen</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingruigtenenzomen</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingschorrenenziltegraslanden</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingslijkgrasvelden</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingslikenzandplaten</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingslikkigerivieroevers</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingstroomdalgraslanden</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingstuifzandheidenmetstruikhei</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingveldbiesbeukenbossen</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingvochtigealluvialebossen</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingvochtigeduinvalleien</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingvochtigeheiden</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingwittedduinen</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingzandverstuivingen</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingzeerzwakgebufferdevennen</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingziltepionierbegroeiingen</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingzinkweiden</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingzurevennen</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+            <gmd:onLine>
+              <gmd:CI_OnlineResource>
+                <gmd:linkage>
+                  <gmd:URL>https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities</gmd:URL>
+                </gmd:linkage>
+                <gmd:protocol>
+                  <gco:CharacterString>OGC:WFS</gco:CharacterString>
+                </gmd:protocol>
+                <gmd:name>
+                  <gco:CharacterString>habitatrichtlijnverspreidinghabitattypen:verspreidingzwakgebufferdevennen</gco:CharacterString>
+                </gmd:name>
+                <gmd:description>
+                  <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/OnLineDescriptionCode/accessPoint">accessPoint</gmx:Anchor>
+                </gmd:description>
+              </gmd:CI_OnlineResource>
+            </gmd:onLine>
+          </gmd:MD_DigitalTransferOptions>
+        </gmd:transferOptions>
+      </gmd:MD_Distribution>
+    </gmd:distributionInfo>
+    <gmd:dataQualityInfo>
+      <gmd:DQ_DataQuality>
+        <gmd:scope>
+          <gmd:DQ_Scope>
+            <gmd:level>
+              <gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="service">service</gmd:MD_ScopeCode>
+            </gmd:level>
+            <gmd:levelDescription>
+              <gmd:MD_ScopeDescription>
+                <gmd:other>
+                  <gco:CharacterString>service</gco:CharacterString>
+                </gmd:other>
+              </gmd:MD_ScopeDescription>
+            </gmd:levelDescription>
+          </gmd:DQ_Scope>
+        </gmd:scope>
+        <gmd:report>
+          <gmd:DQ_DomainConsistency>
+            <gmd:result />
+          </gmd:DQ_DomainConsistency>
+        </gmd:report>
+        <gmd:report>
+          <gmd:DQ_DomainConsistency>
+            <gmd:result>
+              <gmd:DQ_ConformanceResult>
+                <gmd:specification>
+                  <gmd:CI_Citation>
+                    <gmd:title>
+                      <gco:CharacterString>VERORDENING (EG) Nr. 976/2009 VAN DE COMMISSIE van 19 oktober 2009 tot uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad wat betreft de netwerkdiensten</gco:CharacterString>
+                    </gmd:title>
+                    <gmd:date>
+                      <gmd:CI_Date>
+                        <gmd:date>
+                          <gco:Date>2009-10-19</gco:Date>
+                        </gmd:date>
+                        <gmd:dateType>
+                          <gmd:CI_DateTypeCode codeList="https://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publicatie</gmd:CI_DateTypeCode>
+                        </gmd:dateType>
+                      </gmd:CI_Date>
+                    </gmd:date>
+                  </gmd:CI_Citation>
+                </gmd:specification>
+                <gmd:explanation>
+                  <gco:CharacterString>Conform verordening, validatie uitgevoerd met de ETF Validator voor INSPIRE view en downloadservices versie 1.4.1</gco:CharacterString>
+                </gmd:explanation>
+                <gmd:pass>
+                  <gco:Boolean>true</gco:Boolean>
+                </gmd:pass>
+              </gmd:DQ_ConformanceResult>
+            </gmd:result>
+          </gmd:DQ_DomainConsistency>
+        </gmd:report>
+        <gmd:report>
+          <gmd:DQ_DomainConsistency>
+            <gmd:result>
+              <gmd:DQ_ConformanceResult>
+                <gmd:specification>
+                  <gmd:CI_Citation>
+                    <gmd:title>
+                      <gco:CharacterString>Technical Guidance for the implementation of INSPIRE Download Services v3.1</gco:CharacterString>
+                    </gmd:title>
+                    <gmd:date>
+                      <gmd:CI_Date>
+                        <gmd:date>
+                          <gco:Date>2013-04-04</gco:Date>
+                        </gmd:date>
+                        <gmd:dateType>
+                          <gmd:CI_DateTypeCode codeList="https://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publicatie</gmd:CI_DateTypeCode>
+                        </gmd:dateType>
+                      </gmd:CI_Date>
+                    </gmd:date>
+                  </gmd:CI_Citation>
+                </gmd:specification>
+                <gmd:explanation>
+                  <gco:CharacterString>Conform technische specificatie, Validatie uitgevoerd met de ETF Validator voor INSPIRE view en downloadservices versie 1.4.1</gco:CharacterString>
+                </gmd:explanation>
+                <gmd:pass>
+                  <gco:Boolean>true</gco:Boolean>
+                </gmd:pass>
+              </gmd:DQ_ConformanceResult>
+            </gmd:result>
+          </gmd:DQ_DomainConsistency>
+        </gmd:report>
+      </gmd:DQ_DataQuality>
+    </gmd:dataQualityInfo>
+  </gmd:MD_Metadata>
+</csw:GetRecordByIdResponse>
+
