@@ -3,8 +3,12 @@ Feature:  get details
   Background:
     * configure readTimeout = 240000
     * url 'http://nationaalgeoregister.nl/'
-    * def callonesresult = callonce read('classpath:InspireTest/def/getcswbriefrecords.feature')
+    # * def callonesresult = callonce read('classpath:InspireTest/def/getcswbriefrecords.feature')
     * configure connectTimeout = 5000
+    * def tempdir = java.lang.System.getenv('TEMP')
+    * def separator = java.lang.System.getProperty("path.separator") 
+    * def idfile = tempdir + separator + 'ids.json';
+    * print idfile
 
 
   Scenario Outline: <datasetIdentifierCode>
@@ -19,7 +23,7 @@ Feature:  get details
     When method get
     Then status 200
     And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '<datasetIdentifierCode>'
-   
+
     * def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue
     * def title =  get response //citation/CI_Citation/title/CharacterString
     * def email = get response //electronicMailAddress/CharacterString
@@ -31,7 +35,7 @@ Feature:  get details
     * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv')
 
     Examples:
-      | callonesresult.list |
+      | karate.read( idfile) |
 
 
 # csv def/datasetlist.csv has the following field:
