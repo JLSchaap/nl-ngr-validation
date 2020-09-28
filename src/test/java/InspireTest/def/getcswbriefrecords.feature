@@ -17,17 +17,11 @@ Feature:  getlist of ngr records
     And param maxRecords = 1000
     When method get
     Then status 200
-    * eval karate.embed( response,'application/xml')
     * def briefarray = get response /GetRecordsResponse/SearchResults/BriefRecord[*]/identifier
-    * def list =  karate.mapWithKey(briefarray ,'datasetIdentifierCode')
+    * def list = karate.mapWithKey(briefarray ,'datasetIdentifierCode')
     * def json = karate.map(list, function(x, i){ return {} })
-    * def mystorage = Java.type('storage.DataStorage')
-    * def db = new mystorage
+ 
    
 
 
 
-
-# register.containeditems[4]["metadata-codelist"].id
-# * karate.write(briefarray, 'ngrlist.json')
-#[12]["metadata-codelist"].id
