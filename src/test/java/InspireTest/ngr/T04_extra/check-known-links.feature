@@ -11,7 +11,7 @@ Feature: check known xlinks
         * call read('classpath:InspireTest/def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link')
 
             Examples:
-                | karate.read('classpath:InspireTest/ngr/def/knownlink.csv') |
+                | karate.read('classpath:InspireTest/def/knownlink.csv') |
        # Examples:
        #     | knownlink                                       |
        #     | http://data.europa.eu/eli/reg/2010/1089         |
