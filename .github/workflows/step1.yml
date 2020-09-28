@@ -33,6 +33,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./target/surefire-reports
+          destination_dir: surefire-reports
       - name: Build with Maven step 2
         run: mvn --file pom.xml -Dkarate.options="--tags @step2" test
       - name: Deploy 2
@@ -41,3 +42,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./output
+          destination_dir: output
