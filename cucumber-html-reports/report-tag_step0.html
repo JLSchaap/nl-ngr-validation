@@ -75,7 +75,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>NLTEST</td>
-            <td>28 Sep 2020, 12:17</td>
+            <td>28 Sep 2020, 12:22</td>
     </tr>
   </tbody>
 </table>
@@ -128,19 +128,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@step0</td>
-                    <td      class="passed"    >31</td>
-          <td      class="failed"    >4</td>
-          <td     class="skipped"   >3</td>
+                    <td      class="passed"    >38</td>
+          <td >0</td>
+          <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">38</td>
 
+          <td  class="passed"    >2</td>
           <td >0</td>
-          <td  class="failed"    >2</td>
           <td class="total">2</td>
 
-          <td class="duration" data-value="12893261913">12.893</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="12979313038">12.979</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -172,7 +172,7 @@ $(document).ready(function() {
 <div class="element">
       <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_InspireTest-ngr-T01_ids-ngr-do-once-feature.html">InspireTest/ngr/T01_ids/ngr-do-once.feature</a>
+      <a href="report-feature_InspireTest-ngr-T01_ids-ngr-do-once-feature_1.html">InspireTest/ngr/T01_ids/ngr-do-once.feature</a>
     </div>
   
   
@@ -180,12 +180,12 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">0.193</span>
+  <span class="lead-duration duration">0.204</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">write header</span>
   
@@ -196,15 +196,15 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -214,45 +214,29 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">*</span>
   <span class="name">def callheaderresult = callonce read('classpath:InspireTest/def/writedatasetcsvheader.template.feature')</span>
   
-  <span class="lead-duration duration">0.111</span>
+  <span class="lead-duration duration">0.122</span>
 
   </div>
 
         
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
-          <a>com.intuit.karate.exception.KarateException: ngr-do-once.feature:5 - </a>
-      </div>
-      <div id="msg-3" class="collapse collapsable-details  in ">
-        <pre>com.intuit.karate.exception.KarateException: ngr-do-once.feature:5 - 
-writedatasetcsvheader.template.feature:11 - evaluation (js) failed: db.writeln( '&quot;datasetIdentifierCode&quot;,&quot;title&quot;,&quot;dataIdentificationCitationAnchor&quot;,&quot;organisation&quot;,&quot;electronicMailAddress&quot;,&quot;metadataStandardVersion&quot;,', outputpath + 'datasets.csv'), java.lang.RuntimeException: java.io.FileNotFoundException: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/datasets.csv (No such file or directory)
-stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:531)</pre>
-      </div>
-    </div>
-  </div>
 
 
         
         
   <div class="inner-level">
     <div class="docstring indention">
-            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
           <a>Doc string</a>
       </div>
-      <div id="msg-4" class="collapse collapsable-details">
-        <pre>12:17:48.402 feature call failed: classpath:InspireTest/def/writedatasetcsvheader.template.feature
-arg: null
-writedatasetcsvheader.template.feature:11 - evaluation (js) failed: db.writeln( '&quot;datasetIdentifierCode&quot;,&quot;title&quot;,&quot;dataIdentificationCitationAnchor&quot;,&quot;organisation&quot;,&quot;electronicMailAddress&quot;,&quot;metadataStandardVersion&quot;,', outputpath + 'datasets.csv'), java.lang.RuntimeException: java.io.FileNotFoundException: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/datasets.csv (No such file or directory)
-stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:531)</pre>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>12:21:59.045 &lt;&lt; lock released, cached callonce: read('classpath:InspireTest/def/writedatasetcsvheader.template.feature')</pre>
       </div>
     </div>
   </div>
@@ -289,7 +273,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">&gt; *</span>
   <span class="name">def mystorage = Java.type('storage.DataStorage')</span>
   
-  <span class="lead-duration duration">0.009</span>
+  <span class="lead-duration duration">0.007</span>
 
   </div>
 
@@ -300,12 +284,12 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
         
   <div class="inner-level">
     <div class="docstring indention">
-            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
           <a>Doc string</a>
       </div>
-      <div id="msg-5" class="collapse collapsable-details">
-        <pre>12:17:47.900 karate.env system property was:  
-12:17:48.303 &gt;&gt; lock acquired, begin callonce: read('classpath:InspireTest/def/writedatasetcsvheader.template.feature')</pre>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>12:21:58.681 karate.env system property was:  
+12:21:58.943 &gt;&gt; lock acquired, begin callonce: read('classpath:InspireTest/def/writedatasetcsvheader.template.feature')</pre>
       </div>
     </div>
   </div>
@@ -321,7 +305,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">&gt; *</span>
   <span class="name">def db = new mystorage</span>
   
-  <span class="lead-duration duration">0.007</span>
+  <span class="lead-duration duration">0.012</span>
 
   </div>
 
@@ -342,7 +326,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">&gt; *</span>
   <span class="name">def tempdir = java.lang.System.getProperty('user.dir')</span>
   
-  <span class="lead-duration duration">0.018</span>
+  <span class="lead-duration duration">0.020</span>
 
   </div>
 
@@ -363,7 +347,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">&gt; *</span>
   <span class="name">def separator = java.lang.System.getProperty(&quot;file.separator&quot;)</span>
   
-  <span class="lead-duration duration">0.011</span>
+  <span class="lead-duration duration">0.004</span>
 
   </div>
 
@@ -384,7 +368,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">&gt; *</span>
   <span class="name">def outputpath = tempdir + separator + 'output' + separator</span>
   
-  <span class="lead-duration duration">0.025</span>
+  <span class="lead-duration duration">0.011</span>
 
   </div>
 
@@ -401,27 +385,15 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
       </div>
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">&gt; *</span>
   <span class="name">eval db.writeln( '&quot;datasetIdentifierCode&quot;,&quot;title&quot;,&quot;dataIdentificationCitationAnchor&quot;,&quot;organisation&quot;,&quot;electronicMailAddress&quot;,&quot;metadataStandardVersion&quot;,', outputpath + 'datasets.csv')</span>
   
-  <span class="lead-duration duration">0.009</span>
+  <span class="lead-duration duration">0.011</span>
 
   </div>
 
         
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
-          <a>com.intuit.karate.exception.KarateException: writedatasetcsvheader.template.feature:11 - evaluation (js) failed: db.writeln( '&quot;datasetIdentifierCode&quot;,&quot;title&quot;,&quot;dataIdentificationCitationAnchor&quot;,&quot;organisation&quot;,&quot;electronicMailAddress&quot;,&quot;metadataStandardVersion&quot;,', outputpath + 'datasets.csv'), java.lang.RuntimeException: java.io.FileNotFoundException: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/datasets.csv (No such file or directory)</a>
-      </div>
-      <div id="msg-6" class="collapse collapsable-details  in ">
-        <pre>com.intuit.karate.exception.KarateException: writedatasetcsvheader.template.feature:11 - evaluation (js) failed: db.writeln( '&quot;datasetIdentifierCode&quot;,&quot;title&quot;,&quot;dataIdentificationCitationAnchor&quot;,&quot;organisation&quot;,&quot;electronicMailAddress&quot;,&quot;metadataStandardVersion&quot;,', outputpath + 'datasets.csv'), java.lang.RuntimeException: java.io.FileNotFoundException: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/datasets.csv (No such file or directory)
-stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:531)</pre>
-      </div>
-    </div>
-  </div>
 
 
         
@@ -434,11 +406,11 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">&gt; *</span>
   <span class="name">eval db.writeln( '&quot;serviceIdentifierCode&quot;,&quot;title&quot;,&quot;dataIdentificationCitationAnchor&quot;,&quot;organisation&quot;,&quot;electronicMailAddress&quot;,&quot;metadataStandardVersion&quot;,', outputpath + 'services.csv')</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.003</span>
 
   </div>
 
@@ -455,11 +427,11 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">&gt; *</span>
   <span class="name">eval db.writeln( '&quot;serviceIdentifierCode&quot;,&quot;title&quot;,&quot;dataIdentificationCitationAnchor&quot;,&quot;organisation&quot;,&quot;electronicMailAddress&quot;,&quot;metadataStandardVersion&quot;,', outputpath + 'seriess.csv')</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.006</span>
 
   </div>
 
@@ -476,11 +448,11 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">&gt; *</span>
   <span class="name">eval db.writeln( '&quot;serviceIdentifierCode&quot;,&quot;title&quot;,&quot;dataIdentificationCitationAnchor&quot;,&quot;organisation&quot;,&quot;electronicMailAddress&quot;,&quot;metadataStandardVersion&quot;,', outputpath + 'services-Beheer PDOK.csv')</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.003</span>
 
   </div>
 
@@ -508,7 +480,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
 <div class="element">
       <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_InspireTest-ngr-T01_ids-ngr-do-once-feature.html">InspireTest/ngr/T01_ids/ngr-do-once.feature</a>
+      <a href="report-feature_InspireTest-ngr-T01_ids-ngr-do-once-feature_1.html">InspireTest/ngr/T01_ids/ngr-do-once.feature</a>
     </div>
   
   
@@ -516,12 +488,12 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   </div>
 
   
-  <span class="lead-duration duration">12.699</span>
+  <span class="lead-duration duration">12.774</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-7">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">get id's</span>
   
@@ -532,15 +504,15 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   </span>
   <div class="description indention"></div>
 
-  <div id="element-7" class="collapse collapsable-details  in ">
+  <div id="element-5" class="collapse collapsable-details ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-8">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-6">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -550,14 +522,14 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
 
   </div>
 
-  <div id="steps-8" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-6" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">*</span>
   <span class="name">configure readTimeout = 240000</span>
   
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.003</span>
 
   </div>
 
@@ -568,11 +540,11 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
         
   <div class="inner-level">
     <div class="docstring indention">
-            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
           <a>Doc string</a>
       </div>
-      <div id="msg-9" class="collapse collapsable-details">
-        <pre>12:17:47.895 karate.env system property was:</pre>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>12:21:58.681 karate.env system property was:</pre>
       </div>
     </div>
   </div>
@@ -588,7 +560,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">*</span>
   <span class="name">url 'http://nationaalgeoregister.nl/'</span>
   
-  <span class="lead-duration duration">0.007</span>
+  <span class="lead-duration duration">0.002</span>
 
   </div>
 
@@ -605,42 +577,26 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
       </div>
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">*</span>
   <span class="name">def callonesresult = callonce read('classpath:InspireTest/def/getcswbriefrecords.feature')</span>
   
-  <span class="lead-duration duration">6.406</span>
+  <span class="lead-duration duration">6.449</span>
 
   </div>
 
         
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-10">
-          <a>com.intuit.karate.exception.KarateException: ngr-do-once.feature:10 - </a>
-      </div>
-      <div id="msg-10" class="collapse collapsable-details  in ">
-        <pre>com.intuit.karate.exception.KarateException: ngr-do-once.feature:10 - 
-getcswbriefrecords.feature:29 - evaluation (js) failed: db.writeln(karate.pretty(list),idfile), java.lang.RuntimeException: java.io.FileNotFoundException: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/ids.json (No such file or directory)
-stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:531)</pre>
-      </div>
-    </div>
-  </div>
 
 
         
         
   <div class="inner-level">
     <div class="docstring indention">
-            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
           <a>Doc string</a>
       </div>
-      <div id="msg-11" class="collapse collapsable-details">
-        <pre>12:17:54.702 feature call failed: classpath:InspireTest/def/getcswbriefrecords.feature
-arg: null
-getcswbriefrecords.feature:29 - evaluation (js) failed: db.writeln(karate.pretty(list),idfile), java.lang.RuntimeException: java.io.FileNotFoundException: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/ids.json (No such file or directory)
-stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:531)</pre>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>12:22:05.379 &lt;&lt; lock released, cached callonce: read('classpath:InspireTest/def/getcswbriefrecords.feature')</pre>
       </div>
     </div>
   </div>
@@ -688,11 +644,11 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
         
   <div class="inner-level">
     <div class="docstring indention">
-            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
           <a>Doc string</a>
       </div>
-      <div id="msg-12" class="collapse collapsable-details">
-        <pre>12:17:48.403 &gt;&gt; lock acquired, begin callonce: read('classpath:InspireTest/def/getcswbriefrecords.feature')</pre>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>12:21:59.046 &gt;&gt; lock acquired, begin callonce: read('classpath:InspireTest/def/getcswbriefrecords.feature')</pre>
       </div>
     </div>
   </div>
@@ -708,7 +664,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">&gt; Given</span>
   <span class="name">path 'geonetwork/srv/dut/inspire'</span>
   
-  <span class="lead-duration duration">0.005</span>
+  <span class="lead-duration duration">0.009</span>
 
   </div>
 
@@ -750,7 +706,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">&gt; And</span>
   <span class="name">param version = '2.0.2'</span>
   
-  <span class="lead-duration duration">0.007</span>
+  <span class="lead-duration duration">0.002</span>
 
   </div>
 
@@ -813,7 +769,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">&gt; And</span>
   <span class="name">param typeNames = 'csw:Record'</span>
   
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.001</span>
 
   </div>
 
@@ -834,7 +790,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">&gt; And</span>
   <span class="name">param elementsetname = &quot;brief&quot;</span>
   
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.001</span>
 
   </div>
 
@@ -855,7 +811,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">&gt; And</span>
   <span class="name">param resultType = 'results'</span>
   
-  <span class="lead-duration duration">0.005</span>
+  <span class="lead-duration duration">0.001</span>
 
   </div>
 
@@ -876,7 +832,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">&gt; And</span>
   <span class="name">param startposition = 1</span>
   
-  <span class="lead-duration duration">0.005</span>
+  <span class="lead-duration duration">0.001</span>
 
   </div>
 
@@ -897,7 +853,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">&gt; And</span>
   <span class="name">param maxRecords = 30</span>
   
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.001</span>
 
   </div>
 
@@ -918,7 +874,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">&gt; When</span>
   <span class="name">method get</span>
   
-  <span class="lead-duration duration">6.115</span>
+  <span class="lead-duration duration">6.173</span>
 
   </div>
 
@@ -960,7 +916,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">&gt; *</span>
   <span class="name">def briefarray = get response /GetRecordsResponse/SearchResults/BriefRecord[*]/identifier</span>
   
-  <span class="lead-duration duration">0.029</span>
+  <span class="lead-duration duration">0.024</span>
 
   </div>
 
@@ -981,7 +937,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">&gt; *</span>
   <span class="name">def list = karate.mapWithKey(briefarray ,'datasetIdentifierCode')</span>
   
-  <span class="lead-duration duration">0.014</span>
+  <span class="lead-duration duration">0.016</span>
 
   </div>
 
@@ -1002,7 +958,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">&gt; *</span>
   <span class="name">def json = karate.map(list, function(x, i){ return {} })</span>
   
-  <span class="lead-duration duration">0.027</span>
+  <span class="lead-duration duration">0.018</span>
 
   </div>
 
@@ -1023,7 +979,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">&gt; *</span>
   <span class="name">def tempdir = java.lang.System.getProperty('user.dir')</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.006</span>
 
   </div>
 
@@ -1065,7 +1021,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">&gt; *</span>
   <span class="name">def idfile = tempdir + separator + 'output' + separator + 'ids.json'</span>
   
-  <span class="lead-duration duration">0.012</span>
+  <span class="lead-duration duration">0.011</span>
 
   </div>
 
@@ -1086,7 +1042,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">&gt; *</span>
   <span class="name">print idfile</span>
   
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.001</span>
 
   </div>
 
@@ -1097,11 +1053,11 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
         
   <div class="inner-level">
     <div class="docstring indention">
-            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
           <a>Doc string</a>
       </div>
-      <div id="msg-13" class="collapse collapsable-details">
-        <pre>12:17:54.662 [print] /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/ids.json</pre>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>12:22:05.337 [print] /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/ids.json</pre>
       </div>
     </div>
   </div>
@@ -1155,27 +1111,15 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
       </div>
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">&gt; *</span>
   <span class="name">eval db.writeln(karate.pretty(list),idfile)</span>
   
-  <span class="lead-duration duration">0.032</span>
+  <span class="lead-duration duration">0.035</span>
 
   </div>
 
         
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-14">
-          <a>com.intuit.karate.exception.KarateException: getcswbriefrecords.feature:29 - evaluation (js) failed: db.writeln(karate.pretty(list),idfile), java.lang.RuntimeException: java.io.FileNotFoundException: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/ids.json (No such file or directory)</a>
-      </div>
-      <div id="msg-14" class="collapse collapsable-details  in ">
-        <pre>com.intuit.karate.exception.KarateException: getcswbriefrecords.feature:29 - evaluation (js) failed: db.writeln(karate.pretty(list),idfile), java.lang.RuntimeException: java.io.FileNotFoundException: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/ids.json (No such file or directory)
-stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:531)</pre>
-      </div>
-    </div>
-  </div>
 
 
         

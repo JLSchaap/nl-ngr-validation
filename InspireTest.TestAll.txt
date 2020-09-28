@@ -1,16 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: InspireTest.TestAll
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 9.339 s <<< FAILURE! - in InspireTest.TestAll
-InspireTest.TestAll.testParallel  Time elapsed: 9.311 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: 
-failed features:
-InspireTest.ngr.T01_ids.ngr-do-once: ngr-do-once.feature:5 - 
-writedatasetcsvheader.template.feature:11 - evaluation (js) failed: db.writeln( '"datasetIdentifierCode","title","dataIdentificationCitationAnchor","organisation","electronicMailAddress","metadataStandardVersion",', outputpath + 'datasets.csv'), java.lang.RuntimeException: java.io.FileNotFoundException: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/datasets.csv (No such file or directory)
-stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:531)
-ngr-do-once.feature:10 - 
-getcswbriefrecords.feature:29 - evaluation (js) failed: db.writeln(karate.pretty(list),idfile), java.lang.RuntimeException: java.io.FileNotFoundException: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/ids.json (No such file or directory)
-stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:531)
- ==> expected: <0> but was: <2>
-	at InspireTest.TestAll.testParallel(InspireTest.java:27)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.892 s - in InspireTest.TestAll

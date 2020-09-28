@@ -49,28 +49,28 @@ $(document).ready(function() {
   $(document).ready(function() {
 
     var chartData = {
-        labels:  [ "@step0", ] ,
+        labels:  [ "@step0",  "@step1", ] ,
         datasets: [
             {
                 label: "Passed",
                 backgroundColor: "#92DD96",
-                data:  [ 81.58, ]             },
+                data:  [ 100.00,  100.00, ]             },
             {
                 label: "Failed",
                 backgroundColor: "#F2928C",
-                data:  [ 10.53, ]             },
+                data:  [ 0.00,  0.00, ]             },
             {
                 label: "Skipped",
                 backgroundColor: "#8AF",
-                data:  [ 7.89, ]             },
+                data:  [ 0.00,  0.00, ]             },
             {
                 label: "Pending",
                 backgroundColor: "#F5F28F",
-                data:  [ 0.00, ]             },
+                data:  [ 0.00,  0.00, ]             },
             {
                 label: "Undefined",
                 backgroundColor: "#F5B975",
-                data:  [ 0.00, ]             }
+                data:  [ 0.00,  0.00, ]             }
         ]
     };
 
@@ -129,7 +129,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>NLTEST</td>
-            <td>28 Sep 2020, 12:17</td>
+            <td>28 Sep 2020, 12:22</td>
     </tr>
   </tbody>
 </table>
@@ -193,52 +193,69 @@ $(document).ready(function() {
           <tr>
         <td class="tagname"><a href="report-tag_step0.html">@step0</a></td>
         
-        <td      class="passed"    >31</td>
-        <td      class="failed"    >4</td>
-        <td     class="skipped"   >3</td>
+        <td      class="passed"    >38</td>
+        <td >0</td>
+        <td >0</td>
         <td >0</td>
         <td >0</td>
         <td class="total">38</td>
 
+        <td  class="passed"    >2</td>
         <td >0</td>
-        <td  class="failed"    >2</td>
         <td class="total">2</td>
 
-        <td class="duration" data-value="12893261913">12.893</td>
-        <td class="failed">Failed</td>
+        <td class="duration" data-value="12979313038">12.979</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-tag_step1.html">@step1</a></td>
+        
+        <td      class="passed"    >600</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">600</td>
+
+        <td  class="passed"    >30</td>
+        <td >0</td>
+        <td class="total">30</td>
+
+        <td class="duration" data-value="57702347482">57.702</td>
+        <td class="passed">Passed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
       <td></td>
-            <td>31</td>
-      <td>4</td>
-      <td>3</td>
+            <td>638</td>
       <td>0</td>
       <td>0</td>
-      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>638</td>
 
+      <td>32</td>
       <td>0</td>
-      <td>2</td>
-      <td>2</td>
+      <td>32</td>
 
-      <td class="duration">12.893</td>
-      <td>1</td>
+      <td class="duration">1:10.681</td>
+      <td>2</td>
     </tr>
     <tr>
       <td></td>
-            <td>81.58%</td>
-      <td>10.53%</td>
-      <td>7.89%</td>
+            <td>100.00%</td>
+      <td>0.00%</td>
+      <td>0.00%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>0.00%</td>
       <td>100.00%</td>
-      <td></td>
-      <td></td>
       <td>0.00%</td>
+      <td></td>
+      <td></td>
+      <td>100.00%</td>
     </tr>
   </tfoot>
 </table>

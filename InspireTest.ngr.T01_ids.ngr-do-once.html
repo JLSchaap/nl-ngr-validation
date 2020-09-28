@@ -35,9 +35,9 @@
           
                     <div class="nav-count">
                                     
-                        <div class="bg-success" id="nav-pass">0</div>
+                        <div class="bg-success" id="nav-pass">2</div>
                                     
-                        <div class="bg-danger" id="nav-fail">2</div>
+                        <div class="bg-danger" id="nav-fail">0</div>
                                   
                     </div>
                             
@@ -46,14 +46,14 @@
                 <div id="nav-type">Scenarios</div>
                          
         
-                <div id="nav-date">2020-09-28 12:17:54 PM</div>
+                <div id="nav-date">2020-09-28 12:22:05 PM</div>
                         
       
                 <div class="nav-container">
-                    <div class="nav-item failed">
+                    <div class="nav-item passed">
                         <a href="#[1:4]">[1:4] write header </a>
                     </div>
-                    <div class="nav-item failed">
+                    <div class="nav-item passed">
                         <a href="#[2:7]">[2:7] get id's </a>
                     </div>
                 </div>
@@ -72,28 +72,22 @@
                             </div>
                             <span class="scenario-keyword">Scenario: [1:4]</span><span class="scenario-name">write header </span>
                         </div>
-                        <div class="scenario-time failed">ms: 111</div>
+                        <div class="scenario-time passed">ms: 123</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="1">
-                            <div class="step-ref failed">1</div>
-                            <div class="step-cell failed">* def callheaderresult = callonce read('classpath:InspireTest/def/writedatasetcsvheader.template.feature')</div>
+                            <div class="step-ref passed">1</div>
+                            <div class="step-cell passed">* def callheaderresult = callonce read('classpath:InspireTest/def/writedatasetcsvheader.template.feature')</div>
                         </div>
-                        <div class="time-cell failed">111</div>
+                        <div class="time-cell passed">123</div>
                     </div>
-                    <div class="preformatted" data-parent="1">12:17:48.402 feature call failed: classpath:InspireTest/def/writedatasetcsvheader.template.feature
-arg: null
-writedatasetcsvheader.template.feature:11 - evaluation (js) failed: db.writeln( '"datasetIdentifierCode","title","dataIdentificationCitationAnchor","organisation","electronicMailAddress","metadataStandardVersion",', outputpath + 'datasets.csv'), java.lang.RuntimeException: java.io.FileNotFoundException: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/datasets.csv (No such file or directory)
-stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:531)
-ngr-do-once.feature:5 - 
-writedatasetcsvheader.template.feature:11 - evaluation (js) failed: db.writeln( '"datasetIdentifierCode","title","dataIdentificationCitationAnchor","organisation","electronicMailAddress","metadataStandardVersion",', outputpath + 'datasets.csv'), java.lang.RuntimeException: java.io.FileNotFoundException: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/datasets.csv (No such file or directory)
-stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:531)</div>
+                    <div class="preformatted" data-parent="1">12:21:59.045 &lt;&lt; lock released, cached callonce: read('classpath:InspireTest/def/writedatasetcsvheader.template.feature')</div>
                     <div class="step-row">
                         <div class="step-container" id="1.1">
-                            <div class="step-ref failed">&gt;&gt;</div>
-                            <div class="step-cell failed">InspireTest/def/writedatasetcsvheader.template.feature</div>
+                            <div class="step-ref passed">&gt;&gt;</div>
+                            <div class="step-cell passed">InspireTest/def/writedatasetcsvheader.template.feature</div>
                         </div>
-                        <div class="time-cell failed">83</div>
+                        <div class="time-cell passed">81</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="2">
@@ -101,17 +95,17 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">* def mystorage = Java.type('storage.DataStorage')</div>
                         </div>
-                        <div class="time-cell passed">10</div>
+                        <div class="time-cell passed">8</div>
                     </div>
-                    <div class="preformatted" data-parent="2">12:17:47.900 karate.env system property was:  
-12:17:48.303 &gt;&gt; lock acquired, begin callonce: read('classpath:InspireTest/def/writedatasetcsvheader.template.feature')</div>
+                    <div class="preformatted" data-parent="2">12:21:58.681 karate.env system property was:  
+12:21:58.943 &gt;&gt; lock acquired, begin callonce: read('classpath:InspireTest/def/writedatasetcsvheader.template.feature')</div>
                     <div class="step-row">
                         <div class="step-container" id="3">
                             <div class="step-ref passed">3</div>
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">* def db = new mystorage</div>
                         </div>
-                        <div class="time-cell passed">8</div>
+                        <div class="time-cell passed">13</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="4">
@@ -119,7 +113,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">* def tempdir = java.lang.System.getProperty('user.dir')</div>
                         </div>
-                        <div class="time-cell passed">19</div>
+                        <div class="time-cell passed">20</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="5">
@@ -127,7 +121,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">* def separator = java.lang.System.getProperty("file.separator")</div>
                         </div>
-                        <div class="time-cell passed">12</div>
+                        <div class="time-cell passed">4</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="6">
@@ -135,41 +129,39 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">* def outputpath = tempdir + separator + 'output' + separator</div>
                         </div>
-                        <div class="time-cell passed">25</div>
+                        <div class="time-cell passed">11</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="7">
-                            <div class="step-ref failed">7</div>
+                            <div class="step-ref passed">7</div>
                             <div class="step-indent"> </div>
-                            <div class="step-cell failed">* eval db.writeln( '"datasetIdentifierCode","title","dataIdentificationCitationAnchor","organisation","electronicMailAddress","metadataStandardVersion",', outputpath + 'datasets.csv')</div>
+                            <div class="step-cell passed">* eval db.writeln( '"datasetIdentifierCode","title","dataIdentificationCitationAnchor","organisation","electronicMailAddress","metadataStandardVersion",', outputpath + 'datasets.csv')</div>
                         </div>
-                        <div class="time-cell failed">10</div>
+                        <div class="time-cell passed">12</div>
                     </div>
-                    <div class="preformatted" data-parent="7">writedatasetcsvheader.template.feature:11 - evaluation (js) failed: db.writeln( '"datasetIdentifierCode","title","dataIdentificationCitationAnchor","organisation","electronicMailAddress","metadataStandardVersion",', outputpath + 'datasets.csv'), java.lang.RuntimeException: java.io.FileNotFoundException: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/datasets.csv (No such file or directory)
-stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:531)</div>
                     <div class="step-row">
                         <div class="step-container" id="8">
-                            <div class="step-ref skipped">8</div>
+                            <div class="step-ref passed">8</div>
                             <div class="step-indent"> </div>
-                            <div class="step-cell skipped">* eval db.writeln( '"serviceIdentifierCode","title","dataIdentificationCitationAnchor","organisation","electronicMailAddress","metadataStandardVersion",', outputpath + 'services.csv')</div>
+                            <div class="step-cell passed">* eval db.writeln( '"serviceIdentifierCode","title","dataIdentificationCitationAnchor","organisation","electronicMailAddress","metadataStandardVersion",', outputpath + 'services.csv')</div>
                         </div>
-                        <div class="time-cell skipped">0</div>
+                        <div class="time-cell passed">4</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="9">
-                            <div class="step-ref skipped">9</div>
+                            <div class="step-ref passed">9</div>
                             <div class="step-indent"> </div>
-                            <div class="step-cell skipped">* eval db.writeln( '"serviceIdentifierCode","title","dataIdentificationCitationAnchor","organisation","electronicMailAddress","metadataStandardVersion",', outputpath + 'seriess.csv')</div>
+                            <div class="step-cell passed">* eval db.writeln( '"serviceIdentifierCode","title","dataIdentificationCitationAnchor","organisation","electronicMailAddress","metadataStandardVersion",', outputpath + 'seriess.csv')</div>
                         </div>
-                        <div class="time-cell skipped">0</div>
+                        <div class="time-cell passed">7</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="10">
-                            <div class="step-ref skipped">10</div>
+                            <div class="step-ref passed">10</div>
                             <div class="step-indent"> </div>
-                            <div class="step-cell skipped">* eval db.writeln( '"serviceIdentifierCode","title","dataIdentificationCitationAnchor","organisation","electronicMailAddress","metadataStandardVersion",', outputpath + 'services-Beheer PDOK.csv')</div>
+                            <div class="step-cell passed">* eval db.writeln( '"serviceIdentifierCode","title","dataIdentificationCitationAnchor","organisation","electronicMailAddress","metadataStandardVersion",', outputpath + 'services-Beheer PDOK.csv')</div>
                         </div>
-                        <div class="time-cell skipped">0</div>
+                        <div class="time-cell passed">3</div>
                     </div>
                 </div>
                 <div class="scenario">
@@ -180,43 +172,37 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
                             </div>
                             <span class="scenario-keyword">Scenario: [2:7]</span><span class="scenario-name">get id's </span>
                         </div>
-                        <div class="scenario-time failed">ms: 6418</div>
+                        <div class="scenario-time passed">ms: 6455</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="11">
                             <div class="step-ref passed">11</div>
                             <div class="step-cell passed">* configure readTimeout = 240000</div>
                         </div>
-                        <div class="time-cell passed">5</div>
+                        <div class="time-cell passed">3</div>
                     </div>
-                    <div class="preformatted" data-parent="11">12:17:47.895 karate.env system property was:</div>
+                    <div class="preformatted" data-parent="11">12:21:58.681 karate.env system property was:</div>
                     <div class="step-row">
                         <div class="step-container" id="12">
                             <div class="step-ref passed">12</div>
                             <div class="step-cell passed">* url 'http://nationaalgeoregister.nl/'</div>
                         </div>
-                        <div class="time-cell passed">7</div>
+                        <div class="time-cell passed">2</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="13">
-                            <div class="step-ref failed">13</div>
-                            <div class="step-cell failed">* def callonesresult = callonce read('classpath:InspireTest/def/getcswbriefrecords.feature')</div>
+                            <div class="step-ref passed">13</div>
+                            <div class="step-cell passed">* def callonesresult = callonce read('classpath:InspireTest/def/getcswbriefrecords.feature')</div>
                         </div>
-                        <div class="time-cell failed">6407</div>
+                        <div class="time-cell passed">6449</div>
                     </div>
-                    <div class="preformatted" data-parent="13">12:17:54.702 feature call failed: classpath:InspireTest/def/getcswbriefrecords.feature
-arg: null
-getcswbriefrecords.feature:29 - evaluation (js) failed: db.writeln(karate.pretty(list),idfile), java.lang.RuntimeException: java.io.FileNotFoundException: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/ids.json (No such file or directory)
-stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:531)
-ngr-do-once.feature:10 - 
-getcswbriefrecords.feature:29 - evaluation (js) failed: db.writeln(karate.pretty(list),idfile), java.lang.RuntimeException: java.io.FileNotFoundException: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/ids.json (No such file or directory)
-stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:531)</div>
+                    <div class="preformatted" data-parent="13">12:22:05.379 &lt;&lt; lock released, cached callonce: read('classpath:InspireTest/def/getcswbriefrecords.feature')</div>
                     <div class="step-row">
                         <div class="step-container" id="13.1">
-                            <div class="step-ref failed">&gt;&gt;</div>
-                            <div class="step-cell failed">InspireTest/def/getcswbriefrecords.feature</div>
+                            <div class="step-ref passed">&gt;&gt;</div>
+                            <div class="step-cell passed">InspireTest/def/getcswbriefrecords.feature</div>
                         </div>
-                        <div class="time-cell failed">6281</div>
+                        <div class="time-cell passed">6320</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="14">
@@ -226,14 +212,14 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
                         </div>
                         <div class="time-cell passed">2</div>
                     </div>
-                    <div class="preformatted" data-parent="14">12:17:48.403 &gt;&gt; lock acquired, begin callonce: read('classpath:InspireTest/def/getcswbriefrecords.feature')</div>
+                    <div class="preformatted" data-parent="14">12:21:59.046 &gt;&gt; lock acquired, begin callonce: read('classpath:InspireTest/def/getcswbriefrecords.feature')</div>
                     <div class="step-row">
                         <div class="step-container" id="15">
                             <div class="step-ref passed">15</div>
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">Given path 'geonetwork/srv/dut/inspire'</div>
                         </div>
-                        <div class="time-cell passed">5</div>
+                        <div class="time-cell passed">10</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="16">
@@ -249,7 +235,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">And param version = '2.0.2'</div>
                         </div>
-                        <div class="time-cell passed">8</div>
+                        <div class="time-cell passed">2</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="18">
@@ -273,7 +259,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">And param typeNames = 'csw:Record'</div>
                         </div>
-                        <div class="time-cell passed">5</div>
+                        <div class="time-cell passed">2</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="21">
@@ -281,7 +267,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">And param elementsetname = "brief"</div>
                         </div>
-                        <div class="time-cell passed">4</div>
+                        <div class="time-cell passed">2</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="22">
@@ -289,7 +275,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">And param resultType = 'results'</div>
                         </div>
-                        <div class="time-cell passed">6</div>
+                        <div class="time-cell passed">2</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="23">
@@ -297,7 +283,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">And param startposition = 1</div>
                         </div>
-                        <div class="time-cell passed">5</div>
+                        <div class="time-cell passed">2</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="24">
@@ -305,7 +291,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">And param maxRecords = 30</div>
                         </div>
-                        <div class="time-cell passed">5</div>
+                        <div class="time-cell passed">2</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="25">
@@ -313,7 +299,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">When method get</div>
                         </div>
-                        <div class="time-cell passed">6115</div>
+                        <div class="time-cell passed">6173</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="26">
@@ -329,7 +315,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">* def briefarray = get response /GetRecordsResponse/SearchResults/BriefRecord[*]/identifier</div>
                         </div>
-                        <div class="time-cell passed">29</div>
+                        <div class="time-cell passed">24</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="28">
@@ -337,7 +323,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">* def list = karate.mapWithKey(briefarray ,'datasetIdentifierCode')</div>
                         </div>
-                        <div class="time-cell passed">15</div>
+                        <div class="time-cell passed">17</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="29">
@@ -345,7 +331,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">* def json = karate.map(list, function(x, i){ return {} })</div>
                         </div>
-                        <div class="time-cell passed">27</div>
+                        <div class="time-cell passed">19</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="30">
@@ -353,7 +339,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">* def tempdir = java.lang.System.getProperty('user.dir')</div>
                         </div>
-                        <div class="time-cell passed">1</div>
+                        <div class="time-cell passed">7</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="31">
@@ -379,7 +365,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
                         </div>
                         <div class="time-cell passed">2</div>
                     </div>
-                    <div class="preformatted" data-parent="33">12:17:54.662 [print] /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/ids.json</div>
+                    <div class="preformatted" data-parent="33">12:22:05.337 [print] /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/ids.json</div>
                     <div class="step-row">
                         <div class="step-container" id="34">
                             <div class="step-ref passed">34</div>
@@ -394,18 +380,16 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">* def db = new mystorage</div>
                         </div>
-                        <div class="time-cell passed">0</div>
+                        <div class="time-cell passed">1</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="36">
-                            <div class="step-ref failed">36</div>
+                            <div class="step-ref passed">36</div>
                             <div class="step-indent"> </div>
-                            <div class="step-cell failed">* eval db.writeln(karate.pretty(list),idfile)</div>
+                            <div class="step-cell passed">* eval db.writeln(karate.pretty(list),idfile)</div>
                         </div>
-                        <div class="time-cell failed">32</div>
+                        <div class="time-cell passed">36</div>
                     </div>
-                    <div class="preformatted" data-parent="36">getcswbriefrecords.feature:29 - evaluation (js) failed: db.writeln(karate.pretty(list),idfile), java.lang.RuntimeException: java.io.FileNotFoundException: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/ids.json (No such file or directory)
-stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:531)</div>
                 </div>
             </div>
                 

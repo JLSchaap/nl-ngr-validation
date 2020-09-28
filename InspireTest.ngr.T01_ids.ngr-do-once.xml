@@ -1,30 +1,11 @@
-<testsuite failures="2" name="InspireTest/ngr/T01_ids/ngr-do-once.feature" skipped="0" tests="2" time="6.529734">
-  <testcase classname="InspireTest.ngr.T01_ids.ngr-do-once" name="write header" time="0.111239">
-    <failure message="ngr-do-once.feature:5 - &#10;writedatasetcsvheader.template.feature:11 - evaluation (js) failed: db.writeln( '&quot;datasetIdentifierCode&quot;,&quot;title&quot;,&quot;dataIdentificationCitationAnchor&quot;,&quot;organisation&quot;,&quot;electronicMailAddress&quot;,&quot;metadataStandardVersion&quot;,', outputpath + 'datasets.csv'), java.lang.RuntimeException: java.io.FileNotFoundException: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/datasets.csv (No such file or directory)&#10;stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:531)">* def callheaderresult = callonce read('classpath:InspireTest/def/writedatasetcsvheader.template.feature') . failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: ngr-do-once.feature:5 - 
-writedatasetcsvheader.template.feature:11 - evaluation (js) failed: db.writeln( '"datasetIdentifierCode","title","dataIdentificationCitationAnchor","organisation","electronicMailAddress","metadataStandardVersion",', outputpath + 'datasets.csv'), java.lang.RuntimeException: java.io.FileNotFoundException: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/datasets.csv (No such file or directory)
-stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:531)
-	at ✽.* def callheaderresult = callonce read('classpath:InspireTest/def/writedatasetcsvheader.template.feature') (ngr-do-once.feature:5)</failure>
+<testsuite failures="0" name="InspireTest/ngr/T01_ids/ngr-do-once.feature" skipped="0" tests="2" time="6.577991">
+  <testcase classname="InspireTest.ngr.T01_ids.ngr-do-once" name="write header" time="0.122978">
+    <system-out>* def callheaderresult = callonce read('classpath:InspireTest/def/writedatasetcsvheader.template.feature') . passed</system-out>
   </testcase>
-  <testcase classname="InspireTest.ngr.T01_ids.ngr-do-once" name="get id's" time="6.418495">
-    <failure message="ngr-do-once.feature:10 - &#10;getcswbriefrecords.feature:29 - evaluation (js) failed: db.writeln(karate.pretty(list),idfile), java.lang.RuntimeException: java.io.FileNotFoundException: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/ids.json (No such file or directory)&#10;stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:531)">* def callheaderresult = callonce read('classpath:InspireTest/def/writedatasetcsvheader.template.feature') . failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: ngr-do-once.feature:5 - 
-writedatasetcsvheader.template.feature:11 - evaluation (js) failed: db.writeln( '"datasetIdentifierCode","title","dataIdentificationCitationAnchor","organisation","electronicMailAddress","metadataStandardVersion",', outputpath + 'datasets.csv'), java.lang.RuntimeException: java.io.FileNotFoundException: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/datasets.csv (No such file or directory)
-stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:531)
-	at ✽.* def callheaderresult = callonce read('classpath:InspireTest/def/writedatasetcsvheader.template.feature') (ngr-do-once.feature:5)
-
+  <testcase classname="InspireTest.ngr.T01_ids.ngr-do-once" name="get id's" time="6.455013">
+    <system-out>* def callheaderresult = callonce read('classpath:InspireTest/def/writedatasetcsvheader.template.feature') . passed
 * configure readTimeout = 240000 .......................................... passed
 * url 'http://nationaalgeoregister.nl/' ................................... passed
-* def callonesresult = callonce read('classpath:InspireTest/def/getcswbriefrecords.feature') . failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: ngr-do-once.feature:10 - 
-getcswbriefrecords.feature:29 - evaluation (js) failed: db.writeln(karate.pretty(list),idfile), java.lang.RuntimeException: java.io.FileNotFoundException: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/ids.json (No such file or directory)
-stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:531)
-	at ✽.* def callonesresult = callonce read('classpath:InspireTest/def/getcswbriefrecords.feature') (ngr-do-once.feature:10)</failure>
+* def callonesresult = callonce read('classpath:InspireTest/def/getcswbriefrecords.feature') . passed</system-out>
   </testcase>
 </testsuite>
