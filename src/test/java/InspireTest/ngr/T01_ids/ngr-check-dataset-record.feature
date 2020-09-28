@@ -9,7 +9,8 @@ Feature:  get details
     * def separator = java.lang.System.getProperty("file.separator")
     * def idfile = tempdir + separator + 'ids.json';
     * print idfile
-    
+    * def list =  karate.read( idfile)
+
 
 
   Scenario Outline: <datasetIdentifierCode>
@@ -36,7 +37,7 @@ Feature:  get details
     * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv')
 
     Examples:
-      | karate.read( idfile) |
+      | list |
 
 
 # csv def/datasetlist.csv has the following field:
