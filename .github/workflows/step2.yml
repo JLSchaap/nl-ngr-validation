@@ -3,14 +3,14 @@ name: NGR validatie
 on:
   # Trigger the workflow on push or pull request,
   # but only for the master branch
-  push:
-    branches:
-      - master
-  pull_request:
-    branches:
-      - master
-  #schedule:
-  #  - cron: "04 04 * * *"
+ # push:
+ #   branches:
+#      - master
+#  pull_request:
+#    branches:
+#      - master
+  schedule:
+    - cron: "30 05 * * *"
 
 jobs:
   build:
