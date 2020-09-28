@@ -75,7 +75,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>NLTEST</td>
-            <td>28 Sep 2020, 10:28</td>
+            <td>28 Sep 2020, 10:37</td>
     </tr>
   </tbody>
 </table>
@@ -129,18 +129,18 @@ $(document).ready(function() {
         <tr>
           <td class="tagname">@step1</td>
                     <td      class="passed"    >33</td>
-          <td      class="failed"    >1</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">34</td>
+          <td >0</td>
+          <td class="total">33</td>
 
-          <td  class="passed"    >2</td>
-          <td  class="failed"    >1</td>
+          <td  class="passed"    >3</td>
+          <td >0</td>
           <td class="total">3</td>
 
-          <td class="duration" data-value="4670997988">4.670</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="4941387262">4.941</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -183,9 +183,9 @@ $(document).ready(function() {
   <span class="lead-duration duration">0.000</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">&lt;datasetIdentifierCode&gt;</span>
   
@@ -196,15 +196,15 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -214,39 +214,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
-          <div class="step">
-        
-<div class="brief failed">
-  <span class="keyword indention">*</span>
-  <span class="name">dynamic expression evaluation failed: karate.read( idfile)</span>
-  
-  <span class="lead-duration duration">0.000</span>
-
-  </div>
-
-        
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
-          <a>com.intuit.karate.exception.KarateException: ngr-check-dataset-record.feature:15 - could not find or read file: /home/runner/work/nl-ngr-validation/nl-ngr-validation/ids.json</a>
-      </div>
-      <div id="msg-3" class="collapse collapsable-details  in ">
-        <pre>com.intuit.karate.exception.KarateException: ngr-check-dataset-record.feature:15 - could not find or read file: /home/runner/work/nl-ngr-validation/nl-ngr-validation/ids.json</pre>
-      </div>
-    </div>
-  </div>
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
       </div>
 </div>
 
@@ -268,10 +236,10 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">0.128</span>
+  <span class="lead-duration duration">0.105</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
     
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
@@ -284,13 +252,13 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-4" class="collapse collapsable-details ">
+  <div id="element-3" class="collapse collapsable-details ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-4">
     
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -302,14 +270,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-5" class="inner-level collapse collapsable-details ">
+  <div id="steps-4" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">*</span>
   <span class="name">def callheaderresult = callonce read('classpath:InspireTest/def/writedatasetcsvheader.template.feature')</span>
   
-  <span class="lead-duration duration">0.082</span>
+  <span class="lead-duration duration">0.062</span>
 
   </div>
 
@@ -320,11 +288,11 @@ $(document).ready(function() {
         
   <div class="inner-level">
     <div class="docstring indention">
-            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
           <a>Doc string</a>
       </div>
-      <div id="msg-6" class="collapse collapsable-details">
-        <pre>10:28:31.457 &lt;&lt; lock released, cached callonce: read('classpath:InspireTest/def/writedatasetcsvheader.template.feature')</pre>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>10:37:02.945 &lt;&lt; lock released, cached callonce: read('classpath:InspireTest/def/writedatasetcsvheader.template.feature')</pre>
       </div>
     </div>
   </div>
@@ -361,7 +329,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">def mystorage = Java.type('storage.DataStorage')</span>
   
-  <span class="lead-duration duration">0.029</span>
+  <span class="lead-duration duration">0.016</span>
 
   </div>
 
@@ -372,12 +340,12 @@ $(document).ready(function() {
         
   <div class="inner-level">
     <div class="docstring indention">
-            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
           <a>Doc string</a>
       </div>
-      <div id="msg-7" class="collapse collapsable-details">
-        <pre>10:28:31.108 karate.env system property was:  
-10:28:31.405 &gt;&gt; lock acquired, begin callonce: read('classpath:InspireTest/def/writedatasetcsvheader.template.feature')</pre>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>10:37:02.576 karate.env system property was:  
+10:37:02.895 &gt;&gt; lock acquired, begin callonce: read('classpath:InspireTest/def/writedatasetcsvheader.template.feature')</pre>
       </div>
     </div>
   </div>
@@ -414,7 +382,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">eval db.writeln( '&quot;datasetIdentifierCode&quot;,&quot;title&quot;,&quot;dataIdentificationCitationAnchor&quot;,&quot;organisation&quot;,&quot;electronicMailAddress&quot;,&quot;metadataStandardVersion&quot;,', 'target/surefire-reports/datasets.csv')</span>
   
-  <span class="lead-duration duration">0.007</span>
+  <span class="lead-duration duration">0.009</span>
 
   </div>
 
@@ -435,7 +403,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">eval db.writeln( '&quot;serviceIdentifierCode&quot;,&quot;title&quot;,&quot;dataIdentificationCitationAnchor&quot;,&quot;organisation&quot;,&quot;electronicMailAddress&quot;,&quot;metadataStandardVersion&quot;,', 'target/surefire-reports/services.csv')</span>
   
-  <span class="lead-duration duration">0.005</span>
+  <span class="lead-duration duration">0.013</span>
 
   </div>
 
@@ -471,10 +439,10 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">4.542</span>
+  <span class="lead-duration duration">4.836</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-8">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
     
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
@@ -487,13 +455,13 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-8" class="collapse collapsable-details ">
+  <div id="element-7" class="collapse collapsable-details ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-9">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
     
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -505,14 +473,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-9" class="inner-level collapse collapsable-details ">
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">*</span>
   <span class="name">configure readTimeout = 240000</span>
   
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.000</span>
 
   </div>
 
@@ -523,11 +491,11 @@ $(document).ready(function() {
         
   <div class="inner-level">
     <div class="docstring indention">
-            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
           <a>Doc string</a>
       </div>
-      <div id="msg-10" class="collapse collapsable-details">
-        <pre>10:28:31.092 karate.env system property was:</pre>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>10:37:02.583 karate.env system property was:</pre>
       </div>
     </div>
   </div>
@@ -543,7 +511,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">url 'http://nationaalgeoregister.nl/'</span>
   
-  <span class="lead-duration duration">0.033</span>
+  <span class="lead-duration duration">0.000</span>
 
   </div>
 
@@ -564,7 +532,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def callonesresult = callonce read('classpath:InspireTest/def/getcswbriefrecords.feature')</span>
   
-  <span class="lead-duration duration">2.281</span>
+  <span class="lead-duration duration">2.446</span>
 
   </div>
 
@@ -575,11 +543,11 @@ $(document).ready(function() {
         
   <div class="inner-level">
     <div class="docstring indention">
-            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
           <a>Doc string</a>
       </div>
-      <div id="msg-11" class="collapse collapsable-details">
-        <pre>10:28:33.693 &lt;&lt; lock released, cached callonce: read('classpath:InspireTest/def/getcswbriefrecords.feature')</pre>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>10:37:05.345 &lt;&lt; lock released, cached callonce: read('classpath:InspireTest/def/getcswbriefrecords.feature')</pre>
       </div>
     </div>
   </div>
@@ -627,11 +595,11 @@ $(document).ready(function() {
         
   <div class="inner-level">
     <div class="docstring indention">
-            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
           <a>Doc string</a>
       </div>
-      <div id="msg-12" class="collapse collapsable-details">
-        <pre>10:28:31.457 &gt;&gt; lock acquired, begin callonce: read('classpath:InspireTest/def/getcswbriefrecords.feature')</pre>
+      <div id="msg-11" class="collapse collapsable-details">
+        <pre>10:37:02.945 &gt;&gt; lock acquired, begin callonce: read('classpath:InspireTest/def/getcswbriefrecords.feature')</pre>
       </div>
     </div>
   </div>
@@ -646,69 +614,6 @@ $(document).ready(function() {
 <div class="brief passed">
   <span class="keyword indention">&gt; Given</span>
   <span class="name">path 'geonetwork/srv/dut/inspire'</span>
-  
-  <span class="lead-duration duration">0.005</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">&gt; And</span>
-  <span class="name">param service = 'CSW'</span>
-  
-  <span class="lead-duration duration">0.001</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">&gt; And</span>
-  <span class="name">param version = '2.0.2'</span>
-  
-  <span class="lead-duration duration">0.001</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">&gt; And</span>
-  <span class="name">param request = 'GetRecords'</span>
   
   <span class="lead-duration duration">0.002</span>
 
@@ -729,9 +634,72 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">&gt; And</span>
+  <span class="name">param service = 'CSW'</span>
+  
+  <span class="lead-duration duration">0.011</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">param version = '2.0.2'</span>
+  
+  <span class="lead-duration duration">0.004</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">param request = 'GetRecords'</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
   <span class="name">param propertyName = 'identifier'</span>
   
-  <span class="lead-duration duration">0.006</span>
+  <span class="lead-duration duration">0.001</span>
 
   </div>
 
@@ -752,7 +720,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; And</span>
   <span class="name">param typeNames = 'csw:Record'</span>
   
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.005</span>
 
   </div>
 
@@ -794,7 +762,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; And</span>
   <span class="name">param resultType = 'results'</span>
   
-  <span class="lead-duration duration">0.011</span>
+  <span class="lead-duration duration">0.001</span>
 
   </div>
 
@@ -836,7 +804,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; And</span>
   <span class="name">param maxRecords = 10</span>
   
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.006</span>
 
   </div>
 
@@ -857,7 +825,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method get</span>
   
-  <span class="lead-duration duration">2.125</span>
+  <span class="lead-duration duration">2.246</span>
 
   </div>
 
@@ -899,7 +867,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">def briefarray = get response /GetRecordsResponse/SearchResults/BriefRecord[*]/identifier</span>
   
-  <span class="lead-duration duration">0.014</span>
+  <span class="lead-duration duration">0.020</span>
 
   </div>
 
@@ -920,7 +888,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">def list = karate.mapWithKey(briefarray ,'datasetIdentifierCode')</span>
   
-  <span class="lead-duration duration">0.008</span>
+  <span class="lead-duration duration">0.015</span>
 
   </div>
 
@@ -941,7 +909,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">def json = karate.map(list, function(x, i){ return {} })</span>
   
-  <span class="lead-duration duration">0.014</span>
+  <span class="lead-duration duration">0.017</span>
 
   </div>
 
@@ -1025,7 +993,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">print idfile</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.006</span>
 
   </div>
 
@@ -1036,11 +1004,11 @@ $(document).ready(function() {
         
   <div class="inner-level">
     <div class="docstring indention">
-            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
           <a>Doc string</a>
       </div>
-      <div id="msg-13" class="collapse collapsable-details">
-        <pre>10:28:33.672 [print] /home/runner/work/nl-ngr-validation/nl-ngr-validation/ids.json</pre>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>10:37:05.308 [print] /home/runner/work/nl-ngr-validation/nl-ngr-validation/ids.json</pre>
       </div>
     </div>
   </div>
@@ -1098,7 +1066,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">eval db.writeln(karate.pretty(list),idfile)</span>
   
-  <span class="lead-duration duration">0.018</span>
+  <span class="lead-duration duration">0.032</span>
 
   </div>
 

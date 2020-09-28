@@ -76,7 +76,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>NLTEST</td>
-            <td>28 Sep 2020, 10:28</td>
+            <td>28 Sep 2020, 10:37</td>
     </tr>
   </tbody>
 </table>
@@ -124,14 +124,14 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.093</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
     
 <div class="brief failed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">&lt;datasetIdentifierCode&gt;</span>
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -161,11 +161,178 @@ $(document).ready(function() {
   <div id="steps-2" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure readTimeout = 240000</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>10:37:02.580 karate.env system property was:</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'http://nationaalgeoregister.nl/'</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure connectTimeout = 5000</span>
+  
+  <span class="lead-duration duration">0.004</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def tempdir = java.lang.System.getProperty('user.dir')</span>
+  
+  <span class="lead-duration duration">0.030</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def separator = java.lang.System.getProperty(&quot;file.separator&quot;)</span>
+  
+  <span class="lead-duration duration">0.009</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def idfile = tempdir + separator + 'ids.json';</span>
+  
+  <span class="lead-duration duration">0.027</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print idfile</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>10:37:02.968 [print] /home/runner/work/nl-ngr-validation/nl-ngr-validation/ids.json</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
 <div class="brief failed">
   <span class="keyword indention">*</span>
-  <span class="name">dynamic expression evaluation failed: karate.read( idfile)</span>
+  <span class="name">def list =  karate.read( idfile)</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.015</span>
 
   </div>
 
@@ -173,11 +340,11 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
-          <a>com.intuit.karate.exception.KarateException: ngr-check-dataset-record.feature:15 - could not find or read file: /home/runner/work/nl-ngr-validation/nl-ngr-validation/ids.json</a>
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-5">
+          <a>com.intuit.karate.exception.KarateException: -unknown-:12 - could not find or read file: /home/runner/work/nl-ngr-validation/nl-ngr-validation/ids.json</a>
       </div>
-      <div id="msg-3" class="collapse collapsable-details  in ">
-        <pre>com.intuit.karate.exception.KarateException: ngr-check-dataset-record.feature:15 - could not find or read file: /home/runner/work/nl-ngr-validation/nl-ngr-validation/ids.json</pre>
+      <div id="msg-5" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: -unknown-:12 - could not find or read file: /home/runner/work/nl-ngr-validation/nl-ngr-validation/ids.json</pre>
       </div>
     </div>
   </div>
