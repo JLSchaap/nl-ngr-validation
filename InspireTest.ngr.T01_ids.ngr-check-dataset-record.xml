@@ -1,16 +1,1507 @@
-<testsuite failures="1" name="InspireTest/ngr/T01_ids/ngr-check-dataset-record.feature" skipped="0" tests="1" time="0.093283">
-  <testcase classname="InspireTest.ngr.T01_ids.ngr-check-dataset-record" name="&lt;datasetIdentifierCode&gt;" time="0.093283">
-    <failure message="-unknown-:12 - could not find or read file: /home/runner/work/nl-ngr-validation/nl-ngr-validation/ids.json">* configure readTimeout = 240000 .......................................... passed
+<testsuite failures="0" name="InspireTest/ngr/T01_ids/ngr-check-dataset-record.feature" skipped="0" tests="10" time="8.937172">
+  <testcase classname="InspireTest.ngr.T01_ids.ngr-check-dataset-record" name="cbeaebc3-815a-48af-a978-0e16892865fc" time="0.995843">
+    <system-out>* configure readTimeout = 240000 .......................................... passed
 * url 'http://nationaalgeoregister.nl/' ................................... passed
 * configure connectTimeout = 5000 ......................................... passed
 * def tempdir = java.lang.System.getProperty('user.dir') .................. passed
 * def separator = java.lang.System.getProperty("file.separator") .......... passed
 * def idfile = tempdir + separator + 'ids.json'; .......................... passed
 * print idfile ............................................................ passed
-* def list =  karate.read( idfile) ........................................ failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: -unknown-:12 - could not find or read file: /home/runner/work/nl-ngr-validation/nl-ngr-validation/ids.json
-	at ✽.* def list =  karate.read( idfile) (-unknown-:12)</failure>
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'cbeaebc3-815a-48af-a978-0e16892865fc' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'cbeaebc3-815a-48af-a978-0e16892865fc' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"cbeaebc3-815a-48af-a978-0e16892865fc","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed</system-out>
+  </testcase>
+  <testcase classname="InspireTest.ngr.T01_ids.ngr-check-dataset-record" name="247a1d15-0a67-40ce-85be-1403c08f15a8" time="1.118465">
+    <system-out>* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'cbeaebc3-815a-48af-a978-0e16892865fc' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'cbeaebc3-815a-48af-a978-0e16892865fc' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"cbeaebc3-815a-48af-a978-0e16892865fc","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = '247a1d15-0a67-40ce-85be-1403c08f15a8' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '247a1d15-0a67-40ce-85be-1403c08f15a8' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"247a1d15-0a67-40ce-85be-1403c08f15a8","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed</system-out>
+  </testcase>
+  <testcase classname="InspireTest.ngr.T01_ids.ngr-check-dataset-record" name="62c0d0a5-5826-406d-a625-d84bc5fec800" time="1.287527">
+    <system-out>* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'cbeaebc3-815a-48af-a978-0e16892865fc' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'cbeaebc3-815a-48af-a978-0e16892865fc' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"cbeaebc3-815a-48af-a978-0e16892865fc","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = '247a1d15-0a67-40ce-85be-1403c08f15a8' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '247a1d15-0a67-40ce-85be-1403c08f15a8' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"247a1d15-0a67-40ce-85be-1403c08f15a8","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = '62c0d0a5-5826-406d-a625-d84bc5fec800' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '62c0d0a5-5826-406d-a625-d84bc5fec800' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"62c0d0a5-5826-406d-a625-d84bc5fec800","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed</system-out>
+  </testcase>
+  <testcase classname="InspireTest.ngr.T01_ids.ngr-check-dataset-record" name="0bc2bcb8-558b-446b-b4e2-381b13d483a8" time="0.902727">
+    <system-out>* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'cbeaebc3-815a-48af-a978-0e16892865fc' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'cbeaebc3-815a-48af-a978-0e16892865fc' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"cbeaebc3-815a-48af-a978-0e16892865fc","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = '247a1d15-0a67-40ce-85be-1403c08f15a8' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '247a1d15-0a67-40ce-85be-1403c08f15a8' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"247a1d15-0a67-40ce-85be-1403c08f15a8","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = '62c0d0a5-5826-406d-a625-d84bc5fec800' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '62c0d0a5-5826-406d-a625-d84bc5fec800' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"62c0d0a5-5826-406d-a625-d84bc5fec800","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = '0bc2bcb8-558b-446b-b4e2-381b13d483a8' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '0bc2bcb8-558b-446b-b4e2-381b13d483a8' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"0bc2bcb8-558b-446b-b4e2-381b13d483a8","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed</system-out>
+  </testcase>
+  <testcase classname="InspireTest.ngr.T01_ids.ngr-check-dataset-record" name="edf79e6a-d73d-4def-8d22-0f495cc76a73" time="0.755078">
+    <system-out>* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'cbeaebc3-815a-48af-a978-0e16892865fc' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'cbeaebc3-815a-48af-a978-0e16892865fc' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"cbeaebc3-815a-48af-a978-0e16892865fc","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = '247a1d15-0a67-40ce-85be-1403c08f15a8' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '247a1d15-0a67-40ce-85be-1403c08f15a8' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"247a1d15-0a67-40ce-85be-1403c08f15a8","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = '62c0d0a5-5826-406d-a625-d84bc5fec800' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '62c0d0a5-5826-406d-a625-d84bc5fec800' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"62c0d0a5-5826-406d-a625-d84bc5fec800","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = '0bc2bcb8-558b-446b-b4e2-381b13d483a8' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '0bc2bcb8-558b-446b-b4e2-381b13d483a8' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"0bc2bcb8-558b-446b-b4e2-381b13d483a8","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'edf79e6a-d73d-4def-8d22-0f495cc76a73' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'edf79e6a-d73d-4def-8d22-0f495cc76a73' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"edf79e6a-d73d-4def-8d22-0f495cc76a73","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed</system-out>
+  </testcase>
+  <testcase classname="InspireTest.ngr.T01_ids.ngr-check-dataset-record" name="d6b85d84-cdb9-4a6e-b799-cf8826e22a94" time="1.229227">
+    <system-out>* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'cbeaebc3-815a-48af-a978-0e16892865fc' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'cbeaebc3-815a-48af-a978-0e16892865fc' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"cbeaebc3-815a-48af-a978-0e16892865fc","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = '247a1d15-0a67-40ce-85be-1403c08f15a8' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '247a1d15-0a67-40ce-85be-1403c08f15a8' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"247a1d15-0a67-40ce-85be-1403c08f15a8","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = '62c0d0a5-5826-406d-a625-d84bc5fec800' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '62c0d0a5-5826-406d-a625-d84bc5fec800' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"62c0d0a5-5826-406d-a625-d84bc5fec800","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = '0bc2bcb8-558b-446b-b4e2-381b13d483a8' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '0bc2bcb8-558b-446b-b4e2-381b13d483a8' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"0bc2bcb8-558b-446b-b4e2-381b13d483a8","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'edf79e6a-d73d-4def-8d22-0f495cc76a73' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'edf79e6a-d73d-4def-8d22-0f495cc76a73' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"edf79e6a-d73d-4def-8d22-0f495cc76a73","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'd6b85d84-cdb9-4a6e-b799-cf8826e22a94' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'd6b85d84-cdb9-4a6e-b799-cf8826e22a94' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"d6b85d84-cdb9-4a6e-b799-cf8826e22a94","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed</system-out>
+  </testcase>
+  <testcase classname="InspireTest.ngr.T01_ids.ngr-check-dataset-record" name="f2d2cd9d-7410-485a-95e0-c1b885243eaf" time="0.682334">
+    <system-out>* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'cbeaebc3-815a-48af-a978-0e16892865fc' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'cbeaebc3-815a-48af-a978-0e16892865fc' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"cbeaebc3-815a-48af-a978-0e16892865fc","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = '247a1d15-0a67-40ce-85be-1403c08f15a8' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '247a1d15-0a67-40ce-85be-1403c08f15a8' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"247a1d15-0a67-40ce-85be-1403c08f15a8","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = '62c0d0a5-5826-406d-a625-d84bc5fec800' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '62c0d0a5-5826-406d-a625-d84bc5fec800' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"62c0d0a5-5826-406d-a625-d84bc5fec800","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = '0bc2bcb8-558b-446b-b4e2-381b13d483a8' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '0bc2bcb8-558b-446b-b4e2-381b13d483a8' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"0bc2bcb8-558b-446b-b4e2-381b13d483a8","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'edf79e6a-d73d-4def-8d22-0f495cc76a73' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'edf79e6a-d73d-4def-8d22-0f495cc76a73' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"edf79e6a-d73d-4def-8d22-0f495cc76a73","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'd6b85d84-cdb9-4a6e-b799-cf8826e22a94' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'd6b85d84-cdb9-4a6e-b799-cf8826e22a94' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"d6b85d84-cdb9-4a6e-b799-cf8826e22a94","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'f2d2cd9d-7410-485a-95e0-c1b885243eaf' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'f2d2cd9d-7410-485a-95e0-c1b885243eaf' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"f2d2cd9d-7410-485a-95e0-c1b885243eaf","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed</system-out>
+  </testcase>
+  <testcase classname="InspireTest.ngr.T01_ids.ngr-check-dataset-record" name="86cb5bcc-a199-43e2-9e03-2d0fe8bdfa3f" time="0.655982">
+    <system-out>* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'cbeaebc3-815a-48af-a978-0e16892865fc' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'cbeaebc3-815a-48af-a978-0e16892865fc' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"cbeaebc3-815a-48af-a978-0e16892865fc","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = '247a1d15-0a67-40ce-85be-1403c08f15a8' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '247a1d15-0a67-40ce-85be-1403c08f15a8' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"247a1d15-0a67-40ce-85be-1403c08f15a8","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = '62c0d0a5-5826-406d-a625-d84bc5fec800' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '62c0d0a5-5826-406d-a625-d84bc5fec800' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"62c0d0a5-5826-406d-a625-d84bc5fec800","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = '0bc2bcb8-558b-446b-b4e2-381b13d483a8' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '0bc2bcb8-558b-446b-b4e2-381b13d483a8' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"0bc2bcb8-558b-446b-b4e2-381b13d483a8","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'edf79e6a-d73d-4def-8d22-0f495cc76a73' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'edf79e6a-d73d-4def-8d22-0f495cc76a73' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"edf79e6a-d73d-4def-8d22-0f495cc76a73","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'd6b85d84-cdb9-4a6e-b799-cf8826e22a94' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'd6b85d84-cdb9-4a6e-b799-cf8826e22a94' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"d6b85d84-cdb9-4a6e-b799-cf8826e22a94","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'f2d2cd9d-7410-485a-95e0-c1b885243eaf' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'f2d2cd9d-7410-485a-95e0-c1b885243eaf' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"f2d2cd9d-7410-485a-95e0-c1b885243eaf","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = '86cb5bcc-a199-43e2-9e03-2d0fe8bdfa3f' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '86cb5bcc-a199-43e2-9e03-2d0fe8bdfa3f' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"86cb5bcc-a199-43e2-9e03-2d0fe8bdfa3f","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed</system-out>
+  </testcase>
+  <testcase classname="InspireTest.ngr.T01_ids.ngr-check-dataset-record" name="cea38797-ea4b-4969-b979-8d25eb543a6c" time="0.615842">
+    <system-out>* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'cbeaebc3-815a-48af-a978-0e16892865fc' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'cbeaebc3-815a-48af-a978-0e16892865fc' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"cbeaebc3-815a-48af-a978-0e16892865fc","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = '247a1d15-0a67-40ce-85be-1403c08f15a8' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '247a1d15-0a67-40ce-85be-1403c08f15a8' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"247a1d15-0a67-40ce-85be-1403c08f15a8","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = '62c0d0a5-5826-406d-a625-d84bc5fec800' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '62c0d0a5-5826-406d-a625-d84bc5fec800' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"62c0d0a5-5826-406d-a625-d84bc5fec800","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = '0bc2bcb8-558b-446b-b4e2-381b13d483a8' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '0bc2bcb8-558b-446b-b4e2-381b13d483a8' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"0bc2bcb8-558b-446b-b4e2-381b13d483a8","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'edf79e6a-d73d-4def-8d22-0f495cc76a73' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'edf79e6a-d73d-4def-8d22-0f495cc76a73' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"edf79e6a-d73d-4def-8d22-0f495cc76a73","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'd6b85d84-cdb9-4a6e-b799-cf8826e22a94' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'd6b85d84-cdb9-4a6e-b799-cf8826e22a94' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"d6b85d84-cdb9-4a6e-b799-cf8826e22a94","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'f2d2cd9d-7410-485a-95e0-c1b885243eaf' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'f2d2cd9d-7410-485a-95e0-c1b885243eaf' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"f2d2cd9d-7410-485a-95e0-c1b885243eaf","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = '86cb5bcc-a199-43e2-9e03-2d0fe8bdfa3f' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '86cb5bcc-a199-43e2-9e03-2d0fe8bdfa3f' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"86cb5bcc-a199-43e2-9e03-2d0fe8bdfa3f","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'cea38797-ea4b-4969-b979-8d25eb543a6c' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'cea38797-ea4b-4969-b979-8d25eb543a6c' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"cea38797-ea4b-4969-b979-8d25eb543a6c","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed</system-out>
+  </testcase>
+  <testcase classname="InspireTest.ngr.T01_ids.ngr-check-dataset-record" name="af4841b5-ce83-4edb-af41-429a21140316" time="0.694146">
+    <system-out>* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'cbeaebc3-815a-48af-a978-0e16892865fc' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'cbeaebc3-815a-48af-a978-0e16892865fc' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"cbeaebc3-815a-48af-a978-0e16892865fc","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = '247a1d15-0a67-40ce-85be-1403c08f15a8' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '247a1d15-0a67-40ce-85be-1403c08f15a8' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"247a1d15-0a67-40ce-85be-1403c08f15a8","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = '62c0d0a5-5826-406d-a625-d84bc5fec800' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '62c0d0a5-5826-406d-a625-d84bc5fec800' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"62c0d0a5-5826-406d-a625-d84bc5fec800","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = '0bc2bcb8-558b-446b-b4e2-381b13d483a8' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '0bc2bcb8-558b-446b-b4e2-381b13d483a8' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"0bc2bcb8-558b-446b-b4e2-381b13d483a8","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'edf79e6a-d73d-4def-8d22-0f495cc76a73' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'edf79e6a-d73d-4def-8d22-0f495cc76a73' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"edf79e6a-d73d-4def-8d22-0f495cc76a73","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'd6b85d84-cdb9-4a6e-b799-cf8826e22a94' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'd6b85d84-cdb9-4a6e-b799-cf8826e22a94' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"d6b85d84-cdb9-4a6e-b799-cf8826e22a94","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'f2d2cd9d-7410-485a-95e0-c1b885243eaf' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'f2d2cd9d-7410-485a-95e0-c1b885243eaf' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"f2d2cd9d-7410-485a-95e0-c1b885243eaf","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = '86cb5bcc-a199-43e2-9e03-2d0fe8bdfa3f' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '86cb5bcc-a199-43e2-9e03-2d0fe8bdfa3f' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"86cb5bcc-a199-43e2-9e03-2d0fe8bdfa3f","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'cea38797-ea4b-4969-b979-8d25eb543a6c' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'cea38797-ea4b-4969-b979-8d25eb543a6c' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"cea38797-ea4b-4969-b979-8d25eb543a6c","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed
+* configure readTimeout = 240000 .......................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure connectTimeout = 5000 ......................................... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = tempdir + separator + 'ids.json'; .......................... passed
+* print idfile ............................................................ passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'af4841b5-ce83-4edb-af41-429a21140316' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'af4841b5-ce83-4edb-af41-429a21140316' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"af4841b5-ce83-4edb-af41-429a21140316","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv') . passed</system-out>
   </testcase>
 </testsuite>

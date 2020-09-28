@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="InspireTest.TestAll" time="5.146" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="InspireTest.TestAll" time="5.044" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="13"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="java.vm.specification.version" value="13"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/opt/hostedtoolcache/jdk/13.0.4/x64/lib"/>
-    <property name="sun.java.command" value="/home/runner/work/nl-ngr-validation/nl-ngr-validation/target/surefire/surefirebooter9564494447203085422.jar /home/runner/work/nl-ngr-validation/nl-ngr-validation/target/surefire 2020-09-28T10-36-59_417-jvmRun1 surefire16452773977605094848tmp surefire_015739506074475933464tmp"/>
+    <property name="sun.java.command" value="/home/runner/work/nl-ngr-validation/nl-ngr-validation/target/surefire/surefirebooter4248604463620596624.jar /home/runner/work/nl-ngr-validation/nl-ngr-validation/target/surefire 2020-09-28T10-41-24_627-jvmRun1 surefire778327569403002547tmp surefire_05477327983228106210tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/runner/work/nl-ngr-validation/nl-ngr-validation/target/test-classes:/home/runner/work/nl-ngr-validation/nl-ngr-validation/target/classes:/home/runner/.m2/repository/com/intuit/karate/karate-apache/0.9.6/karate-apache-0.9.6.jar:/home/runner/.m2/repository/com/intuit/karate/karate-core/0.9.6/karate-core-0.9.6.jar:/home/runner/.m2/repository/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar:/home/runner/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/home/runner/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/home/runner/.m2/repository/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5.jar:/home/runner/.m2/repository/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar:/home/runner/.m2/repository/org/yaml/snakeyaml/1.24/snakeyaml-1.24.jar:/home/runner/.m2/repository/de/siegmar/fastcsv/1.0.3/fastcsv-1.0.3.jar:/home/runner/.m2/repository/info/picocli/picocli/4.0.3/picocli-4.0.3.jar:/home/runner/.m2/repository/org/apache/httpcomponents/httpclient/4.5.12/httpclient-4.5.12.jar:/home/runner/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/runner/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/runner/.m2/repository/org/apache/httpcomponents/httpmime/4.5.12/httpmime-4.5.12.jar:/home/runner/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.jar:/home/runner/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/home/runner/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/home/runner/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/home/runner/.m2/repository/com/intuit/karate/karate-junit5/0.9.6/karate-junit5-0.9.6.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.2/junit-jupiter-api-5.6.2.jar:/home/runner/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/runner/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/runner/.m2/repository/org/junit/platform/junit-platform-commons/1.6.2/junit-platform-commons-1.6.2.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.2/junit-jupiter-engine-5.6.2.jar:/home/runner/.m2/repository/org/junit/platform/junit-platform-engine/1.6.2/junit-platform-engine-1.6.2.jar:/home/runner/.m2/repository/net/masterthought/cucumber-reporting/3.13.0/cucumber-reporting-3.13.0.jar:/home/runner/.m2/repository/org/apache/logging/log4j/log4j-api/2.8.2/log4j-api-2.8.2.jar:/home/runner/.m2/repository/org/apache/logging/log4j/log4j-core/2.8.2/log4j-core-2.8.2.jar:/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.8.6/jackson-databind-2.8.6.jar:/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.8.0/jackson-annotations-2.8.0.jar:/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.8.6/jackson-core-2.8.6.jar:/home/runner/.m2/repository/org/apache/velocity/velocity/1.7/velocity-1.7.jar:/home/runner/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/home/runner/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar:/home/runner/.m2/repository/velocity-tools/velocity-tools/1.4/velocity-tools-1.4.jar:/home/runner/.m2/repository/joda-time/joda-time/2.9.9/joda-time-2.9.9.jar:/home/runner/.m2/repository/org/apache/commons/commons-lang3/3.6/commons-lang3-3.6.jar:/home/runner/.m2/repository/commons-io/commons-io/2.5/commons-io-2.5.jar:/home/runner/.m2/repository/net/lingala/zip4j/zip4j/1.3.2/zip4j-1.3.2.jar:/home/runner/.m2/repository/org/codehaus/plexus/plexus-utils/3.0.24/plexus-utils-3.0.24.jar:/home/runner/.m2/repository/org/jsoup/jsoup/1.10.3/jsoup-1.10.3.jar:/home/runner/.m2/repository/com/googlecode/owasp-java-html-sanitizer/owasp-java-html-sanitizer/20170515.1/owasp-java-html-sanitizer-20170515.1.jar:/home/runner/.m2/repository/com/google/guava/guava/20.0/guava-20.0.jar:/home/runner/.m2/repository/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar:/home/runner/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/home/runner/.m2/repository/commons-digester/commons-digester/1.8/commons-digester-1.8.jar:/home/runner/.m2/repository/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar:/home/runner/.m2/repository/commons-beanutils/commons-beanutils-core/1.8.0/commons-beanutils-core-1.8.0.jar:/home/runner/.m2/repository/org/apache/maven/plugins/maven-surefire-plugin/3.0.0-M4/maven-surefire-plugin-3.0.0-M4.jar:/home/runner/.m2/repository/org/apache/maven/surefire/maven-surefire-common/3.0.0-M4/maven-surefire-common-3.0.0-M4.jar:/home/runner/.m2/repository/org/apache/maven/surefire/surefire-api/3.0.0-M4/surefire-api-3.0.0-M4.jar:/home/runner/.m2/repository/org/apache/maven/surefire/surefire-logger-api/3.0.0-M4/surefire-logger-api-3.0.0-M4.jar:/home/runner/.m2/repository/org/apache/maven/surefire/surefire-extensions-api/3.0.0-M4/surefire-extensions-api-3.0.0-M4.jar:/home/runner/.m2/repository/org/apache/maven/surefire/surefire-booter/3.0.0-M4/surefire-booter-3.0.0-M4.jar:/home/runner/.m2/repository/org/apache/maven/maven-toolchain/3.0-alpha-2/maven-toolchain-3.0-alpha-2.jar:/home/runner/.m2/repository/org/apache/maven/shared/maven-artifact-transfer/0.11.0/maven-artifact-transfer-0.11.0.jar:/home/runner/.m2/repository/org/apache/maven/shared/maven-common-artifact-filters/3.0.1/maven-common-artifact-filters-3.0.1.jar:/home/runner/.m2/repository/org/apache/maven/maven-model/3.0/maven-model-3.0.jar:/home/runner/.m2/repository/org/apache/maven/maven-plugin-api/3.0/maven-plugin-api-3.0.jar:/home/runner/.m2/repository/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-plexus-1.4.2.jar:/home/runner/.m2/repository/org/codehaus/plexus/plexus-classworlds/2.2.3/plexus-classworlds-2.2.3.jar:/home/runner/.m2/repository/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.jar:/home/runner/.m2/repository/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7-noaop.jar:/home/runner/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.1.0/maven-shared-utils-3.1.0.jar:/home/runner/.m2/repository/org/codehaus/plexus/plexus-java/1.0.3/plexus-java-1.0.3.jar:/home/runner/.m2/repository/org/ow2/asm/asm/7.0/asm-7.0.jar:/home/runner/.m2/repository/com/thoughtworks/qdox/qdox/2.0-M9/qdox-2.0-M9.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter/5.6.2/junit-jupiter-5.6.2.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.6.2/junit-jupiter-params-5.6.2.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -29,7 +29,7 @@
     <property name="jdk.vendor.version" value="Zulu13.33+25-CA"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="karate.options" value="--tags @step1"/>
-    <property name="surefire.real.class.path" value="/home/runner/work/nl-ngr-validation/nl-ngr-validation/target/surefire/surefirebooter9564494447203085422.jar"/>
+    <property name="surefire.real.class.path" value="/home/runner/work/nl-ngr-validation/nl-ngr-validation/target/surefire/surefirebooter4248604463620596624.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="13.0.4+8-MTS"/>
     <property name="user.name" value="runner"/>
@@ -53,53 +53,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="57.0"/>
   </properties>
-  <testcase name="testParallel" classname="InspireTest.TestAll" time="5.119">
-    <failure type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
-failed features:
-InspireTest.ngr.T01_ids.ngr-check-dataset-record: [1:16] -unknown-:12 - could not find or read file: /home/runner/work/nl-ngr-validation/nl-ngr-validation/ids.json
- ==> expected: <0> but was: <1>
-	at InspireTest.TestAll.testParallel(InspireTest.java:27)
-]]></failure>
-    <system-out><![CDATA[10:37:01.658 [main] INFO  com.intuit.karate.RunnerOptions - found system property 'karate.options': --tags @step1
-10:37:02.294 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
-10:37:02.568 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - karate.env system property was:  
-10:37:02.578 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was:  
-10:37:02.580 [ForkJoinPool-1-worker-5] INFO  com.intuit.karate - karate.env system property was:  
-10:37:02.888 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:InspireTest/def/writedatasetcsvheader.template.feature')
-10:37:02.945 [ForkJoinPool-1-worker-3] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:InspireTest/def/writedatasetcsvheader.template.feature')
-10:37:02.945 [ForkJoinPool-1-worker-5] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:InspireTest/def/getcswbriefrecords.feature')
-10:37:02.967 [pool-1-thread-4] INFO  com.intuit.karate - [print] /home/runner/work/nl-ngr-validation/nl-ngr-validation/ids.json
-10:37:03.127 [pool-1-thread-4] INFO  com.intuit.karate.Runner - <<fail>> feature 4 of 13: classpath:InspireTest/ngr/T01_ids/ngr-check-dataset-record.feature
----------------------------------------------------------
-feature: classpath:InspireTest/ngr/T01_ids/ngr-check-dataset-record.feature
-report: target/surefire-reports/InspireTest.ngr.T01_ids.ngr-check-dataset-record.json
-scenarios:  1 | passed:  0 | failed:  1 | time: 0.0933
----------------------------------------------------------
-10:37:05.301 [ForkJoinPool-1-worker-5] INFO  com.intuit.karate - [print] /home/runner/work/nl-ngr-validation/nl-ngr-validation/ids.json
-10:37:05.344 [ForkJoinPool-1-worker-5] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:InspireTest/def/getcswbriefrecords.feature')
-10:37:05.349 [pool-1-thread-5] INFO  com.intuit.karate.Runner - <<pass>> feature 5 of 13: classpath:InspireTest/ngr/T01_ids/ngr-do-once.feature
----------------------------------------------------------
-feature: classpath:InspireTest/ngr/T01_ids/ngr-do-once.feature
-report: target/surefire-reports/InspireTest.ngr.T01_ids.ngr-do-once.json
-scenarios:  2 | passed:  2 | failed:  0 | time: 2.5099
----------------------------------------------------------
-
-HTML report: (paste into browser to view) | Karate version: 0.9.6
-file:/home/runner/work/nl-ngr-validation/nl-ngr-validation/target/surefire-reports/karate-summary.html
-===================================================================
-
-Karate version: 0.9.6
-======================================================
-elapsed:   3.70 | threads:    6 | thread time: 2.60 
-features:     2 | ignored:   11 | efficiency: 0.12
-scenarios:    3 | passed:     2 | failed: 1
-======================================================
-failed features:
-InspireTest.ngr.T01_ids.ngr-check-dataset-record: [1:16] -unknown-:12 - could not find or read file: /home/runner/work/nl-ngr-validation/nl-ngr-validation/ids.json
-
-]]></system-out>
-    <system-err><![CDATA[Warning: Nashorn engine is planned to be removed from a future JDK release
-ERROR StatusLogger No log4j2 configuration file found. Using default configuration: logging only errors to the console. Set system property 'org.apache.logging.log4j.simplelog.StatusLogger.level' to TRACE to show Log4j2 internal initialization logging.
-]]></system-err>
-  </testcase>
+  <testcase name="testParallel" classname="InspireTest.TestAll" time="5.014"/>
 </testsuite>

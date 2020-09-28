@@ -1,1 +1,1 @@
-{"features":2,"ignored":11,"efficiency":0.11716712638401296,"failures":{"InspireTest.ngr.T01_ids.ngr-check-dataset-record":"[1:16] -unknown-:12 - could not find or read file: \/home\/runner\/work\/nl-ngr-validation\/nl-ngr-validation\/ids.json"},"totalTime":2603.2192139999997,"threads":6,"scenarios":3,"failed":1,"passed":2,"version":"0.9.6","elapsedTime":3703.0}
+{"features":1,"ignored":12,"efficiency":0.4350259009443146,"failures":null,"totalTime":8937.172109,"threads":6,"scenarios":10,"failed":0,"passed":10,"version":"0.9.6","elapsedTime":3424.0}
