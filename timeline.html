@@ -12,8 +12,8 @@
   <body>
     <div id="visualization"></div>
     <script>
-var groups = new vis.DataSet([{"id":1,"content":"pool-1-thread-4"},{"id":2,"content":"ForkJoinPool-1-worker-5"},{"id":3,"content":"ForkJoinPool-1-worker-3"},{"id":4,"content":"ForkJoinPool-1-worker-7"}]);
-var items = new vis.DataSet([{"id":1,"group":1,"content":"ngr-check-dataset-record[1:14]","start":1403,"end":1547,"title":"ngr-check-dataset-record[1:14] 00:00:01.403-00:00:01.547 <datasetIdentifierCode>"},{"id":2,"group":2,"content":"ngr-write-header[1:4]","start":1403,"end":1497,"title":"ngr-write-header[1:4] 00:00:01.403-00:00:01.497 Scenario name"},{"id":3,"group":3,"content":"ngr-do-once[1:4]","start":1412,"end":1499,"title":"ngr-do-once[1:4] 00:00:01.412-00:00:01.499 write header"},{"id":4,"group":4,"content":"ngr-do-once[2:7]","start":1403,"end":3850,"title":"ngr-do-once[2:7] 00:00:01.403-00:00:03.850 get id's"}]);
+var groups = new vis.DataSet([{"id":1,"content":"pool-1-thread-4"},{"id":2,"content":"ForkJoinPool-1-worker-3"},{"id":3,"content":"ForkJoinPool-1-worker-5"}]);
+var items = new vis.DataSet([{"id":1,"group":1,"content":"ngr-check-dataset-record[1:15]","start":1148,"end":1231,"title":"ngr-check-dataset-record[1:15] 00:00:01.148-00:00:01.231 <datasetIdentifierCode>"},{"id":2,"group":2,"content":"ngr-do-once[1:4]","start":1145,"end":1266,"title":"ngr-do-once[1:4] 00:00:01.145-00:00:01.266 write header"},{"id":3,"group":3,"content":"ngr-do-once[2:7]","start":1148,"end":3485,"title":"ngr-do-once[2:7] 00:00:01.148-00:00:03.485 get id's"}]);
 var container = document.getElementById('visualization');
 var timeline = new vis.Timeline(container);
 timeline.setOptions({ groupOrder: 'content' });

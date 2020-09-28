@@ -1,11 +1,11 @@
 -------------------------------------------------------------------------------
 Test set: InspireTest.TestAll
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 5.327 s <<< FAILURE! - in InspireTest.TestAll
-InspireTest.TestAll.testParallel  Time elapsed: 5.287 s  <<< FAILURE!
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.683 s <<< FAILURE! - in InspireTest.TestAll
+InspireTest.TestAll.testParallel  Time elapsed: 4.644 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 failed features:
-InspireTest.ngr.T01_ids.ngr-check-dataset-record: [1:14] ngr-check-dataset-record.feature:14 - could not find or read file: null:ids.json
+InspireTest.ngr.T01_ids.ngr-check-dataset-record: [1:15] ngr-check-dataset-record.feature:15 - could not find or read file: /home/runner/work/nl-ngr-validation/nl-ngr-validation/ids.json
  ==> expected: <0> but was: <1>
 	at InspireTest.TestAll.testParallel(InspireTest.java:27)
 

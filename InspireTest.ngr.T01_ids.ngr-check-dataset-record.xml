@@ -1,16 +1,16 @@
-<testsuite failures="1" name="InspireTest/ngr/T01_ids/ngr-check-dataset-record.feature" skipped="0" tests="1" time="0.084755">
-  <testcase classname="InspireTest.ngr.T01_ids.ngr-check-dataset-record" name="&lt;datasetIdentifierCode&gt;" time="0.084755">
-    <failure message="ngr-check-dataset-record.feature:14 - could not find or read file: null:ids.json">* configure readTimeout = 240000 .......................................... passed
+<testsuite failures="1" name="InspireTest/ngr/T01_ids/ngr-check-dataset-record.feature" skipped="0" tests="1" time="0.054445">
+  <testcase classname="InspireTest.ngr.T01_ids.ngr-check-dataset-record" name="&lt;datasetIdentifierCode&gt;" time="0.054445">
+    <failure message="ngr-check-dataset-record.feature:15 - could not find or read file: /home/runner/work/nl-ngr-validation/nl-ngr-validation/ids.json">* configure readTimeout = 240000 .......................................... passed
 * url 'http://nationaalgeoregister.nl/' ................................... passed
 * configure connectTimeout = 5000 ......................................... passed
-* def tempdir = java.lang.System.getenv('TEMP') ........................... passed
-* def separator = java.lang.System.getProperty("path.separator") .......... passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
 * def idfile = tempdir + separator + 'ids.json'; .......................... passed
 * print idfile ............................................................ passed
 * dynamic expression evaluation failed: karate.read( idfile) .............. failed
 
 Stack Trace:
-com.intuit.karate.exception.KarateException: ngr-check-dataset-record.feature:14 - could not find or read file: null:ids.json
-	at ✽.* dynamic expression evaluation failed: karate.read( idfile) (ngr-check-dataset-record.feature:14)</failure>
+com.intuit.karate.exception.KarateException: ngr-check-dataset-record.feature:15 - could not find or read file: /home/runner/work/nl-ngr-validation/nl-ngr-validation/ids.json
+	at ✽.* dynamic expression evaluation failed: karate.read( idfile) (ngr-check-dataset-record.feature:15)</failure>
   </testcase>
 </testsuite>

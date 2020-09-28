@@ -1,5 +1,0 @@
-<testsuite failures="0" name="InspireTest/ngr/T01_ids/ngr-write-header.feature" skipped="0" tests="1" time="0.073614">
-  <testcase classname="InspireTest.ngr.T01_ids.ngr-write-header" name="Scenario name" time="0.073614">
-    <system-out>* def callheaderresult = callonce read('classpath:InspireTest/def/writedatasetcsvheader.template.feature') . passed</system-out>
-  </testcase>
-</testsuite>

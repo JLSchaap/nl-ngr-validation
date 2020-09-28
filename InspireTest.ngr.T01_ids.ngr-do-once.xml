@@ -1,8 +1,8 @@
-<testsuite failures="0" name="InspireTest/ngr/T01_ids/ngr-do-once.feature" skipped="0" tests="2" time="2.498851">
-  <testcase classname="InspireTest.ngr.T01_ids.ngr-do-once" name="write header" time="0.079048">
+<testsuite failures="0" name="InspireTest/ngr/T01_ids/ngr-do-once.feature" skipped="0" tests="2" time="2.400847">
+  <testcase classname="InspireTest.ngr.T01_ids.ngr-do-once" name="write header" time="0.082569">
     <system-out>* def callheaderresult = callonce read('classpath:InspireTest/def/writedatasetcsvheader.template.feature') . passed</system-out>
   </testcase>
-  <testcase classname="InspireTest.ngr.T01_ids.ngr-do-once" name="get id's" time="2.419803">
+  <testcase classname="InspireTest.ngr.T01_ids.ngr-do-once" name="get id's" time="2.318278">
     <system-out>* def callheaderresult = callonce read('classpath:InspireTest/def/writedatasetcsvheader.template.feature') . passed
 * configure readTimeout = 240000 .......................................... passed
 * url 'http://nationaalgeoregister.nl/' ................................... passed
