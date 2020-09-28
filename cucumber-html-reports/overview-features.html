@@ -51,9 +51,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                33,
-                0,
-                0,
+                31,
+                4,
+                3,
                 0,
                 0
             ],
@@ -94,7 +94,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 33) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 38) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -107,8 +107,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                2,
-                0
+                0,
+                2
             ],
             backgroundColor: [
                 "#00B000",
@@ -157,8 +157,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   1,
-                   0
+                   0,
+                   1
                ],
                backgroundColor: [
                 "#00B000",
@@ -232,7 +232,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>NLTEST</td>
-            <td>28 Sep 2020, 11:08</td>
+            <td>28 Sep 2020, 12:17</td>
     </tr>
   </tbody>
 </table>
@@ -329,52 +329,52 @@ $(document).ready(function() {
           <tr>
         <td class="tagname"><a href="report-feature_InspireTest-ngr-T01_ids-ngr-do-once-feature.html">InspireTest/ngr/T01_ids/ngr-do-once.feature</a></td>
         
-        <td      class="passed"    >33</td>
+        <td      class="passed"    >31</td>
+        <td      class="failed"    >4</td>
+        <td     class="skipped"   >3</td>
         <td >0</td>
         <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">33</td>
+        <td class="total">38</td>
 
-        <td  class="passed"    >2</td>
         <td >0</td>
+        <td  class="failed"    >2</td>
         <td class="total">2</td>
 
-        <td class="duration" data-value="377786028171">6:17.786</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="13008060637">13.008</td>
+        <td class="failed">Failed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
       <td></td>
-            <td>33</td>
+            <td>31</td>
+      <td>4</td>
+      <td>3</td>
       <td>0</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>33</td>
+      <td>38</td>
 
-      <td>2</td>
       <td>0</td>
       <td>2</td>
+      <td>2</td>
 
-      <td class="duration">6:17.786</td>
+      <td class="duration">13.008</td>
       <td>1</td>
     </tr>
     <tr>
       <td></td>
-            <td>100.00%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
+            <td>81.58%</td>
+      <td>10.53%</td>
+      <td>7.89%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
+      <td>0.00%</td>
       <td>100.00%</td>
+      <td></td>
+      <td></td>
       <td>0.00%</td>
-      <td></td>
-      <td></td>
-      <td>100.00%</td>
     </tr>
   </tfoot>
 </table>

@@ -75,7 +75,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>NLTEST</td>
-            <td>28 Sep 2020, 11:08</td>
+            <td>28 Sep 2020, 12:17</td>
     </tr>
   </tbody>
 </table>
@@ -128,19 +128,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@step0</td>
-                    <td      class="passed"    >33</td>
+                    <td      class="passed"    >31</td>
+          <td      class="failed"    >4</td>
+          <td     class="skipped"   >3</td>
           <td >0</td>
           <td >0</td>
-          <td >0</td>
-          <td >0</td>
-          <td class="total">33</td>
+          <td class="total">38</td>
 
-          <td  class="passed"    >2</td>
           <td >0</td>
+          <td  class="failed"    >2</td>
           <td class="total">2</td>
 
-          <td class="duration" data-value="377786028171">6:17.786</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="13008060637">13.008</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -180,12 +180,12 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">2:5.956</span>
+  <span class="lead-duration duration">0.167</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">write header</span>
   
@@ -196,15 +196,15 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -214,29 +214,45 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details ">
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">*</span>
   <span class="name">def callheaderresult = callonce read('classpath:InspireTest/def/writedatasetcsvheader.template.feature')</span>
   
-  <span class="lead-duration duration">2:5.946</span>
+  <span class="lead-duration duration">0.103</span>
 
   </div>
 
         
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
+          <a>com.intuit.karate.exception.KarateException: ngr-do-once.feature:5 - </a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: ngr-do-once.feature:5 - 
+writedatasetcsvheader.template.feature:11 - evaluation (js) failed: db.writeln( '&quot;datasetIdentifierCode&quot;,&quot;title&quot;,&quot;dataIdentificationCitationAnchor&quot;,&quot;organisation&quot;,&quot;electronicMailAddress&quot;,&quot;metadataStandardVersion&quot;,', outputpath + 'datasets.csv'), java.lang.RuntimeException: java.io.FileNotFoundException: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/datasets.csv (No such file or directory)
+stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:531)</pre>
+      </div>
+    </div>
+  </div>
 
 
         
         
   <div class="inner-level">
     <div class="docstring indention">
-            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
           <a>Doc string</a>
       </div>
-      <div id="msg-3" class="collapse collapsable-details">
-        <pre>11:08:23.300 &lt;&lt; lock released, cached callonce: read('classpath:InspireTest/def/writedatasetcsvheader.template.feature')</pre>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>12:17:16.552 feature call failed: classpath:InspireTest/def/writedatasetcsvheader.template.feature
+arg: null
+writedatasetcsvheader.template.feature:11 - evaluation (js) failed: db.writeln( '&quot;datasetIdentifierCode&quot;,&quot;title&quot;,&quot;dataIdentificationCitationAnchor&quot;,&quot;organisation&quot;,&quot;electronicMailAddress&quot;,&quot;metadataStandardVersion&quot;,', outputpath + 'datasets.csv'), java.lang.RuntimeException: java.io.FileNotFoundException: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/datasets.csv (No such file or directory)
+stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:531)</pre>
       </div>
     </div>
   </div>
@@ -273,7 +289,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">def mystorage = Java.type('storage.DataStorage')</span>
   
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.013</span>
 
   </div>
 
@@ -284,12 +300,12 @@ $(document).ready(function() {
         
   <div class="inner-level">
     <div class="docstring indention">
-            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
           <a>Doc string</a>
       </div>
-      <div id="msg-4" class="collapse collapsable-details">
-        <pre>11:06:17.122 karate.env system property was:  
-11:08:23.276 &gt;&gt; lock acquired, begin callonce: read('classpath:InspireTest/def/writedatasetcsvheader.template.feature')</pre>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>12:17:16.161 karate.env system property was:  
+12:17:16.473 &gt;&gt; lock acquired, begin callonce: read('classpath:InspireTest/def/writedatasetcsvheader.template.feature')</pre>
       </div>
     </div>
   </div>
@@ -304,6 +320,123 @@ $(document).ready(function() {
 <div class="brief passed">
   <span class="keyword indention">&gt; *</span>
   <span class="name">def db = new mystorage</span>
+  
+  <span class="lead-duration duration">0.003</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def tempdir = java.lang.System.getProperty('user.dir')</span>
+  
+  <span class="lead-duration duration">0.015</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def separator = java.lang.System.getProperty(&quot;file.separator&quot;)</span>
+  
+  <span class="lead-duration duration">0.005</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def outputpath = tempdir + separator + 'output' + separator</span>
+  
+  <span class="lead-duration duration">0.015</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">eval db.writeln( '&quot;datasetIdentifierCode&quot;,&quot;title&quot;,&quot;dataIdentificationCitationAnchor&quot;,&quot;organisation&quot;,&quot;electronicMailAddress&quot;,&quot;metadataStandardVersion&quot;,', outputpath + 'datasets.csv')</span>
+  
+  <span class="lead-duration duration">0.010</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
+          <a>com.intuit.karate.exception.KarateException: writedatasetcsvheader.template.feature:11 - evaluation (js) failed: db.writeln( '&quot;datasetIdentifierCode&quot;,&quot;title&quot;,&quot;dataIdentificationCitationAnchor&quot;,&quot;organisation&quot;,&quot;electronicMailAddress&quot;,&quot;metadataStandardVersion&quot;,', outputpath + 'datasets.csv'), java.lang.RuntimeException: java.io.FileNotFoundException: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/datasets.csv (No such file or directory)</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: writedatasetcsvheader.template.feature:11 - evaluation (js) failed: db.writeln( '&quot;datasetIdentifierCode&quot;,&quot;title&quot;,&quot;dataIdentificationCitationAnchor&quot;,&quot;organisation&quot;,&quot;electronicMailAddress&quot;,&quot;metadataStandardVersion&quot;,', outputpath + 'datasets.csv'), java.lang.RuntimeException: java.io.FileNotFoundException: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/datasets.csv (No such file or directory)
+stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:531)</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">eval db.writeln( '&quot;serviceIdentifierCode&quot;,&quot;title&quot;,&quot;dataIdentificationCitationAnchor&quot;,&quot;organisation&quot;,&quot;electronicMailAddress&quot;,&quot;metadataStandardVersion&quot;,', outputpath + 'services.csv')</span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -322,11 +455,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief skipped">
   <span class="keyword indention">&gt; *</span>
-  <span class="name">eval db.writeln( '&quot;datasetIdentifierCode&quot;,&quot;title&quot;,&quot;dataIdentificationCitationAnchor&quot;,&quot;organisation&quot;,&quot;electronicMailAddress&quot;,&quot;metadataStandardVersion&quot;,', 'target/surefire-reports/datasets.csv')</span>
+  <span class="name">eval db.writeln( '&quot;serviceIdentifierCode&quot;,&quot;title&quot;,&quot;dataIdentificationCitationAnchor&quot;,&quot;organisation&quot;,&quot;electronicMailAddress&quot;,&quot;metadataStandardVersion&quot;,', outputpath + 'seriess.csv')</span>
   
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.000</span>
 
   </div>
 
@@ -343,11 +476,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief skipped">
   <span class="keyword indention">&gt; *</span>
-  <span class="name">eval db.writeln( '&quot;serviceIdentifierCode&quot;,&quot;title&quot;,&quot;dataIdentificationCitationAnchor&quot;,&quot;organisation&quot;,&quot;electronicMailAddress&quot;,&quot;metadataStandardVersion&quot;,', 'target/surefire-reports/services.csv')</span>
+  <span class="name">eval db.writeln( '&quot;serviceIdentifierCode&quot;,&quot;title&quot;,&quot;dataIdentificationCitationAnchor&quot;,&quot;organisation&quot;,&quot;electronicMailAddress&quot;,&quot;metadataStandardVersion&quot;,', outputpath + 'services-Beheer PDOK.csv')</span>
   
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.000</span>
 
   </div>
 
@@ -383,12 +516,12 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">4:11.829</span>
+  <span class="lead-duration duration">12.840</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-7">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">get id's</span>
   
@@ -399,15 +532,15 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-5" class="collapse collapsable-details ">
+  <div id="element-7" class="collapse collapsable-details  in ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-6">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-8">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -417,14 +550,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-6" class="inner-level collapse collapsable-details ">
+  <div id="steps-8" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">*</span>
   <span class="name">configure readTimeout = 240000</span>
   
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.007</span>
 
   </div>
 
@@ -435,11 +568,11 @@ $(document).ready(function() {
         
   <div class="inner-level">
     <div class="docstring indention">
-            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
           <a>Doc string</a>
       </div>
-      <div id="msg-7" class="collapse collapsable-details">
-        <pre>11:06:17.122 karate.env system property was:</pre>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>12:17:16.161 karate.env system property was:</pre>
       </div>
     </div>
   </div>
@@ -455,7 +588,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">url 'http://nationaalgeoregister.nl/'</span>
   
-  <span class="lead-duration duration">0.006</span>
+  <span class="lead-duration duration">0.002</span>
 
   </div>
 
@@ -472,26 +605,42 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">*</span>
   <span class="name">def callonesresult = callonce read('classpath:InspireTest/def/getcswbriefrecords.feature')</span>
   
-  <span class="lead-duration duration">2:5.930</span>
+  <span class="lead-duration duration">6.461</span>
 
   </div>
 
         
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-10">
+          <a>com.intuit.karate.exception.KarateException: ngr-do-once.feature:10 - </a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: ngr-do-once.feature:10 - 
+getcswbriefrecords.feature:29 - evaluation (js) failed: db.writeln(karate.pretty(list),idfile), java.lang.RuntimeException: java.io.FileNotFoundException: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/ids.json (No such file or directory)
+stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:531)</pre>
+      </div>
+    </div>
+  </div>
 
 
         
         
   <div class="inner-level">
     <div class="docstring indention">
-            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
           <a>Doc string</a>
       </div>
-      <div id="msg-8" class="collapse collapsable-details">
-        <pre>11:08:23.276 &lt;&lt; lock released, cached callonce: read('classpath:InspireTest/def/getcswbriefrecords.feature')</pre>
+      <div id="msg-11" class="collapse collapsable-details">
+        <pre>12:17:22.931 feature call failed: classpath:InspireTest/def/getcswbriefrecords.feature
+arg: null
+getcswbriefrecords.feature:29 - evaluation (js) failed: db.writeln(karate.pretty(list),idfile), java.lang.RuntimeException: java.io.FileNotFoundException: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/ids.json (No such file or directory)
+stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:531)</pre>
       </div>
     </div>
   </div>
@@ -539,11 +688,11 @@ $(document).ready(function() {
         
   <div class="inner-level">
     <div class="docstring indention">
-            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
           <a>Doc string</a>
       </div>
-      <div id="msg-9" class="collapse collapsable-details">
-        <pre>11:06:17.368 &gt;&gt; lock acquired, begin callonce: read('classpath:InspireTest/def/getcswbriefrecords.feature')</pre>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>12:17:16.552 &gt;&gt; lock acquired, begin callonce: read('classpath:InspireTest/def/getcswbriefrecords.feature')</pre>
       </div>
     </div>
   </div>
@@ -580,7 +729,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; And</span>
   <span class="name">param service = 'CSW'</span>
   
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.001</span>
 
   </div>
 
@@ -601,7 +750,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; And</span>
   <span class="name">param version = '2.0.2'</span>
   
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.005</span>
 
   </div>
 
@@ -622,7 +771,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; And</span>
   <span class="name">param request = 'GetRecords'</span>
   
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.001</span>
 
   </div>
 
@@ -643,7 +792,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; And</span>
   <span class="name">param propertyName = 'identifier'</span>
   
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.003</span>
 
   </div>
 
@@ -664,7 +813,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; And</span>
   <span class="name">param typeNames = 'csw:Record'</span>
   
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.003</span>
 
   </div>
 
@@ -685,7 +834,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; And</span>
   <span class="name">param elementsetname = &quot;brief&quot;</span>
   
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.003</span>
 
   </div>
 
@@ -706,7 +855,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; And</span>
   <span class="name">param resultType = 'results'</span>
   
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.006</span>
 
   </div>
 
@@ -746,7 +895,7 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">&gt; And</span>
-  <span class="name">param maxRecords = 1000</span>
+  <span class="name">param maxRecords = 30</span>
   
   <span class="lead-duration duration">0.001</span>
 
@@ -769,7 +918,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method get</span>
   
-  <span class="lead-duration duration">2:5.518</span>
+  <span class="lead-duration duration">6.233</span>
 
   </div>
 
@@ -811,7 +960,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">def briefarray = get response /GetRecordsResponse/SearchResults/BriefRecord[*]/identifier</span>
   
-  <span class="lead-duration duration">0.099</span>
+  <span class="lead-duration duration">0.026</span>
 
   </div>
 
@@ -832,7 +981,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">def list = karate.mapWithKey(briefarray ,'datasetIdentifierCode')</span>
   
-  <span class="lead-duration duration">0.018</span>
+  <span class="lead-duration duration">0.008</span>
 
   </div>
 
@@ -853,7 +1002,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">def json = karate.map(list, function(x, i){ return {} })</span>
   
-  <span class="lead-duration duration">0.054</span>
+  <span class="lead-duration duration">0.015</span>
 
   </div>
 
@@ -874,7 +1023,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">def tempdir = java.lang.System.getProperty('user.dir')</span>
   
-  <span class="lead-duration duration">0.024</span>
+  <span class="lead-duration duration">0.003</span>
 
   </div>
 
@@ -895,7 +1044,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">def separator = java.lang.System.getProperty(&quot;file.separator&quot;)</span>
   
-  <span class="lead-duration duration">0.032</span>
+  <span class="lead-duration duration">0.000</span>
 
   </div>
 
@@ -914,9 +1063,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">&gt; *</span>
-  <span class="name">def idfile = tempdir + separator + 'ids.json';</span>
+  <span class="name">def idfile = tempdir + separator + 'output' + separator + 'ids.json'</span>
   
-  <span class="lead-duration duration">0.019</span>
+  <span class="lead-duration duration">0.008</span>
 
   </div>
 
@@ -937,7 +1086,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">print idfile</span>
   
-  <span class="lead-duration duration">0.012</span>
+  <span class="lead-duration duration">0.004</span>
 
   </div>
 
@@ -948,11 +1097,11 @@ $(document).ready(function() {
         
   <div class="inner-level">
     <div class="docstring indention">
-            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
           <a>Doc string</a>
       </div>
-      <div id="msg-10" class="collapse collapsable-details">
-        <pre>11:08:23.166 [print] /home/runner/work/nl-ngr-validation/nl-ngr-validation/ids.json</pre>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>12:17:22.894 [print] /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/ids.json</pre>
       </div>
     </div>
   </div>
@@ -968,7 +1117,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">def mystorage = Java.type('storage.DataStorage')</span>
   
-  <span class="lead-duration duration">0.010</span>
+  <span class="lead-duration duration">0.000</span>
 
   </div>
 
@@ -989,7 +1138,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">def db = new mystorage</span>
   
-  <span class="lead-duration duration">0.014</span>
+  <span class="lead-duration duration">0.000</span>
 
   </div>
 
@@ -1006,15 +1155,27 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">&gt; *</span>
   <span class="name">eval db.writeln(karate.pretty(list),idfile)</span>
   
-  <span class="lead-duration duration">0.060</span>
+  <span class="lead-duration duration">0.033</span>
 
   </div>
 
         
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-14">
+          <a>com.intuit.karate.exception.KarateException: getcswbriefrecords.feature:29 - evaluation (js) failed: db.writeln(karate.pretty(list),idfile), java.lang.RuntimeException: java.io.FileNotFoundException: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/ids.json (No such file or directory)</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: getcswbriefrecords.feature:29 - evaluation (js) failed: db.writeln(karate.pretty(list),idfile), java.lang.RuntimeException: java.io.FileNotFoundException: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/ids.json (No such file or directory)
+stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:531)</pre>
+      </div>
+    </div>
+  </div>
 
 
         
