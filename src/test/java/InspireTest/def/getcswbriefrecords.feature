@@ -20,8 +20,8 @@ Feature:  getlist of ngr records
     * def briefarray = get response /GetRecordsResponse/SearchResults/BriefRecord[*]/identifier
     * def list = karate.mapWithKey(briefarray ,'datasetIdentifierCode')
     * def json = karate.map(list, function(x, i){ return {} })
-    * def tempdir = java.lang.System.getenv('TEMP')
-    * def separator = java.lang.System.getProperty("path.separator") 
+    * def tempdir = java.lang.System.getProperty('user.dir')
+    * def separator = java.lang.System.getProperty("file.separator") 
     * def idfile = tempdir + separator + 'ids.json';
     * print idfile
     * def mystorage = Java.type('storage.DataStorage')

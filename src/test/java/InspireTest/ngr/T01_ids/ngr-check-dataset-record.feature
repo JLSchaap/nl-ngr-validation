@@ -5,10 +5,11 @@ Feature:  get details
     * url 'http://nationaalgeoregister.nl/'
     # * def callonesresult = callonce read('classpath:InspireTest/def/getcswbriefrecords.feature')
     * configure connectTimeout = 5000
-    * def tempdir = java.lang.System.getenv('TEMP')
-    * def separator = java.lang.System.getProperty("path.separator") 
+    * def tempdir = java.lang.System.getProperty('user.dir')
+    * def separator = java.lang.System.getProperty("file.separator")
     * def idfile = tempdir + separator + 'ids.json';
     * print idfile
+    
 
 
   Scenario Outline: <datasetIdentifierCode>
