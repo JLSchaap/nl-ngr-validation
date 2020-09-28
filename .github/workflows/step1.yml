@@ -3,16 +3,7 @@ name: NGR validatie step 1
 on:
   workflow_dispatch:
     tags:
-      description: "Test scenario tags"
-
-  # Trigger the workflow on push or pull request,
-  # but only for the master branch
-  # push:
-  #   branches:
-  #     - master
-  # pull_request:
-  #   branches:
-  #     - master
+    description: "Test scenario tags"
   schedule:
     - cron: "04 04 * * *"
 
