@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+      
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+        <meta charset="utf-8">
+            
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+            
+        <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+            
+        <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+            
+        <link href="favicon.ico" rel="shortcut icon">
+            <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+        <title>InspireTest.ngr.T01_ids.ngr-do-once</title>
+          
+    </head>
+      
+    <body>
+            
+        <div id="root-container">
+                  
+            <div id="leftnav">
+                        
+                <div class="nav-logo">
+                              <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+                    <div class="nav-count">
+                                    
+                        <div class="bg-success" id="nav-pass">2</div>
+                                    
+                        <div class="bg-danger" id="nav-fail">0</div>
+                                  
+                    </div>
+                            
+                </div>
+                        
+                <div id="nav-type">Scenarios</div>
+                         
+        
+                <div id="nav-date">2020-09-28 12:56:11 PM</div>
+                        
+      
+                <div class="nav-container">
+                    <div class="nav-item passed">
+                        <a href="#[1:4]">[1:4] write header </a>
+                    </div>
+                    <div class="nav-item passed">
+                        <a href="#[2:7]">[2:7] get id's </a>
+                    </div>
+                </div>
+            </div>
+                  
+            <div id="content">
+                      
+                <div class="page-heading alert alert-primary">
+                    <a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">InspireTest/ngr/T01_ids/ngr-do-once.feature</span><span class="feature-description">run onces  automatically</span>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[1:4]">
+                        <div class="heading-container">
+                            <div class="scenario-tags">
+                                <a class="badge badge-primary" href="karate-tags.html">step0</a>
+                            </div>
+                            <span class="scenario-keyword">Scenario: [1:4]</span><span class="scenario-name">write header </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 102</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="1">
+                            <div class="step-ref passed">1</div>
+                            <div class="step-cell passed">* def callheaderresult = callonce read('classpath:InspireTest/def/writedatasetcsvheader.template.feature')</div>
+                        </div>
+                        <div class="time-cell passed">102</div>
+                    </div>
+                    <div class="preformatted" data-parent="1">12:56:05.424 &lt;&lt; lock released, cached callonce: read('classpath:InspireTest/def/writedatasetcsvheader.template.feature')</div>
+                    <div class="step-row">
+                        <div class="step-container" id="1.1">
+                            <div class="step-ref passed">&gt;&gt;</div>
+                            <div class="step-cell passed">InspireTest/def/writedatasetcsvheader.template.feature</div>
+                        </div>
+                        <div class="time-cell passed">66</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="2">
+                            <div class="step-ref passed">2</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def mystorage = Java.type('storage.DataStorage')</div>
+                        </div>
+                        <div class="time-cell passed">14</div>
+                    </div>
+                    <div class="preformatted" data-parent="2">12:56:05.018 karate.env system property was:  
+12:56:05.350 &gt;&gt; lock acquired, begin callonce: read('classpath:InspireTest/def/writedatasetcsvheader.template.feature')</div>
+                    <div class="step-row">
+                        <div class="step-container" id="3">
+                            <div class="step-ref passed">3</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def db = new mystorage</div>
+                        </div>
+                        <div class="time-cell passed">10</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="4">
+                            <div class="step-ref passed">4</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def tempdir = java.lang.System.getProperty('user.dir')</div>
+                        </div>
+                        <div class="time-cell passed">14</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="5">
+                            <div class="step-ref passed">5</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def separator = java.lang.System.getProperty("file.separator")</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="6">
+                            <div class="step-ref passed">6</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def outputpath = tempdir + separator + 'output' + separator</div>
+                        </div>
+                        <div class="time-cell passed">9</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="7">
+                            <div class="step-ref passed">7</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* eval db.writeln( '"datasetIdentifierCode","title","dataIdentificationCitationAnchor","organisation","electronicMailAddress","metadataStandardVersion",', outputpath + 'datasets.csv')</div>
+                        </div>
+                        <div class="time-cell passed">5</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="8">
+                            <div class="step-ref passed">8</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* eval db.writeln( '"serviceIdentifierCode","title","dataIdentificationCitationAnchor","organisation","electronicMailAddress","metadataStandardVersion",', outputpath + 'services.csv')</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="9">
+                            <div class="step-ref passed">9</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* eval db.writeln( '"serviceIdentifierCode","title","dataIdentificationCitationAnchor","organisation","electronicMailAddress","metadataStandardVersion",', outputpath + 'seriess.csv')</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="10">
+                            <div class="step-ref passed">10</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* eval db.writeln( '"serviceIdentifierCode","title","dataIdentificationCitationAnchor","organisation","electronicMailAddress","metadataStandardVersion",', outputpath + 'services-Beheer PDOK.csv')</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[2:7]">
+                        <div class="heading-container">
+                            <div class="scenario-tags">
+                                <a class="badge badge-primary" href="karate-tags.html">step0</a>
+                            </div>
+                            <span class="scenario-keyword">Scenario: [2:7]</span><span class="scenario-name">get id's </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 6393</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="11">
+                            <div class="step-ref passed">11</div>
+                            <div class="step-cell passed">* configure readTimeout = 240000</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                    <div class="preformatted" data-parent="11">12:56:05.023 karate.env system property was:</div>
+                    <div class="step-row">
+                        <div class="step-container" id="12">
+                            <div class="step-ref passed">12</div>
+                            <div class="step-cell passed">* url 'http://nationaalgeoregister.nl/'</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="13">
+                            <div class="step-ref passed">13</div>
+                            <div class="step-cell passed">* def callonesresult = callonce read('classpath:InspireTest/def/getcswbriefrecords.feature')</div>
+                        </div>
+                        <div class="time-cell passed">6386</div>
+                    </div>
+                    <div class="preformatted" data-parent="13">12:56:11.729 &lt;&lt; lock released, cached callonce: read('classpath:InspireTest/def/getcswbriefrecords.feature')</div>
+                    <div class="step-row">
+                        <div class="step-container" id="13.1">
+                            <div class="step-ref passed">&gt;&gt;</div>
+                            <div class="step-cell passed">InspireTest/def/getcswbriefrecords.feature</div>
+                        </div>
+                        <div class="time-cell passed">6292</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="14">
+                            <div class="step-ref passed">14</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* url 'http://nationaalgeoregister.nl/'</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="preformatted" data-parent="14">12:56:05.424 &gt;&gt; lock acquired, begin callonce: read('classpath:InspireTest/def/getcswbriefrecords.feature')</div>
+                    <div class="step-row">
+                        <div class="step-container" id="15">
+                            <div class="step-ref passed">15</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">Given path 'geonetwork/srv/dut/inspire'</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="16">
+                            <div class="step-ref passed">16</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And param service = 'CSW'</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="17">
+                            <div class="step-ref passed">17</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And param version = '2.0.2'</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="18">
+                            <div class="step-ref passed">18</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And param request = 'GetRecords'</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="19">
+                            <div class="step-ref passed">19</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And param propertyName = 'identifier'</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="20">
+                            <div class="step-ref passed">20</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And param typeNames = 'csw:Record'</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="21">
+                            <div class="step-ref passed">21</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And param elementsetname = "brief"</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="22">
+                            <div class="step-ref passed">22</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And param resultType = 'results'</div>
+                        </div>
+                        <div class="time-cell passed">6</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="23">
+                            <div class="step-ref passed">23</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And param startposition = 1</div>
+                        </div>
+                        <div class="time-cell passed">5</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="24">
+                            <div class="step-ref passed">24</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">And param maxRecords = 30</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="25">
+                            <div class="step-ref passed">25</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">When method get</div>
+                        </div>
+                        <div class="time-cell passed">6155</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="26">
+                            <div class="step-ref passed">26</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="27">
+                            <div class="step-ref passed">27</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def briefarray = get response /GetRecordsResponse/SearchResults/BriefRecord[*]/identifier</div>
+                        </div>
+                        <div class="time-cell passed">25</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="28">
+                            <div class="step-ref passed">28</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def list = karate.mapWithKey(briefarray ,'datasetIdentifierCode')</div>
+                        </div>
+                        <div class="time-cell passed">14</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="29">
+                            <div class="step-ref passed">29</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def json = karate.map(list, function(x, i){ return {} })</div>
+                        </div>
+                        <div class="time-cell passed">10</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="30">
+                            <div class="step-ref passed">30</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def tempdir = java.lang.System.getProperty('user.dir')</div>
+                        </div>
+                        <div class="time-cell passed">6</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="31">
+                            <div class="step-ref passed">31</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def separator = java.lang.System.getProperty("file.separator")</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="32">
+                            <div class="step-ref passed">32</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def idfile = tempdir + separator + 'output' + separator + 'ids.json'</div>
+                        </div>
+                        <div class="time-cell passed">8</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="33">
+                            <div class="step-ref passed">33</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* print idfile</div>
+                        </div>
+                        <div class="time-cell passed">7</div>
+                    </div>
+                    <div class="preformatted" data-parent="33">12:56:11.686 [print] /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/ids.json</div>
+                    <div class="step-row">
+                        <div class="step-container" id="34">
+                            <div class="step-ref passed">34</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def mystorage = Java.type('storage.DataStorage')</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="35">
+                            <div class="step-ref passed">35</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* def db = new mystorage</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="36">
+                            <div class="step-ref passed">36</div>
+                            <div class="step-indent"> </div>
+                            <div class="step-cell passed">* eval db.writeln(karate.pretty(list),idfile)</div>
+                        </div>
+                        <div class="time-cell passed">33</div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+           
+  
+    </body>
+    
+</html>

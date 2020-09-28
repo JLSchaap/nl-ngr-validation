@@ -1,0 +1,642 @@
+<testsuite failures="3" name="InspireTest/ngr/T02_datasets/check-known-dataset-record.feature" skipped="0" tests="5" time="11.233735">
+  <testcase classname="InspireTest.ngr.T02_datasets.check-known-dataset-record" name="Vogelrichtlijn verspreidingsgebied van soorten" time="1.646798">
+    <system-out>* configure readTimeout = 5000 ............................................ passed
+* def knownlinks = karate.jsonPath(karate.read('classpath:InspireTest/def/knownlink.csv') , '[*].knownlink') . passed
+* def datasetsresult = callonce read('classpath:InspireTest/def/getdataset.template.feature') . passed
+* print datasetsresult .................................................... passed
+* csv datasets = datasetsresult.response .................................. passed
+* print datasets .......................................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'cbeaebc3-815a-48af-a978-0e16892865fc' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* eval karate.embed(responseBytes,'application/xml') ...................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'cbeaebc3-815a-48af-a978-0e16892865fc' . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def organisation =  organisationpath ? organisationpath : 'no organisationName found in dataset record' . passed
+* def xlinks = get response /GetRecordByIdResponse//@href ................. passed
+* def ObjectValues = ...................................................... passed
+* def filterx = ........................................................... passed
+* def nlinks = filterx(ObjectValues(xlinks), ObjectValues(knownlinks)) .... passed
+* def id = "cbeaebc3-815a-48af-a978-0e16892865fc" ......................... passed
+* call read('classpath:InspireTest/def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"cbeaebc3-815a-48af-a978-0e16892865fc","'+ title + '","' + organisation + '","'+ email +'",' , 'target/surefire-reports/datasetsOkay.csv') . passed</system-out>
+  </testcase>
+  <testcase classname="InspireTest.ngr.T02_datasets.check-known-dataset-record" name="zoutvelden en zoutproductieputten onder INSPIRE" time="4.95512">
+    <failure message="check-known-dataset-record.feature:72 - feature call (loop) failed: classpath:InspireTest/def/checkxlinkurl.template.feature&#10;caller: classpath:InspireTest/ngr/T02_datasets/check-known-dataset-record.feature&#10;items: [{link=https://nationaalgeoregister.nl/geonetwork/srv/resourcesce4a6d93-83d6-4397-afa1-d4117d5ce76b}, {link=http://rdfdata.eionet.europa.eu/inspirethemes/themes/34}, {link=http://geonetwork-opensource.org/inspire-theme#}, {link=https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme}]&#10;errors:&#10;-------&#10;feature call (loop) failed at index: 0&#10;caller: classpath:InspireTest/def/checkxlinkurl.template.feature&#10;arg: {&quot;link&quot;:&quot;https://nationaalgeoregister.nl/geonetwork/srv/resourcesce4a6d93-83d6-4397-afa1-d4117d5ce76b&quot;}&#10;checkxlinkurl.template.feature:28 - path: $, actual: 404, expected: 200, reason: not equal (Integer)&#10;-------&#10;feature call (loop) failed at index: 1&#10;caller: classpath:InspireTest/def/checkxlinkurl.template.feature&#10;arg: {&quot;link&quot;:&quot;http://rdfdata.eionet.europa.eu/inspirethemes/themes/34&quot;}&#10;checkxlinkurl.template.feature:28 - path: $, actual: 404, expected: 200, reason: not equal (Integer)&#10;-------&#10;feature call (loop) failed at index: 2&#10;caller: classpath:InspireTest/def/checkxlinkurl.template.feature&#10;arg: {&quot;link&quot;:&quot;http://geonetwork-opensource.org/inspire-theme#&quot;}&#10;checkxlinkurl.template.feature:28 - path: $, actual: 404, expected: 200, reason: not equal (Integer)&#10;-------&#10;feature call (loop) failed at index: 3&#10;caller: classpath:InspireTest/def/checkxlinkurl.template.feature&#10;arg: {&quot;link&quot;:&quot;https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme&quot;}&#10;checkxlinkurl.template.feature:28 - path: $, actual: 500, expected: 200, reason: not equal (Integer)">* configure readTimeout = 5000 ............................................ passed
+* def knownlinks = karate.jsonPath(karate.read('classpath:InspireTest/def/knownlink.csv') , '[*].knownlink') . passed
+* def datasetsresult = callonce read('classpath:InspireTest/def/getdataset.template.feature') . passed
+* print datasetsresult .................................................... passed
+* csv datasets = datasetsresult.response .................................. passed
+* print datasets .......................................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'cbeaebc3-815a-48af-a978-0e16892865fc' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* eval karate.embed(responseBytes,'application/xml') ...................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'cbeaebc3-815a-48af-a978-0e16892865fc' . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def organisation =  organisationpath ? organisationpath : 'no organisationName found in dataset record' . passed
+* def xlinks = get response /GetRecordByIdResponse//@href ................. passed
+* def ObjectValues = ...................................................... passed
+* def filterx = ........................................................... passed
+* def nlinks = filterx(ObjectValues(xlinks), ObjectValues(knownlinks)) .... passed
+* def id = "cbeaebc3-815a-48af-a978-0e16892865fc" ......................... passed
+* call read('classpath:InspireTest/def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"cbeaebc3-815a-48af-a978-0e16892865fc","'+ title + '","' + organisation + '","'+ email +'",' , 'target/surefire-reports/datasetsOkay.csv') . passed
+* configure readTimeout = 5000 ............................................ passed
+* def knownlinks = karate.jsonPath(karate.read('classpath:InspireTest/def/knownlink.csv') , '[*].knownlink') . passed
+* def datasetsresult = callonce read('classpath:InspireTest/def/getdataset.template.feature') . passed
+* print datasetsresult .................................................... passed
+* csv datasets = datasetsresult.response .................................. passed
+* print datasets .......................................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'e3b0da1e-0664-4025-b3f5-a54d74a26450' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* eval karate.embed(responseBytes,'application/xml') ...................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'e3b0da1e-0664-4025-b3f5-a54d74a26450' . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def organisation =  organisationpath ? organisationpath : 'no organisationName found in dataset record' . passed
+* def xlinks = get response /GetRecordByIdResponse//@href ................. passed
+* def ObjectValues = ...................................................... passed
+* def filterx = ........................................................... passed
+* def nlinks = filterx(ObjectValues(xlinks), ObjectValues(knownlinks)) .... passed
+* def id = "e3b0da1e-0664-4025-b3f5-a54d74a26450" ......................... passed
+* call read('classpath:InspireTest/def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link') . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: check-known-dataset-record.feature:72 - feature call (loop) failed: classpath:InspireTest/def/checkxlinkurl.template.feature
+caller: classpath:InspireTest/ngr/T02_datasets/check-known-dataset-record.feature
+items: [{link=https://nationaalgeoregister.nl/geonetwork/srv/resourcesce4a6d93-83d6-4397-afa1-d4117d5ce76b}, {link=http://rdfdata.eionet.europa.eu/inspirethemes/themes/34}, {link=http://geonetwork-opensource.org/inspire-theme#}, {link=https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme}]
+errors:
+-------
+feature call (loop) failed at index: 0
+caller: classpath:InspireTest/def/checkxlinkurl.template.feature
+arg: {"link":"https://nationaalgeoregister.nl/geonetwork/srv/resourcesce4a6d93-83d6-4397-afa1-d4117d5ce76b"}
+checkxlinkurl.template.feature:28 - path: $, actual: 404, expected: 200, reason: not equal (Integer)
+-------
+feature call (loop) failed at index: 1
+caller: classpath:InspireTest/def/checkxlinkurl.template.feature
+arg: {"link":"http://rdfdata.eionet.europa.eu/inspirethemes/themes/34"}
+checkxlinkurl.template.feature:28 - path: $, actual: 404, expected: 200, reason: not equal (Integer)
+-------
+feature call (loop) failed at index: 2
+caller: classpath:InspireTest/def/checkxlinkurl.template.feature
+arg: {"link":"http://geonetwork-opensource.org/inspire-theme#"}
+checkxlinkurl.template.feature:28 - path: $, actual: 404, expected: 200, reason: not equal (Integer)
+-------
+feature call (loop) failed at index: 3
+caller: classpath:InspireTest/def/checkxlinkurl.template.feature
+arg: {"link":"https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme"}
+checkxlinkurl.template.feature:28 - path: $, actual: 500, expected: 200, reason: not equal (Integer)
+	at ✽.* call read('classpath:InspireTest/def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link') (check-known-dataset-record.feature:72)
+
+* def mystorage = Java.type('storage.DataStorage') ........................ skipped
+* def db = new mystorage .................................................. skipped
+* eval db.writeln('"e3b0da1e-0664-4025-b3f5-a54d74a26450","'+ title + '","' + organisation + '","'+ email +'",' , 'target/surefire-reports/datasetsOkay.csv') . skipped</failure>
+  </testcase>
+  <testcase classname="InspireTest.ngr.T02_datasets.check-known-dataset-record" name="Bronbestanden waterkwaliteit" time="0.606682">
+    <failure message="check-known-dataset-record.feature:45 - xpath does not exist: /GetRecordByIdResponse//@href on response">* configure readTimeout = 5000 ............................................ passed
+* def knownlinks = karate.jsonPath(karate.read('classpath:InspireTest/def/knownlink.csv') , '[*].knownlink') . passed
+* def datasetsresult = callonce read('classpath:InspireTest/def/getdataset.template.feature') . passed
+* print datasetsresult .................................................... passed
+* csv datasets = datasetsresult.response .................................. passed
+* print datasets .......................................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'cbeaebc3-815a-48af-a978-0e16892865fc' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* eval karate.embed(responseBytes,'application/xml') ...................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'cbeaebc3-815a-48af-a978-0e16892865fc' . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def organisation =  organisationpath ? organisationpath : 'no organisationName found in dataset record' . passed
+* def xlinks = get response /GetRecordByIdResponse//@href ................. passed
+* def ObjectValues = ...................................................... passed
+* def filterx = ........................................................... passed
+* def nlinks = filterx(ObjectValues(xlinks), ObjectValues(knownlinks)) .... passed
+* def id = "cbeaebc3-815a-48af-a978-0e16892865fc" ......................... passed
+* call read('classpath:InspireTest/def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"cbeaebc3-815a-48af-a978-0e16892865fc","'+ title + '","' + organisation + '","'+ email +'",' , 'target/surefire-reports/datasetsOkay.csv') . passed
+* configure readTimeout = 5000 ............................................ passed
+* def knownlinks = karate.jsonPath(karate.read('classpath:InspireTest/def/knownlink.csv') , '[*].knownlink') . passed
+* def datasetsresult = callonce read('classpath:InspireTest/def/getdataset.template.feature') . passed
+* print datasetsresult .................................................... passed
+* csv datasets = datasetsresult.response .................................. passed
+* print datasets .......................................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'e3b0da1e-0664-4025-b3f5-a54d74a26450' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* eval karate.embed(responseBytes,'application/xml') ...................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'e3b0da1e-0664-4025-b3f5-a54d74a26450' . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def organisation =  organisationpath ? organisationpath : 'no organisationName found in dataset record' . passed
+* def xlinks = get response /GetRecordByIdResponse//@href ................. passed
+* def ObjectValues = ...................................................... passed
+* def filterx = ........................................................... passed
+* def nlinks = filterx(ObjectValues(xlinks), ObjectValues(knownlinks)) .... passed
+* def id = "e3b0da1e-0664-4025-b3f5-a54d74a26450" ......................... passed
+* call read('classpath:InspireTest/def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link') . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: check-known-dataset-record.feature:72 - feature call (loop) failed: classpath:InspireTest/def/checkxlinkurl.template.feature
+caller: classpath:InspireTest/ngr/T02_datasets/check-known-dataset-record.feature
+items: [{link=https://nationaalgeoregister.nl/geonetwork/srv/resourcesce4a6d93-83d6-4397-afa1-d4117d5ce76b}, {link=http://rdfdata.eionet.europa.eu/inspirethemes/themes/34}, {link=http://geonetwork-opensource.org/inspire-theme#}, {link=https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme}]
+errors:
+-------
+feature call (loop) failed at index: 0
+caller: classpath:InspireTest/def/checkxlinkurl.template.feature
+arg: {"link":"https://nationaalgeoregister.nl/geonetwork/srv/resourcesce4a6d93-83d6-4397-afa1-d4117d5ce76b"}
+checkxlinkurl.template.feature:28 - path: $, actual: 404, expected: 200, reason: not equal (Integer)
+-------
+feature call (loop) failed at index: 1
+caller: classpath:InspireTest/def/checkxlinkurl.template.feature
+arg: {"link":"http://rdfdata.eionet.europa.eu/inspirethemes/themes/34"}
+checkxlinkurl.template.feature:28 - path: $, actual: 404, expected: 200, reason: not equal (Integer)
+-------
+feature call (loop) failed at index: 2
+caller: classpath:InspireTest/def/checkxlinkurl.template.feature
+arg: {"link":"http://geonetwork-opensource.org/inspire-theme#"}
+checkxlinkurl.template.feature:28 - path: $, actual: 404, expected: 200, reason: not equal (Integer)
+-------
+feature call (loop) failed at index: 3
+caller: classpath:InspireTest/def/checkxlinkurl.template.feature
+arg: {"link":"https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme"}
+checkxlinkurl.template.feature:28 - path: $, actual: 500, expected: 200, reason: not equal (Integer)
+	at ✽.* call read('classpath:InspireTest/def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link') (check-known-dataset-record.feature:72)
+
+* def mystorage = Java.type('storage.DataStorage') ........................ skipped
+* def db = new mystorage .................................................. skipped
+* eval db.writeln('"e3b0da1e-0664-4025-b3f5-a54d74a26450","'+ title + '","' + organisation + '","'+ email +'",' , 'target/surefire-reports/datasetsOkay.csv') . skipped
+* configure readTimeout = 5000 ............................................ passed
+* def knownlinks = karate.jsonPath(karate.read('classpath:InspireTest/def/knownlink.csv') , '[*].knownlink') . passed
+* def datasetsresult = callonce read('classpath:InspireTest/def/getdataset.template.feature') . passed
+* print datasetsresult .................................................... passed
+* csv datasets = datasetsresult.response .................................. passed
+* print datasets .......................................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'edf79e6a-d73d-4def-8d22-0f495cc76a73' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* eval karate.embed(responseBytes,'application/xml') ...................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'edf79e6a-d73d-4def-8d22-0f495cc76a73' . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def organisation =  organisationpath ? organisationpath : 'no organisationName found in dataset record' . passed
+* def xlinks = get response /GetRecordByIdResponse//@href ................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: check-known-dataset-record.feature:45 - xpath does not exist: /GetRecordByIdResponse//@href on response
+	at ✽.* def xlinks = get response /GetRecordByIdResponse//@href (check-known-dataset-record.feature:45)
+
+* def ObjectValues = ...................................................... skipped
+* def filterx = ........................................................... skipped
+* def nlinks = filterx(ObjectValues(xlinks), ObjectValues(knownlinks)) .... skipped
+* def id = "edf79e6a-d73d-4def-8d22-0f495cc76a73" ......................... skipped
+* call read('classpath:InspireTest/def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link') . skipped
+* def mystorage = Java.type('storage.DataStorage') ........................ skipped
+* def db = new mystorage .................................................. skipped
+* eval db.writeln('"edf79e6a-d73d-4def-8d22-0f495cc76a73","'+ title + '","' + organisation + '","'+ email +'",' , 'target/surefire-reports/datasetsOkay.csv') . skipped</failure>
+  </testcase>
+  <testcase classname="InspireTest.ngr.T02_datasets.check-known-dataset-record" name="Nationale Parken (INSPIRE Geharmoniseerd)" time="2.355522">
+    <failure message="check-known-dataset-record.feature:72 - feature call (loop) failed: classpath:InspireTest/def/checkxlinkurl.template.feature&#10;caller: classpath:InspireTest/ngr/T02_datasets/check-known-dataset-record.feature&#10;items: [{link=http://nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/247a1d15-0a67-40ce-85be-1403c08f15a8}, {link=xlink:href=https://inspire.ec.europa.eu/id/document/tg/ps}, {link=https://data.overheid.nl/organisatie/PDOK}]&#10;errors:&#10;-------&#10;feature call (loop) failed at index: 1&#10;caller: classpath:InspireTest/def/checkxlinkurl.template.feature&#10;arg: {&quot;link&quot;:&quot;xlink:href=https://inspire.ec.europa.eu/id/document/tg/ps&quot;}&#10;checkxlinkurl.template.feature:21 - &#10;org.apache.http.client.ClientProtocolException: URI does not specify a valid host name: xlink:href=https://inspire.ec.europa.eu/id/document/tg/ps&#10;-------&#10;feature call (loop) failed at index: 2&#10;caller: classpath:InspireTest/def/checkxlinkurl.template.feature&#10;arg: {&quot;link&quot;:&quot;https://data.overheid.nl/organisatie/PDOK&quot;}&#10;checkxlinkurl.template.feature:28 - path: $, actual: 404, expected: 200, reason: not equal (Integer)">* configure readTimeout = 5000 ............................................ passed
+* def knownlinks = karate.jsonPath(karate.read('classpath:InspireTest/def/knownlink.csv') , '[*].knownlink') . passed
+* def datasetsresult = callonce read('classpath:InspireTest/def/getdataset.template.feature') . passed
+* print datasetsresult .................................................... passed
+* csv datasets = datasetsresult.response .................................. passed
+* print datasets .......................................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'cbeaebc3-815a-48af-a978-0e16892865fc' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* eval karate.embed(responseBytes,'application/xml') ...................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'cbeaebc3-815a-48af-a978-0e16892865fc' . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def organisation =  organisationpath ? organisationpath : 'no organisationName found in dataset record' . passed
+* def xlinks = get response /GetRecordByIdResponse//@href ................. passed
+* def ObjectValues = ...................................................... passed
+* def filterx = ........................................................... passed
+* def nlinks = filterx(ObjectValues(xlinks), ObjectValues(knownlinks)) .... passed
+* def id = "cbeaebc3-815a-48af-a978-0e16892865fc" ......................... passed
+* call read('classpath:InspireTest/def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"cbeaebc3-815a-48af-a978-0e16892865fc","'+ title + '","' + organisation + '","'+ email +'",' , 'target/surefire-reports/datasetsOkay.csv') . passed
+* configure readTimeout = 5000 ............................................ passed
+* def knownlinks = karate.jsonPath(karate.read('classpath:InspireTest/def/knownlink.csv') , '[*].knownlink') . passed
+* def datasetsresult = callonce read('classpath:InspireTest/def/getdataset.template.feature') . passed
+* print datasetsresult .................................................... passed
+* csv datasets = datasetsresult.response .................................. passed
+* print datasets .......................................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'e3b0da1e-0664-4025-b3f5-a54d74a26450' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* eval karate.embed(responseBytes,'application/xml') ...................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'e3b0da1e-0664-4025-b3f5-a54d74a26450' . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def organisation =  organisationpath ? organisationpath : 'no organisationName found in dataset record' . passed
+* def xlinks = get response /GetRecordByIdResponse//@href ................. passed
+* def ObjectValues = ...................................................... passed
+* def filterx = ........................................................... passed
+* def nlinks = filterx(ObjectValues(xlinks), ObjectValues(knownlinks)) .... passed
+* def id = "e3b0da1e-0664-4025-b3f5-a54d74a26450" ......................... passed
+* call read('classpath:InspireTest/def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link') . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: check-known-dataset-record.feature:72 - feature call (loop) failed: classpath:InspireTest/def/checkxlinkurl.template.feature
+caller: classpath:InspireTest/ngr/T02_datasets/check-known-dataset-record.feature
+items: [{link=https://nationaalgeoregister.nl/geonetwork/srv/resourcesce4a6d93-83d6-4397-afa1-d4117d5ce76b}, {link=http://rdfdata.eionet.europa.eu/inspirethemes/themes/34}, {link=http://geonetwork-opensource.org/inspire-theme#}, {link=https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme}]
+errors:
+-------
+feature call (loop) failed at index: 0
+caller: classpath:InspireTest/def/checkxlinkurl.template.feature
+arg: {"link":"https://nationaalgeoregister.nl/geonetwork/srv/resourcesce4a6d93-83d6-4397-afa1-d4117d5ce76b"}
+checkxlinkurl.template.feature:28 - path: $, actual: 404, expected: 200, reason: not equal (Integer)
+-------
+feature call (loop) failed at index: 1
+caller: classpath:InspireTest/def/checkxlinkurl.template.feature
+arg: {"link":"http://rdfdata.eionet.europa.eu/inspirethemes/themes/34"}
+checkxlinkurl.template.feature:28 - path: $, actual: 404, expected: 200, reason: not equal (Integer)
+-------
+feature call (loop) failed at index: 2
+caller: classpath:InspireTest/def/checkxlinkurl.template.feature
+arg: {"link":"http://geonetwork-opensource.org/inspire-theme#"}
+checkxlinkurl.template.feature:28 - path: $, actual: 404, expected: 200, reason: not equal (Integer)
+-------
+feature call (loop) failed at index: 3
+caller: classpath:InspireTest/def/checkxlinkurl.template.feature
+arg: {"link":"https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme"}
+checkxlinkurl.template.feature:28 - path: $, actual: 500, expected: 200, reason: not equal (Integer)
+	at ✽.* call read('classpath:InspireTest/def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link') (check-known-dataset-record.feature:72)
+
+* def mystorage = Java.type('storage.DataStorage') ........................ skipped
+* def db = new mystorage .................................................. skipped
+* eval db.writeln('"e3b0da1e-0664-4025-b3f5-a54d74a26450","'+ title + '","' + organisation + '","'+ email +'",' , 'target/surefire-reports/datasetsOkay.csv') . skipped
+* configure readTimeout = 5000 ............................................ passed
+* def knownlinks = karate.jsonPath(karate.read('classpath:InspireTest/def/knownlink.csv') , '[*].knownlink') . passed
+* def datasetsresult = callonce read('classpath:InspireTest/def/getdataset.template.feature') . passed
+* print datasetsresult .................................................... passed
+* csv datasets = datasetsresult.response .................................. passed
+* print datasets .......................................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'edf79e6a-d73d-4def-8d22-0f495cc76a73' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* eval karate.embed(responseBytes,'application/xml') ...................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'edf79e6a-d73d-4def-8d22-0f495cc76a73' . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def organisation =  organisationpath ? organisationpath : 'no organisationName found in dataset record' . passed
+* def xlinks = get response /GetRecordByIdResponse//@href ................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: check-known-dataset-record.feature:45 - xpath does not exist: /GetRecordByIdResponse//@href on response
+	at ✽.* def xlinks = get response /GetRecordByIdResponse//@href (check-known-dataset-record.feature:45)
+
+* def ObjectValues = ...................................................... skipped
+* def filterx = ........................................................... skipped
+* def nlinks = filterx(ObjectValues(xlinks), ObjectValues(knownlinks)) .... skipped
+* def id = "edf79e6a-d73d-4def-8d22-0f495cc76a73" ......................... skipped
+* call read('classpath:InspireTest/def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link') . skipped
+* def mystorage = Java.type('storage.DataStorage') ........................ skipped
+* def db = new mystorage .................................................. skipped
+* eval db.writeln('"edf79e6a-d73d-4def-8d22-0f495cc76a73","'+ title + '","' + organisation + '","'+ email +'",' , 'target/surefire-reports/datasetsOkay.csv') . skipped
+* configure readTimeout = 5000 ............................................ passed
+* def knownlinks = karate.jsonPath(karate.read('classpath:InspireTest/def/knownlink.csv') , '[*].knownlink') . passed
+* def datasetsresult = callonce read('classpath:InspireTest/def/getdataset.template.feature') . passed
+* print datasetsresult .................................................... passed
+* csv datasets = datasetsresult.response .................................. passed
+* print datasets .......................................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = '247a1d15-0a67-40ce-85be-1403c08f15a8' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* eval karate.embed(responseBytes,'application/xml') ...................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '247a1d15-0a67-40ce-85be-1403c08f15a8' . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def organisation =  organisationpath ? organisationpath : 'no organisationName found in dataset record' . passed
+* def xlinks = get response /GetRecordByIdResponse//@href ................. passed
+* def ObjectValues = ...................................................... passed
+* def filterx = ........................................................... passed
+* def nlinks = filterx(ObjectValues(xlinks), ObjectValues(knownlinks)) .... passed
+* def id = "247a1d15-0a67-40ce-85be-1403c08f15a8" ......................... passed
+* call read('classpath:InspireTest/def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link') . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: check-known-dataset-record.feature:72 - feature call (loop) failed: classpath:InspireTest/def/checkxlinkurl.template.feature
+caller: classpath:InspireTest/ngr/T02_datasets/check-known-dataset-record.feature
+items: [{link=http://nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/247a1d15-0a67-40ce-85be-1403c08f15a8}, {link=xlink:href=https://inspire.ec.europa.eu/id/document/tg/ps}, {link=https://data.overheid.nl/organisatie/PDOK}]
+errors:
+-------
+feature call (loop) failed at index: 1
+caller: classpath:InspireTest/def/checkxlinkurl.template.feature
+arg: {"link":"xlink:href=https://inspire.ec.europa.eu/id/document/tg/ps"}
+checkxlinkurl.template.feature:21 - 
+org.apache.http.client.ClientProtocolException: URI does not specify a valid host name: xlink:href=https://inspire.ec.europa.eu/id/document/tg/ps
+-------
+feature call (loop) failed at index: 2
+caller: classpath:InspireTest/def/checkxlinkurl.template.feature
+arg: {"link":"https://data.overheid.nl/organisatie/PDOK"}
+checkxlinkurl.template.feature:28 - path: $, actual: 404, expected: 200, reason: not equal (Integer)
+	at ✽.* call read('classpath:InspireTest/def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link') (check-known-dataset-record.feature:72)
+
+* def mystorage = Java.type('storage.DataStorage') ........................ skipped
+* def db = new mystorage .................................................. skipped
+* eval db.writeln('"247a1d15-0a67-40ce-85be-1403c08f15a8","'+ title + '","' + organisation + '","'+ email +'",' , 'target/surefire-reports/datasetsOkay.csv') . skipped</failure>
+  </testcase>
+  <testcase classname="InspireTest.ngr.T02_datasets.check-known-dataset-record" name="Ligging industrie en CO2 emissies" time="1.669613">
+    <system-out>* configure readTimeout = 5000 ............................................ passed
+* def knownlinks = karate.jsonPath(karate.read('classpath:InspireTest/def/knownlink.csv') , '[*].knownlink') . passed
+* def datasetsresult = callonce read('classpath:InspireTest/def/getdataset.template.feature') . passed
+* print datasetsresult .................................................... passed
+* csv datasets = datasetsresult.response .................................. passed
+* print datasets .......................................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'cbeaebc3-815a-48af-a978-0e16892865fc' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* eval karate.embed(responseBytes,'application/xml') ...................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'cbeaebc3-815a-48af-a978-0e16892865fc' . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def organisation =  organisationpath ? organisationpath : 'no organisationName found in dataset record' . passed
+* def xlinks = get response /GetRecordByIdResponse//@href ................. passed
+* def ObjectValues = ...................................................... passed
+* def filterx = ........................................................... passed
+* def nlinks = filterx(ObjectValues(xlinks), ObjectValues(knownlinks)) .... passed
+* def id = "cbeaebc3-815a-48af-a978-0e16892865fc" ......................... passed
+* call read('classpath:InspireTest/def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"cbeaebc3-815a-48af-a978-0e16892865fc","'+ title + '","' + organisation + '","'+ email +'",' , 'target/surefire-reports/datasetsOkay.csv') . passed
+* configure readTimeout = 5000 ............................................ passed
+* def knownlinks = karate.jsonPath(karate.read('classpath:InspireTest/def/knownlink.csv') , '[*].knownlink') . passed
+* def datasetsresult = callonce read('classpath:InspireTest/def/getdataset.template.feature') . passed
+* print datasetsresult .................................................... passed
+* csv datasets = datasetsresult.response .................................. passed
+* print datasets .......................................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'e3b0da1e-0664-4025-b3f5-a54d74a26450' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* eval karate.embed(responseBytes,'application/xml') ...................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'e3b0da1e-0664-4025-b3f5-a54d74a26450' . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def organisation =  organisationpath ? organisationpath : 'no organisationName found in dataset record' . passed
+* def xlinks = get response /GetRecordByIdResponse//@href ................. passed
+* def ObjectValues = ...................................................... passed
+* def filterx = ........................................................... passed
+* def nlinks = filterx(ObjectValues(xlinks), ObjectValues(knownlinks)) .... passed
+* def id = "e3b0da1e-0664-4025-b3f5-a54d74a26450" ......................... passed
+* call read('classpath:InspireTest/def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link') . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: check-known-dataset-record.feature:72 - feature call (loop) failed: classpath:InspireTest/def/checkxlinkurl.template.feature
+caller: classpath:InspireTest/ngr/T02_datasets/check-known-dataset-record.feature
+items: [{link=https://nationaalgeoregister.nl/geonetwork/srv/resourcesce4a6d93-83d6-4397-afa1-d4117d5ce76b}, {link=http://rdfdata.eionet.europa.eu/inspirethemes/themes/34}, {link=http://geonetwork-opensource.org/inspire-theme#}, {link=https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme}]
+errors:
+-------
+feature call (loop) failed at index: 0
+caller: classpath:InspireTest/def/checkxlinkurl.template.feature
+arg: {"link":"https://nationaalgeoregister.nl/geonetwork/srv/resourcesce4a6d93-83d6-4397-afa1-d4117d5ce76b"}
+checkxlinkurl.template.feature:28 - path: $, actual: 404, expected: 200, reason: not equal (Integer)
+-------
+feature call (loop) failed at index: 1
+caller: classpath:InspireTest/def/checkxlinkurl.template.feature
+arg: {"link":"http://rdfdata.eionet.europa.eu/inspirethemes/themes/34"}
+checkxlinkurl.template.feature:28 - path: $, actual: 404, expected: 200, reason: not equal (Integer)
+-------
+feature call (loop) failed at index: 2
+caller: classpath:InspireTest/def/checkxlinkurl.template.feature
+arg: {"link":"http://geonetwork-opensource.org/inspire-theme#"}
+checkxlinkurl.template.feature:28 - path: $, actual: 404, expected: 200, reason: not equal (Integer)
+-------
+feature call (loop) failed at index: 3
+caller: classpath:InspireTest/def/checkxlinkurl.template.feature
+arg: {"link":"https://www.nationaalgeoregister.nl/geonetwork/srv/eng/thesaurus.download?ref=external.theme.inspire-theme"}
+checkxlinkurl.template.feature:28 - path: $, actual: 500, expected: 200, reason: not equal (Integer)
+	at ✽.* call read('classpath:InspireTest/def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link') (check-known-dataset-record.feature:72)
+
+* def mystorage = Java.type('storage.DataStorage') ........................ skipped
+* def db = new mystorage .................................................. skipped
+* eval db.writeln('"e3b0da1e-0664-4025-b3f5-a54d74a26450","'+ title + '","' + organisation + '","'+ email +'",' , 'target/surefire-reports/datasetsOkay.csv') . skipped
+* configure readTimeout = 5000 ............................................ passed
+* def knownlinks = karate.jsonPath(karate.read('classpath:InspireTest/def/knownlink.csv') , '[*].knownlink') . passed
+* def datasetsresult = callonce read('classpath:InspireTest/def/getdataset.template.feature') . passed
+* print datasetsresult .................................................... passed
+* csv datasets = datasetsresult.response .................................. passed
+* print datasets .......................................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'edf79e6a-d73d-4def-8d22-0f495cc76a73' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* eval karate.embed(responseBytes,'application/xml') ...................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'edf79e6a-d73d-4def-8d22-0f495cc76a73' . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def organisation =  organisationpath ? organisationpath : 'no organisationName found in dataset record' . passed
+* def xlinks = get response /GetRecordByIdResponse//@href ................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: check-known-dataset-record.feature:45 - xpath does not exist: /GetRecordByIdResponse//@href on response
+	at ✽.* def xlinks = get response /GetRecordByIdResponse//@href (check-known-dataset-record.feature:45)
+
+* def ObjectValues = ...................................................... skipped
+* def filterx = ........................................................... skipped
+* def nlinks = filterx(ObjectValues(xlinks), ObjectValues(knownlinks)) .... skipped
+* def id = "edf79e6a-d73d-4def-8d22-0f495cc76a73" ......................... skipped
+* call read('classpath:InspireTest/def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link') . skipped
+* def mystorage = Java.type('storage.DataStorage') ........................ skipped
+* def db = new mystorage .................................................. skipped
+* eval db.writeln('"edf79e6a-d73d-4def-8d22-0f495cc76a73","'+ title + '","' + organisation + '","'+ email +'",' , 'target/surefire-reports/datasetsOkay.csv') . skipped
+* configure readTimeout = 5000 ............................................ passed
+* def knownlinks = karate.jsonPath(karate.read('classpath:InspireTest/def/knownlink.csv') , '[*].knownlink') . passed
+* def datasetsresult = callonce read('classpath:InspireTest/def/getdataset.template.feature') . passed
+* print datasetsresult .................................................... passed
+* csv datasets = datasetsresult.response .................................. passed
+* print datasets .......................................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = '247a1d15-0a67-40ce-85be-1403c08f15a8' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* eval karate.embed(responseBytes,'application/xml') ...................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '247a1d15-0a67-40ce-85be-1403c08f15a8' . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def organisation =  organisationpath ? organisationpath : 'no organisationName found in dataset record' . passed
+* def xlinks = get response /GetRecordByIdResponse//@href ................. passed
+* def ObjectValues = ...................................................... passed
+* def filterx = ........................................................... passed
+* def nlinks = filterx(ObjectValues(xlinks), ObjectValues(knownlinks)) .... passed
+* def id = "247a1d15-0a67-40ce-85be-1403c08f15a8" ......................... passed
+* call read('classpath:InspireTest/def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link') . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: check-known-dataset-record.feature:72 - feature call (loop) failed: classpath:InspireTest/def/checkxlinkurl.template.feature
+caller: classpath:InspireTest/ngr/T02_datasets/check-known-dataset-record.feature
+items: [{link=http://nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/247a1d15-0a67-40ce-85be-1403c08f15a8}, {link=xlink:href=https://inspire.ec.europa.eu/id/document/tg/ps}, {link=https://data.overheid.nl/organisatie/PDOK}]
+errors:
+-------
+feature call (loop) failed at index: 1
+caller: classpath:InspireTest/def/checkxlinkurl.template.feature
+arg: {"link":"xlink:href=https://inspire.ec.europa.eu/id/document/tg/ps"}
+checkxlinkurl.template.feature:21 - 
+org.apache.http.client.ClientProtocolException: URI does not specify a valid host name: xlink:href=https://inspire.ec.europa.eu/id/document/tg/ps
+-------
+feature call (loop) failed at index: 2
+caller: classpath:InspireTest/def/checkxlinkurl.template.feature
+arg: {"link":"https://data.overheid.nl/organisatie/PDOK"}
+checkxlinkurl.template.feature:28 - path: $, actual: 404, expected: 200, reason: not equal (Integer)
+	at ✽.* call read('classpath:InspireTest/def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link') (check-known-dataset-record.feature:72)
+
+* def mystorage = Java.type('storage.DataStorage') ........................ skipped
+* def db = new mystorage .................................................. skipped
+* eval db.writeln('"247a1d15-0a67-40ce-85be-1403c08f15a8","'+ title + '","' + organisation + '","'+ email +'",' , 'target/surefire-reports/datasetsOkay.csv') . skipped
+* configure readTimeout = 5000 ............................................ passed
+* def knownlinks = karate.jsonPath(karate.read('classpath:InspireTest/def/knownlink.csv') , '[*].knownlink') . passed
+* def datasetsresult = callonce read('classpath:InspireTest/def/getdataset.template.feature') . passed
+* print datasetsresult .................................................... passed
+* csv datasets = datasetsresult.response .................................. passed
+* print datasets .......................................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'd6b85d84-cdb9-4a6e-b799-cf8826e22a94' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* eval karate.embed(responseBytes,'application/xml') ...................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'd6b85d84-cdb9-4a6e-b799-cf8826e22a94' . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//organisationName/CharacterString') . passed
+* def organisation =  organisationpath ? organisationpath : 'no organisationName found in dataset record' . passed
+* def xlinks = get response /GetRecordByIdResponse//@href ................. passed
+* def ObjectValues = ...................................................... passed
+* def filterx = ........................................................... passed
+* def nlinks = filterx(ObjectValues(xlinks), ObjectValues(knownlinks)) .... passed
+* def id = "d6b85d84-cdb9-4a6e-b799-cf8826e22a94" ......................... passed
+* call read('classpath:InspireTest/def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link') . passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* eval db.writeln('"d6b85d84-cdb9-4a6e-b799-cf8826e22a94","'+ title + '","' + organisation + '","'+ email +'",' , 'target/surefire-reports/datasetsOkay.csv') . passed</system-out>
+  </testcase>
+</testsuite>
