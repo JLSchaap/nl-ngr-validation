@@ -1,4 +1,4 @@
-@step1
+@step0
 Feature:  run onces  automatically
 
     Scenario: write header

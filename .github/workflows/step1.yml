@@ -23,8 +23,10 @@ jobs:
         with:
           java-version: 13
 
-      - name: Build with Maven
-        run: mvn clean --file pom.xml -Dkarate.options="--tags @step1" test
+      - name: Build with Maven step 0
+        run: mvn clean --file pom.xml -Dkarate.options="--tags @step0" test
+      - name: Build with Maven step 1
+        run: mvn --file pom.xml -Dkarate.options="--tags @step1" test
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: always()
