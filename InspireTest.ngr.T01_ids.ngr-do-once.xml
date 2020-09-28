@@ -1,5 +1,5 @@
-<testsuite failures="2" name="InspireTest/ngr/T01_ids/ngr-do-once.feature" skipped="0" tests="2" time="6.573949">
-  <testcase classname="InspireTest.ngr.T01_ids.ngr-do-once" name="write header" time="0.103313">
+<testsuite failures="2" name="InspireTest/ngr/T01_ids/ngr-do-once.feature" skipped="0" tests="2" time="6.529734">
+  <testcase classname="InspireTest.ngr.T01_ids.ngr-do-once" name="write header" time="0.111239">
     <failure message="ngr-do-once.feature:5 - &#10;writedatasetcsvheader.template.feature:11 - evaluation (js) failed: db.writeln( '&quot;datasetIdentifierCode&quot;,&quot;title&quot;,&quot;dataIdentificationCitationAnchor&quot;,&quot;organisation&quot;,&quot;electronicMailAddress&quot;,&quot;metadataStandardVersion&quot;,', outputpath + 'datasets.csv'), java.lang.RuntimeException: java.io.FileNotFoundException: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/datasets.csv (No such file or directory)&#10;stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:531)">* def callheaderresult = callonce read('classpath:InspireTest/def/writedatasetcsvheader.template.feature') . failed
 
 Stack Trace:
@@ -8,7 +8,7 @@ writedatasetcsvheader.template.feature:11 - evaluation (js) failed: db.writeln( 
 stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:531)
 	at ✽.* def callheaderresult = callonce read('classpath:InspireTest/def/writedatasetcsvheader.template.feature') (ngr-do-once.feature:5)</failure>
   </testcase>
-  <testcase classname="InspireTest.ngr.T01_ids.ngr-do-once" name="get id's" time="6.470636">
+  <testcase classname="InspireTest.ngr.T01_ids.ngr-do-once" name="get id's" time="6.418495">
     <failure message="ngr-do-once.feature:10 - &#10;getcswbriefrecords.feature:29 - evaluation (js) failed: db.writeln(karate.pretty(list),idfile), java.lang.RuntimeException: java.io.FileNotFoundException: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/ids.json (No such file or directory)&#10;stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:531)">* def callheaderresult = callonce read('classpath:InspireTest/def/writedatasetcsvheader.template.feature') . failed
 
 Stack Trace:

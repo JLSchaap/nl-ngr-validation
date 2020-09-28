@@ -124,7 +124,7 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">0.167</span>
+  <span class="lead-duration duration">0.193</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
@@ -165,7 +165,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def callheaderresult = callonce read('classpath:InspireTest/def/writedatasetcsvheader.template.feature')</span>
   
-  <span class="lead-duration duration">0.103</span>
+  <span class="lead-duration duration">0.111</span>
 
   </div>
 
@@ -193,7 +193,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
           <a>Doc string</a>
       </div>
       <div id="msg-4" class="collapse collapsable-details">
-        <pre>12:17:16.552 feature call failed: classpath:InspireTest/def/writedatasetcsvheader.template.feature
+        <pre>12:17:48.402 feature call failed: classpath:InspireTest/def/writedatasetcsvheader.template.feature
 arg: null
 writedatasetcsvheader.template.feature:11 - evaluation (js) failed: db.writeln( '&quot;datasetIdentifierCode&quot;,&quot;title&quot;,&quot;dataIdentificationCitationAnchor&quot;,&quot;organisation&quot;,&quot;electronicMailAddress&quot;,&quot;metadataStandardVersion&quot;,', outputpath + 'datasets.csv'), java.lang.RuntimeException: java.io.FileNotFoundException: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/datasets.csv (No such file or directory)
 stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:531)</pre>
@@ -233,7 +233,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">&gt; *</span>
   <span class="name">def mystorage = Java.type('storage.DataStorage')</span>
   
-  <span class="lead-duration duration">0.013</span>
+  <span class="lead-duration duration">0.009</span>
 
   </div>
 
@@ -248,8 +248,8 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
           <a>Doc string</a>
       </div>
       <div id="msg-5" class="collapse collapsable-details">
-        <pre>12:17:16.161 karate.env system property was:  
-12:17:16.473 &gt;&gt; lock acquired, begin callonce: read('classpath:InspireTest/def/writedatasetcsvheader.template.feature')</pre>
+        <pre>12:17:47.900 karate.env system property was:  
+12:17:48.303 &gt;&gt; lock acquired, begin callonce: read('classpath:InspireTest/def/writedatasetcsvheader.template.feature')</pre>
       </div>
     </div>
   </div>
@@ -265,7 +265,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">&gt; *</span>
   <span class="name">def db = new mystorage</span>
   
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.007</span>
 
   </div>
 
@@ -286,7 +286,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">&gt; *</span>
   <span class="name">def tempdir = java.lang.System.getProperty('user.dir')</span>
   
-  <span class="lead-duration duration">0.015</span>
+  <span class="lead-duration duration">0.018</span>
 
   </div>
 
@@ -307,7 +307,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">&gt; *</span>
   <span class="name">def separator = java.lang.System.getProperty(&quot;file.separator&quot;)</span>
   
-  <span class="lead-duration duration">0.005</span>
+  <span class="lead-duration duration">0.011</span>
 
   </div>
 
@@ -328,7 +328,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">&gt; *</span>
   <span class="name">def outputpath = tempdir + separator + 'output' + separator</span>
   
-  <span class="lead-duration duration">0.015</span>
+  <span class="lead-duration duration">0.025</span>
 
   </div>
 
@@ -349,7 +349,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">&gt; *</span>
   <span class="name">eval db.writeln( '&quot;datasetIdentifierCode&quot;,&quot;title&quot;,&quot;dataIdentificationCitationAnchor&quot;,&quot;organisation&quot;,&quot;electronicMailAddress&quot;,&quot;metadataStandardVersion&quot;,', outputpath + 'datasets.csv')</span>
   
-  <span class="lead-duration duration">0.010</span>
+  <span class="lead-duration duration">0.009</span>
 
   </div>
 
@@ -460,7 +460,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   </div>
 
   
-  <span class="lead-duration duration">12.840</span>
+  <span class="lead-duration duration">12.699</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-7">
@@ -501,7 +501,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">*</span>
   <span class="name">configure readTimeout = 240000</span>
   
-  <span class="lead-duration duration">0.007</span>
+  <span class="lead-duration duration">0.004</span>
 
   </div>
 
@@ -516,7 +516,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
           <a>Doc string</a>
       </div>
       <div id="msg-9" class="collapse collapsable-details">
-        <pre>12:17:16.161 karate.env system property was:</pre>
+        <pre>12:17:47.895 karate.env system property was:</pre>
       </div>
     </div>
   </div>
@@ -532,7 +532,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">*</span>
   <span class="name">url 'http://nationaalgeoregister.nl/'</span>
   
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.007</span>
 
   </div>
 
@@ -553,7 +553,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">*</span>
   <span class="name">def callonesresult = callonce read('classpath:InspireTest/def/getcswbriefrecords.feature')</span>
   
-  <span class="lead-duration duration">6.461</span>
+  <span class="lead-duration duration">6.406</span>
 
   </div>
 
@@ -581,7 +581,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
           <a>Doc string</a>
       </div>
       <div id="msg-11" class="collapse collapsable-details">
-        <pre>12:17:22.931 feature call failed: classpath:InspireTest/def/getcswbriefrecords.feature
+        <pre>12:17:54.702 feature call failed: classpath:InspireTest/def/getcswbriefrecords.feature
 arg: null
 getcswbriefrecords.feature:29 - evaluation (js) failed: db.writeln(karate.pretty(list),idfile), java.lang.RuntimeException: java.io.FileNotFoundException: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/ids.json (No such file or directory)
 stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:531)</pre>
@@ -636,7 +636,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
           <a>Doc string</a>
       </div>
       <div id="msg-12" class="collapse collapsable-details">
-        <pre>12:17:16.552 &gt;&gt; lock acquired, begin callonce: read('classpath:InspireTest/def/getcswbriefrecords.feature')</pre>
+        <pre>12:17:48.403 &gt;&gt; lock acquired, begin callonce: read('classpath:InspireTest/def/getcswbriefrecords.feature')</pre>
       </div>
     </div>
   </div>
@@ -651,48 +651,6 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
 <div class="brief passed">
   <span class="keyword indention">&gt; Given</span>
   <span class="name">path 'geonetwork/srv/dut/inspire'</span>
-  
-  <span class="lead-duration duration">0.002</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">&gt; And</span>
-  <span class="name">param service = 'CSW'</span>
-  
-  <span class="lead-duration duration">0.001</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">&gt; And</span>
-  <span class="name">param version = '2.0.2'</span>
   
   <span class="lead-duration duration">0.005</span>
 
@@ -713,9 +671,51 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
         
 <div class="brief passed">
   <span class="keyword indention">&gt; And</span>
+  <span class="name">param service = 'CSW'</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">param version = '2.0.2'</span>
+  
+  <span class="lead-duration duration">0.007</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
   <span class="name">param request = 'GetRecords'</span>
   
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
   </div>
 
@@ -736,7 +736,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">&gt; And</span>
   <span class="name">param propertyName = 'identifier'</span>
   
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.001</span>
 
   </div>
 
@@ -757,7 +757,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">&gt; And</span>
   <span class="name">param typeNames = 'csw:Record'</span>
   
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.004</span>
 
   </div>
 
@@ -778,7 +778,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">&gt; And</span>
   <span class="name">param elementsetname = &quot;brief&quot;</span>
   
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.004</span>
 
   </div>
 
@@ -799,7 +799,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">&gt; And</span>
   <span class="name">param resultType = 'results'</span>
   
-  <span class="lead-duration duration">0.006</span>
+  <span class="lead-duration duration">0.005</span>
 
   </div>
 
@@ -820,7 +820,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">&gt; And</span>
   <span class="name">param startposition = 1</span>
   
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.005</span>
 
   </div>
 
@@ -841,7 +841,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">&gt; And</span>
   <span class="name">param maxRecords = 30</span>
   
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.004</span>
 
   </div>
 
@@ -862,7 +862,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">&gt; When</span>
   <span class="name">method get</span>
   
-  <span class="lead-duration duration">6.233</span>
+  <span class="lead-duration duration">6.115</span>
 
   </div>
 
@@ -904,7 +904,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">&gt; *</span>
   <span class="name">def briefarray = get response /GetRecordsResponse/SearchResults/BriefRecord[*]/identifier</span>
   
-  <span class="lead-duration duration">0.026</span>
+  <span class="lead-duration duration">0.029</span>
 
   </div>
 
@@ -925,7 +925,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">&gt; *</span>
   <span class="name">def list = karate.mapWithKey(briefarray ,'datasetIdentifierCode')</span>
   
-  <span class="lead-duration duration">0.008</span>
+  <span class="lead-duration duration">0.014</span>
 
   </div>
 
@@ -946,7 +946,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">&gt; *</span>
   <span class="name">def json = karate.map(list, function(x, i){ return {} })</span>
   
-  <span class="lead-duration duration">0.015</span>
+  <span class="lead-duration duration">0.027</span>
 
   </div>
 
@@ -967,7 +967,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">&gt; *</span>
   <span class="name">def tempdir = java.lang.System.getProperty('user.dir')</span>
   
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.000</span>
 
   </div>
 
@@ -1009,7 +1009,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">&gt; *</span>
   <span class="name">def idfile = tempdir + separator + 'output' + separator + 'ids.json'</span>
   
-  <span class="lead-duration duration">0.008</span>
+  <span class="lead-duration duration">0.012</span>
 
   </div>
 
@@ -1030,7 +1030,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">&gt; *</span>
   <span class="name">print idfile</span>
   
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.002</span>
 
   </div>
 
@@ -1045,7 +1045,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
           <a>Doc string</a>
       </div>
       <div id="msg-13" class="collapse collapsable-details">
-        <pre>12:17:22.894 [print] /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/ids.json</pre>
+        <pre>12:17:54.662 [print] /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/ids.json</pre>
       </div>
     </div>
   </div>
@@ -1103,7 +1103,7 @@ stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.ap
   <span class="keyword indention">&gt; *</span>
   <span class="name">eval db.writeln(karate.pretty(list),idfile)</span>
   
-  <span class="lead-duration duration">0.033</span>
+  <span class="lead-duration duration">0.032</span>
 
   </div>
 
