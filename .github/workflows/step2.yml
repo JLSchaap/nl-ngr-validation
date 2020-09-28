@@ -1,4 +1,4 @@
-name: NGR validatie 
+name: NGR validatie step 2
 
 on:
   # Trigger the workflow on push or pull request,
