@@ -1,13 +1,13 @@
 @step1
 Feature:  get details
   Background:
-    * configure readTimeout = 240000
+
     * url 'http://nationaalgeoregister.nl/'
-    # * def callonesresult = callonce read('classpath:InspireTest/def/getcswbriefrecords.feature')
-    * configure connectTimeout = 5000
     * def tempdir = java.lang.System.getProperty('user.dir')
     * def separator = java.lang.System.getProperty("file.separator")
-    * def idfile = tempdir + separator + 'ids.json';
+    * def outputpath = tempdir + separator + 'output' + separator
+
+    * def idfile = outputpath + 'ids.json'
     * print idfile
     * def list =  karate.read( idfile)
 
@@ -29,12 +29,13 @@ Feature:  get details
     * def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue
     * def title =  get response //citation/CI_Citation/title/CharacterString
     * def email = get response //electronicMailAddress/CharacterString
-    * def organisationpath = karate.get('//organisationName/CharacterString')
+    * def organisationpath = karate.get('//MD_Metadata/contact/CI_ResponsibleParty/organisationName/CharacterString')
     * def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString')
     * def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href')
     * def mystorage = Java.type('storage.DataStorage')
     * def db = new mystorage
-    * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , 'target/surefire-reports/' + scopecode + 's.csv')
+    * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , outputpath + scopecode + 's.csv')
+    * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , outputpath + scopecode + 's-'  + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '.csv')
 
     Examples:
       | list |
