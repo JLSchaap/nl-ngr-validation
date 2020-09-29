@@ -1,9 +1,7 @@
 @step0
-Feature:  run onces  automatically
+Feature:  run onces  automatically get id's form ngr
 
-    Scenario: write header
-        * def callheaderresult = callonce read('classpath:InspireTest/def/writedatasetcsvheader.template.feature')
-
+  
     Scenario: get id's
         * configure readTimeout = 240000
         * url 'http://nationaalgeoregister.nl/'

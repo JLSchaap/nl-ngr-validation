@@ -1,0 +1,77 @@
+[
+    {
+        "ref": "TR.missingAtLeastOneOpenSearchDescriptionUrl",
+        "translationArguments": {
+            "argument": [
+                {
+                    "$": "os:Url",
+                    "token": "element"
+                },
+                {
+                    "$": "/os:OpenSearchDescription/os:Url[@rel='results' and starts-with(@template,'http') and contains(@template,'crs') and contains(@template,'spatial_dataset_identifier_code') and contains(@template,'spatial_dataset_identifier_namespace') and contains(@template,'language')]",
+                    "token": "xpath"
+                }
+            ]
+        }
+    },
+    {
+        "ref": "TR.missingElement",
+        "translationArguments": {
+            "argument": [
+                {
+                    "$": "os:Query",
+                    "token": "element"
+                },
+                {
+                    "$": "/os:OpenSearchDescription/os:Query[@role='example' and @inspire_dls:crs]",
+                    "token": "xpath"
+                }
+            ]
+        }
+    },
+    {
+        "ref": "TR.missingElement",
+        "translationArguments": {
+            "argument": [
+                {
+                    "$": "os:Query",
+                    "token": "element"
+                },
+                {
+                    "$": "/os:OpenSearchDescription/os:Query[@role='example' and @inspire_dls:spatial_dataset_identifier_namespace and @inspire_dls:spatial_dataset_identifier_code]",
+                    "token": "xpath"
+                }
+            ]
+        }
+    },
+    {
+        "ref": "TR.missingElement",
+        "translationArguments": {
+            "argument": [
+                {
+                    "$": "os:Query",
+                    "token": "element"
+                },
+                {
+                    "$": "/os:OpenSearchDescription/os:Query[@role='example' and @inspire_dls:spatial_dataset_identifier_namespace and @inspire_dls:spatial_dataset_identifier_code]",
+                    "token": "xpath"
+                }
+            ]
+        }
+    },
+    {
+        "ref": "TR.missingGenericSearchQueriesUrl",
+        "translationArguments": {
+            "argument": [
+                {
+                    "$": "@template",
+                    "token": "element"
+                },
+                {
+                    "$": "/os:OpenSearchDescription/os:Url[@rel='results' and @type='text/html']/@template",
+                    "token": "xpath"
+                }
+            ]
+        }
+    }
+]
