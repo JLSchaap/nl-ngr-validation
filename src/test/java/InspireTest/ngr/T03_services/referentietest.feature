@@ -126,3 +126,7 @@ Feature: Service test Invasieve exoten
     Examples:
       | testsuite                               | label                                                                                                   | serviceEndpoint                                                                          | ETFexpected                                              |
       | EID11571c92-3940-4f42-a6cd-5e2b1c6f4d93 | Conformance Class: Download Service - Pre-defined Atom,  Atom Invasieve Exoten (INSPIRE Geharmoniseerd) | https://geodata.nationaalgeoregister.nl/rvo/inspire/invasieve-exoten/atom/v1_0/index.xml | read('classpath:InspireTest/ETFexpected/atomerror.json') |
+
+#"serviceIdentifierCode","title","dataIdentificationCitationAnchor","organisation","electronicMailAddress","metadataStandardVersion",
+#"d2a05dd5-98e8-4f9c-8ba2-7fe2d5c7c507","Spreiding van soorten - Invasieve Exoten (INSPIRE geharmoniseerd) ATOM V1","no MD_DataIdentificationCitationAnchor","Beheer PDOK","[beheerPDOK@kadaster.nl, beheerpdok@kadaster.nl]","Nederlands metadata profiel op ISO 19119 voor services 2.0",
+#"b196f948-5d87-4eb4-9854-a93841c3877f","Spreiding van soorten - Invasieve Exoten (INSPIRE geharmoniseerd) WMS V1","no MD_DataIdentificationCitationAnchor","Beheer PDOK","[beheerPDOK@kadaster.nl, beheerPDOK@kadaster.nl]","Nederlands metadata profiel op ISO 19119 voor services 2.0",
