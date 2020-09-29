@@ -1,5 +1,5 @@
-<testsuite failures="0" name="InspireTest/ngr/T03_services/referentietest.feature" skipped="0" tests="1" time="33.459114">
-  <testcase classname="InspireTest.ngr.T03_services.referentietest" name="Conformance Class: Download Service - Pre-defined Atom,  Atom Invasieve Exoten (INSPIRE Geharmoniseerd) https://geodata.nationaalgeoregister.nl/rvo/inspire/invasieve-exoten/atom/v1_0/index.xml EID11571c92-3940-4f42-a6cd-5e2b1c6f4d93" time="33.459114">
+<testsuite failures="0" name="InspireTest/ngr/T03_services/referentietest.feature" skipped="0" tests="1" time="31.20562">
+  <testcase classname="InspireTest.ngr.T03_services.referentietest" name="Conformance Class: Download Service - Pre-defined Atom,  Atom Invasieve Exoten (INSPIRE Geharmoniseerd) https://geodata.nationaalgeoregister.nl/rvo/inspire/invasieve-exoten/atom/v1_0/index.xml EID11571c92-3940-4f42-a6cd-5e2b1c6f4d93" time="31.20562">
     <system-out>* url 'https://inspire.ec.europa.eu/validator/v2/' ........................ passed
 * def testRunRequest = .................................................... passed
 Given path 'TestRuns' ..................................................... passed

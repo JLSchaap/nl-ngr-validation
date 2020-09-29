@@ -1,12 +1,12 @@
-<testsuite failures="0" name="InspireTest/ngr/T03_services/Inspire validator up.feature" skipped="0" tests="4" time="9.037151">
-  <testcase classname="InspireTest.ngr.T03_services.Inspire validator up" name="Healt" time="2.201419">
+<testsuite failures="0" name="InspireTest/ngr/T03_services/Inspire validator up.feature" skipped="0" tests="4" time="6.160405">
+  <testcase classname="InspireTest.ngr.T03_services.Inspire validator up" name="Healt" time="1.484415">
     <system-out>* url 'https://inspire.ec.europa.eu/validator/v2/' ........................ passed
 Given path 'heartbeat' .................................................... passed
 When method HEAD .......................................................... passed
 Then assert responseStatus == 200 || responseStatus == 204 ................ passed
 * print responseStatus .................................................... passed</system-out>
   </testcase>
-  <testcase classname="InspireTest.ngr.T03_services.Inspire validator up" name="Check the status of the service, i.e. if there is thread run available" time="2.20701">
+  <testcase classname="InspireTest.ngr.T03_services.Inspire validator up" name="Check the status of the service, i.e. if there is thread run available" time="1.479922">
     <system-out>* url 'https://inspire.ec.europa.eu/validator/v2/' ........................ passed
 Given path 'heartbeat' .................................................... passed
 When method HEAD .......................................................... passed
@@ -18,7 +18,7 @@ When method GET ........................................................... pass
 Then status 200 ........................................................... passed
 And match response.status == "GOOD" ....................................... passed</system-out>
   </testcase>
-  <testcase classname="InspireTest.ngr.T03_services.Inspire validator up" name="list test suites" time="2.413805">
+  <testcase classname="InspireTest.ngr.T03_services.Inspire validator up" name="list test suites" time="1.714255">
     <system-out>* url 'https://inspire.ec.europa.eu/validator/v2/' ........................ passed
 Given path 'heartbeat' .................................................... passed
 When method HEAD .......................................................... passed
@@ -36,7 +36,7 @@ When method GET ........................................................... pass
 Then status 200 ........................................................... passed
 * print response .......................................................... passed</system-out>
   </testcase>
-  <testcase classname="InspireTest.ngr.T03_services.Inspire validator up" name="Check test suites atom exits" time="2.214917">
+  <testcase classname="InspireTest.ngr.T03_services.Inspire validator up" name="Check test suites atom exits" time="1.481812">
     <system-out>* url 'https://inspire.ec.europa.eu/validator/v2/' ........................ passed
 Given path 'heartbeat' .................................................... passed
 When method HEAD .......................................................... passed
