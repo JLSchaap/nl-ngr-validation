@@ -1,0 +1,70 @@
+<testsuite failures="0" name="InspireTest/ngr/T03_services/referentietest.feature" skipped="0" tests="1" time="40.190814">
+  <testcase classname="InspireTest.ngr.T03_services.referentietest" name="Conformance Class: Download Service - Pre-defined Atom,  Atom Invasieve Exoten (INSPIRE Geharmoniseerd) https://geodata.nationaalgeoregister.nl/rvo/inspire/invasieve-exoten/atom/v1_0/index.xml EID11571c92-3940-4f42-a6cd-5e2b1c6f4d93" time="40.190814">
+    <system-out>* url 'https://inspire.ec.europa.eu/validator/v2/' ........................ passed
+* def testRunRequest = .................................................... passed
+Given path 'TestRuns' ..................................................... passed
+And request testRunRequest ................................................ passed
+When method post .......................................................... passed
+Then assert responseStatus == 200 || responseStatus == 201 ................ passed
+* print response.EtfItemCollection.testRuns.TestRun.id .................... passed
+* print response.EtfItemCollection.testRuns.TestRun.status ................ passed
+* print response.EtfItemCollection.testRuns.TestRun.label ................. passed
+* print response.EtfItemCollection.ref .................................... passed
+* print response.EtfItemCollection.testRuns.TestRun.logPath ............... passed
+* def statuspath = "TestRuns/" + response.EtfItemCollection.testRuns.TestRun.id . passed
+* def progresspath = "TestRuns/" + response.EtfItemCollection.testRuns.TestRun.id + "/progress" . passed
+* print 'statuspath', statuspath .......................................... passed
+* print 'progresspath ', progresspath ..................................... passed
+Given path  progresspath .................................................. passed
+When method GET ........................................................... passed
+And retry until response.val == response.max .............................. passed
+* print response .......................................................... passed
+Given path  progresspath .................................................. passed
+When method GET ........................................................... passed
+* print response .......................................................... passed
+Given path  statuspath .................................................... passed
+When method GET ........................................................... passed
+* print response.EtfItemCollection.testRuns.TestRun.id .................... passed
+* print response.EtfItemCollection.testRuns.TestRun.status ................ passed
+* def status = response.EtfItemCollection.testRuns.TestRun.status ......... passed
+* print status ............................................................ passed
+* print response.EtfItemCollection.testRuns.TestRun.label ................. passed
+* print response.EtfItemCollection.ref .................................... passed
+* def ref = response.EtfItemCollection.ref ................................ passed
+* print ref ............................................................... passed
+* print response.EtfItemCollection.testRuns.TestRun.logPath ............... passed
+* def embedUrl = .......................................................... passed
+* def time = java.lang.System.currentTimeMillis() ......................... passed
+* def jsonPath = time + 'Conformance Class: Download Service - Pre-defined Atom,  Atom Invasieve Exoten (INSPIRE Geharmoniseerd).json' . passed
+* def responsecontent = response .......................................... passed
+* karate.write(responsecontent, jsonPath) ................................. passed
+* def a = embedUrl (ref.substring(0, ref.length - 5) + '.html' ,  status ) . passed
+* def a = embedUrl ("../../" + jsonPath ,  status ) ....................... passed
+* def json = get[0] response.EtfItemCollection.referencedItems.testTaskResults . passed
+* def jsonfailedStep = $json.TestTaskResult.testModuleResults.TestModuleResult[*].testCaseResults.TestCaseResult[*].testStepResults.TestStepResult[?(@.status=='FAILED')] . passed
+* def jsonFailedStepmessages = $jsonfailedStep[*].messages.message.ref .... passed
+* print jsonFailedStepmessages ............................................ passed
+* def jsonfailedAssert = $jsonfailedStep[*].testAssertionResults.TestAssertionResult[?(@.status=='FAILED')] . passed
+* def jsonfailedMessages = $jsonfailedAssert[*].messages.message .......... passed
+* def tmpref = $jsonfailedMessages[*].ref ................................. passed
+* def refs = karate.append( jsonFailedStepmessages, tmpref ) .............. passed
+* def expectedresult = read('classpath:InspireTest/ETFexpected/atomerror.json') . passed
+* def Collections = Java.type('java.util.Collections') .................... passed
+* copy sortedrefs = refs .................................................. passed
+* Collections.sort(sortedrefs) ............................................ passed
+* copy sortedexpectedrefs = $expectedresult[*].ref ........................ passed
+* Collections.sort(sortedexpectedrefs) .................................... passed
+* print refs .............................................................. passed
+* print sortedrefs ........................................................ passed
+* print sortedexpectedrefs ................................................ passed
+* match sortedrefs == sortedexpectedrefs .................................. passed
+* print jsonfailedMessages ................................................ passed
+* def tempdir = java.lang.System.getProperty('user.dir') .................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def outputpath = tempdir + separator + 'output' + separator ............. passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* def LocalDateTime = Java.type('java.time.LocalDateTime') ................ passed
+* eval db.writeln('- Test: '+ karate.info.scenarioName+ '\n  Time: '+ LocalDateTime.now() +'\n  Errors: ' +  sortedrefs  ,  outputpath + karate.info.featureFileName + '.yaml') . passed</system-out>
+  </testcase>
+</testsuite>
