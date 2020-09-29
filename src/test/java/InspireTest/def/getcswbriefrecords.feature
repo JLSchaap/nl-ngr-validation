@@ -17,17 +17,31 @@ Feature:  getlist of ngr records
     And param maxRecords = 1000
     When method get
     Then status 200
-    * def briefarray = get response /GetRecordsResponse/SearchResults/BriefRecord[*]/identifier
-    * def list = karate.mapWithKey(briefarray ,'datasetIdentifierCode')
-    * def json = karate.map(list, function(x, i){ return {} })
+    * eval karate.embed(responseBytes,'application/xml')
+
     * def tempdir = java.lang.System.getProperty('user.dir')
-    * def separator = java.lang.System.getProperty("file.separator") 
-    * def idfile = tempdir + separator + 'output' + separator + 'ids.json'
-    * print idfile
+    * def separator = java.lang.System.getProperty("file.separator")
+    * def outputpath = tempdir + separator + 'output' + separator
     * def mystorage = Java.type('storage.DataStorage')
     * def db = new mystorage
-    * eval db.writeln(karate.pretty(list),idfile)
+    * eval db.setOverwrite()
 
+    #all id's
+    * def briefarray = get response /GetRecordsResponse/SearchResults/BriefRecord[*]/identifier
+    * def list = karate.mapWithKey(briefarray ,'datasetIdentifierCode')
+    * eval db.writeln(karate.pretty(list),outputpath + 'ids.json')
 
+    #services
+    * def servicearray = get response /GetRecordsResponse/SearchResults/BriefRecord[type='service']/identifier
+    * def servicelist = karate.mapWithKey(servicearray,'datasetIdentifierCode')
+    * eval db.writeln(karate.pretty(servicelist),outputpath + 'idsService.json')
 
+    #datasets
+    * def datasetarray = get response /GetRecordsResponse/SearchResults/BriefRecord[type='dataset']/identifier
+    * def datasetlist = karate.mapWithKey(datasetarray,'datasetIdentifierCode')
+    * eval db.writeln(karate.pretty(datasetlist ),outputpath + 'idsDataset.json')
 
+    #serie pm 
+   # * def seriesarray = get response /GetRecordsResponse/SearchResults/BriefRecord[type='series']/identifier
+   # * def serieslist = karate.mapWithKey(seriesarray,'datasetIdentifierCode')
+   # * eval db.writeln(karate.pretty(serieslist),outputpath + 'idsSeries.json')

@@ -1,16 +1,21 @@
-name: NGR validatie step 1
+name: NGR validatie step 3
 
 on:
-  workflow_dispatch:
-    tags:
-    description: "Test scenario tags"
+  # Trigger the workflow on push or pull request,
+  # but only for the master branch
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
   schedule:
-    - cron: "04 04 * * *"
+    - cron: "30 06 * * *"
 
 jobs:
   build:
     runs-on: ubuntu-latest
- 
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v2
       - name: Set up JDK 13
@@ -18,20 +23,22 @@ jobs:
         with:
           java-version: 13
 
-      - name: Build with Maven step 0
-        run: mvn clean --file pom.xml -Dkarate.options="--tags @step0" test
-      - name: Build with Maven step 1
-        run: mvn --file pom.xml -Dkarate.options="--tags @step1" test
+      - name: Build with Maven step 3
+        run: mvn --file pom.xml -Dkarate.options="--tags @step3" test
       - name: Deploy 1
         uses: peaceiris/actions-gh-pages@v3
         if: always()
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./output
+          keep_files: true 
       - name: Deploy 2
         uses: peaceiris/actions-gh-pages@v3
         if: always()
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./target/surefire-reports
-          keep_files: true
+          keep_files: true 
+
+
+    
