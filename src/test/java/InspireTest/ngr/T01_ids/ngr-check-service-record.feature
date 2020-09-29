@@ -10,7 +10,7 @@ Feature:  get details
     * def idfile = outputpath + 'idsService.json'
     * print idfile
     * def list =  karate.read( idfile)
-
+    * def callheaderresult = callonce read('classpath:InspireTest/def/writedatasetcsvheader.template.feature')
 
 
   Scenario Outline: <datasetIdentifierCode>
@@ -34,13 +34,14 @@ Feature:  get details
     * def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href')
     #  * def connectUrl = karate.get ( '//MD_DigitalTransferOptions/onLine[*]/CI_OnlineResource/linkage/URL')
     * def connectUrl = karate.get ('/GetRecordByIdResponse/MD_Metadata/distributionInfo/MD_Distribution/transferOptions/MD_DigitalTransferOptions/onLine/CI_OnlineResource/linkage/URL')
-
+    * def protocol = karate.get ( '/GetRecordByIdResponse/MD_Metadata/distributionInfo/MD_Distribution/transferOptions/MD_DigitalTransferOptions/onLine/CI_OnlineResource/protocol/CharacterString')
     #unique values
     #* def connectUrl = new java.util.HashSet(connectUrlAll)
     * def mystorage = Java.type('storage.DataStorage')
     * def db = new mystorage
-    * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + connectUrl + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , outputpath + scopecode + 's.csv')
-    * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + connectUrl + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , outputpath + scopecode + 's-'  + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '.csv')
+    * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + connectUrl + '","' + protocol + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , outputpath + scopecode + 's.csv')
+    * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + connectUrl + '","' + protocol + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , outputpath + scopecode + 's-' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '.csv')
+   # * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + connectUrl + '","' + protocol + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , outputpath + scopecode + 's-'  + "-" + protocol + "-"  +  (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '.csv')
 
     Examples:
       | list |
