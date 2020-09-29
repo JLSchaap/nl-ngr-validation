@@ -7,7 +7,7 @@ Feature:  get details
     * def separator = java.lang.System.getProperty("file.separator")
     * def outputpath = tempdir + separator + 'output' + separator
 
-    * def idfile = outputpath + 'ids.json'
+    * def idfile = outputpath + 'idsDataset.json'
     * print idfile
     * def list =  karate.read( idfile)
 
