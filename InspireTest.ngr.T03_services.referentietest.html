@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+      
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+        <meta charset="utf-8">
+            
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+            
+        <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+            
+        <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+            
+        <link href="favicon.ico" rel="shortcut icon">
+            <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+        <title>InspireTest.ngr.T03_services.referentietest</title>
+          
+    </head>
+      
+    <body>
+            
+        <div id="root-container">
+                  
+            <div id="leftnav">
+                        
+                <div class="nav-logo">
+                              <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+                    <div class="nav-count">
+                                    
+                        <div class="bg-success" id="nav-pass">0</div>
+                                    
+                        <div class="bg-danger" id="nav-fail">1</div>
+                                  
+                    </div>
+                            
+                </div>
+                        
+                <div id="nav-type">Scenarios</div>
+                         
+        
+                <div id="nav-date">2020-09-29 11:51:02 AM</div>
+                        
+      
+                <div class="nav-container">
+                    <div class="nav-item failed">
+                        <a href="#[1.1:128]">[1.1:128] Conformance Class: Download Service - Pre-defined Atom,  Atom Invasieve Exoten (INSPIRE Geharmoniseerd) https://geodata.nationaalgeoregister.nl/rvo/inspire/invasieve-exoten/atom/v1_0/index.xml EID11571c92-3940-4f42-a6cd-5e2b1c6f4d93 </a>
+                    </div>
+                </div>
+            </div>
+                  
+            <div id="content">
+                      
+                <div class="page-heading alert alert-primary">
+                    <a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">InspireTest/ngr/T03_services/referentietest.feature</span><span class="feature-description">Service test Invasieve exoten</span>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[1.1:128]">
+                        <div class="heading-container">
+                            <div class="scenario-tags">
+                                <a class="badge badge-primary" href="karate-tags.html">step3</a>
+                            </div>
+                            <span class="scenario-keyword">Scenario Outline: [1.1:128]</span><span class="scenario-name">Conformance Class: Download Service - Pre-defined Atom,  Atom Invasieve Exoten (INSPIRE Geharmoniseerd) https://geodata.nationaalgeoregister.nl/rvo/inspire/invasieve-exoten/atom/v1_0/index.xml EID11571c92-3940-4f42-a6cd-5e2b1c6f4d93 </span>
+                        </div>
+                        <div class="scenario-time failed">ms: 31537</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[1.1:128]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[1.1:128]bg">
+                        <div class="step-container" id="1">
+                            <div class="step-ref bg-step">1</div>
+                            <div class="step-cell passed">* url 'https://inspire.ec.europa.eu/validator/v2/'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="1">11:50:30.687 karate.env system property was:</div>
+                    <div class="step-row">
+                        <div class="step-container" id="2">
+                            <div class="step-ref passed">2</div>
+                            <div class="step-cell passed">* def testRunRequest =</div>
+                        </div>
+                        <div class="time-cell passed">16</div>
+                    </div>
+                    <div class="preformatted" data-parent="2">{
+  "label": "Conformance Class: Download Service - Pre-defined Atom,  Atom Invasieve Exoten (INSPIRE Geharmoniseerd)",
+  "executableTestSuiteIds": [
+    "EID11571c92-3940-4f42-a6cd-5e2b1c6f4d93"
+  ],
+  "arguments": {},
+  "testObject": {
+    "resources": {
+      "serviceEndpoint": "https://geodata.nationaalgeoregister.nl/rvo/inspire/invasieve-exoten/atom/v1_0/index.xml"
+    }
+  }
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="3">
+                            <div class="step-ref passed">3</div>
+                            <div class="step-cell passed">Given path 'TestRuns'</div>
+                        </div>
+                        <div class="time-cell passed">8</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="4">
+                            <div class="step-ref passed">4</div>
+                            <div class="step-cell passed">And request testRunRequest</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="5">
+                            <div class="step-ref failed">5</div>
+                            <div class="step-cell failed">When method post</div>
+                        </div>
+                        <div class="time-cell failed">31514</div>
+                    </div>
+                    <div class="preformatted" data-parent="5">11:51:02.480 java.net.SocketTimeoutException: Read timed out, http call failed after 31433 milliseconds for URL: https://inspire.ec.europa.eu/validator/v2/TestRuns
+11:51:02.480 http request failed: 
+java.net.SocketTimeoutException: Read timed out
+referentietest.feature:28 - 
+java.net.SocketTimeoutException: Read timed out</div>
+                    <div class="step-row">
+                        <div class="step-container" id="6">
+                            <div class="step-ref skipped">6</div>
+                            <div class="step-cell skipped">Then assert responseStatus == 200 || responseStatus == 201</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="7">
+                            <div class="step-ref skipped">7</div>
+                            <div class="step-cell skipped">* print response.EtfItemCollection.testRuns.TestRun.id</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="8">
+                            <div class="step-ref skipped">8</div>
+                            <div class="step-cell skipped">* print response.EtfItemCollection.testRuns.TestRun.status</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="9">
+                            <div class="step-ref skipped">9</div>
+                            <div class="step-cell skipped">* print response.EtfItemCollection.testRuns.TestRun.label</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="10">
+                            <div class="step-ref skipped">10</div>
+                            <div class="step-cell skipped">* print response.EtfItemCollection.ref</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="11">
+                            <div class="step-ref skipped">11</div>
+                            <div class="step-cell skipped">* print response.EtfItemCollection.testRuns.TestRun.logPath</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="12">
+                            <div class="step-ref skipped">12</div>
+                            <div class="step-cell skipped">* def statuspath = "TestRuns/" + response.EtfItemCollection.testRuns.TestRun.id</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="13">
+                            <div class="step-ref skipped">13</div>
+                            <div class="step-cell skipped">* def progresspath = "TestRuns/" + response.EtfItemCollection.testRuns.TestRun.id + "/progress"</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="14">
+                            <div class="step-ref skipped">14</div>
+                            <div class="step-cell skipped">* print 'statuspath', statuspath</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="15">
+                            <div class="step-ref skipped">15</div>
+                            <div class="step-cell skipped">* print 'progresspath ', progresspath</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="16">
+                            <div class="step-ref skipped">16</div>
+                            <div class="step-cell skipped">Given path  progresspath</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="17">
+                            <div class="step-ref skipped">17</div>
+                            <div class="step-cell skipped">When method GET</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="18">
+                            <div class="step-ref skipped">18</div>
+                            <div class="step-cell skipped">And retry until response.val == response.max</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="19">
+                            <div class="step-ref skipped">19</div>
+                            <div class="step-cell skipped">* print response</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="20">
+                            <div class="step-ref skipped">20</div>
+                            <div class="step-cell skipped">Given path  progresspath</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="21">
+                            <div class="step-ref skipped">21</div>
+                            <div class="step-cell skipped">When method GET</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="22">
+                            <div class="step-ref skipped">22</div>
+                            <div class="step-cell skipped">* print response</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="23">
+                            <div class="step-ref skipped">23</div>
+                            <div class="step-cell skipped">Given path  statuspath</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="24">
+                            <div class="step-ref skipped">24</div>
+                            <div class="step-cell skipped">When method GET</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="25">
+                            <div class="step-ref skipped">25</div>
+                            <div class="step-cell skipped">* print response.EtfItemCollection.testRuns.TestRun.id</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="26">
+                            <div class="step-ref skipped">26</div>
+                            <div class="step-cell skipped">* print response.EtfItemCollection.testRuns.TestRun.status</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="27">
+                            <div class="step-ref skipped">27</div>
+                            <div class="step-cell skipped">* def status = response.EtfItemCollection.testRuns.TestRun.status</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="28">
+                            <div class="step-ref skipped">28</div>
+                            <div class="step-cell skipped">* print status</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="29">
+                            <div class="step-ref skipped">29</div>
+                            <div class="step-cell skipped">* print response.EtfItemCollection.testRuns.TestRun.label</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="30">
+                            <div class="step-ref skipped">30</div>
+                            <div class="step-cell skipped">* print response.EtfItemCollection.ref</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="31">
+                            <div class="step-ref skipped">31</div>
+                            <div class="step-cell skipped">* def ref = response.EtfItemCollection.ref</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="32">
+                            <div class="step-ref skipped">32</div>
+                            <div class="step-cell skipped">* print ref</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="33">
+                            <div class="step-ref skipped">33</div>
+                            <div class="step-cell skipped">* print response.EtfItemCollection.testRuns.TestRun.logPath</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="34">
+                            <div class="step-ref skipped">34</div>
+                            <div class="step-cell skipped">* def embedUrl =</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="34">function(url, hyperlinkText)
+     { var html = '&lt;a href=\"' + url + '\" &gt;' + hyperlinkText + '&lt;/a&gt;';
+     karate.embed(html,'text/html'); }</div>
+                    <div class="step-row">
+                        <div class="step-container" id="35">
+                            <div class="step-ref skipped">35</div>
+                            <div class="step-cell skipped">* def time = java.lang.System.currentTimeMillis()</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="36">
+                            <div class="step-ref skipped">36</div>
+                            <div class="step-cell skipped">* def jsonPath = time + 'Conformance Class: Download Service - Pre-defined Atom,  Atom Invasieve Exoten (INSPIRE Geharmoniseerd).json'</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="37">
+                            <div class="step-ref skipped">37</div>
+                            <div class="step-cell skipped">* def responsecontent = response</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="38">
+                            <div class="step-ref skipped">38</div>
+                            <div class="step-cell skipped">* karate.write(responsecontent, jsonPath)</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="39">
+                            <div class="step-ref skipped">39</div>
+                            <div class="step-cell skipped">* def a = embedUrl (ref.substring(0, ref.length - 5) + '.html' ,  status )</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="40">
+                            <div class="step-ref skipped">40</div>
+                            <div class="step-cell skipped">* def a = embedUrl ("../../" + jsonPath ,  status )</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="41">
+                            <div class="step-ref skipped">41</div>
+                            <div class="step-cell skipped">* def json = get[0] response.EtfItemCollection.referencedItems.testTaskResults</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="42">
+                            <div class="step-ref skipped">42</div>
+                            <div class="step-cell skipped">* def jsonfailedStep = $json.TestTaskResult.testModuleResults.TestModuleResult[*].testCaseResults.TestCaseResult[*].testStepResults.TestStepResult[?(@.status=='FAILED')]</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="43">
+                            <div class="step-ref skipped">43</div>
+                            <div class="step-cell skipped">* def jsonFailedStepmessages = $jsonfailedStep[*].messages.message.ref</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="44">
+                            <div class="step-ref skipped">44</div>
+                            <div class="step-cell skipped">* print jsonFailedStepmessages</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="45">
+                            <div class="step-ref skipped">45</div>
+                            <div class="step-cell skipped">* def jsonfailedAssert = $jsonfailedStep[*].testAssertionResults.TestAssertionResult[?(@.status=='FAILED')]</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="46">
+                            <div class="step-ref skipped">46</div>
+                            <div class="step-cell skipped">* def jsonfailedMessages = $jsonfailedAssert[*].messages.message</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="47">
+                            <div class="step-ref skipped">47</div>
+                            <div class="step-cell skipped">* def tmpref = $jsonfailedMessages[*].ref</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="48">
+                            <div class="step-ref skipped">48</div>
+                            <div class="step-cell skipped">* def refs = karate.append( jsonFailedStepmessages, tmpref )</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="49">
+                            <div class="step-ref skipped">49</div>
+                            <div class="step-cell skipped">* def expectedresult = read('classpath:InspireTest/ETFexpected/atomerror.json')</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="50">
+                            <div class="step-ref skipped">50</div>
+                            <div class="step-cell skipped">* def Collections = Java.type('java.util.Collections')</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="51">
+                            <div class="step-ref skipped">51</div>
+                            <div class="step-cell skipped">* copy sortedrefs = refs</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="52">
+                            <div class="step-ref skipped">52</div>
+                            <div class="step-cell skipped">* Collections.sort(sortedrefs)</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="53">
+                            <div class="step-ref skipped">53</div>
+                            <div class="step-cell skipped">* copy sortedexpectedrefs = $expectedresult[*].ref</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="54">
+                            <div class="step-ref skipped">54</div>
+                            <div class="step-cell skipped">* Collections.sort(sortedexpectedrefs)</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="55">
+                            <div class="step-ref skipped">55</div>
+                            <div class="step-cell skipped">* print refs</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="56">
+                            <div class="step-ref skipped">56</div>
+                            <div class="step-cell skipped">* print sortedrefs</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="57">
+                            <div class="step-ref skipped">57</div>
+                            <div class="step-cell skipped">* print sortedexpectedrefs</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="58">
+                            <div class="step-ref skipped">58</div>
+                            <div class="step-cell skipped">* match sortedrefs == sortedexpectedrefs</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="59">
+                            <div class="step-ref skipped">59</div>
+                            <div class="step-cell skipped">* print jsonfailedMessages</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="60">
+                            <div class="step-ref skipped">60</div>
+                            <div class="step-cell skipped">* def tempdir = java.lang.System.getProperty('user.dir')</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="61">
+                            <div class="step-ref skipped">61</div>
+                            <div class="step-cell skipped">* def separator = java.lang.System.getProperty("file.separator")</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="62">
+                            <div class="step-ref skipped">62</div>
+                            <div class="step-cell skipped">* def outputpath = tempdir + separator + 'output' + separator</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="63">
+                            <div class="step-ref skipped">63</div>
+                            <div class="step-cell skipped">* def mystorage = Java.type('storage.DataStorage')</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="64">
+                            <div class="step-ref skipped">64</div>
+                            <div class="step-cell skipped">* def db = new mystorage</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="65">
+                            <div class="step-ref skipped">65</div>
+                            <div class="step-cell skipped">* def LocalDateTime = Java.type('java.time.LocalDateTime')</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="66">
+                            <div class="step-ref skipped">66</div>
+                            <div class="step-cell skipped">* eval db.writeln('- Test: '+ karate.info.scenarioName+ '\n  Time: '+ LocalDateTime.now() +'\n  Errors: ' +  sortedrefs  ,  outputpath + karate.info.featureFileName + '.yaml')</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+           
+  
+    </body>
+    
+</html>

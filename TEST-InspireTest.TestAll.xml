@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="InspireTest.TestAll" time="34.1" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.specification.version" value="13"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/runner/work/nl-ngr-validation/nl-ngr-validation/target/test-classes:/home/runner/work/nl-ngr-validation/nl-ngr-validation/target/classes:/home/runner/.m2/repository/com/intuit/karate/karate-apache/0.9.6/karate-apache-0.9.6.jar:/home/runner/.m2/repository/com/intuit/karate/karate-core/0.9.6/karate-core-0.9.6.jar:/home/runner/.m2/repository/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar:/home/runner/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/home/runner/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/home/runner/.m2/repository/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5.jar:/home/runner/.m2/repository/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar:/home/runner/.m2/repository/org/yaml/snakeyaml/1.24/snakeyaml-1.24.jar:/home/runner/.m2/repository/de/siegmar/fastcsv/1.0.3/fastcsv-1.0.3.jar:/home/runner/.m2/repository/info/picocli/picocli/4.0.3/picocli-4.0.3.jar:/home/runner/.m2/repository/org/apache/httpcomponents/httpclient/4.5.12/httpclient-4.5.12.jar:/home/runner/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/runner/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/runner/.m2/repository/org/apache/httpcomponents/httpmime/4.5.12/httpmime-4.5.12.jar:/home/runner/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.jar:/home/runner/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/home/runner/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/home/runner/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/home/runner/.m2/repository/com/intuit/karate/karate-junit5/0.9.6/karate-junit5-0.9.6.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.2/junit-jupiter-api-5.6.2.jar:/home/runner/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/runner/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/runner/.m2/repository/org/junit/platform/junit-platform-commons/1.6.2/junit-platform-commons-1.6.2.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.2/junit-jupiter-engine-5.6.2.jar:/home/runner/.m2/repository/org/junit/platform/junit-platform-engine/1.6.2/junit-platform-engine-1.6.2.jar:/home/runner/.m2/repository/net/masterthought/cucumber-reporting/3.13.0/cucumber-reporting-3.13.0.jar:/home/runner/.m2/repository/org/apache/logging/log4j/log4j-api/2.8.2/log4j-api-2.8.2.jar:/home/runner/.m2/repository/org/apache/logging/log4j/log4j-core/2.8.2/log4j-core-2.8.2.jar:/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.8.6/jackson-databind-2.8.6.jar:/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.8.0/jackson-annotations-2.8.0.jar:/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.8.6/jackson-core-2.8.6.jar:/home/runner/.m2/repository/org/apache/velocity/velocity/1.7/velocity-1.7.jar:/home/runner/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/home/runner/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar:/home/runner/.m2/repository/velocity-tools/velocity-tools/1.4/velocity-tools-1.4.jar:/home/runner/.m2/repository/joda-time/joda-time/2.9.9/joda-time-2.9.9.jar:/home/runner/.m2/repository/org/apache/commons/commons-lang3/3.6/commons-lang3-3.6.jar:/home/runner/.m2/repository/commons-io/commons-io/2.5/commons-io-2.5.jar:/home/runner/.m2/repository/net/lingala/zip4j/zip4j/1.3.2/zip4j-1.3.2.jar:/home/runner/.m2/repository/org/codehaus/plexus/plexus-utils/3.0.24/plexus-utils-3.0.24.jar:/home/runner/.m2/repository/org/jsoup/jsoup/1.10.3/jsoup-1.10.3.jar:/home/runner/.m2/repository/com/googlecode/owasp-java-html-sanitizer/owasp-java-html-sanitizer/20170515.1/owasp-java-html-sanitizer-20170515.1.jar:/home/runner/.m2/repository/com/google/guava/guava/20.0/guava-20.0.jar:/home/runner/.m2/repository/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar:/home/runner/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/home/runner/.m2/repository/commons-digester/commons-digester/1.8/commons-digester-1.8.jar:/home/runner/.m2/repository/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar:/home/runner/.m2/repository/commons-beanutils/commons-beanutils-core/1.8.0/commons-beanutils-core-1.8.0.jar:/home/runner/.m2/repository/org/apache/maven/plugins/maven-surefire-plugin/3.0.0-M4/maven-surefire-plugin-3.0.0-M4.jar:/home/runner/.m2/repository/org/apache/maven/surefire/maven-surefire-common/3.0.0-M4/maven-surefire-common-3.0.0-M4.jar:/home/runner/.m2/repository/org/apache/maven/surefire/surefire-api/3.0.0-M4/surefire-api-3.0.0-M4.jar:/home/runner/.m2/repository/org/apache/maven/surefire/surefire-logger-api/3.0.0-M4/surefire-logger-api-3.0.0-M4.jar:/home/runner/.m2/repository/org/apache/maven/surefire/surefire-extensions-api/3.0.0-M4/surefire-extensions-api-3.0.0-M4.jar:/home/runner/.m2/repository/org/apache/maven/surefire/surefire-booter/3.0.0-M4/surefire-booter-3.0.0-M4.jar:/home/runner/.m2/repository/org/apache/maven/maven-toolchain/3.0-alpha-2/maven-toolchain-3.0-alpha-2.jar:/home/runner/.m2/repository/org/apache/maven/shared/maven-artifact-transfer/0.11.0/maven-artifact-transfer-0.11.0.jar:/home/runner/.m2/repository/org/apache/maven/shared/maven-common-artifact-filters/3.0.1/maven-common-artifact-filters-3.0.1.jar:/home/runner/.m2/repository/org/apache/maven/maven-model/3.0/maven-model-3.0.jar:/home/runner/.m2/repository/org/apache/maven/maven-plugin-api/3.0/maven-plugin-api-3.0.jar:/home/runner/.m2/repository/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-plexus-1.4.2.jar:/home/runner/.m2/repository/org/codehaus/plexus/plexus-classworlds/2.2.3/plexus-classworlds-2.2.3.jar:/home/runner/.m2/repository/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.jar:/home/runner/.m2/repository/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7-noaop.jar:/home/runner/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.1.0/maven-shared-utils-3.1.0.jar:/home/runner/.m2/repository/org/codehaus/plexus/plexus-java/1.0.3/plexus-java-1.0.3.jar:/home/runner/.m2/repository/org/ow2/asm/asm/7.0/asm-7.0.jar:/home/runner/.m2/repository/com/thoughtworks/qdox/qdox/2.0-M9/qdox-2.0-M9.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter/5.6.2/junit-jupiter-5.6.2.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.6.2/junit-jupiter-params-5.6.2.jar:"/>
+    <property name="java.vm.vendor" value="Azul Systems, Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://www.azulsystems.com/"/>
+    <property name="user.timezone" value="Etc/UTC"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="13"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/opt/hostedtoolcache/jdk/13.0.4/x64/lib"/>
+    <property name="sun.java.command" value="/home/runner/work/nl-ngr-validation/nl-ngr-validation/target/surefire/surefirebooter7735797588324128274.jar /home/runner/work/nl-ngr-validation/nl-ngr-validation/target/surefire 2020-09-29T11-50-27_997-jvmRun1 surefire10155497040537221762tmp surefire_013382694236013253071tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/runner/work/nl-ngr-validation/nl-ngr-validation/target/test-classes:/home/runner/work/nl-ngr-validation/nl-ngr-validation/target/classes:/home/runner/.m2/repository/com/intuit/karate/karate-apache/0.9.6/karate-apache-0.9.6.jar:/home/runner/.m2/repository/com/intuit/karate/karate-core/0.9.6/karate-core-0.9.6.jar:/home/runner/.m2/repository/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar:/home/runner/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/home/runner/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/home/runner/.m2/repository/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5.jar:/home/runner/.m2/repository/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar:/home/runner/.m2/repository/org/yaml/snakeyaml/1.24/snakeyaml-1.24.jar:/home/runner/.m2/repository/de/siegmar/fastcsv/1.0.3/fastcsv-1.0.3.jar:/home/runner/.m2/repository/info/picocli/picocli/4.0.3/picocli-4.0.3.jar:/home/runner/.m2/repository/org/apache/httpcomponents/httpclient/4.5.12/httpclient-4.5.12.jar:/home/runner/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/runner/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/runner/.m2/repository/org/apache/httpcomponents/httpmime/4.5.12/httpmime-4.5.12.jar:/home/runner/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.jar:/home/runner/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/home/runner/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/home/runner/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/home/runner/.m2/repository/com/intuit/karate/karate-junit5/0.9.6/karate-junit5-0.9.6.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.2/junit-jupiter-api-5.6.2.jar:/home/runner/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/runner/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/runner/.m2/repository/org/junit/platform/junit-platform-commons/1.6.2/junit-platform-commons-1.6.2.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.2/junit-jupiter-engine-5.6.2.jar:/home/runner/.m2/repository/org/junit/platform/junit-platform-engine/1.6.2/junit-platform-engine-1.6.2.jar:/home/runner/.m2/repository/net/masterthought/cucumber-reporting/3.13.0/cucumber-reporting-3.13.0.jar:/home/runner/.m2/repository/org/apache/logging/log4j/log4j-api/2.8.2/log4j-api-2.8.2.jar:/home/runner/.m2/repository/org/apache/logging/log4j/log4j-core/2.8.2/log4j-core-2.8.2.jar:/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.8.6/jackson-databind-2.8.6.jar:/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.8.0/jackson-annotations-2.8.0.jar:/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.8.6/jackson-core-2.8.6.jar:/home/runner/.m2/repository/org/apache/velocity/velocity/1.7/velocity-1.7.jar:/home/runner/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/home/runner/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar:/home/runner/.m2/repository/velocity-tools/velocity-tools/1.4/velocity-tools-1.4.jar:/home/runner/.m2/repository/joda-time/joda-time/2.9.9/joda-time-2.9.9.jar:/home/runner/.m2/repository/org/apache/commons/commons-lang3/3.6/commons-lang3-3.6.jar:/home/runner/.m2/repository/commons-io/commons-io/2.5/commons-io-2.5.jar:/home/runner/.m2/repository/net/lingala/zip4j/zip4j/1.3.2/zip4j-1.3.2.jar:/home/runner/.m2/repository/org/codehaus/plexus/plexus-utils/3.0.24/plexus-utils-3.0.24.jar:/home/runner/.m2/repository/org/jsoup/jsoup/1.10.3/jsoup-1.10.3.jar:/home/runner/.m2/repository/com/googlecode/owasp-java-html-sanitizer/owasp-java-html-sanitizer/20170515.1/owasp-java-html-sanitizer-20170515.1.jar:/home/runner/.m2/repository/com/google/guava/guava/20.0/guava-20.0.jar:/home/runner/.m2/repository/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar:/home/runner/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/home/runner/.m2/repository/commons-digester/commons-digester/1.8/commons-digester-1.8.jar:/home/runner/.m2/repository/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar:/home/runner/.m2/repository/commons-beanutils/commons-beanutils-core/1.8.0/commons-beanutils-core-1.8.0.jar:/home/runner/.m2/repository/org/apache/maven/plugins/maven-surefire-plugin/3.0.0-M4/maven-surefire-plugin-3.0.0-M4.jar:/home/runner/.m2/repository/org/apache/maven/surefire/maven-surefire-common/3.0.0-M4/maven-surefire-common-3.0.0-M4.jar:/home/runner/.m2/repository/org/apache/maven/surefire/surefire-api/3.0.0-M4/surefire-api-3.0.0-M4.jar:/home/runner/.m2/repository/org/apache/maven/surefire/surefire-logger-api/3.0.0-M4/surefire-logger-api-3.0.0-M4.jar:/home/runner/.m2/repository/org/apache/maven/surefire/surefire-extensions-api/3.0.0-M4/surefire-extensions-api-3.0.0-M4.jar:/home/runner/.m2/repository/org/apache/maven/surefire/surefire-booter/3.0.0-M4/surefire-booter-3.0.0-M4.jar:/home/runner/.m2/repository/org/apache/maven/maven-toolchain/3.0-alpha-2/maven-toolchain-3.0-alpha-2.jar:/home/runner/.m2/repository/org/apache/maven/shared/maven-artifact-transfer/0.11.0/maven-artifact-transfer-0.11.0.jar:/home/runner/.m2/repository/org/apache/maven/shared/maven-common-artifact-filters/3.0.1/maven-common-artifact-filters-3.0.1.jar:/home/runner/.m2/repository/org/apache/maven/maven-model/3.0/maven-model-3.0.jar:/home/runner/.m2/repository/org/apache/maven/maven-plugin-api/3.0/maven-plugin-api-3.0.jar:/home/runner/.m2/repository/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-plexus-1.4.2.jar:/home/runner/.m2/repository/org/codehaus/plexus/plexus-classworlds/2.2.3/plexus-classworlds-2.2.3.jar:/home/runner/.m2/repository/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.jar:/home/runner/.m2/repository/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7-noaop.jar:/home/runner/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.1.0/maven-shared-utils-3.1.0.jar:/home/runner/.m2/repository/org/codehaus/plexus/plexus-java/1.0.3/plexus-java-1.0.3.jar:/home/runner/.m2/repository/org/ow2/asm/asm/7.0/asm-7.0.jar:/home/runner/.m2/repository/com/thoughtworks/qdox/qdox/2.0-M9/qdox-2.0-M9.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter/5.6.2/junit-jupiter-5.6.2.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.6.2/junit-jupiter-params-5.6.2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/runner"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2020-07-14"/>
+    <property name="java.home" value="/opt/hostedtoolcache/jdk/13.0.4/x64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/runner/work/nl-ngr-validation/nl-ngr-validation"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="jdk.vendor.version" value="Zulu13.33+25-CA"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="karate.options" value="--tags @step3"/>
+    <property name="surefire.real.class.path" value="/home/runner/work/nl-ngr-validation/nl-ngr-validation/target/surefire/surefirebooter7735797588324128274.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="13.0.4+8-MTS"/>
+    <property name="user.name" value="runner"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.4.0-1025-azure"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Zulu13.33+25-CA"/>
+    <property name="localRepository" value="/home/runner/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://www.azulsystems.com/support/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="13.0.4"/>
+    <property name="user.dir" value="/home/runner/work/nl-ngr-validation/nl-ngr-validation"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Azul Systems, Inc."/>
+    <property name="java.vm.version" value="13.0.4+8-MTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="57.0"/>
+  </properties>
+  <testcase name="testParallel" classname="InspireTest.TestAll" time="34.078">
+    <failure type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+failed features:
+InspireTest.ngr.T03_services.referentietest: [1.1:128] referentietest.feature:28 - 
+java.net.SocketTimeoutException: Read timed out
+ ==> expected: <0> but was: <1>
+	at InspireTest.TestAll.testParallel(InspireTest.java:27)
+]]></failure>
+    <system-out><![CDATA[11:50:29.608 [main] INFO  com.intuit.karate.RunnerOptions - found system property 'karate.options': --tags @step3
+11:50:30.366 [main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+11:50:30.671 [ForkJoinPool-1-worker-37] INFO  com.intuit.karate - karate.env system property was:  
+11:50:30.673 [ForkJoinPool-1-worker-9] INFO  com.intuit.karate - karate.env system property was:  
+11:50:30.679 [ForkJoinPool-1-worker-51] INFO  com.intuit.karate - karate.env system property was:  
+11:50:30.679 [ForkJoinPool-1-worker-59] INFO  com.intuit.karate - karate.env system property was:  
+11:50:30.663 [ForkJoinPool-1-worker-23] INFO  com.intuit.karate - karate.env system property was:  
+11:50:32.662 [ForkJoinPool-1-worker-51] INFO  com.intuit.karate - [print] 204
+11:50:36.828 [ForkJoinPool-1-worker-9] INFO  com.intuit.karate - [print] {
+  "EtfItemCollection": {
+    "returnedItems": 68,
+    "ref": "https://inspire.ec.europa.eu/validator//v2/ExecutableTestSuites.json?&offset=0&limit=1500&fields=id,label",
+    "executableTestSuites": {
+      "ExecutableTestSuite": [
+        {
+          "id": "EID59692c11-df86-49ad-be7f-94a1e1ddd8da",
+          "label": "Common Requirements for ISO/TC 19139:2007 based INSPIRE metadata records."
+        },
+        {
+          "id": "EIDe4a95862-9cc9-436b-9fdd-a0115d342350",
+          "label": "Conformance Class 1: INSPIRE data sets and data set series baseline metadata."
+        },
+        {
+          "id": "EID2be1480a-fe42-40b2-9420-eb0e69385c80",
+          "label": "Conformance Class 2: INSPIRE data sets and data set series interoperability metadata."
+        },
+        {
+          "id": "EID0b86f7a3-2947-4841-823d-6a00d8e06d70",
+          "label": "Conformance Class 2b: INSPIRE data sets and data set series metadata for Monitoring"
+        },
+        {
+          "id": "EID8f869e23-c9e9-4e86-8dca-be30ff421229",
+          "label": "Conformance Class 3: INSPIRE Spatial Data Service baseline metadata."
+        },
+        {
+          "id": "EID606587df-65a8-4b7b-9eee-e0d94daaa42a",
+          "label": "Conformance Class 4: INSPIRE Network Services metadata."
+        },
+        {
+          "id": "EID8db54d8a-8578-4959-b891-5394d9f53a28",
+          "label": "Conformance Class 5: INSPIRE Invocable Spatial Data Services metadata."
+        },
+        {
+          "id": "EID7514777a-6cb8-499c-acd5-912496dc84e9",
+          "label": "Conformance Class 6: INSPIRE Interoperable Spatial Data Services metadata."
+        },
+        {
+          "id": "EIDa593a7ad-42d9-46d0-985d-9dff3e684428",
+          "label": "Conformance Class 7: INSPIRE Harmonised Spatial Data Services metadata."
+        },
+        {
+          "id": "EIDc837298f-a10e-42d1-88f2-f1415cbbb463",
+          "label": "Conformance Class: Discovery Service - CSW Core"
+        },
+        {
+          "id": "EIDed2d3501-d700-4ff9-b9bf-070dece8ddbd",
+          "label": "Conformance Class: Download Service - Direct WFS"
+        },
+        {
+          "id": "EID11571c92-3940-4f42-a6cd-5e2b1c6f4d93",
+          "label": "Conformance Class: Download Service - Pre-defined Atom"
+        },
+        {
+          "id": "EID0ff73873-5601-41ff-8d92-3fb1fbba3cf2",
+          "label": "Conformance Class: Download Service - Pre-defined SOS"
+        },
+        {
+          "id": "EID174edf55-699b-446c-968c-1892a4d8d5bd",
+          "label": "Conformance Class: Download Service - Pre-defined WFS"
+        },
+        {
+          "id": "EID074570ad-d720-47b3-af79-d54201793404",
+          "label": "Conformance Class: Download Service - WCS Core"
+        },
+        {
+          "id": "EIDeec9d674-d94b-4d8d-b744-1309c6cae1d2",
+          "label": "Conformance Class: View Service - WMS"
+        },
+        {
+          "id": "EID550ceacf-b3cb-47a0-b2dd-d3edb18344a9",
+          "label": "Conformance Class: View Service - WMTS"
+        },
+        {
+          "id": "EID1f9bc92a-5879-4e9b-bcbe-1d2d0cab0aab",
+          "label": "Conformance class: Application Schema, Cadastral parcel"
+        },
+        {
+          "id": "EID8aaef94b-6a4d-47ab-a5d0-70ad5cb28b08",
+          "label": "Conformance class: Application schema, Addresses"
+        },
+        {
+          "id": "EIDddecef4b-89a3-4f9d-9246-a50b588fa5a2",
+          "label": "Conformance class: Application schema, Administrative Units"
+        },
+        {
+          "id": "EID6800c834-b4e0-4631-9209-73530fb9ccee",
+          "label": "Conformance class: Application schema, Air Transport Networks"
+        },
+        {
+          "id": "EID731621b9-2daa-49fd-99ef-9279b7f335b5",
+          "label": "Conformance class: Application schema, Cable Transport Networks"
+        },
+        {
+          "id": "EID0fc46305-c623-422b-b7d7-251c3b86eb7f",
+          "label": "Conformance class: Application schema, Geographical Names"
+        },
+        {
+          "id": "EIDe008001b-5233-4081-a1ae-515d7702ce02",
+          "label": "Conformance class: Application schema, Hydrography - Network"
+        },
+        {
+          "id": "EID45133c90-1929-405c-867d-9648b0620bf7",
+          "label": "Conformance class: Application schema, Hydrography - Physical Waters"
+        },
+        {
+          "id": "EID117562c2-d6e1-4345-9f7b-cba229cf6685",
+          "label": "Conformance class: Application schema, Maritime Units"
+        },
+        {
+          "id": "EID4c53a8c7-7cac-4531-982b-d03eb48ffa77",
+          "label": "Conformance class: Application schema, Protected Sites Simple"
+        },
+        {
+          "id": "EIDe2610a9f-6432-489d-8238-92b1193e7a3d",
+          "label": "Conformance class: Application schema, Rail Transport Networks"
+        },
+        {
+          "id": "EID14986e54-74c4-43b0-979b-d0d3e5cd0e8c",
+          "label": "Conformance class: Application schema, Road Transport Networks"
+        },
+        {
+          "id": "EID4441cbde-371f-4899-90b3-145f4fd08ebc",
+          "label": "Conformance class: Application schema, Transport Networks Common"
+        },
+        {
+          "id": "EIDeb35a20f-188d-4fd3-aee1-dd07eb3c3efa",
+          "label": "Conformance class: Application schema, Water Transport Networks"
+        },
+        {
+          "id": "EID9c31fa6e-1fab-4345-bf29-6d2c129de312",
+          "label": "Conformance class: Data consistency, Addresses"
+        },
+        {
+          "id": "EIDacc5931c-4ff0-499f-b916-3cda1603456b",
+          "label": "Conformance class: Data consistency, Administrative Units"
+        },
+        {
+          "id": "EID92032cdb-db88-42aa-96c0-70a1af9e68b1",
+          "label": "Conformance class: Data consistency, Cadastral Parcels"
+        },
+        {
+          "id": "EID61070ae8-13cb-4303-a340-72c8b877b00a",
+          "label": "Conformance class: Data consistency, General requirements"
+        },
+        {
+          "id": "EIDa32f76c7-f1d3-4d70-83ef-d51d2545fa2e",
+          "label": "Conformance class: Data consistency, Geographical Names"
+        },
+        {
+          "id": "EIDd0b58f38-98ae-43a8-a787-9a5084c60267",
+          "label": "Conformance class: Data consistency, Hydrography"
+        },
+        {
+          "id": "EID7831c8b4-f666-4534-838a-137b30bfecbe",
+          "label": "Conformance class: Data consistency, Protected Sites"
+        },
+        {
+          "id": "EID733af9a0-312b-4f71-9aa2-977cd2134d23",
+          "label": "Conformance class: Data consistency, Transport Networks"
+        },
+        {
+          "id": "EIDe6800faf-2e56-47df-831a-75a96b35f33d",
+          "label": "Conformance class: GML application schemas, Addresses"
+        },
+        {
+          "id": "EID47c569bc-677d-4ce3-8411-e2b29189332a",
+          "label": "Conformance class: GML application schemas, Administrative Units"
+        },
+        {
+          "id": "EID18b742d0-15eb-421f-bbec-7c8c5cf7ee1a",
+          "label": "Conformance class: GML application schemas, Cadastral Parcels"
+        },
+        {
+          "id": "EID02b7b0cb-429a-4f4e-b0db-988464fb9496",
+          "label": "Conformance class: GML application schemas, Geographical Names"
+        },
+        {
+          "id": "EID81b070d3-b17f-430b-abee-456268346912",
+          "label": "Conformance class: GML application schemas, Hydrography"
+        },
+        {
+          "id": "EID8222c253-8468-4b94-a46b-2d1af1698a65",
+          "label": "Conformance class: GML application schemas, Protected Sites"
+        },
+        {
+          "id": "EID9af1c865-1cf0-43ff-9250-069df01b0948",
+          "label": "Conformance class: GML application schemas, Transport Networks"
+        },
+        {
+          "id": "EID09820daf-62b2-4fa3-a95f-56a0d2b7c4d8",
+          "label": "Conformance class: INSPIRE GML application schemas, General requirements"
+        },
+        {
+          "id": "EID545f9e49-009b-4114-9333-7ca26413b5d4",
+          "label": "Conformance class: INSPIRE GML encoding"
+        },
+        {
+          "id": "EIDec7323d5-d8f0-4cfe-b23a-b826df86d58c",
+          "label": "Conformance class: INSPIRE Profile based on EN ISO 19115 and EN ISO 19119"
+        },
+        {
+          "id": "EID334bbd38-378d-4a44-8a19-5d00df919ec0",
+          "label": "Conformance class: Information accessibility, Addresses"
+        },
+        {
+          "id": "EIDee28b75e-5c80-4370-838d-ab1b18e30b13",
+          "label": "Conformance class: Information accessibility, Administrative Units"
+        },
+        {
+          "id": "EIDc4fbae00-3070-49fa-b803-24c66c31ac70",
+          "label": "Conformance class: Information accessibility, Cadastral Parcels"
+        },
+        {
+          "id": "EID499937ea-0590-42d2-bd7a-1cafff35ecdb",
+          "label": "Conformance class: Information accessibility, General requirements"
+        },
+        {
+          "id": "EIDc3379b85-853e-4a35-8c3d-b64191d94587",
+          "label": "Conformance class: Information accessibility, Geographical Names"
+        },
+        {
+          "id": "EID893b7541-c9cb-4e0a-9f84-5d55cad1866c",
+          "label": "Conformance class: Information accessibility, Hydrography"
+        },
+        {
+          "id": "EIDb529e8fa-b9f8-4758-acea-1d2af744599f",
+          "label": "Conformance class: Information accessibility, Protected Sites"
+        },
+        {
+          "id": "EIDdf5db9a4-b15f-4193-a6ff-6e9951af46f5",
+          "label": "Conformance class: Information accessibility, Transport Networks"
+        },
+        {
+          "id": "EID9a31ecfc-6673-43c0-9a31-b4595fb53a98",
+          "label": "Conformance class: Metadata for interoperability"
+        },
+        {
+          "id": "EIDdbcc48ae-6871-4444-8e95-547bc22aacb2",
+          "label": "Conformance class: Reference Systems, Cadastral Parcels"
+        },
+        {
+          "id": "EID6985a681-fd81-4448-83e8-061758b9ca8c",
+          "label": "Conformance class: Reference systems, Addresses"
+        },
+        {
+          "id": "EIDcafb75f8-5deb-4cca-89df-d3189322e97f",
+          "label": "Conformance class: Reference systems, Administrative Units"
+        },
+        {
+          "id": "EID63f586f0-080c-493b-8ca2-9919427440cc",
+          "label": "Conformance class: Reference systems, General requirements"
+        },
+        {
+          "id": "EID1620bd27-b881-48a2-bf2b-301541e035f4",
+          "label": "Conformance class: Reference systems, Geographical Names"
+        },
+        {
+          "id": "EID122b2f38-302f-4271-9653-69cf86fcb5c4",
+          "label": "Conformance class: Reference systems, Hydrography"
+        },
+        {
+          "id": "EID828410c1-53f2-4683-bded-481ad9d4d3e9",
+          "label": "Conformance class: Reference systems, Protected Sites"
+        },
+        {
+          "id": "EID9d35024d-9dd7-43a9-afff-d5aea5f51595",
+          "label": "Conformance class: Reference systems, Transport Networks"
+        },
+        {
+          "id": "EIDe3500038-e37c-4dcf-806c-6bc82d585b3b",
+          "label": "Conformance class: XML encoding of ISO 19115/19119 metadata"
+        },
+        {
+          "id": "EID95a1b6fc-2b55-3d43-9502-3b8b605bda10",
+          "label": "WFS 2.0 (OGC 09-025r2/ISO 19142) Conformance Test Suite"
+        }
+      ]
+    },
+    "position": 0,
+    "version": 2.0
+  }
+}
+
+11:50:36.950 [pool-1-thread-10] INFO  com.intuit.karate.Runner - <<pass>> feature 10 of 17: classpath:InspireTest/ngr/T03_services/Inspire validator up.feature
+---------------------------------------------------------
+feature: classpath:InspireTest/ngr/T03_services/Inspire validator up.feature
+report: target/surefire-reports/InspireTest.ngr.T03_services.Inspire validator up.json
+scenarios:  4 | passed:  4 | failed:  0 | time: 13.7414
+---------------------------------------------------------
+11:51:02.480 [ForkJoinPool-1-worker-23] ERROR com.intuit.karate - java.net.SocketTimeoutException: Read timed out, http call failed after 31433 milliseconds for URL: https://inspire.ec.europa.eu/validator/v2/TestRuns
+11:51:02.480 [ForkJoinPool-1-worker-23] ERROR com.intuit.karate - http request failed: 
+java.net.SocketTimeoutException: Read timed out
+11:51:02.490 [pool-1-thread-9] INFO  com.intuit.karate.Runner - <<fail>> feature 9 of 17: classpath:InspireTest/ngr/T03_services/referentietest.feature
+---------------------------------------------------------
+feature: classpath:InspireTest/ngr/T03_services/referentietest.feature
+report: target/surefire-reports/InspireTest.ngr.T03_services.referentietest.json
+scenarios:  1 | passed:  0 | failed:  1 | time: 31.5375
+---------------------------------------------------------
+
+HTML report: (paste into browser to view) | Karate version: 0.9.6
+file:/home/runner/work/nl-ngr-validation/nl-ngr-validation/target/surefire-reports/karate-summary.html
+===================================================================
+
+Karate version: 0.9.6
+======================================================
+elapsed:  32.89 | threads:   24 | thread time: 45.28 
+features:     2 | ignored:   15 | efficiency: 0.06
+scenarios:    5 | passed:     4 | failed: 1
+======================================================
+failed features:
+InspireTest.ngr.T03_services.referentietest: [1.1:128] referentietest.feature:28 - 
+java.net.SocketTimeoutException: Read timed out
+
+]]></system-out>
+    <system-err><![CDATA[Warning: Nashorn engine is planned to be removed from a future JDK release
+ERROR StatusLogger No log4j2 configuration file found. Using default configuration: logging only errors to the console. Set system property 'org.apache.logging.log4j.simplelog.StatusLogger.level' to TRACE to show Log4j2 internal initialization logging.
+]]></system-err>
+  </testcase>
+</testsuite>
