@@ -1,1 +1,0 @@
-{"features":2,"ignored":15,"efficiency":0.0573563255391218,"failures":{"InspireTest.ngr.T03_services.referentietest":"[1.1:128] referentietest.feature:28 - \njava.net.SocketTimeoutException: Read timed out"},"totalTime":45278.918783,"threads":24,"scenarios":5,"failed":1,"passed":4,"version":"0.9.6","elapsedTime":32893.0}
