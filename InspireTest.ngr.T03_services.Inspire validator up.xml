@@ -1,0 +1,61 @@
+<testsuite failures="0" name="InspireTest/ngr/T03_services/Inspire validator up.feature" skipped="0" tests="4" time="12.727646">
+  <testcase classname="InspireTest.ngr.T03_services.Inspire validator up" name="Healt" time="1.943257">
+    <system-out>* url 'https://inspire.ec.europa.eu/validator/v2/' ........................ passed
+Given path 'heartbeat' .................................................... passed
+When method HEAD .......................................................... passed
+Then assert responseStatus == 200 || responseStatus == 204 ................ passed
+* print responseStatus .................................................... passed</system-out>
+  </testcase>
+  <testcase classname="InspireTest.ngr.T03_services.Inspire validator up" name="Check the status of the service, i.e. if there is thread run available" time="1.931859">
+    <system-out>* url 'https://inspire.ec.europa.eu/validator/v2/' ........................ passed
+Given path 'heartbeat' .................................................... passed
+When method HEAD .......................................................... passed
+Then assert responseStatus == 200 || responseStatus == 204 ................ passed
+* print responseStatus .................................................... passed
+* url 'https://inspire.ec.europa.eu/validator/v2/' ........................ passed
+Given path 'status' ....................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.status == "GOOD" ....................................... passed</system-out>
+  </testcase>
+  <testcase classname="InspireTest.ngr.T03_services.Inspire validator up" name="list test suites" time="5.271152">
+    <system-out>* url 'https://inspire.ec.europa.eu/validator/v2/' ........................ passed
+Given path 'heartbeat' .................................................... passed
+When method HEAD .......................................................... passed
+Then assert responseStatus == 200 || responseStatus == 204 ................ passed
+* print responseStatus .................................................... passed
+* url 'https://inspire.ec.europa.eu/validator/v2/' ........................ passed
+Given path 'status' ....................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.status == "GOOD" ....................................... passed
+* url 'https://inspire.ec.europa.eu/validator/v2/' ........................ passed
+Given path 'ExecutableTestSuites.json' .................................... passed
+And param fields = "id,label" ............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed</system-out>
+  </testcase>
+  <testcase classname="InspireTest.ngr.T03_services.Inspire validator up" name="Check test suites atom exits" time="3.581378">
+    <system-out>* url 'https://inspire.ec.europa.eu/validator/v2/' ........................ passed
+Given path 'heartbeat' .................................................... passed
+When method HEAD .......................................................... passed
+Then assert responseStatus == 200 || responseStatus == 204 ................ passed
+* print responseStatus .................................................... passed
+* url 'https://inspire.ec.europa.eu/validator/v2/' ........................ passed
+Given path 'status' ....................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.status == "GOOD" ....................................... passed
+* url 'https://inspire.ec.europa.eu/validator/v2/' ........................ passed
+Given path 'ExecutableTestSuites.json' .................................... passed
+And param fields = "id,label" ............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* url 'https://inspire.ec.europa.eu/validator/v2/' ........................ passed
+Given path 'ExecutableTestSuites/EID11571c92-3940-4f42-a6cd-5e2b1c6f4d93' . passed
+When method HEAD .......................................................... passed
+Then status 204 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>
