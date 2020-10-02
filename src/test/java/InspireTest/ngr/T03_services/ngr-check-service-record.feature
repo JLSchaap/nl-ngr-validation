@@ -5,7 +5,7 @@ Feature:  get details
     * url 'http://nationaalgeoregister.nl/'
     * def tempdir = java.lang.System.getProperty('user.dir')
     * def separator = java.lang.System.getProperty("file.separator")
-    * def outputpath = tempdir + separator + 'output' + separator
+    * def outputpath = tempdir + separator + 'output' + separator + "T02_services" + separator
 
     * def idfile = outputpath + 'idsService.json'
     * print idfile

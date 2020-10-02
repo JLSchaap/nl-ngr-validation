@@ -1,20 +1,18 @@
 @step1
-Feature:  get details
-  Background:
+Feature: get details
 
+  Background: 
     * url 'http://nationaalgeoregister.nl/'
     * def tempdir = java.lang.System.getProperty('user.dir')
     * def separator = java.lang.System.getProperty("file.separator")
-    * def outputpath = tempdir + separator + 'output' + separator
-
-    * def idfile = outputpath + 'idsDataset.json'
-    * print idfile
+    * def mystorage = Java.type('storage.DataStorage')
+    * def db = new mystorage
+       * def separator = java.lang.System.getProperty("file.separator")
+    * def idfile = db.outputpath("T01_ids") + separator + 'idsDataset.json'
     * def list =  karate.read( idfile)
-
-
+    * def step = karate.featureFileName
 
   Scenario Outline: <datasetIdentifierCode>
-
     Given path 'geonetwork/srv/dut/inspire'
     And param service = 'CSW'
     And param version = '2.0.2'
@@ -25,22 +23,17 @@ Feature:  get details
     When method get
     Then status 200
     And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '<datasetIdentifierCode>'
-
     * def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue
     * def title =  get response //citation/CI_Citation/title/CharacterString
     * def email = get response //electronicMailAddress/CharacterString
     * def organisationpath = karate.get('//MD_Metadata/contact/CI_ResponsibleParty/organisationName/CharacterString')
     * def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString')
     * def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href')
-    * def mystorage = Java.type('storage.DataStorage')
-    * def db = new mystorage
-    * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , outputpath + scopecode + 's.csv')
-    * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , outputpath + scopecode + 's-'  + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '.csv')
+    * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' ,db.outputpath(step) + scopecode + 's.csv')
+    * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , db.outputpath(step)  + scopecode + 's-'  + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '.csv')
 
-    Examples:
+    Examples: 
       | list |
-
-
 # csv def/datasetlist.csv has the following field:
 #  Examples:
 #    | datasetIdentifierCode                |

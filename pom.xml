@@ -9,10 +9,11 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>13</java.version>
+        <java.version>14</java.version>
         <maven.compiler.version>3.6.0</maven.compiler.version>
         <karate.version>0.9.6</karate.version>
         <cucumber.reporting.version>3.13.0</cucumber.reporting.version>
+ 
 
     </properties>
     <dependencyManagement>
@@ -53,7 +54,8 @@
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.7.0</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -74,8 +76,10 @@
                 <version>${maven.compiler.version}</version>
                 <configuration>
                     <encoding>UTF-8</encoding>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
+                    <source>14</source>
+                    <target>14</target>
+                    <release>14</release>
+                    <compilerArgs>--enable-preview</compilerArgs>
                     <compilerArgument>-Werror</compilerArgument>
                 </configuration>
             </plugin>
@@ -85,6 +89,7 @@
                 <version>3.0.0-M4</version>
                 <configuration>
                     <argLine>-Dfile.encoding=UTF-8</argLine>
+                    <argLine>--enable-preview</argLine>
                 </configuration>
             </plugin>
         </plugins>
