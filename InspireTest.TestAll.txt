@@ -1,13 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: InspireTest.TestAll
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 122.175 s <<< FAILURE! - in InspireTest.TestAll
-InspireTest.TestAll.T01_ids  Time elapsed: 121.545 s  <<< ERROR!
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 125.066 s <<< FAILURE! - in InspireTest.TestAll
+InspireTest.TestAll.T01_ids  Time elapsed: 124.434 s  <<< ERROR!
 com.intuit.karate.exception.KarateException: 
 T01_Ids.feature:34 - evaluation (js) failed: db.writeln(karate.pretty(list),outputpath + 'ids.json'), java.lang.RuntimeException: java.io.FileNotFoundException: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/T01_ids/ids.json (No such file or directory)
 stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:531)
 
-InspireTest.TestAll.T02_datasets  Time elapsed: 0.003 s  <<< ERROR!
+InspireTest.TestAll.T02_datasets  Time elapsed: 0.001 s  <<< ERROR!
 java.io.FileNotFoundException: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/T02_datasets/services.csv (No such file or directory)
 	at InspireTest.TestAll.T02_datasets(InspireTest.java:66)
 
