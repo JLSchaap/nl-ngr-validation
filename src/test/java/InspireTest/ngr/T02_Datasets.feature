@@ -14,6 +14,8 @@ Feature: get details
     * def outputpath = db.outputpath()
     * print outputpath
     * eval db.ensureDirectory(outputpath)
+    * def outfile = outputpath + separator  + "datasets.csv"
+    * eval db.writeheaderdataset(outfile)
 
 
 

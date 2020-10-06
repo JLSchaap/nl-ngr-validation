@@ -6,8 +6,12 @@ Feature:  get details
     * def mystorage = Java.type('storage.DataStorage')
     * def db = new mystorage
     * def db = db.setfeature(karate.info.featureFileName)
-
     * def separator = java.lang.System.getProperty("file.separator")
+    * def outputpath = db.outputpath()
+    * eval db.ensureDirectory(outputpath)
+    * eval db.writeheaderservice(outputpath + separator  + "services.csv" )
+    * eval db.writeheaderservice(outputpath + separator  + "services-Beheer PDOK.csv" )
+   
     * def idfile = db.outputpath("T01_ids") + separator + 'idsService.json'
     * def list =  karate.read( idfile)
 
@@ -33,7 +37,7 @@ Feature:  get details
     #  * def connectUrl = karate.get ( '//MD_DigitalTransferOptions/onLine[*]/CI_OnlineResource/linkage/URL')
     * def connectUrl = karate.get ('/GetRecordByIdResponse/MD_Metadata/distributionInfo/MD_Distribution/transferOptions/MD_DigitalTransferOptions/onLine/CI_OnlineResource/linkage/URL')
     * def protocol = karate.get ( '/GetRecordByIdResponse/MD_Metadata/distributionInfo/MD_Distribution/transferOptions/MD_DigitalTransferOptions/onLine/CI_OnlineResource/protocol/CharacterString')
-    
+
     * def operateson = get response //MD_Metadata/identificationInfo/SV_ServiceIdentification/operatesOn/@href
     #unique values
     #* def connectUrl = new java.util.HashSet(connectUrlAll)

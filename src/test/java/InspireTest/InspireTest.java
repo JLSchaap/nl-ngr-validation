@@ -30,7 +30,7 @@ import storage.DataStorage;
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 @Testable
 class TestAll {
-	private static DataStorage db = new DataStorage();
+	private static final DataStorage db = new DataStorage();
 
 	@BeforeAll
 	public static void oneTimeSetUp() throws IOException {
@@ -59,33 +59,27 @@ class TestAll {
 		String step = "T02_Datasets";
 
 		db.cleanStepOutputDir(step);
-		db.setOverwrite();
-		String header;
-		header = "\"datasetIdentifierCode\",\"title\",\"MD_DataIdentificationCitationAnchor\",\"organisation\",\"electronicMailAddress\",\"metadataStandardVersion\",";
-		//db.writeln(header, db.outputdir().getAbsolutePath() + "/" + "T02_datasets" + "/" + "datasets.csv");
-		runtest(step);
+			runtest(step);
 
 		step = "T02_Services";
 		db.cleanStepOutputDir(step);
-		db.setOverwrite();
-	    header = "\"serviceIdentifierCode\",\"title\",\"url\",\"protocol\", \"organisation\",\"electronicMailAddress\",\"metadataStandardVersion\",\"operatesOn\",\"datasetIdentifierCode\",";
-		//db.writeln(header, db.outputdir().getAbsolutePath() + "/" + "T02_services" + "/" + "services.csv");
-		// pm db.writeln(
-		// '"serviceIdentifierCode","title","dataIdentificationCitationAnchor","organisation","electronicMailAddress","metadataStandardVersion",',
-		// outputpath + 'seriess.csv')
-		//db.writeln(header, db.outputdir().getAbsolutePath() + "/" + "T02_services" + "/" + "services-Beheer PDOK.csv");
-
 		runtest(step);
 	}
 
-	// @Test
-	// @Order(2)
-	// void T03_services() throws IOException {
-	// runtestdir("T03_services");
-	// }
+	/*
+	@Test
+	@Order(3)
+	void T03() throws IOException {
+		String step = "T03_Extra";
+		db.cleanStepOutputDir(step);
+		runtestdir(step); 
+		
+	}
+
+*/ 
 
 	void runtestdir(String step) throws IOException {
-		File stepdir = new File(db.startdir().getAbsolutePath()  + step);
+		File stepdir = new File(db.startdir().getAbsolutePath() +"/" + step);
 
 		File stepreportdir = new File(db.reportdir().getAbsolutePath() + "/" + step);
 

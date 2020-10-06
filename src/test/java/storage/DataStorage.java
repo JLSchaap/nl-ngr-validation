@@ -20,13 +20,9 @@ public class DataStorage {
 		return (new File(userdir + "/output"));
 	}
 
-	boolean append = true;
+
 	String featurename = "T99_featureNotSetYet.feature";
 
-	public DataStorage setOverwrite() {
-		append = false;
-		return this;
-	}
 
 	public DataStorage setfeature(String featurefilename) {
 		featurename = featurefilename;
@@ -35,12 +31,37 @@ public class DataStorage {
 
 	public String writeln(final String str, final String fileName) throws IOException {
 
+		return (writeln(str, fileName, true));
+	}
+
+	public String writeln(final String str, final String fileName, boolean append) throws IOException {
+
 		final FileOutputStream fos = new FileOutputStream(fileName, append);
 		final String printline = str + System.getProperty("line.separator");
 		fos.write(printline.getBytes());
 		fos.close();
 		return "OK";
 	}
+	public void writeheaderdataset(final String fileName) throws IOException {
+
+		String header;
+		header = "\"datasetIdentifierCode\",\"title\",\"MD_DataIdentificationCitationAnchor\",\"organisation\",\"electronicMailAddress\",\"metadataStandardVersion\",";
+		writeheader(header,fileName);
+
+
+	}
+	public void writeheaderservice(final String fileName ) throws IOException {
+	String header;
+	header = "\"serviceIdentifierCode\",\"title\",\"url\",\"protocol\", \"organisation\",\"electronicMailAddress\",\"metadataStandardVersion\",\"operatesOn\",\"datasetIdentifierCode\",";
+		writeheader(header,fileName);
+
+
+	}
+
+	public void writeheader(String header, String fileName ) throws IOException {
+		writeln(header,fileName, false);
+	}
+
 
 	public File outputpath(String step) {
 		File outdir = new File(outputdir().getAbsolutePath() + "/" + step);
@@ -51,7 +72,7 @@ public class DataStorage {
 		return outdir;
 	}
 
-public void ensureDirectory(String dirstring) throws IOException {
+public void ensureDirectory(String dirstring) {
      File dir = new File(dirstring); 
 	 ensureDirectory(dir); 
 
@@ -98,5 +119,6 @@ public void ensureDirectory(String dirstring) throws IOException {
 		return str.substring(str.indexOf("id=")+3, str.indexOf("#MD_DataIdentification"));
 
 	}
+
 
 }
