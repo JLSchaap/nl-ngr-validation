@@ -21,7 +21,7 @@ Feature:  getlist of ngr records
         And param elementsetname = "brief"
         And param resultType = 'results'
         And param startposition = 1
-        And param maxRecords = 5
+        And param maxRecords = 1000
         When method get
         Then status 200
         * eval karate.embed(responseBytes,'application/xml')
