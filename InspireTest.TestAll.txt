@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: InspireTest.TestAll
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 3.599 s <<< FAILURE! - in InspireTest.TestAll
+InspireTest.TestAll.T01_ids  Time elapsed: 2.599 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+failed features:
+src.test.java.InspireTest.ngr.T01_Ids: T01_Ids.feature:34 - evaluation (js) failed: db.writeln(karate.pretty(list),outputpath + 'ids.json'), java.lang.RuntimeException: java.io.FileNotFoundException: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/T01_ids/ids.json (No such file or directory)
+stack trace: jdk.scripting.nashorn/jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:531)
+ ==> expected: <0> but was: <1>
+	at InspireTest.TestAll.runtest(InspireTest.java:103)
+	at InspireTest.TestAll.T01_ids(InspireTest.java:53)
+
+InspireTest.TestAll.T02  Time elapsed: 0.002 s  <<< ERROR!
+java.io.FileNotFoundException: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/T02_datasets/datasets.csv (No such file or directory)
+	at InspireTest.TestAll.T02(InspireTest.java:65)
+
