@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = new vis.DataSet([{"id":1,"content":"ForkJoinPool-3-worker-51"},{"id":2,"content":"ForkJoinPool-3-worker-37"},{"id":3,"content":"ForkJoinPool-3-worker-23"}]);
+var items = new vis.DataSet([{"id":1,"group":1,"content":"T02_Services[1.1:14]","start":76,"end":685,"title":"T02_Services[1.1:14] 00:00:00.076-00:00:00.685 627b50bf-2e33-4beb-a314-ff8c0fe8912e"},{"id":2,"group":2,"content":"T02_Services[1.2:14]","start":83,"end":890,"title":"T02_Services[1.2:14] 00:00:00.083-00:00:00.890 4041f923-6b77-4816-bf46-437e85416c31"},{"id":3,"group":3,"content":"T02_Services[1.3:14]","start":66,"end":908,"title":"T02_Services[1.3:14] 00:00:00.066-00:00:00.908 a7ed73f4-e16d-46a3-befa-603370cfb6e8"}]);
+var container = document.getElementById('visualization');
+var timeline = new vis.Timeline(container);
+timeline.setOptions({ groupOrder: 'content' });
+timeline.setGroups(groups);
+timeline.setItems(items);
+</script>
+  </body>
+</html>

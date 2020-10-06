@@ -1,0 +1,90 @@
+<testsuite failures="0" name="src/test/java/InspireTest/ngr/T02_Datasets.feature" skipped="0" tests="2" time="1.399443">
+  <testcase classname="src.test.java.InspireTest.ngr.T02_Datasets" name="3d59fd06-9aec-4744-91e7-65e119f74569" time="0.661333">
+    <system-out>* url 'http://nationaalgeoregister.nl/' ................................... passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* def db = db.setfeature(karate.info.featureFileName) ..................... passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = db.outputpath("T01_ids") + separator + 'idsDataset.json' ... passed
+* def list =  karate.read( idfile) ........................................ passed
+* def outputpath = db.outputpath() ........................................ passed
+* print outputpath ........................................................ passed
+* eval db.ensureDirectory(outputpath) ..................................... passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = '3d59fd06-9aec-4744-91e7-65e119f74569' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '3d59fd06-9aec-4744-91e7-65e119f74569' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//MD_Metadata/contact/CI_ResponsibleParty/organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* eval db.writeln('"3d59fd06-9aec-4744-91e7-65e119f74569","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , outputpath + separator + scopecode + 's.csv') . passed
+* eval db.writeln('"3d59fd06-9aec-4744-91e7-65e119f74569","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , outputpath + separator + scopecode + 's-'  + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '.csv') . passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.InspireTest.ngr.T02_Datasets" name="31de946d-85d4-4c93-bb97-e25f4ef1401a" time="0.738111">
+    <system-out>* url 'http://nationaalgeoregister.nl/' ................................... passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* def db = db.setfeature(karate.info.featureFileName) ..................... passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = db.outputpath("T01_ids") + separator + 'idsDataset.json' ... passed
+* def list =  karate.read( idfile) ........................................ passed
+* def outputpath = db.outputpath() ........................................ passed
+* print outputpath ........................................................ passed
+* eval db.ensureDirectory(outputpath) ..................................... passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = '3d59fd06-9aec-4744-91e7-65e119f74569' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '3d59fd06-9aec-4744-91e7-65e119f74569' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//MD_Metadata/contact/CI_ResponsibleParty/organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* eval db.writeln('"3d59fd06-9aec-4744-91e7-65e119f74569","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , outputpath + separator + scopecode + 's.csv') . passed
+* eval db.writeln('"3d59fd06-9aec-4744-91e7-65e119f74569","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , outputpath + separator + scopecode + 's-'  + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '.csv') . passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* def db = db.setfeature(karate.info.featureFileName) ..................... passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def idfile = db.outputpath("T01_ids") + separator + 'idsDataset.json' ... passed
+* def list =  karate.read( idfile) ........................................ passed
+* def outputpath = db.outputpath() ........................................ passed
+* print outputpath ........................................................ passed
+* eval db.ensureDirectory(outputpath) ..................................... passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = '31de946d-85d4-4c93-bb97-e25f4ef1401a' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '31de946d-85d4-4c93-bb97-e25f4ef1401a' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//MD_Metadata/contact/CI_ResponsibleParty/organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* eval db.writeln('"31de946d-85d4-4c93-bb97-e25f4ef1401a","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , outputpath + separator + scopecode + 's.csv') . passed
+* eval db.writeln('"31de946d-85d4-4c93-bb97-e25f4ef1401a","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , outputpath + separator + scopecode + 's-'  + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '.csv') . passed</system-out>
+  </testcase>
+</testsuite>

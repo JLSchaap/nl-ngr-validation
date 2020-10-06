@@ -1,0 +1,33 @@
+<testsuite failures="0" name="src/test/java/InspireTest/ngr/T01_Ids.feature" skipped="0" tests="1" time="1.714544">
+  <testcase classname="src.test.java.InspireTest.ngr.T01_Ids" name="getbrief list" time="1.714544">
+    <system-out>* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def outputpath = db.outputpath("T01_ids") + separator ................... passed
+* eval db.ensureDirectory(outputpath) ..................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure readTimeout = 240000 .......................................... passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecords' .......................................... passed
+And param propertyName = 'identifier' ..................................... passed
+And param typeNames = 'csw:Record' ........................................ passed
+And param elementsetname = "brief" ........................................ passed
+And param resultType = 'results' .......................................... passed
+And param startposition = 1 ............................................... passed
+And param maxRecords = 5 .................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* eval karate.embed(responseBytes,'application/xml') ...................... passed
+* def briefarray = get response /GetRecordsResponse/SearchResults/BriefRecord[*]/identifier . passed
+* def list = karate.mapWithKey(briefarray ,'datasetIdentifierCode') ....... passed
+* eval db.writeln(karate.pretty(list),outputpath + 'ids.json') ............ passed
+* def servicearray = get response /GetRecordsResponse/SearchResults/BriefRecord[type='service']/identifier . passed
+* def servicelist = karate.mapWithKey(servicearray,'datasetIdentifierCode') . passed
+* eval db.writeln(karate.pretty(servicelist),outputpath + 'idsService.json') . passed
+* def datasetarray = get response /GetRecordsResponse/SearchResults/BriefRecord[type='dataset']/identifier . passed
+* def datasetlist = karate.mapWithKey(datasetarray,'datasetIdentifierCode') . passed
+* eval db.writeln(karate.pretty(datasetlist ),outputpath + 'idsDataset.json') . passed</system-out>
+  </testcase>
+</testsuite>
