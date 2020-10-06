@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+      
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+        <meta charset="utf-8">
+            
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+            
+        <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+            
+        <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+            
+        <link href="favicon.ico" rel="shortcut icon">
+            <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+        <title>src.test.java.InspireTest.ngr.T01_Ids</title>
+          
+    </head>
+      
+    <body>
+            
+        <div id="root-container">
+                  
+            <div id="leftnav">
+                        
+                <div class="nav-logo">
+                              <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+                    <div class="nav-count">
+                                    
+                        <div class="bg-success" id="nav-pass">1</div>
+                                    
+                        <div class="bg-danger" id="nav-fail">0</div>
+                                  
+                    </div>
+                            
+                </div>
+                        
+                <div id="nav-type">Scenarios</div>
+                         
+        
+                <div id="nav-date">2020-10-06 02:59:15 PM</div>
+                        
+      
+                <div class="nav-container">
+                    <div class="nav-item passed">
+                        <a href="#[1:11]">[1:11] getbrief list </a>
+                    </div>
+                </div>
+            </div>
+                  
+            <div id="content">
+                      
+                <div class="page-heading alert alert-primary">
+                    <a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/InspireTest/ngr/T01_Ids.feature</span><span class="feature-description">getlist of ngr records</span>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[1:11]">
+                        <div class="heading-container">
+                            <div class="scenario-tags">
+                                <a class="badge badge-primary" href="karate-tags.html">step0</a>
+                            </div>
+                            <span class="scenario-keyword">Scenario: [1:11]</span><span class="scenario-name">getbrief list </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 41904</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[1:11]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[1:11]bg">
+                        <div class="step-container" id="1">
+                            <div class="step-ref bg-step">1</div>
+                            <div class="step-cell passed">* def mystorage = Java.type('storage.DataStorage')</div>
+                        </div>
+                        <div class="time-cell passed">9</div>
+                    </div>
+                    <div class="preformatted" data-parent="1">14:58:32.905 karate.env system property was:</div>
+                    <div class="step-row" data-parent="[1:11]bg">
+                        <div class="step-container" id="2">
+                            <div class="step-ref bg-step">2</div>
+                            <div class="step-cell passed">* def db = new mystorage</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:11]bg">
+                        <div class="step-container" id="3">
+                            <div class="step-ref bg-step">3</div>
+                            <div class="step-cell passed">* def separator = java.lang.System.getProperty("file.separator")</div>
+                        </div>
+                        <div class="time-cell passed">17</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:11]bg">
+                        <div class="step-container" id="4">
+                            <div class="step-ref bg-step">4</div>
+                            <div class="step-cell passed">* def outputpath = db.outputpath("T01_ids") + separator</div>
+                        </div>
+                        <div class="time-cell passed">10</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:11]bg">
+                        <div class="step-container" id="5">
+                            <div class="step-ref bg-step">5</div>
+                            <div class="step-cell passed">* eval db.ensureDirectory(outputpath)</div>
+                        </div>
+                        <div class="time-cell passed">12</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="6">
+                            <div class="step-ref passed">6</div>
+                            <div class="step-cell passed">* url 'http://nationaalgeoregister.nl/'</div>
+                        </div>
+                        <div class="time-cell passed">6</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="7">
+                            <div class="step-ref passed">7</div>
+                            <div class="step-cell passed">* configure readTimeout = 240000</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="8">
+                            <div class="step-ref passed">8</div>
+                            <div class="step-cell passed">Given path 'geonetwork/srv/dut/inspire'</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="9">
+                            <div class="step-ref passed">9</div>
+                            <div class="step-cell passed">And param service = 'CSW'</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="10">
+                            <div class="step-ref passed">10</div>
+                            <div class="step-cell passed">And param version = '2.0.2'</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="11">
+                            <div class="step-ref passed">11</div>
+                            <div class="step-cell passed">And param request = 'GetRecords'</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="12">
+                            <div class="step-ref passed">12</div>
+                            <div class="step-cell passed">And param propertyName = 'identifier'</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="13">
+                            <div class="step-ref passed">13</div>
+                            <div class="step-cell passed">And param typeNames = 'csw:Record'</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="14">
+                            <div class="step-ref passed">14</div>
+                            <div class="step-cell passed">And param elementsetname = "brief"</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="15">
+                            <div class="step-ref passed">15</div>
+                            <div class="step-cell passed">And param resultType = 'results'</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="16">
+                            <div class="step-ref passed">16</div>
+                            <div class="step-cell passed">And param startposition = 1</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="17">
+                            <div class="step-ref passed">17</div>
+                            <div class="step-cell passed">And param maxRecords = 5</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="18">
+                            <div class="step-ref passed">18</div>
+                            <div class="step-cell passed">When method get</div>
+                        </div>
+                        <div class="time-cell passed">41750</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="19">
+                            <div class="step-ref passed">19</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="20">
+                            <div class="step-ref passed">20</div>
+                            <div class="step-cell passed">* eval karate.embed(responseBytes,'application/xml')</div>
+                        </div>
+                        <div class="time-cell passed">12</div>
+                    </div>
+                    <div class="embed" data-parent="20">
+                        <div>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&#13;
+&lt;csw:GetRecordsResponse xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-discovery.xsd"&gt;&#13;
+  &lt;csw:SearchStatus timestamp="2020-10-06T14:59:05" /&gt;&#13;
+  &lt;csw:SearchResults numberOfRecordsMatched="502" numberOfRecordsReturned="5" elementSet="brief" nextRecord="6"&gt;&#13;
+    &lt;csw:BriefRecord xmlns:ows="http://www.opengis.net/ows" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/"&gt;&#13;
+      &lt;dc:identifier&gt;627b50bf-2e33-4beb-a314-ff8c0fe8912e&lt;/dc:identifier&gt;&#13;
+      &lt;dc:title&gt;Vervoersnetwerken Waterwegen RWS (INSPIRE geharmoniseerd) WMS&lt;/dc:title&gt;&#13;
+      &lt;dc:type&gt;service&lt;/dc:type&gt;&#13;
+      &lt;ows:BoundingBox crs="::"&gt;&#13;
+        &lt;ows:LowerCorner&gt;7.245258336784366 50.73360719554353&lt;/ows:LowerCorner&gt;&#13;
+        &lt;ows:UpperCorner&gt;3.206252918228434 53.58297893748843&lt;/ows:UpperCorner&gt;&#13;
+      &lt;/ows:BoundingBox&gt;&#13;
+    &lt;/csw:BriefRecord&gt;&#13;
+    &lt;csw:BriefRecord xmlns:ows="http://www.opengis.net/ows" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/"&gt;&#13;
+      &lt;dc:identifier&gt;4041f923-6b77-4816-bf46-437e85416c31&lt;/dc:identifier&gt;&#13;
+      &lt;dc:title&gt;Kaderrichtlijn Mariene Strategie 2018 WMS&lt;/dc:title&gt;&#13;
+      &lt;dc:type&gt;service&lt;/dc:type&gt;&#13;
+      &lt;ows:BoundingBox crs="::"&gt;&#13;
+        &lt;ows:LowerCorner&gt;7.245258336784366 50.73360719554353&lt;/ows:LowerCorner&gt;&#13;
+        &lt;ows:UpperCorner&gt;3.206252918228434 53.58297893748843&lt;/ows:UpperCorner&gt;&#13;
+      &lt;/ows:BoundingBox&gt;&#13;
+    &lt;/csw:BriefRecord&gt;&#13;
+    &lt;csw:BriefRecord xmlns:ows="http://www.opengis.net/ows" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/"&gt;&#13;
+      &lt;dc:identifier&gt;3d59fd06-9aec-4744-91e7-65e119f74569&lt;/dc:identifier&gt;&#13;
+      &lt;dc:title&gt;Mossel- en oesterhabitats&lt;/dc:title&gt;&#13;
+      &lt;dc:type&gt;dataset&lt;/dc:type&gt;&#13;
+      &lt;ows:BoundingBox crs="EPSG::"&gt;&#13;
+        &lt;ows:LowerCorner&gt;7.339767555396278 52.87573348708171&lt;/ows:LowerCorner&gt;&#13;
+        &lt;ows:UpperCorner&gt;4.692422753656704 53.55397997265715&lt;/ows:UpperCorner&gt;&#13;
+      &lt;/ows:BoundingBox&gt;&#13;
+    &lt;/csw:BriefRecord&gt;&#13;
+    &lt;csw:BriefRecord xmlns:ows="http://www.opengis.net/ows" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/"&gt;&#13;
+      &lt;dc:identifier&gt;31de946d-85d4-4c93-bb97-e25f4ef1401a&lt;/dc:identifier&gt;&#13;
+      &lt;dc:title&gt;Vervoersnetwerken - Luchttransport (INSPIRE geharmoniseerd)&lt;/dc:title&gt;&#13;
+      &lt;dc:type&gt;dataset&lt;/dc:type&gt;&#13;
+      &lt;ows:BoundingBox crs="::"&gt;&#13;
+        &lt;ows:LowerCorner&gt;7.24 50.73&lt;/ows:LowerCorner&gt;&#13;
+        &lt;ows:UpperCorner&gt;3.3 53.6&lt;/ows:UpperCorner&gt;&#13;
+      &lt;/ows:BoundingBox&gt;&#13;
+    &lt;/csw:BriefRecord&gt;&#13;
+    &lt;csw:BriefRecord xmlns:ows="http://www.opengis.net/ows" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/"&gt;&#13;
+      &lt;dc:identifier&gt;a7ed73f4-e16d-46a3-befa-603370cfb6e8&lt;/dc:identifier&gt;&#13;
+      &lt;dc:title&gt;Statistical Units Grid (INSPIRE geharmoniseerd) WMS&lt;/dc:title&gt;&#13;
+      &lt;dc:type&gt;service&lt;/dc:type&gt;&#13;
+      &lt;ows:BoundingBox crs="::"&gt;&#13;
+        &lt;ows:LowerCorner&gt;7.245258336784366 50.73360719554353&lt;/ows:LowerCorner&gt;&#13;
+        &lt;ows:UpperCorner&gt;3.206252918228434 53.58297893748843&lt;/ows:UpperCorner&gt;&#13;
+      &lt;/ows:BoundingBox&gt;&#13;
+    &lt;/csw:BriefRecord&gt;&#13;
+  &lt;/csw:SearchResults&gt;&#13;
+&lt;/csw:GetRecordsResponse&gt;&#13;
+&#13;
+</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container">
+                            <div class="step-ref passed"></div>
+                            <div class="step-cell comment">#all id's</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="21">
+                            <div class="step-ref passed">21</div>
+                            <div class="step-cell passed">* def briefarray = get response /GetRecordsResponse/SearchResults/BriefRecord[*]/identifier</div>
+                        </div>
+                        <div class="time-cell passed">20</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="22">
+                            <div class="step-ref passed">22</div>
+                            <div class="step-cell passed">* def list = karate.mapWithKey(briefarray ,'datasetIdentifierCode')</div>
+                        </div>
+                        <div class="time-cell passed">8</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="23">
+                            <div class="step-ref passed">23</div>
+                            <div class="step-cell passed">* eval db.writeln(karate.pretty(list),outputpath + 'ids.json')</div>
+                        </div>
+                        <div class="time-cell passed">7</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container">
+                            <div class="step-ref passed"></div>
+                            <div class="step-cell comment">#services</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="24">
+                            <div class="step-ref passed">24</div>
+                            <div class="step-cell passed">* def servicearray = get response /GetRecordsResponse/SearchResults/BriefRecord[type='service']/identifier</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="25">
+                            <div class="step-ref passed">25</div>
+                            <div class="step-cell passed">* def servicelist = karate.mapWithKey(servicearray,'datasetIdentifierCode')</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="26">
+                            <div class="step-ref passed">26</div>
+                            <div class="step-cell passed">* eval db.writeln(karate.pretty(servicelist),outputpath + 'idsService.json')</div>
+                        </div>
+                        <div class="time-cell passed">7</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container">
+                            <div class="step-ref passed"></div>
+                            <div class="step-cell comment">#datasets</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="27">
+                            <div class="step-ref passed">27</div>
+                            <div class="step-cell passed">* def datasetarray = get response /GetRecordsResponse/SearchResults/BriefRecord[type='dataset']/identifier</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="28">
+                            <div class="step-ref passed">28</div>
+                            <div class="step-cell passed">* def datasetlist = karate.mapWithKey(datasetarray,'datasetIdentifierCode')</div>
+                        </div>
+                        <div class="time-cell passed">7</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="29">
+                            <div class="step-ref passed">29</div>
+                            <div class="step-cell passed">* eval db.writeln(karate.pretty(datasetlist ),outputpath + 'idsDataset.json')</div>
+                        </div>
+                        <div class="time-cell passed">6</div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+           
+  
+    </body>
+    
+</html>

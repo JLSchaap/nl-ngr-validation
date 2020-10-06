@@ -1,0 +1,200 @@
+<testsuite failures="0" name="src/test/java/InspireTest/ngr/T02_Services.feature" skipped="0" tests="3" time="3.668073">
+  <testcase classname="src.test.java.InspireTest.ngr.T02_Services" name="627b50bf-2e33-4beb-a314-ff8c0fe8912e" time="1.335578">
+    <system-out>* url 'http://nationaalgeoregister.nl/' ................................... passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* def db = db.setfeature(karate.info.featureFileName) ..................... passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def outputpath = db.outputpath() ........................................ passed
+* eval db.ensureDirectory(outputpath) ..................................... passed
+* eval db.writeheaderservice(outputpath + separator  + "services.csv" ) ... passed
+* eval db.writeheaderservice(outputpath + separator  + "services-Beheer PDOK.csv" ) . passed
+* def idfile = db.outputpath("T01_ids") + separator + 'idsService.json' ... passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = '627b50bf-2e33-4beb-a314-ff8c0fe8912e' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '627b50bf-2e33-4beb-a314-ff8c0fe8912e' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//MD_Metadata/contact/CI_ResponsibleParty/organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def connectUrl = karate.get ('/GetRecordByIdResponse/MD_Metadata/distributionInfo/MD_Distribution/transferOptions/MD_DigitalTransferOptions/onLine/CI_OnlineResource/linkage/URL') . passed
+* def protocol = karate.get ( '/GetRecordByIdResponse/MD_Metadata/distributionInfo/MD_Distribution/transferOptions/MD_DigitalTransferOptions/onLine/CI_OnlineResource/protocol/CharacterString') . passed
+* def operateson = get response //MD_Metadata/identificationInfo/SV_ServiceIdentification/operatesOn/@href . passed
+* eval db.writeln('"627b50bf-2e33-4beb-a314-ff8c0fe8912e","'+ title + '","' + connectUrl + '","' + protocol + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '","' + operateson + '","' + db.getdatasetuuid(operateson) + '",', db.outputpath() + separator + scopecode + 's.csv') . passed
+* eval db.writeln('"627b50bf-2e33-4beb-a314-ff8c0fe8912e","'+ title + '","' + connectUrl + '","' + protocol + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '","' + operateson + '","' + db.getdatasetuuid(operateson) + '",', db.outputpath() + separator + scopecode + 's-' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '.csv') . passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.InspireTest.ngr.T02_Services" name="4041f923-6b77-4816-bf46-437e85416c31" time="0.780777">
+    <system-out>* url 'http://nationaalgeoregister.nl/' ................................... passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* def db = db.setfeature(karate.info.featureFileName) ..................... passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def outputpath = db.outputpath() ........................................ passed
+* eval db.ensureDirectory(outputpath) ..................................... passed
+* eval db.writeheaderservice(outputpath + separator  + "services.csv" ) ... passed
+* eval db.writeheaderservice(outputpath + separator  + "services-Beheer PDOK.csv" ) . passed
+* def idfile = db.outputpath("T01_ids") + separator + 'idsService.json' ... passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = '627b50bf-2e33-4beb-a314-ff8c0fe8912e' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '627b50bf-2e33-4beb-a314-ff8c0fe8912e' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//MD_Metadata/contact/CI_ResponsibleParty/organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def connectUrl = karate.get ('/GetRecordByIdResponse/MD_Metadata/distributionInfo/MD_Distribution/transferOptions/MD_DigitalTransferOptions/onLine/CI_OnlineResource/linkage/URL') . passed
+* def protocol = karate.get ( '/GetRecordByIdResponse/MD_Metadata/distributionInfo/MD_Distribution/transferOptions/MD_DigitalTransferOptions/onLine/CI_OnlineResource/protocol/CharacterString') . passed
+* def operateson = get response //MD_Metadata/identificationInfo/SV_ServiceIdentification/operatesOn/@href . passed
+* eval db.writeln('"627b50bf-2e33-4beb-a314-ff8c0fe8912e","'+ title + '","' + connectUrl + '","' + protocol + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '","' + operateson + '","' + db.getdatasetuuid(operateson) + '",', db.outputpath() + separator + scopecode + 's.csv') . passed
+* eval db.writeln('"627b50bf-2e33-4beb-a314-ff8c0fe8912e","'+ title + '","' + connectUrl + '","' + protocol + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '","' + operateson + '","' + db.getdatasetuuid(operateson) + '",', db.outputpath() + separator + scopecode + 's-' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '.csv') . passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* def db = db.setfeature(karate.info.featureFileName) ..................... passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def outputpath = db.outputpath() ........................................ passed
+* eval db.ensureDirectory(outputpath) ..................................... passed
+* eval db.writeheaderservice(outputpath + separator  + "services.csv" ) ... passed
+* eval db.writeheaderservice(outputpath + separator  + "services-Beheer PDOK.csv" ) . passed
+* def idfile = db.outputpath("T01_ids") + separator + 'idsService.json' ... passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = '4041f923-6b77-4816-bf46-437e85416c31' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '4041f923-6b77-4816-bf46-437e85416c31' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//MD_Metadata/contact/CI_ResponsibleParty/organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def connectUrl = karate.get ('/GetRecordByIdResponse/MD_Metadata/distributionInfo/MD_Distribution/transferOptions/MD_DigitalTransferOptions/onLine/CI_OnlineResource/linkage/URL') . passed
+* def protocol = karate.get ( '/GetRecordByIdResponse/MD_Metadata/distributionInfo/MD_Distribution/transferOptions/MD_DigitalTransferOptions/onLine/CI_OnlineResource/protocol/CharacterString') . passed
+* def operateson = get response //MD_Metadata/identificationInfo/SV_ServiceIdentification/operatesOn/@href . passed
+* eval db.writeln('"4041f923-6b77-4816-bf46-437e85416c31","'+ title + '","' + connectUrl + '","' + protocol + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '","' + operateson + '","' + db.getdatasetuuid(operateson) + '",', db.outputpath() + separator + scopecode + 's.csv') . passed
+* eval db.writeln('"4041f923-6b77-4816-bf46-437e85416c31","'+ title + '","' + connectUrl + '","' + protocol + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '","' + operateson + '","' + db.getdatasetuuid(operateson) + '",', db.outputpath() + separator + scopecode + 's-' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '.csv') . passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.InspireTest.ngr.T02_Services" name="a7ed73f4-e16d-46a3-befa-603370cfb6e8" time="1.551718">
+    <system-out>* url 'http://nationaalgeoregister.nl/' ................................... passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* def db = db.setfeature(karate.info.featureFileName) ..................... passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def outputpath = db.outputpath() ........................................ passed
+* eval db.ensureDirectory(outputpath) ..................................... passed
+* eval db.writeheaderservice(outputpath + separator  + "services.csv" ) ... passed
+* eval db.writeheaderservice(outputpath + separator  + "services-Beheer PDOK.csv" ) . passed
+* def idfile = db.outputpath("T01_ids") + separator + 'idsService.json' ... passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = '627b50bf-2e33-4beb-a314-ff8c0fe8912e' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '627b50bf-2e33-4beb-a314-ff8c0fe8912e' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//MD_Metadata/contact/CI_ResponsibleParty/organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def connectUrl = karate.get ('/GetRecordByIdResponse/MD_Metadata/distributionInfo/MD_Distribution/transferOptions/MD_DigitalTransferOptions/onLine/CI_OnlineResource/linkage/URL') . passed
+* def protocol = karate.get ( '/GetRecordByIdResponse/MD_Metadata/distributionInfo/MD_Distribution/transferOptions/MD_DigitalTransferOptions/onLine/CI_OnlineResource/protocol/CharacterString') . passed
+* def operateson = get response //MD_Metadata/identificationInfo/SV_ServiceIdentification/operatesOn/@href . passed
+* eval db.writeln('"627b50bf-2e33-4beb-a314-ff8c0fe8912e","'+ title + '","' + connectUrl + '","' + protocol + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '","' + operateson + '","' + db.getdatasetuuid(operateson) + '",', db.outputpath() + separator + scopecode + 's.csv') . passed
+* eval db.writeln('"627b50bf-2e33-4beb-a314-ff8c0fe8912e","'+ title + '","' + connectUrl + '","' + protocol + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '","' + operateson + '","' + db.getdatasetuuid(operateson) + '",', db.outputpath() + separator + scopecode + 's-' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '.csv') . passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* def db = db.setfeature(karate.info.featureFileName) ..................... passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def outputpath = db.outputpath() ........................................ passed
+* eval db.ensureDirectory(outputpath) ..................................... passed
+* eval db.writeheaderservice(outputpath + separator  + "services.csv" ) ... passed
+* eval db.writeheaderservice(outputpath + separator  + "services-Beheer PDOK.csv" ) . passed
+* def idfile = db.outputpath("T01_ids") + separator + 'idsService.json' ... passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = '4041f923-6b77-4816-bf46-437e85416c31' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '4041f923-6b77-4816-bf46-437e85416c31' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//MD_Metadata/contact/CI_ResponsibleParty/organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def connectUrl = karate.get ('/GetRecordByIdResponse/MD_Metadata/distributionInfo/MD_Distribution/transferOptions/MD_DigitalTransferOptions/onLine/CI_OnlineResource/linkage/URL') . passed
+* def protocol = karate.get ( '/GetRecordByIdResponse/MD_Metadata/distributionInfo/MD_Distribution/transferOptions/MD_DigitalTransferOptions/onLine/CI_OnlineResource/protocol/CharacterString') . passed
+* def operateson = get response //MD_Metadata/identificationInfo/SV_ServiceIdentification/operatesOn/@href . passed
+* eval db.writeln('"4041f923-6b77-4816-bf46-437e85416c31","'+ title + '","' + connectUrl + '","' + protocol + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '","' + operateson + '","' + db.getdatasetuuid(operateson) + '",', db.outputpath() + separator + scopecode + 's.csv') . passed
+* eval db.writeln('"4041f923-6b77-4816-bf46-437e85416c31","'+ title + '","' + connectUrl + '","' + protocol + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '","' + operateson + '","' + db.getdatasetuuid(operateson) + '",', db.outputpath() + separator + scopecode + 's-' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '.csv') . passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* def db = db.setfeature(karate.info.featureFileName) ..................... passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def outputpath = db.outputpath() ........................................ passed
+* eval db.ensureDirectory(outputpath) ..................................... passed
+* eval db.writeheaderservice(outputpath + separator  + "services.csv" ) ... passed
+* eval db.writeheaderservice(outputpath + separator  + "services-Beheer PDOK.csv" ) . passed
+* def idfile = db.outputpath("T01_ids") + separator + 'idsService.json' ... passed
+* def list =  karate.read( idfile) ........................................ passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecordById' ....................................... passed
+And param id = 'a7ed73f4-e16d-46a3-befa-603370cfb6e8' ..................... passed
+And param elementsetname = 'full' ......................................... passed
+And param outputSchema = 'http://www.isotc211.org/2005/gmd' ............... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == 'a7ed73f4-e16d-46a3-befa-603370cfb6e8' . passed
+* def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue . passed
+* def title =  get response //citation/CI_Citation/title/CharacterString .. passed
+* def email = get response //electronicMailAddress/CharacterString ........ passed
+* def organisationpath = karate.get('//MD_Metadata/contact/CI_ResponsibleParty/organisationName/CharacterString') . passed
+* def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString') . passed
+* def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href') . passed
+* def connectUrl = karate.get ('/GetRecordByIdResponse/MD_Metadata/distributionInfo/MD_Distribution/transferOptions/MD_DigitalTransferOptions/onLine/CI_OnlineResource/linkage/URL') . passed
+* def protocol = karate.get ( '/GetRecordByIdResponse/MD_Metadata/distributionInfo/MD_Distribution/transferOptions/MD_DigitalTransferOptions/onLine/CI_OnlineResource/protocol/CharacterString') . passed
+* def operateson = get response //MD_Metadata/identificationInfo/SV_ServiceIdentification/operatesOn/@href . passed
+* eval db.writeln('"a7ed73f4-e16d-46a3-befa-603370cfb6e8","'+ title + '","' + connectUrl + '","' + protocol + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '","' + operateson + '","' + db.getdatasetuuid(operateson) + '",', db.outputpath() + separator + scopecode + 's.csv') . passed
+* eval db.writeln('"a7ed73f4-e16d-46a3-befa-603370cfb6e8","'+ title + '","' + connectUrl + '","' + protocol + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '","' + operateson + '","' + db.getdatasetuuid(operateson) + '",', db.outputpath() + separator + scopecode + 's-' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '.csv') . passed</system-out>
+  </testcase>
+</testsuite>
