@@ -23,7 +23,12 @@ Feature: storage
         * print "expected: " + outdir
         * match outdir == output
 
-   Scenario: get uuid from dataseturl csw 
-    * def urlstr = 'https://geodata.nationaalgeoregister.nl/inspire/su-grid/wms?request=GetCapabilities","OGC:WMS","Beheer PDOK","[beheerPDOK@kadaster.nl, beheerPDOK@kadaster.nl]","Nederlands metadata profiel op ISO 19119 voor services 2.0","http://nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW&version=2.0.2&request=GetRecordById&outputschema=http://www.isotc211.org/2005/gmd&elementsetname=full&id=db8d613f-5edc-4467-9cc0-e2dcfb9d64a8#MD_DataIdentification'
-    * def datasetid = db.getdatasetuuid(urlstr)
-    * match datasetid == "db8d613f-5edc-4467-9cc0-e2dcfb9d64a8"
+    Scenario Outline:  get uuid from dataseturl csw
+        * def urlstr = '<url>'
+        * def datasetid = db.getdatasetuuid(urlstr)
+        * match datasetid == "<uuid>"
+
+        Examples:
+            | url                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | uuid                                 |
+            | http://nationaalgeoregister.nl/geonetwork/srv/en/csw?service=CSW&version=2.0.2&request=GetRecordById&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full&id=4961d305-fbb5-426a-9ba3-53e1ca5f3b18                                                                                                                                                                                                                                                      | 4961d305-fbb5-426a-9ba3-53e1ca5f3b18 |
+            | https://geodata.nationaalgeoregister.nl/inspire/su-grid/wms?request=GetCapabilities","OGC:WMS","Beheer PDOK","[beheerPDOK@kadaster.nl, beheerPDOK@kadaster.nl]","Nederlands metadata profiel op ISO 19119 voor services 2.0","http://nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW&version=2.0.2&request=GetRecordById&outputschema=http://www.isotc211.org/2005/gmd&elementsetname=full&id=db8d613f-5edc-4467-9cc0-e2dcfb9d64a8#MD_DataIdentification | db8d613f-5edc-4467-9cc0-e2dcfb9d64a8 |
