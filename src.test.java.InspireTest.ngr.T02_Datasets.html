@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+      
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+        <meta charset="utf-8">
+            
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+            
+        <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+            
+        <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+            
+        <link href="favicon.ico" rel="shortcut icon">
+            <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+        <title>src.test.java.InspireTest.ngr.T02_Datasets</title>
+          
+    </head>
+      
+    <body>
+            
+        <div id="root-container">
+                  
+            <div id="leftnav">
+                        
+                <div class="nav-logo">
+                              <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+                    <div class="nav-count">
+                                    
+                        <div class="bg-success" id="nav-pass">0</div>
+                                    
+                        <div class="bg-danger" id="nav-fail">1</div>
+                                  
+                    </div>
+                            
+                </div>
+                        
+                <div id="nav-type">Scenarios</div>
+                         
+        
+                <div id="nav-date">2020-10-06 02:44:08 PM</div>
+                        
+      
+                <div class="nav-container">
+                    <div class="nav-item failed">
+                        <a href="#[1:22]">[1:22] &lt;datasetIdentifierCode&gt; </a>
+                    </div>
+                </div>
+            </div>
+                  
+            <div id="content">
+                      
+                <div class="page-heading alert alert-primary">
+                    <a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/InspireTest/ngr/T02_Datasets.feature</span><span class="feature-description">get details</span>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[1:22]">
+                        <div class="heading-container">
+                            <div class="scenario-tags">
+                                <a class="badge badge-primary" href="karate-tags.html">step1</a>
+                            </div>
+                            <span class="scenario-keyword">Scenario Outline: [1:22]</span><span class="scenario-name">&lt;datasetIdentifierCode&gt; </span>
+                        </div>
+                        <div class="scenario-time failed">ms: 135</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[1:22]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[1:22]bg">
+                        <div class="step-container" id="1">
+                            <div class="step-ref bg-step">1</div>
+                            <div class="step-cell passed">* url 'http://nationaalgeoregister.nl/'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="1">14:44:08.828 karate.env system property was:</div>
+                    <div class="step-row" data-parent="[1:22]bg">
+                        <div class="step-container" id="2">
+                            <div class="step-ref bg-step">2</div>
+                            <div class="step-cell passed">* def mystorage = Java.type('storage.DataStorage')</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:22]bg">
+                        <div class="step-container" id="3">
+                            <div class="step-ref bg-step">3</div>
+                            <div class="step-cell passed">* def db = new mystorage</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:22]bg">
+                        <div class="step-container" id="4">
+                            <div class="step-ref bg-step">4</div>
+                            <div class="step-cell passed">* def db = db.setfeature(karate.info.featureFileName)</div>
+                        </div>
+                        <div class="time-cell passed">15</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:22]bg">
+                        <div class="step-container" id="5">
+                            <div class="step-ref bg-step">5</div>
+                            <div class="step-cell passed">* def separator = java.lang.System.getProperty("file.separator")</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:22]bg">
+                        <div class="step-container" id="6">
+                            <div class="step-ref bg-step">6</div>
+                            <div class="step-cell passed">* def idfile = db.outputpath("T01_ids") + separator + 'idsDataset.json'</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:22]bg">
+                        <div class="step-container" id="7">
+                            <div class="step-ref bg-step">7</div>
+                            <div class="step-cell failed">* def list =  karate.read( idfile)</div>
+                        </div>
+                        <div class="time-cell failed">115</div>
+                    </div>
+                    <div class="preformatted" data-parent="7">-unknown-:13 - could not find or read file: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/T01_ids/idsDataset.json</div>
+                    <div class="step-row" data-parent="[1:22]bg">
+                        <div class="step-container" id="8">
+                            <div class="step-ref bg-step">8</div>
+                            <div class="step-cell skipped">* def outputpath = db.outputpath()</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:22]bg">
+                        <div class="step-container" id="9">
+                            <div class="step-ref bg-step">9</div>
+                            <div class="step-cell skipped">* print outputpath</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:22]bg">
+                        <div class="step-container" id="10">
+                            <div class="step-ref bg-step">10</div>
+                            <div class="step-cell skipped">* eval db.ensureDirectory(outputpath)</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:22]bg">
+                        <div class="step-container" id="11">
+                            <div class="step-ref bg-step">11</div>
+                            <div class="step-cell skipped">* def outfile = outputpath + separator  + "datasets.csv"</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:22]bg">
+                        <div class="step-container" id="12">
+                            <div class="step-ref bg-step">12</div>
+                            <div class="step-cell skipped">* eval db.writeheaderdataset(outfile)</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+           
+  
+    </body>
+    
+</html>

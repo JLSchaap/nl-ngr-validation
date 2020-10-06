@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+Test set: InspireTest.TestAll
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 243.32 s <<< FAILURE! - in InspireTest.TestAll
+InspireTest.TestAll.T01_ids  Time elapsed: 241.823 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+failed features:
+src.test.java.InspireTest.ngr.T01_Ids: T01_Ids.feature:25 - 
+java.net.SocketTimeoutException: Read timed out
+ ==> expected: <0> but was: <1>
+	at InspireTest.TestAll.runtest(InspireTest.java:97)
+	at InspireTest.TestAll.T01_ids(InspireTest.java:53)
+
+InspireTest.TestAll.T02  Time elapsed: 0.213 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+failed features:
+src.test.java.InspireTest.ngr.T02_Datasets: [1:22] -unknown-:13 - could not find or read file: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/T01_ids/idsDataset.json
+ ==> expected: <0> but was: <1>
+	at InspireTest.TestAll.runtest(InspireTest.java:97)
+	at InspireTest.TestAll.T02(InspireTest.java:62)
+
