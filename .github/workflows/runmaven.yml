@@ -21,17 +21,17 @@ jobs:
       - name: Set up JDK 13
         uses: actions/setup-java@v1
         with:
-          java-version: 14
+          java-version: 13
 
       - name: Build with Maven runall
-        run: mvn --file pom.xml test
+        run: mvn clean --file pom.xml test
       - name: Deploy 1
         uses: peaceiris/actions-gh-pages@v3
         if: always()
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./output
-          keep_files: true 
+          keep_files: false 
       - name: Deploy 2
         uses: peaceiris/actions-gh-pages@v3
         if: always()

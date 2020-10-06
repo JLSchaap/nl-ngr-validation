@@ -69,7 +69,7 @@ Feature: check known dataset
 
         * def nlinks = filterx(ObjectValues(xlinks), ObjectValues(knownlinks))
         * def id = "<datasetIdentifierCode>"
-        * call read('classpath:InspireTest/def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link')
+        * call read(':InspireTest/def/checkxlinkurl.template.feature') karate.mapWithKey(nlinks ,'link')
         * def mystorage = Java.type('storage.DataStorage')
         * def db = new mystorage
         * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + organisation + '","'+ email +'",' , 'target/surefire-reports/datasetsOkay.csv')

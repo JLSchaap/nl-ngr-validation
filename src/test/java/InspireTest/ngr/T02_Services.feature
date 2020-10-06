@@ -3,15 +3,13 @@ Feature:  get details
   Background:
 
     * url 'http://nationaalgeoregister.nl/'
-    * def tempdir = java.lang.System.getProperty('user.dir')
+    * def mystorage = Java.type('storage.DataStorage')
+    * def db = new mystorage
+    * def db = db.setfeature(karate.info.featureFileName)
+
     * def separator = java.lang.System.getProperty("file.separator")
-    * def outputpath = tempdir + separator + 'output' + separator + "T02_services" + separator
-
-    * def idfile = outputpath + 'idsService.json'
-    * print idfile
+    * def idfile = db.outputpath("T01_ids") + separator + 'idsService.json'
     * def list =  karate.read( idfile)
-    * def callheaderresult = callonce read('classpath:InspireTest/def/writedatasetcsvheader.template.feature')
-
 
   Scenario Outline: <datasetIdentifierCode>
 
@@ -35,13 +33,13 @@ Feature:  get details
     #  * def connectUrl = karate.get ( '//MD_DigitalTransferOptions/onLine[*]/CI_OnlineResource/linkage/URL')
     * def connectUrl = karate.get ('/GetRecordByIdResponse/MD_Metadata/distributionInfo/MD_Distribution/transferOptions/MD_DigitalTransferOptions/onLine/CI_OnlineResource/linkage/URL')
     * def protocol = karate.get ( '/GetRecordByIdResponse/MD_Metadata/distributionInfo/MD_Distribution/transferOptions/MD_DigitalTransferOptions/onLine/CI_OnlineResource/protocol/CharacterString')
+    
+    * def operateson = get response //MD_Metadata/identificationInfo/SV_ServiceIdentification/operatesOn/@href
     #unique values
     #* def connectUrl = new java.util.HashSet(connectUrlAll)
-    * def mystorage = Java.type('storage.DataStorage')
-    * def db = new mystorage
-    * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + connectUrl + '","' + protocol + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , outputpath + scopecode + 's.csv')
-    * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + connectUrl + '","' + protocol + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , outputpath + scopecode + 's-' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '.csv')
-   # * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + connectUrl + '","' + protocol + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , outputpath + scopecode + 's-'  + "-" + protocol + "-"  +  (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '.csv')
+    * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + connectUrl + '","' + protocol + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '","' + operateson + '","' + db.getdatasetuuid(operateson) + '",', db.outputpath() + separator + scopecode + 's.csv')
+    * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + connectUrl + '","' + protocol + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '","' + operateson + '","' + db.getdatasetuuid(operateson) + '",', db.outputpath() + separator + scopecode + 's-' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '.csv')
+    # * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + connectUrl + '","' + protocol + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , outputpath + scopecode + 's-'  + "-" + protocol + "-"  +  (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '.csv')
 
     Examples:
       | list |

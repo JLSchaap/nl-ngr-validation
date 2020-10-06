@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dd46d6687cd9b3c63128fe3dd90dbb67cc870637562b7570633e433982122b10
-size 708
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+ 
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+  
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>target/karate.log</file>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>    
+   
+    <logger name="com.intuit" level="INFO"/>
+   
+    <root level="info">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="FILE" />
+    </root>
+  
+</configuration>

@@ -21,9 +21,15 @@ public class DataStorage {
 	}
 
 	boolean append = true;
+	String featurename = "T99_featureNotSetYet.feature";
 
 	public DataStorage setOverwrite() {
 		append = false;
+		return this;
+	}
+
+	public DataStorage setfeature(String featurefilename) {
+		featurename = featurefilename;
 		return this;
 	}
 
@@ -40,6 +46,11 @@ public class DataStorage {
 		File outdir = new File(outputdir().getAbsolutePath() + "/" + step);
 		return outdir;
 	}
+	public File outputpath() {
+		File outdir = new File(outputdir().getAbsolutePath() + "/" + stepname());
+		return outdir;
+	}
+
 
 	public void cleandir(File dirpath) throws IOException {
 		ensureDirectory(dirpath);
@@ -58,14 +69,29 @@ public class DataStorage {
 		cleandir(outputpath(step));
 	}
 
-	
-	public String removefileExtension(String featurename) {
+	public String cleanname() {
+		return featurename.substring(featurename.indexOf('_') + 1, featurename.lastIndexOf('.'));
+	}
+
+	public String stepname() {
 		return featurename.substring(0, featurename.lastIndexOf('.'));
 	}
-	public File  startdir() {
-		return (new File (userdir + SRC_TEST_JAVA_INSPIRE_TEST_NGR));
+
+	public File startdir() {
+		return (new File(userdir + SRC_TEST_JAVA_INSPIRE_TEST_NGR));
 	}
+
 	public static String projectname() {
 		return NLTEST;
 	}
+
+	// --- inspire specific 
+	public String getdatasetuuid( String str)
+	{
+		//"https://geodata.nationaalgeoregister.nl/inspire/su-grid/wms?request=GetCapabilities","OGC:WMS","Beheer PDOK","[beheerPDOK@kadaster.nl, beheerPDOK@kadaster.nl]","Nederlands metadata profiel op ISO 19119 voor services 2.0","http://nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW&version=2.0.2&request=GetRecordById&outputschema=http://www.isotc211.org/2005/gmd&elementsetname=full&id=db8d613f-5edc-4467-9cc0-e2dcfb9d64a8#MD_DataIdentification"
+
+		return str.substring(str.indexOf("id=")+3, str.indexOf("#MD_DataIdentification"));
+
+	}
+
 }
