@@ -62,18 +62,18 @@ class TestAll {
 		db.setOverwrite();
 		String header;
 		header = "\"datasetIdentifierCode\",\"title\",\"MD_DataIdentificationCitationAnchor\",\"organisation\",\"electronicMailAddress\",\"metadataStandardVersion\",";
-		db.writeln(header, db.outputdir().getAbsolutePath() + "/" + "T02_datasets" + "/" + "datasets.csv");
+		//db.writeln(header, db.outputdir().getAbsolutePath() + "/" + "T02_datasets" + "/" + "datasets.csv");
 		runtest(step);
 
 		step = "T02_Services";
 		db.cleanStepOutputDir(step);
 		db.setOverwrite();
 	    header = "\"serviceIdentifierCode\",\"title\",\"url\",\"protocol\", \"organisation\",\"electronicMailAddress\",\"metadataStandardVersion\",\"operatesOn\",\"datasetIdentifierCode\",";
-		db.writeln(header, db.outputdir().getAbsolutePath() + "/" + "T02_services" + "/" + "services.csv");
+		//db.writeln(header, db.outputdir().getAbsolutePath() + "/" + "T02_services" + "/" + "services.csv");
 		// pm db.writeln(
 		// '"serviceIdentifierCode","title","dataIdentificationCitationAnchor","organisation","electronicMailAddress","metadataStandardVersion",',
 		// outputpath + 'seriess.csv')
-		db.writeln(header, db.outputdir().getAbsolutePath() + "/" + "T02_services" + "/" + "services-Beheer PDOK.csv");
+		//db.writeln(header, db.outputdir().getAbsolutePath() + "/" + "T02_services" + "/" + "services-Beheer PDOK.csv");
 
 		runtest(step);
 	}

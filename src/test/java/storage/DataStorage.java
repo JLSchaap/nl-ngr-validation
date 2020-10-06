@@ -10,7 +10,7 @@ public class DataStorage {
 	private static final String NLTEST = "NLTEST";
 	private static final String TARGET_SUREFIRE_REPORTS = "/target/surefire-reports";
 	private static final String SRC_TEST_JAVA_INSPIRE_TEST_NGR = "/src/test/java/InspireTest/ngr";
-	private static final String userdir = java.lang.System.getProperty("user.dir");
+	private static final String userdir = new File (java.lang.System.getProperty("user.dir")).getAbsolutePath();
 
 	public File reportdir() {
 		return (new File(userdir + TARGET_SUREFIRE_REPORTS));
@@ -51,7 +51,11 @@ public class DataStorage {
 		return outdir;
 	}
 
+public void ensureDirectory(String dirstring) throws IOException {
+     File dir = new File(dirstring); 
+	 ensureDirectory(dir); 
 
+}
 	public void cleandir(File dirpath) throws IOException {
 		ensureDirectory(dirpath);
 		System.out.println("Cleaning: " + dirpath);

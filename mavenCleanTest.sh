@@ -1,0 +1,1 @@
+docker run -it --rm --name nl-ngr-validation -v "$HOME/.m2":/root/.m2  -v "$(pwd)":/usr/src/mavenwork -w /usr/src/mavenwork maven:3-openjdk-14  mvn clean test

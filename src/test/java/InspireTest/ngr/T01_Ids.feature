@@ -1,7 +1,12 @@
 @step0
-Feature:  run onces  get id's form ngr
-
 Feature:  getlist of ngr records
+    Background: setup
+
+        * def mystorage = Java.type('storage.DataStorage')
+        * def db = new mystorage
+        * def separator = java.lang.System.getProperty("file.separator")
+        * def outputpath = db.outputpath("T01_ids") + separator
+        * eval db.ensureDirectory(outputpath)
 
     Scenario: getbrief list
 
@@ -21,12 +26,7 @@ Feature:  getlist of ngr records
         Then status 200
         * eval karate.embed(responseBytes,'application/xml')
 
-        * def tempdir = java.lang.System.getProperty('user.dir')
-        * def separator = java.lang.System.getProperty("file.separator")
-        * def outputpath = tempdir + separator + 'output' + separator + "T01_ids" + separator
-        * def mystorage = Java.type('storage.DataStorage')
-        * def db = new mystorage
-        * eval db.setOverwrite()
+
 
         #all id's
         * def briefarray = get response /GetRecordsResponse/SearchResults/BriefRecord[*]/identifier
