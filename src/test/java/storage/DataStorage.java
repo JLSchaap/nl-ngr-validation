@@ -60,7 +60,8 @@ public class DataStorage {
 
 	public void ensureDirectory(File dirPath) {
 		if (!dirPath.exists()) {
-			dirPath.mkdir();
+			Boolean created = dirPath.mkdir();
+			assert (created); 
 		}
 	}
 
