@@ -32,6 +32,8 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./output
           keep_files: false 
+      - name: remove large unused xml files   
+        run: rm `find ./target/surefire-reports  -name '*.xml' ` -rf 
       - name: Deploy 2
         uses: peaceiris/actions-gh-pages@v3
         if: always()
