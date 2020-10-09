@@ -6,6 +6,7 @@ import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
 
+
 public class DataStorage {
 	private static final String NLTEST = "NLTEST";
 	private static final String TARGET_SUREFIRE_REPORTS = "/target/surefire-reports";
@@ -44,14 +45,14 @@ public class DataStorage {
 	public void writeheaderdataset(final String fileName) throws IOException {
 
 		String header;
-		header = "\"datasetIdentifierCode\",\"title\",\"MD_DataIdentificationCitationAnchor\",\"organisation\",\"electronicMailAddress\",\"metadataStandardVersion\",";
+		header = "\"datasetIdentifierCode\",\"title\",\"MD_DataIdentificationCitationAnchor\",\"organisation\",\"electronicMailAddress\",\"metadataStandardVersion\"";
 		writeheader(header, fileName);
 
 	}
 
 	public void writeheaderservice(final String fileName) throws IOException {
 		String header;
-		header = "\"serviceIdentifierCode\",\"title\",\"url\",\"protocol\", \"organisation\",\"electronicMailAddress\",\"metadataStandardVersion\",\"operatesOn\",\"datasetIdentifierCode\",";
+		header = "\"serviceIdentifierCode\",\"title\",\"url\",\"protocol\", \"organisation\",\"electronicMailAddress\",\"metadataStandardVersion\",\"operatesOn\",\"datasetIdentifierCode\"";
 		writeheader(header, fileName);
 
 	}
