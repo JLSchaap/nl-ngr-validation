@@ -52,7 +52,7 @@ public class DataStorage {
 
 	public void writeheaderservice(final String fileName) throws IOException {
 		String header;
-		header = "\"serviceIdentifierCode\",\"title\",\"url\",\"protocol\", \"organisation\",\"electronicMailAddress\",\"metadataStandardVersion\",\"operatesOn\",\"datasetIdentifierCode\"";
+		header = "\"serviceIdentifierCode\",\"title\",\"url\",\"protocol\", \"organisation\",\"electronicMailAddress\",\"metadataStandardVersion\",\"operatesOn\",\"datasetIdentifierCode\",\"servicetype\"";
 		writeheader(header, fileName);
 
 	}

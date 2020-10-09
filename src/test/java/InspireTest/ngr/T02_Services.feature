@@ -11,9 +11,9 @@ Feature:  get details
     * eval db.ensureDirectory(outputpath)
     * eval db.writeheaderservice(outputpath + separator  + "services.csv" )
     * eval db.writeheaderservice(outputpath + separator  + "services-Beheer PDOK.csv" )
-   
+
     * def idfile = db.outputpath("T01_ids") + separator + 'idsService.json'
- 
+
 
   Scenario Outline: <datasetIdentifierCode>
 
@@ -40,18 +40,20 @@ Feature:  get details
 
     * def operateson = get response //MD_Metadata/identificationInfo/SV_ServiceIdentification/operatesOn/@href
     * print organisationpath
-    * print operateson 
-    #unique values
+    * print operateson
+
+    * def servicetype = get response //MD_Metadata/identificationInfo/SV_ServiceIdentification/serviceType/LocalName
+        #unique values
     #* def connectUrl = new java.util.HashSet(connectUrlAll)
-    * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + connectUrl + '","' + protocol + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '","' + operateson + '","' + db.getdatasetuuid(operateson) + '"', db.outputpath() + separator + scopecode + 's.csv')
-    * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + connectUrl + '","' + protocol + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '","' + operateson + '","' + db.getdatasetuuid(operateson) + '"', db.outputpath() + separator + scopecode + 's-' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '.csv')
+    * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + connectUrl + '","' + protocol + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '","' + operateson + '","' + db.getdatasetuuid(operateson) + '","' + servicetype + '"', db.outputpath() + separator + scopecode + 's.csv')
+    * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + connectUrl + '","' + protocol + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '","' + operateson + '","' + db.getdatasetuuid(operateson) + '","' + servicetype + '"', db.outputpath() + separator + scopecode + 's-' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '.csv')
     # * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + connectUrl + '","' + protocol + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , outputpath + scopecode + 's-'  + "-" + protocol + "-"  +  (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '.csv')
-@data=all
+    @data=all
     Examples:
       | karate.read( idfile) |
 
-# csv def/datasetlist.csv has the following field:
-@data=test  
-  Examples:
-    | datasetIdentifierCode                |
-    | dd49e02c-ea87-4ffc-89dd-f888608d95b7 | 
+    # csv def/datasetlist.csv has the following field:
+    @data=test
+    Examples:
+      | datasetIdentifierCode                |
+      | dd49e02c-ea87-4ffc-89dd-f888608d95b7 |
