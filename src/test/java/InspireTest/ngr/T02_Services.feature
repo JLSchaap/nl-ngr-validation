@@ -51,12 +51,12 @@ Feature:  get details
     * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + connectUrl + '","' + protocol + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '","' + operateson + '","' + db.getdatasetuuid(operateson) + '","' + servicetype + '"', db.outputpath() + separator + scopecode + 's-' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '.csv')
     # * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + connectUrl + '","' + protocol + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , outputpath + scopecode + 's-'  + "-" + protocol + "-"  +  (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '.csv')
  #  @data=all
- #   Examples:
- #     | karate.read( idfile) |
+    Examples:
+      | karate.read( idfile) |
 
     # csv def/datasetlist.csv has the following field:
-    @data=test
-    Examples:
-      | datasetIdentifierCode                |
-      | f0c6fbfe-a172-4223-8af3-58f6a28c881d |
-      | ff9315c8-f25a-4d01-9245-5cf058314ebf | 
+ #   @data=test
+ #   Examples:
+ #     | datasetIdentifierCode                |
+ #     | f0c6fbfe-a172-4223-8af3-58f6a28c881d |
+ #     | ff9315c8-f25a-4d01-9245-5cf058314ebf | 
