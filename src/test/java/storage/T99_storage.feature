@@ -7,7 +7,6 @@ Feature: storage
 
     Scenario: stepoutname
 
-
         Get proper name for output file
 
         * def stepoutname = db.cleanname()
