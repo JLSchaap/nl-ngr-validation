@@ -3,9 +3,10 @@ package storage;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.List;
 
 import org.apache.commons.io.FileUtils;
-
 
 public class DataStorage {
 	private static final String NLTEST = "NLTEST";
@@ -117,12 +118,27 @@ public class DataStorage {
 		// PDOK","[beheerPDOK@kadaster.nl, beheerPDOK@kadaster.nl]","Nederlands metadata
 		// profiel op ISO 19119 voor services
 		// 2.0","http://nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW&version=2.0.2&request=GetRecordById&outputschema=http://www.isotc211.org/2005/gmd&elementsetname=full&id=db8d613f-5edc-4467-9cc0-e2dcfb9d64a8#MD_DataIdentification"
+
+		if (str.indexOf("[") == 0) {
+			String list = str.substring(2, str.length() - 1);
+			List<String> items = Arrays.asList(list.split(","));
+			StringBuilder sb = new StringBuilder();
+			for (String s : items) {
+				sb.append(" " + getUUid(s));
+			}
+			return sb.toString().substring(1);
+		} else {
+			return getUUid(str);
+		}
+
+	}
+
+	private String getUUid(String str) {
 		int end = str.indexOf("#MD_DataIdentification");
 		if (end == -1) {
 			return (str.substring(str.indexOf("id=") + 3));
 		}
-		return str.substring(str.indexOf("id=") + 3,end  );
-
+		return str.substring(str.indexOf("id=") + 3, end);
 	}
 
 }
