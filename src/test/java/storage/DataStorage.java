@@ -135,7 +135,7 @@ public class DataStorage {
 
 
     private String getUUid(String str) {
-        List<String> items = Arrays.asList(str.split("&|#"));
+        List<String> items = Arrays.asList(str.split("&|#|;"));
         StringBuilder sb = new StringBuilder();
         for (String s : items) {
             if (s.toLowerCase().indexOf("id=") == 0) {
