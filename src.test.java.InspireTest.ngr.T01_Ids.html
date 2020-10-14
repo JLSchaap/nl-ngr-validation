@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+      
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+        <meta charset="utf-8">
+            
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+            
+        <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+            
+        <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+            
+        <link href="favicon.ico" rel="shortcut icon">
+            <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+        <title>src.test.java.InspireTest.ngr.T01_Ids</title>
+          
+    </head>
+      
+    <body>
+            
+        <div id="root-container">
+                  
+            <div id="leftnav">
+                        
+                <div class="nav-logo">
+                              <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+                    <div class="nav-count">
+                                    
+                        <div class="bg-success" id="nav-pass">0</div>
+                                    
+                        <div class="bg-danger" id="nav-fail">1</div>
+                                  
+                    </div>
+                            
+                </div>
+                        
+                <div id="nav-type">Scenarios</div>
+                         
+        
+                <div id="nav-date">2020-10-14 06:42:37 AM</div>
+                        
+      
+                <div class="nav-container">
+                    <div class="nav-item failed">
+                        <a href="#[1:11]">[1:11] getbrief list </a>
+                    </div>
+                </div>
+            </div>
+                  
+            <div id="content">
+                      
+                <div class="page-heading alert alert-primary">
+                    <a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/InspireTest/ngr/T01_Ids.feature</span><span class="feature-description">getlist of ngr records</span>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[1:11]">
+                        <div class="heading-container">
+                            <div class="scenario-tags">
+                                <a class="badge badge-primary" href="karate-tags.html">step0</a>
+                            </div>
+                            <span class="scenario-keyword">Scenario: [1:11]</span><span class="scenario-name">getbrief list </span>
+                        </div>
+                        <div class="scenario-time failed">ms: 1284</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[1:11]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[1:11]bg">
+                        <div class="step-container" id="1">
+                            <div class="step-ref bg-step">1</div>
+                            <div class="step-cell passed">* def mystorage = Java.type('storage.DataStorage')</div>
+                        </div>
+                        <div class="time-cell passed">10</div>
+                    </div>
+                    <div class="preformatted" data-parent="1">06:42:35.869 karate.env system property was:</div>
+                    <div class="step-row" data-parent="[1:11]bg">
+                        <div class="step-container" id="2">
+                            <div class="step-ref bg-step">2</div>
+                            <div class="step-cell passed">* def db = new mystorage</div>
+                        </div>
+                        <div class="time-cell passed">11</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:11]bg">
+                        <div class="step-container" id="3">
+                            <div class="step-ref bg-step">3</div>
+                            <div class="step-cell passed">* def separator = java.lang.System.getProperty("file.separator")</div>
+                        </div>
+                        <div class="time-cell passed">22</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:11]bg">
+                        <div class="step-container" id="4">
+                            <div class="step-ref bg-step">4</div>
+                            <div class="step-cell passed">* def outputpath = db.outputpath("T01_ids") + separator</div>
+                        </div>
+                        <div class="time-cell passed">7</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:11]bg">
+                        <div class="step-container" id="5">
+                            <div class="step-ref bg-step">5</div>
+                            <div class="step-cell passed">* eval db.ensureDirectory(outputpath)</div>
+                        </div>
+                        <div class="time-cell passed">6</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="6">
+                            <div class="step-ref passed">6</div>
+                            <div class="step-cell passed">* url 'http://nationaalgeoregister.nl/'</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="7">
+                            <div class="step-ref passed">7</div>
+                            <div class="step-cell passed">* configure readTimeout = 240000</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="8">
+                            <div class="step-ref passed">8</div>
+                            <div class="step-cell passed">Given path 'geonetwork/srv/dut/inspire'</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="9">
+                            <div class="step-ref passed">9</div>
+                            <div class="step-cell passed">And param service = 'CSW'</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="10">
+                            <div class="step-ref passed">10</div>
+                            <div class="step-cell passed">And param version = '2.0.2'</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="11">
+                            <div class="step-ref passed">11</div>
+                            <div class="step-cell passed">And param request = 'GetRecords'</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="12">
+                            <div class="step-ref passed">12</div>
+                            <div class="step-cell passed">And param propertyName = 'identifier'</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="13">
+                            <div class="step-ref passed">13</div>
+                            <div class="step-cell passed">And param typeNames = 'csw:Record'</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="14">
+                            <div class="step-ref passed">14</div>
+                            <div class="step-cell passed">And param elementsetname = "brief"</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="15">
+                            <div class="step-ref passed">15</div>
+                            <div class="step-cell passed">And param resultType = 'results'</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="16">
+                            <div class="step-ref passed">16</div>
+                            <div class="step-cell passed">And param startposition = 1</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="17">
+                            <div class="step-ref passed">17</div>
+                            <div class="step-cell passed">And param maxRecords = 1000</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="18">
+                            <div class="step-ref passed">18</div>
+                            <div class="step-cell passed">When method get</div>
+                        </div>
+                        <div class="time-cell passed">1204</div>
+                    </div>
+                    <div class="preformatted" data-parent="18">06:42:37.446 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 21; columnNumber: 6; The element type "link" must be terminated by the matching end-tag "&lt;/link&gt;".</div>
+                    <div class="step-row">
+                        <div class="step-container" id="19">
+                            <div class="step-ref passed">19</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="20">
+                            <div class="step-ref passed">20</div>
+                            <div class="step-cell passed">* eval karate.embed(responseBytes,'application/xml')</div>
+                        </div>
+                        <div class="time-cell passed">5</div>
+                    </div>
+                    <div class="embed" data-parent="20">
+                        <div>&lt;!DOCTYPE html
+  SYSTEM "html"&gt;
+&lt;html ng-app="gn_login" lang="nl" id="ng-app"&gt;
+   &lt;head&gt;
+      &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;
+      &lt;title&gt;Nationaal georegister&lt;/title&gt;
+      &lt;meta charset="utf-8"&gt;
+      &lt;meta name="viewport" content="initial-scale=1.0"&gt;
+      &lt;meta name="apple-mobile-web-app-capable" content="yes"&gt;
+      &lt;meta name="description" content=""&gt;
+      &lt;meta name="keywords" content=""&gt;
+      &lt;link rel="icon" sizes="16x16 32x32 48x48" type="image/png" href="../../images/logos/favicon.png"&gt;
+      &lt;link href="rss.search?sortBy=changeDate" rel="alternate" type="application/rss+xml" title="Nationaal georegister - PDOK"&gt;
+      &lt;link href="portal.opensearch" rel="search" type="application/opensearchdescription+xml" title="Nationaal georegister - PDOK"&gt;
+      &lt;link href="/geonetwork/static/gn_fonts.css?v=603316619a1858bcc9556afb2afdd34d95c4ab30&amp;amp;" rel="stylesheet" media="screen"&gt;
+      &lt;link href="/geonetwork/static/gn_login_dutch.css?v=603316619a1858bcc9556afb2afdd34d95c4ab30&amp;amp;" rel="stylesheet" media="screen"&gt;
+      &lt;link href="/geonetwork/static/bootstrap-table.min.css?v=603316619a1858bcc9556afb2afdd34d95c4ab30" rel="stylesheet" media="screen"&gt;
+      &lt;link href="/geonetwork/static/gn_pickers.css?v=603316619a1858bcc9556afb2afdd34d95c4ab30&amp;amp;" rel="stylesheet" media="screen"&gt;
+      &lt;link href="/geonetwork/static/gn_inspire.css?v=603316619a1858bcc9556afb2afdd34d95c4ab30&amp;amp;" rel="stylesheet" media="screen"&gt;
+      &lt;link href="/geonetwork/static/ng-skos.css?v=603316619a1858bcc9556afb2afdd34d95c4ab30" rel="stylesheet" media="screen"&gt;
+   &lt;/head&gt;
+   &lt;body data-ng-controller="GnCatController" data-ng-class="[isHeaderFixed ? 'gn-header-fixed' : 'gn-header-relative', isLogoInHeader ? 'gn-logo-in-header' : 'gn-logo-in-navbar']"&gt;
+      &lt;div data-gn-alert-manager=""&gt;&lt;/div&gt;
+      &lt;noscript&gt;
+         &lt;div class="navbar navbar-default gn-top-bar" role="navigation"&gt;
+            &lt;div class="container"&gt;
+               &lt;div class="navbar-header"&gt;&lt;button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" title="" aria-expanded="false" aria-controls="navbar"&gt;&lt;span class="sr-only"&gt;&lt;/span&gt;&lt;span class="icon-bar"&gt;&lt;/span&gt;&lt;span class="icon-bar"&gt;&lt;/span&gt;&lt;span class="icon-bar"&gt;&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;
+               &lt;div id="navbar" class="navbar-collapse collapse"&gt;
+                  &lt;ul class="nav navbar-nav" id="topbar-left"&gt;
+                     &lt;li&gt;&lt;a href="https://www.nationaalgeoregister.nl/geonetwork/srv/"&gt;&lt;img class="gn-logo" alt="" src="/geonetwork/images/logos/64896f8f-0c54-482e-9200-3ae279f5c79c.png"&gt;Nationaal georegister&lt;/a&gt;&lt;/li&gt;
+                     &lt;li&gt;&lt;a title="" href="https://www.nationaalgeoregister.nl/geonetwork/srv/search" onclick="location.href=('https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/search');return false;"&gt;&lt;i class="fa fa-fw fa-search hidden-sm"&gt;&amp;nbsp;&lt;/i&gt;&lt;span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                     &lt;li id="map-menu" class="hidden-nojs"&gt;&lt;a title="" href="https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/map"&gt;&lt;i class="fa fa-fw fa-globe hidden-sm"&gt;&amp;nbsp;&lt;/i&gt;&lt;span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+                  &lt;ul class="nav navbar-nav navbar-right"&gt;
+                     &lt;li&gt;&lt;a href="https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.signin" title=""&gt;&lt;i class="fa fa-sign-in fa-fw"&gt;&amp;nbsp;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+         &lt;div class="container page"&gt;
+            &lt;div class="row gn-row-main"&gt;
+               &lt;div class="col-sm-8 col-sm-offset-2"&gt;
+                  &lt;h1&gt;Nationaal georegister&lt;/h1&gt;
+                  &lt;p&gt;
+                     
+                     GeoNetwork opensource maakt het mogelijk ruimtelijke gerelateerde informatie te ontsluiten
+                     tussen
+                     verschillende organisaties. Voor meer informatie kunt u contact opnemen met
+                     
+                     
+                  &lt;/p&gt;
+                  &lt;p&gt;
+                     GeoNetwork heeft als doel:
+                     
+                     Het verbeteren van de toegang en het gebruik van ruimtelijk gerelateerde informatie.
+                     Het ondersteunen van een interdisciplinaire benadering van duurzame ontwikkeling
+                     Het ondersteunen van besluitvormingsprocessen
+                     De voordelen van het gebruik van ruimtelijke gerelateerde informatie naar voren te
+                     brengen.
+                     
+                     
+                     
+                  &lt;/p&gt;&lt;br&gt;&lt;br&gt;&lt;div class="alert alert-warning" data-ng-hide=""&gt;&lt;strong&gt;&lt;/strong&gt; 
+                  &lt;/div&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+         &lt;div class="navbar navbar-default gn-bottom-bar" role="navigation"&gt;
+            &lt;ul class="nav navbar-nav"&gt;
+               &lt;li class="gn-footer-text"&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href="http://geonetwork-opensource.org/"&gt;&lt;i class="fa fa-fw"&gt;&amp;nbsp;&lt;/i&gt;&lt;span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+               &lt;li class="hidden-sm"&gt;&lt;a href="https://github.com/geonetwork/core-geonetwork"&gt;&lt;i class="fa fa-github"&gt;&amp;nbsp;&lt;/i&gt;&lt;span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href="/geonetwork/doc/api" title=""&gt;&amp;nbsp;&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+         &lt;/div&gt;
+      &lt;/noscript&gt;
+      &lt;div class="navbar navbar-default gn-top-bar" role="navigation" data-ng-hide="layout.hideTopToolBar" data-ng-include="'../../catalog/templates/top-toolbar.html'"&gt;&lt;/div&gt;
+      &lt;div data-ng-include="'../../catalog/templates/signin.html'"&gt;&lt;/div&gt;&lt;script src="/geonetwork/static/lib.js?v=603316619a1858bcc9556afb2afdd34d95c4ab30"&gt;&lt;/script&gt;&lt;script src="/geonetwork/static/gn_login.js?v=603316619a1858bcc9556afb2afdd34d95c4ab30&amp;amp;"&gt;&lt;/script&gt;&lt;script type="text/javascript"&gt;
+        var module = angular.module('gn_login');
+        module.config(['gnGlobalSettings',
+        function(gnGlobalSettings) {
+        gnGlobalSettings.shibbolethEnabled = false;
+        }]);
+      &lt;/script&gt;&lt;script type="text/javascript"&gt;
+      var module = angular.module('gn_login');
+
+      // Init GN config which is a dependency of gn
+      // in order to be initialized quite early
+      var cfgModule = angular.module('gn_config', []);
+      cfgModule.config(['gnViewerSettings', 'gnSearchSettings', 'gnGlobalSettings',
+      function(gnViewerSettings, gnSearchSettings, gnGlobalSettings) {
+      gnGlobalSettings.init(
+      {
+  "langDetector": {
+    "fromHtmlTag": false,
+    "regexp": "^(?:/.+)?/.+/([a-z]{2,3})/.+",
+    "default": "eng"
+  },
+  "nodeDetector": {
+    "regexp": "^(?:/.+)?/(.+)/[a-z]{2,3}/.+",
+    "default": "srv"
+  },
+  "serviceDetector": {
+    "regexp": "^(?:/.+)?/.+/[a-z]{2,3}/(.+)",
+    "default": "catalog.search"
+  },
+  "baseURLDetector": {
+    "regexp": "^((?:/.+)?)+/.+/[a-z]{2,3}/.+",
+    "default": "/geonetwork"
+  },
+  "mods": {
+    "global": {
+      "humanizeDates": true
+    },
+    "footer": {
+      "enabled": true,
+      "showSocialBarInFooter": false
+    },
+    "header": {
+      "enabled": true,
+      "languages": {
+        "dut": "nl"
+      },
+      "isLogoInHeader": true,
+      "logoInHeaderPosition": "left",
+      "fluidHeaderLayout": true,
+      "showGNName": true,
+      "isHeaderFixed": true
+    },
+    "cookieWarning": {
+      "enabled": true,
+      "cookieWarningMoreInfoLink": "foo",
+      "cookieWarningRejectLink": "https://foo.com"
+    },
+    "home": {
+      "enabled": true,
+      "appUrl": "../../srv/{{lang}}/catalog.search#/home",
+      "fluidLayout": true
+    },
+    "search": {
+      "enabled": true,
+      "appUrl": "../../srv/{{lang}}/catalog.search#/search",
+      "hitsperpageValues": [
+        10,
+        50,
+        100
+      ],
+      "paginationInfo": {
+        "hitsPerPage": 50
+      },
+      "facetsSummaryType": "details",
+      "defaultSearchString": "",
+      "facetTabField": "",
+      "facetConfig": [],
+      "filters": {},
+      "sortbyValues": [
+        {
+          "sortBy": "relevance",
+          "sortOrder": ""
+        },
+        {
+          "sortBy": "changeDate",
+          "sortOrder": ""
+        },
+        {
+          "sortBy": "title",
+          "sortOrder": "reverse"
+        },
+        {
+          "sortBy": "rating",
+          "sortOrder": ""
+        },
+        {
+          "sortBy": "popularity",
+          "sortOrder": ""
+        },
+        {
+          "sortBy": "denominatorDesc",
+          "sortOrder": ""
+        },
+        {
+          "sortBy": "denominatorAsc",
+          "sortOrder": "reverse"
+        }
+      ],
+      "sortBy": "relevance",
+      "resultViewTpls": [
+        {
+          "tplUrl": "../../catalog/components/search/resultsview/partials/viewtemplates/grid.html",
+          "tooltip": "Grid",
+          "icon": "fa-th"
+        },
+        {
+          "tplUrl": "../../catalog/components/search/resultsview/partials/viewtemplates/list.html",
+          "tooltip": "List",
+          "icon": "fa-bars"
+        }
+      ],
+      "resultTemplate": "../../catalog/views/dutch/templates/card-ngr.html",
+      "formatter": {
+        "list": [
+          {
+            "label": "full",
+            "url": "/formatters/xsl-view?root=div&amp;view=advanced"
+          },
+          {
+            "label": "xml",
+            "url": "/formatters/xml_view?xsl=xml_view&amp;output=xml"
+          }
+        ],
+        "defaultUrl": ""
+      },
+      "downloadFormatter": [
+        {
+          "label": "exportMEF",
+          "url": "/formatters/zip?withRelated=false",
+          "class": "fa-file-zip-o"
+        },
+        {
+          "label": "exportPDF",
+          "url": "/formatters/xsl-view?output=pdf&amp;language=${lang}",
+          "class": "fa-file-pdf-o"
+        },
+        {
+          "label": "exportXML",
+          "url": "/formatters/xml",
+          "class": "fa-file-code-o"
+        }
+      ],
+      "grid": {
+        "related": [
+          "parent",
+          "children",
+          "services",
+          "datasets"
+        ]
+      },
+      "linkTypes": {
+        "links": [
+          "LINK",
+          "kml"
+        ],
+        "downloads": [
+          "DOWNLOAD"
+        ],
+        "layers": [
+          "OGC",
+          "ESRI:REST"
+        ],
+        "maps": [
+          "osm"
+        ]
+      },
+      "isFilterTagsDisplayedInSearch": true,
+      "usersearches": {
+        "enabled": false,
+        "displayFeaturedSearchesPanel": false
+      },
+      "savedSelection": {
+        "enabled": true
+      }
+    },
+    "map": {
+      "enabled": true,
+      "appUrl": "../../srv/{{lang}}/catalog.search#/map",
+      "externalViewer": {
+        "enabled": false,
+        "enabledViewAction": false,
+        "baseUrl": "http://www.example.com/viewer",
+        "urlTemplate": "http://www.example.com/viewer?url=${service.url}&amp;type=${service.type}&amp;layer=${service.title}&amp;lang=${iso2lang}&amp;title=${md.defaultTitle}",
+        "openNewWindow": false,
+        "valuesSeparator": ","
+      },
+      "is3DModeAllowed": false,
+      "isSaveMapInCatalogAllowed": false,
+      "isExportMapAsImageEnabled": false,
+      "storage": "sessionStorage",
+      "bingKey": "",
+      "listOfServices": {
+        "wms": [],
+        "wmts": []
+      },
+      "projection": "EPSG:28992",
+      "projectionList": [
+        {
+          "code": "EPSG:28992",
+          "label": "RD new"
+        },
+        {
+          "code": "EPSG:4326",
+          "label": "WGS84"
+        }
+      ],
+      "switcherProjectionList": [
+        {
+          "code": "EPSG:3857",
+          "label": "Google mercator (EPSG:3857)"
+        },
+        {
+          "label": "EPSG:28992",
+          "code": "EPSG:28992",
+          "extent": [
+            -285401,
+            22598,
+            595401,
+            903401
+          ],
+          "worldExtent": [
+            -2,
+            49,
+            12,
+            55
+          ],
+          "resolutions": [],
+          "def": "+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.417,50.3319,465.552,-0.398957,0.343988,-1.8774,4.0725 +units=m +no_defs"
+        }
+      ],
+      "disabledTools": {
+        "processes": true,
+        "addLayers": false,
+        "projectionSwitcher": true,
+        "layers": false,
+        "legend": false,
+        "filter": true,
+        "contexts": true,
+        "print": true,
+        "mInteraction": false,
+        "graticule": true,
+        "syncAllLayers": true,
+        "drawVector": true
+      },
+      "graticuleOgcService": {},
+      "map-viewer": {
+        "context": "../../catalog/views/dutch/config-nl-viewer.xml",
+        "extent": [
+          -285401,
+          22599,
+          595401,
+          903370
+        ],
+        "layers": []
+      },
+      "map-search": {
+        "context": "../../catalog/views/dutch/config-nl-viewer.xml",
+        "extent": [
+          -285401,
+          22599,
+          595401,
+          903370
+        ],
+        "layers": []
+      },
+      "map-editor": {
+        "context": "",
+        "extent": [
+          -285401,
+          22598,
+          595401,
+          903401
+        ],
+        "layers": [
+          {
+            "type": "osm"
+          }
+        ]
+      },
+      "autoFitOnLayer": false,
+      "map": "",
+      "useOSM": false,
+      "context": "",
+      "layer": {
+        "url": "http://data.fao.org/maps/wms?",
+        "layers": "COMMON:dark_bluemarble",
+        "version": "1.1.1"
+      },
+      "searchMapLayers": [],
+      "viewerMapLayers": []
+    },
+    "geocoder": {
+      "enabled": false,
+      "appUrl": ""
+    },
+    "recordview": {
+      "enabled": true,
+      "isSocialbarEnabled": true
+    },
+    "editor": {
+      "enabled": true,
+      "appUrl": "../../srv/{{lang}}/catalog.edit",
+      "isUserRecordsOnly": true,
+      "minUserProfileToCreateTemplate": "",
+      "isFilterTagsDisplayed": true,
+      "fluidEditorLayout": true,
+      "createPageTpl": "../../catalog/templates/editor/new-metadata-vertical.html",
+      "editorIndentType": ""
+    },
+    "admin": {
+      "enabled": true,
+      "appUrl": "../../srv/{{lang}}/admin.console"
+    },
+    "signin": {
+      "enabled": true,
+      "appUrl": "../../srv/{{lang}}/catalog.signin"
+    },
+    "signout": {
+      "appUrl": "../../signout"
+    },
+    "page": {
+      "enabled": true,
+      "appUrl": "../../srv/{{lang}}/catalog.search#/page"
+    }
+  }
+},
+      null, gnViewerSettings, gnSearchSettings);
+      }]);
+    &lt;/script&gt;&lt;/body&gt;
+&lt;/html&gt;</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container">
+                            <div class="step-ref failed"></div>
+                            <div class="step-cell comment">#all id's</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="21">
+                            <div class="step-ref failed">21</div>
+                            <div class="step-cell failed">* def briefarray = get response /GetRecordsResponse/SearchResults/BriefRecord[*]/identifier</div>
+                        </div>
+                        <div class="time-cell failed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="21">T01_Ids.feature:32 - cannot convert to map: [type: STRING, value: &lt;!DOCTYPE html
+  SYSTEM "html"&gt;
+&lt;html ng-app="gn_login" lang="nl" id="ng-app"&gt;
+   &lt;head&gt;
+      &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;
+      &lt;title&gt;Nationaal georegister&lt;/title&gt;
+      &lt;meta charset="utf-8"&gt;
+      &lt;meta name="viewport" content="initial-scale=1.0"&gt;
+      &lt;meta name="apple-mobile-web-app-capable" content="yes"&gt;
+      &lt;meta name="description" content=""&gt;
+      &lt;meta name="keywords" content=""&gt;
+      &lt;link rel="icon" sizes="16x16 32x32 48x48" type="image/png" href="../../images/logos/favicon.png"&gt;
+      &lt;link href="rss.search?sortBy=changeDate" rel="alternate" type="application/rss+xml" title="Nationaal georegister - PDOK"&gt;
+      &lt;link href="portal.opensearch" rel="search" type="application/opensearchdescription+xml" title="Nationaal georegister - PDOK"&gt;
+      &lt;link href="/geonetwork/static/gn_fonts.css?v=603316619a1858bcc9556afb2afdd34d95c4ab30&amp;amp;" rel="stylesheet" media="screen"&gt;
+      &lt;link href="/geonetwork/static/gn_login_dutch.css?v=603316619a1858bcc9556afb2afdd34d95c4ab30&amp;amp;" rel="stylesheet" media="screen"&gt;
+      &lt;link href="/geonetwork/static/bootstrap-table.min.css?v=603316619a1858bcc9556afb2afdd34d95c4ab30" rel="stylesheet" media="screen"&gt;
+      &lt;link href="/geonetwork/static/gn_pickers.css?v=603316619a1858bcc9556afb2afdd34d95c4ab30&amp;amp;" rel="stylesheet" media="screen"&gt;
+      &lt;link href="/geonetwork/static/gn_inspire.css?v=603316619a1858bcc9556afb2afdd34d95c4ab30&amp;amp;" rel="stylesheet" media="screen"&gt;
+      &lt;link href="/geonetwork/static/ng-skos.css?v=603316619a1858bcc9556afb2afdd34d95c4ab30" rel="stylesheet" media="screen"&gt;
+   &lt;/head&gt;
+   &lt;body data-ng-controller="GnCatController" data-ng-class="[isHeaderFixed ? 'gn-header-fixed' : 'gn-header-relative', isLogoInHeader ? 'gn-logo-in-header' : 'gn-logo-in-navbar']"&gt;
+      &lt;div data-gn-alert-manager=""&gt;&lt;/div&gt;
+      &lt;noscript&gt;
+         &lt;div class="navbar navbar-default gn-top-bar" role="navigation"&gt;
+            &lt;div class="container"&gt;
+               &lt;div class="navbar-header"&gt;&lt;button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" title="" aria-expanded="false" aria-controls="navbar"&gt;&lt;span class="sr-only"&gt;&lt;/span&gt;&lt;span class="icon-bar"&gt;&lt;/span&gt;&lt;span class="icon-bar"&gt;&lt;/span&gt;&lt;span class="icon-bar"&gt;&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;
+               &lt;div id="navbar" class="navbar-collapse collapse"&gt;
+                  &lt;ul class="nav navbar-nav" id="topbar-left"&gt;
+                     &lt;li&gt;&lt;a href="https://www.nationaalgeoregister.nl/geonetwork/srv/"&gt;&lt;img class="gn-logo" alt="" src="/geonetwork/images/logos/64896f8f-0c54-482e-9200-3ae279f5c79c.png"&gt;Nationaal georegister&lt;/a&gt;&lt;/li&gt;
+                     &lt;li&gt;&lt;a title="" href="https://www.nationaalgeoregister.nl/geonetwork/srv/search" onclick="location.href=('https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/search');return false;"&gt;&lt;i class="fa fa-fw fa-search hidden-sm"&gt;&amp;nbsp;&lt;/i&gt;&lt;span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                     &lt;li id="map-menu" class="hidden-nojs"&gt;&lt;a title="" href="https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/map"&gt;&lt;i class="fa fa-fw fa-globe hidden-sm"&gt;&amp;nbsp;&lt;/i&gt;&lt;span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+                  &lt;ul class="nav navbar-nav navbar-right"&gt;
+                     &lt;li&gt;&lt;a href="https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.signin" title=""&gt;&lt;i class="fa fa-sign-in fa-fw"&gt;&amp;nbsp;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+         &lt;div class="container page"&gt;
+            &lt;div class="row gn-row-main"&gt;
+               &lt;div class="col-sm-8 col-sm-offset-2"&gt;
+                  &lt;h1&gt;Nationaal georegister&lt;/h1&gt;
+                  &lt;p&gt;
+                     
+                     GeoNetwork opensource maakt het mogelijk ruimtelijke gerelateerde informatie te ontsluiten
+                     tussen
+                     verschillende organisaties. Voor meer informatie kunt u contact opnemen met
+                     
+                     
+                  &lt;/p&gt;
+                  &lt;p&gt;
+                     GeoNetwork heeft als doel:
+                     
+                     Het verbeteren van de toegang en het gebruik van ruimtelijk gerelateerde informatie.
+                     Het ondersteunen van een interdisciplinaire benadering van duurzame ontwikkeling
+                     Het ondersteunen van besluitvormingsprocessen
+                     De voordelen van het gebruik van ruimtelijke gerelateerde informatie naar voren te
+                     brengen.
+                     
+                     
+                     
+                  &lt;/p&gt;&lt;br&gt;&lt;br&gt;&lt;div class="alert alert-warning" data-ng-hide=""&gt;&lt;strong&gt;&lt;/strong&gt; 
+                  &lt;/div&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+         &lt;div class="navbar navbar-default gn-bottom-bar" role="navigation"&gt;
+            &lt;ul class="nav navbar-nav"&gt;
+               &lt;li class="gn-footer-text"&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href="http://geonetwork-opensource.org/"&gt;&lt;i class="fa fa-fw"&gt;&amp;nbsp;&lt;/i&gt;&lt;span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+               &lt;li class="hidden-sm"&gt;&lt;a href="https://github.com/geonetwork/core-geonetwork"&gt;&lt;i class="fa fa-github"&gt;&amp;nbsp;&lt;/i&gt;&lt;span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href="/geonetwork/doc/api" title=""&gt;&amp;nbsp;&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+         &lt;/div&gt;
+      &lt;/noscript&gt;
+      &lt;div class="navbar navbar-default gn-top-bar" role="navigation" data-ng-hide="layout.hideTopToolBar" data-ng-include="'../../catalog/templates/top-toolbar.html'"&gt;&lt;/div&gt;
+      &lt;div data-ng-include="'../../catalog/templates/signin.html'"&gt;&lt;/div&gt;&lt;script src="/geonetwork/static/lib.js?v=603316619a1858bcc9556afb2afdd34d95c4ab30"&gt;&lt;/script&gt;&lt;script src="/geonetwork/static/gn_login.js?v=603316619a1858bcc9556afb2afdd34d95c4ab30&amp;amp;"&gt;&lt;/script&gt;&lt;script type="text/javascript"&gt;
+        var module = angular.module('gn_login');
+        module.config(['gnGlobalSettings',
+        function(gnGlobalSettings) {
+        gnGlobalSettings.shibbolethEnabled = false;
+        }]);
+      &lt;/script&gt;&lt;script type="text/javascript"&gt;
+      var module = angular.module('gn_login');
+
+      // Init GN config which is a dependency of gn
+      // in order to be initialized quite early
+      var cfgModule = angular.module('gn_config', []);
+      cfgModule.config(['gnViewerSettings', 'gnSearchSettings', 'gnGlobalSettings',
+      function(gnViewerSettings, gnSearchSettings, gnGlobalSettings) {
+      gnGlobalSettings.init(
+      {
+  "langDetector": {
+    "fromHtmlTag": false,
+    "regexp": "^(?:/.+)?/.+/([a-z]{2,3})/.+",
+    "default": "eng"
+  },
+  "nodeDetector": {
+    "regexp": "^(?:/.+)?/(.+)/[a-z]{2,3}/.+",
+    "default": "srv"
+  },
+  "serviceDetector": {
+    "regexp": "^(?:/.+)?/.+/[a-z]{2,3}/(.+)",
+    "default": "catalog.search"
+  },
+  "baseURLDetector": {
+    "regexp": "^((?:/.+)?)+/.+/[a-z]{2,3}/.+",
+    "default": "/geonetwork"
+  },
+  "mods": {
+    "global": {
+      "humanizeDates": true
+    },
+    "footer": {
+      "enabled": true,
+      "showSocialBarInFooter": false
+    },
+    "header": {
+      "enabled": true,
+      "languages": {
+        "dut": "nl"
+      },
+      "isLogoInHeader": true,
+      "logoInHeaderPosition": "left",
+      "fluidHeaderLayout": true,
+      "showGNName": true,
+      "isHeaderFixed": true
+    },
+    "cookieWarning": {
+      "enabled": true,
+      "cookieWarningMoreInfoLink": "foo",
+      "cookieWarningRejectLink": "https://foo.com"
+    },
+    "home": {
+      "enabled": true,
+      "appUrl": "../../srv/{{lang}}/catalog.search#/home",
+      "fluidLayout": true
+    },
+    "search": {
+      "enabled": true,
+      "appUrl": "../../srv/{{lang}}/catalog.search#/search",
+      "hitsperpageValues": [
+        10,
+        50,
+        100
+      ],
+      "paginationInfo": {
+        "hitsPerPage": 50
+      },
+      "facetsSummaryType": "details",
+      "defaultSearchString": "",
+      "facetTabField": "",
+      "facetConfig": [],
+      "filters": {},
+      "sortbyValues": [
+        {
+          "sortBy": "relevance",
+          "sortOrder": ""
+        },
+        {
+          "sortBy": "changeDate",
+          "sortOrder": ""
+        },
+        {
+          "sortBy": "title",
+          "sortOrder": "reverse"
+        },
+        {
+          "sortBy": "rating",
+          "sortOrder": ""
+        },
+        {
+          "sortBy": "popularity",
+          "sortOrder": ""
+        },
+        {
+          "sortBy": "denominatorDesc",
+          "sortOrder": ""
+        },
+        {
+          "sortBy": "denominatorAsc",
+          "sortOrder": "reverse"
+        }
+      ],
+      "sortBy": "relevance",
+      "resultViewTpls": [
+        {
+          "tplUrl": "../../catalog/components/search/resultsview/partials/viewtemplates/grid.html",
+          "tooltip": "Grid",
+          "icon": "fa-th"
+        },
+        {
+          "tplUrl": "../../catalog/components/search/resultsview/partials/viewtemplates/list.html",
+          "tooltip": "List",
+          "icon": "fa-bars"
+        }
+      ],
+      "resultTemplate": "../../catalog/views/dutch/templates/card-ngr.html",
+      "formatter": {
+        "list": [
+          {
+            "label": "full",
+            "url": "/formatters/xsl-view?root=div&amp;view=advanced"
+          },
+          {
+            "label": "xml",
+            "url": "/formatters/xml_view?xsl=xml_view&amp;output=xml"
+          }
+        ],
+        "defaultUrl": ""
+      },
+      "downloadFormatter": [
+        {
+          "label": "exportMEF",
+          "url": "/formatters/zip?withRelated=false",
+          "class": "fa-file-zip-o"
+        },
+        {
+          "label": "exportPDF",
+          "url": "/formatters/xsl-view?output=pdf&amp;language=${lang}",
+          "class": "fa-file-pdf-o"
+        },
+        {
+          "label": "exportXML",
+          "url": "/formatters/xml",
+          "class": "fa-file-code-o"
+        }
+      ],
+      "grid": {
+        "related": [
+          "parent",
+          "children",
+          "services",
+          "datasets"
+        ]
+      },
+      "linkTypes": {
+        "links": [
+          "LINK",
+          "kml"
+        ],
+        "downloads": [
+          "DOWNLOAD"
+        ],
+        "layers": [
+          "OGC",
+          "ESRI:REST"
+        ],
+        "maps": [
+          "osm"
+        ]
+      },
+      "isFilterTagsDisplayedInSearch": true,
+      "usersearches": {
+        "enabled": false,
+        "displayFeaturedSearchesPanel": false
+      },
+      "savedSelection": {
+        "enabled": true
+      }
+    },
+    "map": {
+      "enabled": true,
+      "appUrl": "../../srv/{{lang}}/catalog.search#/map",
+      "externalViewer": {
+        "enabled": false,
+        "enabledViewAction": false,
+        "baseUrl": "http://www.example.com/viewer",
+        "urlTemplate": "http://www.example.com/viewer?url=${service.url}&amp;type=${service.type}&amp;layer=${service.title}&amp;lang=${iso2lang}&amp;title=${md.defaultTitle}",
+        "openNewWindow": false,
+        "valuesSeparator": ","
+      },
+      "is3DModeAllowed": false,
+      "isSaveMapInCatalogAllowed": false,
+      "isExportMapAsImageEnabled": false,
+      "storage": "sessionStorage",
+      "bingKey": "",
+      "listOfServices": {
+        "wms": [],
+        "wmts": []
+      },
+      "projection": "EPSG:28992",
+      "projectionList": [
+        {
+          "code": "EPSG:28992",
+          "label": "RD new"
+        },
+        {
+          "code": "EPSG:4326",
+          "label": "WGS84"
+        }
+      ],
+      "switcherProjectionList": [
+        {
+          "code": "EPSG:3857",
+          "label": "Google mercator (EPSG:3857)"
+        },
+        {
+          "label": "EPSG:28992",
+          "code": "EPSG:28992",
+          "extent": [
+            -285401,
+            22598,
+            595401,
+            903401
+          ],
+          "worldExtent": [
+            -2,
+            49,
+            12,
+            55
+          ],
+          "resolutions": [],
+          "def": "+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.417,50.3319,465.552,-0.398957,0.343988,-1.8774,4.0725 +units=m +no_defs"
+        }
+      ],
+      "disabledTools": {
+        "processes": true,
+        "addLayers": false,
+        "projectionSwitcher": true,
+        "layers": false,
+        "legend": false,
+        "filter": true,
+        "contexts": true,
+        "print": true,
+        "mInteraction": false,
+        "graticule": true,
+        "syncAllLayers": true,
+        "drawVector": true
+      },
+      "graticuleOgcService": {},
+      "map-viewer": {
+        "context": "../../catalog/views/dutch/config-nl-viewer.xml",
+        "extent": [
+          -285401,
+          22599,
+          595401,
+          903370
+        ],
+        "layers": []
+      },
+      "map-search": {
+        "context": "../../catalog/views/dutch/config-nl-viewer.xml",
+        "extent": [
+          -285401,
+          22599,
+          595401,
+          903370
+        ],
+        "layers": []
+      },
+      "map-editor": {
+        "context": "",
+        "extent": [
+          -285401,
+          22598,
+          595401,
+          903401
+        ],
+        "layers": [
+          {
+            "type": "osm"
+          }
+        ]
+      },
+      "autoFitOnLayer": false,
+      "map": "",
+      "useOSM": false,
+      "context": "",
+      "layer": {
+        "url": "http://data.fao.org/maps/wms?",
+        "layers": "COMMON:dark_bluemarble",
+        "version": "1.1.1"
+      },
+      "searchMapLayers": [],
+      "viewerMapLayers": []
+    },
+    "geocoder": {
+      "enabled": false,
+      "appUrl": ""
+    },
+    "recordview": {
+      "enabled": true,
+      "isSocialbarEnabled": true
+    },
+    "editor": {
+      "enabled": true,
+      "appUrl": "../../srv/{{lang}}/catalog.edit",
+      "isUserRecordsOnly": true,
+      "minUserProfileToCreateTemplate": "",
+      "isFilterTagsDisplayed": true,
+      "fluidEditorLayout": true,
+      "createPageTpl": "../../catalog/templates/editor/new-metadata-vertical.html",
+      "editorIndentType": ""
+    },
+    "admin": {
+      "enabled": true,
+      "appUrl": "../../srv/{{lang}}/admin.console"
+    },
+    "signin": {
+      "enabled": true,
+      "appUrl": "../../srv/{{lang}}/catalog.signin"
+    },
+    "signout": {
+      "appUrl": "../../signout"
+    },
+    "page": {
+      "enabled": true,
+      "appUrl": "../../srv/{{lang}}/catalog.search#/page"
+    }
+  }
+},
+      null, gnViewerSettings, gnSearchSettings);
+      }]);
+    &lt;/script&gt;&lt;/body&gt;
+&lt;/html&gt;]</div>
+                    <div class="step-row">
+                        <div class="step-container" id="22">
+                            <div class="step-ref skipped">22</div>
+                            <div class="step-cell skipped">* def list = karate.mapWithKey(briefarray ,'datasetIdentifierCode')</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="23">
+                            <div class="step-ref skipped">23</div>
+                            <div class="step-cell skipped">* eval db.writeln(karate.pretty(list),outputpath + 'ids.json')</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container">
+                            <div class="step-ref skipped"></div>
+                            <div class="step-cell comment">#services</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="24">
+                            <div class="step-ref skipped">24</div>
+                            <div class="step-cell skipped">* def servicearray = get response /GetRecordsResponse/SearchResults/BriefRecord[type='service']/identifier</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="25">
+                            <div class="step-ref skipped">25</div>
+                            <div class="step-cell skipped">* def servicelist = karate.mapWithKey(servicearray,'datasetIdentifierCode')</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="26">
+                            <div class="step-ref skipped">26</div>
+                            <div class="step-cell skipped">* eval db.writeln(karate.pretty(servicelist),outputpath + 'idsService.json')</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container">
+                            <div class="step-ref skipped"></div>
+                            <div class="step-cell comment">#datasets</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="27">
+                            <div class="step-ref skipped">27</div>
+                            <div class="step-cell skipped">* def datasetarray = get response /GetRecordsResponse/SearchResults/BriefRecord[type='dataset']/identifier</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="28">
+                            <div class="step-ref skipped">28</div>
+                            <div class="step-cell skipped">* def datasetlist = karate.mapWithKey(datasetarray,'datasetIdentifierCode')</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="29">
+                            <div class="step-ref skipped">29</div>
+                            <div class="step-cell skipped">* eval db.writeln(karate.pretty(datasetlist ),outputpath + 'idsDataset.json')</div>
+                        </div>
+                        <div class="time-cell skipped">0</div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+           
+  
+    </body>
+    
+</html>

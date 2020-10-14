@@ -1,0 +1,436 @@
+-------------------------------------------------------------------------------
+Test set: InspireTest.TestAll
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 4.293 s <<< FAILURE! - in InspireTest.TestAll
+InspireTest.TestAll.T01_ids  Time elapsed: 2.647 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+failed features:
+src.test.java.InspireTest.ngr.T01_Ids: T01_Ids.feature:32 - cannot convert to map: [type: STRING, value: <!DOCTYPE html
+  SYSTEM "html">
+<html ng-app="gn_login" lang="nl" id="ng-app">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Nationaal georegister</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="initial-scale=1.0">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="description" content="">
+      <meta name="keywords" content="">
+      <link rel="icon" sizes="16x16 32x32 48x48" type="image/png" href="../../images/logos/favicon.png">
+      <link href="rss.search?sortBy=changeDate" rel="alternate" type="application/rss+xml" title="Nationaal georegister - PDOK">
+      <link href="portal.opensearch" rel="search" type="application/opensearchdescription+xml" title="Nationaal georegister - PDOK">
+      <link href="/geonetwork/static/gn_fonts.css?v=603316619a1858bcc9556afb2afdd34d95c4ab30&amp;" rel="stylesheet" media="screen">
+      <link href="/geonetwork/static/gn_login_dutch.css?v=603316619a1858bcc9556afb2afdd34d95c4ab30&amp;" rel="stylesheet" media="screen">
+      <link href="/geonetwork/static/bootstrap-table.min.css?v=603316619a1858bcc9556afb2afdd34d95c4ab30" rel="stylesheet" media="screen">
+      <link href="/geonetwork/static/gn_pickers.css?v=603316619a1858bcc9556afb2afdd34d95c4ab30&amp;" rel="stylesheet" media="screen">
+      <link href="/geonetwork/static/gn_inspire.css?v=603316619a1858bcc9556afb2afdd34d95c4ab30&amp;" rel="stylesheet" media="screen">
+      <link href="/geonetwork/static/ng-skos.css?v=603316619a1858bcc9556afb2afdd34d95c4ab30" rel="stylesheet" media="screen">
+   </head>
+   <body data-ng-controller="GnCatController" data-ng-class="[isHeaderFixed ? 'gn-header-fixed' : 'gn-header-relative', isLogoInHeader ? 'gn-logo-in-header' : 'gn-logo-in-navbar']">
+      <div data-gn-alert-manager=""></div>
+      <noscript>
+         <div class="navbar navbar-default gn-top-bar" role="navigation">
+            <div class="container">
+               <div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" title="" aria-expanded="false" aria-controls="navbar"><span class="sr-only"></span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div>
+               <div id="navbar" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav" id="topbar-left">
+                     <li><a href="https://www.nationaalgeoregister.nl/geonetwork/srv/"><img class="gn-logo" alt="" src="/geonetwork/images/logos/64896f8f-0c54-482e-9200-3ae279f5c79c.png">Nationaal georegister</a></li>
+                     <li><a title="" href="https://www.nationaalgeoregister.nl/geonetwork/srv/search" onclick="location.href=('https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/search');return false;"><i class="fa fa-fw fa-search hidden-sm">&nbsp;</i><span></span></a></li>
+                     <li id="map-menu" class="hidden-nojs"><a title="" href="https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/map"><i class="fa fa-fw fa-globe hidden-sm">&nbsp;</i><span></span></a></li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                     <li><a href="https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.signin" title=""><i class="fa fa-sign-in fa-fw">&nbsp;</i></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="container page">
+            <div class="row gn-row-main">
+               <div class="col-sm-8 col-sm-offset-2">
+                  <h1>Nationaal georegister</h1>
+                  <p>
+                     
+                     GeoNetwork opensource maakt het mogelijk ruimtelijke gerelateerde informatie te ontsluiten
+                     tussen
+                     verschillende organisaties. Voor meer informatie kunt u contact opnemen met
+                     
+                     
+                  </p>
+                  <p>
+                     GeoNetwork heeft als doel:
+                     
+                     Het verbeteren van de toegang en het gebruik van ruimtelijk gerelateerde informatie.
+                     Het ondersteunen van een interdisciplinaire benadering van duurzame ontwikkeling
+                     Het ondersteunen van besluitvormingsprocessen
+                     De voordelen van het gebruik van ruimtelijke gerelateerde informatie naar voren te
+                     brengen.
+                     
+                     
+                     
+                  </p><br><br><div class="alert alert-warning" data-ng-hide=""><strong></strong> 
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="navbar navbar-default gn-bottom-bar" role="navigation">
+            <ul class="nav navbar-nav">
+               <li class="gn-footer-text"></li>
+               <li><a href="http://geonetwork-opensource.org/"><i class="fa fa-fw">&nbsp;</i><span></span></a></li>
+               <li class="hidden-sm"><a href="https://github.com/geonetwork/core-geonetwork"><i class="fa fa-github">&nbsp;</i><span></span></a></li>
+               <li><a href="/geonetwork/doc/api" title="">&nbsp;</a></li>
+            </ul>
+         </div>
+      </noscript>
+      <div class="navbar navbar-default gn-top-bar" role="navigation" data-ng-hide="layout.hideTopToolBar" data-ng-include="'../../catalog/templates/top-toolbar.html'"></div>
+      <div data-ng-include="'../../catalog/templates/signin.html'"></div><script src="/geonetwork/static/lib.js?v=603316619a1858bcc9556afb2afdd34d95c4ab30"></script><script src="/geonetwork/static/gn_login.js?v=603316619a1858bcc9556afb2afdd34d95c4ab30&amp;"></script><script type="text/javascript">
+        var module = angular.module('gn_login');
+        module.config(['gnGlobalSettings',
+        function(gnGlobalSettings) {
+        gnGlobalSettings.shibbolethEnabled = false;
+        }]);
+      </script><script type="text/javascript">
+      var module = angular.module('gn_login');
+
+      // Init GN config which is a dependency of gn
+      // in order to be initialized quite early
+      var cfgModule = angular.module('gn_config', []);
+      cfgModule.config(['gnViewerSettings', 'gnSearchSettings', 'gnGlobalSettings',
+      function(gnViewerSettings, gnSearchSettings, gnGlobalSettings) {
+      gnGlobalSettings.init(
+      {
+  "langDetector": {
+    "fromHtmlTag": false,
+    "regexp": "^(?:/.+)?/.+/([a-z]{2,3})/.+",
+    "default": "eng"
+  },
+  "nodeDetector": {
+    "regexp": "^(?:/.+)?/(.+)/[a-z]{2,3}/.+",
+    "default": "srv"
+  },
+  "serviceDetector": {
+    "regexp": "^(?:/.+)?/.+/[a-z]{2,3}/(.+)",
+    "default": "catalog.search"
+  },
+  "baseURLDetector": {
+    "regexp": "^((?:/.+)?)+/.+/[a-z]{2,3}/.+",
+    "default": "/geonetwork"
+  },
+  "mods": {
+    "global": {
+      "humanizeDates": true
+    },
+    "footer": {
+      "enabled": true,
+      "showSocialBarInFooter": false
+    },
+    "header": {
+      "enabled": true,
+      "languages": {
+        "dut": "nl"
+      },
+      "isLogoInHeader": true,
+      "logoInHeaderPosition": "left",
+      "fluidHeaderLayout": true,
+      "showGNName": true,
+      "isHeaderFixed": true
+    },
+    "cookieWarning": {
+      "enabled": true,
+      "cookieWarningMoreInfoLink": "foo",
+      "cookieWarningRejectLink": "https://foo.com"
+    },
+    "home": {
+      "enabled": true,
+      "appUrl": "../../srv/{{lang}}/catalog.search#/home",
+      "fluidLayout": true
+    },
+    "search": {
+      "enabled": true,
+      "appUrl": "../../srv/{{lang}}/catalog.search#/search",
+      "hitsperpageValues": [
+        10,
+        50,
+        100
+      ],
+      "paginationInfo": {
+        "hitsPerPage": 50
+      },
+      "facetsSummaryType": "details",
+      "defaultSearchString": "",
+      "facetTabField": "",
+      "facetConfig": [],
+      "filters": {},
+      "sortbyValues": [
+        {
+          "sortBy": "relevance",
+          "sortOrder": ""
+        },
+        {
+          "sortBy": "changeDate",
+          "sortOrder": ""
+        },
+        {
+          "sortBy": "title",
+          "sortOrder": "reverse"
+        },
+        {
+          "sortBy": "rating",
+          "sortOrder": ""
+        },
+        {
+          "sortBy": "popularity",
+          "sortOrder": ""
+        },
+        {
+          "sortBy": "denominatorDesc",
+          "sortOrder": ""
+        },
+        {
+          "sortBy": "denominatorAsc",
+          "sortOrder": "reverse"
+        }
+      ],
+      "sortBy": "relevance",
+      "resultViewTpls": [
+        {
+          "tplUrl": "../../catalog/components/search/resultsview/partials/viewtemplates/grid.html",
+          "tooltip": "Grid",
+          "icon": "fa-th"
+        },
+        {
+          "tplUrl": "../../catalog/components/search/resultsview/partials/viewtemplates/list.html",
+          "tooltip": "List",
+          "icon": "fa-bars"
+        }
+      ],
+      "resultTemplate": "../../catalog/views/dutch/templates/card-ngr.html",
+      "formatter": {
+        "list": [
+          {
+            "label": "full",
+            "url": "/formatters/xsl-view?root=div&view=advanced"
+          },
+          {
+            "label": "xml",
+            "url": "/formatters/xml_view?xsl=xml_view&output=xml"
+          }
+        ],
+        "defaultUrl": ""
+      },
+      "downloadFormatter": [
+        {
+          "label": "exportMEF",
+          "url": "/formatters/zip?withRelated=false",
+          "class": "fa-file-zip-o"
+        },
+        {
+          "label": "exportPDF",
+          "url": "/formatters/xsl-view?output=pdf&language=${lang}",
+          "class": "fa-file-pdf-o"
+        },
+        {
+          "label": "exportXML",
+          "url": "/formatters/xml",
+          "class": "fa-file-code-o"
+        }
+      ],
+      "grid": {
+        "related": [
+          "parent",
+          "children",
+          "services",
+          "datasets"
+        ]
+      },
+      "linkTypes": {
+        "links": [
+          "LINK",
+          "kml"
+        ],
+        "downloads": [
+          "DOWNLOAD"
+        ],
+        "layers": [
+          "OGC",
+          "ESRI:REST"
+        ],
+        "maps": [
+          "osm"
+        ]
+      },
+      "isFilterTagsDisplayedInSearch": true,
+      "usersearches": {
+        "enabled": false,
+        "displayFeaturedSearchesPanel": false
+      },
+      "savedSelection": {
+        "enabled": true
+      }
+    },
+    "map": {
+      "enabled": true,
+      "appUrl": "../../srv/{{lang}}/catalog.search#/map",
+      "externalViewer": {
+        "enabled": false,
+        "enabledViewAction": false,
+        "baseUrl": "http://www.example.com/viewer",
+        "urlTemplate": "http://www.example.com/viewer?url=${service.url}&type=${service.type}&layer=${service.title}&lang=${iso2lang}&title=${md.defaultTitle}",
+        "openNewWindow": false,
+        "valuesSeparator": ","
+      },
+      "is3DModeAllowed": false,
+      "isSaveMapInCatalogAllowed": false,
+      "isExportMapAsImageEnabled": false,
+      "storage": "sessionStorage",
+      "bingKey": "",
+      "listOfServices": {
+        "wms": [],
+        "wmts": []
+      },
+      "projection": "EPSG:28992",
+      "projectionList": [
+        {
+          "code": "EPSG:28992",
+          "label": "RD new"
+        },
+        {
+          "code": "EPSG:4326",
+          "label": "WGS84"
+        }
+      ],
+      "switcherProjectionList": [
+        {
+          "code": "EPSG:3857",
+          "label": "Google mercator (EPSG:3857)"
+        },
+        {
+          "label": "EPSG:28992",
+          "code": "EPSG:28992",
+          "extent": [
+            -285401,
+            22598,
+            595401,
+            903401
+          ],
+          "worldExtent": [
+            -2,
+            49,
+            12,
+            55
+          ],
+          "resolutions": [],
+          "def": "+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.417,50.3319,465.552,-0.398957,0.343988,-1.8774,4.0725 +units=m +no_defs"
+        }
+      ],
+      "disabledTools": {
+        "processes": true,
+        "addLayers": false,
+        "projectionSwitcher": true,
+        "layers": false,
+        "legend": false,
+        "filter": true,
+        "contexts": true,
+        "print": true,
+        "mInteraction": false,
+        "graticule": true,
+        "syncAllLayers": true,
+        "drawVector": true
+      },
+      "graticuleOgcService": {},
+      "map-viewer": {
+        "context": "../../catalog/views/dutch/config-nl-viewer.xml",
+        "extent": [
+          -285401,
+          22599,
+          595401,
+          903370
+        ],
+        "layers": []
+      },
+      "map-search": {
+        "context": "../../catalog/views/dutch/config-nl-viewer.xml",
+        "extent": [
+          -285401,
+          22599,
+          595401,
+          903370
+        ],
+        "layers": []
+      },
+      "map-editor": {
+        "context": "",
+        "extent": [
+          -285401,
+          22598,
+          595401,
+          903401
+        ],
+        "layers": [
+          {
+            "type": "osm"
+          }
+        ]
+      },
+      "autoFitOnLayer": false,
+      "map": "",
+      "useOSM": false,
+      "context": "",
+      "layer": {
+        "url": "http://data.fao.org/maps/wms?",
+        "layers": "COMMON:dark_bluemarble",
+        "version": "1.1.1"
+      },
+      "searchMapLayers": [],
+      "viewerMapLayers": []
+    },
+    "geocoder": {
+      "enabled": false,
+      "appUrl": ""
+    },
+    "recordview": {
+      "enabled": true,
+      "isSocialbarEnabled": true
+    },
+    "editor": {
+      "enabled": true,
+      "appUrl": "../../srv/{{lang}}/catalog.edit",
+      "isUserRecordsOnly": true,
+      "minUserProfileToCreateTemplate": "",
+      "isFilterTagsDisplayed": true,
+      "fluidEditorLayout": true,
+      "createPageTpl": "../../catalog/templates/editor/new-metadata-vertical.html",
+      "editorIndentType": ""
+    },
+    "admin": {
+      "enabled": true,
+      "appUrl": "../../srv/{{lang}}/admin.console"
+    },
+    "signin": {
+      "enabled": true,
+      "appUrl": "../../srv/{{lang}}/catalog.signin"
+    },
+    "signout": {
+      "appUrl": "../../signout"
+    },
+    "page": {
+      "enabled": true,
+      "appUrl": "../../srv/{{lang}}/catalog.search#/page"
+    }
+  }
+},
+      null, gnViewerSettings, gnSearchSettings);
+      }]);
+    </script></body>
+</html>]
+ ==> expected: <0> but was: <1>
+	at InspireTest.TestAll.runtest(InspireTest.java:97)
+	at InspireTest.TestAll.T01_ids(InspireTest.java:53)
+
+InspireTest.TestAll.T02  Time elapsed: 0.337 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+failed features:
+src.test.java.InspireTest.ngr.T02_Datasets: [1:22] -unknown-:13 - could not find or read file: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/T01_ids/idsDataset.json
+ ==> expected: <0> but was: <1>
+	at InspireTest.TestAll.runtest(InspireTest.java:97)
+	at InspireTest.TestAll.T02(InspireTest.java:62)
+

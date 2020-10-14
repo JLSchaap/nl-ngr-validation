@@ -1,0 +1,454 @@
+<testsuite failures="1" name="src/test/java/InspireTest/ngr/T01_Ids.feature" skipped="0" tests="1" time="1.283733">
+  <testcase classname="src.test.java.InspireTest.ngr.T01_Ids" name="getbrief list" time="1.283733">
+    <failure message="T01_Ids.feature:32 - cannot convert to map: [type: STRING, value: &lt;!DOCTYPE html&#10;  SYSTEM &quot;html&quot;&gt;&#10;&lt;html ng-app=&quot;gn_login&quot; lang=&quot;nl&quot; id=&quot;ng-app&quot;&gt;&#10;   &lt;head&gt;&#10;      &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;&#10;      &lt;title&gt;Nationaal georegister&lt;/title&gt;&#10;      &lt;meta charset=&quot;utf-8&quot;&gt;&#10;      &lt;meta name=&quot;viewport&quot; content=&quot;initial-scale=1.0&quot;&gt;&#10;      &lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot;&gt;&#10;      &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;&#10;      &lt;meta name=&quot;keywords&quot; content=&quot;&quot;&gt;&#10;      &lt;link rel=&quot;icon&quot; sizes=&quot;16x16 32x32 48x48&quot; type=&quot;image/png&quot; href=&quot;../../images/logos/favicon.png&quot;&gt;&#10;      &lt;link href=&quot;rss.search?sortBy=changeDate&quot; rel=&quot;alternate&quot; type=&quot;application/rss+xml&quot; title=&quot;Nationaal georegister - PDOK&quot;&gt;&#10;      &lt;link href=&quot;portal.opensearch&quot; rel=&quot;search&quot; type=&quot;application/opensearchdescription+xml&quot; title=&quot;Nationaal georegister - PDOK&quot;&gt;&#10;      &lt;link href=&quot;/geonetwork/static/gn_fonts.css?v=603316619a1858bcc9556afb2afdd34d95c4ab30&amp;amp;&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;&#10;      &lt;link href=&quot;/geonetwork/static/gn_login_dutch.css?v=603316619a1858bcc9556afb2afdd34d95c4ab30&amp;amp;&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;&#10;      &lt;link href=&quot;/geonetwork/static/bootstrap-table.min.css?v=603316619a1858bcc9556afb2afdd34d95c4ab30&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;&#10;      &lt;link href=&quot;/geonetwork/static/gn_pickers.css?v=603316619a1858bcc9556afb2afdd34d95c4ab30&amp;amp;&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;&#10;      &lt;link href=&quot;/geonetwork/static/gn_inspire.css?v=603316619a1858bcc9556afb2afdd34d95c4ab30&amp;amp;&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;&#10;      &lt;link href=&quot;/geonetwork/static/ng-skos.css?v=603316619a1858bcc9556afb2afdd34d95c4ab30&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;&#10;   &lt;/head&gt;&#10;   &lt;body data-ng-controller=&quot;GnCatController&quot; data-ng-class=&quot;[isHeaderFixed ? 'gn-header-fixed' : 'gn-header-relative', isLogoInHeader ? 'gn-logo-in-header' : 'gn-logo-in-navbar']&quot;&gt;&#10;      &lt;div data-gn-alert-manager=&quot;&quot;&gt;&lt;/div&gt;&#10;      &lt;noscript&gt;&#10;         &lt;div class=&quot;navbar navbar-default gn-top-bar&quot; role=&quot;navigation&quot;&gt;&#10;            &lt;div class=&quot;container&quot;&gt;&#10;               &lt;div class=&quot;navbar-header&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;navbar-toggle collapsed&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbar&quot; title=&quot;&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;navbar&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;&lt;/span&gt;&lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;&lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;&lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;&#10;               &lt;div id=&quot;navbar&quot; class=&quot;navbar-collapse collapse&quot;&gt;&#10;                  &lt;ul class=&quot;nav navbar-nav&quot; id=&quot;topbar-left&quot;&gt;&#10;                     &lt;li&gt;&lt;a href=&quot;https://www.nationaalgeoregister.nl/geonetwork/srv/&quot;&gt;&lt;img class=&quot;gn-logo&quot; alt=&quot;&quot; src=&quot;/geonetwork/images/logos/64896f8f-0c54-482e-9200-3ae279f5c79c.png&quot;&gt;Nationaal georegister&lt;/a&gt;&lt;/li&gt;&#10;                     &lt;li&gt;&lt;a title=&quot;&quot; href=&quot;https://www.nationaalgeoregister.nl/geonetwork/srv/search&quot; onclick=&quot;location.href=('https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/search');return false;&quot;&gt;&lt;i class=&quot;fa fa-fw fa-search hidden-sm&quot;&gt;&amp;nbsp;&lt;/i&gt;&lt;span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&#10;                     &lt;li id=&quot;map-menu&quot; class=&quot;hidden-nojs&quot;&gt;&lt;a title=&quot;&quot; href=&quot;https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/map&quot;&gt;&lt;i class=&quot;fa fa-fw fa-globe hidden-sm&quot;&gt;&amp;nbsp;&lt;/i&gt;&lt;span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&#10;                  &lt;/ul&gt;&#10;                  &lt;ul class=&quot;nav navbar-nav navbar-right&quot;&gt;&#10;                     &lt;li&gt;&lt;a href=&quot;https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.signin&quot; title=&quot;&quot;&gt;&lt;i class=&quot;fa fa-sign-in fa-fw&quot;&gt;&amp;nbsp;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#10;                  &lt;/ul&gt;&#10;               &lt;/div&gt;&#10;            &lt;/div&gt;&#10;         &lt;/div&gt;&#10;         &lt;div class=&quot;container page&quot;&gt;&#10;            &lt;div class=&quot;row gn-row-main&quot;&gt;&#10;               &lt;div class=&quot;col-sm-8 col-sm-offset-2&quot;&gt;&#10;                  &lt;h1&gt;Nationaal georegister&lt;/h1&gt;&#10;                  &lt;p&gt;&#10;                     &#10;                     GeoNetwork opensource maakt het mogelijk ruimtelijke gerelateerde informatie te ontsluiten&#10;                     tussen&#10;                     verschillende organisaties. Voor meer informatie kunt u contact opnemen met&#10;                     &#10;                     &#10;                  &lt;/p&gt;&#10;                  &lt;p&gt;&#10;                     GeoNetwork heeft als doel:&#10;                     &#10;                     Het verbeteren van de toegang en het gebruik van ruimtelijk gerelateerde informatie.&#10;                     Het ondersteunen van een interdisciplinaire benadering van duurzame ontwikkeling&#10;                     Het ondersteunen van besluitvormingsprocessen&#10;                     De voordelen van het gebruik van ruimtelijke gerelateerde informatie naar voren te&#10;                     brengen.&#10;                     &#10;                     &#10;                     &#10;                  &lt;/p&gt;&lt;br&gt;&lt;br&gt;&lt;div class=&quot;alert alert-warning&quot; data-ng-hide=&quot;&quot;&gt;&lt;strong&gt;&lt;/strong&gt; &#10;                  &lt;/div&gt;&#10;               &lt;/div&gt;&#10;            &lt;/div&gt;&#10;         &lt;/div&gt;&#10;         &lt;div class=&quot;navbar navbar-default gn-bottom-bar&quot; role=&quot;navigation&quot;&gt;&#10;            &lt;ul class=&quot;nav navbar-nav&quot;&gt;&#10;               &lt;li class=&quot;gn-footer-text&quot;&gt;&lt;/li&gt;&#10;               &lt;li&gt;&lt;a href=&quot;http://geonetwork-opensource.org/&quot;&gt;&lt;i class=&quot;fa fa-fw&quot;&gt;&amp;nbsp;&lt;/i&gt;&lt;span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&#10;               &lt;li class=&quot;hidden-sm&quot;&gt;&lt;a href=&quot;https://github.com/geonetwork/core-geonetwork&quot;&gt;&lt;i class=&quot;fa fa-github&quot;&gt;&amp;nbsp;&lt;/i&gt;&lt;span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&#10;               &lt;li&gt;&lt;a href=&quot;/geonetwork/doc/api&quot; title=&quot;&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/li&gt;&#10;            &lt;/ul&gt;&#10;         &lt;/div&gt;&#10;      &lt;/noscript&gt;&#10;      &lt;div class=&quot;navbar navbar-default gn-top-bar&quot; role=&quot;navigation&quot; data-ng-hide=&quot;layout.hideTopToolBar&quot; data-ng-include=&quot;'../../catalog/templates/top-toolbar.html'&quot;&gt;&lt;/div&gt;&#10;      &lt;div data-ng-include=&quot;'../../catalog/templates/signin.html'&quot;&gt;&lt;/div&gt;&lt;script src=&quot;/geonetwork/static/lib.js?v=603316619a1858bcc9556afb2afdd34d95c4ab30&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/geonetwork/static/gn_login.js?v=603316619a1858bcc9556afb2afdd34d95c4ab30&amp;amp;&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;&#10;        var module = angular.module('gn_login');&#10;        module.config(['gnGlobalSettings',&#10;        function(gnGlobalSettings) {&#10;        gnGlobalSettings.shibbolethEnabled = false;&#10;        }]);&#10;      &lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;&#10;      var module = angular.module('gn_login');&#10;&#10;      // Init GN config which is a dependency of gn&#10;      // in order to be initialized quite early&#10;      var cfgModule = angular.module('gn_config', []);&#10;      cfgModule.config(['gnViewerSettings', 'gnSearchSettings', 'gnGlobalSettings',&#10;      function(gnViewerSettings, gnSearchSettings, gnGlobalSettings) {&#10;      gnGlobalSettings.init(&#10;      {&#10;  &quot;langDetector&quot;: {&#10;    &quot;fromHtmlTag&quot;: false,&#10;    &quot;regexp&quot;: &quot;^(?:/.+)?/.+/([a-z]{2,3})/.+&quot;,&#10;    &quot;default&quot;: &quot;eng&quot;&#10;  },&#10;  &quot;nodeDetector&quot;: {&#10;    &quot;regexp&quot;: &quot;^(?:/.+)?/(.+)/[a-z]{2,3}/.+&quot;,&#10;    &quot;default&quot;: &quot;srv&quot;&#10;  },&#10;  &quot;serviceDetector&quot;: {&#10;    &quot;regexp&quot;: &quot;^(?:/.+)?/.+/[a-z]{2,3}/(.+)&quot;,&#10;    &quot;default&quot;: &quot;catalog.search&quot;&#10;  },&#10;  &quot;baseURLDetector&quot;: {&#10;    &quot;regexp&quot;: &quot;^((?:/.+)?)+/.+/[a-z]{2,3}/.+&quot;,&#10;    &quot;default&quot;: &quot;/geonetwork&quot;&#10;  },&#10;  &quot;mods&quot;: {&#10;    &quot;global&quot;: {&#10;      &quot;humanizeDates&quot;: true&#10;    },&#10;    &quot;footer&quot;: {&#10;      &quot;enabled&quot;: true,&#10;      &quot;showSocialBarInFooter&quot;: false&#10;    },&#10;    &quot;header&quot;: {&#10;      &quot;enabled&quot;: true,&#10;      &quot;languages&quot;: {&#10;        &quot;dut&quot;: &quot;nl&quot;&#10;      },&#10;      &quot;isLogoInHeader&quot;: true,&#10;      &quot;logoInHeaderPosition&quot;: &quot;left&quot;,&#10;      &quot;fluidHeaderLayout&quot;: true,&#10;      &quot;showGNName&quot;: true,&#10;      &quot;isHeaderFixed&quot;: true&#10;    },&#10;    &quot;cookieWarning&quot;: {&#10;      &quot;enabled&quot;: true,&#10;      &quot;cookieWarningMoreInfoLink&quot;: &quot;foo&quot;,&#10;      &quot;cookieWarningRejectLink&quot;: &quot;https://foo.com&quot;&#10;    },&#10;    &quot;home&quot;: {&#10;      &quot;enabled&quot;: true,&#10;      &quot;appUrl&quot;: &quot;../../srv/{{lang}}/catalog.search#/home&quot;,&#10;      &quot;fluidLayout&quot;: true&#10;    },&#10;    &quot;search&quot;: {&#10;      &quot;enabled&quot;: true,&#10;      &quot;appUrl&quot;: &quot;../../srv/{{lang}}/catalog.search#/search&quot;,&#10;      &quot;hitsperpageValues&quot;: [&#10;        10,&#10;        50,&#10;        100&#10;      ],&#10;      &quot;paginationInfo&quot;: {&#10;        &quot;hitsPerPage&quot;: 50&#10;      },&#10;      &quot;facetsSummaryType&quot;: &quot;details&quot;,&#10;      &quot;defaultSearchString&quot;: &quot;&quot;,&#10;      &quot;facetTabField&quot;: &quot;&quot;,&#10;      &quot;facetConfig&quot;: [],&#10;      &quot;filters&quot;: {},&#10;      &quot;sortbyValues&quot;: [&#10;        {&#10;          &quot;sortBy&quot;: &quot;relevance&quot;,&#10;          &quot;sortOrder&quot;: &quot;&quot;&#10;        },&#10;        {&#10;          &quot;sortBy&quot;: &quot;changeDate&quot;,&#10;          &quot;sortOrder&quot;: &quot;&quot;&#10;        },&#10;        {&#10;          &quot;sortBy&quot;: &quot;title&quot;,&#10;          &quot;sortOrder&quot;: &quot;reverse&quot;&#10;        },&#10;        {&#10;          &quot;sortBy&quot;: &quot;rating&quot;,&#10;          &quot;sortOrder&quot;: &quot;&quot;&#10;        },&#10;        {&#10;          &quot;sortBy&quot;: &quot;popularity&quot;,&#10;          &quot;sortOrder&quot;: &quot;&quot;&#10;        },&#10;        {&#10;          &quot;sortBy&quot;: &quot;denominatorDesc&quot;,&#10;          &quot;sortOrder&quot;: &quot;&quot;&#10;        },&#10;        {&#10;          &quot;sortBy&quot;: &quot;denominatorAsc&quot;,&#10;          &quot;sortOrder&quot;: &quot;reverse&quot;&#10;        }&#10;      ],&#10;      &quot;sortBy&quot;: &quot;relevance&quot;,&#10;      &quot;resultViewTpls&quot;: [&#10;        {&#10;          &quot;tplUrl&quot;: &quot;../../catalog/components/search/resultsview/partials/viewtemplates/grid.html&quot;,&#10;          &quot;tooltip&quot;: &quot;Grid&quot;,&#10;          &quot;icon&quot;: &quot;fa-th&quot;&#10;        },&#10;        {&#10;          &quot;tplUrl&quot;: &quot;../../catalog/components/search/resultsview/partials/viewtemplates/list.html&quot;,&#10;          &quot;tooltip&quot;: &quot;List&quot;,&#10;          &quot;icon&quot;: &quot;fa-bars&quot;&#10;        }&#10;      ],&#10;      &quot;resultTemplate&quot;: &quot;../../catalog/views/dutch/templates/card-ngr.html&quot;,&#10;      &quot;formatter&quot;: {&#10;        &quot;list&quot;: [&#10;          {&#10;            &quot;label&quot;: &quot;full&quot;,&#10;            &quot;url&quot;: &quot;/formatters/xsl-view?root=div&amp;view=advanced&quot;&#10;          },&#10;          {&#10;            &quot;label&quot;: &quot;xml&quot;,&#10;            &quot;url&quot;: &quot;/formatters/xml_view?xsl=xml_view&amp;output=xml&quot;&#10;          }&#10;        ],&#10;        &quot;defaultUrl&quot;: &quot;&quot;&#10;      },&#10;      &quot;downloadFormatter&quot;: [&#10;        {&#10;          &quot;label&quot;: &quot;exportMEF&quot;,&#10;          &quot;url&quot;: &quot;/formatters/zip?withRelated=false&quot;,&#10;          &quot;class&quot;: &quot;fa-file-zip-o&quot;&#10;        },&#10;        {&#10;          &quot;label&quot;: &quot;exportPDF&quot;,&#10;          &quot;url&quot;: &quot;/formatters/xsl-view?output=pdf&amp;language=${lang}&quot;,&#10;          &quot;class&quot;: &quot;fa-file-pdf-o&quot;&#10;        },&#10;        {&#10;          &quot;label&quot;: &quot;exportXML&quot;,&#10;          &quot;url&quot;: &quot;/formatters/xml&quot;,&#10;          &quot;class&quot;: &quot;fa-file-code-o&quot;&#10;        }&#10;      ],&#10;      &quot;grid&quot;: {&#10;        &quot;related&quot;: [&#10;          &quot;parent&quot;,&#10;          &quot;children&quot;,&#10;          &quot;services&quot;,&#10;          &quot;datasets&quot;&#10;        ]&#10;      },&#10;      &quot;linkTypes&quot;: {&#10;        &quot;links&quot;: [&#10;          &quot;LINK&quot;,&#10;          &quot;kml&quot;&#10;        ],&#10;        &quot;downloads&quot;: [&#10;          &quot;DOWNLOAD&quot;&#10;        ],&#10;        &quot;layers&quot;: [&#10;          &quot;OGC&quot;,&#10;          &quot;ESRI:REST&quot;&#10;        ],&#10;        &quot;maps&quot;: [&#10;          &quot;osm&quot;&#10;        ]&#10;      },&#10;      &quot;isFilterTagsDisplayedInSearch&quot;: true,&#10;      &quot;usersearches&quot;: {&#10;        &quot;enabled&quot;: false,&#10;        &quot;displayFeaturedSearchesPanel&quot;: false&#10;      },&#10;      &quot;savedSelection&quot;: {&#10;        &quot;enabled&quot;: true&#10;      }&#10;    },&#10;    &quot;map&quot;: {&#10;      &quot;enabled&quot;: true,&#10;      &quot;appUrl&quot;: &quot;../../srv/{{lang}}/catalog.search#/map&quot;,&#10;      &quot;externalViewer&quot;: {&#10;        &quot;enabled&quot;: false,&#10;        &quot;enabledViewAction&quot;: false,&#10;        &quot;baseUrl&quot;: &quot;http://www.example.com/viewer&quot;,&#10;        &quot;urlTemplate&quot;: &quot;http://www.example.com/viewer?url=${service.url}&amp;type=${service.type}&amp;layer=${service.title}&amp;lang=${iso2lang}&amp;title=${md.defaultTitle}&quot;,&#10;        &quot;openNewWindow&quot;: false,&#10;        &quot;valuesSeparator&quot;: &quot;,&quot;&#10;      },&#10;      &quot;is3DModeAllowed&quot;: false,&#10;      &quot;isSaveMapInCatalogAllowed&quot;: false,&#10;      &quot;isExportMapAsImageEnabled&quot;: false,&#10;      &quot;storage&quot;: &quot;sessionStorage&quot;,&#10;      &quot;bingKey&quot;: &quot;&quot;,&#10;      &quot;listOfServices&quot;: {&#10;        &quot;wms&quot;: [],&#10;        &quot;wmts&quot;: []&#10;      },&#10;      &quot;projection&quot;: &quot;EPSG:28992&quot;,&#10;      &quot;projectionList&quot;: [&#10;        {&#10;          &quot;code&quot;: &quot;EPSG:28992&quot;,&#10;          &quot;label&quot;: &quot;RD new&quot;&#10;        },&#10;        {&#10;          &quot;code&quot;: &quot;EPSG:4326&quot;,&#10;          &quot;label&quot;: &quot;WGS84&quot;&#10;        }&#10;      ],&#10;      &quot;switcherProjectionList&quot;: [&#10;        {&#10;          &quot;code&quot;: &quot;EPSG:3857&quot;,&#10;          &quot;label&quot;: &quot;Google mercator (EPSG:3857)&quot;&#10;        },&#10;        {&#10;          &quot;label&quot;: &quot;EPSG:28992&quot;,&#10;          &quot;code&quot;: &quot;EPSG:28992&quot;,&#10;          &quot;extent&quot;: [&#10;            -285401,&#10;            22598,&#10;            595401,&#10;            903401&#10;          ],&#10;          &quot;worldExtent&quot;: [&#10;            -2,&#10;            49,&#10;            12,&#10;            55&#10;          ],&#10;          &quot;resolutions&quot;: [],&#10;          &quot;def&quot;: &quot;+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.417,50.3319,465.552,-0.398957,0.343988,-1.8774,4.0725 +units=m +no_defs&quot;&#10;        }&#10;      ],&#10;      &quot;disabledTools&quot;: {&#10;        &quot;processes&quot;: true,&#10;        &quot;addLayers&quot;: false,&#10;        &quot;projectionSwitcher&quot;: true,&#10;        &quot;layers&quot;: false,&#10;        &quot;legend&quot;: false,&#10;        &quot;filter&quot;: true,&#10;        &quot;contexts&quot;: true,&#10;        &quot;print&quot;: true,&#10;        &quot;mInteraction&quot;: false,&#10;        &quot;graticule&quot;: true,&#10;        &quot;syncAllLayers&quot;: true,&#10;        &quot;drawVector&quot;: true&#10;      },&#10;      &quot;graticuleOgcService&quot;: {},&#10;      &quot;map-viewer&quot;: {&#10;        &quot;context&quot;: &quot;../../catalog/views/dutch/config-nl-viewer.xml&quot;,&#10;        &quot;extent&quot;: [&#10;          -285401,&#10;          22599,&#10;          595401,&#10;          903370&#10;        ],&#10;        &quot;layers&quot;: []&#10;      },&#10;      &quot;map-search&quot;: {&#10;        &quot;context&quot;: &quot;../../catalog/views/dutch/config-nl-viewer.xml&quot;,&#10;        &quot;extent&quot;: [&#10;          -285401,&#10;          22599,&#10;          595401,&#10;          903370&#10;        ],&#10;        &quot;layers&quot;: []&#10;      },&#10;      &quot;map-editor&quot;: {&#10;        &quot;context&quot;: &quot;&quot;,&#10;        &quot;extent&quot;: [&#10;          -285401,&#10;          22598,&#10;          595401,&#10;          903401&#10;        ],&#10;        &quot;layers&quot;: [&#10;          {&#10;            &quot;type&quot;: &quot;osm&quot;&#10;          }&#10;        ]&#10;      },&#10;      &quot;autoFitOnLayer&quot;: false,&#10;      &quot;map&quot;: &quot;&quot;,&#10;      &quot;useOSM&quot;: false,&#10;      &quot;context&quot;: &quot;&quot;,&#10;      &quot;layer&quot;: {&#10;        &quot;url&quot;: &quot;http://data.fao.org/maps/wms?&quot;,&#10;        &quot;layers&quot;: &quot;COMMON:dark_bluemarble&quot;,&#10;        &quot;version&quot;: &quot;1.1.1&quot;&#10;      },&#10;      &quot;searchMapLayers&quot;: [],&#10;      &quot;viewerMapLayers&quot;: []&#10;    },&#10;    &quot;geocoder&quot;: {&#10;      &quot;enabled&quot;: false,&#10;      &quot;appUrl&quot;: &quot;&quot;&#10;    },&#10;    &quot;recordview&quot;: {&#10;      &quot;enabled&quot;: true,&#10;      &quot;isSocialbarEnabled&quot;: true&#10;    },&#10;    &quot;editor&quot;: {&#10;      &quot;enabled&quot;: true,&#10;      &quot;appUrl&quot;: &quot;../../srv/{{lang}}/catalog.edit&quot;,&#10;      &quot;isUserRecordsOnly&quot;: true,&#10;      &quot;minUserProfileToCreateTemplate&quot;: &quot;&quot;,&#10;      &quot;isFilterTagsDisplayed&quot;: true,&#10;      &quot;fluidEditorLayout&quot;: true,&#10;      &quot;createPageTpl&quot;: &quot;../../catalog/templates/editor/new-metadata-vertical.html&quot;,&#10;      &quot;editorIndentType&quot;: &quot;&quot;&#10;    },&#10;    &quot;admin&quot;: {&#10;      &quot;enabled&quot;: true,&#10;      &quot;appUrl&quot;: &quot;../../srv/{{lang}}/admin.console&quot;&#10;    },&#10;    &quot;signin&quot;: {&#10;      &quot;enabled&quot;: true,&#10;      &quot;appUrl&quot;: &quot;../../srv/{{lang}}/catalog.signin&quot;&#10;    },&#10;    &quot;signout&quot;: {&#10;      &quot;appUrl&quot;: &quot;../../signout&quot;&#10;    },&#10;    &quot;page&quot;: {&#10;      &quot;enabled&quot;: true,&#10;      &quot;appUrl&quot;: &quot;../../srv/{{lang}}/catalog.search#/page&quot;&#10;    }&#10;  }&#10;},&#10;      null, gnViewerSettings, gnSearchSettings);&#10;      }]);&#10;    &lt;/script&gt;&lt;/body&gt;&#10;&lt;/html&gt;]">* def mystorage = Java.type('storage.DataStorage') ........................ passed
+* def db = new mystorage .................................................. passed
+* def separator = java.lang.System.getProperty("file.separator") .......... passed
+* def outputpath = db.outputpath("T01_ids") + separator ................... passed
+* eval db.ensureDirectory(outputpath) ..................................... passed
+* url 'http://nationaalgeoregister.nl/' ................................... passed
+* configure readTimeout = 240000 .......................................... passed
+Given path 'geonetwork/srv/dut/inspire' ................................... passed
+And param service = 'CSW' ................................................. passed
+And param version = '2.0.2' ............................................... passed
+And param request = 'GetRecords' .......................................... passed
+And param propertyName = 'identifier' ..................................... passed
+And param typeNames = 'csw:Record' ........................................ passed
+And param elementsetname = "brief" ........................................ passed
+And param resultType = 'results' .......................................... passed
+And param startposition = 1 ............................................... passed
+And param maxRecords = 1000 ............................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* eval karate.embed(responseBytes,'application/xml') ...................... passed
+* def briefarray = get response /GetRecordsResponse/SearchResults/BriefRecord[*]/identifier . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: T01_Ids.feature:32 - cannot convert to map: [type: STRING, value: &lt;!DOCTYPE html
+  SYSTEM "html"&gt;
+&lt;html ng-app="gn_login" lang="nl" id="ng-app"&gt;
+   &lt;head&gt;
+      &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;
+      &lt;title&gt;Nationaal georegister&lt;/title&gt;
+      &lt;meta charset="utf-8"&gt;
+      &lt;meta name="viewport" content="initial-scale=1.0"&gt;
+      &lt;meta name="apple-mobile-web-app-capable" content="yes"&gt;
+      &lt;meta name="description" content=""&gt;
+      &lt;meta name="keywords" content=""&gt;
+      &lt;link rel="icon" sizes="16x16 32x32 48x48" type="image/png" href="../../images/logos/favicon.png"&gt;
+      &lt;link href="rss.search?sortBy=changeDate" rel="alternate" type="application/rss+xml" title="Nationaal georegister - PDOK"&gt;
+      &lt;link href="portal.opensearch" rel="search" type="application/opensearchdescription+xml" title="Nationaal georegister - PDOK"&gt;
+      &lt;link href="/geonetwork/static/gn_fonts.css?v=603316619a1858bcc9556afb2afdd34d95c4ab30&amp;amp;" rel="stylesheet" media="screen"&gt;
+      &lt;link href="/geonetwork/static/gn_login_dutch.css?v=603316619a1858bcc9556afb2afdd34d95c4ab30&amp;amp;" rel="stylesheet" media="screen"&gt;
+      &lt;link href="/geonetwork/static/bootstrap-table.min.css?v=603316619a1858bcc9556afb2afdd34d95c4ab30" rel="stylesheet" media="screen"&gt;
+      &lt;link href="/geonetwork/static/gn_pickers.css?v=603316619a1858bcc9556afb2afdd34d95c4ab30&amp;amp;" rel="stylesheet" media="screen"&gt;
+      &lt;link href="/geonetwork/static/gn_inspire.css?v=603316619a1858bcc9556afb2afdd34d95c4ab30&amp;amp;" rel="stylesheet" media="screen"&gt;
+      &lt;link href="/geonetwork/static/ng-skos.css?v=603316619a1858bcc9556afb2afdd34d95c4ab30" rel="stylesheet" media="screen"&gt;
+   &lt;/head&gt;
+   &lt;body data-ng-controller="GnCatController" data-ng-class="[isHeaderFixed ? 'gn-header-fixed' : 'gn-header-relative', isLogoInHeader ? 'gn-logo-in-header' : 'gn-logo-in-navbar']"&gt;
+      &lt;div data-gn-alert-manager=""&gt;&lt;/div&gt;
+      &lt;noscript&gt;
+         &lt;div class="navbar navbar-default gn-top-bar" role="navigation"&gt;
+            &lt;div class="container"&gt;
+               &lt;div class="navbar-header"&gt;&lt;button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" title="" aria-expanded="false" aria-controls="navbar"&gt;&lt;span class="sr-only"&gt;&lt;/span&gt;&lt;span class="icon-bar"&gt;&lt;/span&gt;&lt;span class="icon-bar"&gt;&lt;/span&gt;&lt;span class="icon-bar"&gt;&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;
+               &lt;div id="navbar" class="navbar-collapse collapse"&gt;
+                  &lt;ul class="nav navbar-nav" id="topbar-left"&gt;
+                     &lt;li&gt;&lt;a href="https://www.nationaalgeoregister.nl/geonetwork/srv/"&gt;&lt;img class="gn-logo" alt="" src="/geonetwork/images/logos/64896f8f-0c54-482e-9200-3ae279f5c79c.png"&gt;Nationaal georegister&lt;/a&gt;&lt;/li&gt;
+                     &lt;li&gt;&lt;a title="" href="https://www.nationaalgeoregister.nl/geonetwork/srv/search" onclick="location.href=('https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/search');return false;"&gt;&lt;i class="fa fa-fw fa-search hidden-sm"&gt;&amp;nbsp;&lt;/i&gt;&lt;span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                     &lt;li id="map-menu" class="hidden-nojs"&gt;&lt;a title="" href="https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/map"&gt;&lt;i class="fa fa-fw fa-globe hidden-sm"&gt;&amp;nbsp;&lt;/i&gt;&lt;span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+                  &lt;ul class="nav navbar-nav navbar-right"&gt;
+                     &lt;li&gt;&lt;a href="https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.signin" title=""&gt;&lt;i class="fa fa-sign-in fa-fw"&gt;&amp;nbsp;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+         &lt;div class="container page"&gt;
+            &lt;div class="row gn-row-main"&gt;
+               &lt;div class="col-sm-8 col-sm-offset-2"&gt;
+                  &lt;h1&gt;Nationaal georegister&lt;/h1&gt;
+                  &lt;p&gt;
+                     
+                     GeoNetwork opensource maakt het mogelijk ruimtelijke gerelateerde informatie te ontsluiten
+                     tussen
+                     verschillende organisaties. Voor meer informatie kunt u contact opnemen met
+                     
+                     
+                  &lt;/p&gt;
+                  &lt;p&gt;
+                     GeoNetwork heeft als doel:
+                     
+                     Het verbeteren van de toegang en het gebruik van ruimtelijk gerelateerde informatie.
+                     Het ondersteunen van een interdisciplinaire benadering van duurzame ontwikkeling
+                     Het ondersteunen van besluitvormingsprocessen
+                     De voordelen van het gebruik van ruimtelijke gerelateerde informatie naar voren te
+                     brengen.
+                     
+                     
+                     
+                  &lt;/p&gt;&lt;br&gt;&lt;br&gt;&lt;div class="alert alert-warning" data-ng-hide=""&gt;&lt;strong&gt;&lt;/strong&gt; 
+                  &lt;/div&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+         &lt;div class="navbar navbar-default gn-bottom-bar" role="navigation"&gt;
+            &lt;ul class="nav navbar-nav"&gt;
+               &lt;li class="gn-footer-text"&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href="http://geonetwork-opensource.org/"&gt;&lt;i class="fa fa-fw"&gt;&amp;nbsp;&lt;/i&gt;&lt;span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+               &lt;li class="hidden-sm"&gt;&lt;a href="https://github.com/geonetwork/core-geonetwork"&gt;&lt;i class="fa fa-github"&gt;&amp;nbsp;&lt;/i&gt;&lt;span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href="/geonetwork/doc/api" title=""&gt;&amp;nbsp;&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+         &lt;/div&gt;
+      &lt;/noscript&gt;
+      &lt;div class="navbar navbar-default gn-top-bar" role="navigation" data-ng-hide="layout.hideTopToolBar" data-ng-include="'../../catalog/templates/top-toolbar.html'"&gt;&lt;/div&gt;
+      &lt;div data-ng-include="'../../catalog/templates/signin.html'"&gt;&lt;/div&gt;&lt;script src="/geonetwork/static/lib.js?v=603316619a1858bcc9556afb2afdd34d95c4ab30"&gt;&lt;/script&gt;&lt;script src="/geonetwork/static/gn_login.js?v=603316619a1858bcc9556afb2afdd34d95c4ab30&amp;amp;"&gt;&lt;/script&gt;&lt;script type="text/javascript"&gt;
+        var module = angular.module('gn_login');
+        module.config(['gnGlobalSettings',
+        function(gnGlobalSettings) {
+        gnGlobalSettings.shibbolethEnabled = false;
+        }]);
+      &lt;/script&gt;&lt;script type="text/javascript"&gt;
+      var module = angular.module('gn_login');
+
+      // Init GN config which is a dependency of gn
+      // in order to be initialized quite early
+      var cfgModule = angular.module('gn_config', []);
+      cfgModule.config(['gnViewerSettings', 'gnSearchSettings', 'gnGlobalSettings',
+      function(gnViewerSettings, gnSearchSettings, gnGlobalSettings) {
+      gnGlobalSettings.init(
+      {
+  "langDetector": {
+    "fromHtmlTag": false,
+    "regexp": "^(?:/.+)?/.+/([a-z]{2,3})/.+",
+    "default": "eng"
+  },
+  "nodeDetector": {
+    "regexp": "^(?:/.+)?/(.+)/[a-z]{2,3}/.+",
+    "default": "srv"
+  },
+  "serviceDetector": {
+    "regexp": "^(?:/.+)?/.+/[a-z]{2,3}/(.+)",
+    "default": "catalog.search"
+  },
+  "baseURLDetector": {
+    "regexp": "^((?:/.+)?)+/.+/[a-z]{2,3}/.+",
+    "default": "/geonetwork"
+  },
+  "mods": {
+    "global": {
+      "humanizeDates": true
+    },
+    "footer": {
+      "enabled": true,
+      "showSocialBarInFooter": false
+    },
+    "header": {
+      "enabled": true,
+      "languages": {
+        "dut": "nl"
+      },
+      "isLogoInHeader": true,
+      "logoInHeaderPosition": "left",
+      "fluidHeaderLayout": true,
+      "showGNName": true,
+      "isHeaderFixed": true
+    },
+    "cookieWarning": {
+      "enabled": true,
+      "cookieWarningMoreInfoLink": "foo",
+      "cookieWarningRejectLink": "https://foo.com"
+    },
+    "home": {
+      "enabled": true,
+      "appUrl": "../../srv/{{lang}}/catalog.search#/home",
+      "fluidLayout": true
+    },
+    "search": {
+      "enabled": true,
+      "appUrl": "../../srv/{{lang}}/catalog.search#/search",
+      "hitsperpageValues": [
+        10,
+        50,
+        100
+      ],
+      "paginationInfo": {
+        "hitsPerPage": 50
+      },
+      "facetsSummaryType": "details",
+      "defaultSearchString": "",
+      "facetTabField": "",
+      "facetConfig": [],
+      "filters": {},
+      "sortbyValues": [
+        {
+          "sortBy": "relevance",
+          "sortOrder": ""
+        },
+        {
+          "sortBy": "changeDate",
+          "sortOrder": ""
+        },
+        {
+          "sortBy": "title",
+          "sortOrder": "reverse"
+        },
+        {
+          "sortBy": "rating",
+          "sortOrder": ""
+        },
+        {
+          "sortBy": "popularity",
+          "sortOrder": ""
+        },
+        {
+          "sortBy": "denominatorDesc",
+          "sortOrder": ""
+        },
+        {
+          "sortBy": "denominatorAsc",
+          "sortOrder": "reverse"
+        }
+      ],
+      "sortBy": "relevance",
+      "resultViewTpls": [
+        {
+          "tplUrl": "../../catalog/components/search/resultsview/partials/viewtemplates/grid.html",
+          "tooltip": "Grid",
+          "icon": "fa-th"
+        },
+        {
+          "tplUrl": "../../catalog/components/search/resultsview/partials/viewtemplates/list.html",
+          "tooltip": "List",
+          "icon": "fa-bars"
+        }
+      ],
+      "resultTemplate": "../../catalog/views/dutch/templates/card-ngr.html",
+      "formatter": {
+        "list": [
+          {
+            "label": "full",
+            "url": "/formatters/xsl-view?root=div&amp;view=advanced"
+          },
+          {
+            "label": "xml",
+            "url": "/formatters/xml_view?xsl=xml_view&amp;output=xml"
+          }
+        ],
+        "defaultUrl": ""
+      },
+      "downloadFormatter": [
+        {
+          "label": "exportMEF",
+          "url": "/formatters/zip?withRelated=false",
+          "class": "fa-file-zip-o"
+        },
+        {
+          "label": "exportPDF",
+          "url": "/formatters/xsl-view?output=pdf&amp;language=${lang}",
+          "class": "fa-file-pdf-o"
+        },
+        {
+          "label": "exportXML",
+          "url": "/formatters/xml",
+          "class": "fa-file-code-o"
+        }
+      ],
+      "grid": {
+        "related": [
+          "parent",
+          "children",
+          "services",
+          "datasets"
+        ]
+      },
+      "linkTypes": {
+        "links": [
+          "LINK",
+          "kml"
+        ],
+        "downloads": [
+          "DOWNLOAD"
+        ],
+        "layers": [
+          "OGC",
+          "ESRI:REST"
+        ],
+        "maps": [
+          "osm"
+        ]
+      },
+      "isFilterTagsDisplayedInSearch": true,
+      "usersearches": {
+        "enabled": false,
+        "displayFeaturedSearchesPanel": false
+      },
+      "savedSelection": {
+        "enabled": true
+      }
+    },
+    "map": {
+      "enabled": true,
+      "appUrl": "../../srv/{{lang}}/catalog.search#/map",
+      "externalViewer": {
+        "enabled": false,
+        "enabledViewAction": false,
+        "baseUrl": "http://www.example.com/viewer",
+        "urlTemplate": "http://www.example.com/viewer?url=${service.url}&amp;type=${service.type}&amp;layer=${service.title}&amp;lang=${iso2lang}&amp;title=${md.defaultTitle}",
+        "openNewWindow": false,
+        "valuesSeparator": ","
+      },
+      "is3DModeAllowed": false,
+      "isSaveMapInCatalogAllowed": false,
+      "isExportMapAsImageEnabled": false,
+      "storage": "sessionStorage",
+      "bingKey": "",
+      "listOfServices": {
+        "wms": [],
+        "wmts": []
+      },
+      "projection": "EPSG:28992",
+      "projectionList": [
+        {
+          "code": "EPSG:28992",
+          "label": "RD new"
+        },
+        {
+          "code": "EPSG:4326",
+          "label": "WGS84"
+        }
+      ],
+      "switcherProjectionList": [
+        {
+          "code": "EPSG:3857",
+          "label": "Google mercator (EPSG:3857)"
+        },
+        {
+          "label": "EPSG:28992",
+          "code": "EPSG:28992",
+          "extent": [
+            -285401,
+            22598,
+            595401,
+            903401
+          ],
+          "worldExtent": [
+            -2,
+            49,
+            12,
+            55
+          ],
+          "resolutions": [],
+          "def": "+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.417,50.3319,465.552,-0.398957,0.343988,-1.8774,4.0725 +units=m +no_defs"
+        }
+      ],
+      "disabledTools": {
+        "processes": true,
+        "addLayers": false,
+        "projectionSwitcher": true,
+        "layers": false,
+        "legend": false,
+        "filter": true,
+        "contexts": true,
+        "print": true,
+        "mInteraction": false,
+        "graticule": true,
+        "syncAllLayers": true,
+        "drawVector": true
+      },
+      "graticuleOgcService": {},
+      "map-viewer": {
+        "context": "../../catalog/views/dutch/config-nl-viewer.xml",
+        "extent": [
+          -285401,
+          22599,
+          595401,
+          903370
+        ],
+        "layers": []
+      },
+      "map-search": {
+        "context": "../../catalog/views/dutch/config-nl-viewer.xml",
+        "extent": [
+          -285401,
+          22599,
+          595401,
+          903370
+        ],
+        "layers": []
+      },
+      "map-editor": {
+        "context": "",
+        "extent": [
+          -285401,
+          22598,
+          595401,
+          903401
+        ],
+        "layers": [
+          {
+            "type": "osm"
+          }
+        ]
+      },
+      "autoFitOnLayer": false,
+      "map": "",
+      "useOSM": false,
+      "context": "",
+      "layer": {
+        "url": "http://data.fao.org/maps/wms?",
+        "layers": "COMMON:dark_bluemarble",
+        "version": "1.1.1"
+      },
+      "searchMapLayers": [],
+      "viewerMapLayers": []
+    },
+    "geocoder": {
+      "enabled": false,
+      "appUrl": ""
+    },
+    "recordview": {
+      "enabled": true,
+      "isSocialbarEnabled": true
+    },
+    "editor": {
+      "enabled": true,
+      "appUrl": "../../srv/{{lang}}/catalog.edit",
+      "isUserRecordsOnly": true,
+      "minUserProfileToCreateTemplate": "",
+      "isFilterTagsDisplayed": true,
+      "fluidEditorLayout": true,
+      "createPageTpl": "../../catalog/templates/editor/new-metadata-vertical.html",
+      "editorIndentType": ""
+    },
+    "admin": {
+      "enabled": true,
+      "appUrl": "../../srv/{{lang}}/admin.console"
+    },
+    "signin": {
+      "enabled": true,
+      "appUrl": "../../srv/{{lang}}/catalog.signin"
+    },
+    "signout": {
+      "appUrl": "../../signout"
+    },
+    "page": {
+      "enabled": true,
+      "appUrl": "../../srv/{{lang}}/catalog.search#/page"
+    }
+  }
+},
+      null, gnViewerSettings, gnSearchSettings);
+      }]);
+    &lt;/script&gt;&lt;/body&gt;
+&lt;/html&gt;]
+	at ✽.* def briefarray = get response /GetRecordsResponse/SearchResults/BriefRecord[*]/identifier (T01_Ids.feature:32)
+
+* def list = karate.mapWithKey(briefarray ,'datasetIdentifierCode') ....... skipped
+* eval db.writeln(karate.pretty(list),outputpath + 'ids.json') ............ skipped
+* def servicearray = get response /GetRecordsResponse/SearchResults/BriefRecord[type='service']/identifier . skipped
+* def servicelist = karate.mapWithKey(servicearray,'datasetIdentifierCode') . skipped
+* eval db.writeln(karate.pretty(servicelist),outputpath + 'idsService.json') . skipped
+* def datasetarray = get response /GetRecordsResponse/SearchResults/BriefRecord[type='dataset']/identifier . skipped
+* def datasetlist = karate.mapWithKey(datasetarray,'datasetIdentifierCode') . skipped
+* eval db.writeln(karate.pretty(datasetlist ),outputpath + 'idsDataset.json') . skipped</failure>
+  </testcase>
+</testsuite>

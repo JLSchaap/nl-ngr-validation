@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Feature: src/test/java/InspireTest/ngr/T01_Ids.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>NLTEST</td>
+            <td>14 Oct 2020, 06:42</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">src/test/java/InspireTest/ngr/T01_Ids.feature</td>
+                    <td      class="passed"    >20</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >8</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">29</td>
+
+          <td >0</td>
+          <td  class="failed"    >1</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="1283732612">1.283</td>
+          <td class="failed">Failed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_step0.html">@step0</a>
+      </div>
+
+        
+<div class="brief failed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">src/test/java/InspireTest/ngr/T01_Ids.feature</span>
+  
+
+  </div>
+
+        <div class="description indention">getlist of ngr records</div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.056</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def mystorage = Java.type('storage.DataStorage')</span>
+  
+  <span class="lead-duration duration">0.010</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>06:42:35.869 karate.env system property was:</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def db = new mystorage</span>
+  
+  <span class="lead-duration duration">0.011</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def separator = java.lang.System.getProperty(&quot;file.separator&quot;)</span>
+  
+  <span class="lead-duration duration">0.022</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def outputpath = db.outputpath(&quot;T01_ids&quot;) + separator</span>
+  
+  <span class="lead-duration duration">0.006</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">eval db.ensureDirectory(outputpath)</span>
+  
+  <span class="lead-duration duration">0.005</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1.227</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-4">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">getbrief list</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-5">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'http://nationaalgeoregister.nl/'</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure readTimeout = 240000</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'geonetwork/srv/dut/inspire'</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param service = 'CSW'</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param version = '2.0.2'</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param request = 'GetRecords'</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param propertyName = 'identifier'</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param typeNames = 'csw:Record'</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param elementsetname = &quot;brief&quot;</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param resultType = 'results'</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param startposition = 1</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param maxRecords = 1000</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">1.204</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>06:42:37.446 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 21; columnNumber: 6; The element type &quot;link&quot; must be terminated by the matching end-tag &quot;&lt;/link&gt;&quot;.</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">eval karate.embed(responseBytes,'application/xml')</span>
+  
+  <span class="lead-duration duration">0.004</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-7" class="collapsable-control">
+      <a>Attachment 1 (application/xml)</a>
+      <a href="embeddings/embedding_279012967.xml" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-7" class="collapse collapsable-details">
+        <pre class="embedding-content">This file cannot be displayed. Use download button to get the content as file.</pre>
+    </div>
+  </div>
+        </div>
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">*</span>
+  <span class="name">def briefarray = get response /GetRecordsResponse/SearchResults/BriefRecord[*]/identifier</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-8">
+          <a>com.intuit.karate.exception.KarateException: T01_Ids.feature:32 - cannot convert to map: [type: STRING, value: &lt;!DOCTYPE html</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: T01_Ids.feature:32 - cannot convert to map: [type: STRING, value: &lt;!DOCTYPE html
+  SYSTEM &quot;html&quot;&gt;
+&lt;html ng-app=&quot;gn_login&quot; lang=&quot;nl&quot; id=&quot;ng-app&quot;&gt;
+   &lt;head&gt;
+      &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+      &lt;title&gt;Nationaal georegister&lt;/title&gt;
+      &lt;meta charset=&quot;utf-8&quot;&gt;
+      &lt;meta name=&quot;viewport&quot; content=&quot;initial-scale=1.0&quot;&gt;
+      &lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot;&gt;
+      &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+      &lt;meta name=&quot;keywords&quot; content=&quot;&quot;&gt;
+      &lt;link rel=&quot;icon&quot; sizes=&quot;16x16 32x32 48x48&quot; type=&quot;image/png&quot; href=&quot;../../images/logos/favicon.png&quot;&gt;
+      &lt;link href=&quot;rss.search?sortBy=changeDate&quot; rel=&quot;alternate&quot; type=&quot;application/rss+xml&quot; title=&quot;Nationaal georegister - PDOK&quot;&gt;
+      &lt;link href=&quot;portal.opensearch&quot; rel=&quot;search&quot; type=&quot;application/opensearchdescription+xml&quot; title=&quot;Nationaal georegister - PDOK&quot;&gt;
+      &lt;link href=&quot;/geonetwork/static/gn_fonts.css?v=603316619a1858bcc9556afb2afdd34d95c4ab30&amp;amp;&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;
+      &lt;link href=&quot;/geonetwork/static/gn_login_dutch.css?v=603316619a1858bcc9556afb2afdd34d95c4ab30&amp;amp;&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;
+      &lt;link href=&quot;/geonetwork/static/bootstrap-table.min.css?v=603316619a1858bcc9556afb2afdd34d95c4ab30&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;
+      &lt;link href=&quot;/geonetwork/static/gn_pickers.css?v=603316619a1858bcc9556afb2afdd34d95c4ab30&amp;amp;&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;
+      &lt;link href=&quot;/geonetwork/static/gn_inspire.css?v=603316619a1858bcc9556afb2afdd34d95c4ab30&amp;amp;&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;
+      &lt;link href=&quot;/geonetwork/static/ng-skos.css?v=603316619a1858bcc9556afb2afdd34d95c4ab30&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;
+   &lt;/head&gt;
+   &lt;body data-ng-controller=&quot;GnCatController&quot; data-ng-class=&quot;[isHeaderFixed ? 'gn-header-fixed' : 'gn-header-relative', isLogoInHeader ? 'gn-logo-in-header' : 'gn-logo-in-navbar']&quot;&gt;
+      &lt;div data-gn-alert-manager=&quot;&quot;&gt;&lt;/div&gt;
+      &lt;noscript&gt;
+         &lt;div class=&quot;navbar navbar-default gn-top-bar&quot; role=&quot;navigation&quot;&gt;
+            &lt;div class=&quot;container&quot;&gt;
+               &lt;div class=&quot;navbar-header&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;navbar-toggle collapsed&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbar&quot; title=&quot;&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;navbar&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;&lt;/span&gt;&lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;&lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;&lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;
+               &lt;div id=&quot;navbar&quot; class=&quot;navbar-collapse collapse&quot;&gt;
+                  &lt;ul class=&quot;nav navbar-nav&quot; id=&quot;topbar-left&quot;&gt;
+                     &lt;li&gt;&lt;a href=&quot;https://www.nationaalgeoregister.nl/geonetwork/srv/&quot;&gt;&lt;img class=&quot;gn-logo&quot; alt=&quot;&quot; src=&quot;/geonetwork/images/logos/64896f8f-0c54-482e-9200-3ae279f5c79c.png&quot;&gt;Nationaal georegister&lt;/a&gt;&lt;/li&gt;
+                     &lt;li&gt;&lt;a title=&quot;&quot; href=&quot;https://www.nationaalgeoregister.nl/geonetwork/srv/search&quot; onclick=&quot;location.href=('https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/search');return false;&quot;&gt;&lt;i class=&quot;fa fa-fw fa-search hidden-sm&quot;&gt;&amp;nbsp;&lt;/i&gt;&lt;span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                     &lt;li id=&quot;map-menu&quot; class=&quot;hidden-nojs&quot;&gt;&lt;a title=&quot;&quot; href=&quot;https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/map&quot;&gt;&lt;i class=&quot;fa fa-fw fa-globe hidden-sm&quot;&gt;&amp;nbsp;&lt;/i&gt;&lt;span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+                  &lt;ul class=&quot;nav navbar-nav navbar-right&quot;&gt;
+                     &lt;li&gt;&lt;a href=&quot;https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.signin&quot; title=&quot;&quot;&gt;&lt;i class=&quot;fa fa-sign-in fa-fw&quot;&gt;&amp;nbsp;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+         &lt;div class=&quot;container page&quot;&gt;
+            &lt;div class=&quot;row gn-row-main&quot;&gt;
+               &lt;div class=&quot;col-sm-8 col-sm-offset-2&quot;&gt;
+                  &lt;h1&gt;Nationaal georegister&lt;/h1&gt;
+                  &lt;p&gt;
+                     
+                     GeoNetwork opensource maakt het mogelijk ruimtelijke gerelateerde informatie te ontsluiten
+                     tussen
+                     verschillende organisaties. Voor meer informatie kunt u contact opnemen met
+                     
+                     
+                  &lt;/p&gt;
+                  &lt;p&gt;
+                     GeoNetwork heeft als doel:
+                     
+                     Het verbeteren van de toegang en het gebruik van ruimtelijk gerelateerde informatie.
+                     Het ondersteunen van een interdisciplinaire benadering van duurzame ontwikkeling
+                     Het ondersteunen van besluitvormingsprocessen
+                     De voordelen van het gebruik van ruimtelijke gerelateerde informatie naar voren te
+                     brengen.
+                     
+                     
+                     
+                  &lt;/p&gt;&lt;br&gt;&lt;br&gt;&lt;div class=&quot;alert alert-warning&quot; data-ng-hide=&quot;&quot;&gt;&lt;strong&gt;&lt;/strong&gt; 
+                  &lt;/div&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+         &lt;div class=&quot;navbar navbar-default gn-bottom-bar&quot; role=&quot;navigation&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+               &lt;li class=&quot;gn-footer-text&quot;&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href=&quot;http://geonetwork-opensource.org/&quot;&gt;&lt;i class=&quot;fa fa-fw&quot;&gt;&amp;nbsp;&lt;/i&gt;&lt;span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+               &lt;li class=&quot;hidden-sm&quot;&gt;&lt;a href=&quot;https://github.com/geonetwork/core-geonetwork&quot;&gt;&lt;i class=&quot;fa fa-github&quot;&gt;&amp;nbsp;&lt;/i&gt;&lt;span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href=&quot;/geonetwork/doc/api&quot; title=&quot;&quot;&gt;&amp;nbsp;&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+         &lt;/div&gt;
+      &lt;/noscript&gt;
+      &lt;div class=&quot;navbar navbar-default gn-top-bar&quot; role=&quot;navigation&quot; data-ng-hide=&quot;layout.hideTopToolBar&quot; data-ng-include=&quot;'../../catalog/templates/top-toolbar.html'&quot;&gt;&lt;/div&gt;
+      &lt;div data-ng-include=&quot;'../../catalog/templates/signin.html'&quot;&gt;&lt;/div&gt;&lt;script src=&quot;/geonetwork/static/lib.js?v=603316619a1858bcc9556afb2afdd34d95c4ab30&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/geonetwork/static/gn_login.js?v=603316619a1858bcc9556afb2afdd34d95c4ab30&amp;amp;&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;
+        var module = angular.module('gn_login');
+        module.config(['gnGlobalSettings',
+        function(gnGlobalSettings) {
+        gnGlobalSettings.shibbolethEnabled = false;
+        }]);
+      &lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;
+      var module = angular.module('gn_login');
+
+      // Init GN config which is a dependency of gn
+      // in order to be initialized quite early
+      var cfgModule = angular.module('gn_config', []);
+      cfgModule.config(['gnViewerSettings', 'gnSearchSettings', 'gnGlobalSettings',
+      function(gnViewerSettings, gnSearchSettings, gnGlobalSettings) {
+      gnGlobalSettings.init(
+      {
+  &quot;langDetector&quot;: {
+    &quot;fromHtmlTag&quot;: false,
+    &quot;regexp&quot;: &quot;^(?:/.+)?/.+/([a-z]{2,3})/.+&quot;,
+    &quot;default&quot;: &quot;eng&quot;
+  },
+  &quot;nodeDetector&quot;: {
+    &quot;regexp&quot;: &quot;^(?:/.+)?/(.+)/[a-z]{2,3}/.+&quot;,
+    &quot;default&quot;: &quot;srv&quot;
+  },
+  &quot;serviceDetector&quot;: {
+    &quot;regexp&quot;: &quot;^(?:/.+)?/.+/[a-z]{2,3}/(.+)&quot;,
+    &quot;default&quot;: &quot;catalog.search&quot;
+  },
+  &quot;baseURLDetector&quot;: {
+    &quot;regexp&quot;: &quot;^((?:/.+)?)+/.+/[a-z]{2,3}/.+&quot;,
+    &quot;default&quot;: &quot;/geonetwork&quot;
+  },
+  &quot;mods&quot;: {
+    &quot;global&quot;: {
+      &quot;humanizeDates&quot;: true
+    },
+    &quot;footer&quot;: {
+      &quot;enabled&quot;: true,
+      &quot;showSocialBarInFooter&quot;: false
+    },
+    &quot;header&quot;: {
+      &quot;enabled&quot;: true,
+      &quot;languages&quot;: {
+        &quot;dut&quot;: &quot;nl&quot;
+      },
+      &quot;isLogoInHeader&quot;: true,
+      &quot;logoInHeaderPosition&quot;: &quot;left&quot;,
+      &quot;fluidHeaderLayout&quot;: true,
+      &quot;showGNName&quot;: true,
+      &quot;isHeaderFixed&quot;: true
+    },
+    &quot;cookieWarning&quot;: {
+      &quot;enabled&quot;: true,
+      &quot;cookieWarningMoreInfoLink&quot;: &quot;foo&quot;,
+      &quot;cookieWarningRejectLink&quot;: &quot;https://foo.com&quot;
+    },
+    &quot;home&quot;: {
+      &quot;enabled&quot;: true,
+      &quot;appUrl&quot;: &quot;../../srv/{{lang}}/catalog.search#/home&quot;,
+      &quot;fluidLayout&quot;: true
+    },
+    &quot;search&quot;: {
+      &quot;enabled&quot;: true,
+      &quot;appUrl&quot;: &quot;../../srv/{{lang}}/catalog.search#/search&quot;,
+      &quot;hitsperpageValues&quot;: [
+        10,
+        50,
+        100
+      ],
+      &quot;paginationInfo&quot;: {
+        &quot;hitsPerPage&quot;: 50
+      },
+      &quot;facetsSummaryType&quot;: &quot;details&quot;,
+      &quot;defaultSearchString&quot;: &quot;&quot;,
+      &quot;facetTabField&quot;: &quot;&quot;,
+      &quot;facetConfig&quot;: [],
+      &quot;filters&quot;: {},
+      &quot;sortbyValues&quot;: [
+        {
+          &quot;sortBy&quot;: &quot;relevance&quot;,
+          &quot;sortOrder&quot;: &quot;&quot;
+        },
+        {
+          &quot;sortBy&quot;: &quot;changeDate&quot;,
+          &quot;sortOrder&quot;: &quot;&quot;
+        },
+        {
+          &quot;sortBy&quot;: &quot;title&quot;,
+          &quot;sortOrder&quot;: &quot;reverse&quot;
+        },
+        {
+          &quot;sortBy&quot;: &quot;rating&quot;,
+          &quot;sortOrder&quot;: &quot;&quot;
+        },
+        {
+          &quot;sortBy&quot;: &quot;popularity&quot;,
+          &quot;sortOrder&quot;: &quot;&quot;
+        },
+        {
+          &quot;sortBy&quot;: &quot;denominatorDesc&quot;,
+          &quot;sortOrder&quot;: &quot;&quot;
+        },
+        {
+          &quot;sortBy&quot;: &quot;denominatorAsc&quot;,
+          &quot;sortOrder&quot;: &quot;reverse&quot;
+        }
+      ],
+      &quot;sortBy&quot;: &quot;relevance&quot;,
+      &quot;resultViewTpls&quot;: [
+        {
+          &quot;tplUrl&quot;: &quot;../../catalog/components/search/resultsview/partials/viewtemplates/grid.html&quot;,
+          &quot;tooltip&quot;: &quot;Grid&quot;,
+          &quot;icon&quot;: &quot;fa-th&quot;
+        },
+        {
+          &quot;tplUrl&quot;: &quot;../../catalog/components/search/resultsview/partials/viewtemplates/list.html&quot;,
+          &quot;tooltip&quot;: &quot;List&quot;,
+          &quot;icon&quot;: &quot;fa-bars&quot;
+        }
+      ],
+      &quot;resultTemplate&quot;: &quot;../../catalog/views/dutch/templates/card-ngr.html&quot;,
+      &quot;formatter&quot;: {
+        &quot;list&quot;: [
+          {
+            &quot;label&quot;: &quot;full&quot;,
+            &quot;url&quot;: &quot;/formatters/xsl-view?root=div&amp;view=advanced&quot;
+          },
+          {
+            &quot;label&quot;: &quot;xml&quot;,
+            &quot;url&quot;: &quot;/formatters/xml_view?xsl=xml_view&amp;output=xml&quot;
+          }
+        ],
+        &quot;defaultUrl&quot;: &quot;&quot;
+      },
+      &quot;downloadFormatter&quot;: [
+        {
+          &quot;label&quot;: &quot;exportMEF&quot;,
+          &quot;url&quot;: &quot;/formatters/zip?withRelated=false&quot;,
+          &quot;class&quot;: &quot;fa-file-zip-o&quot;
+        },
+        {
+          &quot;label&quot;: &quot;exportPDF&quot;,
+          &quot;url&quot;: &quot;/formatters/xsl-view?output=pdf&amp;language=${lang}&quot;,
+          &quot;class&quot;: &quot;fa-file-pdf-o&quot;
+        },
+        {
+          &quot;label&quot;: &quot;exportXML&quot;,
+          &quot;url&quot;: &quot;/formatters/xml&quot;,
+          &quot;class&quot;: &quot;fa-file-code-o&quot;
+        }
+      ],
+      &quot;grid&quot;: {
+        &quot;related&quot;: [
+          &quot;parent&quot;,
+          &quot;children&quot;,
+          &quot;services&quot;,
+          &quot;datasets&quot;
+        ]
+      },
+      &quot;linkTypes&quot;: {
+        &quot;links&quot;: [
+          &quot;LINK&quot;,
+          &quot;kml&quot;
+        ],
+        &quot;downloads&quot;: [
+          &quot;DOWNLOAD&quot;
+        ],
+        &quot;layers&quot;: [
+          &quot;OGC&quot;,
+          &quot;ESRI:REST&quot;
+        ],
+        &quot;maps&quot;: [
+          &quot;osm&quot;
+        ]
+      },
+      &quot;isFilterTagsDisplayedInSearch&quot;: true,
+      &quot;usersearches&quot;: {
+        &quot;enabled&quot;: false,
+        &quot;displayFeaturedSearchesPanel&quot;: false
+      },
+      &quot;savedSelection&quot;: {
+        &quot;enabled&quot;: true
+      }
+    },
+    &quot;map&quot;: {
+      &quot;enabled&quot;: true,
+      &quot;appUrl&quot;: &quot;../../srv/{{lang}}/catalog.search#/map&quot;,
+      &quot;externalViewer&quot;: {
+        &quot;enabled&quot;: false,
+        &quot;enabledViewAction&quot;: false,
+        &quot;baseUrl&quot;: &quot;http://www.example.com/viewer&quot;,
+        &quot;urlTemplate&quot;: &quot;http://www.example.com/viewer?url=${service.url}&amp;type=${service.type}&amp;layer=${service.title}&amp;lang=${iso2lang}&amp;title=${md.defaultTitle}&quot;,
+        &quot;openNewWindow&quot;: false,
+        &quot;valuesSeparator&quot;: &quot;,&quot;
+      },
+      &quot;is3DModeAllowed&quot;: false,
+      &quot;isSaveMapInCatalogAllowed&quot;: false,
+      &quot;isExportMapAsImageEnabled&quot;: false,
+      &quot;storage&quot;: &quot;sessionStorage&quot;,
+      &quot;bingKey&quot;: &quot;&quot;,
+      &quot;listOfServices&quot;: {
+        &quot;wms&quot;: [],
+        &quot;wmts&quot;: []
+      },
+      &quot;projection&quot;: &quot;EPSG:28992&quot;,
+      &quot;projectionList&quot;: [
+        {
+          &quot;code&quot;: &quot;EPSG:28992&quot;,
+          &quot;label&quot;: &quot;RD new&quot;
+        },
+        {
+          &quot;code&quot;: &quot;EPSG:4326&quot;,
+          &quot;label&quot;: &quot;WGS84&quot;
+        }
+      ],
+      &quot;switcherProjectionList&quot;: [
+        {
+          &quot;code&quot;: &quot;EPSG:3857&quot;,
+          &quot;label&quot;: &quot;Google mercator (EPSG:3857)&quot;
+        },
+        {
+          &quot;label&quot;: &quot;EPSG:28992&quot;,
+          &quot;code&quot;: &quot;EPSG:28992&quot;,
+          &quot;extent&quot;: [
+            -285401,
+            22598,
+            595401,
+            903401
+          ],
+          &quot;worldExtent&quot;: [
+            -2,
+            49,
+            12,
+            55
+          ],
+          &quot;resolutions&quot;: [],
+          &quot;def&quot;: &quot;+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.417,50.3319,465.552,-0.398957,0.343988,-1.8774,4.0725 +units=m +no_defs&quot;
+        }
+      ],
+      &quot;disabledTools&quot;: {
+        &quot;processes&quot;: true,
+        &quot;addLayers&quot;: false,
+        &quot;projectionSwitcher&quot;: true,
+        &quot;layers&quot;: false,
+        &quot;legend&quot;: false,
+        &quot;filter&quot;: true,
+        &quot;contexts&quot;: true,
+        &quot;print&quot;: true,
+        &quot;mInteraction&quot;: false,
+        &quot;graticule&quot;: true,
+        &quot;syncAllLayers&quot;: true,
+        &quot;drawVector&quot;: true
+      },
+      &quot;graticuleOgcService&quot;: {},
+      &quot;map-viewer&quot;: {
+        &quot;context&quot;: &quot;../../catalog/views/dutch/config-nl-viewer.xml&quot;,
+        &quot;extent&quot;: [
+          -285401,
+          22599,
+          595401,
+          903370
+        ],
+        &quot;layers&quot;: []
+      },
+      &quot;map-search&quot;: {
+        &quot;context&quot;: &quot;../../catalog/views/dutch/config-nl-viewer.xml&quot;,
+        &quot;extent&quot;: [
+          -285401,
+          22599,
+          595401,
+          903370
+        ],
+        &quot;layers&quot;: []
+      },
+      &quot;map-editor&quot;: {
+        &quot;context&quot;: &quot;&quot;,
+        &quot;extent&quot;: [
+          -285401,
+          22598,
+          595401,
+          903401
+        ],
+        &quot;layers&quot;: [
+          {
+            &quot;type&quot;: &quot;osm&quot;
+          }
+        ]
+      },
+      &quot;autoFitOnLayer&quot;: false,
+      &quot;map&quot;: &quot;&quot;,
+      &quot;useOSM&quot;: false,
+      &quot;context&quot;: &quot;&quot;,
+      &quot;layer&quot;: {
+        &quot;url&quot;: &quot;http://data.fao.org/maps/wms?&quot;,
+        &quot;layers&quot;: &quot;COMMON:dark_bluemarble&quot;,
+        &quot;version&quot;: &quot;1.1.1&quot;
+      },
+      &quot;searchMapLayers&quot;: [],
+      &quot;viewerMapLayers&quot;: []
+    },
+    &quot;geocoder&quot;: {
+      &quot;enabled&quot;: false,
+      &quot;appUrl&quot;: &quot;&quot;
+    },
+    &quot;recordview&quot;: {
+      &quot;enabled&quot;: true,
+      &quot;isSocialbarEnabled&quot;: true
+    },
+    &quot;editor&quot;: {
+      &quot;enabled&quot;: true,
+      &quot;appUrl&quot;: &quot;../../srv/{{lang}}/catalog.edit&quot;,
+      &quot;isUserRecordsOnly&quot;: true,
+      &quot;minUserProfileToCreateTemplate&quot;: &quot;&quot;,
+      &quot;isFilterTagsDisplayed&quot;: true,
+      &quot;fluidEditorLayout&quot;: true,
+      &quot;createPageTpl&quot;: &quot;../../catalog/templates/editor/new-metadata-vertical.html&quot;,
+      &quot;editorIndentType&quot;: &quot;&quot;
+    },
+    &quot;admin&quot;: {
+      &quot;enabled&quot;: true,
+      &quot;appUrl&quot;: &quot;../../srv/{{lang}}/admin.console&quot;
+    },
+    &quot;signin&quot;: {
+      &quot;enabled&quot;: true,
+      &quot;appUrl&quot;: &quot;../../srv/{{lang}}/catalog.signin&quot;
+    },
+    &quot;signout&quot;: {
+      &quot;appUrl&quot;: &quot;../../signout&quot;
+    },
+    &quot;page&quot;: {
+      &quot;enabled&quot;: true,
+      &quot;appUrl&quot;: &quot;../../srv/{{lang}}/catalog.search#/page&quot;
+    }
+  }
+},
+      null, gnViewerSettings, gnSearchSettings);
+      }]);
+    &lt;/script&gt;&lt;/body&gt;
+&lt;/html&gt;]</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def list = karate.mapWithKey(briefarray ,'datasetIdentifierCode')</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">eval db.writeln(karate.pretty(list),outputpath + 'ids.json')</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def servicearray = get response /GetRecordsResponse/SearchResults/BriefRecord[type='service']/identifier</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def servicelist = karate.mapWithKey(servicearray,'datasetIdentifierCode')</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">eval db.writeln(karate.pretty(servicelist),outputpath + 'idsService.json')</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def datasetarray = get response /GetRecordsResponse/SearchResults/BriefRecord[type='dataset']/identifier</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def datasetlist = karate.mapWithKey(datasetarray,'datasetIdentifierCode')</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">eval db.writeln(karate.pretty(datasetlist ),outputpath + 'idsDataset.json')</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
