@@ -2,6 +2,14 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <repositories>
+        <repository>
+            <id>project-common</id>
+            <name>Project Common</name>
+            <url>https://github.com/jlschaap/mvn-repo/raw/master/</url>
+        </repository>
+    </repositories>
+
     <groupId>nl.join</groupId>
     <artifactId>nl-ngr-validation</artifactId>
     <version>1.0-SNAPSHOT</version>
@@ -46,6 +54,11 @@
             <scope>test</scope>
         </dependency>
         <dependency>
+            <groupId>jlsinspiremetadata</groupId>
+            <artifactId>metadata</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-surefire-plugin</artifactId>
             <version>3.0.0-M4</version>
@@ -62,7 +75,7 @@
             <artifactId>junit-platform-console-standalone</artifactId>
             <version>1.7.0</version>
             <scope>test</scope>
-          </dependency>
+        </dependency>
     </dependencies>
 
     <build>

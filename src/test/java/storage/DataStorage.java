@@ -11,15 +11,18 @@ import org.apache.commons.io.FileUtils;
 public class DataStorage {
     private static final String NLTEST = "NLTEST";
     private static final String TARGET_SUREFIRE_REPORTS = "/target/surefire-reports";
-    private static final String SRC_TEST_JAVA_INSPIRE_TEST_NGR = "/src/test/java/InspireTest/ngr";
     private static final String userdir = new File(java.lang.System.getProperty("user.dir")).getAbsolutePath();
-
+    private static final String SRC_TEST_JAVA_INSPIRE_TEST_NGR = "/src/test/java/InspireTest/ngr";
     public File reportdir() {
         return (new File(userdir + TARGET_SUREFIRE_REPORTS));
     }
 
     public File outputdir() {
         return (new File(userdir + "/output"));
+    }
+
+    public File harvestfile() {
+        return (new File(userdir + "/src/test/resources/INSPIREGeoportalHarvest.csv"));
     }
 
     String featurename = "T99_featureNotSetYet.feature";
@@ -133,7 +136,6 @@ public class DataStorage {
 
     }
 
-
     private String getUUid(String str) {
         List<String> items = Arrays.asList(str.split("&|#|;"));
         StringBuilder sb = new StringBuilder();
@@ -141,17 +143,9 @@ public class DataStorage {
             if (s.toLowerCase().indexOf("id=") == 0) {
                 sb.append(s.substring(3));
             }
-            
-		}
-		return sb.toString();
-    }
 
-    private String xxgetUUid2(String str) {
-        int end = str.indexOf("#MD_DataIdentification");
-        if (end == -1) {
-            return (str.substring(str.indexOf("id=") + 3));
         }
-        return str.substring(str.indexOf("id=") + 3, end);
+        return sb.toString();
     }
 
 }
