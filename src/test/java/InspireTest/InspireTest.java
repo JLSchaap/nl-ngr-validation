@@ -14,9 +14,7 @@ import com.opencsv.exceptions.CsvDataTypeMismatchException;
 import com.opencsv.exceptions.CsvRequiredFieldEmptyException;
 import metadata.DatasetList;
 import metadata.Harvest;
-import metadata.Dataset;
 import org.apache.commons.io.FileUtils;
-import org.junit.Ignore;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.MethodOrderer;
@@ -52,7 +50,7 @@ class TestAll {
         generateReport(db.reportdir().getAbsolutePath());
     }
 
-    // @Test
+    @Test
     @Order(1)
     void T01_ids() throws IOException {
         db.cleandir(db.outputdir());
@@ -61,7 +59,7 @@ class TestAll {
         runtest(step);
     }
 
-    // @Test
+    @Test
     @Order(2)
     void T02() throws IOException {
         String step = "T02_Datasets";
