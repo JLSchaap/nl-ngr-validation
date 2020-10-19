@@ -34,7 +34,7 @@ import net.masterthought.cucumber.Configuration;
 import net.masterthought.cucumber.ReportBuilder;
 import storage.DataStorage;
 
-@KarateOptions(tags = {"~@ignore"})
+@KarateOptions(tags = { "~@ignore" })
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 @Testable
 class TestAll {
@@ -52,7 +52,7 @@ class TestAll {
         generateReport(db.reportdir().getAbsolutePath());
     }
 
-	@Test
+    // @Test
     @Order(1)
     void T01_ids() throws IOException {
         db.cleandir(db.outputdir());
@@ -61,7 +61,7 @@ class TestAll {
         runtest(step);
     }
 
-	@Test
+    // @Test
     @Order(2)
     void T02() throws IOException {
         String step = "T02_Datasets";
@@ -80,16 +80,22 @@ class TestAll {
 
         String step = "T03_harvestEval";
         db.cleanStepOutputDir(step);
-
         loadtestdata();
+
+        File outfile3 = DatasetList.INSTANCE.getInstance()
+                .writecsv(db.outputdir() + "/" + step + "/datasetsmetservices.csv");
+        System.out.println(outfile3.getAbsolutePath());
+        File outfile4 = DatasetList.INSTANCE.getInstance()
+                .writeerrorcsv(db.outputdir() + "/" + step + "/datasetsmetserviceserror.csv");
+        System.out.println(outfile4.getAbsolutePath());
+
         Harvest harvest = new Harvest(db.harvestfile());
-        harvest.writeharvest(db.reportdir().getAbsolutePath() + "/" + step + "/INSPIREGeoportalHarvestExtra.csv");
-        writetestdata();
-        File exportfile = new File(db.reportdir().getAbsolutePath() + "/" + step + "/INSPIREGeoportalHarvestExtra.csv");
-        assertTrue(exportfile.exists());
+        File outfile5 = new File(db.outputdir().getAbsolutePath() + "/" + step + "/INSPIREGeoportalHarvestExtra.csv");
+        System.out.println(outfile5);
+        harvest.writeharvest(outfile5.getAbsolutePath());
+        assertTrue(outfile5.exists());
 
     }
-
 
     private void loadtestdata() throws FileNotFoundException {
         File file = new File(db.outputpath("T02_Datasets") + "/datasets.csv");
@@ -98,13 +104,6 @@ class TestAll {
         File servicefile = new File(db.outputpath("T02_Services") + "/services.csv");
         System.out.println(servicefile.getAbsolutePath());
         DatasetList.INSTANCE.getInstance().loadService(servicefile.getAbsolutePath());
-    }
-
-    private void writetestdata() throws IOException, CsvDataTypeMismatchException, CsvRequiredFieldEmptyException {
-        File outfile3 = DatasetList.INSTANCE.getInstance().writecsv("test3metservices.csv");
-        System.out.println(outfile3.getAbsolutePath());
-        File outfile4 = DatasetList.INSTANCE.getInstance().writeerrorcsv("test3metserviceserror.csv");
-        System.out.println(outfile4.getAbsolutePath());
     }
 
     /*
@@ -123,7 +122,7 @@ class TestAll {
         File stepreportdir = new File(db.reportdir().getAbsolutePath() + "/" + step);
 
         System.out.println("start " + step + " parallel:" + stepdir.getAbsolutePath());
-        final Results results = Runner.parallel(stepreportdir.getAbsolutePath(), 24, stepdir.getAbsolutePath());
+        final Results results = Runner.parallel(stepreportdir.getAbsolutePath(), 4, stepdir.getAbsolutePath());
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
 
@@ -132,13 +131,13 @@ class TestAll {
         System.out.println("start " + step + " single paralell run :" + featurefile.getAbsolutePath());
         List<String> tags = List.of("~@ignore");
         List<String> paths = List.of(featurefile.getAbsolutePath());
-        final Results results = Runner.parallel(tags, paths, 24, db.reportdir().getAbsolutePath());
+        final Results results = Runner.parallel(tags, paths, 4, db.reportdir().getAbsolutePath());
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
 
     }
 
     private static void generateReport(final String karateOutputPath) {
-        final Collection<File> jsonFiles = FileUtils.listFiles(new File(karateOutputPath), new String[]{"json"},
+        final Collection<File> jsonFiles = FileUtils.listFiles(new File(karateOutputPath), new String[] { "json" },
                 true);
         final List<String> jsonPaths = new ArrayList<String>(jsonFiles.size());
         jsonFiles.forEach(file -> jsonPaths.add(file.getAbsolutePath()));
