@@ -1,0 +1,199 @@
+-------------------------------------------------------------------------------
+Test set: InspireTest.TestAll
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 192.115 s <<< FAILURE! - in InspireTest.TestAll
+InspireTest.TestAll.T02  Time elapsed: 129.386 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+failed features:
+src.test.java.InspireTest.ngr.T02_Datasets: [1.104:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.105:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.106:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.107:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.108:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.109:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.110:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.111:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.112:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.113:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.114:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.115:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.116:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.117:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.118:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.119:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.120:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.121:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.122:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.123:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.124:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.125:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.126:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.127:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.128:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.129:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.130:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.131:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.132:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.133:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.134:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.135:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.136:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.137:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.138:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.139:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.140:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.141:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.142:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.143:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.144:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.145:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.146:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.147:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.148:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.149:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.150:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.151:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.152:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.153:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.154:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.155:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.156:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.157:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.158:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.159:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.160:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.161:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.162:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.163:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.164:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.165:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.166:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.167:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.168:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.169:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.170:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.171:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.172:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.173:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.174:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.175:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.176:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.177:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.178:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.179:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.180:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.181:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.182:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.183:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.184:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.185:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.186:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.187:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.188:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.189:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.190:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.191:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.192:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.193:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.194:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.195:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.196:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+[1.197:22] T02_Datasets.feature:30 - 
+java.net.SocketTimeoutException: Read timed out
+ ==> expected: <0> but was: <94>
+	at InspireTest.TestAll.runtest(InspireTest.java:97)
+	at InspireTest.TestAll.T02(InspireTest.java:62)
+
