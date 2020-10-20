@@ -90,9 +90,11 @@ class TestAll {
         Harvest harvest = new Harvest(db.harvestfile());
         File outfile5 = new File(db.outputdir().getAbsolutePath() + "/" + step + "/INSPIREGeoportalHarvestExtra.csv");
         System.out.println(outfile5);
-        harvest.writeharvest(outfile5.getAbsolutePath());
+        File outfile6 = new File(db.outputdir().getAbsolutePath() + "/" + step + "/INSPIREGeoportalHarvestExtraError.csv");
+        System.out.println(outfile6);
+        harvest.writeharvest(outfile5.getAbsolutePath(),outfile6.getAbsolutePath());
         assertTrue(outfile5.exists());
-
+        assertTrue(outfile6.exists());
     }
 
     private void loadtestdata() throws FileNotFoundException {
