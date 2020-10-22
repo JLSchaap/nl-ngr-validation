@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Nl-ngr-validation</title>
+        <style>
+</style>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        
+        
+        
+    </head>
+    <body class="vscode-light">
+        <!-- omit in toc -->
+<h1 id="nl-ngr-validation">Nl-ngr-validation</h1>
+<p>Nl-ngr-validation is a testsuite with Java, Maven and <a href="https://github.com/intuit/karate">Karate</a> to extract <a href="https://inspire-geoportal.ec.europa.eu/index.html">Inspire</a> metadata from the <a href="https://www.nationaalgeoregister.nl/">Dutch geoportal</a></p>
+<ul>
+<li><a href="#1-running-the-tests">1. Running the tests</a></li>
+<li><a href="#2-generated-lists">2. Generated lists</a>
+<ul>
+<li><a href="#21-get-list-from-inspire-endpoint">2.1. Get list from Inspire endpoint</a></li>
+<li><a href="#22-regresion">2.2 Regresion</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="1-running-the-tests">1. Running the tests</h1>
+<p>Test are run with the following commands:</p>
+<pre><code class="language-bash"><div>git <span class="hljs-built_in">clone</span> https://github.com/JLSchaap/nl-ngr-validation
+mvn <span class="hljs-built_in">test</span>
+</div></code></pre>
+<p>For docker user there is a <a href="mavenCleanTest.sh">shell script</a> to run the testsuite</p>
+<h1 id="2-generated-lists">2. Generated lists</h1>
+<h2 id="21-get-list-from-inspire-endpoint">2.1. Get list from Inspire endpoint</h2>
+<p>By calling <a href="https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/deb81ebe-c7a7-42ba-bc21-f07cd348c3e8">the NGR Inspire CSW endpoint</a> and matching dataset and service metadata information is created.</p>
+<p>The following list are generated in csv format during <a href="##-2.4-Regresion">regression</a>:</p>
+<ul>
+<li><a href="https://github.com/JLSchaap/nl-ngr-validation/blob/gh-pages/T02_Datasets/datasets.csv">datasets</a></li>
+<li><a href="https://github.com/JLSchaap/nl-ngr-validation/blob/gh-pages/T03_harvestEval/datasetsmetservices.csv">datasets with related services en serviceorganisation</a>-</li>
+<li><a href="https://github.com/JLSchaap/nl-ngr-validation/blob/gh-pages/T02_Services/services.csv">services</a></li>
+<li><a href="https://github.com/JLSchaap/nl-ngr-validation/tree/gh-pages/T02_Services">services for each provider</a> e.g. <a href="https://github.com/JLSchaap/nl-ngr-validation/blob/gh-pages/T02_Services/services-Beheer%20PDOK.csv">services-Beheer PDOK</a></li>
+<li><a href="https://github.com/JLSchaap/nl-ngr-validation/blob/gh-pages/T03_harvestEval/datasetsmetserviceserror.csv">services without matching Inspire dataset</a></li>
+<li><a href="https://github.com/JLSchaap/nl-ngr-validation/blob/gh-pages/T03_harvestEval/INSPIREGeoportalHarvestExtra.csv">harvest extra</a> a csv file with extra information added to <a href="https://github.com/JLSchaap/nl-ngr-validation/blob/master/src/test/resources/INSPIREGeoportalHarvest.csv">Geonovum harvest csv</a></li>
+</ul>
+<h2 id="22-regresion">2.2 Regresion</h2>
+<p>The test are run as <a href="%5Bhttps://github.com/JLSchaap/nl-ngr-validation/actions">github action</a> on a requlair base.
+A <a href="https://jlschaap.github.io/nl-ngr-validation/cucumber-html-reports/overview-features.html">cucumber test report</a> shows the status<img src="https://github.com/JLSchaap/nl-ngr-validation/workflows/NGR%20validatie/badge.svg" alt="Always failing?"> of calling the NGR CSW endpoint in the last run.
+Results are stored in <a href="https://github.com/JLSchaap/nl-ngr-validation/tree/gh-pages">github pages</a></p>
+
+    </body>
+    </html>
