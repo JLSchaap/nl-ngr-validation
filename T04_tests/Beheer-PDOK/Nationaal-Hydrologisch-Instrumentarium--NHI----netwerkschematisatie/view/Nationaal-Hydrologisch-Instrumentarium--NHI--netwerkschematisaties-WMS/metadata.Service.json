@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[beheerPDOK@kadaster.nl, beheerPDOK@kadaster.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "http://nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW\u0026version=2.0.2\u0026request=GetRecordById\u0026outputschema=http://www.isotc211.org/2005/gmd\u0026elementsetname=full\u0026id=710c381c-ab2d-45d5-a45d-af2eba811e5f#MD_DataIdentification",
+    "organisation": "Beheer PDOK",
+    "serviceIdentifierCode": "8abcd2d1-3beb-43e5-a572-2b2da05a0a98",
+    "servicetype": "view",
+    "title": "Nationaal Hydrologisch Instrumentarium (NHI) netwerkschematisaties WMS",
+    "url": "https://geodata.nationaalgeoregister.nl/nhi/wms?request=GetCapabilities"
+}

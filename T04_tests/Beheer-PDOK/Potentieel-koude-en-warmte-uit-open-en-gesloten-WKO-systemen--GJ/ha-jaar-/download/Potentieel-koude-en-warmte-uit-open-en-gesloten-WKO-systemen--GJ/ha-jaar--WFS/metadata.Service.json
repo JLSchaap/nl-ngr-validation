@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[beheerPDOK@kadaster.nl, beheerPDOK@kadaster.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "https://nationaalgeoregister.nl/geonetwork/srv/en/csw?service=CSW\u0026version=2.0.2\u0026request=GetRecordById\u0026outputschema=http://www.isotc211.org/2005/gmd\u0026elementsetname=full\u0026id=dc5b522e-3e14-4738-9e8e-2401e1b19ef2#MD_DataIdentification",
+    "organisation": "Beheer PDOK",
+    "serviceIdentifierCode": "5856173c-e58d-4b4c-8f9b-046ee1f20c1c",
+    "servicetype": "download",
+    "title": "Potentieel koude en warmte uit open en gesloten WKO systemen (GJ/ha.jaar) WFS",
+    "url": "https://geodata.nationaalgeoregister.nl/wko/wfs?request=Getcapabilities"
+}

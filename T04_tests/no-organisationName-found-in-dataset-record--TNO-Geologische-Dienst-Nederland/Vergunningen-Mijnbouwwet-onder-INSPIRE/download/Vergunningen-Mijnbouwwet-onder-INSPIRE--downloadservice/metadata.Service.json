@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[info@dinoloket.nl, info@dinoloket.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?SERVICE=CSW\u0026version=2.0.2\u0026REQUEST=GetRecordById\u0026ID=24de356e-ec4d-4a18-9903-6401d222b77c\u0026OUTPUTSCHEMA=http://www.isotc211.org/2005/gmd\u0026ELEMENTSETNAME=full#MD_DataIdentification",
+    "organisation": "TNO Geologische Dienst Nederland",
+    "serviceIdentifierCode": "542b330b-d3c6-4617-b97f-693e5cfd1872",
+    "servicetype": "download",
+    "title": "Vergunningen Mijnbouwwet onder INSPIRE, downloadservice",
+    "url": "https://www.broinspireservices.nl/wfs/osamepl-a-v1.0?request=GetCapabilities\u0026service=WFS\u0026version=2.0.0"
+}

@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[beheerPDOK@kadaster.nl, beheerPDOK@kadaster.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "[http://nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW\u0026version=2.0.2\u0026request=GetRecordById\u0026outputschema=http://www.isotc211.org/2005/gmd\u0026elementsetname=full\u0026id=5a1adb58-0bbe-425d-b0fe-577a6c0a4228#MD_DataIdentification, http://nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW\u0026version=2.0.2\u0026request=GetRecordById\u0026outputschema=http://www.isotc211.org/2005/gmd\u0026elementsetname=full\u0026id=b9dd8575-3c1c-41f4-add5-c4f5f2b67179#MD_DataIdentification, https://www.nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW\u0026request=GetRecordById\u0026version=2.0.2\u0026outputSchema=http://www.isotc211.org/2005/gmd\u0026elementSetName=full\u0026id=00fd1fc4-c190-4fa6-a68f-606c64a16679#MD_DataIdentification, https://www.nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW\u0026request=GetRecordById\u0026version=2.0.2\u0026outputSchema=http://www.isotc211.org/2005/gmd\u0026elementSetName=full\u0026id=00b0a2bf-57ce-44c9-b94c-f6c9a41f5c61#MD_DataIdentification, https://www.nationaalgeoregister.n/geonetwork/srv/dut/csw?service=CSW\u0026request=GetRecordById\u0026version=2.0.2\u0026outputSchema=http://www.isotc211.org/2005/gmd\u0026elementSetName=full\u0026id=da237167-7f87-4310-ad64-614233de7a42#MD_DataIdentification]",
+    "organisation": "Beheer PDOK",
+    "serviceIdentifierCode": "c3ee15e4-38bf-4d54-9c0b-cfe0e609d448",
+    "servicetype": "view",
+    "title": "Actueel Hoogtebestand Nederland 1 (AHN1) WMS",
+    "url": "https://geodata.nationaalgeoregister.nl/ahn1/wms?request=GetCapabilities"
+}

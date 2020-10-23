@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[data@hydro.nl, hydro.servicedesk@mindef.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "https://www.nationaalgeoregister.nl:443/geonetwork/srv/dut/csw?service=CSW\u0026request=GetRecordById\u0026version=2.0.2\u0026outputSchema=http://www.isotc211.org/2005/gmd\u0026elementSetName=full\u0026id=c2225e5d-b46f-4e38-8445-ab10fd40c0dc#MD_DataIdentification",
+    "organisation": "Ministerie van Defensie, Koninklijke Marine, Dienst der Hydrografie",
+    "serviceIdentifierCode": "c35c7421-f3ef-4bfb-afcc-ca15d03b8e6f",
+    "servicetype": "view",
+    "title": "Blokindeling van het Nederlands Continentaal Plat-Viewservice volgens de Mijnbouwwet en Grensgebied volgens de Aanvullende Overeenkomst bij het Eems-Dollardverdrag",
+    "url": "https://inspire.caris.nl/gs5/ProspectingAndMiningPermitArea/wms?service=WMS\u0026version=1.3.0\u0026request=GetCapabilities"
+}

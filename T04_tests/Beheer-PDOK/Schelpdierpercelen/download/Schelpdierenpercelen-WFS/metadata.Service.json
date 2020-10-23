@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[beheerPDOK@kadaster.nl, beheerPDOK@kadaster.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "https://www.nationaalgeoregister.nl:443/geonetwork/srv/dut/csw?service=CSW\u0026request=GetRecordById\u0026version=2.0.2\u0026outputSchema=http://www.isotc211.org/2005/gmd\u0026elementSetName=full\u0026id=fe0e1e5f-512f-4bb1-bbf8-4028d3dfa24f#MD_DataIdentification",
+    "organisation": "Beheer PDOK",
+    "serviceIdentifierCode": "6b608d4e-5628-4d59-97fc-0322c57357b2",
+    "servicetype": "download",
+    "title": "Schelpdierenpercelen WFS",
+    "url": "https://geodata.nationaalgeoregister.nl/schelpdierenpercelen/wfs?request=GetCapabilities"
+}

@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[beheerPDOK@kadaster.nl, beheerPDOK@kadaster.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "https://www.nationaalgeoregister.nl:443/geonetwork/srv/dut/csw?service=CSW\u0026request=GetRecordById\u0026version=2.0.2\u0026outputSchema=http://www.isotc211.org/2005/gmd\u0026elementSetName=full\u0026id=7939fd42-cf88-42c5-ab3b-232cf232a3ac#MD_DataIdentification",
+    "organisation": "Beheer PDOK",
+    "serviceIdentifierCode": "7a914681-61bd-4f67-902b-45037a00c469",
+    "servicetype": "view",
+    "title": "Actueel Hoogtebestand Nederland 2 (AHN2) WMS",
+    "url": "https://geodata.nationaalgeoregister.nl/ahn2/wms?request=GetCapabilities"
+}

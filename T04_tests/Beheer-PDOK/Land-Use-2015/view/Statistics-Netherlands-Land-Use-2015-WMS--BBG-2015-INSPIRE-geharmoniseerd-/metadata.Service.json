@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[beheerPDOK@kadaster.nl, beheerPDOK@kadaster.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "https://nationaalgeoregister.nl/geonetwork/srv/en/csw?service=CSW\u0026version=2.0.2\u0026request=GetRecordById\u0026outputschema=http://www.isotc211.org/2005/gmd\u0026elementsetname=full\u0026id=6318009c-7b11-4ab9-9929-735584dfb692#MD_DataIdentification",
+    "organisation": "Beheer PDOK",
+    "serviceIdentifierCode": "cea38797-ea4b-4969-b979-8d25eb543a6c",
+    "servicetype": "view",
+    "title": "Statistics Netherlands Land Use 2015 WMS (BBG 2015 INSPIRE geharmoniseerd)",
+    "url": "https://geodata.nationaalgeoregister.nl/inspire/elu/wms?request=GetCapabilities"
+}

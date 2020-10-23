@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[geodata@rivm.nl, geodata@rivm.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "http://www.nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW\u0026request=GetRecordById\u0026version=2.0.2\u0026outputSchema=http://www.isotc211.org/2005/gmd\u0026elementSetName=full\u0026id=8a4f5c3b-aced-48fd-afb5-f1f1d0ef21d6#MD_DataIdentification",
+    "organisation": "Rijksinstituut voor Volksgezondheid en Milieu",
+    "serviceIdentifierCode": "0426f471-f325-42ed-a775-81c397592e86",
+    "servicetype": "view",
+    "title": "Omgevingsdosisequivalenttempo Nationaal Meetnet Radioactiviteit 2011 (WMS)",
+    "url": "https://inspire.rivm.nl/geoserver/wms?request=GetCapabilities"
+}

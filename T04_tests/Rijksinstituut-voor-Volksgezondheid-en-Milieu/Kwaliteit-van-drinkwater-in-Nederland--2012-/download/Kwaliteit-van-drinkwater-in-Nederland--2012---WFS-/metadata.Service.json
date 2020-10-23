@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[geodata@rivm.nl, geodata@rivm.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "http://www.nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW\u0026request=GetRecordById\u0026version=2.0.2\u0026outputSchema=http://www.isotc211.org/2005/gmd\u0026elementSetName=full\u0026id=32a21114-8694-40ce-ab76-9dcd885c7861#MD_DataIdentification",
+    "organisation": "Rijksinstituut voor Volksgezondheid en Milieu",
+    "serviceIdentifierCode": "f59357eb-185f-42a5-b465-90bfa6e3e416",
+    "servicetype": "download",
+    "title": "Kwaliteit van drinkwater in Nederland (2012) (WFS)",
+    "url": "https://inspire.rivm.nl/geoserver/wfs?request=GetCapabilities"
+}

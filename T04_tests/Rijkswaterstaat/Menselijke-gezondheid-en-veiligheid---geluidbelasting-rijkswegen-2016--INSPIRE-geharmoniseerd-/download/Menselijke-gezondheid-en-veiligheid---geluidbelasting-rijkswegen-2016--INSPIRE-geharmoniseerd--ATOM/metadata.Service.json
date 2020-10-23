@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[servicedesk-data@rijkswaterstaat.nl, servicedesk-data@rijkswaterstaat.nl, info@wetransform.to]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "http://nationaalgeoregister.nl/geonetwork/srv/en/csw?service=csw\u0026VERSION=2.0.2\u0026REQUEST=GetRecordById\u0026OUTPUTSCHEMA=http://www.isotc211.org/2005/gmd\u0026ELEMENTSETNAME=full\u0026ID=wt-83730-e750-485a-9c0c-39bf9be72cf8#MD_DataIdentification",
+    "organisation": "Rijkswaterstaat",
+    "serviceIdentifierCode": "wt-83730-e750-485a-9c0c-39bf9bt72cf8",
+    "servicetype": "download",
+    "title": "Menselijke gezondheid en veiligheid - geluidbelasting rijkswegen 2016 (INSPIRE geharmoniseerd) ATOM",
+    "url": "https://haleconnect.com/services/bsp/org.292.504afbe6-0069-411b-b69b-2aae3728f735/service/atom/id_predefined_dataset"
+}

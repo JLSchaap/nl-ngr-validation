@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[geodata@rivm.nl, geodata@rivm.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "http://www.nationaalgeoregister.nl/geonetwork/srv/en/csw?service=CSW\u0026request=GetRecordById\u0026version=2.0.2\u0026outputSchema=http://www.isotc211.org/2005/gmd\u0026elementSetName=full\u0026id=d24ccb35-e9d2-41bf-b231-43083fc0c76d#MD_DataIdentification",
+    "organisation": "Rijksinstituut voor Volksgezondheid en Milieu",
+    "serviceIdentifierCode": "ff8f6da2-949e-4838-90f6-fd895a4a240f",
+    "servicetype": "download",
+    "title": "LCP emissies (Richtlijn Industriële emissies) 2016 (WFS)",
+    "url": "https://inspire.rivm.nl/geoserver/wfs?request=GetCapabilities"
+}

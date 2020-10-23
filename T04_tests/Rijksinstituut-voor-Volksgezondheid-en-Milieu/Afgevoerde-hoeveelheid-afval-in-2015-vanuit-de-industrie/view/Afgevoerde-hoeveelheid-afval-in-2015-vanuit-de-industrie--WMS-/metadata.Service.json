@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[emissieregistratie@rivm.nl, emissieregistratie@rivm.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "http://www.nationaalgeoregister.nl/geonetwork/srv/en/csw?service=CSW\u0026request=GetRecordById\u0026version=2.0.2\u0026outputSchema=http://www.isotc211.org/2005/gmd\u0026elementSetName=full\u0026id=08b27bf0-e34a-4b30-9eac-5edadfb6a288#MD_DataIdentification",
+    "organisation": "Rijksinstituut voor Volksgezondheid en Milieu",
+    "serviceIdentifierCode": "c56433ca-35f2-4aaf-8bfa-35d8e0e52dda",
+    "servicetype": "view",
+    "title": "Afgevoerde hoeveelheid afval in 2015 vanuit de industrie (WMS)",
+    "url": "https://inspire.rivm.nl/geoserver/wms?request=GetCapabilities"
+}

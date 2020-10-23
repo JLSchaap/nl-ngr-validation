@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[data@hydro.nl, hydro.servicedesk@mindef.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "https://www.nationaalgeoregister.nl:443/geonetwork/srv/dut/csw?service=CSW\u0026request=GetRecordById\u0026version=2.0.2\u0026outputSchema=http://www.isotc211.org/2005/gmd\u0026elementSetName=full\u0026id=f44dac86-2228-412f-8355-e56446ca9933#MD_DataIdentification",
+    "organisation": "Ministerie van Defensie, Koninklijke Marine, Dienst der Hydrografie",
+    "serviceIdentifierCode": "c7dad4b9-42a8-452f-a33b-d4938ed22142",
+    "servicetype": "download",
+    "title": "Eemsmonding volgens het Eems-Dollardverdrag-Downloadservice",
+    "url": "https://inspire.caris.nl/gs5/MarineRegion/ows?service=WFS\u0026version=2.0.0\u0026request=GetCapabilities"
+}

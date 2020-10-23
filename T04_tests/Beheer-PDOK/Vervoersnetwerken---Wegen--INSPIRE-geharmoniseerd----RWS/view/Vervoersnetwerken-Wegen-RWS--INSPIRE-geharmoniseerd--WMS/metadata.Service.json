@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[beheerPDOK@kadaster.nl, beheerPDOK@kadaster.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "https://nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW\u0026version=2.0.2\u0026request=GetRecordById\u0026outputschema=http://www.isotc211.org/2005/gmd\u0026elementsetname=full\u0026id=eu-cb527d-f6db-4835-b0cd-deb245241254#MD_DataIdentification",
+    "organisation": "Beheer PDOK",
+    "serviceIdentifierCode": "4fb15e0d-d88f-40f1-b407-3d3edcf7e184",
+    "servicetype": "view",
+    "title": "Vervoersnetwerken Wegen RWS (INSPIRE geharmoniseerd) WMS",
+    "url": "https://geodata.nationaalgeoregister.nl/nl/rws/tn-ro/wms?request=GetCapabilities"
+}

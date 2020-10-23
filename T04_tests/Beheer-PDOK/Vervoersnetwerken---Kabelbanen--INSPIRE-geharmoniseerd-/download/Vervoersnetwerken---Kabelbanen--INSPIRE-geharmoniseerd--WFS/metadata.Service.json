@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[beheerPDOK@kadaster.nl, beheerPDOK@kadaster.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "http://nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW\u0026version=2.0.2\u0026request=GetRecordById\u0026outputschema=http://www.isotc211.org/2005/gmd\u0026elementsetname=full\u0026id=6c06740d-058f-4a12-bb3f-bf68efd03d09#MD_DataIdentification",
+    "organisation": "Beheer PDOK",
+    "serviceIdentifierCode": "5bb85b77-fffd-449b-bd61-f076fe07cc4b",
+    "servicetype": "download",
+    "title": "Vervoersnetwerken - Kabelbanen (INSPIRE geharmoniseerd) WFS",
+    "url": "https://geodata.nationaalgeoregister.nl/inspire/tn-c/wfs?request=GetCapabilities"
+}

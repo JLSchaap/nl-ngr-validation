@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[info@dinoloket.nl, geodesk.cgi@wur.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?SERVICE=CSW\u0026version=2.0.2\u0026REQUEST=GetRecordById\u0026ID=9dd9bf30-36e6-45ae-b368-bdef2720bdde\u0026OUTPUTSCHEMA=http://www.isotc211.org/2005/gmd\u0026ELEMENTSETNAME=full#MD_DataIdentification",
+    "organisation": "TNO Geologische Dienst Nederland",
+    "serviceIdentifierCode": "dda53ebc-bee7-4765-8f1f-6ac59b0aec39",
+    "servicetype": "view",
+    "title": "Bodemkundig boormonsterprofiel onder INSPIRE, viewservice",
+    "url": "https://www.broinspireservices.nl/wms/ossobor-a-v1.0?request=GetCapabilities"
+}

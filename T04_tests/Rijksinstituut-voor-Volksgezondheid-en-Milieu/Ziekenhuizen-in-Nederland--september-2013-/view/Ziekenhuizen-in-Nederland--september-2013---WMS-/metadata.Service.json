@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[atlas@rivm.nl, geodata@rivm.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "http://www.nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW\u0026request=GetRecordById\u0026version=2.0.2\u0026outputSchema=http://www.isotc211.org/2005/gmd\u0026elementSetName=full\u0026id=d9baa847-4652-4588-abe1-0b050f40f27f#MD_DataIdentification",
+    "organisation": "Rijksinstituut voor Volksgezondheid en Milieu",
+    "serviceIdentifierCode": "bd14098b-44e6-47e5-959d-f40dda65da5a",
+    "servicetype": "view",
+    "title": "Ziekenhuizen in Nederland (september 2013) (WMS)",
+    "url": "https://inspire.rivm.nl/geoserver/wms?request=GetCapabilities"
+}

@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[beheerPDOK@kadaster.nl, beheerPDOK@kadaster.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "http://nationaalgeoregister.nl/geonetwork/srv/en/csw?service=CSW\u0026version=2.0.2\u0026request=GetRecordById\u0026outputschema=http://www.isotc211.org/2005/gmd\u0026elementsetname=full\u0026id=280ed37a-b8d2-4ac5-8567-04d84fad3a41#MD_DataIdentification",
+    "organisation": "Beheer PDOK",
+    "serviceIdentifierCode": "a7aeddf2-3b37-4668-9c75-de93d9326276",
+    "servicetype": "view",
+    "title": "Natura2000 (INSPIRE geharmoniseerd) WMS",
+    "url": "https://geodata.nationaalgeoregister.nl/inspire/ps-natura2000/wms?request=Getcapabilities"
+}

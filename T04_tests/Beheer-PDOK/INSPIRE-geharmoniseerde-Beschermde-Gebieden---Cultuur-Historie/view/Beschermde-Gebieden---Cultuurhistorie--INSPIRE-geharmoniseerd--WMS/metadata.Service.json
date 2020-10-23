@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[beheerPDOK@kadaster.nl, beheerPDOK@kadaster.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "https://www.nationaalgeoregister.nl:443/geonetwork/srv/dut/csw?service=CSW\u0026request=GetRecordById\u0026version=2.0.2\u0026outputSchema=http://www.isotc211.org/2005/gmd\u0026elementSetName=full\u0026id=493ab81b-75f8-4205-b030-6b2fd9eb4295#MD_DataIdentification",
+    "organisation": "Beheer PDOK",
+    "serviceIdentifierCode": "7b8f44b5-6eae-4113-a835-84b8678c3dd5",
+    "servicetype": "view",
+    "title": "Beschermde Gebieden - Cultuurhistorie (INSPIRE geharmoniseerd) WMS",
+    "url": "https://service.pdok.nl/rce/ps-ch/wms/v1_0?request=GetCapabilities\u0026service=WMS"
+}
