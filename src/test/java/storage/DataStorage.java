@@ -5,6 +5,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
+import java.util.regex.Pattern;
 
 import org.apache.commons.io.FileUtils;
 
@@ -13,6 +14,7 @@ public class DataStorage {
     private static final String TARGET_SUREFIRE_REPORTS = "/target/surefire-reports";
     private static final String userdir = new File(java.lang.System.getProperty("user.dir")).getAbsolutePath();
     private static final String SRC_TEST_JAVA_INSPIRE_TEST_NGR = "/src/test/java/InspireTest/ngr";
+
     public File reportdir() {
         return (new File(userdir + TARGET_SUREFIRE_REPORTS));
     }
@@ -146,6 +148,22 @@ public class DataStorage {
 
         }
         return sb.toString();
+    }
+
+    public String getCorrectedUrl(String str) {
+        if (str.indexOf("[") == 0) {
+            String str2 = str.replaceAll("\\[|\\]", "");
+            String str3 = str2.replace("\"", "");
+            String[] list = str3.split(",");
+            String str4 = list[0];
+            return str4;
+        } else
+
+        {
+            System.out.println("url Cleaning retval : " + str);
+            return str;
+        }
+
     }
 
 }

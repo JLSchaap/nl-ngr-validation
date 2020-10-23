@@ -33,3 +33,16 @@ Feature: storage
             | https://nationaalgeoregister.nl/geonetwork/srv/dut/csw?SERVICE=CSW&version=2.0.2&REQUEST=GetRecordById&ID=3703b249-a0eb-484e-ba7a-10e31a55bcec&OUTPUTSCHEMA=http://www.isotc211.org/2005/gmd&ELEMENTSETNAME=full#MD_DataIdentification                                                                                                                                                                                                                                         | 3703b249-a0eb-484e-ba7a-10e31a55bcec                                      |  |  |
             | https://geodata.nationaalgeoregister.nl/inspire/su-grid/wms?request=GetCapabilities","OGC:WMS","Beheer PDOK","[beheerPDOK@kadaster.nl, beheerPDOK@kadaster.nl]","Nederlands metadata profiel op ISO 19119 voor services 2.0","http://nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW&version=2.0.2&request=GetRecordById&outputschema=http://www.isotc211.org/2005/gmd&elementsetname=full&id=db8d613f-5edc-4467-9cc0-e2dcfb9d64a8#MD_DataIdentification            | db8d613f-5edc-4467-9cc0-e2dcfb9d64a8                                      |
             | [http://nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW&version=2.0.2&request=GetRecordById&outputschema=http://www.isotc211.org/2005/gmd&elementsetname=full&id=00d8c7c8-98ff-4b06-8f53-b44216e6e75c#MD_DataIdentification, http://nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW&version=2.0.2&request=GetRecordById&outputschema=http://www.isotc211.org/2005/gmd&elementsetname=full&id=701d4eb8-8aae-4708-bba5-3edf6987676d#MD_DataIdentification] | 00d8c7c8-98ff-4b06-8f53-b44216e6e75c 701d4eb8-8aae-4708-bba5-3edf6987676d |
+
+    Scenario Outline: get first url
+
+
+        * def urlstr = '<urlin>'
+        * def newurl = db.getCorrectedUrl(urlstr)
+        * match newurl == '<urlout>'
+
+        Examples:
+            | urlin                                                | urlout         |
+            | ["https://eenwms","https://eenwms","https://eenwms"] | https://eenwms |
+            | https://eenwms                                       | https://eenwms |
+
