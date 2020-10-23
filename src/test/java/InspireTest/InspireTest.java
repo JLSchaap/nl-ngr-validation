@@ -1,7 +1,21 @@
 
 package InspireTest;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import com.intuit.karate.KarateOptions;
+import com.intuit.karate.Results;
+import com.intuit.karate.Runner;
+import com.opencsv.exceptions.CsvDataTypeMismatchException;
+import com.opencsv.exceptions.CsvRequiredFieldEmptyException;
+
+import filestructure.Templatedir;
+import metadata.DatasetList;
+import metadata.Harvest;
+import net.masterthought.cucumber.Configuration;
+import net.masterthought.cucumber.ReportBuilder;
+import org.apache.commons.io.FileUtils;
+import org.junit.jupiter.api.*;
+import org.junit.platform.commons.annotation.Testable;
+import storage.DataStorage;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -10,27 +24,8 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-import com.opencsv.exceptions.CsvDataTypeMismatchException;
-import com.opencsv.exceptions.CsvRequiredFieldEmptyException;
-import metadata.DatasetList;
-import metadata.Harvest;
-import org.apache.commons.io.FileUtils;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.MethodOrderer;
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestMethodOrder;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import org.junit.platform.commons.annotation.Testable;
-
-import com.intuit.karate.KarateOptions;
-import com.intuit.karate.Results;
-import com.intuit.karate.Runner;
-
-import net.masterthought.cucumber.Configuration;
-import net.masterthought.cucumber.ReportBuilder;
-import storage.DataStorage;
 
 @KarateOptions(tags = { "~@ignore" })
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
@@ -90,11 +85,31 @@ class TestAll {
         Harvest harvest = new Harvest(db.harvestfile());
         File outfile5 = new File(db.outputdir().getAbsolutePath() + "/" + step + "/INSPIREGeoportalHarvestExtra.csv");
         System.out.println(outfile5);
-        File outfile6 = new File(db.outputdir().getAbsolutePath() + "/" + step + "/INSPIREGeoportalHarvestExtraError.csv");
+        File outfile6 = new File(
+                db.outputdir().getAbsolutePath() + "/" + step + "/INSPIREGeoportalHarvestExtraError.csv");
         System.out.println(outfile6);
-        harvest.writeharvest(outfile5.getAbsolutePath(),outfile6.getAbsolutePath());
+        harvest.writeharvest(outfile5.getAbsolutePath(), outfile6.getAbsolutePath());
         assertTrue(outfile5.exists());
         assertTrue(outfile6.exists());
+    }
+
+    @Test
+    @Order(4)
+    void T04Createtests() throws IOException {
+
+        String step = "T04_tests";
+        db.cleanStepOutputDir(step);
+        loadtestdata();
+
+        Templatedir templatepath = new Templatedir();
+        File temp = new File (db.startdirtop() + File.separator +"karatetemplate"); 
+        System.out.println("templatedir:"+ temp.getAbsolutePath());
+        templatepath.builder(temp, ".feature");
+        File outdir = new File(            db.outputdir().getAbsolutePath() + "/" + step );
+        System.out.println("outdir:"+outdir.getAbsolutePath());
+        DatasetList.INSTANCE.getInstance().createdirstructure(outdir, templatepath);
+        assertTrue(outdir.exists());
+  
     }
 
     private void loadtestdata() throws FileNotFoundException {

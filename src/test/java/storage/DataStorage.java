@@ -14,7 +14,7 @@ public class DataStorage {
     private static final String TARGET_SUREFIRE_REPORTS = "/target/surefire-reports";
     private static final String userdir = new File(java.lang.System.getProperty("user.dir")).getAbsolutePath();
     private static final String SRC_TEST_JAVA_INSPIRE_TEST_NGR = "/src/test/java/InspireTest/ngr";
-
+    private static final String SRC_TEST_JAVA_INSPIRE_TEST = "/src/test/java/InspireTest";
     public File reportdir() {
         return (new File(userdir + TARGET_SUREFIRE_REPORTS));
     }
@@ -113,6 +113,9 @@ public class DataStorage {
         return (new File(userdir + SRC_TEST_JAVA_INSPIRE_TEST_NGR));
     }
 
+    public File startdirtop() {
+        return (new File(userdir + SRC_TEST_JAVA_INSPIRE_TEST));
+    }
     public static String projectname() {
         return NLTEST;
     }
