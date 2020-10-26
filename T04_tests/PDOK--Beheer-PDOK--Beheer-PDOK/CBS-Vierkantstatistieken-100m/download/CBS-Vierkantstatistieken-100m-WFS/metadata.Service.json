@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[beheerPDOK@kadaster.nl, beheerPDOK@kadaster.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "http://nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW\u0026version=2.0.2\u0026request=GetRecordById\u0026outputschema=http://www.isotc211.org/2005/gmd\u0026elementsetname=full\u0026id=1462bbce-ccd3-4362-83d8-4535ca8f44eb#MD_DataIdentification",
+    "organisation": "PDOK",
+    "serviceIdentifierCode": "a5437cb4-98ef-4c8e-a5ed-000e7a82b774",
+    "servicetype": "download",
+    "title": "CBS Vierkantstatistieken 100m WFS",
+    "url": "https://geodata.nationaalgeoregister.nl/cbsvierkanten100mv2/wfs?request=GetCapabilities"
+}
