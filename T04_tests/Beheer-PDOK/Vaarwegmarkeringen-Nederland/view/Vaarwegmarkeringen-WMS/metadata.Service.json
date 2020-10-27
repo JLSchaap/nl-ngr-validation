@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[beheerPDOK@kadaster.nl, beheerPDOK@kadaster.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.1.0",
+    "operatesOn": "https://www.nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW\u0026request=GetRecordById\u0026version=2.0.2\u0026outputSchema=http://www.isotc211.org/2005/gmd\u0026elementSetName=full\u0026id=be1b1514-8d1f-48e1-9624-fee9b784138b#MD_DataIdentification",
+    "organisation": "Beheer PDOK",
+    "serviceIdentifierCode": "918388cf-9d8c-4264-b108-3e375bde0d52",
+    "servicetype": "view",
+    "title": "Vaarwegmarkeringen WMS",
+    "url": "https://geodata.nationaalgeoregister.nl/noordzeevaarwegmarkeringenrd/wms?request=GetCapabilities"
+}
