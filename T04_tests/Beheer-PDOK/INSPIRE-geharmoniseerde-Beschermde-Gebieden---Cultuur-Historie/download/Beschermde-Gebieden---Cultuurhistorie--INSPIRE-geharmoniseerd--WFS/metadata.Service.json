@@ -1,8 +1,8 @@
 {
     "class": "metadata.Service",
     "electronicMailAddress": "[beheerPDOK@kadaster.nl, beheerPDOK@kadaster.nl]",
-    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
-    "operatesOn": "http://nationaalgeoregister.nl/geonetwork/srv/en/csw?service=CSW\u0026version=2.0.2\u0026request=GetRecordById\u0026outputschema=http://www.isotc211.org/2005/gmd\u0026elementsetname=full\u0026id=493ab81b-75f8-4205-b030-6b2fd9eb4295#MD_DataIdentification",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.1.0",
+    "operatesOn": "https://www.nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW\u0026request=GetRecordById\u0026version=2.0.2\u0026outputSchema=http://www.isotc211.org/2005/gmd\u0026elementSetName=full\u0026id=493ab81b-75f8-4205-b030-6b2fd9eb4295#MD_DataIdentification",
     "organisation": "Beheer PDOK",
     "serviceIdentifierCode": "101a2cc7-bb53-4a16-98f9-bab1f4745b01",
     "servicetype": "download",
