@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[servicedesk-data@rijkswaterstaat.nl, servicedesk-data@rijkswaterstaat.nl, info@wetransform.to]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "http://nationaalgeoregister.nl/geonetwork/srv/en/csw?service=csw\u0026VERSION=2.0.2\u0026REQUEST=GetRecordById\u0026OUTPUTSCHEMA=http://www.isotc211.org/2005/gmd\u0026ELEMENTSETNAME=full\u0026ID=eu-2c7040b-c448-451b-bf15-f2416ecaadd1#MD_DataIdentification",
+    "organisation": "Rijkswaterstaat",
+    "serviceIdentifierCode": "tn-2c7040b-c448-451b-bf15-f2416etaadd1",
+    "servicetype": "download",
+    "title": "Vervoersnetwerken - Waterwegen (INSPIRE geharmoniseerd) - WT ATOM",
+    "url": "https://haleconnect.com/services/bsp/org.292.2885ef73-e044-4da4-b9b6-8a461a5353aa/service/atom/id_predefined_dataset"
+}
