@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[data@hydro.nl, hydro.servicedesk@mindef.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.1.0",
+    "operatesOn": "https://www.nationaalgeoregister.nl/geonetwork/srv/dut/csw?Service=CSW\u0026Request=GetRecordById\u0026Version=2.0.2\u0026id=f1d27179-36eb-4376-8048-f51d2eb23a09\u0026outputSchema=http://www.isotc211.org/2005/gmd\u0026elementSetName=full#MD_DataIdentification",
+    "organisation": "Ministerie van Defensie, Koninklijke Marine, Dienst der Hydrografie",
+    "serviceIdentifierCode": "0d2ca03b-fb7b-466a-bb93-e2bfb596e394",
+    "servicetype": "download",
+    "title": "Nederlands deel PSSA Waddenzee-Downloadservice",
+    "url": "https://inspire.caris.nl/gs5/pssa_nl/ows?service=WFS\u0026version=2.0.0\u0026request=GetCapabilities"
+}

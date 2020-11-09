@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[beheerPDOK@kadaster.nl, beheerPDOK@kadaster.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "http://nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW\u0026version=2.0.2\u0026request=GetRecordById\u0026outputschema=http://www.isotc211.org/2005/gmd\u0026elementsetname=full\u0026id=31de946d-85d4-4c93-bb97-e25f4ef1401a#MD_DataIdentification",
+    "organisation": "Beheer PDOK",
+    "serviceIdentifierCode": "d69fee4a-e3ff-47d4-919d-e55276a3fad9",
+    "servicetype": "view",
+    "title": "Vervoersnetwerken - Luchttransport (INSPIRE geharmoniseerd) WMS",
+    "url": "https://geodata.nationaalgeoregister.nl/inspire/tn-a/wms?request=GetCapabilities"
+}

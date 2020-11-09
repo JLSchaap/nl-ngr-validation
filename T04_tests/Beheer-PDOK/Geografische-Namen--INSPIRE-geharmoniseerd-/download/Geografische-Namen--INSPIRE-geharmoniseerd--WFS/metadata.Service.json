@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[beheerPDOK@kadaster.nl, beheerPDOK@kadaster.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "https://nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW\u0026version=2.0.2\u0026request=GetRecordById\u0026outputschema=http://www.isotc211.org/2005/gmd\u0026elementsetname=full\u0026id=1a40eb6f-4f33-4e15-a0b1-2d350ad2636e#MD_DataIdentification",
+    "organisation": "Beheer PDOK",
+    "serviceIdentifierCode": "7e87a655-c4eb-404d-9d0a-efa2dccef7cc",
+    "servicetype": "download",
+    "title": "Geografische Namen (INSPIRE geharmoniseerd) WFS",
+    "url": "https://geodata.nationaalgeoregister.nl/inspire/gn/wfs?\u0026request=GetCapabilities\u0026service=WFS"
+}

@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[beheerpdok@kadaster.nl, beheerpdok@kadaster.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "https://www.nationaalgeoregister.nl:443/geonetwork/srv/dut/csw?service=CSW\u0026request=GetRecordById\u0026version=2.0.2\u0026outputSchema=http://www.isotc211.org/2005/gmd\u0026elementSetName=full\u0026id=76541ebb-a554-4540-a017-399d4bb4a860#MD_DataIdentification",
+    "organisation": "Beheer PDOK",
+    "serviceIdentifierCode": "037e55bd-a1dc-4fde-adfe-4610d3a3d5cb",
+    "servicetype": "download",
+    "title": "Population Distribution (INSPIRE geharmoniseerd) ATOM",
+    "url": "https://service.pdok.nl/cbs/pd/atom/v1_0/index.xml"
+}

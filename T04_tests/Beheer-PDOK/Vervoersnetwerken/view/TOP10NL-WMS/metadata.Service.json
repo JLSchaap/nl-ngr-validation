@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[beheerPDOK@kadaster.nl, beheerPDOK@kadaster.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "[http://nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW\u0026version=2.0.2\u0026request=GetRecordById\u0026outputschema=http://www.isotc211.org/2005/gmd\u0026elementsetname=full\u0026id=29d5310f-dd0d-45ba-abad-b4ffc6b8785f#MD_DataIdentification, http://nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW\u0026version=2.0.2\u0026request=GetRecordById\u0026outputschema=http://www.isotc211.org/2005/gmd\u0026elementsetname=full\u0026id=af0c582f-9e6b-46e6-865a-fc3a2d5289b9#MD_DataIdentification, http://nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW\u0026version=2.0.2\u0026request=GetRecordById\u0026outputschema=http://www.isotc211.org/2005/gmd\u0026elementsetname=full\u0026id=81ff84ec-42a4-4481-840b-12713bbb5d38#MD_DataIdentification, http://nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW\u0026version=2.0.2\u0026request=GetRecordById\u0026outputschema=http://www.isotc211.org/2005/gmd\u0026elementsetname=full\u0026id=3eebf700-5abf-42e4-826c-03cfb497e366#MD_DataIdentification, http://nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW\u0026version=2.0.2\u0026request=GetRecordById\u0026outputschema=http://www.isotc211.org/2005/gmd\u0026elementsetname=full\u0026id=4b282988-cb91-4bbc-b147-f653014917cb#MD_DataIdentification, http://nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW\u0026version=2.0.2\u0026request=GetRecordById\u0026outputschema=http://www.isotc211.org/2005/gmd\u0026elementsetname=full\u0026id=0558a41c-b09a-47fa-b8db-9de6bfe4f494#MD_DataIdentification, http://nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW\u0026version=2.0.2\u0026request=GetRecordById\u0026outputschema=http://www.isotc211.org/2005/gmd\u0026elementsetname=full\u0026id=9d9f1738-aced-47c9-aaa0-c62474a2dcfb#MD_DataIdentification]",
+    "organisation": "Beheer PDOK",
+    "serviceIdentifierCode": "94f241c2-43a2-42c3-8e9e-71976605aa0e",
+    "servicetype": "view",
+    "title": "TOP10NL WMS",
+    "url": "https://geodata.nationaalgeoregister.nl/top10nlv2/wms?request=GetCapabilities"
+}

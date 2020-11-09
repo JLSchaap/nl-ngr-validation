@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[emissieregistratie@rivm.nl, emissieregistratie@rivm.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "http://www.nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW\u0026request=GetRecordById\u0026version=2.0.2\u0026outputSchema=http://www.isotc211.org/2005/gmd\u0026elementSetName=full\u0026id=8b0b02a0-1e1b-4cda-bcfe-6fa0f738e38f#MD_DataIdentification",
+    "organisation": "Rijksinstituut voor Volksgezondheid en Milieu",
+    "serviceIdentifierCode": "a02c6566-e0ad-4fc1-b217-67cc1099dea2",
+    "servicetype": "view",
+    "title": "Emissies naar het riool in 2011 vanuit de industrie (WMS)",
+    "url": "https://inspire.rivm.nl/geoserver/wms?request=GetCapabilities"
+}

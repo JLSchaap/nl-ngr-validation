@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[beheerPDOK@kadaster.nl, beheerPDOK@kadaster.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.1.0",
+    "operatesOn": "https://www.nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW\u0026request=GetRecordById\u0026version=2.0.2\u0026outputSchema=http://www.isotc211.org/2005/gmd\u0026elementSetName=full\u0026id=a9b7026e-0a81-4813-93bd-ba49e6f28502#MD_DataIdentification",
+    "organisation": "Beheer PDOK",
+    "serviceIdentifierCode": "f2437a92-ddd3-4777-a1bc-fdf4b4a7fcb8",
+    "servicetype": "view",
+    "title": "NWB - Wegen (Nationaal Wegen Bestand) WMS",
+    "url": "https://geodata.nationaalgeoregister.nl/nwbwegen/wms?request=GetCapabilities"
+}

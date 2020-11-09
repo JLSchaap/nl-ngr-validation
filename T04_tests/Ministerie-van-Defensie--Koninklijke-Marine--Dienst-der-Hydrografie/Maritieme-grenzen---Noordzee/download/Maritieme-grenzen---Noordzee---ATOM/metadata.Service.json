@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[data@hydro.nl, data@hydro.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "https://www.nationaalgeoregister.nl/geonetwork/srv/dut/csw?Service=CSW\u0026Request=GetRecordById\u0026Version=2.0.2\u0026id=a5241416-8401-4623-be61-57ef50447a41\u0026outputSchema=http://www.isotc211.org/2005/gmd\u0026elementSetName=full#MD_DataIdentification",
+    "organisation": "Ministerie van Defensie, Koninklijke Marine, Dienst der Hydrografie",
+    "serviceIdentifierCode": "0bb27a13-76f1-4374-8d44-76e937198e8d",
+    "servicetype": "download",
+    "title": "Maritieme grenzen - Noordzee - ATOM",
+    "url": "https://inspire.caris.nl/atom/maritieme-grenzen-zones-noordzee-Maritieme-grenzen-Noordzee.gml"
+}

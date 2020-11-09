@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[beheerPDOK@kadaster.nl, beheerPDOK@kadaster.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "[https://www.nationaalgeoregister.nl:443/geonetwork/srv/dut/csw?service=CSW\u0026request=GetRecordById\u0026version=2.0.2\u0026outputSchema=http://www.isotc211.org/2005/gmd\u0026elementSetName=full\u0026id=1be28290-55fa-4486-b9d3-b9d147117863#MD_DataIdentification, https://www.nationaalgeoregister.nl:443/geonetwork/srv/dut/csw?service=CSW\u0026request=GetRecordById\u0026version=2.0.2\u0026outputSchema=http://www.isotc211.org/2005/gmd\u0026elementSetName=full\u0026id=7c24ea89-074e-4c4f-91e3-d38e813e9cb6#MD_DataIdentification, https://www.nationaalgeoregister.nl:443/geonetwork/srv/dut/csw?service=CSW\u0026request=GetRecordById\u0026version=2.0.2\u0026outputSchema=http://www.isotc211.org/2005/gmd\u0026elementSetName=full\u0026id=7f5d7945-8fa8-4d36-be4c-2fdb3c7d613b#MD_DataIdentification, https://www.nationaalgeoregister.nl:443/geonetwork/srv/dut/csw?service=CSW\u0026request=GetRecordById\u0026version=2.0.2\u0026outputSchema=http://www.isotc211.org/2005/gmd\u0026elementSetName=full\u0026id=9ed6b8ed-254a-4745-a09a-3b57137d1b69#MD_DataIdentification]",
+    "organisation": "Beheer PDOK",
+    "serviceIdentifierCode": "d7a395a2-8673-4794-a5a6-fed6492cd580",
+    "servicetype": "view",
+    "title": "Luchtfoto Beeldmateriaal / PDOK 25 cm Infrarood WMS",
+    "url": "https://geodata.nationaalgeoregister.nl/luchtfoto/infrarood/wms?request=GetCapabilities"
+}

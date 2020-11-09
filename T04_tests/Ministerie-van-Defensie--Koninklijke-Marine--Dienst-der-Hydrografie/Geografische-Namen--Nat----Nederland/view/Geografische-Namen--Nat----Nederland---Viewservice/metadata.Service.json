@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[data@hydro.nl, hydro.servicedesk@mindef.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "https://www.nationaalgeoregister.nl:443/geonetwork/srv/dut/csw?service=CSW\u0026request=GetRecordById\u0026version=2.0.2\u0026outputSchema=http://www.isotc211.org/2005/gmd\u0026elementSetName=full\u0026id=34e95842-4e4e-46de-9198-79e8cd4d30dc#MD_DataIdentification",
+    "organisation": "Ministerie van Defensie, Koninklijke Marine, Dienst der Hydrografie",
+    "serviceIdentifierCode": "ca71572f-a498-4ca6-aa60-d4c4c4d59e2e",
+    "servicetype": "view",
+    "title": "Geografische Namen (Nat) - Nederland - Viewservice",
+    "url": "https://inspire.caris.nl/geoserver/gnwms/wms?request=GetCapabilities"
+}

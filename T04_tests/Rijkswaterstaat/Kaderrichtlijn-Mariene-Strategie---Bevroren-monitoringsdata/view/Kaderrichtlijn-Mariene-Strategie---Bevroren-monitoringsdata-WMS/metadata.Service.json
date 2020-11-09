@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[servicedesk-data@rijkswaterstaat.nl, servicedesk-data@rijkswaterstaat.nl, servicedesk-data@rijkswaterstaat.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "http://www.nationaalgeoregister.nl/geonetwork/srv/dut/inspire?SERVICE=CSW\u0026VERSION=2.0.2\u0026REQUEST=GetRecordById\u0026ID=tbjk534p-wubf-crbp-cj25-d4161160gfim\u0026OUTPUTSCHEMA=http://www.isotc211.org/2005/gmd\u0026ELEMENTSETNAME=full#MD_DataIdentification",
+    "organisation": "Rijkswaterstaat",
+    "serviceIdentifierCode": "tbjk534p-wubf-crbp-cj25-d41611m0gfim",
+    "servicetype": "view",
+    "title": "Kaderrichtlijn Mariene Strategie - Bevroren monitoringsdata WMS",
+    "url": "https://marineprojects.openearth.nl/geoserver/ihm_krm/wms?service=WMS\u0026version=1.3.0\u0026request=GetCapabilities"
+}

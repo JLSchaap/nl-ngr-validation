@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[servicedesk-data@rijkswaterstaat.nl, servicedesk-data@rijkswaterstaat.nl, servicedesk-data@rijkswaterstaat.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "https://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?SERVICE=CSW\u0026VERSION=2.0.2\u0026REQUEST=GetRecordById\u0026ID=cf69ec50-9849-4afd-853c-ee56211d336d\u0026OUTPUTSCHEMA=http://www.isotc211.org/2005/gmd\u0026ELEMENTSETNAME=full#MD_DataIdentification",
+    "organisation": "Rijkswaterstaat",
+    "serviceIdentifierCode": "cf69ec50-9849-4afd-853c-ee5621md336d",
+    "servicetype": "view",
+    "title": "Waterstanden en afvoeren actueel - Rijkswaterstaat - WMS",
+    "url": "https://waterwebservices.rijkswaterstaat.nl/services/distributielaagWFS/distributielaag_dbo?service=WMS\u0026version=1.0.0\u0026request=GetCapabilities"
+}

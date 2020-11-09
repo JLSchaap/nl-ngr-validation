@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[beheerPDOK@kadaster.nl, beheerPDOK@kadaster.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "http://nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW\u0026version=2.0.2\u0026request=GetRecordById\u0026outputschema=http://www.isotc211.org/2005/gmd\u0026elementsetname=full\u0026id=5951efa2-1ff3-4763-a966-a2f5497679ee#MD_DataIdentification",
+    "organisation": "Beheer PDOK",
+    "serviceIdentifierCode": "ec73f245-66ce-4144-ac27-5966c80a4b3a",
+    "servicetype": "download",
+    "title": "Vervoersnetwerken - Waterwegen (INSPIRE geharmoniseerd) WFS",
+    "url": "https://geodata.nationaalgeoregister.nl/inspire/tn-w/wfs?request=GetCapabilities"
+}

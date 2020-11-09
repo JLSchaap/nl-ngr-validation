@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[beheerPDOK@kadaster.nl, beheerPDOK@kadaster.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 1.2",
+    "operatesOn": "http://nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW\u0026version=2.0.2\u0026request=GetRecordById\u0026outputschema=http://www.isotc211.org/2005/gmd\u0026elementsetname=full\u0026id=eu-cb527d-f6db-4835-b0cd-deb245241254",
+    "organisation": "Beheer PDOK",
+    "serviceIdentifierCode": "32655f4b-551b-42c8-b071-95738d0f5daa",
+    "servicetype": "download",
+    "title": "Inspire nl vervoersnetwerken - gemeenschappelijk elementen WFS",
+    "url": "https://geodata.nationaalgeoregister.nl/nl/rws/tn-cte/wfs?"
+}

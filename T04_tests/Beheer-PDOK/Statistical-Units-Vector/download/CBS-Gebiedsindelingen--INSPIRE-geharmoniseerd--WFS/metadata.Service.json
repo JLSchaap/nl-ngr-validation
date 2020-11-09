@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[beheerPDOK@kadaster.nl, beheerPDOK@kadaster.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "https://www.nationaalgeoregister.nl:443/geonetwork/srv/dut/csw?service=CSW\u0026request=GetRecordById\u0026version=2.0.2\u0026outputSchema=http://www.isotc211.org/2005/gmd\u0026elementSetName=full\u0026id=10d1153e-778f-4995-9b6c-7c69b196cccb#MD_DataIdentification",
+    "organisation": "Beheer PDOK",
+    "serviceIdentifierCode": "e08079df-6c19-486e-916e-5c9948cfafea",
+    "servicetype": "download",
+    "title": "CBS Gebiedsindelingen (INSPIRE geharmoniseerd) WFS",
+    "url": "https://geodata.nationaalgeoregister.nl/inspire/su-vector/wfs?\u0026request=GetCapabilities\u0026service=WFS"
+}
