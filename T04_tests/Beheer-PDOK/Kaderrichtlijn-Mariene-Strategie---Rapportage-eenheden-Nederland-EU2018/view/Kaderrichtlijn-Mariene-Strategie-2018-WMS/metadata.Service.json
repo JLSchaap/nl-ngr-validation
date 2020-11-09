@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[beheerPDOK@kadaster.nl, beheerPDOK@kadaster.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "[https://www.nationaalgeoregister.nl:443/geonetwork/srv/dut/csw?service=CSW\u0026request=GetRecordById\u0026version=2.0.2\u0026outputSchema=http://www.isotc211.org/2005/gmd\u0026elementSetName=full\u0026id=krm-a905-9d8e-4758-83fa-28b057f185e4#MD_DataIdentification, https://www.nationaalgeoregister.nl:443/geonetwork/srv/dut/csw?service=CSW\u0026request=GetRecordById\u0026version=2.0.2\u0026outputSchema=http://www.isotc211.org/2005/gmd\u0026elementSetName=full\u0026id=krm-a905-9d8e-4758-83fa-28b057f185e3#MD_DataIdentification]",
+    "organisation": "Beheer PDOK",
+    "serviceIdentifierCode": "4041f923-6b77-4816-bf46-437e85416c31",
+    "servicetype": "view",
+    "title": "Kaderrichtlijn Mariene Strategie 2018 WMS",
+    "url": "https://geodata.nationaalgeoregister.nl/rws/kaderrichtlijnmarienestrategie2018/wms/v1_0?SERVICE=WMS\u0026REQUEST=GetCapabilities"
+}

@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[beheerPDOK@kadaster.nl, beheerPDOK@kadaster.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "https://nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW\u0026version=2.0.2\u0026request=GetRecordById\u0026outputschema=http://www.isotc211.org/2005/gmd\u0026elementsetname=full\u0026id=247a1d15-0a67-40ce-85be-1403c08f15a8#MD_DataIdentification",
+    "organisation": "Beheer PDOK",
+    "serviceIdentifierCode": "89b35a6c-c099-456b-8eaf-2b83c7a35c74",
+    "servicetype": "view",
+    "title": "Beschermde Gebieden Nationale Parken (INSPIRE geharmoniseerd) WMS",
+    "url": "https://geodata.nationaalgeoregister.nl/inspire/ps-rvo-np/wms?request=GetCapabilities"
+}

@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[info@dinoloket.nl, info@dinoloket.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?SERVICE=CSW\u0026version=2.0.2\u0026REQUEST=GetRecordById\u0026ID=f99e915a-75e5-4c36-97f2-61eff692d85b\u0026OUTPUTSCHEMA=http://www.isotc211.org/2005/gmd\u0026ELEMENTSETNAME=full#MD_DataIdentification",
+    "organisation": "TNO Geologische Dienst Nederland",
+    "serviceIdentifierCode": "d796fd8d-b1e0-465c-a55b-1e9fe885fc3d",
+    "servicetype": "view",
+    "title": "Grondwateronderzoek onder INSPIRE, viewservice",
+    "url": "https://www.broinspireservices.nl/wms/osgegmw-a-v1.0?request=GetCapabilities"
+}

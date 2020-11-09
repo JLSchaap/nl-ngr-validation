@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[beheerPDOK@kadaster.nl, beheerPDOK@kadaster.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.1.0",
+    "operatesOn": "http://nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW\u0026version=2.0.2\u0026request=GetRecordById\u0026outputschema=http://www.isotc211.org/2005/gmd\u0026elementsetname=full\u0026id=17716ed7-ce0d-4bfd-8868-a398e5578a36#MD_DataIdentification",
+    "organisation": "Beheer PDOK",
+    "serviceIdentifierCode": "6c62e0a5-c215-4e47-94b0-a239e264417d",
+    "servicetype": "view",
+    "title": "Ruimtelijke plannen WMS",
+    "url": "https://geodata.nationaalgeoregister.nl/plu/wms?request=GetCapabilities"
+}

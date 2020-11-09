@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[beheerpdok@kadaster.nl, beheerpdok@kadaster.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "https://nationaalgeoregister.nl/geonetwork/srv/dut/csw?SERVICE=CSW\u0026version=2.0.2\u0026REQUEST=GetRecordById\u0026ID=a29917b9-3426-4041-a11b-69bcb2256904\u0026OUTPUTSCHEMA=http://www.isotc211.org/2005/gmd\u0026ELEMENTSETNAME=full#MD_DataIdentification",
+    "organisation": "Beheer PDOK",
+    "serviceIdentifierCode": "97cf6a64-9cfc-4ce6-9741-2db44fd27fca",
+    "servicetype": "view",
+    "title": "Kadastrale Kaart v4 WMS",
+    "url": "https://geodata.nationaalgeoregister.nl/kadastralekaart/wms/v4_0?request=GetCapabilities\u0026service=WMS"
+}

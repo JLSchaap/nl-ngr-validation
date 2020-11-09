@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[beheerpdok@kadaster.nl, beheerpdok@kadaster.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "https://www.nationaalgeoregister.nl/geonetwork/srv/dut/csw?SERVICE=CSW\u0026version=2.0.2\u0026REQUEST=GetRecordById\u0026ID=12bb57cd-73e0-41ba-a1e9-6d986b9109d3\u0026OUTPUTSCHEMA=http://www.isotc211.org/2005/gmd\u0026ELEMENTSETNAME=full#MD_DataIdentification",
+    "organisation": "Beheer PDOK",
+    "serviceIdentifierCode": "54122631-d343-40be-9c28-e44626b37a0e",
+    "servicetype": "download",
+    "title": "Human Health Statistics Netherlands (INSPIRE geharmoniseerd) ATOM",
+    "url": "https://service.pdok.nl/cbs/hh/atom/v1_0/index.xml"
+}

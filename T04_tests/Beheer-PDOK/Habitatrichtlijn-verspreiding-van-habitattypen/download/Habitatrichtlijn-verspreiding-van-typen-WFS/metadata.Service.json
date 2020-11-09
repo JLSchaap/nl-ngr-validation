@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[beheerPDOK@kadaster.nl, beheerPDOK@kadaster.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "http://nationaalgeoregister.nl/geonetwork/srv/en/csw?service=CSW\u0026version=2.0.2\u0026request=GetRecordById\u0026outputschema=http://www.isotc211.org/2005/gmd\u0026elementsetname=full\u0026id=977e0e94-7aa9-4784-b2da-eaec44adb61b#MD_DataIdentification",
+    "organisation": "Beheer PDOK",
+    "serviceIdentifierCode": "af4841b5-ce83-4edb-af41-429a21140316",
+    "servicetype": "download",
+    "title": "Habitatrichtlijn verspreiding van typen WFS",
+    "url": "https://geodata.nationaalgeoregister.nl/habitatrichtlijnverspreidingtypen/wfs?request=GetCapabilities"
+}

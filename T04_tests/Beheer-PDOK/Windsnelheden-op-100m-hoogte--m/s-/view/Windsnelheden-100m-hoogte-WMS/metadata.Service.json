@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[beheerPDOK@kadaster.nl, beheerPDOK@kadaster.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "http://nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW\u0026version=2.0.2\u0026request=GetRecordById\u0026outputschema=http://www.isotc211.org/2005/gmd\u0026elementsetname=full\u0026id=d845cef6-0e23-4212-a951-b69763e39ef0#MD_DataIdentification",
+    "organisation": "Beheer PDOK",
+    "serviceIdentifierCode": "d981070b-888c-42d5-85ff-1e383f3d7fce",
+    "servicetype": "view",
+    "title": "Windsnelheden 100m hoogte WMS",
+    "url": "https://geodata.nationaalgeoregister.nl/windkaart/wms?request=GetCapabilities"
+}

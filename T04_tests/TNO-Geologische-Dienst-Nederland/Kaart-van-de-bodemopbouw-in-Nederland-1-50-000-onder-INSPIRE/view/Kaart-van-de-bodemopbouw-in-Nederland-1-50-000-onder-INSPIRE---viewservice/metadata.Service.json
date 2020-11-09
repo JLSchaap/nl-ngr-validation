@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[info@dinoloket.nl, geodesk.cgi@wur.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?SERVICE=CSW\u0026version=2.0.2\u0026REQUEST=GetRecordById\u0026ID=a7fb2234-f7b4-4a03-b282-f10947f42fb1\u0026OUTPUTSCHEMA=http://www.isotc211.org/2005/gmd\u0026ELEMENTSETNAME=full#MD_DataIdentification",
+    "organisation": "TNO Geologische Dienst Nederland",
+    "serviceIdentifierCode": "7b4a0b26-5885-45cd-a99d-27887cff68e5",
+    "servicetype": "view",
+    "title": "Kaart van de bodemopbouw in Nederland 1:50.000 onder INSPIRE , viewservice",
+    "url": "https://www.broinspireservices.nl/wms/ossosgm-a-v1.0?request=GetCapabilities"
+}

@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[info@dinoloket.nl, info@dinoloket.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?SERVICE=CSW\u0026version=2.0.2\u0026REQUEST=GetRecordById\u0026ID=6c1cf452-8c62-4046-99ab-640a5e184f9c\u0026OUTPUTSCHEMA=http://www.isotc211.org/2005/gmd\u0026ELEMENTSETNAME=full#MD_DataIdentification",
+    "organisation": "TNO Geologische Dienst Nederland",
+    "serviceIdentifierCode": "1a8d5470-8c5e-477a-ab6b-4893b6d21ab6",
+    "servicetype": "view",
+    "title": "Geologisch booronderzoek onder INSPIRE, viewservice",
+    "url": "https://www.broinspireservices.nl/wms/osgebor-a-v1.0?request=GetCapabilities"
+}

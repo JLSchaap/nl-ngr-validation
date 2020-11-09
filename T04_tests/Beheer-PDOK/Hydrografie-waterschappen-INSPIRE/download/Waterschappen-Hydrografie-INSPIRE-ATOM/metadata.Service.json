@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[beheerpdok@kadaster.nl, beheerpdok@kadaster.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "https://www.nationaalgeoregister.nl:443/geonetwork/srv/dut/csw?service=CSW\u0026request=GetRecordById\u0026version=2.0.2\u0026outputSchema=http://www.isotc211.org/2005/gmd\u0026elementSetName=full\u0026id=07575774-57a1-4419-bab4-6c88fdeb02b2#MD_DataIdentification",
+    "organisation": "Beheer PDOK",
+    "serviceIdentifierCode": "15c3c30f-0db2-4b3b-80f6-b990c8fc8225",
+    "servicetype": "download",
+    "title": "Waterschappen Hydrografie INSPIRE ATOM",
+    "url": "https://service.pdok.nl/hwh/hydrografie/atom/v1_0/index.xml"
+}

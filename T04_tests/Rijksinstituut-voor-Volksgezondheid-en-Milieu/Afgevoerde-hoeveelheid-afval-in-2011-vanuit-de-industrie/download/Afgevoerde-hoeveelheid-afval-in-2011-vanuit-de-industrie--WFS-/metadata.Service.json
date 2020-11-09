@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[emissieregistratie@rivm.nl, emissieregistratie@rivm.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "http://www.nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW\u0026request=GetRecordById\u0026version=2.0.2\u0026outputSchema=http://www.isotc211.org/2005/gmd\u0026elementSetName=full\u0026id=50a2c5e6-c8e7-425d-854e-26f578196bc9#MD_DataIdentification",
+    "organisation": "Rijksinstituut voor Volksgezondheid en Milieu",
+    "serviceIdentifierCode": "46873d16-6835-48c4-b47f-134ab0cb31fa",
+    "servicetype": "download",
+    "title": "Afgevoerde hoeveelheid afval in 2011 vanuit de industrie (WFS)",
+    "url": "https://inspire.rivm.nl/geoserver/wfs?request=GetCapabilities"
+}

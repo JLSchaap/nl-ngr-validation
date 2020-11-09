@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[beheerpdok@kadaster.nl, beheerpdok@kadaster.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "https://www.nationaalgeoregister.nl:443/geonetwork/srv/dut/csw?service=CSW\u0026request=GetRecordById\u0026version=2.0.2\u0026outputSchema=http://www.isotc211.org/2005/gmd\u0026elementSetName=full\u0026id=07575774-57a1-4419-bab4-6c88fdeb02b2#MD_DataIdentification",
+    "organisation": "Beheer PDOK",
+    "serviceIdentifierCode": "67bcc21d-beda-449d-975c-00a4fa80f2b7",
+    "servicetype": "view",
+    "title": "Waterschappen Hydrografie INSPIRE WMS",
+    "url": "https://service.pdok.nl/hwh/hydrografie/wms/v1_0?request=GetCapabilities\u0026service=WMS"
+}

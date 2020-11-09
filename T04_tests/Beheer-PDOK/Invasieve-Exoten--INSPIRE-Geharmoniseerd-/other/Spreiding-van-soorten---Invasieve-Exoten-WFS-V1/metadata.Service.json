@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[beheerpdok@kadaster.nl, beheerpdok@kadaster.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "https://nationaalgeoregister.nl/geonetwork/srv/dut/csw?SERVICE=CSW\u0026version=2.0.2\u0026REQUEST=GetRecordById\u0026ID=3703b249-a0eb-484e-ba7a-10e31a55bcec\u0026OUTPUTSCHEMA=http://www.isotc211.org/2005/gmd\u0026ELEMENTSETNAME=full#MD_DataIdentification",
+    "organisation": "Beheer PDOK",
+    "serviceIdentifierCode": "93a9571d-1754-47ee-a8f9-92633abfab3a",
+    "servicetype": "other",
+    "title": "Spreiding van soorten - Invasieve Exoten WFS V1",
+    "url": "https://geodata.nationaalgeoregister.nl/rvo/invasieve-exoten/wfs/v1_0?request=GetCapabilities\u0026service=WFS"
+}

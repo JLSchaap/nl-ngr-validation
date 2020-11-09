@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[info@dinoloket.nl, info@dinoloket.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.1.0",
+    "operatesOn": "http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?SERVICE=CSW\u0026version=2.0.2\u0026REQUEST=GetRecordById\u0026ID=b61a773c-ecad-4e60-93e9-0a4caac0b52f\u0026OUTPUTSCHEMA=http://www.isotc211.org/2005/gmd\u0026ELEMENTSETNAME=full#MD_DataIdentification",
+    "organisation": "TNO Geologische Dienst Nederland",
+    "serviceIdentifierCode": "82fa284e-8218-40e4-a593-c2f8a832c3d5",
+    "servicetype": "view",
+    "title": "Olie- en gasvelden onder INSPIRE, viewservice",
+    "url": "https://www.broinspireservices.nl/wms/oserhca-a-v1.0?request=GetCapabilities"
+}

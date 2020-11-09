@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[beheerpdok@kadaster.nl, beheerpdok@kadaster.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "https://www.nationaalgeoregister.nl:443/geonetwork/srv/dut/csw?service=CSW\u0026request=GetRecordById\u0026version=2.0.2\u0026outputSchema=http://www.isotc211.org/2005/gmd\u0026elementSetName=full\u0026id=ed960299-a147-4c1a-bc57-41ff83a2264f#MD_DataIdentification",
+    "organisation": "Beheer PDOK",
+    "serviceIdentifierCode": "ac3a9efe-2154-4a4c-aae3-ea269044945d",
+    "servicetype": "view",
+    "title": "BRO - Bodemkaart WMS",
+    "url": "https://geodata.nationaalgeoregister.nl/bzk/bro-bodemkaart/wms/v1_0?request=GetCapabilities\u0026service=wms"
+}
