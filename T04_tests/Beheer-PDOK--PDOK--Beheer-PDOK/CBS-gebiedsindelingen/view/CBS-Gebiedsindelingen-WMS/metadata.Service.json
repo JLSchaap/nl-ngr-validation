@@ -1,0 +1,11 @@
+{
+    "class": "metadata.Service",
+    "electronicMailAddress": "[beheerPDOK@kadaster.nl, beheerPDOK@kadaster.nl]",
+    "metadataStandardVersion": "Nederlands metadata profiel op ISO 19119 voor services 2.0",
+    "operatesOn": "http://nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW\u0026version=2.0.2\u0026request=GetRecordById\u0026outputschema=http://www.isotc211.org/2005/gmd\u0026elementsetname=full\u0026id=effe1ab0-073d-437c-af13-df5c5e07d6cd#MD_DataIdentification",
+    "organisation": "Beheer PDOK",
+    "serviceIdentifierCode": "488c1e6d-363e-4476-b2ff-17756ac9b35f",
+    "servicetype": "view",
+    "title": "CBS Gebiedsindelingen WMS",
+    "url": "https://geodata.nationaalgeoregister.nl/cbsgebiedsindelingen/wms?request=GetCapabilities"
+}
