@@ -78,8 +78,7 @@ class TestAll {
         File outfile3 = DatasetList.INSTANCE.getInstance()
                 .writecsv(db.outputdir() + "/" + step + "/datasetsmetservices.csv");
         System.out.println(outfile3.getAbsolutePath());
-        File outfile4 = DatasetList.INSTANCE.getInstance()
-                .writeerrorcsv(db.outputdir() + "/" + step + "/datasetsmetserviceserror.csv");
+        File outfile4 = DatasetList.INSTANCE.getInstance().writeResultsCSV(db.outputdir() + "/" + step + "/datasetsmetserviceserror.csv");
         System.out.println(outfile4.getAbsolutePath());
 
         Harvest harvest = new Harvest(db.harvestfile());
@@ -107,7 +106,7 @@ class TestAll {
         templatepath.builder(temp, ".feature");
         File outdir = new File(            db.outputdir().getAbsolutePath() + "/" + step );
         System.out.println("outdir:"+outdir.getAbsolutePath());
-        DatasetList.INSTANCE.getInstance().createdirstructure(outdir, templatepath);
+        DatasetList.INSTANCE.getInstance().createdirstructure(outdir, templatepath,true);
         assertTrue(outdir.exists());
   
     }
