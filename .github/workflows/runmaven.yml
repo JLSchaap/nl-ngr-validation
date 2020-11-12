@@ -34,6 +34,7 @@ jobs:
     
       - name: remove large unused xml files   
         run: rm `find ./target/surefire-reports  -name '*.xml' ` -rf 
+        if: always()
       - name: Deploy 2
         uses: peaceiris/actions-gh-pages@v3
         if: always()
