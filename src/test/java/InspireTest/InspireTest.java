@@ -91,7 +91,7 @@ class TestAll {
         assertTrue(outfile5.exists());
         assertTrue(outfile6.exists());
     }
-
+/*
     @Test
     @Order(4)
     void T04Createtests() throws IOException {
@@ -110,7 +110,7 @@ class TestAll {
         assertTrue(outdir.exists());
   
     }
-
+*/
     private void loadtestdata() throws FileNotFoundException {
         File file = new File(db.outputpath("T02_Datasets") + "/datasets.csv");
         System.out.println(file.getAbsolutePath());
@@ -120,15 +120,6 @@ class TestAll {
         DatasetList.INSTANCE.getInstance().loadService(servicefile.getAbsolutePath());
     }
 
-    /*
-     * @Test
-     *
-     * @Order(3) void T03() throws IOException { String step = "T03_Extra";
-     * db.cleanStepOutputDir(step); runtestdir(step);
-     *
-     * }
-     *
-     */
 
     void runtestdir(String step) throws IOException {
         File stepdir = new File(db.startdir().getAbsolutePath() + "/" + step);
