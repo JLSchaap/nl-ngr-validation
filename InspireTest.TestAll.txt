@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: InspireTest.TestAll
--------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 110.136 s <<< FAILURE! - in InspireTest.TestAll
-InspireTest.TestAll.T04Createtests  Time elapsed: 0.246 s  <<< ERROR!
-filestructure.IncorrectTemplateDirectory: Not found template directory:[/home/runner/work/nl-ngr-validation/nl-ngr-validation/src/test/java/InspireTest/karatetemplate/view/wms]
-	at InspireTest.TestAll.T04Createtests(InspireTest.java:109)
-
