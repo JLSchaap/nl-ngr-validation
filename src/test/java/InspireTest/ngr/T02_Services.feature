@@ -41,8 +41,15 @@ Feature:  get details
     * def connectrawUrl = karate.get ('/GetRecordByIdResponse/MD_Metadata/distributionInfo/MD_Distribution/transferOptions/MD_DigitalTransferOptions/onLine/CI_OnlineResource/linkage/URL')
     * def connectUrl = db.getCorrectedUrl(connectrawUrl)
     * print connectUrl
-    * def protocol = karate.get  ( '/GetRecordByIdResponse/MD_Metadata/distributionInfo/MD_Distribution/transferOptions/MD_DigitalTransferOptions/onLine/CI_OnlineResource/protocol/CharacterString')
 
+
+  
+    * def protocol1 = karate.get  ( '/GetRecordByIdResponse/MD_Metadata/distributionInfo/MD_Distribution/transferOptions/MD_DigitalTransferOptions/onLine/CI_OnlineResource/protocol/Anchor')
+    * print protocol1 
+    * def protocol2 = karate.get  ( '/GetRecordByIdResponse/MD_Metadata/distributionInfo/MD_Distribution/transferOptions/MD_DigitalTransferOptions/onLine/CI_OnlineResource/protocol/CharacterString')
+    * print protocol2
+    * def protocol = protocol1 ? protocol1 : protocol2                                               
+    * print protocol
     * def operateson = get response //MD_Metadata/identificationInfo/SV_ServiceIdentification/operatesOn/@href
     * print organisationpath
     * print operateson
@@ -59,8 +66,11 @@ Feature:  get details
 
     # csv def/datasetlist.csv has the following field:
     #   @data=test
-    #Examples:
+   # Examples:
     #  | datasetIdentifierCode                |
     #  | f0c6fbfe-a172-4223-8af3-58f6a28c881d |
     #  | ff9315c8-f25a-4d01-9245-5cf058314ebf |
     #  | b196f948-5d87-4eb4-9854-a93841c3877f |
+    #  | 275b64ab-34c2-41f8-8904-97812c7f716e | 
+    #  | e222648d-d19e-4a99-a67d-2af1c9aabd75 | 
+    #  | 3373be8c-8539-4763-bc22-eba23ac1898f | 
