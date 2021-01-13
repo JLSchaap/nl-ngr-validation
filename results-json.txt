@@ -1,0 +1,1 @@
+{"features":1,"ignored":0,"efficiency":0.17998930277777778,"failures":{"src.test.java.InspireTest.ngr.T02_Datasets":"[1:22] -unknown-:13 - could not find or read file: \/home\/runner\/work\/nl-ngr-validation\/nl-ngr-validation\/output\/T01_ids\/idsDataset.json"},"totalTime":129.592298,"threads":4,"scenarios":1,"failed":1,"passed":0,"version":"0.9.6","elapsedTime":180.0}
