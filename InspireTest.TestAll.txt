@@ -1,0 +1,39 @@
+-------------------------------------------------------------------------------
+Test set: InspireTest.TestAll
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 1, Skipped: 0, Time elapsed: 23.228 s <<< FAILURE! - in InspireTest.TestAll
+InspireTest.TestAll.T01_ids  Time elapsed: 21.986 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+failed features:
+src.test.java.InspireTest.ngr.T01_Ids: T01_Ids.feature:26 - status code was: 500, expected: 200, response time: 20794, url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?service=CSW&version=2.0.2&request=GetRecords&propertyName=identifier&typeNames=csw%3ARecord&elementsetname=brief&resultType=results&startposition=1&maxRecords=1000, response: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>500 Internal Server Error</title>
+</head><body>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error or
+misconfiguration and was unable to complete
+your request.</p>
+<p>Please contact the server administrator at 
+ support@geocat.net to inform them of the time this error occurred,
+ and the actions you performed just before this error.</p>
+<p>More information about this error may be available
+in the server error log.</p>
+</body></html>
+
+ ==> expected: <0> but was: <1>
+	at InspireTest.TestAll.runtest(InspireTest.java:140)
+	at InspireTest.TestAll.T01_ids(InspireTest.java:54)
+
+InspireTest.TestAll.T02  Time elapsed: 0.212 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+failed features:
+src.test.java.InspireTest.ngr.T02_Datasets: [1:22] -unknown-:13 - could not find or read file: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/T01_ids/idsDataset.json
+ ==> expected: <0> but was: <1>
+	at InspireTest.TestAll.runtest(InspireTest.java:140)
+	at InspireTest.TestAll.T02(InspireTest.java:63)
+
+InspireTest.TestAll.T03loadAndEvaluateh  Time elapsed: 0.009 s  <<< ERROR!
+java.io.FileNotFoundException: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/T02_Datasets/datasets.csv (No such file or directory)
+	at InspireTest.TestAll.loadtestdata(InspireTest.java:117)
+	at InspireTest.TestAll.T03loadAndEvaluateh(InspireTest.java:76)
+
