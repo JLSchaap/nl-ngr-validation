@@ -1,0 +1,82 @@
+# Created at 2021-01-22T05:38:11.857
+Thread dump for process (2713@fv-az50-748) after 30 seconds shutdown timeout:
+"main" 
+   java.lang.Thread.State: WAITING
+        at java.base@14.0.2/java.lang.Object.wait(Native Method)
+        at java.base@14.0.2/java.lang.Thread.join(Thread.java:1303)
+        at java.base@14.0.2/java.lang.Thread.join(Thread.java:1371)
+        at java.base@14.0.2/java.lang.ApplicationShutdownHooks.runHooks(ApplicationShutdownHooks.java:107)
+        at java.base@14.0.2/java.lang.ApplicationShutdownHooks$1.run(ApplicationShutdownHooks.java:46)
+        at java.base@14.0.2/java.lang.Shutdown.runHooks(Shutdown.java:130)
+        at java.base@14.0.2/java.lang.Shutdown.exit(Shutdown.java:174)
+        at java.base@14.0.2/java.lang.Runtime.exit(Runtime.java:114)
+        at java.base@14.0.2/java.lang.System.exit(System.java:1783)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.acknowledgedExit(ForkedBooter.java:422)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:186)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+
+"Reference Handler" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@14.0.2/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+        at java.base@14.0.2/java.lang.ref.Reference.processPendingReferences(Reference.java:241)
+        at java.base@14.0.2/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:213)
+
+"Finalizer" 
+   java.lang.Thread.State: WAITING
+        at java.base@14.0.2/java.lang.Object.wait(Native Method)
+        at java.base@14.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+        at java.base@14.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+        at java.base@14.0.2/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:170)
+
+"Signal Dispatcher" 
+   java.lang.Thread.State: RUNNABLE
+
+"Notification Thread" 
+   java.lang.Thread.State: RUNNABLE
+
+"Common-Cleaner" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@14.0.2/java.lang.Object.wait(Native Method)
+        at java.base@14.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+        at java.base@14.0.2/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:148)
+        at java.base@14.0.2/java.lang.Thread.run(Thread.java:832)
+        at java.base@14.0.2/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:134)
+
+"surefire-forkedjvm-command-thread" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@14.0.2/java.io.FileInputStream.readBytes(Native Method)
+        at java.base@14.0.2/java.io.FileInputStream.read(FileInputStream.java:272)
+        at java.base@14.0.2/java.io.BufferedInputStream.read1(BufferedInputStream.java:282)
+        at java.base@14.0.2/java.io.BufferedInputStream.read(BufferedInputStream.java:343)
+        at java.base@14.0.2/java.io.BufferedInputStream.fill(BufferedInputStream.java:244)
+        at java.base@14.0.2/java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+        at java.base@14.0.2/java.io.BufferedInputStream.read(BufferedInputStream.java:343)
+        at app//org.apache.maven.surefire.api.util.internal.Channels$3.readImpl(Channels.java:214)
+        at app//org.apache.maven.surefire.api.util.internal.AbstractNoninterruptibleReadableChannel.read(AbstractNoninterruptibleReadableChannel.java:54)
+        at app//org.apache.maven.surefire.booter.spi.LegacyMasterProcessChannelDecoder.decode(LegacyMasterProcessChannelDecoder.java:80)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:343)
+        at java.base@14.0.2/java.lang.Thread.run(Thread.java:832)
+
+"surefire-forkedjvm-last-ditch-daemon-shutdown-thread-30s" 
+   java.lang.Thread.State: RUNNABLE
+        at java.management@14.0.2/sun.management.ThreadImpl.getThreadInfo1(Native Method)
+        at java.management@14.0.2/sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:197)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.generateThreadDump(ForkedBooter.java:649)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.access$400(ForkedBooter.java:82)
+        at app//org.apache.maven.surefire.booter.ForkedBooter$7.run(ForkedBooter.java:465)
+        at java.base@14.0.2/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+        at java.base@14.0.2/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+        at java.base@14.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+        at java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        at java.base@14.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+        at java.base@14.0.2/java.lang.Thread.run(Thread.java:832)
+
+"pool-12-thread-1" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@14.0.2/java.util.concurrent.CopyOnWriteArrayList.iterator(CopyOnWriteArrayList.java:1024)
+        at app//org.apache.logging.log4j.core.util.DefaultShutdownCallbackRegistry.run(DefaultShutdownCallbackRegistry.java:72)
+        at java.base@14.0.2/java.lang.Thread.run(Thread.java:832)
+
+
+
