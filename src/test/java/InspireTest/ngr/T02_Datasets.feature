@@ -33,7 +33,9 @@ Feature: get details
     * def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue
     * def title =  get response //citation/CI_Citation/title/CharacterString
     * def email = get response //electronicMailAddress/CharacterString
-    * def organisationpath = karate.get('//MD_Metadata/contact/CI_ResponsibleParty/organisationName/CharacterString')
+    * def organisationpath1 = karate.get('//MD_Metadata/contact/CI_ResponsibleParty/organisationName/Anchor')
+    * def organisationpath2 = karate.get('//MD_Metadata/contact/CI_ResponsibleParty/organisationName/CharacterString')
+    * def organisationpath = organisationpath1 ? organisationpath1 : organisationpath2
     * def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString')
     * def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href')
     * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '"' , outputpath + separator + scopecode + 's.csv')
@@ -42,9 +44,9 @@ Feature: get details
     Examples:
       | list |
 # csv def/datasetlist.csv has the following field:
-#  Examples:
-#    | datasetIdentifierCode                |
-#    | fe2f9091-1962-4073-9e3b-3e4aeed488a5 |
-#    | f273941e-9c3b-43bc-b886-2d50d0bf9348 |
-#    | 19165027-a13a-4c19-9013-ec1fd191019d |
-#    | 4bb89277-6ebe-4e66-8929-cd275aa7fd81 |
+# Examples:
+#  | datasetIdentifierCode                |
+#  | fe2f9091-1962-4073-9e3b-3e4aeed488a5 |
+#  | f273941e-9c3b-43bc-b886-2d50d0bf9348 |
+#  | 19165027-a13a-4c19-9013-ec1fd191019d |
+#  | 19165027-a13a-4c19-9013-ec1fd191019d |
