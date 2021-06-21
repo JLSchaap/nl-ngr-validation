@@ -18,7 +18,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>14</java.version>
+        <java.version>11</java.version>
         <maven.compiler.version>3.6.0</maven.compiler.version>
         <karate.version>0.9.6</karate.version>
         <cucumber.reporting.version>3.13.0</cucumber.reporting.version>
@@ -95,8 +95,8 @@
                 <version>${maven.compiler.version}</version>
                 <configuration>
                     <encoding>UTF-8</encoding>
-                    <source>14</source>
-                    <target>14</target>
+                    <source>11</source>
+                    <target>11</target>
                     <compilerArgument>-Werror</compilerArgument>
                 </configuration>
             </plugin>
