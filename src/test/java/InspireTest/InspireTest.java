@@ -136,7 +136,7 @@ class TestAll {
         System.out.println("start " + step + " single paralell run :" + featurefile.getAbsolutePath());
         List<String> tags = List.of("~@ignore");
         List<String> paths = List.of(featurefile.getAbsolutePath());
-        final Results results = Runner.parallel(tags, paths, 4, db.reportdir().getAbsolutePath());
+        final Results results = Runner.parallel(tags, paths, 1, db.reportdir().getAbsolutePath());
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
 
     }
