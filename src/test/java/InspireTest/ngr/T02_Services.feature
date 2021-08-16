@@ -7,17 +7,19 @@ Feature:  get details
     * def db = new mystorage
     * def db = db.setfeature(karate.info.featureFileName)
     * def separator = java.lang.System.getProperty("file.separator")
+    * def idfile = "file:" + db.outputpath("T01_ids").getAbsolutePath() + separator + 'idsService.json'
+    * def list = karate.read(idfile)
     * def outputpath = db.outputpath()
     * eval db.ensureDirectory(outputpath)
     * eval db.writeheaderservice(outputpath + separator  + "services.csv" )
     * eval db.writeheaderservice(outputpath + separator  + "services-Beheer PDOK.csv" )
 
-    * def idfile = db.outputpath("T01_ids") + separator + 'idsService.json'
+ 
 
 
   Scenario Outline: <datasetIdentifierCode>
 
-    Given path 'geonetwork/srv/dut/inspire'
+    Given url 'http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire'
     And param service = 'CSW'
     And param version = '2.0.2'
     And param request = 'GetRecordById'
@@ -38,23 +40,23 @@ Feature:  get details
     * def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href')
     #  * def connectUrl = karate.get ( '//MD_DigitalTransferOptions/onLine[*]/CI_OnlineResource/linkage/URL')
 
-    * def connectrawUrl = karate.get ('/GetRecordByIdResponse/MD_Metadata/distributionInfo/MD_Distribution/transferOptions/MD_DigitalTransferOptions/onLine/CI_OnlineResource/linkage/URL')
-    * def connectUrl = db.getCorrectedUrl(connectrawUrl)
+    * string connectrawUrl = karate.get ('/GetRecordByIdResponse/MD_Metadata/distributionInfo/MD_Distribution/transferOptions/MD_DigitalTransferOptions/onLine/CI_OnlineResource/linkage/URL')
+    * string connectUrl = db.getCorrectedUrl(connectrawUrl)
     * print connectUrl
 
 
   
-    * def protocol1 = karate.get  ( '/GetRecordByIdResponse/MD_Metadata/distributionInfo/MD_Distribution/transferOptions/MD_DigitalTransferOptions/onLine/CI_OnlineResource/protocol/Anchor')
+    * string protocol1 = karate.get  ( '/GetRecordByIdResponse/MD_Metadata/distributionInfo/MD_Distribution/transferOptions/MD_DigitalTransferOptions/onLine/CI_OnlineResource/protocol/Anchor')
     * print protocol1 
-    * def protocol2 = karate.get  ( '/GetRecordByIdResponse/MD_Metadata/distributionInfo/MD_Distribution/transferOptions/MD_DigitalTransferOptions/onLine/CI_OnlineResource/protocol/CharacterString')
+    * string protocol2 = karate.get  ( '/GetRecordByIdResponse/MD_Metadata/distributionInfo/MD_Distribution/transferOptions/MD_DigitalTransferOptions/onLine/CI_OnlineResource/protocol/CharacterString')
     * print protocol2
-    * def protocol = protocol1 ? protocol1 : protocol2                                               
+    * string protocol = protocol1 ? protocol1 : protocol2                                               
     * print protocol
-    * def operateson = get response //MD_Metadata/identificationInfo/SV_ServiceIdentification/operatesOn/@href
+    * string operateson = get response //MD_Metadata/identificationInfo/SV_ServiceIdentification/operatesOn/@href
     * print organisationpath
     * print operateson
 
-    * def servicetype = get response //MD_Metadata/identificationInfo/SV_ServiceIdentification/serviceType/LocalName
+    * string servicetype = get response //MD_Metadata/identificationInfo/SV_ServiceIdentification/serviceType/LocalName
     #unique values
     #* def connectUrl = new java.util.HashSet(connectUrlAll)
     * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + connectUrl + '","' + protocol + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '","' + operateson + '","' + db.getdatasetuuid(operateson) + '","' + servicetype + '"', db.outputpath() + separator + scopecode + 's.csv')
@@ -62,7 +64,7 @@ Feature:  get details
     # * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + connectUrl + '","' + protocol + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , outputpath + scopecode + 's-'  + "-" + protocol + "-"  +  (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '.csv')
     #  @data=all
     Examples:
-     | karate.read( idfile) |
+     | list |
 
     # csv def/datasetlist.csv has the following field:
     #   @data=test

@@ -84,12 +84,14 @@ public class DataStorage {
     }
 
     public void cleandir(File dirpath) throws IOException {
+        ensureDirectory(outputdir());
         ensureDirectory(dirpath);
         System.out.println("Cleaning: " + dirpath);
         FileUtils.cleanDirectory(dirpath);
     }
 
     public void ensureDirectory(File dirPath) {
+        System.out.println("Ensure dir: " + dirPath.getAbsolutePath());
         if (!dirPath.exists()) {
             Boolean created = dirPath.mkdir();
             assert (created);

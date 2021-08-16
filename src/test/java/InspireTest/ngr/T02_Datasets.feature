@@ -9,8 +9,8 @@ Feature: get details
 
     * def separator = java.lang.System.getProperty("file.separator")
 
-    * def idfile = db.outputpath("T01_ids") + separator + 'idsDataset.json'
-    * def list =  karate.read( idfile)
+    * def idfile = "file:" + db.outputpath("T01_ids").getAbsolutePath() + separator + 'idsDataset.json'
+    * def list = karate.read(idfile)
     * def outputpath = db.outputpath()
     * print outputpath
     * eval db.ensureDirectory(outputpath)
@@ -20,7 +20,8 @@ Feature: get details
 
 
   Scenario Outline: <datasetIdentifierCode>
-    Given path 'geonetwork/srv/dut/inspire'
+     
+    Given url 'http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire'
     And param service = 'CSW'
     And param version = '2.0.2'
     And param request = 'GetRecordById'
@@ -30,14 +31,14 @@ Feature: get details
     When method get
     Then status 200
     And match /GetRecordByIdResponse/MD_Metadata/fileIdentifier/CharacterString == '<datasetIdentifierCode>'
-    * def scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue
-    * def title =  get response //citation/CI_Citation/title/CharacterString
-    * def email = get response //electronicMailAddress/CharacterString
-    * def organisationpath1 = karate.get('//MD_Metadata/contact/CI_ResponsibleParty/organisationName/Anchor')
-    * def organisationpath2 = karate.get('//MD_Metadata/contact/CI_ResponsibleParty/organisationName/CharacterString')
-    * def organisationpath = organisationpath1 ? organisationpath1 : organisationpath2
-    * def metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString')
-    * def MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href')
+    * string scopecode = get response //MD_Metadata/hierarchyLevel/MD_ScopeCode/@codeListValue
+    * string title =  get response //citation/CI_Citation/title/CharacterString
+    * string email = get response //electronicMailAddress/CharacterString
+    * string organisationpath1 = karate.get('//MD_Metadata/contact/CI_ResponsibleParty/organisationName/Anchor')
+    * string organisationpath2 = karate.get('//MD_Metadata/contact/CI_ResponsibleParty/organisationName/CharacterString')
+    * string organisationpath = organisationpath1 ? organisationpath1 : organisationpath2
+    * string metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString')
+    * string MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href')
     * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '"' , outputpath + separator + scopecode + 's.csv')
     * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '"' , outputpath + separator + scopecode + 's-'  + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '.csv')
 
