@@ -16,7 +16,7 @@ Feature: get details
     * print outputpath
     * eval db.ensureDirectory(outputpath)
     * def outfile = outputpath + separator  + "datasets.csv"
-    * eval db.writeheaderdataset(outfile)
+   
 
 
 
@@ -43,8 +43,10 @@ Feature: get details
     #* print organisationpath
     * string metadataStandardVersionpath = karate.get ('/GetRecordByIdResponse/MD_Metadata/metadataStandardVersion/CharacterString')
     * string MD_DataIdentificationCitationAnchor = karate.get ('/GetRecordByIdResponse/MD_Metadata/identificationInfo/MD_DataIdentification/citation/CI_Citation/identifier//@href')
-    * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '"' , outputpath + separator + scopecode + 's.csv')
-    * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + (MD_DataIdentificationCitationAnchor ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '"' , outputpath + separator + scopecode + 's-'  + (organisationpath !== "#notpresent"  ? organisationpath : 'no organisationName found in dataset record') + '.csv')
+    * string writestring = '"<datasetIdentifierCode>","'+ title + '","' + (MD_DataIdentificationCitationAnchor !== "#notpresent" ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath !== "#notpresent" ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath !== "#notpresent" ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '"'
+    * print writestring
+    * eval db.writeln( writestring, outputpath + separator +  'datasets.csv', true)
+    * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + (MD_DataIdentificationCitationAnchor !== "#notpresent" ? MD_DataIdentificationCitationAnchor : 'no MD_DataIdentificationCitationAnchor') + '","' + (organisationpath !== "#notpresent" ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath !== "#notpresent" ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '"' , outputpath + separator +  'datasets-'  + (organisationpath !== "#notpresent"  ? organisationpath : 'no organisationName found in dataset record') + '.csv', true)
 
     Examples:
       | list |

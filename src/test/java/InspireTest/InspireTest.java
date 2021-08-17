@@ -26,7 +26,6 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 @Testable
 class TestAll {
@@ -75,6 +74,8 @@ class TestAll {
         String step = "T02_Datasets";
         try {
             db.cleanStepOutputDir(step);
+            String outfile = db.outputdir() + "/" + step + "/" + "datasets.csv";
+            db.writeheaderdataset(outfile);
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -83,13 +84,15 @@ class TestAll {
 
     };
 
-    //@Disabled
+    // @Disabled
     @Test
     @Order(3)
     void T02_services() throws IOException {
 
         String step = "T02_Services";
         db.cleanStepOutputDir(step);
+        db.writeheaderservice(db.outputdir() + "/" + step + "/services.csv");
+        db.writeheaderservice(db.outputdir() + "/" + step + "/services-Beheer PDOK.csv");
         runtest(step);
     }
 
@@ -147,22 +150,20 @@ class TestAll {
         DatasetList.INSTANCE.getInstance().loadService(servicefile.getAbsolutePath());
     }
 
-  
     void runtest(String step) {
-       
+
         try {
-                File featurefile = new File(db.startdir().getAbsolutePath() + "/" + step + ".feature");
-                System.out.println("start " + step + " single paralell run :" + featurefile.getAbsolutePath());
-                // List<String> tags = List.of("~@ignore");
-                List<String> paths = List.of(featurefile.getAbsolutePath());
-                // final Results results = Runner.parallel(tags, paths, 4,
-                // db.reportdir().getAbsolutePath());
-                final Results results = Runner.path(paths).outputCucumberJson(true)
-                        .reportDir(db.reportdir().getAbsolutePath()).parallel(4);
+            File featurefile = new File(db.startdir().getAbsolutePath() + "/" + step + ".feature");
+            System.out.println("start " + step + " single paralell run :" + featurefile.getAbsolutePath());
+            // List<String> tags = List.of("~@ignore");
+            List<String> paths = List.of(featurefile.getAbsolutePath());
+            // final Results results = Runner.parallel(tags, paths, 4,
+            // db.reportdir().getAbsolutePath());
+            final Results results = Runner.path(paths).outputCucumberJson(true)
+                    .reportDir(db.reportdir().getAbsolutePath()).parallel(4);
 
-                assertEquals(0, results.getFailCount(), results.getErrorMessages());
+            assertEquals(0, results.getFailCount(), results.getErrorMessages());
 
-        
         } catch (Exception e) {
             // TODO Auto-generated catch block
             e.printStackTrace();

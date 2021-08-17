@@ -11,8 +11,8 @@ Feature:  get details
     * def list = karate.read(idfile)
     * def outputpath = db.outputpath()
     * eval db.ensureDirectory(outputpath)
-    * eval db.writeheaderservice(outputpath + separator  + "services.csv" )
-    * eval db.writeheaderservice(outputpath + separator  + "services-Beheer PDOK.csv" )
+   # * eval db.writeheaderservice(outputpath + separator  + "services.csv" )
+   # * eval db.writeheaderservice(outputpath + separator  + "services-Beheer PDOK.csv" )
 
  
 
