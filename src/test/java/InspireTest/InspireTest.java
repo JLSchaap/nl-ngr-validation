@@ -7,7 +7,6 @@ import com.intuit.karate.Runner;
 import com.opencsv.exceptions.CsvDataTypeMismatchException;
 import com.opencsv.exceptions.CsvRequiredFieldEmptyException;
 
-
 import metadata.DatasetList;
 import metadata.Harvest;
 import net.masterthought.cucumber.Configuration;
@@ -27,7 +26,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-@KarateOptions(tags = { "~@ignore" })
+
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 @Testable
 class TestAll {
@@ -40,35 +39,63 @@ class TestAll {
     }
 
     @AfterAll
-    public static void oneTimeTearDown() {
+    public static void OneTimeTearDown() throws Exception
+
+    {
+
         System.out.println("write report: " + db.reportdir().getAbsolutePath());
         generateReport(db.reportdir().getAbsolutePath());
+
     }
 
+    // @Disabled
     @Test
     @Order(1)
-    void T01_ids() throws IOException {
-        db.cleandir(db.outputdir());
+    void T01_ids() {
+        try {
+            db.cleandir(db.outputdir());
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
         String step = "T01_Ids";
-        db.cleanStepOutputDir(step);
+        try {
+            db.cleanStepOutputDir(step);
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
         runtest(step);
     }
 
     @Test
     @Order(2)
-    void T02() throws IOException {
-        String step = "T02_Datasets";
+    void T02_datasets() {
 
-        db.cleanStepOutputDir(step);
+        String step = "T02_Datasets";
+        try {
+            db.cleanStepOutputDir(step);
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
         runtest(step);
 
-        step = "T02_Services";
+    };
+
+    //@Disabled
+    @Test
+    @Order(3)
+    void T02_services() throws IOException {
+
+        String step = "T02_Services";
         db.cleanStepOutputDir(step);
         runtest(step);
     }
 
+    @Disabled
     @Test
-    @Order(3)
+    @Order(4)
     void T03loadAndEvaluateh() throws IOException, CsvDataTypeMismatchException, CsvRequiredFieldEmptyException {
 
         String step = "T03_harvestEval";
@@ -78,7 +105,8 @@ class TestAll {
         File outfile3 = DatasetList.INSTANCE.getInstance()
                 .writecsv(db.outputdir() + "/" + step + "/datasetsmetservices.csv");
         System.out.println(outfile3.getAbsolutePath());
-        File outfile4 = DatasetList.INSTANCE.getInstance().writeResultsCSV(db.outputdir() + "/" + step + "/datasetsmetserviceserror.csv");
+        File outfile4 = DatasetList.INSTANCE.getInstance()
+                .writeResultsCSV(db.outputdir() + "/" + step + "/datasetsmetserviceserror.csv");
         System.out.println(outfile4.getAbsolutePath());
 
         Harvest harvest = new Harvest(db.harvestfile());
@@ -91,26 +119,25 @@ class TestAll {
         assertTrue(outfile5.exists());
         assertTrue(outfile6.exists());
     }
-/*
-    @Test
-    @Order(4)
-    void T04Createtests() throws IOException {
 
-        String step = "T04_tests";
-        db.cleanStepOutputDir(step);
-        loadtestdata();
-
-        Templatedir templatepath = new Templatedir();
-        File temp = new File (db.startdirtop() + File.separator +"karatetemplate"); 
-        System.out.println("templatedir:"+ temp.getAbsolutePath());
-        templatepath.builder(temp, ".feature");
-        File outdir = new File(            db.outputdir().getAbsolutePath() + "/" + step );
-        System.out.println("outdir:"+outdir.getAbsolutePath());
-        DatasetList.INSTANCE.getInstance().createdirstructure(outdir, templatepath,true);
-        assertTrue(outdir.exists());
-  
-    }
-*/
+    /*
+     * @Test
+     * 
+     * @Order(4) void T04Createtests() throws IOException {
+     * 
+     * String step = "T04_tests"; db.cleanStepOutputDir(step); loadtestdata();
+     * 
+     * Templatedir templatepath = new Templatedir(); File temp = new File
+     * (db.startdirtop() + File.separator +"karatetemplate");
+     * System.out.println("templatedir:"+ temp.getAbsolutePath());
+     * templatepath.builder(temp, ".feature"); File outdir = new File(
+     * db.outputdir().getAbsolutePath() + "/" + step );
+     * System.out.println("outdir:"+outdir.getAbsolutePath());
+     * DatasetList.INSTANCE.getInstance().createdirstructure(outdir,
+     * templatepath,true); assertTrue(outdir.exists());
+     * 
+     * }
+     */
     private void loadtestdata() throws FileNotFoundException {
         File file = new File(db.outputpath("T02_Datasets") + "/datasets.csv");
         System.out.println(file.getAbsolutePath());
@@ -120,24 +147,26 @@ class TestAll {
         DatasetList.INSTANCE.getInstance().loadService(servicefile.getAbsolutePath());
     }
 
-
-    void runtestdir(String step) throws IOException {
-        File stepdir = new File(db.startdir().getAbsolutePath() + "/" + step);
-
-        File stepreportdir = new File(db.reportdir().getAbsolutePath() + "/" + step);
-
-        System.out.println("start " + step + " parallel:" + stepdir.getAbsolutePath());
-        final Results results = Runner.parallel(stepreportdir.getAbsolutePath(), 4, stepdir.getAbsolutePath());
-        assertEquals(0, results.getFailCount(), results.getErrorMessages());
-    }
-
+  
     void runtest(String step) {
-        File featurefile = new File(db.startdir().getAbsolutePath() + "/" + step + ".feature");
-        System.out.println("start " + step + " single paralell run :" + featurefile.getAbsolutePath());
-        List<String> tags = List.of("~@ignore");
-        List<String> paths = List.of(featurefile.getAbsolutePath());
-        final Results results = Runner.parallel(tags, paths, 4, db.reportdir().getAbsolutePath());
-        assertEquals(0, results.getFailCount(), results.getErrorMessages());
+       
+        try {
+                File featurefile = new File(db.startdir().getAbsolutePath() + "/" + step + ".feature");
+                System.out.println("start " + step + " single paralell run :" + featurefile.getAbsolutePath());
+                // List<String> tags = List.of("~@ignore");
+                List<String> paths = List.of(featurefile.getAbsolutePath());
+                // final Results results = Runner.parallel(tags, paths, 4,
+                // db.reportdir().getAbsolutePath());
+                final Results results = Runner.path(paths).outputCucumberJson(true)
+                        .reportDir(db.reportdir().getAbsolutePath()).parallel(4);
+
+                assertEquals(0, results.getFailCount(), results.getErrorMessages());
+
+        
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
 
     }
 

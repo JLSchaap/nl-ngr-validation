@@ -18,41 +18,17 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>11</java.version>
+        <java.version>1.8</java.version>
         <maven.compiler.version>3.8.1</maven.compiler.version>
-        <maven.surefire.version>3.0.0-M5</maven.surefire.version>
-        <karate.version>1.1.0.RC4</karate.version>
-        <cucumber.reporting.version>5.5.3</cucumber.reporting.version>
-
+        <maven.surefire.version>2.22.2</maven.surefire.version>
+        <karate.version>1.1.0</karate.version>
     </properties>
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.junit</groupId>
-                <artifactId>junit-bom</artifactId>
-                <version>5.8.0-M1</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
+
     <dependencies>
-        <dependency>
-            <groupId>com.intuit.karate</groupId>
-            <artifactId>karate-core</artifactId>
-            <version>${karate.version}</version>
-            <scope>test</scope>
-        </dependency>
         <dependency>
             <groupId>com.intuit.karate</groupId>
             <artifactId>karate-junit5</artifactId>
             <version>${karate.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>net.masterthought</groupId>
-            <artifactId>cucumber-reporting</artifactId>
-            <version>${cucumber.reporting.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -61,26 +37,15 @@
             <version>1.4</version>
         </dependency>
         <dependency>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-surefire-plugin</artifactId>
-
-            <version>${maven.surefire.version}</version>
-
+            <groupId>net.masterthought</groupId>
+            <artifactId>cucumber-reporting</artifactId>
+            <version>3.8.0</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.platform</groupId>
-            <artifactId>junit-platform-console-standalone</artifactId>
-            <version>1.8.0-M1</version>
-            <scope>test</scope>
-        </dependency>
+       
+        
     </dependencies>
+
 
     <build>
         <testResources>
@@ -98,8 +63,8 @@
                 <version>${maven.compiler.version}</version>
                 <configuration>
                     <encoding>UTF-8</encoding>
-                    <source>13</source>
-                    <target>13</target>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
                     <compilerArgument>-Werror</compilerArgument>
                 </configuration>
             </plugin>
@@ -108,9 +73,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${maven.surefire.version}</version>
                 <configuration>
-                    <argLine>-Xmx1024m -Dfile.encoding=UTF-8</argLine>
-                    <forkCount>3</forkCount>
-                    <reuseForks>true</reuseForks>
+                    <argLine>-Dfile.encoding=UTF-8</argLine>
                 </configuration>
             </plugin>
         </plugins>

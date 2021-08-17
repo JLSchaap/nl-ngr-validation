@@ -15,7 +15,7 @@ Feature: storage
 
     Scenario: output path
 
-        * def output = db.outputpath()
+        * string output = db.outputpath()
         * print "outputpath" + output
         * def separator = java.lang.System.getProperty("file.separator")
         * def outdir = db.outputdir() + separator + "T99_storage"
