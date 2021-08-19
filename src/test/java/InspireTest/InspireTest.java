@@ -96,7 +96,7 @@ class TestAll {
         runtest(step);
     }
 
-    @Disabled
+    //@Disabled
     @Test
     @Order(4)
     void T03loadAndEvaluateh() throws IOException, CsvDataTypeMismatchException, CsvRequiredFieldEmptyException {
