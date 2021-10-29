@@ -1,99 +1,101 @@
-Resource title;Resource FileId;Responsible organization;View service;Download service;Download link;Details
-Kaart van de bodemopbouw in Nederland 1:50.000 onder INSPIRE;a7fb2234-f7b4-4a03-b282-f10947f42fb1;Alterra, Wageningen UR;Not available;Not available;Not available;View the details 
-Menselijke gezondheid en veiligheid - geluidbelasting rijkswegen 2006 (INSPIRE geharmoniseerd);wt-3730-e750-485a-9c0c-39bf9be72cf9;Rijkswaterstaat;Not available;Not available;Not available;View the details 
-Menselijke gezondheid en veiligheid - geluidbelasting rijkswegen 2011 (INSPIRE geharmoniseerd);wt-f5eb-b09f-4f6d-8397-8878a1b86238;Rijkswaterstaat;Not available;Not available;Not available;View the details 
-Geluidkaart hoofdspoornet 2011 (Lden);844404a2-9cd0-452e-b29a-74588777485a;Ministerie van IenW;Not available;Not available;Not available;View the details 
-Geluidkaart hoofdspoornet 2011 (Lnight);3e57ce43-7707-43ed-a4b9-72b3a6d812f8;Ministerie van IenW;Not available;Not available;Not available;View the details 
-Grondwatersamenstellinggegevens KRW meetronde 2012 onder INSPIRE;6050578f-0010-4bfa-b013-c8617b80ba62;TNO Geologische Dienst Nederland;Not available;Not available;Not available;View the details 
-Menselijke gezondheid en veiligheid - geluidbelasting rijkswegen 2016 (INSPIRE geharmoniseerd);wt-83730-e750-485a-9c0c-39bf9be72cf8;Rijkswaterstaat;Not available;Not available;Not available;View the details 
-Nutsdiensten en overheidsdiensten;b646c62e-f763-4b96-8b87-009abc0102f8;Kadaster;Not available;Not available;Not available;View the details 
-Totale potentie aardwarmte uit aquifers onder INSPIRE;11a292bd-9022-4a9f-b1bf-02f5c89ad74a;TNO Geologische Dienst Nederland;Not available;Not available;Not available;View the details 
-Waterstanden en afvoeren actueel - Rijkswaterstaat;cf69ec50-9849-4afd-853c-ee56211d336d;Rijkswaterstaat;Not available;Not available;Not available;View the details 
-Afvalinrichtingen inclusief nucleaire inrichtingen;f5f68d51-2ca4-4897-8227-d3938b2b0a7e;Interprovinciaal Overleg;Not available;Not available;Not available;View the details 
-Waterstanden en afvoeren verwacht - Rijkswaterstaat;25294679-adb9-4c39-a93b-6954ff9414ac;Rijkswaterstaat;Not available;Not available;Not available;View the details 
-Geluidszones rondom bedrijventerreinen zowel provinciaal als gemeentelijk;34e6165f-1269-48d1-b255-0f05d163d692;Interprovinciaal Overleg;Not available;Not available;Not available;View the details 
-Gemeten Ammoniak concentraties in buitenlucht.;d3c9efd6-fca7-49d6-92bb-5f507abece90;Rijksinstituut voor Volksgezondheid en Milieu;Not available;Not available;Not available;View the details 
-Amplitude van het getij;be6551de-a709-4c6d-a5e2-f63f0cf038ba;Ministerie van Defensie, Koninklijke Marine, Dienst der Hydrografie;Not available;Not available;Not available;View the details 
-Productie/industrie-inrichtingen (o.b.v. SBI-codes) uit {Risico Register Gevaarlijke stoffen (RRGS)};b6ee58a1-b097-4c6d-8600-eb81efc1468c;Interprovinciaal Overleg;Not available;Not available;Not available;View the details 
-Bathymetrie Nederland - binnenwateren;adn73c4a-ef03-4785-b7f6-942e86b385f7;Rijkswaterstaat;Not available;Not available;Not available;View the details 
-Begrenzingen van vergunde ontgrondingsgebieden voor zand- en grindwinning;58e7dc38-a498-4852-b4ef-908f5baa9056;Interprovinciaal Overleg;Not available;Not available;Not available;View the details 
-Gebiedsbeheer, gebieden waar beperkingen gelden, gereguleerde gebieden en rapportage-eenheden - Provincies (INSPIRE geharmoniseerd);0f128799-cf18-4b37-a721-e62b068191f5;Interprovinciaal Overleg;Not available;Not available;Not available;View the details 
-Kaderrichtlijn Mariene Strategie - Bevroren monitoringsdata;tbjk534p-wubf-crbp-cj25-d4161160gfim;Rijkswaterstaat;Not available;Not available;Not available;View the details 
-BRO - Bodemkundig booronderzoek (BHR-P);562127a6-0381-46b3-9ed7-10e61ec5ecb5;TNO Geologische Dienst Nederland;Not available;Not available;Not available;View the details 
-Bodemkundig boormonsterprofiel onder INSPIRE;9dd9bf30-36e6-45ae-b368-bdef2720bdde;Alterra, Wageningen UR;Not available;Not available;Not available;View the details 
-Geologisch booronderzoek onder INSPIRE;6c1cf452-8c62-4046-99ab-640a5e184f9c;TNO Geologische Dienst Nederland;Not available;Not available;Not available;View the details 
-BRO GeoTOP (GTM);7D35598D-DFBF-C64D-0F1A-92A80A45EB14;TNO Geologische Dienst Nederland;Not available;Not available;Not available;View the details 
-BRO REGIS II Hydrogeologisch model (HGM);E7D9F0D6-2B8D-6699-F26E-4A781228F2DD;TNO Geologische Dienst Nederland;Not available;Not available;Not available;View the details 
-BRO Geotechnisch Sondeeronderzoek;f0c1a66c-f2d4-4686-8aeb-d02d509a6b25;TNO Geologische Dienst Nederland;Not available;Not available;Not available;View the details 
-BRO Digital Geological Model (DGM);F646DFB9-5BF6-EAB9-042B-CAB6FF2DC275;TNO Geologische Dienst Nederland;Not available;Not available;Not available;View the details 
-BRO - Grondwatermonitoring (GAR, GLD, GMN, GMW) onder INSPIRE;dff9c760-1380-11eb-adc1-0242ac120002;TNO Geologische Dienst Nederland;Not available;Not available;Not available;View the details 
-Bronbestanden waterkwaliteit;edf79e6a-d73d-4def-8d22-0f495cc76a73;Informatiehuis Water;Not available;Not available;Not available;View the details 
-Gemeten Koolstofmonoxide concentraties in buitenlucht.;5800f3b0-2ea2-4231-8165-216a7b26867f;Rijksinstituut voor Volksgezondheid en Milieu;Not available;Not available;Not available;View the details 
-Gemeten Stikstofdioxide concentraties in buitenlucht.;733559a5-201d-40e5-ad43-d1c7bae84d9f;Rijksinstituut voor Volksgezondheid en Milieu;Not available;Not available;Not available;View the details 
-Gemeten fijnere fractie van Fijn stof concentraties in buitenlucht.;af135cd8-d429-4fc7-b9e3-09e15217520d;Rijksinstituut voor Volksgezondheid en Milieu;Not available;Not available;Not available;View the details 
-Gemeten Stikstofmonoxide concentraties in buitenlucht.;f91c6ad6-62a5-46d0-8a5b-8a62e7a4b833;Rijksinstituut voor Volksgezondheid en Milieu;Not available;Not available;Not available;View the details 
-Gemeten Ozon concentraties in buitenlucht.;d8f370e8-123c-4ab3-9410-04f728327ac6;Rijksinstituut voor Volksgezondheid en Milieu;Not available;Not available;Not available;View the details 
-Gemeten Zwaveldioxide concentraties in buitenlucht.;500d396f-5ec6-4e4b-a151-5fb3cddd8082;Rijksinstituut voor Volksgezondheid en Milieu;Not available;Not available;Not available;View the details 
-Gemeten Fijn stof concentraties in buitenlucht.;b3ec8793-7747-4da0-b6c3-aa384446a586;Rijksinstituut voor Volksgezondheid en Milieu;Not available;Not available;Not available;View the details 
-Kaderrichtlijn Water - Deelstroomgebieden Nederland EU2015;110f9ec6-4464-462e-9765-83d90cefbeac;Informatiehuis Water;Not available;Not available;Not available;View the details 
-Stads- en Dorpsgezichten;4e2ef670-cddd-11dd-ad8b-0800200c9a66;Rijksdienst voor het Cultureel Erfgoed;Not available;Not available;Not available;View the details 
-Landelijk zoet en zoutwatermeetnet - Rijkswaterstaat;68ebd5c9-0ea1-4f22-9907-ec4c063cd3e2;Rijkswaterstaat;Not available;Not available;Not available;View the details 
-Zwemwater (provinciaal en Rijkswateren) uit {Zwemwaterregister};9986a7ef-e5e2-4a7a-9018-2e1f9631ba8c;Interprovinciaal Overleg;Not available;Not available;Not available;View the details 
-Zwemwaterlocaties en zwemwaterkwaliteit - monsterpunten;fe45c540-e37d-11e4-b571-0800200c9a66;Interprovinciaal Overleg;Not available;Not available;Not available;View the details 
-Landelijk grondwaterregister - Faciliteiten voor productie en industrie;afc450bd-65b3-4e59-b0fb-619869bf6ada;Interprovinciaal Overleg;Not available;Not available;Not available;View the details 
-Zwemwaterkwaliteit (provinciaal en Rijkswateren) uit {Zwemwaterregister};df5ee213-e1bd-433b-80f7-4ea20f493ca8;Interprovinciaal Overleg;Not available;Not available;Not available;View the details 
-Kaderrichtlijn Water - Oppervlaktewaterlichamen Nederland EU2015 riviernetwerk;a1960e70-22f4-4fd9-91a8-b605c6ceda3e;Informatiehuis Water;Not available;Not available;Not available;View the details 
-Schelpdierpercelen (INSPIRE geharmoniseerd);c4b4e95a-12d7-4c74-933c-cb267cfe0bcf;Ministerie van Landbouw, Natuur en Voedselkwaliteit;Not available;Not available;Not available;View the details 
-Geluidszones rondom vliegvelden;41023936-009d-48ec-a90d-c966895463c1;Interprovinciaal Overleg;Not available;Not available;Not available;View the details 
-Geografische Namen (Nat) - Nederland;1c3450ea-e161-4f50-ad0e-97a36cdd1308;Ministerie van Defensie, Koninklijke Marine, Dienst der Hydrografie;Not available;Not available;Not available;View the details 
-Oppervlaktegeologie, Geologische kaart onder INSPIRE;80630ee7-3a15-4ea0-bdc0-a8aebfa2f204;TNO Geologische Dienst Nederland;Not available;Not available;Not available;View the details 
-Grondwater Monitoring Net;3a72b9a4-cda9-11ea-87d0-0242ac130003;TNO Geologische Dienst Nederland;Not available;Not available;Not available;View the details 
-Grondwaterkwaliteitonderzoek;51318a78-d171-11ea-87d0-0242ac130003;TNO Geologische Dienst Nederland;Not available;Not available;Not available;View the details 
-Grondwateronderzoek onder INSPIRE;f99e915a-75e5-4c36-97f2-61eff692d85b;TNO Geologische Dienst Nederland;Not available;Not available;Not available;View the details 
-Grondwaterstandsonderzoek;2a379cc6-d16e-11ea-87d0-0242ac130003;TNO Geologische Dienst Nederland;Not available;Not available;Not available;View the details 
-Vergunningen Mijnbouwwet onder INSPIRE;24de356e-ec4d-4a18-9903-6401d222b77c;TNO Geologische Dienst Nederland;Not available;Not available;Not available;View the details 
-Landbouwbedrijven;0d6ccccc-7cfb-4eaa-8dc5-8b433d19b121;Ministerie van Landbouw, Natuur en Voedselkwaliteit;Not available;Not available;Not available;View the details 
-Luchtvaartinformatie;73ec579e-c906-433a-b0b6-d3aa33421558;Luchtverkeersleiding Nederland (LVNL);Not available;Not available;Not available;View the details 
-Natuurbranden;88f76a94-ee4d-4e0c-9fde-91b692403e39;Interprovinciaal Overleg;Not available;Not available;Not available;View the details 
-Overstromingsgevaarkaarten;bc2c53f6-c908-4d7c-a6c0-78d9a2855640;Interprovinciaal Overleg;Not available;Not available;Not available;View the details 
-Overstromingsrisicokaarten;2daad588-11ef-47de-9832-6fe2c3b93e6d;Interprovinciaal Overleg;Not available;Not available;Not available;View the details 
-Rijksmonumenten (verouderd);6f84efeb-fc1d-4565-a721-80735ea57dbd;Rijksdienst voor het Cultureel Erfgoed;Not available;Not available;Not available;View the details 
-Werelderfgoed;88a3c1ae-902e-4efa-8663-ddd836101929;Rijksdienst voor het Cultureel Erfgoed;Not available;Not available;Not available;View the details 
-Zones en agglomeraties (Richtlijn Luchtkwaliteit) 2013;2cc2c30c-91b8-412a-a060-e84d25272581;Rijksinstituut voor Volksgezondheid en Milieu;Not available;Available;Not available;View the details 
-Emissies naar lucht en water in 2015 vanuit de industrie;f8d840bc-18df-4449-b797-b9adcb81d3ec;Rijksinstituut voor Volksgezondheid en Milieu;Not available;Available;Not available;View the details 
-Afgevoerde hoeveelheid afval in 2015 vanuit de industrie;08b27bf0-e34a-4b30-9eac-5edadfb6a288;Rijksinstituut voor Volksgezondheid en Milieu;Not available;Available;Not available;View the details 
-Emissies naar het riool in 2015 vanuit de industrie;f2f86edf-ac3a-48e8-9292-0544da2d7645;Rijksinstituut voor Volksgezondheid en Milieu;Not available;Available;Not available;View the details 
-LCP emissies (Richtlijn Industriële emissies) 2016;d24ccb35-e9d2-41bf-b231-43083fc0c76d;Rijksinstituut voor Volksgezondheid en Milieu;Not available;Available;Not available;View the details 
-Monitoring stations (Nitraatrichtlijn) diepe filters;36a7e8cb-8300-4602-93d2-135943365a6f;Rijksinstituut voor Volksgezondheid en Milieu;Not available;Available;Not available;View the details 
-Olie- en gasvelden onder INSPIRE;b61a773c-ecad-4e60-93e9-0a4caac0b52f;TNO Geologische Dienst Nederland;Not available;Available;Not available;View the details 
-Monitoring stations (Nitraatrichtlijn) ondiepe filters;b3f66964-a8c1-456f-9799-9cafca2cb7b1;Rijksinstituut voor Volksgezondheid en Milieu;Not available;Available;Not available;View the details 
-Bathymetrie Nederlands deel van de Noordzee dieper dan 10 m LAT;a322184d-6285-4856-bb78-f450b30ffc0e;Ministerie van Defensie, Koninklijke Marine, Dienst der Hydrografie;Available;Not available;Not available;View the details 
-Actueel Hoogtebestand Nederland 2 (AHN2);7939fd42-cf88-42c5-ab3b-232cf232a3ac;stuurgroep AHN;Available;Not available;Not available;View the details 
-Luchtfoto 2016 25cm CIR open data;1be28290-55fa-4486-b9d3-b9d147117863;Het Waterschapshuis;Available;Not available;Not available;View the details 
-Luchtfoto 2016 25cm RGB open data;df15af6e-0d21-4437-a69f-802be3479bba;Het Waterschapshuis;Available;Not available;Not available;View the details 
-Luchtfoto 2017 25cm CIR open data;7c24ea89-074e-4c4f-91e3-d38e813e9cb6;Het Waterschapshuis;Available;Not available;Not available;View the details 
-Luchtfoto 2017 25cm RGB open data;74aca3eb-c38b-4214-9537-e0abc69e11b5;Het Waterschapshuis;Available;Not available;Not available;View the details 
-Luchtfoto 2018 25cm CIR open data;7f5d7945-8fa8-4d36-be4c-2fdb3c7d613b;Het Waterschapshuis;Available;Not available;Not available;View the details 
-Luchtfoto 2018 25cm RGB open data;5b274449-b6c2-4672-a32f-e0bd40975a53;Het Waterschapshuis;Available;Not available;Not available;View the details 
-Luchtfoto 2019 25cm CIR open data;9ed6b8ed-254a-4745-a09a-3b57137d1b69;Het Waterschapshuis;Available;Not available;Not available;View the details 
-Luchtfoto 2019 25cm RGB open data;64ff8561-5c56-4cc1-ae0e-94366fb70b7e;Het Waterschapshuis;Available;Not available;Not available;View the details 
-Luchtfoto 2020 25cm CIR open data;4cfb1469-a152-4ba6-8fe9-4b627acd7ee0;Het Waterschapshuis;Available;Not available;Not available;View the details 
-Luchtfoto 2020 25cm RGB open data;4e2bb25e-a5a9-43a7-986a-40e7aea32e38;Het Waterschapshuis;Available;Not available;Not available;View the details 
-Aansluitende zone volgens UNCLOS - Noordzee;4cda487b-c467-490c-a843-6563fec016be;Ministerie van Defensie, Koninklijke Marine, Dienst der Hydrografie;Available;Not available;Not available;View the details 
-Maritieme grenzen - basislijn Noordzee;1249746f-c2a6-4639-98f2-251676b3528e;Ministerie van Defensie, Koninklijke Marine, Dienst der Hydrografie;Available;Not available;Not available;View the details 
-Bathymetrie Nederland - kust;adn73c4a-ef03-4785-b7f6-942e86b385f5;Rijkswaterstaat;Available;Not available;Not available;View the details 
-EEZ volgens UNCLOS - Noordzee;e8b84fae-00b3-49c1-80c1-df8f69f64e8c;Ministerie van Defensie, Koninklijke Marine, Dienst der Hydrografie;Available;Not available;Not available;View the details 
-Kaderrichtlijn Water - Monitoringlocaties Nederland EU2015;891ddc2d-8949-4a45-be96-c65b87c41f13;Informatiehuis Water;Available;Not available;Not available;View the details 
-Kaderrichtlijn Water - Stroomgebieddistricten Nederland EU2015;110f9ec6-4464-462e-9765-83d90cefbeab;Informatiehuis Water;Available;Not available;Not available;View the details 
-Territoriale Zee volgens UNCLOS - Noordzee;bb11be63-bd38-4632-bf54-df44c423a529;Ministerie van Defensie, Koninklijke Marine, Dienst der Hydrografie;Available;Not available;Not available;View the details 
-Natura 2000 (INSPIRE geharmoniseerd);280ed37a-b8d2-4ac5-8567-04d84fad3a41;Ministerie van Landbouw, Natuur en Voedselkwaliteit;Not available;Available;Available;View the details 
-Beperkingen voor voertuigen (INSPIRE geharmoniseerde data);fe2f9091-1962-4073-9e3b-3e4aeed488a5;RDW;Not available;Available;Available;View the details 
-Zoutvelden en zoutproductieputten onder INSPIRE;e3b0da1e-0664-4025-b3f5-a54d74a26450;TNO Geologische Dienst Nederland;Not available;Available;Available;View the details 
-NWB - Wegen;a9b7026e-0a81-4813-93bd-ba49e6f28502;Rijkswaterstaat;Not available;Available;Available;View the details 
-Vogelrichtlijn verspreiding van soorten;fcefa13c-44e2-4953-b6d6-1ddceebc57fc;Wageningen Environmental Research (Alterra);Not available;Available;Available;View the details 
-Zones volgens EU Gemeenschappelijk Visserijbeleid tot 3M en 6M;4617f0e0-6af4-4ac0-9044-31df9d03071c;Ministerie van Defensie, Koninklijke Marine, Dienst der Hydrografie;Available;Available;Not available;View the details 
-Blokindeling van het Nederlands Continentaal Plat volgens de Mijnbouwwet en Grensgebied volgens de Aanvullende Overeenkomst bij het Eems-Dollardverdrag;c2225e5d-b46f-4e38-8445-ab10fd40c0dc;Ministerie van Defensie, Koninklijke Marine, Dienst der Hydrografie;Available;Available;Not available;View the details 
-Nederlands deel PSSA Waddenzee;f1d27179-36eb-4376-8048-f51d2eb23a09;Ministerie van Defensie, Koninklijke Marine, Dienst der Hydrografie;Available;Available;Not available;View the details 
-Eemsmonding volgens het Eems-Dollardverdrag;f44dac86-2228-412f-8355-e56446ca9933;Ministerie van Defensie, Koninklijke Marine, Dienst der Hydrografie;Available;Available;Not available;View the details 
-Maritieme grenzen - Noordzee;a5241416-8401-4623-be61-57ef50447a41;Ministerie van Defensie, Koninklijke Marine, Dienst der Hydrografie;Available;Available;Not available;View the details 
-Ruimtelijke plannen Wro: Ruimtelijkeplannen.nl;17716ed7-ce0d-4bfd-8868-a398e5578a36;Kadaster;Available;Available;Not available;View the details 
+ï»¿Resource title;Resource FileId;Responsible organization;View service;Download service;Download link;Details
+Kaart van de bodemopbouw in Nederland 1:50.000 onder INSPIRE;a7fb2234-f7b4-4a03-b282-f10947f42fb1;Alterra, Wageningen UR;Not available;Not available;Not available;View the detailsï¿½
+Bathymetrie Nederlands deel van de Noordzee dieper dan 10 m LAT;a322184d-6285-4856-bb78-f450b30ffc0e;Ministerie van Defensie, Koninklijke Marine, Dienst der Hydrografie;Not available;Not available;Not available;View the detailsï¿½Â 
+Geluidkaart hoofdspoornet 2011 (Lnight);3e57ce43-7707-43ed-a4b9-72b3a6d812f8;Ministerie van IenW;Not available;Not available;Not available;View the detailsï¿½Â 
+Geluidkaart hoofdspoornet 2011 (Lden);844404a2-9cd0-452e-b29a-74588777485a;Ministerie van IenW;Not available;Not available;Not available;View the detailsï¿½Â 
+Grondwatersamenstellinggegevens KRW meetronde 2012 onder INSPIRE;6050578f-0010-4bfa-b013-c8617b80ba62;TNO Geologische Dienst Nederland;Not available;Not available;Not available;View the detailsï¿½Â 
+Menselijke gezondheid en veiligheid - geluidbelasting rijkswegen 2016 (INSPIRE geharmoniseerd);wt-83730-e750-485a-9c0c-39bf9be72cf8;Rijkswaterstaat;Not available;Not available;Not available;View the detailsï¿½Â 
+Zones volgens EU Gemeenschappelijk Visserijbeleid tot 3M en 6M;4617f0e0-6af4-4ac0-9044-31df9d03071c;Ministerie van Defensie, Koninklijke Marine, Dienst der Hydrografie;Not available;Not available;Not available;View the detailsï¿½Â 
+Nutsdiensten en overheidsdiensten;b646c62e-f763-4b96-8b87-009abc0102f8;Kadaster;Not available;Not available;Not available;View the detailsï¿½Â 
+Aansluitende zone volgens UNCLOS - Noordzee;4cda487b-c467-490c-a843-6563fec016be;Ministerie van Defensie, Koninklijke Marine, Dienst der Hydrografie;Not available;Not available;Not available;View the detailsï¿½Â 
+Blokindeling van het Nederlands Continentaal Plat volgens de Mijnbouwwet en Grensgebied volgens de Aanvullende Overeenkomst bij het Eems-Dollardverdrag;c2225e5d-b46f-4e38-8445-ab10fd40c0dc;Ministerie van Defensie, Koninklijke Marine, Dienst der Hydrografie;Not available;Not available;Not available;View the detailsï¿½Â 
+Totale potentie aardwarmte uit aquifers onder INSPIRE;11a292bd-9022-4a9f-b1bf-02f5c89ad74a;TNO Geologische Dienst Nederland;Not available;Not available;Not available;View the detailsï¿½Â 
+Waterstanden en afvoeren actueel - Rijkswaterstaat;cf69ec50-9849-4afd-853c-ee56211d336d;Rijkswaterstaat;Not available;Not available;Not available;View the detailsï¿½Â 
+Afvalinrichtingen inclusief nucleaire inrichtingen;f5f68d51-2ca4-4897-8227-d3938b2b0a7e;Interprovinciaal Overleg;Not available;Not available;Not available;View the detailsï¿½Â 
+Waterstanden en afvoeren verwacht - Rijkswaterstaat;25294679-adb9-4c39-a93b-6954ff9414ac;Rijkswaterstaat;Not available;Not available;Not available;View the detailsï¿½Â 
+Geluidszones rondom bedrijventerreinen zowel provinciaal als gemeentelijk;34e6165f-1269-48d1-b255-0f05d163d692;Interprovinciaal Overleg;Not available;Not available;Not available;View the detailsï¿½Â 
+Gemeten Ammoniak concentraties in buitenlucht.;d3c9efd6-fca7-49d6-92bb-5f507abece90;RIVM;Not available;Not available;Not available;View the detailsï¿½Â 
+Amplitude van het getij;be6551de-a709-4c6d-a5e2-f63f0cf038ba;Ministerie van Defensie, Koninklijke Marine, Dienst der Hydrografie;Not available;Not available;Not available;View the detailsï¿½Â 
+Productie/industrie-inrichtingen (o.b.v. SBI-codes) uit {Risico Register Gevaarlijke stoffen (RRGS)};b6ee58a1-b097-4c6d-8600-eb81efc1468c;Interprovinciaal Overleg;Not available;Not available;Not available;View the detailsï¿½Â 
+Maritieme grenzen - basislijn Noordzee;1249746f-c2a6-4639-98f2-251676b3528e;Ministerie van Defensie, Koninklijke Marine, Dienst der Hydrografie;Not available;Not available;Not available;View the detailsï¿½Â 
+Bathymetrie Nederland - binnenwateren;adn73c4a-ef03-4785-b7f6-942e86b385f7;Rijkswaterstaat;Not available;Not available;Not available;View the detailsï¿½Â 
+Bathymetrie Nederland - kust;adn73c4a-ef03-4785-b7f6-942e86b385f5;Rijkswaterstaat;Not available;Not available;Not available;View the detailsï¿½Â 
+Begrenzingen van vergunde ontgrondingsgebieden voor zand- en grindwinning;58e7dc38-a498-4852-b4ef-908f5baa9056;Interprovinciaal Overleg;Not available;Not available;Not available;View the detailsï¿½Â 
+Gebiedsbeheer, gebieden waar beperkingen gelden, gereguleerde gebieden en rapportage-eenheden - Provincies (INSPIRE geharmoniseerd);0f128799-cf18-4b37-a721-e62b068191f5;Interprovinciaal Overleg;Not available;Not available;Not available;View the detailsï¿½Â 
+Kaderrichtlijn Mariene Strategie - Bevroren monitoringsdata;tbjk534p-wubf-crbp-cj25-d4161160gfim;Rijkswaterstaat;Not available;Not available;Not available;View the detailsï¿½Â 
+BRO - Bodemkundig booronderzoek (BHR-P);562127a6-0381-46b3-9ed7-10e61ec5ecb5;TNO Geologische Dienst Nederland;Not available;Not available;Not available;View the detailsï¿½Â 
+Bodemkundig boormonsterprofiel onder INSPIRE;9dd9bf30-36e6-45ae-b368-bdef2720bdde;Alterra, Wageningen UR;Not available;Not available;Not available;View the detailsï¿½Â 
+BRO GeoTOP (GTM);7D35598D-DFBF-C64D-0F1A-92A80A45EB14;TNO Geologische Dienst Nederland;Not available;Not available;Not available;View the detailsï¿½Â 
+BRO Geotechnisch Sondeeronderzoek;f0c1a66c-f2d4-4686-8aeb-d02d509a6b25;TNO Geologische Dienst Nederland;Not available;Not available;Not available;View the detailsï¿½Â 
+BRO Digital Geological Model (DGM);F646DFB9-5BF6-EAB9-042B-CAB6FF2DC275;TNO Geologische Dienst Nederland;Not available;Not available;Not available;View the detailsï¿½Â 
+BRO - Grondwatermonitoringput (GMW) onder INSPIRE;851fc968-137e-11eb-adc1-0242ac120002;TNO Geologische Dienst Nederland;Not available;Not available;Not available;View the detailsï¿½Â 
+BRO REGIS II Hydrogeologisch model (HGM);E7D9F0D6-2B8D-6699-F26E-4A781228F2DD;TNO Geologische Dienst Nederland;Not available;Not available;Not available;View the detailsï¿½Â 
+Bronbestanden waterkwaliteit;edf79e6a-d73d-4def-8d22-0f495cc76a73;Informatiehuis Water;Not available;Not available;Not available;View the detailsï¿½Â 
+Gemeten Stikstofdioxide concentraties in buitenlucht.;733559a5-201d-40e5-ad43-d1c7bae84d9f;RIVM;Not available;Not available;Not available;View the detailsï¿½Â 
+Gemeten Koolstofmonoxide concentraties in buitenlucht.;5800f3b0-2ea2-4231-8165-216a7b26867f;RIVM;Not available;Not available;Not available;View the detailsï¿½Â 
+Gemeten Stikstofmonoxide concentraties in buitenlucht.;f91c6ad6-62a5-46d0-8a5b-8a62e7a4b833;RIVM;Not available;Not available;Not available;View the detailsï¿½Â 
+Gemeten Fijn stof concentraties in buitenlucht.;b3ec8793-7747-4da0-b6c3-aa384446a586;RIVM;Not available;Not available;Not available;View the detailsï¿½Â 
+Gemeten fijnere fractie van Fijn stof concentraties in buitenlucht.;af135cd8-d429-4fc7-b9e3-09e15217520d;RIVM;Not available;Not available;Not available;View the detailsï¿½Â 
+Gemeten Zwaveldioxide concentraties in buitenlucht.;500d396f-5ec6-4e4b-a151-5fb3cddd8082;RIVM;Not available;Not available;Not available;View the detailsï¿½Â 
+Gemeten Ozon concentraties in buitenlucht.;d8f370e8-123c-4ab3-9410-04f728327ac6;RIVM;Not available;Not available;Not available;View the detailsï¿½Â 
+Nederlands deel PSSA Waddenzee;f1d27179-36eb-4376-8048-f51d2eb23a09;Ministerie van Defensie, Koninklijke Marine, Dienst der Hydrografie;Not available;Not available;Not available;View the detailsï¿½Â 
+Kaderrichtlijn Water - Deelstroomgebieden Nederland EU2015;110f9ec6-4464-462e-9765-83d90cefbeac;Informatiehuis Water;Not available;Not available;Not available;View the detailsï¿½Â 
+Eemsmonding volgens het Eems-Dollardverdrag;f44dac86-2228-412f-8355-e56446ca9933;Ministerie van Defensie, Koninklijke Marine, Dienst der Hydrografie;Not available;Not available;Not available;View the detailsï¿½Â 
+Stads- en Dorpsgezichten;4e2ef670-cddd-11dd-ad8b-0800200c9a66;Rijksdienst voor het Cultureel Erfgoed;Not available;Not available;Not available;View the detailsï¿½Â 
+EEZ volgens UNCLOS - Noordzee;e8b84fae-00b3-49c1-80c1-df8f69f64e8c;Ministerie van Defensie, Koninklijke Marine, Dienst der Hydrografie;Not available;Not available;Not available;View the detailsï¿½Â 
+Landelijk zoet en zoutwatermeetnet - Rijkswaterstaat;68ebd5c9-0ea1-4f22-9907-ec4c063cd3e2;Rijkswaterstaat;Not available;Not available;Not available;View the detailsï¿½Â 
+Zwemwater (provinciaal en Rijkswateren) uit {Zwemwaterregister};9986a7ef-e5e2-4a7a-9018-2e1f9631ba8c;Interprovinciaal Overleg;Not available;Not available;Not available;View the detailsï¿½Â 
+Zwemwaterlocaties en zwemwaterkwaliteit - monsterpunten;fe45c540-e37d-11e4-b571-0800200c9a66;Interprovinciaal OverlegInterprovinciaal Overleg;Not available;Not available;Not available;View the detailsï¿½Â 
+Landelijk grondwaterregister - Faciliteiten voor productie en industrie;afc450bd-65b3-4e59-b0fb-619869bf6ada;Interprovinciaal OverlegInterprovinciaal Overleg;Not available;Not available;Not available;View the detailsï¿½Â 
+Zwemwaterkwaliteit (provinciaal en Rijkswateren) uit {Zwemwaterregister};df5ee213-e1bd-433b-80f7-4ea20f493ca8;Interprovinciaal Overleg;Not available;Not available;Not available;View the detailsï¿½Â 
+Kaderrichtlijn Water - Oppervlaktewaterlichamen Nederland EU2015 riviernetwerk;a1960e70-22f4-4fd9-91a8-b605c6ceda3e;Informatiehuis Water;Not available;Not available;Not available;View the detailsï¿½Â 
+Schelpdierpercelen (INSPIRE geharmoniseerd);c4b4e95a-12d7-4c74-933c-cb267cfe0bcf;Ministerie van Landbouw, Natuur en Voedselkwaliteit;Not available;Not available;Not available;View the detailsï¿½Â 
+Geluidszones rondom vliegvelden;41023936-009d-48ec-a90d-c966895463c1;Interprovinciaal Overleg;Not available;Not available;Not available;View the detailsï¿½Â 
+Geografische Namen (Nat) - Nederland;1c3450ea-e161-4f50-ad0e-97a36cdd1308;Ministerie van Defensie, Koninklijke Marine, Dienst der Hydrografie;Not available;Not available;Not available;View the detailsï¿½Â 
+Oppervlaktegeologie, Geologische kaart onder INSPIRE;80630ee7-3a15-4ea0-bdc0-a8aebfa2f204;TNO Geologische Dienst Nederland;Not available;Not available;Not available;View the detailsï¿½Â 
+Maritieme grenzen - Noordzee;a5241416-8401-4623-be61-57ef50447a41;Ministerie van Defensie, Koninklijke Marine, Dienst der Hydrografie;Not available;Not available;Not available;View the detailsï¿½Â 
+Grondwater Monitoring Net;3a72b9a4-cda9-11ea-87d0-0242ac130003;TNO Geologische Dienst Nederland;Not available;Not available;Not available;View the detailsï¿½Â 
+Grondwaterkwaliteitonderzoek;51318a78-d171-11ea-87d0-0242ac130003;TNO Geologische Dienst Nederland;Not available;Not available;Not available;View the detailsï¿½Â 
+Grondwaterstandsonderzoek;2a379cc6-d16e-11ea-87d0-0242ac130003;TNO Geologische Dienst Nederland;Not available;Not available;Not available;View the detailsï¿½Â 
+Vergunningen Mijnbouwwet onder INSPIRE;24de356e-ec4d-4a18-9903-6401d222b77c;TNO Geologische Dienst Nederland;Not available;Not available;Not available;View the detailsï¿½Â 
+Landbouwbedrijven;0d6ccccc-7cfb-4eaa-8dc5-8b433d19b121;Ministerie van Landbouw, Natuur en Voedselkwaliteit;Not available;Not available;Not available;View the detailsï¿½Â 
+Luchtvaartinformatie;73ec579e-c906-433a-b0b6-d3aa33421558;Luchtverkeersleiding Nederland (LVNL);Not available;Not available;Not available;View the detailsï¿½Â 
+Natuurbranden;88f76a94-ee4d-4e0c-9fde-91b692403e39;Interprovinciaal Overleg;Not available;Not available;Not available;View the detailsï¿½Â 
+Territoriale Zee volgens UNCLOS - Noordzee;bb11be63-bd38-4632-bf54-df44c423a529;Ministerie van Defensie, Koninklijke Marine, Dienst der Hydrografie;Not available;Not available;Not available;View the detailsï¿½Â 
+Overstromingsgevaarkaarten;bc2c53f6-c908-4d7c-a6c0-78d9a2855640;Interprovinciaal Overleg;Not available;Not available;Not available;View the detailsï¿½Â 
+Overstromingsrisicokaarten;2daad588-11ef-47de-9832-6fe2c3b93e6d;Interprovinciaal Overleg;Not available;Not available;Not available;View the detailsï¿½Â 
+Rijksmonumenten (verouderd);6f84efeb-fc1d-4565-a721-80735ea57dbd;Rijksdienst voor het Cultureel Erfgoed;Not available;Not available;Not available;View the detailsï¿½Â 
+Werelderfgoed;88a3c1ae-902e-4efa-8663-ddd836101929;Rijksdienst voor het Cultureel Erfgoed;Not available;Not available;Not available;View the detailsï¿½Â 
+Actueel Hoogtebestand Nederland 2 (AHN2);7939fd42-cf88-42c5-ab3b-232cf232a3ac;stuurgroep AHN;Available;Not available;Not available;View the detailsï¿½Â 
+Luchtfoto 2016 25cm RGB open data;df15af6e-0d21-4437-a69f-802be3479bba;Het Waterschapshuis;Available;Not available;Not available;View the detailsï¿½Â 
+Luchtfoto 2016 25cm CIR open data;1be28290-55fa-4486-b9d3-b9d147117863;Het Waterschapshuis;Available;Not available;Not available;View the detailsï¿½Â 
+Luchtfoto 2017 25cm RGB open data;74aca3eb-c38b-4214-9537-e0abc69e11b5;Het Waterschapshuis;Available;Not available;Not available;View the detailsï¿½Â 
+Luchtfoto 2017 25cm CIR open data;7c24ea89-074e-4c4f-91e3-d38e813e9cb6;Het Waterschapshuis;Available;Not available;Not available;View the detailsï¿½Â 
+Luchtfoto 2018 25cm RGB open data;5b274449-b6c2-4672-a32f-e0bd40975a53;Het Waterschapshuis;Available;Not available;Not available;View the detailsï¿½Â 
+Luchtfoto 2018 25cm CIR open data;7f5d7945-8fa8-4d36-be4c-2fdb3c7d613b;Het Waterschapshuis;Available;Not available;Not available;View the detailsï¿½Â 
+Luchtfoto 2019 25cm RGB open data;64ff8561-5c56-4cc1-ae0e-94366fb70b7e;Het Waterschapshuis;Available;Not available;Not available;View the detailsï¿½Â 
+Luchtfoto 2019 25cm CIR open data;9ed6b8ed-254a-4745-a09a-3b57137d1b69;Het Waterschapshuis;Available;Not available;Not available;View the detailsï¿½Â 
+Luchtfoto 2020 25cm RGB open data;4e2bb25e-a5a9-43a7-986a-40e7aea32e38;Het Waterschapshuis;Available;Not available;Not available;View the detailsï¿½Â 
+Luchtfoto 2020 25cm CIR open data;4cfb1469-a152-4ba6-8fe9-4b627acd7ee0;Het Waterschapshuis;Available;Not available;Not available;View the detailsï¿½Â 
+Luchtfoto 2021 HR RGB open data;bb286d37-4a1b-495f-9840-20e7292beced;Het Waterschapshuis;Available;Not available;Not available;View the detailsï¿½Â 
+Luchtfoto 2021 25cm RGB open data;9c50c1b0-45dc-4419-8ed6-a52492fb9691;Het Waterschapshuis;Available;Not available;Not available;View the detailsï¿½Â 
+Luchtfoto 2021 25cm CIR open data;43793713-f8e1-4f9b-9771-71c18f0bc078;Het Waterschapshuis;Available;Not available;Not available;View the detailsï¿½Â 
+Kaderrichtlijn Water - Monitoringlocaties Nederland EU2015;891ddc2d-8949-4a45-be96-c65b87c41f13;Informatiehuis Water;Available;Not available;Not available;View the detailsï¿½Â 
+Kaderrichtlijn Water - Stroomgebieddistricten Nederland EU2015;110f9ec6-4464-462e-9765-83d90cefbeab;Informatiehuis Water;Available;Not available;Not available;View the detailsï¿½Â 
+Zones en agglomeraties (Richtlijn Luchtkwaliteit) 2013;2cc2c30c-91b8-412a-a060-e84d25272581;RIVM;Not available;Available;Not available;View the detailsï¿½Â 
+Emissies naar lucht en water in 2015 vanuit de industrie;f8d840bc-18df-4449-b797-b9adcb81d3ec;RIVM;Not available;Available;Not available;View the detailsï¿½Â 
+Afgevoerde hoeveelheid afval in 2015 vanuit de industrie;08b27bf0-e34a-4b30-9eac-5edadfb6a288;RIVM;Not available;Available;Not available;View the detailsï¿½Â 
+Emissies naar het riool in 2015 vanuit de industrie;f2f86edf-ac3a-48e8-9292-0544da2d7645;RIVM;Not available;Available;Not available;View the detailsï¿½Â 
+LCP emissies (Richtlijn IndustriÃ«le emissies) 2016;d24ccb35-e9d2-41bf-b231-43083fc0c76d;RIVM;Not available;Available;Not available;View the detailsï¿½Â 
+Geologisch booronderzoek onder INSPIRE;6c1cf452-8c62-4046-99ab-640a5e184f9c;TNO Geologische Dienst Nederland;Not available;Available;Not available;View the detailsï¿½Â 
+Monitoring stations (Nitraatrichtlijn) diepe filters;36a7e8cb-8300-4602-93d2-135943365a6f;RIVM;Not available;Available;Not available;View the detailsï¿½Â 
+Olie- en gasvelden onder INSPIRE;b61a773c-ecad-4e60-93e9-0a4caac0b52f;TNO Geologische Dienst Nederland;Not available;Available;Not available;View the detailsï¿½Â 
+Monitoring stations (Nitraatrichtlijn) ondiepe filters;b3f66964-a8c1-456f-9799-9cafca2cb7b1;RIVM;Not available;Available;Not available;View the detailsï¿½Â 
+Grondwateronderzoek onder INSPIRE;f99e915a-75e5-4c36-97f2-61eff692d85b;TNO Geologische Dienst Nederland;Not available;Available;Not available;View the detailsï¿½Â 
+(T) KNMI Actuele synoptische weerwaarnemingen per 10 minuten-KMDS__OPER_P___10M_OBS_L2;82d8fb04-6e3d-4a3a-b230-387afd3dd9da;KNMI;Not available;Available;Available;View the detailsï¿½Â 
+Natura 2000 (INSPIRE geharmoniseerd);280ed37a-b8d2-4ac5-8567-04d84fad3a41;Ministerie van Landbouw, Natuur en Voedselkwaliteit;Not available;Available;Available;View the detailsï¿½Â 
+Beperkingen voor voertuigen (INSPIRE geharmoniseerde data);fe2f9091-1962-4073-9e3b-3e4aeed488a5;RDW;Not available;Available;Available;View the detailsï¿½Â 
+Zoutvelden en zoutproductieputten onder INSPIRE;e3b0da1e-0664-4025-b3f5-a54d74a26450;TNO Geologische Dienst Nederland;Not available;Available;Available;View the detailsï¿½Â 
+Vaarwegmarkeringen Nederland;be1b1514-8d1f-48e1-9624-fee9b784138b;Rijkswaterstaat;Not available;Available;Available;View the detailsï¿½Â 
+NWB -Wegen;a9b7026e-0a81-4813-93bd-ba49e6f28502;Rijkswaterstaat;Not available;Available;Available;View the detailsï¿½Â 
+Ruimtelijke plannen Wro: Ruimtelijkeplannen.nl;17716ed7-ce0d-4bfd-8868-a398e5578a36;Kadaster;Available;Available;Not available;View the detailsï¿½Â 

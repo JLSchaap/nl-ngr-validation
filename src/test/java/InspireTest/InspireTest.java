@@ -111,8 +111,8 @@ class TestAll {
         File outfile4 = DatasetList.INSTANCE.getInstance()
                 .writeResultsCSV(db.outputdir() + "/" + step + "/datasetsmetserviceserror.csv");
         System.out.println(outfile4.getAbsolutePath());
-
-        Harvest harvest = new Harvest(db.harvestfile());
+        String userdir = new File(java.lang.System.getProperty("user.dir")).getAbsolutePath();
+        Harvest harvest = new Harvest( new File(userdir + "/src/test/resources/INSPIREGeoportalHarvest.csv"));
         File outfile5 = new File(db.outputdir().getAbsolutePath() + "/" + step + "/INSPIREGeoportalHarvestExtra.csv");
         System.out.println(outfile5);
         File outfile6 = new File(
