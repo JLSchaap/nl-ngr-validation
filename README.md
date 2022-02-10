@@ -7,8 +7,6 @@ Nl-ngr-validation is a testsuite with Java, Maven and [Karate](https://github.co
   - [2.1. Get list from Inspire endpoint](#21-get-list-from-inspire-endpoint)
   - [2.2 Regresion](#22-regresion)
 
-
-
 # 1. Running the tests
 Test are run with the following commands:
 
@@ -19,11 +17,9 @@ mvn test
 
 For docker user there is a [shell script](mavenCleanTest.sh) to run the testsuite
 
-
 # 2. Generated lists 
 
 ## 2.1. Get list from Inspire endpoint 
-
 
 By calling [the NGR Inspire CSW endpoint](https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/deb81ebe-c7a7-42ba-bc21-f07cd348c3e8) and matching dataset and service metadata information is created. 
 
