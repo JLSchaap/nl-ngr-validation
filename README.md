@@ -37,3 +37,6 @@ The test are run as [github action]([https://github.com/JLSchaap/nl-ngr-validati
 A [cucumber test report](
 https://jlschaap.github.io/nl-ngr-validation/cucumber-html-reports/overview-features.html) shows the status![Always failing?](https://github.com/JLSchaap/nl-ngr-validation/workflows/NGR%20validatie/badge.svg) of calling the NGR CSW endpoint in the last run.
 Results are stored in [github pages](https://github.com/JLSchaap/nl-ngr-validation/tree/gh-pages)
+
+
+
