@@ -57,8 +57,23 @@ Feature:  get details
     * print operateson
 
     * string servicetype = get response //MD_Metadata/identificationInfo/SV_ServiceIdentification/serviceType/LocalName
+   
+   
+    * string conformanceHref = get response //MD_Metadata/dataQualityInfo/DQ_DataQuality/report[*]//@href
+    * string corConformanceHref = db.getCorrectedString(conformanceHref)  
+    * print corConformanceHref 
+
+    * string conformanceTitles = get response //MD_Metadata/dataQualityInfo/DQ_DataQuality/report[*]//CharacterString
+    * string corConformanceTitles = db.getCorrectedString(conformanceTitles)   
+    * print corConformanceTitles 
+    * string conformancePass = get response //MD_Metadata/dataQualityInfo/DQ_DataQuality/report[*]//Boolean
+    * string corConformancePass = db.getCorrectedString(conformancePass) 
+    * print corConformancePass
+
+
     #unique values
     #* def connectUrl = new java.util.HashSet(connectUrlAll)
+    * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + connectUrl + '","' + protocol + '","' + corConformanceHref + '","' + corConformanceTitles + '","' + corConformancePass + '"' , db.outputpath() + separator + scopecode + 's-' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '_conformance.csv') 
     * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + connectUrl + '","' + protocol + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '","' + operateson + '","' + db.getdatasetuuid(operateson) + '","' + servicetype + '"', db.outputpath() + separator + scopecode + 's.csv')
     * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + connectUrl + '","' + protocol + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '","' + operateson + '","' + db.getdatasetuuid(operateson) + '","' + servicetype + '"', db.outputpath() + separator + scopecode + 's-' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '.csv')
     # * eval db.writeln('"<datasetIdentifierCode>","'+ title + '","' + connectUrl + '","' + protocol + '","' + (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '","'+ email + '","' + (metadataStandardVersionpath ?  metadataStandardVersionpath  : 'no metadatastandard path found') + '",' , outputpath + scopecode + 's-'  + "-" + protocol + "-"  +  (organisationpath ? organisationpath : 'no organisationName found in dataset record') + '.csv')
@@ -68,11 +83,11 @@ Feature:  get details
 
     # csv def/datasetlist.csv has the following field:
     #   @data=test
-  #  Examples:
-  #    | datasetIdentifierCode                |
-  #    | f0c6fbfe-a172-4223-8af3-58f6a28c881d |
-  #    | ff9315c8-f25a-4d01-9245-5cf058314ebf |
-  #    | b196f948-5d87-4eb4-9854-a93841c3877f |
-  #    | 275b64ab-34c2-41f8-8904-97812c7f716e | 
-  #    | e222648d-d19e-4a99-a67d-2af1c9aabd75 | 
-  #    | 3373be8c-8539-4763-bc22-eba23ac1898f | 
+   # Examples:
+   #   | datasetIdentifierCode                |
+   #   | e222648d-d19e-4a99-a67d-2af1c9aabd75 | 
+   #   | f0c6fbfe-a172-4223-8af3-58f6a28c881d |
+ #     | ff9315c8-f25a-4d01-9245-5cf058314ebf |
+ #     | b196f948-5d87-4eb4-9854-a93841c3877f |
+ #     | 275b64ab-34c2-41f8-8904-97812c7f716e | 
+ #     | 3373be8c-8539-4763-bc22-eba23ac1898f | 

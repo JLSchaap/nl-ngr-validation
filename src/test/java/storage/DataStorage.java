@@ -63,6 +63,15 @@ public class DataStorage {
 
     }
 
+  
+
+    public void  writeheaderserviceconformance(final String fileName) throws IOException {
+        String header;
+        header = "\"serviceIdentifierCode\",\"title\",\"url\",\"protocol\",\"conformanceHref\",\"conformanceTitles\",\"conformancePass\""; 
+        writeheader(header, fileName);
+
+    }
+
     public void writeheader(String header, String fileName) throws IOException {
         writeln(header, fileName, false);
     }
@@ -154,6 +163,10 @@ public class DataStorage {
         }
         return sb.toString();
     }
+    public String getCorrectedString(String str){
+            return (str.replaceAll("\\[|\\]", "").replace(",",";" ));
+    }
+
 
     public String getCorrectedUrl(String str) {
         if (str.indexOf("[") == 0) {

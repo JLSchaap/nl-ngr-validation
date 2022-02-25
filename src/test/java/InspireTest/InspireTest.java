@@ -93,6 +93,7 @@ class TestAll {
         db.cleanStepOutputDir(step);
         db.writeheaderservice(db.outputdir() + "/" + step + "/services.csv");
         db.writeheaderservice(db.outputdir() + "/" + step + "/services-Beheer PDOK.csv");
+        db.writeheaderserviceconformance(db.outputdir() + "/" + step + "/services-Beheer PDOK_conformance.csv");
         runtest(step);
     }
 
