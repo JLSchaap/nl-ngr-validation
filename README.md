@@ -7,8 +7,6 @@ Nl-ngr-validation is a testsuite with Java, Maven and [Karate](https://github.co
   - [2.1. Get list from Inspire endpoint](#21-get-list-from-inspire-endpoint)
   - [2.2 Regresion](#22-regresion)
 
-
-
 # 1. Running the tests
 Test are run with the following commands:
 
@@ -19,11 +17,9 @@ mvn test
 
 For docker user there is a [shell script](mavenCleanTest.sh) to run the testsuite
 
-
 # 2. Generated lists 
 
 ## 2.1. Get list from Inspire endpoint 
-
 
 By calling [the NGR Inspire CSW endpoint](https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/deb81ebe-c7a7-42ba-bc21-f07cd348c3e8) and matching dataset and service metadata information is created. 
 
@@ -41,3 +37,6 @@ The test are run as [github action]([https://github.com/JLSchaap/nl-ngr-validati
 A [cucumber test report](
 https://jlschaap.github.io/nl-ngr-validation/cucumber-html-reports/overview-features.html) shows the status![Always failing?](https://github.com/JLSchaap/nl-ngr-validation/workflows/NGR%20validatie/badge.svg) of calling the NGR CSW endpoint in the last run.
 Results are stored in [github pages](https://github.com/JLSchaap/nl-ngr-validation/tree/gh-pages)
+
+
+
