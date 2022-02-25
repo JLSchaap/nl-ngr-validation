@@ -67,7 +67,7 @@ public class DataStorage {
 
     public void  writeheaderserviceconformance(final String fileName) throws IOException {
         String header;
-        header = "\"serviceIdentifierCode\",\"title\",\"url\",\"protocol\",\"conformanceHref\",\"conformanceTitles\",\"conformancePass\""; 
+        header = "\"serviceIdentifierCode\",\"title\",\"url\",\"servicetype\",\"conformanceHref\",\"conformanceTitles\",\"conformancePass\""; 
         writeheader(header, fileName);
 
     }
