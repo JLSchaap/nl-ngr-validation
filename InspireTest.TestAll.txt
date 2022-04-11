@@ -1,0 +1,70 @@
+-------------------------------------------------------------------------------
+Test set: InspireTest.TestAll
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 3, Errors: 1, Skipped: 0, Time elapsed: 5.018 s <<< FAILURE! - in InspireTest.TestAll
+T01_ids  Time elapsed: 3.687 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 500, expected: 200, response time in milliseconds: 455, url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?startposition=1&request=GetRecords&maxRecords=1000&typeNames=csw%3ARecord&elementsetname=brief&propertyName=identifier&service=CSW&version=2.0.2&resultType=results, response: 
+{"error": {
+    
+    "message":
+    
+        "Service not found"
+      ,
+    "class":
+    
+        "ServiceNotFoundEx"
+      ,
+    "request":
+    
+        {}
+      
+    }
+    }
+  
+src/test/java/InspireTest/ngr/T01_Ids.feature:26 ==> expected: <0> but was: <1>
+	at InspireTest.TestAll.runtest(InspireTest.java:166)
+	at InspireTest.TestAll.T01_ids(InspireTest.java:67)
+
+T02_datasets  Time elapsed: 0.24 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+js failed:
+>>>>
+01: karate.read(idfile)
+<<<<
+org.graalvm.polyglot.PolyglotException: not found: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/T01_ids/idsDataset.json
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:53)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:688)
+- <js>.:program(Unnamed:1)
+
+src/test/java/InspireTest/ngr/T02_Datasets.feature:14 ==> expected: <0> but was: <1>
+	at InspireTest.TestAll.runtest(InspireTest.java:166)
+	at InspireTest.TestAll.T02_datasets(InspireTest.java:83)
+
+T02_services  Time elapsed: 0.145 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+js failed:
+>>>>
+01: karate.read(idfile)
+<<<<
+org.graalvm.polyglot.PolyglotException: not found: /home/runner/work/nl-ngr-validation/nl-ngr-validation/output/T01_ids/idsService.json
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:53)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:688)
+- <js>.:program(Unnamed:1)
+
+src/test/java/InspireTest/ngr/T02_Services.feature:11 ==> expected: <0> but was: <1>
+	at InspireTest.TestAll.runtest(InspireTest.java:166)
+	at InspireTest.TestAll.T02_services(InspireTest.java:97)
+
+T03loadAndEvaluateh  Time elapsed: 0.135 s  <<< ERROR!
+java.lang.NullPointerException
+	at InspireTest.TestAll.T03loadAndEvaluateh(InspireTest.java:114)
+
