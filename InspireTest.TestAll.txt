@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: InspireTest.TestAll
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 34.561 s <<< FAILURE! - in InspireTest.TestAll
+T03loadAndEvaluateh  Time elapsed: 0.137 s  <<< ERROR!
+java.lang.NullPointerException
+	at InspireTest.TestAll.T03loadAndEvaluateh(InspireTest.java:114)
+
