@@ -16,7 +16,6 @@ mvn test
 ```
 
 For docker user there is a [shell script](mavenCleanTest.sh) to run the testsuite
-
 # 2. Generated lists 
 
 ## 2.1. Get list from Inspire endpoint 
