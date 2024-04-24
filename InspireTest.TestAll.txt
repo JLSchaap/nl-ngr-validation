@@ -1,0 +1,48 @@
+-------------------------------------------------------------------------------
+Test set: InspireTest.TestAll
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 379.528 s <<< FAILURE! - in InspireTest.TestAll
+T02_datasets  Time elapsed: 102.089 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+http call failed after 30336 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=6318009c-7b11-4ab9-9929-735584dfb692&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Datasets.feature:32
+http call failed after 30030 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=64ff8561-5c56-4cc1-ae0e-94366fb70b7e&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Datasets.feature:32
+http call failed after 30335 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=9986a7ef-e5e2-4a7a-9018-2e1f9631ba8c&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Datasets.feature:32
+http call failed after 30021 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=f002bfc5-7d87-46b6-819e-8415422b65c9&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Datasets.feature:32
+http call failed after 30030 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=110f9ec6-4464-462e-9765-83d90cefbeab&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Datasets.feature:32
+http call failed after 30315 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=110f9ec6-4464-462e-9765-83d90cefbead&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Datasets.feature:32 ==> expected: <0> but was: <6>
+	at InspireTest.TestAll.runtest(InspireTest.java:166)
+	at InspireTest.TestAll.T02_datasets(InspireTest.java:83)
+
+T02_services  Time elapsed: 193.004 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+http call failed after 30030 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=d0b1a576-d1c5-47b4-972f-353f37eb1f8d&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 30334 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=b7880739-a701-4cc0-bb32-2bba61fa8924&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 30030 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=4a3a58eb-3956-4477-8715-52214d84e8ca&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 30337 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=35ebe5b7-510a-462d-8dbb-0bc45f07dc23&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 30004 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=49751327-a51c-4023-baed-bb218496abce&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 30324 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=275b64ab-34c2-41f8-8904-97812c7f716e&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 30029 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=68a42961-ed55-436b-a412-cc7424fd2a6e&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 30313 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=8129296b-b9c1-489f-990a-df4a879e12b2&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 30030 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=a931e334-b752-4935-8a98-00eddc443789&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 30335 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=598c4109-21d2-4a6c-b083-9975a6736849&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 30029 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=fa09603b-d799-4ede-8243-1eb4f654ae75&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29 ==> expected: <0> but was: <11>
+	at InspireTest.TestAll.runtest(InspireTest.java:166)
+	at InspireTest.TestAll.T02_services(InspireTest.java:97)
+
