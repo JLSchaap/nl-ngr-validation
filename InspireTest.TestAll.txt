@@ -1,0 +1,670 @@
+-------------------------------------------------------------------------------
+Test set: InspireTest.TestAll
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 475.769 s <<< FAILURE! - in InspireTest.TestAll
+T02_services  Time elapsed: 196.859 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 500, expected: 200, response time in milliseconds: 576, url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=d1f7333f-04d7-4062-b469-847c47846cd7&version=2.0.2, response: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+
+  <title>GeoCat Live - 500</title>
+  <link rel="stylesheet" href="/lib/bootstrap.min.css">
+  <script type="text/javascript" src="/lib/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/js/gc-date.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.geocat.net/css/geocat.base.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.geocat.net/css/geocat.logo.min.css">
+  <link rel="stylesheet" type="text/css" href="/style/style.css">
+</head>
+
+<body>
+<!-- header -->
+<div class="container container-md">
+  <header class="d-flex flex-wrap justify-content-end py-4 mb-4 border-bottom">
+    <ul class="gc-menu mb-0">
+      <li>
+        <a href="https://www.geocat.net" target="_blank" title="Visit the GeoCat website">
+          <div class="gc-logo gc-logo-base64"></div>
+        </a>
+      </li>
+    </ul>
+  </header>
+</div>
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+  <div class="container">
+    <div>
+      <h1>Server Error</h1>
+      <div class="errorCode">500
+      </div>
+      <p>Well, this is embarrassing....</p>
+    </div>
+  </div>
+</main>
+<!-- footer -->
+<footer class="footer p-3 mt-4">
+  <div class="container">
+    <div class="border-top py-3">
+      <span class="footer-info">&copy; Copyright <span id="current-year"></span> GeoCat BV.</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
+
+src/test/java/InspireTest/ngr/T02_Services.feature:30
+status code was: 500, expected: 200, response time in milliseconds: 581, url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=bef01bd9-ea47-4a7d-9c2c-1832894019a3&version=2.0.2, response: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+
+  <title>GeoCat Live - 500</title>
+  <link rel="stylesheet" href="/lib/bootstrap.min.css">
+  <script type="text/javascript" src="/lib/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/js/gc-date.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.geocat.net/css/geocat.base.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.geocat.net/css/geocat.logo.min.css">
+  <link rel="stylesheet" type="text/css" href="/style/style.css">
+</head>
+
+<body>
+<!-- header -->
+<div class="container container-md">
+  <header class="d-flex flex-wrap justify-content-end py-4 mb-4 border-bottom">
+    <ul class="gc-menu mb-0">
+      <li>
+        <a href="https://www.geocat.net" target="_blank" title="Visit the GeoCat website">
+          <div class="gc-logo gc-logo-base64"></div>
+        </a>
+      </li>
+    </ul>
+  </header>
+</div>
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+  <div class="container">
+    <div>
+      <h1>Server Error</h1>
+      <div class="errorCode">500
+      </div>
+      <p>Well, this is embarrassing....</p>
+    </div>
+  </div>
+</main>
+<!-- footer -->
+<footer class="footer p-3 mt-4">
+  <div class="container">
+    <div class="border-top py-3">
+      <span class="footer-info">&copy; Copyright <span id="current-year"></span> GeoCat BV.</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
+
+src/test/java/InspireTest/ngr/T02_Services.feature:30
+status code was: 500, expected: 200, response time in milliseconds: 558, url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=c1ea0e3f-e8e2-4f25-aae8-f24ec6ee8217&version=2.0.2, response: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+
+  <title>GeoCat Live - 500</title>
+  <link rel="stylesheet" href="/lib/bootstrap.min.css">
+  <script type="text/javascript" src="/lib/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/js/gc-date.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.geocat.net/css/geocat.base.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.geocat.net/css/geocat.logo.min.css">
+  <link rel="stylesheet" type="text/css" href="/style/style.css">
+</head>
+
+<body>
+<!-- header -->
+<div class="container container-md">
+  <header class="d-flex flex-wrap justify-content-end py-4 mb-4 border-bottom">
+    <ul class="gc-menu mb-0">
+      <li>
+        <a href="https://www.geocat.net" target="_blank" title="Visit the GeoCat website">
+          <div class="gc-logo gc-logo-base64"></div>
+        </a>
+      </li>
+    </ul>
+  </header>
+</div>
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+  <div class="container">
+    <div>
+      <h1>Server Error</h1>
+      <div class="errorCode">500
+      </div>
+      <p>Well, this is embarrassing....</p>
+    </div>
+  </div>
+</main>
+<!-- footer -->
+<footer class="footer p-3 mt-4">
+  <div class="container">
+    <div class="border-top py-3">
+      <span class="footer-info">&copy; Copyright <span id="current-year"></span> GeoCat BV.</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
+
+src/test/java/InspireTest/ngr/T02_Services.feature:30
+status code was: 503, expected: 200, response time in milliseconds: 334, url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=c39f6bad-579b-49c2-95e4-249fe997f0cb&version=2.0.2, response: 
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>503 Service Unavailable</title>
+</head><body>
+<h1>Service Unavailable</h1>
+<p>The server is temporarily unable to service your
+request due to maintenance downtime or capacity
+problems. Please try again later.</p>
+</body></html>
+
+src/test/java/InspireTest/ngr/T02_Services.feature:30
+status code was: 503, expected: 200, response time in milliseconds: 1382, url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=c6308500-3439-4840-88cb-7532cabbfcb4&version=2.0.2, response: 
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>503 Service Unavailable</title>
+</head><body>
+<h1>Service Unavailable</h1>
+<p>The server is temporarily unable to service your
+request due to maintenance downtime or capacity
+problems. Please try again later.</p>
+</body></html>
+
+src/test/java/InspireTest/ngr/T02_Services.feature:30
+status code was: 503, expected: 200, response time in milliseconds: 1362, url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=ca3f849f-b303-4757-aa30-e5cdd692e07a&version=2.0.2, response: 
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>503 Service Unavailable</title>
+</head><body>
+<h1>Service Unavailable</h1>
+<p>The server is temporarily unable to service your
+request due to maintenance downtime or capacity
+problems. Please try again later.</p>
+</body></html>
+
+src/test/java/InspireTest/ngr/T02_Services.feature:30
+status code was: 503, expected: 200, response time in milliseconds: 1364, url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=cecbe171-6ee7-427d-8658-e764049644cc&version=2.0.2, response: 
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>503 Service Unavailable</title>
+</head><body>
+<h1>Service Unavailable</h1>
+<p>The server is temporarily unable to service your
+request due to maintenance downtime or capacity
+problems. Please try again later.</p>
+</body></html>
+
+src/test/java/InspireTest/ngr/T02_Services.feature:30
+status code was: 503, expected: 200, response time in milliseconds: 1336, url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=9c50592e-57be-4d74-91fd-bcaee20bb14e&version=2.0.2, response: 
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>503 Service Unavailable</title>
+</head><body>
+<h1>Service Unavailable</h1>
+<p>The server is temporarily unable to service your
+request due to maintenance downtime or capacity
+problems. Please try again later.</p>
+</body></html>
+
+src/test/java/InspireTest/ngr/T02_Services.feature:30
+status code was: 503, expected: 200, response time in milliseconds: 359, url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=a4bbba49-6d8c-408d-85cc-30c3fcffeaad&version=2.0.2, response: 
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>503 Service Unavailable</title>
+</head><body>
+<h1>Service Unavailable</h1>
+<p>The server is temporarily unable to service your
+request due to maintenance downtime or capacity
+problems. Please try again later.</p>
+</body></html>
+
+src/test/java/InspireTest/ngr/T02_Services.feature:30
+status code was: 503, expected: 200, response time in milliseconds: 369, url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=a57c1e86-becb-4e3f-b0ad-6d02cea5583d&version=2.0.2, response: 
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>503 Service Unavailable</title>
+</head><body>
+<h1>Service Unavailable</h1>
+<p>The server is temporarily unable to service your
+request due to maintenance downtime or capacity
+problems. Please try again later.</p>
+</body></html>
+
+src/test/java/InspireTest/ngr/T02_Services.feature:30
+status code was: 503, expected: 200, response time in milliseconds: 358, url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=adcc5ad7-d3b3-445a-9033-1274cc7f0d61&version=2.0.2, response: 
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>503 Service Unavailable</title>
+</head><body>
+<h1>Service Unavailable</h1>
+<p>The server is temporarily unable to service your
+request due to maintenance downtime or capacity
+problems. Please try again later.</p>
+</body></html>
+
+src/test/java/InspireTest/ngr/T02_Services.feature:30
+status code was: 503, expected: 200, response time in milliseconds: 367, url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=add7e618-78e7-4189-abc8-a64becee7a60&version=2.0.2, response: 
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>503 Service Unavailable</title>
+</head><body>
+<h1>Service Unavailable</h1>
+<p>The server is temporarily unable to service your
+request due to maintenance downtime or capacity
+problems. Please try again later.</p>
+</body></html>
+
+src/test/java/InspireTest/ngr/T02_Services.feature:30
+status code was: 503, expected: 200, response time in milliseconds: 342, url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=a252d8b4-23d3-452c-8a24-4cd65681c424&version=2.0.2, response: 
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>503 Service Unavailable</title>
+</head><body>
+<h1>Service Unavailable</h1>
+<p>The server is temporarily unable to service your
+request due to maintenance downtime or capacity
+problems. Please try again later.</p>
+</body></html>
+
+src/test/java/InspireTest/ngr/T02_Services.feature:30
+status code was: 503, expected: 200, response time in milliseconds: 352, url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=a25cbbdf-544e-4bc3-b6a9-2544a574d54a&version=2.0.2, response: 
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>503 Service Unavailable</title>
+</head><body>
+<h1>Service Unavailable</h1>
+<p>The server is temporarily unable to service your
+request due to maintenance downtime or capacity
+problems. Please try again later.</p>
+</body></html>
+
+src/test/java/InspireTest/ngr/T02_Services.feature:30
+status code was: 503, expected: 200, response time in milliseconds: 358, url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=b6d2d023-92d9-40a2-a020-5cc2275a450f&version=2.0.2, response: 
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>503 Service Unavailable</title>
+</head><body>
+<h1>Service Unavailable</h1>
+<p>The server is temporarily unable to service your
+request due to maintenance downtime or capacity
+problems. Please try again later.</p>
+</body></html>
+
+src/test/java/InspireTest/ngr/T02_Services.feature:30
+status code was: 503, expected: 200, response time in milliseconds: 329, url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=b78d50ac-663f-4471-8678-acdd33723f39&version=2.0.2, response: 
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>503 Service Unavailable</title>
+</head><body>
+<h1>Service Unavailable</h1>
+<p>The server is temporarily unable to service your
+request due to maintenance downtime or capacity
+problems. Please try again later.</p>
+</body></html>
+
+src/test/java/InspireTest/ngr/T02_Services.feature:30
+status code was: 503, expected: 200, response time in milliseconds: 338, url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=9ff7e9e1-cf7d-40cb-9efa-3a06b8aa4e40&version=2.0.2, response: 
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>503 Service Unavailable</title>
+</head><body>
+<h1>Service Unavailable</h1>
+<p>The server is temporarily unable to service your
+request due to maintenance downtime or capacity
+problems. Please try again later.</p>
+</body></html>
+
+src/test/java/InspireTest/ngr/T02_Services.feature:30
+status code was: 503, expected: 200, response time in milliseconds: 347, url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=5dacef44-361e-4a3d-b86f-1d6d26297337&version=2.0.2, response: 
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>503 Service Unavailable</title>
+</head><body>
+<h1>Service Unavailable</h1>
+<p>The server is temporarily unable to service your
+request due to maintenance downtime or capacity
+problems. Please try again later.</p>
+</body></html>
+
+src/test/java/InspireTest/ngr/T02_Services.feature:30
+status code was: 503, expected: 200, response time in milliseconds: 360, url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=62b01550-9007-4634-b008-bd6071b34b2c&version=2.0.2, response: 
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>503 Service Unavailable</title>
+</head><body>
+<h1>Service Unavailable</h1>
+<p>The server is temporarily unable to service your
+request due to maintenance downtime or capacity
+problems. Please try again later.</p>
+</body></html>
+
+src/test/java/InspireTest/ngr/T02_Services.feature:30
+status code was: 503, expected: 200, response time in milliseconds: 362, url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=684e1468-ec03-43ee-9f52-94236f187d8d&version=2.0.2, response: 
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>503 Service Unavailable</title>
+</head><body>
+<h1>Service Unavailable</h1>
+<p>The server is temporarily unable to service your
+request due to maintenance downtime or capacity
+problems. Please try again later.</p>
+</body></html>
+
+src/test/java/InspireTest/ngr/T02_Services.feature:30
+status code was: 503, expected: 200, response time in milliseconds: 353, url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=84975aa1-4357-43cd-a774-d31a482a6d35&version=2.0.2, response: 
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>503 Service Unavailable</title>
+</head><body>
+<h1>Service Unavailable</h1>
+<p>The server is temporarily unable to service your
+request due to maintenance downtime or capacity
+problems. Please try again later.</p>
+</body></html>
+
+src/test/java/InspireTest/ngr/T02_Services.feature:30
+status code was: 503, expected: 200, response time in milliseconds: 356, url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=85c467c5-aff0-4509-9825-4965d9e962b9&version=2.0.2, response: 
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>503 Service Unavailable</title>
+</head><body>
+<h1>Service Unavailable</h1>
+<p>The server is temporarily unable to service your
+request due to maintenance downtime or capacity
+problems. Please try again later.</p>
+</body></html>
+
+src/test/java/InspireTest/ngr/T02_Services.feature:30
+status code was: 503, expected: 200, response time in milliseconds: 356, url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=8891985c-5178-4a9e-bb76-21625a9fb1ef&version=2.0.2, response: 
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>503 Service Unavailable</title>
+</head><body>
+<h1>Service Unavailable</h1>
+<p>The server is temporarily unable to service your
+request due to maintenance downtime or capacity
+problems. Please try again later.</p>
+</body></html>
+
+src/test/java/InspireTest/ngr/T02_Services.feature:30
+status code was: 503, expected: 200, response time in milliseconds: 367, url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=8a1d1e07-ad95-40a4-adb1-23a3504543a4&version=2.0.2, response: 
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>503 Service Unavailable</title>
+</head><body>
+<h1>Service Unavailable</h1>
+<p>The server is temporarily unable to service your
+request due to maintenance downtime or capacity
+problems. Please try again later.</p>
+</body></html>
+
+src/test/java/InspireTest/ngr/T02_Services.feature:30
+http call failed after 30605 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=9a18ecc7-fb59-4ccc-9642-b54ce2a73d36&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 30596 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=45c40b3a-6212-4227-b939-496a5ce95734&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 30598 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=ff0f3779-25cc-4150-ae3c-ec885388c59e&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 30596 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=a406df9a-40c8-4392-9dcb-3a4c1ebcd5bb&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 30557 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=b3235d11-1c24-4afe-8baf-2f4f15a7d9bd&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 30608 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=8d3a1f10-7719-4944-ab87-9057198bcdd7&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 30576 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=0f7fe0b8-0293-4ec5-9d38-742b0209dc76&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 30616 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=6776cafe-a7a9-45af-b370-6a8f638a12d5&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 30586 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=e5b2dc19-0286-422c-933e-6fb692513a25&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 30629 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=f5daab11-ac77-4e71-b864-8bd4bbb26804&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 30611 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=75bb7062-0244-4faf-8c7d-a7a53131a044&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 30605 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=17ad94f6-4961-448b-a6f5-5368b7870409&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 492 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=99275ee7-aac5-4b56-a4c7-0150e31fe80d&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 345 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=09ddce36-e0df-4a51-842a-2c92bff166d4&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 224 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=0fa448bb-332b-40b2-adab-13626b29bee6&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 118 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=22f1f21d-3791-4adc-8b1a-6033a03642bb&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 112 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=ba0d1555-d3d2-430d-ad4f-dfadf03ba650&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 117 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=5d3fc8f8-5cb4-42e2-8f9b-62c147f36cc5&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 109 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=cc6f76b2-f28e-4eb3-8d89-d1a6a135c010&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 116 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=3bad67da-5004-488e-911a-81502adefedb&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 103 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=01572637-b851-4cc3-b06a-56c1ae1115cc&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 114 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=5559960d-37a1-4cab-ab09-5836dd700f45&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 112 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=fa3ecd49-4571-4eb3-84f3-2865f42934b2&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 113 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=0ab88d51-68fd-424e-8e22-8010bb023c0b&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 110 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=b768d4c7-c838-4b38-9d9c-c430f2b8fae3&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 110 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=dbb84969-8094-43e5-8824-245f1190a471&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 115 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=67ab27cb-df8c-4ebd-949e-f09ec3fcb17a&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 114 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=ab1c5d6a-c40f-4277-a9c0-a3e54f803c0f&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 114 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=641afa9a-2816-40d6-80b4-6bf0f75dc415&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 112 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=0821bf91-edd5-4701-b07c-8b7f8aaca7ef&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 115 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=5f8c39a9-0abe-4324-976c-39f8572108de&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 109 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=a931e334-b752-4935-8a98-00eddc443789&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 116 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=0017219b-fb75-47aa-a6bf-496f2514e545&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 107 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=295accbb-4ad2-4e50-a848-aa10e187b9ad&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 110 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=73286af2-d0f4-4a62-9455-86ffa45ef279&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 1159 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=181b54ed-14d2-4fda-bae7-747972340f2f&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 1158 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=46873d16-6835-48c4-b47f-134ab0cb31fa&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 1132 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=37308f90-e619-4b62-ae9e-e656bb3f1649&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 1150 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=bca00324-88a2-494d-bb10-6021b0cd27a5&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 112 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=b8300fd4-3224-4b44-ae92-3eb82da0bb85&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 112 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=d48fbd9e-5143-4a54-8624-dc5beff2ab93&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 114 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=2b083039-6662-47f3-b6d5-d00af64f91ef&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 112 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=a7b5bbd9-97a2-4ffa-89b5-1315ce03ff1c&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 110 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=0426f471-f325-42ed-a775-81c397592e86&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 115 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=8a594e51-9dcf-4ef3-9f67-7d73bfd71d27&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 116 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=a3ff2537-0f2e-46e9-a0f8-9ec6ffac023d&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 104 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=2e2c3c53-7987-4026-99fd-df107b1b9a1c&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 112 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=b914aa84-1a15-4d6c-950e-00c739946029&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 112 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=71b8214f-7525-45bd-bdee-2c60f32a1725&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 110 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=eba3f6ec-496c-40e3-9d33-c11315523f26&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 110 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=517ff010-c10c-4963-963e-9b928fceab6b&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 113 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=7827e997-00da-4164-84b1-a86cac78b32b&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 112 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=2b087d2c-6a1c-4746-95c6-3d40bc4294f9&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 111 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=4d234572-712f-41fd-b2b4-d1775adb4c68&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 112 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=f5660ac6-8031-4acc-832c-1d1b82b062ba&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 114 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=5a6c27b9-a7ed-4461-bd8c-4d022d04f1b0&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 114 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=9220097c-ffa6-4763-b3e3-2cedbbe389a5&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 114 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=281d7dc5-68b2-4e2c-a427-3188b8a4a6e6&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 111 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=47d416f8-76e8-441c-9b19-c8f889dfe62c&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 107 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=a975fd28-f2e6-4456-8d31-0bdef2e34a89&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 113 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=037e55bd-a1dc-4fde-adfe-4610d3a3d5cb&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 110 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=54122631-d343-40be-9c28-e44626b37a0e&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 109 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=adc1e9d1-1bca-4e88-a028-64422051433a&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 111 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=ff5d850a-727b-4d44-911d-c7906f282bea&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 113 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=5f0c583a-101e-45ea-b684-a056713cf811&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 109 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=23c7fb9e-3cca-4cb8-987a-bda4b9c3322f&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 117 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=49751327-a51c-4023-baed-bb218496abce&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 117 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=a0ad469d-be1b-4d38-b699-faf946666bcc&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 110 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=9ad3f0c0-9e2c-4d44-a467-b57920aa512f&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 115 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=1a06274d-c202-448f-8e9b-7cfb492075ac&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 115 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=a2cc9d14-1eea-4659-b341-735d94b29902&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 109 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=ec1faa6d-2779-42b8-82f8-6d516dcc868f&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 116 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=5fe3b6a2-fb5b-4f0d-a050-91fe45cb5b37&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 114 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=9f051605-bac9-4486-908d-9ada36c7b16e&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 112 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=1009c2a4-4dba-49a5-b643-914ba8b80b52&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 104 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=f3e68b05-f5c8-4796-bc67-33a3db1c1d65&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 112 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=94f241c2-43a2-42c3-8e9e-71976605aa0e&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 104 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=68a42961-ed55-436b-a412-cc7424fd2a6e&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 111 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=d7d19437-f875-45b3-86cd-2fa3335479ec&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 116 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=6aa19280-e67c-4184-b916-6d47e9414bbc&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 107 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=757a7c50-540d-4105-9135-73f09f700743&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 107 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=4497fd50-d8cb-4131-ba38-be3020f0b76b&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 116 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=4d6cda23-d1a8-4ccc-85ed-9880bba9e82f&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 107 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=56e8ce20-0e6f-4ef2-8c09-6e30bc3680b9&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 112 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=0080a9ce-b836-45bc-8fdf-07dcbe97101d&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 110 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=03c48a93-1e31-4c69-92c6-9a7efecf67a9&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 109 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=e9ba7d7f-6cd1-4271-bce4-56432924b338&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 114 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=d9cc67ba-5491-4640-86ac-b8d392250270&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 112 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=d1cb16ca-2029-454f-b3f1-f70bceaf62c1&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 112 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=a6098c24-4caf-4528-954c-672b9ec6cf78&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 113 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=bfcc588f-9393-4c70-b989-d9e92ac2f493&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 111 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=b01df8ab-b84b-4f35-a899-d256eadb6d48&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 112 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=9c80458b-12c6-4d38-8f6d-387ab6e4ed21&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 111 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=280c33d5-169f-4ea3-8f7e-330b5b0fe642&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 112 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=d4f4ebb4-dea0-4f32-b2c4-f1f733091b75&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 108 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=e0fa2ac7-4e65-4d95-a27e-d6a44e8c12e8&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 114 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=49ff0584-a173-4098-824c-119edf8447f7&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 114 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=9e2e977a-16a6-42a4-a208-c4f70704f383&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 111 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=150e3a18-44ed-43bd-b0fd-70ff7a3e6906&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 108 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=86466c65-1a71-4fa0-86fc-d2538a0b9d4a&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 113 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=a9fa7fff-6365-4885-950c-e9d9848359ee&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 112 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=b77a753e-6da8-4df2-874d-4eddad9dd1a4&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 111 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=ed249628-41f0-4fdd-81a8-838f7a3a8344&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 109 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=a508559e-31c4-4809-8f5d-6efcadf555c9&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 112 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=1e2cb7d4-934a-437a-809e-fda67b4a8824&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 110 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=9cb1badf-81e1-42b2-9864-af42a0872097&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 114 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=56b2cb4b-1ea8-4763-a040-b5f0eed13716&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 117 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=1e01d173-96f4-40b1-8236-c6a9cfdac252&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 111 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=91041d33-54f8-40f1-8965-a867ba00cab8&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 114 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=908e96de-bcc5-4d29-8501-ce9ffbc56c15&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 111 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=a301ddc7-c26f-42d8-b367-509ae5ae47d0&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 114 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=d7a395a2-8673-4794-a5a6-fed6492cd580&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 115 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=68ebd5c9-0ea1-4f22-9907-ec4c06mcd3e2&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 107 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=ca71572f-a498-4ca6-aa60-d4c4c4d59e2e&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 112 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=68ebd5c9-0ea1-4f22-9907-ec4c06fcd3e2&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29
+http call failed after 111 milliseconds for url: http://nationaalgeoregister.nl/geonetwork/srv/dut/inspire?request=GetRecordById&elementsetname=full&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&service=CSW&id=bfe4f5c6-b6d2-4a63-a7b7-961dd9c9fcaa&version=2.0.2
+src/test/java/InspireTest/ngr/T02_Services.feature:29 ==> expected: <0> but was: <140>
+	at InspireTest.TestAll.runtest(InspireTest.java:166)
+	at InspireTest.TestAll.T02_services(InspireTest.java:97)
+
